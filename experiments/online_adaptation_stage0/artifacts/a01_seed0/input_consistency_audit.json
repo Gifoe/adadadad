@@ -1,0 +1,22 @@
+{
+  "strict_target_shape": [
+    144,
+    22,
+    1000
+  ],
+  "all_methods_share_one_target_tensor_digest": true,
+  "target_tensor_sha256": "df77881e7c4bb7b7f58ad3dd08a797de5c641d4ee33ca42d4ad1e7bfbcc45110",
+  "labels_opened": false,
+  "device": "cuda",
+  "methods": [
+    "source_only_sinc",
+    "btta_dg_official",
+    "neuroloop_static_k1",
+    "neuroloop_static_k4",
+    "neuroloop_shared_k1",
+    "neuroloop_shared_k2",
+    "neuroloop_shared_k4",
+    "neuroloop_shared_k8",
+    "neuroloop_untied_k4"
+  ]
+}

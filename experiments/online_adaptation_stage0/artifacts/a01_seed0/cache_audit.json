@@ -1,0 +1,60 @@
+{
+  "shape": [
+    288,
+    22,
+    1000
+  ],
+  "sample_rate": 250,
+  "channel_count": 22,
+  "channel_order": [
+    "EEG-Fz",
+    "EEG-0",
+    "EEG-1",
+    "EEG-2",
+    "EEG-3",
+    "EEG-4",
+    "EEG-5",
+    "EEG-C3",
+    "EEG-6",
+    "EEG-Cz",
+    "EEG-7",
+    "EEG-C4",
+    "EEG-8",
+    "EEG-9",
+    "EEG-10",
+    "EEG-11",
+    "EEG-12",
+    "EEG-13",
+    "EEG-14",
+    "EEG-Pz",
+    "EEG-15",
+    "EEG-16"
+  ],
+  "session_counts": {
+    "S1": 144,
+    "S2": 144
+  },
+  "class_counts": {
+    "S1": [
+      72,
+      72
+    ],
+    "S2": [
+      72,
+      72
+    ]
+  },
+  "filter": "MNE FIR 1-48 Hz before 0-4 s epoch extraction",
+  "signal_sha256": "37bd0dea45699518499ad096246dd99ae3541a451a8e852a87ccf406d3e74f94",
+  "source_label_sha256": "f75899a74443a5d73d6ff5787c0646d38305394a725f25a114939086ede56751",
+  "target_labels_scoring_only_sha256": "263c4bd429e12d02fc753625f5d5279a071ed4860d1cb558fef7b160697b4bee",
+  "target_labels_access_policy": "not opened until every model checkpoint is frozen",
+  "gdf": {
+    "A01T.gdf": "74d900ce83a115509f663c0ac45bd36d56f05be528064743c49b0c2efb5088a3",
+    "A01E.gdf": "08709cf61bc0d603b5d491417221cb4d62a5db09b99ec7bc1c09c22dbc44a674"
+  },
+  "official_labels": {
+    "A01T.mat": "b62c9a907eea4d158850e80d7eec5a939d14220cda358a6da78b8897c97b7fa1",
+    "A01E.mat": "2d2db43b452842553e1690b045b998607131b0b9160ece7989d65632febecc7d"
+  }
+}

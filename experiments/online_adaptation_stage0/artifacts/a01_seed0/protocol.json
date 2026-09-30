@@ -1,0 +1,31 @@
+{
+  "dataset": "BNCI2014001 / BCI Competition IV 2a",
+  "subject": "A01",
+  "seed": 0,
+  "source": "S1 / A01T: left vs right only",
+  "target": "S2 / A01E chronological stream; labels unavailable to runners",
+  "preprocessing": "original 22 EEG channels in GDF order; FIR 1-48 Hz; 0-4s at 250Hz",
+  "ea_modes": [
+    "paper",
+    "strict"
+  ],
+  "reset_policy": "reset each target session, no state leakage",
+  "source_validation": {
+    "type": "run-level",
+    "validation_run": 503,
+    "groups": {
+      "6": 24,
+      "105": 24,
+      "206": 24,
+      "306": 24,
+      "404": 24,
+      "503": 24
+    }
+  },
+  "official_btta_commit": "5932d026bbd8a7de106d31a6d264f4f4924537e4",
+  "official_btta_files": {
+    "BTTA_DG.py": "ce03a1d47d497bc832cabf9b8e1baf27f380c036e1b87c1ab479c8e149931af5",
+    "SincAdaptNet.py": "32205021fcd53efe3fba90f1c8b652aa64f13e04da0b10ff5453ffe8d0d5db1a",
+    "pretrain_SincAdaptNet.py": "1948ce92a0b792fdc80e6fe5de48d1f682de8449bc5463127306bd36d0db42c5"
+  }
+}
