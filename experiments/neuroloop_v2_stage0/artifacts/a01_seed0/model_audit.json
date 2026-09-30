@@ -1,0 +1,80 @@
+{
+  "shared": {
+    "spec": {
+      "channels": 22,
+      "classes": 2,
+      "sample_rate": 250,
+      "bands": 24,
+      "spatial_components": 8,
+      "d_model": 128,
+      "heads": 4,
+      "ffn_dim": 512,
+      "dropout": 0.1,
+      "max_loops": 4,
+      "patch_size": 50,
+      "gamma_init": 0.05
+    },
+    "trainable_parameters": 364086,
+    "state_free": true
+  },
+  "untied": {
+    "spec": {
+      "channels": 22,
+      "classes": 2,
+      "sample_rate": 250,
+      "bands": 24,
+      "spatial_components": 8,
+      "d_model": 128,
+      "heads": 4,
+      "ffn_dim": 512,
+      "dropout": 0.1,
+      "max_loops": 4,
+      "patch_size": 50,
+      "gamma_init": 0.05
+    },
+    "trainable_parameters": 1357494,
+    "state_free": true
+  },
+  "sinc_parameters": 13584,
+  "shared_gamma_values": [
+    0.07557100802659988,
+    0.07347354292869568,
+    0.07243162393569946,
+    0.06392138451337814
+  ],
+  "untied_gamma_values": [
+    0.0636952742934227,
+    0.05652676522731781,
+    0.06621204316616058,
+    0.0638546347618103
+  ],
+  "shared_block_parameter_ids": {
+    "input_norm.weight": 137030064860816,
+    "input_norm.bias": 137030064860096,
+    "temporal.in_proj_weight": 137030064860336,
+    "temporal.in_proj_bias": 137030064860016,
+    "temporal.out_proj.weight": 137030064858656,
+    "temporal.out_proj.bias": 137030064856256,
+    "frequency.in_proj_weight": 137030064857456,
+    "frequency.in_proj_bias": 137030064861056,
+    "frequency.out_proj.weight": 137030064859136,
+    "frequency.out_proj.bias": 137030063192448,
+    "anchor.in_proj_weight": 137030063178848,
+    "anchor.in_proj_bias": 137030063186048,
+    "anchor.out_proj.weight": 137030063190768,
+    "anchor.out_proj.bias": 137030063178928,
+    "norm_temporal.weight": 137030063188528,
+    "norm_temporal.bias": 137030063185248,
+    "norm_frequency.weight": 137030063192768,
+    "norm_frequency.bias": 137030063192928,
+    "norm_anchor.weight": 137030063192848,
+    "norm_anchor.bias": 137030063192688,
+    "norm_ffn.weight": 137030063191648,
+    "norm_ffn.bias": 137030063193888,
+    "ffn.0.weight": 137030063193728,
+    "ffn.0.bias": 137030063193808,
+    "ffn.3.weight": 137030063193968,
+    "ffn.3.bias": 137030063193568
+  },
+  "cross_trial_state": "absent"
+}

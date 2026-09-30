@@ -1,0 +1,8 @@
+{
+  "selected_epochs": {
+    "sinc": 21,
+    "shared": 28,
+    "untied": 23
+  },
+  "target_labels_opened_after_checkpoint_freeze": true
+}

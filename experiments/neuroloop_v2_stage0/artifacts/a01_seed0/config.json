@@ -1,0 +1,48 @@
+{
+  "dataset": "BNCI2014001 / BCIC-IV-2a",
+  "subject": "A01",
+  "seed": 0,
+  "source": "A01T/S1 left-right",
+  "target": "A01E/S2 chronological left-right",
+  "shared_preprocessing": "FIR 1-48 Hz cache, original 22 EEG channels, 0-4 seconds, 250 Hz",
+  "ea_modes": [
+    "paper",
+    "strict"
+  ],
+  "state": "disabled",
+  "max_loops": 4,
+  "deep_supervision_weights": [
+    0.125,
+    0.125,
+    0.25,
+    0.5
+  ],
+  "max_epochs": 40,
+  "selection": {
+    "type": "run-level",
+    "validation_run": 503,
+    "groups": {
+      "6": 24,
+      "105": 24,
+      "206": 24,
+      "306": 24,
+      "404": 24,
+      "503": 24
+    }
+  },
+  "neuroloop_spec": {
+    "channels": 22,
+    "classes": 2,
+    "sample_rate": 250,
+    "bands": 24,
+    "spatial_components": 8,
+    "d_model": 128,
+    "heads": 4,
+    "ffn_dim": 512,
+    "dropout": 0.1,
+    "max_loops": 4,
+    "patch_size": 50,
+    "gamma_init": 0.05
+  },
+  "git_commit": "8e29dffe4a9b043409589e4529521fa9523985f8"
+}

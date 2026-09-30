@@ -1,0 +1,16 @@
+{
+  "signals_shape": [
+    288,
+    22,
+    1000
+  ],
+  "signals_dtype": "float32",
+  "source_rows": 144,
+  "target_rows": 144,
+  "channels": 22,
+  "samples": 1000,
+  "sample_rate_hz": 250,
+  "manifest_sha256": "847a68e576993078660fe63c9dd443fb1b50a4506491a3dabe241e5cad58637e",
+  "source_labels_sha256": "f75899a74443a5d73d6ff5787c0646d38305394a725f25a114939086ede56751",
+  "target_labels_scoring_only_sha256": "263c4bd429e12d02fc753625f5d5279a071ed4860d1cb558fef7b160697b4bee"
+}

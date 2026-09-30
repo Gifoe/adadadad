@@ -1,0 +1,7 @@
+{
+  "python": "3.12.13",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35",
+  "torch": "2.12.1+cu130",
+  "cuda": true,
+  "device": "cuda"
+}

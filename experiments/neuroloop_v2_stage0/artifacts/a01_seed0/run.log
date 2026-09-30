@@ -1,0 +1,4 @@
+nohup: ignoring input
+/root/adadadad_stage0_upload.bZMynA/experiments/neuroloop_v2_stage0/run_stage0_v2.py:111: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  loader = DataLoader(TensorDataset(torch.from_numpy(x[:, None]), torch.from_numpy(y)), batch_size=16, shuffle=True, generator=torch.Generator().manual_seed(seed + epoch))
+/root/rivermind-data/neuroloop_v2_stage0/a01_seed0/A01_STAGE0_V2_REPORT.md

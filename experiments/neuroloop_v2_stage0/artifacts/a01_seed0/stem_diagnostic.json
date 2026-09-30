@@ -1,0 +1,20 @@
+{
+  "ten_hz_nearest_band": 3,
+  "ten_hz_band_edges_hz": [
+    6.300249099731445,
+    12.293787002563477
+  ],
+  "ten_hz_power": 6969.66259765625,
+  "ten_hz_phase_relative_error": 0.00397523632273078,
+  "logpower_token_phase_relative_error": 0.048622407019138336,
+  "amplitude_2x_power_ratio": 4.0,
+  "logpower_token_2x_amplitude_mean_change": 0.10412855446338654,
+  "signed_waveform_mean_abs": 0.1880621463060379,
+  "checks": {
+    "positive_power": true,
+    "phase_stable": true,
+    "logpower_token_phase_stable": true,
+    "approximately_quadratic_amplitude": true,
+    "signed_pooling_smaller_than_power": true
+  }
+}

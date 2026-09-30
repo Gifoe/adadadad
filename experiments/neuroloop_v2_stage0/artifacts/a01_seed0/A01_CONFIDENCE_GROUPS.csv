@@ -1,0 +1,4 @@
+model,ea_mode,confidence_group,n_trials,correction_rate,corruption_rate,accuracy_gain
+neuroloop_v2_shared,strict,high,0,nan,nan,nan
+neuroloop_v2_shared,strict,medium,95,0.0,0.0,0.0
+neuroloop_v2_shared,strict,low,49,0.08163265306122448,0.1836734693877551,-0.10204081632653061
