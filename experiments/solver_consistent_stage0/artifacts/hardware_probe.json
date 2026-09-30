@@ -1,0 +1,26 @@
+[
+  {
+    "micro_batch": 16,
+    "length": 256,
+    "budget": 8,
+    "checkpointing": false,
+    "seconds_per_microbatch": 0.31922074999602046,
+    "peak_mb": 1143.92041015625
+  },
+  {
+    "micro_batch": 32,
+    "length": 256,
+    "budget": 8,
+    "checkpointing": false,
+    "seconds_per_microbatch": 0.03922204999253154,
+    "peak_mb": 2221.48095703125
+  },
+  {
+    "micro_batch": 64,
+    "length": 256,
+    "budget": 8,
+    "checkpointing": false,
+    "seconds_per_microbatch": 0.06189555001037661,
+    "peak_mb": 4151.34814453125
+  }
+]

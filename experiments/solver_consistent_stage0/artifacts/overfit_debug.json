@@ -1,0 +1,10 @@
+{
+  "updates": 100,
+  "train_accuracy": 1.0,
+  "train_loss": 9.059864169103093e-06,
+  "grad_norm": 0.000287917471723631,
+  "elapsed_sec": 3.373297999991337,
+  "examples": 16,
+  "split": "train_only",
+  "purpose": "input/gradient plumbing, not held-out learning evidence"
+}

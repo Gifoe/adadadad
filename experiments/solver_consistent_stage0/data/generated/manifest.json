@@ -1,0 +1,112 @@
+{
+  "seed": 0,
+  "official_commit": "0a6412b6fddf46324a1cb96e066dd7b3d89b87d6",
+  "depth_definition": "inference hops; official num_deduction_steps=depth+1 includes axiom",
+  "arguments": {
+    "formula_ordering": "random",
+    "ontology": "fictional",
+    "deduction_rule": "ModusPonens",
+    "distractors": "relevant",
+    "concept_names": "concept0..concept2047 via official Morphology.add_noun",
+    "property_family_extension": "32 disjoint 4-property families attribute0..attribute127 at official generate_theory input"
+  },
+  "workers": 8,
+  "generation_seed_protocol": "ordered blocks, numpy.SeedSequence([0,split_index,depth,round,worker_index]); worker random and numpy RNG reset per block",
+  "leakage_scope": "global canonical FOL facts plus proven conclusion, sentence order/entity/query polarity normalized; predicate-renamed structures can recur",
+  "splits": {
+    "train": {
+      "count": 100000,
+      "label_distribution": {
+        "0": 50000,
+        "1": 50000
+      },
+      "depth_distribution": {
+        "1": 25000,
+        "2": 25000,
+        "3": 25000,
+        "4": 25000
+      },
+      "sha256": "b1d915baef7ff550fc1304baefee411cefa003c8eb99f473cc45c2ef428bfad4",
+      "attempts": 1051928,
+      "failed_generations": 943613,
+      "duplicates_rejected": 0
+    },
+    "validation": {
+      "count": 10000,
+      "label_distribution": {
+        "0": 5000,
+        "1": 5000
+      },
+      "depth_distribution": {
+        "1": 2500,
+        "2": 2500,
+        "3": 2500,
+        "4": 2500
+      },
+      "sha256": "766b7381fc7396bf5a9e68a0f03ee7d29edf86141b818c4054835917a8e5e8e4",
+      "attempts": 112611,
+      "failed_generations": 101169,
+      "duplicates_rejected": 0
+    },
+    "iid": {
+      "count": 10000,
+      "label_distribution": {
+        "0": 5000,
+        "1": 5000
+      },
+      "depth_distribution": {
+        "1": 2500,
+        "2": 2500,
+        "3": 2500,
+        "4": 2500
+      },
+      "sha256": "496def66f9613ad4242d64cf813b419827c65391f4b65121797d7b2123a45c2e",
+      "attempts": 110620,
+      "failed_generations": 99295,
+      "duplicates_rejected": 0
+    },
+    "ood_6": {
+      "count": 5000,
+      "label_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "depth_distribution": {
+        "6": 5000
+      },
+      "sha256": "03206576308c90590ca697529cbbab8a2f048d1c4ed64f74478d9e13ddab99d6",
+      "attempts": 263536,
+      "failed_generations": 257464,
+      "duplicates_rejected": 0
+    },
+    "ood_8": {
+      "count": 5000,
+      "label_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "depth_distribution": {
+        "8": 5000
+      },
+      "sha256": "41c29ef94cd1b23c93227fe241dff0d95393b503b8636ae6bb2c1a07530e8ca0",
+      "attempts": 670817,
+      "failed_generations": 664865,
+      "duplicates_rejected": 0
+    },
+    "ood_12": {
+      "count": 5000,
+      "label_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "depth_distribution": {
+        "12": 5000
+      },
+      "sha256": "ef9f6e6f14a002497a3b330c5cae0c32eacf2011849a5ea25e92dba9c1a62e0c",
+      "attempts": 4715667,
+      "failed_generations": 4709588,
+      "duplicates_rejected": 0
+    }
+  },
+  "elapsed_sec": 1495.9789152145386
+}

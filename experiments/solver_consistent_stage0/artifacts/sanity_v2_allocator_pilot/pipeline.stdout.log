@@ -1,0 +1,23 @@
+STATUS {'stage': 'initializing', 'pid': 38016, 'utc': '2026-09-30T15:26:46Z'}
+STATUS {'stage': 'command', 'pid': 38016, 'utc': '2026-09-30T15:26:47Z', 'command': ['-m', 'pip', 'freeze']}
+STATUS {'stage': 'A2 tokenizer', 'pid': 38016, 'utc': '2026-09-30T15:26:47Z'}
+
+
+
+PARAMETERS vanilla_loop {'params': 17296386, 'trainable_params': 17296386, 'core_params': 6304768}
+PARAMETERS step_conditioned_loop {'params': 17313826, 'trainable_params': 17313826, 'core_params': 6322208}
+PARAMETERS vector_field {'params': 17313826, 'trainable_params': 17313826, 'core_params': 6322208}
+STATUS {'stage': 'command', 'pid': 38016, 'utc': '2026-09-30T15:28:34Z', 'command': ['-m', 'pytest', 'tests', '-q']}
+STATUS {'stage': 'command', 'pid': 38016, 'utc': '2026-09-30T15:28:39Z', 'command': ['data/audit_semantics.py']}
+Semantic/minimum-hop audit True {'iid': {'checked': 256}, 'ood_12': {'checked': 64}, 'ood_6': {'checked': 64}, 'ood_8': {'checked': 64}, 'train': {'checked': 256}, 'validation': {'checked': 256}}
+STATUS {'stage': 'A1 shortcut audit', 'pid': 38016, 'utc': '2026-09-30T15:28:41Z'}
+STATUS {'stage': 'Check A depth1', 'pid': 38016, 'utc': '2026-09-30T15:28:50Z', 'model': 'vanilla_loop'}
+STATUS {'stage': 'command', 'pid': 38016, 'utc': '2026-09-30T15:28:50Z', 'command': ['train.py', '--model', 'vanilla_loop', '--sanity']}
+vanilla_loop {'params': 17296386, 'trainable_params': 17296386, 'core_params': 6304768}
+vanilla_loop {'update': 20, 'budget': 4, 'loss': 0.7257554680109024, 'lr': 6.299999999999999e-05, 'elapsed_sec': 26.584832199965604}
+vanilla_loop {'update': 40, 'budget': 4, 'loss': 0.7001041173934937, 'lr': 0.00012299999999999998, 'elapsed_sec': 92.22112880001077}
+vanilla_loop {'update': 60, 'budget': 8, 'loss': 0.6940772756934166, 'lr': 0.00018299999999999998, 'elapsed_sec': 115.99307889997726}
+vanilla_loop {'update': 80, 'budget': 4, 'loss': 0.6900647953152657, 'lr': 0.000243, 'elapsed_sec': 128.43084109999472}
+vanilla_loop {'update': 100, 'budget': 8, 'loss': 0.6913909912109375, 'lr': 0.0003, 'elapsed_sec': 152.32998919999227}
+vanilla_loop validation 100 {'accuracy': 0.5, 'nll': 0.7079397047042847}
+STATUS {'stage': 'failed', 'pid': 38016, 'utc': '2026-09-30T15:48:58Z', 'error': "Command '['D:\\\\solver_consistent_stage0\\\\.venv\\\\Scripts\\\\python.exe', 'train.py', '--model', 'vanilla_loop', '--sanity']' returned non-zero exit status 15.", 'traceback': 'Traceback (most recent call last):\n  File "D:\\solver_consistent_stage0\\run_pipeline.py", line 102, in <module>\n    try: main()\n  File "D:\\solver_consistent_stage0\\run_pipeline.py", line 89, in main\n    status(\'Check A depth1\',model=name); command([\'train.py\',\'--model\',name,\'--sanity\'])\n  File "D:\\solver_consistent_stage0\\run_pipeline.py", line 16, in command\n    else: subprocess.run([sys.executable]+args,check=True)\n  File "E:\\Anaconda\\envs\\Benchmark_TTA_Win\\lib\\subprocess.py", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'D:\\\\solver_consistent_stage0\\\\.venv\\\\Scripts\\\\python.exe\', \'train.py\', \'--model\', \'vanilla_loop\', \'--sanity\']\' returned non-zero exit status 15.\n'}

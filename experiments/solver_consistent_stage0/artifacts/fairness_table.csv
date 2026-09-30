@@ -1,0 +1,4 @@
+model,params,trainable_params,core_params,seed,planned_updates,completed_formal_updates,actual_formal_examples_seen,train_unique_examples_available,effective_batch,micro_batch,activation_checkpointing,max_len,optimizer,lr,weight_decay,train_budgets,train_wall_sec,train_peak_vram_mb,status
+vanilla_loop,17296386,17296386,6304768,0,2000,0,0,100000,128,8,True,704,AdamW,0.0003,0.01,"4,8",NA,NA,BLOCKED_INVALID_DATA
+step_conditioned_loop,17313826,17313826,6322208,0,2000,0,0,100000,128,8,True,704,AdamW,0.0003,0.01,"4,8",NA,NA,BLOCKED_INVALID_DATA
+vector_field,17313826,17313826,6322208,0,2000,0,0,100000,128,8,True,704,AdamW,0.0003,0.01,"4,8",NA,NA,BLOCKED_INVALID_DATA

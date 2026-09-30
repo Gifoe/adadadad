@@ -1,0 +1,1 @@
+{'micro_batch': 8, 'max_length': 704, 'activation_checkpointing': True, 'peak_vram_mb': 901.361328125, 'peak_reserved_mb': 1286.0, 'seconds': 1.6943318000412546}

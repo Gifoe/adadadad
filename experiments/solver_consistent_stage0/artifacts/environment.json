@@ -1,0 +1,11 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\solver_consistent_stage0\\.venv28\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.18363-SP0",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "total_vram_mb": 32579.4375,
+  "deterministic_algorithms": "enabled, warn_only=False; unsupported nondeterministic operations raise",
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+}

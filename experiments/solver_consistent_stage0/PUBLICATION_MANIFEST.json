@@ -1,0 +1,14 @@
+{
+  "dataset_archive_sha256": "c224bf04e733737c411cac9c3880339d9bbce029b0377817b728e25323ae30db",
+  "archive_bytes": 52462274,
+  "split_checksums_verified": true,
+  "publication_status": "UNCLEAR / BLOCKED_INVALID_DATA",
+  "formal_seed0_complete": false,
+  "upstream_commit": "0a6412b6fddf46324a1cb96e066dd7b3d89b87d6",
+  "excluded": [
+    "SSH connection helpers",
+    "large checkpoints/token arrays",
+    "discarded dataset pilots",
+    "upstream result ZIP files"
+  ]
+}

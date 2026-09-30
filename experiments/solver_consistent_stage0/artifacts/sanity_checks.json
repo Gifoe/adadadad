@@ -1,0 +1,12 @@
+{
+  "A": "NOT_PASSED: completed initial300-update vanilla depth1 gate stayed at50%; no three-model passing gates",
+  "B": "PASS: signature excludes dt/K/NFE/solver ID",
+  "C": "PASS: inference budgets do not mutate state_dict",
+  "D": "PASS: counted neural calls and ODE NFE",
+  "E": "PASS: positive steps sum to1",
+  "F": "PASS: eval dropout off and deterministic repeat",
+  "G": "PASS: final-config parameter spread <1%",
+  "H": "PASS: global canonical underlying IDs and text IDs disjoint; checksums verified; no isomorphic-template exclusion claim",
+  "I": "NOT_RUN: trained vector-field reference unavailable",
+  "extra_data_validity": "FAIL: zero-training frequency shortcut100% on135000 examples"
+}

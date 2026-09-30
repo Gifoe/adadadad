@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\solver_consistent_stage0\run_pipeline.py", line 102, in <module>
+    try: main()
+  File "D:\solver_consistent_stage0\run_pipeline.py", line 89, in main
+    status('Check A depth1',model=name); command(['train.py','--model',name,'--sanity'])
+  File "D:\solver_consistent_stage0\run_pipeline.py", line 16, in command
+    else: subprocess.run([sys.executable]+args,check=True)
+  File "E:\Anaconda\envs\Benchmark_TTA_Win\lib\subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\solver_consistent_stage0\\.venv\\Scripts\\python.exe', 'train.py', '--model', 'vanilla_loop', '--sanity']' returned non-zero exit status 3221225477.

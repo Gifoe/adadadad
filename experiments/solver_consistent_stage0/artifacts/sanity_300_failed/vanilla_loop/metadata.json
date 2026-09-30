@@ -1,0 +1,60 @@
+{
+  "update": 300,
+  "config": {
+    "seed": 0,
+    "d_model": 512,
+    "n_heads": 8,
+    "d_ff": 2048,
+    "dropout": 0.1,
+    "vocab_size": 8192,
+    "max_length": 480,
+    "stem_blocks": 3,
+    "core_blocks": 1,
+    "activation_checkpointing": false,
+    "updates": 300,
+    "effective_batch": 128,
+    "micro_batch": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.05,
+    "grad_clip": 1.0,
+    "precision": "bf16",
+    "train_budgets": [
+      4,
+      8
+    ],
+    "eval_budgets": [
+      3,
+      4,
+      5,
+      7,
+      8,
+      12,
+      16
+    ],
+    "eval_batch": 32,
+    "validation_interval": 100,
+    "diagnostic_count": 512,
+    "latency_warmups": 20,
+    "latency_batches": 100,
+    "actual_vocab_size": 6766
+  },
+  "plan_sha256": "7fe027881733473cfc920da816d7a835b745f1554c565f8a0acdd133f564619a",
+  "validation": {
+    "accuracy": 0.5,
+    "nll": 0.6933085144996644
+  },
+  "best_accuracy": 0.5,
+  "best_nll": 0.6933085144996644,
+  "training_wall_sec": 50.49399389998871,
+  "examples_seen": 38400,
+  "tokens_seen": 5556008,
+  "examples_per_sec": 760.4864862949291,
+  "tokens_per_sec": 110033.04692048221,
+  "peak_vram_mb": 7432.8408203125,
+  "counts": {
+    "params": 17051650,
+    "trainable_params": 17051650,
+    "core_params": 3152384
+  }
+}

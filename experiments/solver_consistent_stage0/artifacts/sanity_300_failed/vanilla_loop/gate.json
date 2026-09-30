@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "threshold": 0.65,
+  "validation_accuracy": 0.5,
+  "updates": 300
+}

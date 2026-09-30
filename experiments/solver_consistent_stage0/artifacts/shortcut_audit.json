@@ -1,0 +1,25 @@
+{
+  "query_only": {
+    "validation": 0.5233,
+    "iid": 0.527,
+    "ood_6": 0.5116,
+    "ood_8": 0.5146,
+    "ood_12": 0.5194
+  },
+  "bag_of_words": {
+    "validation": 0.4945,
+    "iid": 0.4976,
+    "ood_6": 0.512,
+    "ood_8": 0.4952,
+    "ood_12": 0.4904
+  },
+  "negation_parity_no_training": {
+    "train": 0.50185,
+    "validation": 0.5027,
+    "iid": 0.5044,
+    "ood_6": 0.4954,
+    "ood_8": 0.4988,
+    "ood_12": 0.507
+  },
+  "negation_parity_caution": "If near perfect, inference hops are unnecessary for this dataset; report shortcut-dominated conclusions."
+}

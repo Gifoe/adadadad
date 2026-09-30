@@ -1,0 +1,7 @@
+{
+  "stage": "failed",
+  "pid": 29348,
+  "utc": "2026-09-30T15:07:56Z",
+  "error": "Command '['D:\\\\solver_consistent_stage0\\\\.venv\\\\Scripts\\\\python.exe', 'train.py', '--model', 'vanilla_loop', '--sanity']' returned non-zero exit status 1.",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\solver_consistent_stage0\\run_pipeline.py\", line 102, in <module>\n    try: main()\n  File \"D:\\solver_consistent_stage0\\run_pipeline.py\", line 89, in main\n    status('Check A depth1',model=name); command(['train.py','--model',name,'--sanity'])\n  File \"D:\\solver_consistent_stage0\\run_pipeline.py\", line 16, in command\n    else: subprocess.run([sys.executable]+args,check=True)\n  File \"E:\\Anaconda\\envs\\Benchmark_TTA_Win\\lib\\subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['D:\\\\solver_consistent_stage0\\\\.venv\\\\Scripts\\\\python.exe', 'train.py', '--model', 'vanilla_loop', '--sanity']' returned non-zero exit status 1.\n"
+}

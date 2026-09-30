@@ -1,0 +1,16 @@
+[
+  {
+    "micro_batch": 64,
+    "oom": true
+  },
+  {
+    "micro_batch": 32,
+    "max_length": 704,
+    "peak_vram_mb": 31520.82275390625
+  },
+  {
+    "micro_batch": 16,
+    "max_length": 704,
+    "peak_vram_mb": 15986.451171875
+  }
+]

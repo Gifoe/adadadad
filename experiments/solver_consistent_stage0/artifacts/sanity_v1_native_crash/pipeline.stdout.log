@@ -1,0 +1,93 @@
+STATUS {'stage': 'initializing', 'pid': 12924, 'utc': '2026-09-30T15:13:22Z'}
+STATUS {'stage': 'command', 'pid': 12924, 'utc': '2026-09-30T15:13:23Z', 'command': ['-m', 'pip', 'freeze']}
+STATUS {'stage': 'A2 tokenizer', 'pid': 12924, 'utc': '2026-09-30T15:13:24Z'}
+PARAMETERS vanilla_loop {'params': 17051650, 'trainable_params': 17051650, 'core_params': 3152384}
+PARAMETERS step_conditioned_loop {'params': 17069090, 'trainable_params': 17069090, 'core_params': 3169824}
+PARAMETERS vector_field {'params': 17069090, 'trainable_params': 17069090, 'core_params': 3169824}
+STATUS {'stage': 'command', 'pid': 12924, 'utc': '2026-09-30T15:13:25Z', 'command': ['-m', 'pytest', 'tests', '-q']}
+STATUS {'stage': 'command', 'pid': 12924, 'utc': '2026-09-30T15:13:28Z', 'command': ['data/audit_semantics.py']}
+Semantic/minimum-hop audit True {'iid': {'checked': 256}, 'ood_12': {'checked': 64}, 'ood_6': {'checked': 64}, 'ood_8': {'checked': 64}, 'train': {'checked': 256}, 'validation': {'checked': 256}}
+STATUS {'stage': 'A1 shortcut audit', 'pid': 12924, 'utc': '2026-09-30T15:13:30Z'}
+STATUS {'stage': 'Check A depth1', 'pid': 12924, 'utc': '2026-09-30T15:13:39Z', 'model': 'vanilla_loop'}
+STATUS {'stage': 'command', 'pid': 12924, 'utc': '2026-09-30T15:13:39Z', 'command': ['train.py', '--model', 'vanilla_loop', '--sanity']}
+vanilla_loop {'params': 17051650, 'trainable_params': 17051650, 'core_params': 3152384}
+vanilla_loop {'update': 20, 'budget': 4, 'loss': 0.7055184841156006, 'lr': 6.299999999999999e-05, 'elapsed_sec': 3.4255865000013728}
+vanilla_loop {'update': 40, 'budget': 4, 'loss': 0.6935966610908508, 'lr': 0.00012299999999999998, 'elapsed_sec': 6.223581999976886}
+vanilla_loop {'update': 60, 'budget': 8, 'loss': 0.7068827152252197, 'lr': 0.00018299999999999998, 'elapsed_sec': 9.032680299977073}
+vanilla_loop {'update': 80, 'budget': 4, 'loss': 0.729048877954483, 'lr': 0.000243, 'elapsed_sec': 11.613492399977986}
+vanilla_loop {'update': 100, 'budget': 8, 'loss': 0.6976152062416077, 'lr': 0.0003, 'elapsed_sec': 14.49705889998586}
+vanilla_loop validation 100 {'accuracy': 0.5, 'nll': 0.693086406135559}
+vanilla_loop {'update': 120, 'budget': 8, 'loss': 0.7101110517978668, 'lr': 0.0002999179886011389, 'elapsed_sec': 18.63322839999455}
+vanilla_loop {'update': 140, 'budget': 8, 'loss': 0.6959984004497528, 'lr': 0.00029967204408281613, 'elapsed_sec': 21.541442299989285}
+vanilla_loop {'update': 160, 'budget': 8, 'loss': 0.6924166083335876, 'lr': 0.0002992624353817517, 'elapsed_sec': 24.668679299997166}
+vanilla_loop {'update': 180, 'budget': 8, 'loss': 0.6929492950439453, 'lr': 0.00029868961039904624, 'elapsed_sec': 27.643416099977912}
+vanilla_loop {'update': 200, 'budget': 8, 'loss': 0.7543822526931763, 'lr': 0.00029795419551040833, 'elapsed_sec': 30.37952529999893}
+vanilla_loop validation 200 {'accuracy': 0.5, 'nll': 0.7282155227661132}
+vanilla_loop {'update': 220, 'budget': 8, 'loss': 0.6978631019592285, 'lr': 0.0002970569948812214, 'elapsed_sec': 34.214719799987506}
+vanilla_loop {'update': 240, 'budget': 8, 'loss': 0.6898133158683777, 'lr': 0.0002959989895872009, 'elapsed_sec': 36.92482009998639}
+vanilla_loop {'update': 260, 'budget': 8, 'loss': 0.7101535201072693, 'lr': 0.0002947813365416023, 'elapsed_sec': 39.78014180000173}
+vanilla_loop {'update': 280, 'budget': 4, 'loss': 0.7397008836269379, 'lr': 0.0002934053672301536, 'elapsed_sec': 42.396431300003314}
+vanilla_loop {'update': 300, 'budget': 4, 'loss': 0.7015568017959595, 'lr': 0.00029187258625509513, 'elapsed_sec': 45.34482719999505}
+vanilla_loop validation 300 {'accuracy': 0.5, 'nll': 0.706551113319397}
+vanilla_loop {'update': 320, 'budget': 8, 'loss': 0.6958361566066742, 'lr': 0.0002901846696899191, 'elapsed_sec': 48.9527262999909}
+vanilla_loop {'update': 340, 'budget': 4, 'loss': 0.6984652578830719, 'lr': 0.0002883434632466077, 'elapsed_sec': 51.8102394999878}
+vanilla_loop {'update': 360, 'budget': 4, 'loss': 0.6931660771369934, 'lr': 0.00028635098025737434, 'elapsed_sec': 54.569938600005116}
+vanilla_loop {'update': 380, 'budget': 8, 'loss': 0.7102681696414948, 'lr': 0.0002842093994731145, 'elapsed_sec': 57.6622715999838}
+vanilla_loop {'update': 400, 'budget': 8, 'loss': 0.7164943814277649, 'lr': 0.00028192106268097334, 'elapsed_sec': 60.598271099996055}
+vanilla_loop validation 400 {'accuracy': 0.5, 'nll': 0.7046351759910584}
+vanilla_loop {'update': 420, 'budget': 4, 'loss': 0.702800452709198, 'lr': 0.00027948847214363603, 'elapsed_sec': 64.28075199999148}
+vanilla_loop {'update': 440, 'budget': 4, 'loss': 0.7004290521144867, 'lr': 0.0002769142878631403, 'elapsed_sec': 67.08296669999254}
+vanilla_loop {'update': 460, 'budget': 8, 'loss': 0.7000406682491302, 'lr': 0.000274201324672203, 'elapsed_sec': 70.15713969999342}
+vanilla_loop {'update': 480, 'budget': 8, 'loss': 0.7030328512191772, 'lr': 0.0002713525491562421, 'elapsed_sec': 73.78530099999625}
+vanilla_loop {'update': 500, 'budget': 4, 'loss': 0.6993298530578613, 'lr': 0.00026837107640945905, 'elapsed_sec': 76.82291499999701}
+vanilla_loop validation 500 {'accuracy': 0.5, 'nll': 0.6985222659111023}
+vanilla_loop {'update': 520, 'budget': 8, 'loss': 0.6923078894615173, 'lr': 0.00026526016662852886, 'elapsed_sec': 80.38352360000135}
+vanilla_loop {'update': 540, 'budget': 4, 'loss': 0.6990428566932678, 'lr': 0.0002620232215476231, 'elapsed_sec': 83.11854289998882}
+vanilla_loop {'update': 560, 'budget': 8, 'loss': 0.6922418773174286, 'lr': 0.00025866378071866334, 'elapsed_sec': 85.90923459999613}
+vanilla_loop {'update': 580, 'budget': 4, 'loss': 0.7013300359249115, 'lr': 0.00025518551764087326, 'elapsed_sec': 88.8069736000034}
+vanilla_loop {'update': 600, 'budget': 4, 'loss': 0.6286837756633759, 'lr': 0.00025159223574386114, 'elapsed_sec': 91.84520419998444}
+vanilla_loop validation 600 {'accuracy': 0.5152, 'nll': 0.7019996719360352}
+vanilla_loop {'update': 620, 'budget': 8, 'loss': 0.6794776916503906, 'lr': 0.00024788786422862526, 'elapsed_sec': 95.9941519999993}
+vanilla_loop {'update': 640, 'budget': 4, 'loss': 0.6986141502857208, 'lr': 0.00024407645377103054, 'elapsed_sec': 98.69138679999742}
+vanilla_loop {'update': 660, 'budget': 8, 'loss': 0.6962575018405914, 'lr': 0.00024016217209245374, 'elapsed_sec': 101.47917449998204}
+vanilla_loop {'update': 680, 'budget': 8, 'loss': 0.678938627243042, 'lr': 0.0002361492994024415, 'elapsed_sec': 104.51291399999172}
+vanilla_loop {'update': 700, 'budget': 8, 'loss': 0.6767730116844177, 'lr': 0.00023204222371836402, 'elapsed_sec': 107.3694961000001}
+vanilla_loop validation 700 {'accuracy': 0.5048, 'nll': 0.7026590489387512}
+vanilla_loop {'update': 720, 'budget': 8, 'loss': 0.7041685581207275, 'lr': 0.00022784543606718227, 'elapsed_sec': 111.13121439999668}
+vanilla_loop {'update': 740, 'budget': 8, 'loss': 0.6781346201896667, 'lr': 0.00022356352557457618, 'elapsed_sec': 114.18048290000297}
+vanilla_loop {'update': 760, 'budget': 4, 'loss': 0.6712427139282227, 'lr': 0.00021920117444680317, 'elapsed_sec': 116.72208659999887}
+vanilla_loop {'update': 780, 'budget': 8, 'loss': 0.6889134347438812, 'lr': 0.0002147631528507739, 'elapsed_sec': 119.51932189997751}
+vanilla_loop {'update': 800, 'budget': 4, 'loss': 0.6666356921195984, 'lr': 0.0002102543136979454, 'elapsed_sec': 122.37626249997993}
+vanilla_loop validation 800 {'accuracy': 0.506, 'nll': 0.7390403031349182}
+vanilla_loop {'update': 820, 'budget': 4, 'loss': 0.6788532435894012, 'lr': 0.0002056795873377331, 'elapsed_sec': 126.21259239999927}
+vanilla_loop {'update': 840, 'budget': 4, 'loss': 0.6761438250541687, 'lr': 0.00020104397616624645, 'elapsed_sec': 128.85728209998342}
+vanilla_loop {'update': 860, 'budget': 8, 'loss': 0.6214323341846466, 'lr': 0.0001963525491562421, 'elapsed_sec': 131.66610869998112}
+vanilla_loop {'update': 880, 'budget': 4, 'loss': 0.6267598867416382, 'lr': 0.00019161043631427672, 'elapsed_sec': 134.55702340000425}
+vanilla_loop {'update': 900, 'budget': 8, 'loss': 0.6470819413661957, 'lr': 0.00018682282307111987, 'elapsed_sec': 137.40786659999867}
+vanilla_loop validation 900 {'accuracy': 0.4988, 'nll': 0.7471208080291748}
+vanilla_loop {'update': 920, 'budget': 4, 'loss': 0.6110215187072754, 'lr': 0.00018199494461156203, 'elapsed_sec': 141.49482719998923}
+vanilla_loop {'update': 940, 'budget': 8, 'loss': 0.6299079060554504, 'lr': 0.00017713208014981646, 'elapsed_sec': 144.33495809999295}
+vanilla_loop {'update': 960, 'budget': 8, 'loss': 0.6322487592697144, 'lr': 0.00017223954715677627, 'elapsed_sec': 147.27240869999514}
+vanilla_loop {'update': 980, 'budget': 4, 'loss': 0.5476716160774231, 'lr': 0.0001673226955454379, 'elapsed_sec': 150.11165139998775}
+vanilla_loop {'update': 1000, 'budget': 4, 'loss': 0.505017951130867, 'lr': 0.00016238690182084986, 'elapsed_sec': 153.34290749998763}
+vanilla_loop validation 1000 {'accuracy': 0.4852, 'nll': 0.860261342048645}
+vanilla_loop {'update': 1020, 'budget': 8, 'loss': 0.5235436260700226, 'lr': 0.00015743756320098332, 'elapsed_sec': 157.249616599991}
+vanilla_loop {'update': 1040, 'budget': 8, 'loss': 0.5219404101371765, 'lr': 0.00015248009171495378, 'elapsed_sec': 160.17670680000447}
+vanilla_loop {'update': 1060, 'budget': 4, 'loss': 0.5568726360797882, 'lr': 0.00014751990828504625, 'elapsed_sec': 162.92525249999017}
+vanilla_loop {'update': 1080, 'budget': 8, 'loss': 0.5843615531921387, 'lr': 0.00014256243679901666, 'elapsed_sec': 165.66320449998602}
+vanilla_loop {'update': 1100, 'budget': 8, 'loss': 0.5485314130783081, 'lr': 0.0001376130981791502, 'elapsed_sec': 168.24445090000518}
+vanilla_loop validation 1100 {'accuracy': 0.4836, 'nll': 0.8587789501190185}
+vanilla_loop {'update': 1120, 'budget': 8, 'loss': 0.5645573735237122, 'lr': 0.00013267730445456208, 'elapsed_sec': 172.11979689999134}
+vanilla_loop {'update': 1140, 'budget': 4, 'loss': 0.5282991826534271, 'lr': 0.0001277604528432237, 'elapsed_sec': 174.97583280000254}
+vanilla_loop {'update': 1160, 'budget': 4, 'loss': 0.5234982073307037, 'lr': 0.00012286791985018352, 'elapsed_sec': 177.74594510000315}
+vanilla_loop {'update': 1180, 'budget': 4, 'loss': 0.37416771054267883, 'lr': 0.00011800505538843798, 'elapsed_sec': 180.7031616999884}
+vanilla_loop {'update': 1200, 'budget': 4, 'loss': 0.4416808784008026, 'lr': 0.00011317717692888012, 'elapsed_sec': 183.48599419998936}
+vanilla_loop validation 1200 {'accuracy': 0.4932, 'nll': 1.069489849472046}
+vanilla_loop {'update': 1220, 'budget': 4, 'loss': 0.4053380936384201, 'lr': 0.00010838956368572334, 'elapsed_sec': 187.1290567999822}
+vanilla_loop {'update': 1240, 'budget': 4, 'loss': 0.31277813017368317, 'lr': 0.0001036474508437579, 'elapsed_sec': 190.13238229998387}
+vanilla_loop {'update': 1260, 'budget': 8, 'loss': 0.3401532918214798, 'lr': 9.895602383375357e-05, 'elapsed_sec': 192.96847089999937}
+vanilla_loop {'update': 1280, 'budget': 8, 'loss': 0.2855556830763817, 'lr': 9.432041266226686e-05, 'elapsed_sec': 195.56770319998031}
+vanilla_loop {'update': 1300, 'budget': 4, 'loss': 0.4068831354379654, 'lr': 8.974568630205459e-05, 'elapsed_sec': 198.42280289999326}
+vanilla_loop validation 1300 {'accuracy': 0.482, 'nll': 1.1514667583465577}
+vanilla_loop {'update': 1320, 'budget': 4, 'loss': 0.34611618518829346, 'lr': 8.523684714922608e-05, 'elapsed_sec': 202.13219469998148}
+STATUS {'stage': 'failed', 'pid': 12924, 'utc': '2026-09-30T15:17:10Z', 'error': "Command '['D:\\\\solver_consistent_stage0\\\\.venv\\\\Scripts\\\\python.exe', 'train.py', '--model', 'vanilla_loop', '--sanity']' returned non-zero exit status 3221225477.", 'traceback': 'Traceback (most recent call last):\n  File "D:\\solver_consistent_stage0\\run_pipeline.py", line 102, in <module>\n    try: main()\n  File "D:\\solver_consistent_stage0\\run_pipeline.py", line 89, in main\n    status(\'Check A depth1\',model=name); command([\'train.py\',\'--model\',name,\'--sanity\'])\n  File "D:\\solver_consistent_stage0\\run_pipeline.py", line 16, in command\n    else: subprocess.run([sys.executable]+args,check=True)\n  File "E:\\Anaconda\\envs\\Benchmark_TTA_Win\\lib\\subprocess.py", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'D:\\\\solver_consistent_stage0\\\\.venv\\\\Scripts\\\\python.exe\', \'train.py\', \'--model\', \'vanilla_loop\', \'--sanity\']\' returned non-zero exit status 3221225477.\n'}

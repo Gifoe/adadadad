@@ -1,0 +1,1317 @@
+你现在负责实现并运行一个严格受控的 Stage-0 实验，项目暂称：
+
+**Solver-Consistent Recurrent Reasoning — Stage 0**
+
+目标不是追求 SOTA，也不是写论文，而是回答两个最基础的问题：
+
+1. 现有 recurrent-depth Transformer 在改变 test-time compute budget 时，是否存在可重复、会影响正确率的 computation / trajectory sensitivity？
+2. 如果把 recurrent update 改成 step-size-independent vector field，并用固定数值积分执行，相同现象是否自然减弱？
+
+如果第 1 个问题本身不成立，则本项目应停止，不继续增加更复杂的方法。
+
+---
+
+# 0. 总原则
+
+请先完整检查当前 repository：
+
+- 已有代码结构；
+- environment / requirements；
+- 是否已有 Transformer、dataset、trainer、logging、evaluation 代码；
+- 是否已有 ProntoQA 数据或生成脚本；
+- 是否已有 recurrent Transformer 实现。
+
+优先复用已有基础设施，不重复造轮子。
+
+不得删除、覆盖或破坏仓库中与本实验无关的代码。
+
+新实验统一放到类似：
+
+`experiments/solver_consistent_stage0/`
+
+如果仓库已有固定目录规范，则遵循已有规范。
+
+完成后必须提供：
+
+1. 可运行代码；
+2. 所有 config；
+3. README；
+4. 数据生成脚本；
+5. 单元测试；
+6. seed=0 的完整实验结果；
+7. 自动汇总 CSV；
+8. 一份 Markdown 实验报告。
+
+禁止只写代码而不实际运行最小实验。
+
+---
+
+# 1. 当前阶段明确禁止做的事情
+
+Stage-0 暂时不要加入：
+
+- Flow Matching；
+- teacher hidden-state supervision；
+- hidden trajectory distillation；
+- solver-consistency loss；
+- coarse/fine consistency loss；
+- adaptive ODE solver；
+- adjoint method；
+- learned halting；
+- dynamic compute allocation；
+- RL；
+- chain-of-thought supervision；
+- 大模型；
+- 任何为了刷结果额外加入的复杂模块。
+
+当前统一训练目标只有：
+
+`L = CrossEntropy(task prediction, label)`
+
+我们的目的就是先隔离：
+
+**architecture / discretization parameterization 本身产生什么作用。**
+
+---
+
+# 2. Dataset：ProntoQA
+
+优先使用官方 ProntoQA generator 或仓库已有的可靠实现。
+
+如果已有官方生成代码，直接调用，不要自己重新解释逻辑规则。
+
+任务形式：
+
+`input text -> binary label`
+
+只监督最终 true / false label。
+
+不要提供 reasoning chain 给模型。
+
+## 2.1 数据划分
+
+生成：
+
+- train：100,000 examples
+- validation：10,000 examples
+- IID test：10,000 examples
+- OOD depth test：
+  - depth=6：5,000
+  - depth=8：5,000
+  - depth=12：5,000
+
+训练 reasoning depth：
+
+`1–4`
+
+IID test：
+
+`1–4`
+
+OOD：
+
+`6 / 8 / 12`
+
+如果官方 generator 的 depth 定义不同，以官方定义为准，并在 README 中记录清楚。
+
+标签必须尽可能保持 50/50 平衡。
+
+不同 split 不允许通过简单的重复模板或完全相同的 underlying example 泄漏。
+
+记录：
+
+- random seed；
+- generator version；
+- generation arguments；
+- example 数量；
+- label distribution；
+- depth distribution；
+- checksum。
+
+---
+
+# 3. Tokenization
+
+Stage-0 不需要使用超大 tokenizer。
+
+优先：
+
+- 复用仓库 tokenizer；
+
+否则：
+
+- 在 train split 上训练 BPE tokenizer；
+- vocab size = 8,192；
+- max sequence length = 256。
+
+不得使用 test data 训练 tokenizer。
+
+记录 truncation rate。
+
+如果超过 1% examples 被截断，则检查数据并适当提高 max length，但不要未经说明修改。
+
+---
+
+# 4. Backbone
+
+三个模型必须尽可能使用完全相同的 backbone capacity。
+
+建议初始配置：
+
+- `d_model = 512`
+- `n_heads = 8`
+- `d_ff = 2048`
+- activation = GELU
+- pre-norm
+- dropout = 0.1
+- max_length = 256
+
+模型由三部分组成：
+
+1. embedding / input encoder
+2. recurrent reasoning core
+3. binary classifier
+
+可以使用：
+
+- 约 2–3 个非循环 input/stem Transformer blocks；
+- 约 1–2 个 shared Transformer blocks 作为 recurrent core。
+
+最终参数量目标：
+
+`15M–30M`
+
+无需为了精确达到 20M 人为添加无意义参数。
+
+三个主要模型总参数量差异：
+
+`< 1%`
+
+若时间编码造成少量额外参数，应记录实际 parameter count。
+
+必须在实验开始打印：
+
+- total parameters；
+- trainable parameters；
+- recurrent core parameters。
+
+---
+
+# 5. 三个核心模型
+
+实现三个模型。
+
+不要把第三方工作的名字错误地贴到近似实现上。
+
+---
+
+## Model A — Vanilla Recurrent Loop
+
+名字统一：
+
+`vanilla_loop`
+
+输入经过 encoder 得到：
+
+`H_0`
+
+然后共享 recurrent block：
+
+`H_{k+1} = B_theta(H_k)`
+
+执行 K 次。
+
+这里：
+
+- 不输入 t；
+- 不输入 dt；
+- 不输入 total budget K。
+
+K 是纯粹的重复次数。
+
+注意：
+
+不要人为乘 `1/K`。
+
+它代表普通 recurrent-depth Transformer 的离散 recurrence。
+
+---
+
+## Model B — Step-Conditioned Recurrent Loop
+
+名字统一：
+
+`step_conditioned_loop`
+
+不要在报告中把它称为“exact LoopFormer”。
+
+这是一个受 LoopFormer 思想启发的、用于受控比较的 step-conditioned baseline。
+
+状态更新：
+
+`H_{k+1} = H_k + G_theta(H_k, t_k, dt_k)`
+
+其中：
+
+`t_k` 和 `dt_k`
+
+通过同一个小型 conditioning mechanism 注入 recurrent core，例如：
+
+- sinusoidal / Fourier encoding；
+- small MLP；
+- FiLM / additive conditioning。
+
+不要增加明显参数优势。
+
+uniform schedule：
+
+`dt_k = 1 / K`
+
+`t_k = k / K`
+
+这个模型允许 reasoning rule 显式依赖 step size。
+
+Stage-0 不加入 shortcut consistency loss。
+
+---
+
+## Model C — Step-Size-Independent Vector Field
+
+名字统一：
+
+`vector_field`
+
+定义：
+
+`dH/dt = v_theta(H, t)`
+
+核心要求：
+
+`v_theta`
+
+只能访问：
+
+- 当前 state H；
+- continuous time t。
+
+它绝对不能访问：
+
+- dt；
+- K；
+- total number of steps；
+- solver name；
+- remaining NFE；
+- schedule identity。
+
+检查所有代码路径，防止这些信息通过 embedding、config 或 cache 泄漏。
+
+Euler：
+
+`H_{k+1} = H_k + dt_k * v_theta(H_k, t_k)`
+
+这里的 `dt` 只属于 solver，不属于 neural network。
+
+注意：
+
+Transformer recurrent block 原本通常输出新的 hidden state。
+
+如果用于 vector field，不要直接把：
+
+`B(H)`
+
+当作 derivative。
+
+应明确设计：
+
+`v_theta(H,t)`
+
+输出 state derivative / residual direction。
+
+必须检查数值尺度。
+
+如果需要，可以加入一个固定或可学习但与 dt 无关的 global residual scale。
+
+如果加入，记录并做统一初始化。
+
+---
+
+# 6. Numerical solver
+
+不要调用复杂 ODE package。
+
+Stage-0 手写固定步长：
+
+- Euler；
+- Heun；
+- RK4。
+
+这样可以精确控制 NFE。
+
+统一定义：
+
+**1 NFE = recurrent neural core 完整前向调用一次。**
+
+Euler：
+
+`1 NFE / integration step`
+
+Heun：
+
+`2 NFE / integration step`
+
+RK4：
+
+`4 NFE / integration step`
+
+必须写单元测试验证：
+
+- Euler N steps -> N NFE；
+- Heun N steps -> 2N NFE；
+- RK4 N steps -> 4N NFE。
+
+同时用一个简单已知 ODE，例如：
+
+`dy/dt = -y`
+
+验证三个 solver 随步长减小误差下降。
+
+这个单元测试只验证 solver implementation，不作为模型实验结论。
+
+---
+
+# 7. Training protocol
+
+Stage-0 只训练：
+
+`K_train ∈ {4, 8}`
+
+每个 batch 随机均匀选择：
+
+`K=4` 或 `K=8`
+
+三个模型必须看到：
+
+- 完全相同的训练 examples；
+- 完全相同的数据顺序；
+- 相同 optimizer；
+- 相同 effective batch size；
+- 相同 update 数；
+- 相同 seed。
+
+Model A：
+
+执行 K 次 recurrence。
+
+Model B：
+
+使用 uniform schedule：
+
+`dt = 1/K`
+
+Model C：
+
+训练时只使用 Euler：
+
+`dt = 1/K`
+
+不要在训练时使用 Heun / RK4。
+
+---
+
+# 8. Optimization
+
+初始建议：
+
+- precision = BF16
+- AdamW
+- lr = `3e-4`
+- weight decay = `0.01`
+- gradient clipping = `1.0`
+- warmup = 5%
+- cosine decay
+- effective batch size ≈ 128
+- max updates = 20,000
+
+如果显存不足：
+
+优先：
+
+1. gradient accumulation；
+2. activation checkpointing；
+3. 降低 micro batch。
+
+不要首先缩小模型。
+
+记录：
+
+- peak VRAM；
+- training wall time；
+- examples/sec；
+- tokens/sec。
+
+训练使用固定 update budget。
+
+保存：
+
+- best validation checkpoint；
+- final checkpoint。
+
+不要因为一个模型更早收敛就给它不同训练量。
+
+---
+
+# 9. Seed 策略
+
+第一轮：
+
+`seed = 0`
+
+先完成全流程。
+
+不要一开始直接启动 3 seeds。
+
+只有：
+
+- 所有 sanity checks 通过；
+- 模型正常学习；
+- 没有明显 implementation bug；
+
+才考虑 seed 1 / 2。
+
+Stage-0 报告中明确标注：
+
+`seed=0 is exploratory and not sufficient for statistical claims.`
+
+---
+
+# 10. Test-time compute budgets
+
+核心 unseen-budget 测试：
+
+`K / NFE = {3, 4, 5, 7, 8, 12, 16}`
+
+其中训练只见过：
+
+`4, 8`
+
+因此：
+
+`3, 5, 7, 12, 16`
+
+全部属于 unseen compute budget。
+
+---
+
+# 11. Vanilla Loop evaluation
+
+对于 `vanilla_loop`：
+
+直接执行：
+
+`K = 3,4,5,7,8,12,16`
+
+次 recurrence。
+
+不要人为构造 Euler / Heun / RK4。
+
+普通离散 recurrent model 不具有天然 numerical solver interface。
+
+不要对它进行不公平的“换求解器实验”。
+
+---
+
+# 12. Step-Conditioned Loop evaluation
+
+对：
+
+`step_conditioned_loop`
+
+首先测试 uniform：
+
+`dt_i = 1/K`
+
+同时额外测试两种 non-uniform schedules。
+
+所有 schedule 必须满足：
+
+`sum_i dt_i = 1`
+
+建议：
+
+### front-loaded
+
+前半段步长较小，后半段较大。
+
+### back-loaded
+
+前半段较大，后半段较小。
+
+不要让任何 dt <= 0。
+
+为了公平，三种 schedule 使用相同 step count K。
+
+记录每个 schedule 的完整 dt 序列。
+
+---
+
+# 13. Vector Field evaluation
+
+## 13.1 Euler budget extrapolation
+
+首先用 Euler：
+
+`NFE = {3,4,5,7,8,12,16}`
+
+对应：
+
+`steps = NFE`
+
+比较 accuracy / NLL / predictions。
+
+---
+
+## 13.2 Matched-NFE solver comparison
+
+使用：
+
+`NFE ∈ {4,8,12,16}`
+
+严格保证 NFE 一样。
+
+例如 NFE=8：
+
+- Euler：8 steps
+- Heun：4 steps
+- RK4：2 steps
+
+NFE=16：
+
+- Euler：16
+- Heun：8
+- RK4：4
+
+绝对不允许：
+
+“RK4 steps 和 Euler steps 相同”
+
+因为那样计算量不公平。
+
+---
+
+## 13.3 Non-uniform schedule
+
+Vector field 的 Euler 同样测试：
+
+- uniform
+- front-loaded
+- back-loaded
+
+每种 schedule：
+
+`sum(dt)=1`
+
+比较同一 K 下的结果。
+
+---
+
+# 14. 核心 metrics
+
+不要只输出 accuracy。
+
+每个：
+
+`model × dataset split × depth × budget × solver × schedule`
+
+至少记录：
+
+### Task
+
+- Accuracy
+- NLL
+- Brier score
+
+### Prediction stability
+
+选择训练预算 `K=8 / NFE=8` 作为一个主要 reference。
+
+对于其他 budget：
+
+`flip_rate`
+
+即：
+
+`pred_budget != pred_reference`
+
+进一步拆成：
+
+`harmful_flip`
+
+reference 正确，新 budget 错误：
+
+`pred_ref == y AND pred_new != y`
+
+以及：
+
+`recovery_flip`
+
+reference 错误，新 budget 正确：
+
+`pred_ref != y AND pred_new == y`
+
+必须同时报告。
+
+不能只报告 flip rate。
+
+---
+
+# 15. Output-distribution disagreement
+
+保存分类 logits。
+
+计算：
+
+- JS divergence；
+- absolute logit difference；
+- confidence difference。
+
+但这些属于 diagnostic。
+
+不能因为：
+
+`JS divergence 更低`
+
+就宣布模型更好。
+
+最终必须回到 task performance。
+
+---
+
+# 16. Hidden-state diagnostics
+
+仅对固定 diagnostic subset：
+
+`512–1000 examples`
+
+保存：
+
+最终 hidden state：
+
+`H(1)`
+
+不要为完整 test set 保存所有 token × all steps hidden states，避免浪费磁盘。
+
+同一个模型内部，可以计算：
+
+`||H_budget - H_reference||_F / (||H_reference||_F + eps)`
+
+但：
+
+禁止直接比较不同独立训练模型 raw hidden-state Euclidean distance 并声称谁的 reasoning 更接近。
+
+不同模型 hidden coordinate system 不一定一致。
+
+---
+
+# 17. Numerical convergence diagnostic
+
+只针对：
+
+`vector_field`
+
+使用固定 diagnostic subset。
+
+建立高精度 numerical reference。
+
+建议：
+
+RK4 with sufficiently fine steps，例如：
+
+- 32 integration steps = 128 NFE
+
+再与：
+
+- 64 integration steps = 256 NFE
+
+比较。
+
+如果两者 endpoint difference 已远小于主要实验中的误差，可以使用较细者作为 numerical reference。
+
+然后测试：
+
+Euler steps:
+
+`4,8,16,32,64`
+
+Heun:
+
+`2,4,8,16,32`
+
+RK4:
+
+`1,2,4,8,16`
+
+记录：
+
+`dt`
+
+和：
+
+`relative endpoint error`
+
+绘制：
+
+`log(error) vs log(dt)`
+
+可以拟合 slope，但不要硬编码：
+
+Euler 必须 = 1，
+Heun 必须 = 2，
+RK4 必须 = 4。
+
+Transformer dynamics 未必处在理想 asymptotic regime。
+
+这里只报告实际结果。
+
+最重要：
+
+**numerical convergence ≠ reasoning correctness**
+
+报告中必须明确区分。
+
+---
+
+# 18. 一个必须做的 control
+
+为了防止出现：
+
+“vector field 什么都不做，所以特别稳定”
+
+需要测：
+
+## Recurrent contribution
+
+比较正常 inference 与：
+
+`0 recurrent steps / bypass recurrent core`
+
+或者模型架构允许的最接近版本。
+
+如果：
+
+recurrent computation 对任务性能几乎没有贡献，
+
+则 solver consistency 没有意义。
+
+同时记录不同 budget 下：
+
+`||H_final - H_initial||`
+
+确认模型是否真的在更新 state。
+
+---
+
+# 19. Fairness
+
+三模型尽量保证：
+
+- 相同 tokenizer；
+- 相同 embeddings；
+- 相同 stem；
+- 相同 recurrent core width；
+- 相同 classifier；
+- 相近参数量；
+- 相同训练 examples；
+- 相同 optimizer；
+- 相同 updates；
+- 相同 batch；
+- 相同 initialization scheme。
+
+生成一张自动 fairness table：
+
+| model | params | train updates | train examples | max len | optimizer | lr | train budgets |
+|---|---:|---:|---:|---:|---|---:|---|
+
+任何差异必须自动写入报告。
+
+---
+
+# 20. 实际计算成本
+
+除了 NFE，还必须测真实 inference latency。
+
+固定：
+
+- GPU；
+- batch size；
+- sequence length distribution；
+- BF16；
+- warmup runs。
+
+对每种配置：
+
+先 warmup 20 次。
+
+然后至少测 100 个 batch。
+
+记录：
+
+- mean latency；
+- median latency；
+- p95 latency；
+- examples/sec；
+- peak VRAM。
+
+不要假定：
+
+`same NFE = exact same latency`
+
+NFE 是算法成本代理，wall-clock 是真实工程成本。
+
+---
+
+# 21. 最重要的四张图
+
+自动生成以下图。
+
+## Figure 1 — Accuracy vs compute budget
+
+x:
+
+`NFE / loop count`
+
+y:
+
+`accuracy`
+
+分别画：
+
+- vanilla_loop
+- step_conditioned_loop
+- vector_field Euler
+
+训练预算 4 和 8 用视觉标记。
+
+unseen budgets 清楚区分。
+
+---
+
+## Figure 2 — Harmful flip rate vs compute budget
+
+reference：
+
+`budget=8`
+
+y：
+
+`harmful_flip_rate`
+
+这是判断 compute-budget sensitivity 是否真的有害的主要图。
+
+---
+
+## Figure 3 — Same-NFE solver comparison
+
+仅 vector_field。
+
+x：
+
+`NFE`
+
+比较：
+
+- Euler
+- Heun
+- RK4
+
+展示：
+
+- accuracy
+或者 separate figure；
+- solver disagreement
+
+重点是公平 NFE。
+
+---
+
+## Figure 4 — Numerical convergence
+
+x：
+
+`log(dt)`
+
+y：
+
+`log(relative endpoint error)`
+
+Euler / Heun / RK4。
+
+这是 mechanism diagnostic，不要把它包装成最终性能贡献。
+
+---
+
+# 22. Results CSV
+
+生成：
+
+`stage0_results.csv`
+
+至少包含：
+
+- model
+- seed
+- split
+- reasoning_depth
+- budget
+- nfe
+- solver
+- schedule
+- accuracy
+- nll
+- brier
+- flip_rate_vs_8
+- harmful_flip_vs_8
+- recovery_flip_vs_8
+- js_vs_8
+- hidden_endpoint_distance_vs_8
+- latency_mean_ms
+- latency_p95_ms
+- peak_vram_mb
+
+没有定义的字段写 NA，不允许伪造。
+
+---
+
+# 23. Sanity checks
+
+正式实验前必须通过：
+
+### Check A
+
+三个模型在简单 depth=1 任务上明显高于随机水平。
+
+### Check B
+
+vector_field network forward signature 不接受：
+
+- dt
+- K
+- NFE
+- solver ID
+
+### Check C
+
+修改 vector-field inference step count 时，neural weights 完全不改变。
+
+### Check D
+
+Euler / Heun / RK4 NFE counter 正确。
+
+### Check E
+
+所有 solver 都满足：
+
+`sum(dt)=1`
+
+### Check F
+
+evaluation mode 下 dropout disabled。
+
+### Check G
+
+三个模型 parameter counts 差异 <1%，或报告无法满足的具体原因。
+
+### Check H
+
+不存在 test examples 出现在 training set。
+
+### Check I
+
+reference numerical solution 继续加倍 NFE 后变化已经显著小于 coarse solver error。
+
+---
+
+# 24. Stage-0 最终需要回答的问题
+
+最后生成：
+
+`STAGE0_REPORT.md`
+
+不要只罗列数字。
+
+按下面结构写。
+
+## 1. Experimental setup
+
+准确描述：
+
+- data；
+- model；
+- training budget；
+- evaluation budget；
+- hardware；
+- parameter count。
+
+## 2. Does budget sensitivity actually exist?
+
+重点回答：
+
+对于 vanilla recurrent model：
+
+- 3/5/7/12/16 unseen budgets 是否降低 accuracy？
+- harmful flips 有多少？
+- OOD depth 是否更严重？
+
+对于 step-conditioned baseline：
+
+- uniform / nonuniform schedule 是否导致不同结果？
+
+不能只看 hidden-state drift。
+
+必须判断 task-level consequence。
+
+## 3. Does the vector field reduce this sensitivity?
+
+比较：
+
+- task performance；
+- harmful flips；
+- schedule sensitivity；
+- solver disagreement。
+
+同时确认：
+
+- training-budget performance 有没有被牺牲；
+- recurrent computation 是否真的有用。
+
+## 4. Numerical behavior
+
+报告：
+
+- Euler / Heun / RK4；
+- convergence curves；
+- observed slopes。
+
+但明确写：
+
+numerical convergence itself does not establish improved reasoning.
+
+## 5. Alternative explanations
+
+主动检查：
+
+- vector field 是否只是更新幅度更小；
+- 是否只是 confidence 更低；
+- 是否 recurrent core 根本没有贡献；
+- 是否参数数目不同；
+- 是否某个模型训练得更慢；
+- 是否数据存在 shortcut；
+- 是否变化来自 sequence truncation。
+
+## 6. Decision
+
+最后只允许给以下三种结论之一：
+
+### GO
+
+同时出现：
+
+1. baseline 存在明确 task-level budget / schedule sensitivity；
+2. vector field 有意义地降低这种 sensitivity；
+3. 没有明显牺牲正常 budget 下的 accuracy。
+
+### UNCLEAR
+
+有迹象但 seed=0 不足，或 effect 太小。
+
+此时建议运行 seeds 1/2。
+
+### STOP
+
+如果：
+
+- baseline 本身基本不存在有害 sensitivity；
+
+或者：
+
+- vector field 只让 hidden states 更稳定，却没有 task benefit；
+
+或者：
+
+- vector field 明显牺牲正常 performance；
+
+则明确建议停止，不要用更多复杂 loss 强行救项目。
+
+---
+
+# 25. 一个探索性的继续门槛
+
+不要把下面数字当成论文 significance threshold，只作为决定是否值得继续花 GPU 的工程 gate。
+
+如果 seed=0 出现以下模式，可以进入 3-seed：
+
+- 至少一个 baseline 在多个 unseen budgets 或 OOD-depth 条件下出现明显的 task-level degradation；
+- harmful flip 不是极低的偶发现象；
+- vector_field 相比 baseline 明显降低 harmful flips；
+- vector_field 在 K/NFE=4、8 上 accuracy 没有明显下降。
+
+如果改善只体现在：
+
+- JS；
+- hidden distance；
+- convergence slope；
+
+而 accuracy / harmful flips 没改善，则不要自动继续。
+
+---
+
+# 26. 不允许的结果包装
+
+禁止写：
+
+“Vector field learned true reasoning trajectory”
+
+除非有额外证据。
+
+禁止写：
+
+“solver convergence proves reasoning”
+
+禁止。
+
+只能陈述：
+
+- numerical solutions converge；
+- predictions become more/less stable；
+- task accuracy changes；
+- unseen-budget robustness changes。
+
+不要把 numerical property 和 semantic reasoning 等同。
+
+---
+
+# 27. 代码组织建议
+
+例如：
+
+experiments/solver_consistent_stage0/
+    README.md
+    configs/
+        vanilla_loop.yaml
+        step_conditioned_loop.yaml
+        vector_field.yaml
+    data/
+        generate_prontoqa.py
+    models/
+        common.py
+        vanilla_loop.py
+        step_conditioned_loop.py
+        vector_field.py
+    solvers/
+        fixed_step.py
+    train.py
+    evaluate.py
+    diagnostics.py
+    benchmark_latency.py
+    aggregate_results.py
+    make_figures.py
+    tests/
+        test_solvers.py
+        test_nfe.py
+        test_no_dt_leak.py
+        test_data_split.py
+    artifacts/
+        stage0_results.csv
+        fairness_table.csv
+        figures/
+        STAGE0_REPORT.md
+
+如果 repository 已有更好的工程结构，则整合进入现有框架，不必机械复制。
+
+---
+
+# 28. 执行顺序
+
+严格按照：
+
+### A0
+repo audit + environment check
+
+### A1
+ProntoQA generation + leakage audit
+
+### A2
+tokenizer + dataloader
+
+### A3
+common backbone
+
+### A4
+vanilla_loop
+
+先确认能学习。
+
+### A5
+step_conditioned_loop
+
+### A6
+vector_field + Euler
+
+### A7
+Heun / RK4 + unit tests
+
+### A8
+seed=0 training
+
+三个模型全部训练完成。
+
+### A9
+budget extrapolation evaluation
+
+### A10
+schedule evaluation
+
+### A11
+matched-NFE solver evaluation
+
+### A12
+numerical convergence diagnostic
+
+### A13
+latency / VRAM benchmark
+
+### A14
+aggregate tables + figures
+
+### A15
+write STAGE0_REPORT.md
+
+不要在中间因为某个模型效果不好偷偷修改任务、参数量或测试协议。
+
+任何超参数修改都记录到：
+
+`EXPERIMENT_CHANGELOG.md`
+
+---
+
+# 29. 最终回复我时
+
+最终不要只说“完成”。
+
+给我：
+
+1. implementation summary；
+2. exact model parameter counts；
+3. dataset sizes；
+4. hardware / peak VRAM；
+5. 三个模型的主要结果表；
+6. unseen-budget accuracy；
+7. harmful flips；
+8. vector field 的 Euler/Heun/RK4 matched-NFE 结果；
+9. convergence diagnostic；
+10. 哪些 sanity checks passed / failed；
+11. 你独立判断该 Idea 是 GO / UNCLEAR / STOP；
+12. 所有重要 artifact 路径。
+
+如果发现实验设计中存在无法公平比较的问题，不要静默修正。
+
+在 report 中明确指出，并选择最保守的解释。

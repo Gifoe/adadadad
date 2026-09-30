@@ -1,0 +1,122 @@
+{
+  "method": "Select query-goal rule with most frequent antecedent concept, then compare its negation to query; no premise reachability or chain execution; no training",
+  "splits": {
+    "iid": {
+      "all": {
+        "accuracy": 1.0,
+        "n": 10000,
+        "unique_choice_fraction": 1.0
+      },
+      "1": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      },
+      "2": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      },
+      "3": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      },
+      "4": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      }
+    },
+    "ood_12": {
+      "all": {
+        "accuracy": 1.0,
+        "n": 5000,
+        "unique_choice_fraction": 1.0
+      },
+      "12": {
+        "accuracy": 1.0,
+        "n": 5000,
+        "unique_choice_fraction": 1.0
+      }
+    },
+    "ood_6": {
+      "all": {
+        "accuracy": 1.0,
+        "n": 5000,
+        "unique_choice_fraction": 1.0
+      },
+      "6": {
+        "accuracy": 1.0,
+        "n": 5000,
+        "unique_choice_fraction": 1.0
+      }
+    },
+    "ood_8": {
+      "all": {
+        "accuracy": 1.0,
+        "n": 5000,
+        "unique_choice_fraction": 1.0
+      },
+      "8": {
+        "accuracy": 1.0,
+        "n": 5000,
+        "unique_choice_fraction": 1.0
+      }
+    },
+    "train": {
+      "all": {
+        "accuracy": 1.0,
+        "n": 100000,
+        "unique_choice_fraction": 1.0
+      },
+      "1": {
+        "accuracy": 1.0,
+        "n": 25000,
+        "unique_choice_fraction": 1.0
+      },
+      "2": {
+        "accuracy": 1.0,
+        "n": 25000,
+        "unique_choice_fraction": 1.0
+      },
+      "3": {
+        "accuracy": 1.0,
+        "n": 25000,
+        "unique_choice_fraction": 1.0
+      },
+      "4": {
+        "accuracy": 1.0,
+        "n": 25000,
+        "unique_choice_fraction": 1.0
+      }
+    },
+    "validation": {
+      "all": {
+        "accuracy": 1.0,
+        "n": 10000,
+        "unique_choice_fraction": 1.0
+      },
+      "1": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      },
+      "2": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      },
+      "3": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      },
+      "4": {
+        "accuracy": 1.0,
+        "n": 2500,
+        "unique_choice_fraction": 1.0
+      }
+    }
+  }
+}

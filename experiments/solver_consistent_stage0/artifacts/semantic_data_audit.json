@@ -1,0 +1,25 @@
+{
+  "scope": "64 deterministic examples per available split/depth; audit only, no training supervision",
+  "splits": {
+    "iid": {
+      "checked": 256
+    },
+    "ood_12": {
+      "checked": 64
+    },
+    "ood_6": {
+      "checked": 64
+    },
+    "ood_8": {
+      "checked": 64
+    },
+    "train": {
+      "checked": 256
+    },
+    "validation": {
+      "checked": 256
+    }
+  },
+  "failures": [],
+  "passed": true
+}

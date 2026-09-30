@@ -1,0 +1,7 @@
+{
+  "decision": "UNCLEAR",
+  "execution_status": "BLOCKED_INVALID_DATA",
+  "formal_seed0_complete": false,
+  "reason": "A text-only, no-training antecedent-frequency heuristic solves all135000 examples, including all OOD depths. This dataset cannot isolate multihop reasoning. Learning gate not passed and native crashes also occurred. No task-level method comparison exists.",
+  "next_action": "Repair structural label shortcut, regenerate all splits and re-audit before any neural formal run. Diagnose Windows/CUDA faults; do not launch extra seeds or losses on current data."
+}

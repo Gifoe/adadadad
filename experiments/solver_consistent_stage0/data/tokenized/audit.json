@@ -1,0 +1,48 @@
+{
+  "iid": {
+    "count": 10000,
+    "max_length": 686,
+    "p99_length": 675.0,
+    "truncation_rate_at_256": 0.4849,
+    "truncation_rate": 0.0
+  },
+  "ood_12": {
+    "count": 5000,
+    "max_length": 687,
+    "p99_length": 680.0,
+    "truncation_rate_at_256": 1.0,
+    "truncation_rate": 0.0
+  },
+  "ood_6": {
+    "count": 5000,
+    "max_length": 687,
+    "p99_length": 679.0,
+    "truncation_rate_at_256": 0.844,
+    "truncation_rate": 0.0
+  },
+  "ood_8": {
+    "count": 5000,
+    "max_length": 685,
+    "p99_length": 680.0,
+    "truncation_rate_at_256": 1.0,
+    "truncation_rate": 0.0
+  },
+  "train": {
+    "count": 100000,
+    "max_length": 689,
+    "p99_length": 675.0,
+    "truncation_rate_at_256": 0.48884,
+    "truncation_rate": 0.0
+  },
+  "validation": {
+    "count": 10000,
+    "max_length": 685,
+    "p99_length": 677.0,
+    "truncation_rate_at_256": 0.4835,
+    "truncation_rate": 0.0
+  },
+  "chosen_max_length": 704,
+  "tokenizer_train_split_only": true,
+  "normalization": "lowercase; digit spans isolated before whitespace BPE; same concept ID shared across case/plural forms",
+  "tokenizer_sha256": "9b280cd73c6d7c9268392ee7952ac6957b29ddc9cdafedb30cd1cb1880d74013"
+}

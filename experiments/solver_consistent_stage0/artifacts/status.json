@@ -1,0 +1,7 @@
+{
+  "stage": "blocked",
+  "pid": 27344,
+  "utc": "2026-09-30T16:31:51Z",
+  "decision": "UNCLEAR",
+  "reason": "No-training structural shortcut solves >=95% IID; formal training prohibited on invalid task"
+}

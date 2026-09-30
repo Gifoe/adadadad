@@ -1,0 +1,8 @@
+torch==2.8.0
+numpy
+scipy
+tokenizers
+PyYAML
+matplotlib
+pytest
+scikit-learn

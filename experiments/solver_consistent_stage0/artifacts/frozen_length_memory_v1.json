@@ -1,0 +1,7 @@
+[
+  {
+    "micro_batch": 64,
+    "max_length": 480,
+    "peak_vram_mb": 7481.04931640625
+  }
+]

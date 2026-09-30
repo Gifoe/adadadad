@@ -14,3 +14,7 @@ python scripts/run_mock_pipeline.py --config configs/method/hsc_tta.yaml --devic
 
 See `docs/CPU_PIPELINE.md` and `docs/METHOD_SPEC.md` for protocols and statistical assumptions.
 
+
+## Solver-Consistent Recurrent Reasoning — Stage 0
+
+An independent experiment is available in [experiments/solver_consistent_stage0](experiments/solver_consistent_stage0/README.md), with [the execution report](experiments/solver_consistent_stage0/artifacts/STAGE0_REPORT.md) and [actual data-shortcut results](experiments/solver_consistent_stage0/artifacts/data_shortcut_results.csv). Current decision: **UNCLEAR / BLOCKED_INVALID_DATA**. Formal seed-0 model comparisons are incomplete; a zero-training structural heuristic solves the current135000-example dataset with100% accuracy.

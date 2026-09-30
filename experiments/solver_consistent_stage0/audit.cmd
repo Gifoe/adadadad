@@ -1,0 +1,2 @@
+E:\Anaconda\envs\Benchmark_TTA_Win\python.exe -c "import torch,importlib.util; print(torch.__version__,torch.cuda.is_available(),torch.cuda.get_device_name(0)); print({x:bool(importlib.util.find_spec(x)) for x in ['tokenizers','scipy','yaml','matplotlib','pytest']})"
+E:\Anaconda\python.exe -c "import importlib.util; print('base', {x:bool(importlib.util.find_spec(x)) for x in ['torch','tokenizers','scipy']})"

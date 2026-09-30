@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\solver_consistent_stage0\train.py", line 84, in <module>
+    p=argparse.ArgumentParser(); p.add_argument('--model',choices=NAMES,required=True); p.add_argument('--sanity',action='store_true'); a=p.parse_args(); train(a.model,sanity=a.sanity)
+  File "D:\solver_consistent_stage0\train.py", line 80, in train
+    if not passed: raise RuntimeError(f'Check A failed: {name} depth1 accuracy {best}; formal training gated')
+RuntimeError: Check A failed: vanilla_loop depth1 accuracy 0.5; formal training gated
+Traceback (most recent call last):
+  File "D:\solver_consistent_stage0\run_pipeline.py", line 102, in <module>
+    try: main()
+  File "D:\solver_consistent_stage0\run_pipeline.py", line 89, in main
+    status('Check A depth1',model=name); command(['train.py','--model',name,'--sanity'])
+  File "D:\solver_consistent_stage0\run_pipeline.py", line 16, in command
+    else: subprocess.run([sys.executable]+args,check=True)
+  File "E:\Anaconda\envs\Benchmark_TTA_Win\lib\subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\solver_consistent_stage0\\.venv\\Scripts\\python.exe', 'train.py', '--model', 'vanilla_loop', '--sanity']' returned non-zero exit status 1.
