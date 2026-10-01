@@ -1,0 +1,66 @@
+﻿[
+    {
+        "TimeCreated":  "\/Date(1790879987714)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Windows Error Reporting",
+        "Id":  1001,
+        "LevelDisplayName":  "信息",
+        "Message":  "故障存储段 1571454401763637985，类型 4\r\n事件名称: APPCRASH\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: python.exe\r\nP2: 3.10.20150.1013\r\nP3: 69a9b1b7\r\nP4: nvcuda64.dll\r\nP5: 32.0.16.1656\r\nP6: 6a871790\r\nP7: 80000003\r\nP8: 00000000000d4efa\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER3D1A.tmp.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER3D78.tmp.WERInternalMetadata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER3D79.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportArchive\\AppCrash_python.exe_9de726c46c6511d445f358bc9182d3bcf44260_e3074f57_58221d97-dfd2-45a0-b688-35abcfaa8fc2\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: eb9c1278-5bd2-4cc7-a8c8-0496a6669216\r\n报告状态: 268435456\r\n哈希存储段: 3b7b06c0745d25e1e5ceed73d5d87ae1nCab GUID: 0"
+    },
+    {
+        "TimeCreated":  "\/Date(1790879985797)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Application Error",
+        "Id":  1000,
+        "LevelDisplayName":  "错误",
+        "Message":  "错误应用程序名称: python.exe，版本: 3.10.20150.1013，时间戳: 0x69a9b1b7\r\n错误模块名称: nvcuda64.dll，版本: 32.0.16.1656，时间戳: 0x6a871790\r\n异常代码: 0x80000003\r\n错误偏移量: 0x00000000000d4efa\r\n错误进程 ID: 0x45ac\r\n错误应用程序启动时间: 0x01dd51d4209ef647\r\n错误应用程序路径: E:\\Anaconda\\envs\\persist_stable_251\\python.exe\r\n错误模块路径: C:\\Windows\\system32\\DriverStore\\FileRepository\\nv_dispsi.inf_amd64_8117bef9bb5edac9\\nvcuda64.dll\r\n报告 ID: eb9c1278-5bd2-4cc7-a8c8-0496a6669216\r\n错误程序包全名: \r\n错误程序包相对应用程序 ID: "
+    },
+    {
+        "TimeCreated":  "\/Date(1790879923792)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Windows Error Reporting",
+        "Id":  1001,
+        "LevelDisplayName":  "信息",
+        "Message":  "故障存储段 1993043359080522579，类型 4\r\n事件名称: APPCRASH\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: python.exe\r\nP2: 3.10.20150.1013\r\nP3: 69a9b1b7\r\nP4: torch_cpu.dll\r\nP5: 0.0.0.0\r\nP6: 68811202\r\nP7: c0000005\r\nP8: 0000000008eeb670\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER42BC.tmp.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER430B.tmp.WERInternalMetadata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER431C.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportArchive\\AppCrash_python.exe_485d7a298725751d50167963d61fc556eb837926_e3074f57_e00a6265-8991-425d-839e-569066d5eb6c\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 88dca4c6-d89c-40cd-87c0-1a016a67cfe6\r\n报告状态: 268435456\r\n哈希存储段: 29fa9205434db01b4ba8b6601ff22353nCab GUID: 0"
+    },
+    {
+        "TimeCreated":  "\/Date(1790879921717)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Application Error",
+        "Id":  1000,
+        "LevelDisplayName":  "错误",
+        "Message":  "错误应用程序名称: python.exe，版本: 3.10.20150.1013，时间戳: 0x69a9b1b7\r\n错误模块名称: torch_cpu.dll，版本: 0.0.0.0，时间戳: 0x68811202\r\n异常代码: 0xc0000005\r\n错误偏移量: 0x0000000008eeb670\r\n错误进程 ID: 0x7008\r\n错误应用程序启动时间: 0x01dd51d40d5cfb1d\r\n错误应用程序路径: E:\\Anaconda\\envs\\persist_stable_251\\python.exe\r\n错误模块路径: E:\\Anaconda\\envs\\persist_stable_251\\lib\\site-packages\\torch\\lib\\torch_cpu.dll\r\n报告 ID: 88dca4c6-d89c-40cd-87c0-1a016a67cfe6\r\n错误程序包全名: \r\n错误程序包相对应用程序 ID: "
+    },
+    {
+        "TimeCreated":  "\/Date(1790879864704)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Windows Error Reporting",
+        "Id":  1001,
+        "LevelDisplayName":  "信息",
+        "Message":  "故障存储段 1174773541229643499，类型 5\r\n事件名称: BEX64\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: python.exe\r\nP2: 3.10.20150.1013\r\nP3: 69a9b1b7\r\nP4: StackHash_ac46\r\nP5: 0.0.0.0\r\nP6: 00000000\r\nP7: PCH_23_FROM_ntdll+0x000000000009D9F4\r\nP8: c0000005\r\nP9: 0000000000000008\r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER5A9E.tmp.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER5BE7.tmp.WERInternalMetadata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER5BF8.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportArchive\\AppCrash_python.exe_532dbf118f4e8563c117f46637e61bc47dd8658_e3074f57_cc5e3c58-492e-4c79-a945-9504412be2d3\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: ef7d3540-74db-49c5-812f-aa6e6e68e0c9\r\n报告状态: 268435456\r\n哈希存储段: c57f1ea5e7e8a4dc704da24fc08546ebnCab GUID: 0"
+    },
+    {
+        "TimeCreated":  "\/Date(1790879862004)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Application Error",
+        "Id":  1000,
+        "LevelDisplayName":  "错误",
+        "Message":  "错误应用程序名称: python.exe，版本: 3.10.20150.1013，时间戳: 0x69a9b1b7\r\n错误模块名称: unknown，版本: 0.0.0.0，时间戳: 0x00000000\r\n异常代码: 0xc0000005\r\n错误偏移量: 0x0000000000000000\r\n错误进程 ID: 0x9708\r\n错误应用程序启动时间: 0x01dd51d389b211bc\r\n错误应用程序路径: E:\\Anaconda\\envs\\persist_stable_251\\python.exe\r\n错误模块路径: unknown\r\n报告 ID: ef7d3540-74db-49c5-812f-aa6e6e68e0c9\r\n错误程序包全名: \r\n错误程序包相对应用程序 ID: "
+    },
+    {
+        "TimeCreated":  "\/Date(1790878076868)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Windows Error Reporting",
+        "Id":  1001,
+        "LevelDisplayName":  "信息",
+        "Message":  "故障存储段 1900194364496010150，类型 4\r\n事件名称: APPCRASH\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: python.exe\r\nP2: 3.10.20150.1013\r\nP3: 69a9b1b7\r\nP4: python310.dll\r\nP5: 3.10.20150.1013\r\nP6: 69a9b187\r\nP7: c0000005\r\nP8: 0000000000184ab0\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER13D4.tmp.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER1443.tmp.WERInternalMetadata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER1453.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportArchive\\AppCrash_python.exe_efed4dfba393fa24762f36b7ae6c7f6c897b88e_e3074f57_5f34db5f-bf78-4585-85f4-9f92b950627f\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: f0529bbc-11c4-4c83-a0fb-c13db8bd5b15\r\n报告状态: 268435456\r\n哈希存储段: 3cea40c0cebd1d9e3a5ed8b4f3fbdba6nCab GUID: 0"
+    },
+    {
+        "TimeCreated":  "\/Date(1790878074603)\/",
+        "LogName":  "Application",
+        "ProviderName":  "Application Error",
+        "Id":  1000,
+        "LevelDisplayName":  "错误",
+        "Message":  "错误应用程序名称: python.exe，版本: 3.10.20150.1013，时间戳: 0x69a9b1b7\r\n错误模块名称: python310.dll，版本: 3.10.20150.1013，时间戳: 0x69a9b187\r\n异常代码: 0xc0000005\r\n错误偏移量: 0x0000000000184ab0\r\n错误进程 ID: 0x6fc8\r\n错误应用程序启动时间: 0x01dd51cf6c88e9bf\r\n错误应用程序路径: E:\\Anaconda\\envs\\persist_stable_251\\python.exe\r\n错误模块路径: E:\\Anaconda\\envs\\persist_stable_251\\python310.dll\r\n报告 ID: f0529bbc-11c4-4c83-a0fb-c13db8bd5b15\r\n错误程序包全名: \r\n错误程序包相对应用程序 ID: "
+    }
+]

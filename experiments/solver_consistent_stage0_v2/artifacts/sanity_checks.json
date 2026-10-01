@@ -1,0 +1,57 @@
+{
+  "A": {
+    "status": "NOT_RUN",
+    "evidence": "A6 failed before learning gates"
+  },
+  "B": {
+    "status": "PASS",
+    "evidence": "VectorField.forward(self,H,t,padding_mask) signature test"
+  },
+  "C": {
+    "status": "PASS",
+    "evidence": "inference-step weight immutability unit test"
+  },
+  "D": {
+    "status": "PASS",
+    "evidence": "Euler/Heun/RK4 NFE tests"
+  },
+  "E": {
+    "status": "PASS",
+    "evidence": "positive normalized schedule tests"
+  },
+  "F": {
+    "status": "PASS",
+    "evidence": "eval repeat determinism/dropout test"
+  },
+  "G": {
+    "status": "PASS",
+    "evidence": {
+      "vanilla_loop": 17639938,
+      "step_conditioned_loop": 17657378,
+      "vector_field": 17657378
+    }
+  },
+  "H": {
+    "status": "PASS",
+    "evidence": "135000 unique exact/canonical/graph IDs"
+  },
+  "I": {
+    "status": "NOT_RUN",
+    "evidence": "trained Model C unavailable"
+  },
+  "J": {
+    "status": "PASS",
+    "evidence": "135000/135000 full semantic audit, zero failures"
+  },
+  "K": {
+    "status": "PASS",
+    "evidence": {
+      "max_heldout_accuracy": 0.5544,
+      "failure_count": 0
+    }
+  },
+  "L": {
+    "status": "FAIL",
+    "evidence": "Vanilla A6 run crashed natively three times from the same atomic update-25 checkpoint; 50 updates/validation/round-trip not completed"
+  }
+}

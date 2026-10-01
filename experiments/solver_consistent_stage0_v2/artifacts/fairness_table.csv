@@ -1,0 +1,4 @@
+model,parameters,parameter_difference_vs_min_pct,common_initialization,formal_updates,training_time_sec,peak_vram_mb,status
+vanilla_loop,17639938,0.0,PASS,0,NA,NA,NOT_RUN_INFRA_BLOCKED
+step_conditioned_loop,17657378,0.09886656064210797,PASS,0,NA,NA,NOT_RUN_INFRA_BLOCKED
+vector_field,17657378,0.09886656064210797,PASS,0,NA,NA,NOT_RUN_INFRA_BLOCKED

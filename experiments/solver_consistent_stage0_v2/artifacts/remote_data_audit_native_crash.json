@@ -1,0 +1,14 @@
+{
+  "stage": "A0/A2 remote copy verification",
+  "status": "NATIVE_CRASH",
+  "exit_code": -1073741819,
+  "hex": "0xC0000005",
+  "operation": "independent remote full data audit after archive transfer",
+  "stack": [
+    "re.py:209 re.sub",
+    "data/generate_v2.py:14 canonical_id",
+    "data/audit_data_v2.py:97 audit"
+  ],
+  "interpretation": "fault location only; root cause not established",
+  "local_full_audit": "PASS 135000/135000"
+}

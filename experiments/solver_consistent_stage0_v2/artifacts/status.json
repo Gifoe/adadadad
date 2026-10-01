@@ -1,0 +1,27 @@
+{
+  "pipeline_state": "INFRA_BLOCKED",
+  "updated_utc": "2026-10-01T18:43:28Z",
+  "current_stage": "A6",
+  "last_event": "END",
+  "formal_seed0_complete": false,
+  "formal_updates": {
+    "vanilla_loop": 0,
+    "step_conditioned_loop": 0,
+    "vector_field": 0
+  },
+  "last_record": {
+    "stage": "A6",
+    "event": "END",
+    "unix_time": 1790880208.2601876,
+    "utc": "2026-10-01T18:43:28Z",
+    "passed": false,
+    "exit_code": -1073741819,
+    "input_config_sha256": "6586e4bc120208f72866b67cd8cb906507be6052cbe17cfed7e567a442de3a7a",
+    "data_manifest_sha256": "4ad1e07029e072778e66070df0520bbfc380e228d0c093b249e2fd2d80fae062",
+    "git_commit": "6071738c90d468f1f2f89552ede44669ac07c3da",
+    "evidence": [
+      "artifacts/infra_native_crashes.json",
+      "artifacts/windows_events_A6.json"
+    ]
+  }
+}

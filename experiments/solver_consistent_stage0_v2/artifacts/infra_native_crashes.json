@@ -1,0 +1,38 @@
+{
+  "frozen_config": {
+    "torch": "2.8.0+cu128",
+    "cuda_runtime": "12.8",
+    "attention_backend": "math",
+    "precision": "bf16",
+    "activation_checkpointing": true,
+    "micro_batch": 16,
+    "effective_batch": 128,
+    "max_length": 1376,
+    "deterministic": true
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "exception": "0xc0000005",
+      "fault_module": "unknown / StackHash",
+      "faulthandler_location": "torch.utils.checkpoint.get_device_states",
+      "checkpoint_update": 25
+    },
+    {
+      "attempt": 2,
+      "exception": "0xc0000005",
+      "fault_module": "torch_cpu.dll",
+      "faulthandler_location": "torch autograd backward",
+      "checkpoint_update": 25
+    },
+    {
+      "attempt": 3,
+      "exception": "0x80000003",
+      "fault_module": "nvcuda64.dll",
+      "faulthandler_location": "checkpoint recompute attention / autograd backward",
+      "checkpoint_update": 25
+    }
+  ],
+  "result": "FAIL_THREE_NATIVE_CRASHES",
+  "interpretation": "Fault modules/stack locations are evidence, not proven root causes. No setting changed between attempts."
+}

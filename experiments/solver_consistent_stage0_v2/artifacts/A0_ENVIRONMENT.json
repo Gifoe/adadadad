@@ -1,0 +1,42 @@
+{
+  "stage": "A0",
+  "started_unix": 1790880131.5601041,
+  "source_git_commit": "6071738c90d468f1f2f89552ede44669ac07c3da",
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\solver_consistent_stage0_v2\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.18363-SP0",
+  "hostname": "DESKTOP-C4FOPGI",
+  "torch": "2.8.0+cu128",
+  "torch_cuda_runtime": "12.8",
+  "cuda_available": true,
+  "cudnn": 91002,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "disk_d": {
+    "total": 484357902336,
+    "used": 434285772800,
+    "free": 50072129536
+  },
+  "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONFAULTHANDLER": "1"
+  },
+  "nvidia_smi": {
+    "exit_code": 0,
+    "stdout": "Fri Oct  2 02:42:11 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 616.56                 KMD Version: 616.56        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:01:00.0 Off |                  N/A |\n| 33%   51C    P0             59W /  575W |     454MiB /  32607MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2468    C+G   C:\\Windows\\System32\\dwm.exe           N/A      |\n|    0   N/A  N/A            2652    C+G   C:\\Windows\\System32\\WUDFHost.exe      N/A      |\n|    0   N/A  N/A            3572    C+G   D:\\anydesk\\AnyDesk.exe                N/A      |\n|    0   N/A  N/A            8384    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           10288    C+G   ...iences.TextInput.InputApp.exe      N/A      |\n|    0   N/A  N/A           11400    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A           11932    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           12832    C+G   ...na_cw5n1h2txyewy\\SearchUI.exe      N/A      |\n|    0   N/A  N/A           13768    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           15412    C+G   D:\\todesk\\ToDesk.exe                  N/A      |\n|    0   N/A  N/A           18740    C+G   ...\u057f\ufffd\\AweSun\\flutter\\AweSun.exe      N/A      |\n|    0   N/A  N/A           20492    C+G   ....0.4234.48\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           23332    C+G   ...udDrive\\quark_cloud_drive.exe      N/A      |\n|    0   N/A  N/A           23352    C+G   ...udDrive\\quark_cloud_drive.exe      N/A      |\n|    0   N/A  N/A           28768    C+G   D:\\Microsoft VS Code\\Code.exe         N/A      |\n|    0   N/A  N/A           35236    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+    "stderr": ""
+  },
+  "gpu_query": {
+    "exit_code": 0,
+    "stdout": "NVIDIA GeForce RTX 5090, 32607 MiB, 31733 MiB, 616.56\n",
+    "stderr": ""
+  },
+  "compute_processes": {
+    "exit_code": 0,
+    "stdout": "2468, C:\\Windows\\System32\\dwm.exe, [N/A]\n3572, D:\\anydesk\\AnyDesk.exe, [N/A]\n11400, C:\\Windows\\explorer.exe, [N/A]\n10288, C:\\Windows\\SystemApps\\InputApp_cw5n1h2txyewy\\WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe, [N/A]\n11932, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\n12832, C:\\Windows\\SystemApps\\Microsoft.Windows.Cortana_cw5n1h2txyewy\\SearchUI.exe, [N/A]\n8384, C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe, [N/A]\n15412, D:\\todesk\\ToDesk.exe, [N/A]\n18740, D:\\\ufffd\ufffd\ufffd\u057f\ufffd\\AweSun\\flutter\\AweSun.exe, [N/A]\n20492, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.48\\msedgewebview2.exe, [N/A]\n23332, C:\\Users\\fyl412\\AppData\\Local\\Programs\\QuarkCloudDrive\\quark_cloud_drive.exe, [N/A]\n23352, C:\\Users\\fyl412\\AppData\\Local\\Programs\\QuarkCloudDrive\\quark_cloud_drive.exe, [N/A]\n28768, D:\\Microsoft VS Code\\Code.exe, [N/A]\n2652, C:\\Windows\\System32\\WUDFHost.exe, [N/A]\n13768, C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe, [N/A]\n35236, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\n",
+    "stderr": ""
+  },
+  "ended_unix": 1790880131.5807245,
+  "exit_code": 0
+}

@@ -1,0 +1,55 @@
+{
+  "scope": "all rows; models fit only on train",
+  "data_dir": "D:\\solver-consistent-stage0-v2-local\\experiments\\solver_consistent_stage0_v2\\data\\generated",
+  "started_unix": 1790877243.9917212,
+  "ended_unix": 1790877686.927024,
+  "records": 798,
+  "passed": true,
+  "failure_count": 0,
+  "failures": [],
+  "max_heldout_accuracy": 0.5544,
+  "max_heldout_record": {
+    "method": "structural_random_forest",
+    "category": "shallow_classifier",
+    "split": "iid",
+    "depth": 3,
+    "n": 2500,
+    "accuracy": 0.5544,
+    "threshold": 0.6,
+    "pass": true
+  },
+  "feature_names": {
+    "structural": [
+      "q_src_frequency",
+      "q_src_indegree",
+      "q_src_outdegree",
+      "q_src_degree",
+      "q_src_fact_any",
+      "q_src_fact_selected",
+      "q_rule_position",
+      "q_rule_length",
+      "opp_src_frequency",
+      "opp_src_indegree",
+      "opp_src_outdegree",
+      "opp_src_degree",
+      "opp_src_fact_any",
+      "opp_src_fact_selected",
+      "opp_rule_position",
+      "opp_rule_length"
+    ],
+    "metadata": [
+      "characters",
+      "tokens",
+      "negations",
+      "rules",
+      "facts",
+      "sentences"
+    ]
+  },
+  "thresholds": {
+    "no_training": 0.55,
+    "antecedent_frequency": 0.52,
+    "shallow_classifier": 0.6,
+    "single_surface_feature": 0.55
+  }
+}

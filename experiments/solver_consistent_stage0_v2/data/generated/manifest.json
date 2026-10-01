@@ -1,0 +1,120 @@
+{
+  "seed": 0,
+  "seed_namespace": 2000,
+  "generator_version": "prontoqa-symmetric-component-v2",
+  "official_commit": "0a6412b6fddf46324a1cb96e066dd7b3d89b87d6",
+  "depth_definition": "actual Modus Ponens hops; official_steps=depth+1 includes starting axiom",
+  "repair": "predicate-renamed connected proof component grounded on a different entity; isolated opposite rule removed",
+  "workers": 8,
+  "deduplication": "global exact text, canonical FOL/entity-normalized, and predicate-renaming-invariant signed graph hash",
+  "splits": {
+    "train": {
+      "count": 100000,
+      "label_distribution": {
+        "0": 50000,
+        "1": 50000
+      },
+      "depth_distribution": {
+        "1": 25000,
+        "2": 25000,
+        "3": 25000,
+        "4": 25000
+      },
+      "sha256": "3ab2a6adc50cf2f6126b4da398e083fb802bbd546f71270211093cdac5974443",
+      "attempts": 1402219,
+      "official_failures": 1244325,
+      "adapter_failures": 0,
+      "adapter_failure_reasons": {},
+      "duplicates_rejected": 45584
+    },
+    "validation": {
+      "count": 10000,
+      "label_distribution": {
+        "0": 5000,
+        "1": 5000
+      },
+      "depth_distribution": {
+        "1": 2500,
+        "2": 2500,
+        "3": 2500,
+        "4": 2500
+      },
+      "sha256": "513537a7dcfc01b6ec6c20e8271ee110b38c0bdc7248c64589e782009f87d848",
+      "attempts": 158655,
+      "official_failures": 140514,
+      "adapter_failures": 0,
+      "adapter_failure_reasons": {},
+      "duplicates_rejected": 5875
+    },
+    "iid": {
+      "count": 10000,
+      "label_distribution": {
+        "0": 5000,
+        "1": 5000
+      },
+      "depth_distribution": {
+        "1": 2500,
+        "2": 2500,
+        "3": 2500,
+        "4": 2500
+      },
+      "sha256": "ddf743fa3ac4e52edcae0d173fe4f485bab113865a6219cdc2fe03b31e07a401",
+      "attempts": 159173,
+      "official_failures": 141010,
+      "adapter_failures": 0,
+      "adapter_failure_reasons": {},
+      "duplicates_rejected": 6190
+    },
+    "ood_6": {
+      "count": 5000,
+      "label_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "depth_distribution": {
+        "6": 5000
+      },
+      "sha256": "0c451730813b7a4b25b0de5dbd101d0ac255bb7063061abf5e7ef9589e4e56f6",
+      "attempts": 252104,
+      "official_failures": 246391,
+      "adapter_failures": 0,
+      "adapter_failure_reasons": {},
+      "duplicates_rejected": 48
+    },
+    "ood_8": {
+      "count": 5000,
+      "label_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "depth_distribution": {
+        "8": 5000
+      },
+      "sha256": "cfb038f097c1a1b2e32692a0f11fe47c31bcba76c690943d9d35a27021bb7f84",
+      "attempts": 641895,
+      "official_failures": 636143,
+      "adapter_failures": 0,
+      "adapter_failure_reasons": {},
+      "duplicates_rejected": 6
+    },
+    "ood_12": {
+      "count": 5000,
+      "label_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "depth_distribution": {
+        "12": 5000
+      },
+      "sha256": "37445239ea6a267c754a1d2c9fc31586141e60406ffd74e23024c89a76d66dcd",
+      "attempts": 4463638,
+      "official_failures": 4457931,
+      "adapter_failures": 0,
+      "adapter_failure_reasons": {},
+      "duplicates_rejected": 0
+    }
+  },
+  "count": 135000,
+  "elapsed_sec": 2293.623443365097,
+  "manifest_payload_sha256": "e363c4bebe28946f5f621834f7c80e9f52bb8f1930a3278caec872af3349553c"
+}

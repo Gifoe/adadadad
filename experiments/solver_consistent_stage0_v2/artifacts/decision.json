@@ -1,0 +1,14 @@
+{
+  "pipeline_state": "INFRA_BLOCKED",
+  "formal_seed0_complete": false,
+  "scientific_decision": "NA",
+  "reason": "A6 frozen configuration produced three native crashes; prompt requires stopping before A7/formal training",
+  "formal_updates": {
+    "vanilla_loop": 0,
+    "step_conditioned_loop": 0,
+    "vector_field": 0
+  },
+  "go_stop_unclear": "NOT_APPLICABLE",
+  "data_manifest_payload_sha256": "e363c4bebe28946f5f621834f7c80e9f52bb8f1930a3278caec872af3349553c",
+  "config_sha256": "6586e4bc120208f72866b67cd8cb906507be6052cbe17cfed7e567a442de3a7a"
+}
