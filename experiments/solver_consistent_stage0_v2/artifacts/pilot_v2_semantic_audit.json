@@ -1,0 +1,80 @@
+{
+  "scope": "all rows",
+  "data_dir": "D:\\solver-consistent-stage0-v2-local\\experiments\\solver_consistent_stage0_v2\\data\\pilot_round5",
+  "generator_version": "prontoqa-symmetric-component-v2",
+  "started_unix": 1790872096.7622247,
+  "splits": {
+    "iid": {
+      "checked": 80,
+      "depth_label_counts": {
+        "1:0": 10,
+        "1:1": 10,
+        "2:0": 10,
+        "2:1": 10,
+        "3:0": 10,
+        "3:1": 10,
+        "4:0": 10,
+        "4:1": 10
+      }
+    },
+    "ood_12": {
+      "checked": 40,
+      "depth_label_counts": {
+        "12:0": 20,
+        "12:1": 20
+      }
+    },
+    "ood_6": {
+      "checked": 40,
+      "depth_label_counts": {
+        "6:0": 20,
+        "6:1": 20
+      }
+    },
+    "ood_8": {
+      "checked": 40,
+      "depth_label_counts": {
+        "8:0": 20,
+        "8:1": 20
+      }
+    },
+    "train": {
+      "checked": 800,
+      "depth_label_counts": {
+        "1:0": 100,
+        "1:1": 100,
+        "2:0": 100,
+        "2:1": 100,
+        "3:0": 100,
+        "3:1": 100,
+        "4:0": 100,
+        "4:1": 100
+      }
+    },
+    "validation": {
+      "checked": 80,
+      "depth_label_counts": {
+        "1:0": 10,
+        "1:1": 10,
+        "2:0": 10,
+        "2:1": 10,
+        "3:0": 10,
+        "3:1": 10,
+        "4:0": 10,
+        "4:1": 10
+      }
+    }
+  },
+  "failure_count": 0,
+  "failures": [],
+  "checked": 1080,
+  "passed": true,
+  "ended_unix": 1790872104.7164395,
+  "elapsed_sec": 7.954214811325073,
+  "manifest_payload_sha256": "672c1ad0d431552cf8ddd361e4a5e5dfa21eed81bdce2daa806dedaac2427bd2",
+  "unique_counts": {
+    "id": 1080,
+    "underlying_id": 1080,
+    "graph_hash": 1080
+  }
+}

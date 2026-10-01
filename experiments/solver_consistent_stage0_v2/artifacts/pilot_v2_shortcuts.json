@@ -1,0 +1,226 @@
+{
+  "scope": "all rows; models fit only on train",
+  "data_dir": "D:\\solver-consistent-stage0-v2-local\\experiments\\solver_consistent_stage0_v2\\data\\pilot_round5",
+  "started_unix": 1790872097.9285312,
+  "ended_unix": 1790872102.5466385,
+  "records": 798,
+  "passed": false,
+  "failure_count": 17,
+  "failures": [
+    {
+      "method": "last_hop_longer_sentence",
+      "category": "no_training",
+      "split": "iid",
+      "depth": 1,
+      "n": 20,
+      "accuracy": 0.6,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "full_text_tfidf_logreg",
+      "category": "shallow_classifier",
+      "split": "iid",
+      "depth": 1,
+      "n": 20,
+      "accuracy": 0.7,
+      "threshold": 0.6,
+      "pass": false
+    },
+    {
+      "method": "structural_logreg",
+      "category": "shallow_classifier",
+      "split": "iid",
+      "depth": 1,
+      "n": 20,
+      "accuracy": 0.65,
+      "threshold": 0.6,
+      "pass": false
+    },
+    {
+      "method": "single_negations",
+      "category": "single_surface_feature",
+      "split": "iid",
+      "depth": 1,
+      "n": 20,
+      "accuracy": 0.6,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "negation_parity",
+      "category": "no_training",
+      "split": "iid",
+      "depth": 2,
+      "n": 20,
+      "accuracy": 0.7,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "last_hop_longer_sentence",
+      "category": "no_training",
+      "split": "iid",
+      "depth": 3,
+      "n": 20,
+      "accuracy": 0.6,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "structural_random_forest",
+      "category": "shallow_classifier",
+      "split": "iid",
+      "depth": 3,
+      "n": 20,
+      "accuracy": 0.7,
+      "threshold": 0.6,
+      "pass": false
+    },
+    {
+      "method": "negation_parity",
+      "category": "no_training",
+      "split": "ood_12",
+      "depth": "all",
+      "n": 40,
+      "accuracy": 0.625,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "single_q_rule_length",
+      "category": "single_surface_feature",
+      "split": "ood_12",
+      "depth": "all",
+      "n": 40,
+      "accuracy": 0.65,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "negation_parity",
+      "category": "no_training",
+      "split": "ood_12",
+      "depth": 12,
+      "n": 40,
+      "accuracy": 0.625,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "single_q_rule_length",
+      "category": "single_surface_feature",
+      "split": "ood_12",
+      "depth": 12,
+      "n": 40,
+      "accuracy": 0.65,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "last_hop_longer_sentence",
+      "category": "no_training",
+      "split": "ood_6",
+      "depth": "all",
+      "n": 40,
+      "accuracy": 0.6,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "single_opp_rule_length",
+      "category": "single_surface_feature",
+      "split": "ood_6",
+      "depth": "all",
+      "n": 40,
+      "accuracy": 0.575,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "single_negations",
+      "category": "single_surface_feature",
+      "split": "ood_6",
+      "depth": "all",
+      "n": 40,
+      "accuracy": 0.625,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "last_hop_longer_sentence",
+      "category": "no_training",
+      "split": "ood_6",
+      "depth": 6,
+      "n": 40,
+      "accuracy": 0.6,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "single_opp_rule_length",
+      "category": "single_surface_feature",
+      "split": "ood_6",
+      "depth": 6,
+      "n": 40,
+      "accuracy": 0.575,
+      "threshold": 0.55,
+      "pass": false
+    },
+    {
+      "method": "single_negations",
+      "category": "single_surface_feature",
+      "split": "ood_6",
+      "depth": 6,
+      "n": 40,
+      "accuracy": 0.625,
+      "threshold": 0.55,
+      "pass": false
+    }
+  ],
+  "max_heldout_accuracy": 0.7,
+  "max_heldout_record": {
+    "method": "full_text_tfidf_logreg",
+    "category": "shallow_classifier",
+    "split": "iid",
+    "depth": 1,
+    "n": 20,
+    "accuracy": 0.7,
+    "threshold": 0.6,
+    "pass": false
+  },
+  "feature_names": {
+    "structural": [
+      "q_src_frequency",
+      "q_src_indegree",
+      "q_src_outdegree",
+      "q_src_degree",
+      "q_src_fact_any",
+      "q_src_fact_selected",
+      "q_rule_position",
+      "q_rule_length",
+      "opp_src_frequency",
+      "opp_src_indegree",
+      "opp_src_outdegree",
+      "opp_src_degree",
+      "opp_src_fact_any",
+      "opp_src_fact_selected",
+      "opp_rule_position",
+      "opp_rule_length"
+    ],
+    "metadata": [
+      "characters",
+      "tokens",
+      "negations",
+      "rules",
+      "facts",
+      "sentences"
+    ]
+  },
+  "thresholds": {
+    "no_training": 0.55,
+    "antecedent_frequency": 0.52,
+    "shallow_classifier": 0.6,
+    "single_surface_feature": 0.55
+  }
+}

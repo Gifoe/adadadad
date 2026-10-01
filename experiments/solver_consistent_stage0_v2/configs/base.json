@@ -1,0 +1,40 @@
+{
+  "seed": 0,
+  "d_model": 512,
+  "n_heads": 8,
+  "d_ff": 2048,
+  "dropout": 0.1,
+  "vocab_size": 8192,
+  "max_length": 256,
+  "stem_blocks": 3,
+  "core_blocks": 2,
+  "activation_checkpointing": true,
+  "attention_backend": "math",
+  "updates": 20000,
+  "effective_batch": 128,
+  "micro_batch": 16,
+  "lr": 0.0003,
+  "weight_decay": 0.01,
+  "warmup_fraction": 0.05,
+  "grad_clip": 1.0,
+  "precision": "bf16",
+  "train_budgets": [
+    4,
+    8
+  ],
+  "eval_budgets": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    12,
+    16
+  ],
+  "eval_batch": 32,
+  "validation_interval": 100,
+  "sanity_updates": 2000,
+  "diagnostic_count": 512,
+  "latency_warmups": 20,
+  "latency_batches": 100
+}

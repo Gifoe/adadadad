@@ -1,0 +1,11 @@
+!data/
+!data/**
+data/generated/*.jsonl
+data/pilot*/
+data/tokenized/*.npz
+__pycache__/
+.pytest_cache/
+.venv*/
+*.pt
+*.pth
+*.ckpt

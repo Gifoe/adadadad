@@ -1,0 +1,8 @@
+{
+  "experiment": "Solver-Consistent Recurrent Reasoning - Stage 0 V2",
+  "formal_seed0_complete": false,
+  "pipeline_state": "DATA_AUDIT_RUNNING",
+  "upstream_commit": "0a6412b6fddf46324a1cb96e066dd7b3d89b87d6",
+  "generator_version": "prontoqa-symmetric-component-v2",
+  "note": "Full 135000-row generation and audit pending; pilot results are development evidence only."
+}

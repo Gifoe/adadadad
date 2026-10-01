@@ -1,0 +1,646 @@
+# Solver-Consistent Recurrent Reasoning — Stage 0 V2 执行 Prompt
+
+你现在负责修复并完成一个严格受控的 Stage-0 实验：
+
+**Solver-Consistent Recurrent Reasoning — Stage 0 V2**
+
+你的职责不是继续堆方法，也不是把已有的失败包装成结果，而是依次完成：
+
+1. 修复当前 PrOntoQA 数据中的确定性结构捷径；
+2. 在冻结配置前验证训练环境能够稳定运行；
+3. 让三个模型都通过相同的学习能力门槛；
+4. 从零完成 seed=0 的三模型正式训练与全部评估；
+5. 输出可审计的代码、配置、CSV、图、日志和 Markdown 报告。
+
+项目目标仍然只有两个：
+
+1. recurrent-depth Transformer 改变 test-time compute budget 时，是否存在可重复且影响任务正确率的 computation / trajectory sensitivity？
+2. 将 recurrent update 改为 step-size-independent vector field 并用固定数值积分执行后，这种 task-level sensitivity 是否减弱？
+
+如果 baseline 不存在明确的 task-level harmful sensitivity，结论应为 STOP。不能为了得到 GO 增加复杂 loss 或修改门槛。
+
+---
+
+# 0. 已知起点和已有证据
+
+代码与失败证据已上传到：
+
+`https://github.com/Gifoe/adadadad/tree/codex/neuroloop-btta-online-stage0/experiments/solver_consistent_stage0`
+
+远程 Windows 工作目录使用：
+
+`D:\solver_consistent_stage0_v2`
+
+SSH 凭据由用户在执行环境中单独提供。禁止把密码、token、私钥、主机凭据或含凭据的辅助脚本提交到 Git。
+
+开始时先 clone/fetch 上述仓库及分支，把 V2 放到新目录；不得覆盖旧目录、旧数据、旧日志或其他项目。旧项目只能作为失败证据和实现参考。
+
+必须接受以下已确认事实：
+
+- 旧数据共 135,000 条，但存在一个纯文本、零训练捷径：找到查询属性的正反候选规则，选择前件概念在全文出现次数更多的规则，即可在 train、validation、IID、OOD-6/8/12 及每个 depth 分层达到 100% accuracy。
+- 原因是目标相反规则的 dummy antecedent 是孤立概念，而真实证明规则的 antecedent 会在 ontology / facts 中再次出现。
+- query-only、unigram bag-of-words、negation parity 接近随机并不能排除该结构捷径。
+- 旧数据、旧 tokenizer、旧 sanity checkpoint、旧正式 checkpoint 全部禁止复用于 V2。
+- 旧项目三个模型的正式更新数均为 0；旧报告的 UNCLEAR 是“数据无效且执行未完成”，不是方法效果结论。
+- 旧 Windows 运行曾出现原生崩溃：`cublasLt64_12.dll` 的 `0xc0000005`、`nvcuda64.dll` 的 `0x80000003`，并伴随 `nvlddmkm` event 153。故障模块不等于已证明根因。
+
+不得重新运行旧数据上的正式训练。必须先通过本 prompt 的数据有效性硬门槛。
+
+---
+
+# 1. 总原则与状态机
+
+整个 pipeline 必须采用显式状态：
+
+- `DATA_INVALID`
+- `INFRA_BLOCKED`
+- `LEARNING_GATE_FAILED`
+- `FORMAL_RUNNING`
+- `FORMAL_COMPLETE`
+- `GO`
+- `UNCLEAR`
+- `STOP`
+
+只有 `FORMAL_COMPLETE` 后才允许根据科学结果输出 GO / UNCLEAR / STOP。
+
+`DATA_INVALID`、`INFRA_BLOCKED`、`LEARNING_GATE_FAILED` 都是执行状态，不是关于方法优劣的科学结论。遇到这些状态时必须输出失败报告和真实证据，所有未运行指标写 `NA`，不能伪造图表或用计划条件冒充结果。
+
+每个阶段都要写入：
+
+- `artifacts/status.json`
+- 开始时间、结束时间、退出码；
+- 输入 config SHA256；
+- 数据 manifest SHA256；
+- Git commit；
+- 当前阶段是否通过及具体证据。
+
+任何会影响数据、模型、优化器、训练预算、tokenizer、截断、batch、精度、attention backend 或 solver 的修改，都必须在正式训练前写入 `EXPERIMENT_CHANGELOG.md`。第一次正式模型产生非零 update 后，科学配置冻结；之后只能修复不改变数学行为的日志、断点续训或基础设施问题。
+
+---
+
+# 2. 明确禁止
+
+Stage-0 V2 禁止加入：
+
+- Flow Matching；
+- teacher hidden-state supervision；
+- hidden trajectory distillation；
+- solver/coarse-fine consistency loss；
+- adaptive ODE solver；
+- adjoint method；
+- learned halting；
+- dynamic compute allocation；
+- RL；
+- chain-of-thought supervision；
+- 预训练大语言模型；
+- 为通过门槛而修改标签、降低门槛或选取更容易的验证子集；
+- 根据正式结果调整训练预算、learning rate、模型深度或数据生成规则；
+- 删除失败运行证据；
+- 把 smoke test、16-example overfit 或已知 ODE toy test 当作正式结果。
+
+统一训练目标只能是：
+
+`L = CrossEntropy(task_prediction, label)`
+
+---
+
+# 3. A0：仓库、环境与复现审计
+
+先检查目标仓库、当前分支、Python/PyTorch/CUDA/NVIDIA driver、可用磁盘、GPU 型号和显存。记录：
+
+- `git rev-parse HEAD`
+- `pip freeze`
+- Python、PyTorch、CUDA runtime、driver、OS build；
+- `nvidia-smi`；
+- GPU 上已有进程；
+- 旧项目中可复用的模型、solver、trainer、测试和报告代码。
+
+建立独立环境，不修改共享 Conda 环境。优先使用一个与 RTX 5090 和当前 driver 明确兼容的稳定 PyTorch/CUDA 组合。不要同时混用多个 Conda 环境的 DLL/PATH。
+
+在 Windows 上运行时：
+
+- 先显式激活唯一 Conda 环境；
+- 固定 `OMP_NUM_THREADS=1`、`MKL_NUM_THREADS=1`、`OPENBLAS_NUM_THREADS=1`；
+- 开启 `PYTHONFAULTHANDLER=1`；
+- 训练进程必须前台运行或由可确认不会随 SSH 断开而终止的调度器管理；
+- 只终止本项目路径下、命令行明确包含本项目训练脚本的进程；
+- 保存 Windows Application/System 事件中与本次 PID/时间对应的故障记录。
+
+---
+
+# 4. A1：修复数据生成，消除已知结构捷径
+
+优先复用官方 PrOntoQA generator，固定并记录 upstream commit。不得直接静默修改 vendored 官方源码。若需要修复生成逻辑，使用版本化 adapter/patch，并保存最小 diff、修复理由和单元测试。
+
+任务仍为：
+
+`input text -> binary true/false label`
+
+只监督最终标签，不向模型提供 proof 或 chain-of-thought。
+
+数据规模：
+
+- train：100,000；
+- validation：10,000；
+- IID test：10,000，depth 1/2/3/4 均匀；
+- OOD depth 6：5,000；
+- OOD depth 8：5,000；
+- OOD depth 12：5,000；
+- 每个 split / depth 精确标签平衡；
+- seed=0。
+
+depth 定义为实际 Modus Ponens inference hops；如果官方参数包含起始 axiom，继续使用 `official_steps = depth + 1` 并在 manifest 中声明。
+
+## 4.1 必须修复的结构不对称
+
+正反查询候选不能再通过局部统计区分。至少匹配：
+
+- 候选结论规则 antecedent 的全文出现次数；
+- antecedent 的入度、出度、局部图度数；
+- antecedent 是否出现在实体事实中；
+- 到实体已知事实的可达/不可达模式；
+- 正反候选规则的句式、词类、位置分布和长度分布；
+- 正负标签下上述统计的分布。
+
+推荐的最小修复是为 opposite-goal distractor 构造一个与真实目标路径局部结构对称、但从实体起始事实不可达的 decoy chain，而不是使用孤立 dummy antecedent。decoy chain 的长度、节点度数、词频和表面句式应与真实证明路径匹配；标签仍由真实可达性决定。
+
+如果使用其他修复，必须解释为什么它不改变任务语义，并用下述硬门槛证明已知泄漏被消除。不得仅打乱句子或重命名谓词；这不能修复图结构泄漏。
+
+## 4.2 数据去重和正确性
+
+保存 JSONL 字段：
+
+- `id`
+- `underlying_id`
+- `text`
+- `label`
+- `depth`
+- `official_steps`
+- `generator_version`
+
+对规范化 FOL facts + query target 建立全局 ID，至少归一化句序、实体名和 query polarity。额外建立 predicate-renaming-invariant graph hash；train/validation/IID/OOD 之间不得存在同构模板的完全重复。若无法做到，应停止并报告，不能继续声称严格 OOD。
+
+独立 forward-chaining verifier 必须对全量数据验证：
+
+- label 与可达结论一致；
+- opposite conclusion 不可达；
+- 最短证明 hop 数等于声明 depth；
+- 不存在同时推导正反结论；
+- 文本 parser round-trip 一致。
+
+不再只抽样 960 条。135,000 条全部验证，输出失败样本列表；任何失败都使状态为 `DATA_INVALID`。
+
+---
+
+# 5. A2：数据有效性硬门槛
+
+在 tokenizer 和神经训练之前运行以下零训练/浅层基线。每项都必须在 train 上拟合规则或参数时只使用 train，并在 validation/IID/OOD 分开报告；纯手写启发式不得读取 label、depth、proof、ID 或 split 名称作为输入。
+
+必须包括：
+
+1. majority label；
+2. query-only TF-IDF logistic regression；
+3. full-text unigram和bigram TF-IDF logistic regression；
+4. negation parity；
+5. 旧版 antecedent-frequency heuristic；
+6. 规则前件词频、实体出现、句子位置、局部图度数等结构特征的 logistic regression、浅层 decision tree 和 random forest；
+7. 只看最后一跳候选规则、但不执行从事实开始的可达性推理的启发式集合；
+8. 文本长度、否定数量、规则数量、事实数量等元特征分类器。
+
+硬门槛：
+
+- 任一无训练启发式在 IID 或任一 OOD split 上 accuracy > 55%，数据失败；
+- 任一结构特征分类器在 IID 或任一 OOD split 上 accuracy > 60%，数据失败；
+- 任一单一表面特征与 label 的绝对相关或标准化差异足以产生 >55% accuracy，数据失败；
+- 每个 depth 分层也应用相同门槛；
+- 已知 antecedent-frequency heuristic 必须在所有分层 ≤52%；
+- 通过门槛不等于证明没有所有捷径，只表示当前已知泄漏和预注册浅层套件未发现可利用信号。
+
+若失败，最多允许两轮数据生成修复。每轮都必须：
+
+- 新 generator version；
+- 新 seed namespace；
+- 重新生成全部 split；
+- 重新做全量语义验证、全局/同构去重和完整 shortcut suite；
+- 旧失败数据移到带时间戳的 archive，不得混入训练。
+
+两轮后仍失败则输出 `DATA_INVALID` 报告并停止，不运行神经正式实验。
+
+---
+
+# 6. A3：Tokenization
+
+只有数据门槛通过后才能训练 tokenizer。
+
+- BPE 仅在 train 文本上训练；
+- target vocabulary 8192，记录实际 vocabulary；
+- 保证同一人工 concept ID 在大小写/单复数形式下共享数字身份表示；
+- special tokens 固定并写入 config；
+- 在所有 split 上只做长度审计，不用标签调整 tokenizer；
+- max length 选择为能使每个 split 截断率 ≤1% 的最小 32 的倍数；
+- 分别报告每个 split 的 max、p95、p99 和截断率；
+- 截断样本在正式结果中单独报告。
+
+一旦 tokenizer 和 max length 冻结，数据变化必须使 tokenizer 失效并从零重训。
+
+---
+
+# 7. A4：模型与公平性
+
+共同 backbone：
+
+- `d_model=512`
+- `n_heads=8`
+- `d_ff=2048`
+- GELU
+- pre-norm
+- dropout=0.1
+- 3 个非循环 stem blocks
+- 1–2 个共享 recurrent core blocks；在训练前固定
+- 总参数 15M–30M
+- 三模型总参数差 <1%
+- 相同 common weights bitwise 初始化
+- 相同 embedding、position、stem、norm、classifier
+- conditioning MLP 的容量在 Model B/C 相同
+
+Model A — Vanilla Recurrent Loop：
+
+`H_{k+1} = B(H_k)`
+
+- 不能接收 t、dt、K、NFE、solver ID；
+- 不乘 `1/K`；
+- 测试时只改变重复次数。
+
+Model B — Step-Conditioned Recurrent Loop：
+
+`H_{k+1} = H_k + G(H_k, t_k, dt_k)`
+
+- Fourier features + 小 MLP 编码 t 和 dt；
+- 允许 nonuniform schedule；
+- 不使用 consistency loss。
+
+Model C — Step-Size-Independent Vector Field：
+
+`dH/dt = v_theta(H,t)`
+
+- `VectorField.forward(H,t,padding_mask)` 的 signature 不得接收 dt、K、NFE、solver ID 或可变 solver state；
+- padding mask 仅是静态输入结构；
+- solver 在网络外部应用 dt；
+- derivative 使用 Transformer residual increment，不能把完整 `B(H)` 当 derivative；
+- 与 Model B 使用相同规模的 t-conditioning；第二个 conditioning slot 如保留必须恒为 0；
+- 不使用 consistency loss。
+
+所有结构约束都必须有单元测试。
+
+---
+
+# 8. A5：Solver
+
+手写固定步长：
+
+- Euler：每步 1 NFE；
+- Heun：每步 2 NFE；
+- RK4：每步 4 NFE；
+- 积分区间 `[0,1]`；
+- 所有 dt > 0 且 `sum(dt)=1`；
+- 保存每个完整 schedule。
+
+Matched NFE：4、8、12、16。Model A/B 不得伪装成 Heun/RK4；离散 loop 的 solver 字段使用 `loop`。
+
+nonuniform schedule：
+
+- `front-loaded`：前期小 dt，后期大 dt，线性权重 1→2；
+- `back-loaded`：前期大 dt，后期小 dt，线性权重 2→1。
+
+用 `dy/dt=-y` 等已知 ODE 验证误差下降和 NFE 计数；该测试只属于实现检查。
+
+---
+
+# 9. A6：基础设施稳定性硬门槛
+
+在正式训练前，使用最终 tokenizer、max length、模型结构、attention backend、BF16、activation checkpointing、microbatch 和有效 batch 做真实形状测试。
+
+先测 microbatch 16/8/4，选择峰值 allocated VRAM ≤总显存 60% 的最大值。优先用 gradient accumulation，不缩小模型。使用有限数量的 padding buckets，减少 Windows allocator shape fragmentation；所有模型必须使用相同策略。
+
+稳定性门槛分两步：
+
+1. 每个模型完成 50 个 train updates + validation + checkpoint round-trip；
+2. Model A 在 depth-1 sanity 数据上连续完成 2,000 updates，期间每 25 updates 保存原子 checkpoint，每 100 updates validation。
+
+必须验证：
+
+- 进程正常退出；
+- checkpoint 可在全新 Python 进程加载；
+- optimizer、scheduler、update、sample plan、CPU/CUDA RNG 恢复后，下一 update loss 与不中断对照在允许的 BF16 数值误差内一致；
+- 无新的项目相关 Windows Application Error / WER / nvlddmkm 错误；
+- GPU 峰值显存、reserved memory 和每 update 时间被记录。
+
+若发生原生崩溃：
+
+- 保留 checkpoint、stdout/stderr、faulthandler、Windows event 和 `nvidia-smi`；
+- 使用同一冻结配置从最后一个完整原子 checkpoint 恢复，最多重试 2 次；
+- 不得在重试时偷偷改变 PyTorch、CUDA、batch、attention backend 或 deterministic 设置；
+- 同一冻结配置第三次原生崩溃后状态为 `INFRA_BLOCKED`，停止科学实验；
+- 如必须更换 OS/driver/PyTorch，建立新的 environment version，重新执行稳定性门槛和所有三个学习门槛。已完成的正式模型不得与新环境训练的模型混合比较，除非三模型全部从零在新环境重跑。
+
+---
+
+# 10. A7：学习能力门槛
+
+在有效数据和稳定环境上，对三个模型分别执行独立、可丢弃的 depth-1 sanity run：
+
+- 每模型 2,000 updates；
+- train 仅使用 train split 的 depth-1；
+- validation 仅使用 validation split 的 depth-1；
+- 三模型相同样本顺序、optimizer、schedule、有效 batch、seed；
+- Model B/C 每 batch 从 K=4/8 中使用同一预生成 budget plan；
+- 每 100 updates 验证；
+- 门槛为 best held-out validation accuracy ≥70%，且最后 500 updates 的 median validation accuracy ≥65%；
+- 训练 accuracy、validation accuracy、NLL 都要记录，不能只报 best point；
+- sanity 权重全部丢弃，不能初始化正式训练。
+
+任何一个模型未通过：
+
+- 不得单独延长失败模型；
+- 先检查数据、tokenization、mask、label、optimizer 和梯度；
+- 只允许一次对三个模型完全相同的、在正式训练前声明的全局训练预算修订，最高 20,000 updates；
+- 若修订，则三个 sanity 和三个正式模型全部采用新预算并从零开始；
+- 仍未通过则状态为 `LEARNING_GATE_FAILED`，停止正式实验。
+
+16-example overfit 只能诊断 plumbing，不能替代 held-out gate。
+
+---
+
+# 11. A8：正式训练
+
+三个模型全部通过门槛后，从共同初始化重新开始正式训练。默认：
+
+- seed=0；
+- 20,000 updates；若资源限制必须减少，只能在看到任何正式结果前统一冻结并说明，少于 10,000 updates 时不得给 GO；
+- effective batch=128；
+- AdamW，`lr=3e-4`，`weight_decay=0.01`；
+- 5% warmup + cosine decay；
+- gradient clip=1.0；
+- BF16；
+- strict deterministic algorithms；
+- train budgets K=4/8，按 batch 从固定预生成序列均匀选择；
+- 三模型使用完全相同的训练样本索引、K 序列、update 数和 validation interval；
+- 每 25 updates 原子保存 resumable checkpoint；
+- 保存 best-validation 和 final checkpoint；best 先按 accuracy、再按 NLL；
+- checkpoint 包含 model/optimizer/scheduler/update/config/data hash/plan hash/RNG/累计 wall time/tokens/examples。
+
+正式训练不能使用 OOD test 选择 checkpoint 或修改超参数。
+
+---
+
+# 12. A9–A11：完整任务评估
+
+评估 best checkpoint，并对 final checkpoint做关键结果复核。
+
+split：IID、OOD-6、OOD-8、OOD-12。
+
+训练预算：4、8。
+
+unseen budgets：3、5、7、12、16。
+
+Model A：所有 budget 的 discrete loop。
+
+Model B：所有 budget 的 uniform / front-loaded / back-loaded loop schedule。
+
+Model C：
+
+- Euler：NFE 3/4/5/7/8/12/16；
+- matched NFE 4/8/12/16 下比较 Euler / Heun / RK4；
+- uniform / front-loaded / back-loaded schedule。
+
+reference 始终是同一模型的 uniform budget/NFE=8。重复运行 reference 条件时 logits、prediction、flip、JS、hidden endpoint distance 必须一致到预设容差；否则评估不确定性未受控。
+
+每个 split 和 reasoning depth 报告：
+
+- accuracy；
+- NLL；
+- two-class summed Brier；
+- flip rate vs 8；
+- harmful flip：reference 正确、新条件错误，占全部样本比例；
+- recovery flip：reference 错误、新条件正确，占全部样本比例；
+- Jensen–Shannon divergence，自然对数；
+- absolute logit difference；
+- confidence difference；
+- mean confidence；
+- truncated/untruncated 分组结果。
+
+必须保存每个样本的 label、prediction、logits 和 stable example ID，以便 paired analysis。不得只保存聚合值。
+
+---
+
+# 13. A12：Recurrent contribution control
+
+三个模型都评估 bypass recurrent core：
+
+- stem 后直接 classifier；
+- 与相同模型 budget=8 比较 accuracy/NLL；
+- 如果 Model C 在所有 split 上 recurrent gain <1 percentage point，则不能把稳定性包装成推理改进。
+
+同时报告 state displacement、relative displacement、confidence。检查 vector field 是否只是更新更小或置信度更低。
+
+---
+
+# 14. A13：数值收敛
+
+只对训练后的 Model C：
+
+- 固定 512 个 IID 样本，按 depth 分层；
+- FP32 权重和计算，关闭 TF32；
+- Euler steps 4/8/16/32/64；
+- Heun steps 2/4/8/16/32；
+- RK4 steps 1/2/4/8/16；
+- reference 使用 RK4 32/64 steps；
+- Check I：reference 32→64 的变化 < 0.1 × Euler-4 coarse error；
+- 计算 relative endpoint error、actual log-log slopes 和 solver disagreement；
+- 不预设斜率，不把数值收敛解释为推理能力。
+
+最终 hidden state 只对固定诊断样本保存 FP16 副本，但距离计算在 FP32 完成。禁止跨不同训练模型比较 raw hidden coordinates。
+
+---
+
+# 15. A14：实际计算成本
+
+GPU 独占时测量：
+
+- BF16；
+- 固定 IID batch bank；
+- batch size=32；
+- 20 warmups；
+- 100 timed batches；
+- 每次同步 CUDA；
+- mean / median / p95 latency；
+- examples/sec；
+- peak allocated / reserved VRAM。
+
+相同 NFE 只是成本近似，必须报告实际 latency。若不同模型因 OOM 不能使用同一 batch，应先用所有模型都能运行的共同 batch 重测，不得拼接不可比结果。
+
+---
+
+# 16. 结果文件
+
+必须生成：
+
+- `artifacts/stage0_results.csv`
+- `artifacts/fairness_table.csv`
+- `artifacts/unseen_budget_comparison.csv`
+- `artifacts/schedule_sensitivity.csv`
+- `artifacts/convergence.csv`
+- `artifacts/data_shortcut_results.csv`
+- `artifacts/sanity_checks.json`
+- `artifacts/decision.json`
+- `artifacts/STAGE0_REPORT.md`
+
+`stage0_results.csv` 至少包含：
+
+- model、seed、split、reasoning_depth；
+- budget、nfe、solver、schedule；
+- checkpoint type/update；
+- accuracy、nll、brier；
+- flip/harmful/recovery；
+- js/logit/confidence differences；
+- hidden endpoint distance；
+- latency mean/p95；
+- peak VRAM；
+- examples；
+- truncation group；
+- data/config/plan hash；
+- run status。
+
+未知字段只能写 `NA`，并带 `NOT_RUN_*` 状态。禁止填 0，禁止用计划值冒充实测值。
+
+---
+
+# 17. 四张主图
+
+只有真实完整数据存在时生成 PNG 和 PDF：
+
+1. Accuracy vs compute budget：三个模型、四个 split，标出训练预算 4/8；
+2. Harmful flip rate vs compute budget：reference=8；
+3. Model C same-NFE solver comparison：Euler/Heun/RK4；
+4. Numerical convergence：`log(dt)` vs `log(relative endpoint error)`。
+
+若正式实验未完成，不生成空白或占位主图；在报告中明确写 `NOT GENERATED`。
+
+---
+
+# 18. 必须通过的 checks
+
+- Check A：三个模型通过 depth-1 held-out learning gate；
+- Check B：VectorField signature 不接受 dt/K/NFE/solver ID；
+- Check C：改变 inference step count 不改变 neural weights；
+- Check D：Euler/Heun/RK4 NFE counter 正确；
+- Check E：所有 schedule 的 dt>0 且 sum(dt)=1；
+- Check F：eval mode dropout disabled，重复 reference 确定；
+- Check G：参数差 <1%，总参数 15M–30M；
+- Check H：无 exact / canonical / predicate-isomorphic train-test 重复；
+- Check I：reference resolution 已充分收敛；
+- Check J：全量语义、最短深度和无矛盾验证通过；
+- Check K：shortcut suite 通过预注册阈值；
+- Check L：稳定性门槛通过，checkpoint 精确恢复，无项目相关原生崩溃。
+
+任何 check 失败都必须在 `sanity_checks.json` 中写 `FAIL` 或 `NOT_RUN`，不得写成 PASS。
+
+---
+
+# 19. 决策规则
+
+只有 `FORMAL_COMPLETE` 时做科学决策。
+
+GO 仅在同时满足以下条件时成立：
+
+1. 至少一个 baseline 在至少两个不同 unseen-budget/split 条件出现：accuracy 比自身 budget8 下降 ≥2 percentage points，且 harmful flip ≥1%；
+2. Model C 在至少两个对应条件将 harmful flip 降低 ≥50%；
+3. Model C 在每个 split 的训练预算4/8上，相对更强 baseline 的最大 accuracy 损失 ≤1 percentage point；
+4. Model C 至少一个 split 的 recurrent contribution ≥1 percentage point；
+5. 数据、学习、infra 和 numerical reference gates 全部通过。
+
+STOP 条件：
+
+- baseline 不满足 task-level harmful sensitivity 门槛；或
+- Model C 只降低 hidden drift，没有 task benefit；或
+- Model C 明显牺牲训练预算性能；或
+- recurrent core 基本没有贡献。
+
+UNCLEAR 条件：
+
+- 完整 seed=0 实验已完成，但 effect 接近门槛、不同条件冲突，或单 seed 无法判断稳定性。
+
+仅在完整 seed=0 得到 UNCLEAR 且数据/infra全部有效时，才建议 seeds1/2。`DATA_INVALID`、`INFRA_BLOCKED` 或 `LEARNING_GATE_FAILED` 不得包装成“建议加 seed”。
+
+---
+
+# 20. 报告结构
+
+`STAGE0_REPORT.md` 必须包括：
+
+1. Experimental setup：数据版本、生成修复、shortcut gates、模型、预算、硬件、参数量、环境；
+2. Does budget sensitivity actually exist?：unseen budgets、harmful flips、OOD depth、schedule；
+3. Does vector field reduce sensitivity?：task performance、harmful flips、solver/schedule disagreement、训练预算损失、recurrent contribution；
+4. Numerical behavior：Euler/Heun/RK4、收敛曲线和 observed slopes，并明确 numerical convergence 本身不证明 reasoning；
+5. Alternative explanations：更新幅度、confidence、core bypass、参数差、训练速度、shortcut、截断、checkpoint选择；
+6. Decision：GO / UNCLEAR / STOP，逐条对照冻结门槛；
+7. Execution integrity：实际完成/未完成阶段、崩溃和恢复、所有 NA 的原因。
+
+报告必须明确区分：
+
+- 真实模型结果；
+- 数据审计结果；
+- implementation unit tests；
+- development/smoke runs；
+- 未运行的计划条件。
+
+---
+
+# 21. 执行顺序
+
+严格按顺序执行，任何前置硬门槛失败就停止后续 GPU 工作：
+
+1. A0 仓库与环境审计；
+2. A1 数据生成修复；
+3. A2 全量语义/去重/shortcut gates；
+4. A3 train-only tokenizer 和长度冻结；
+5. A4 模型公平性与接口测试；
+6. A5 solver tests；
+7. A6 infra稳定性和checkpoint恢复；
+8. A7 三模型学习门槛；
+9. 冻结正式 config/data/plan hashes；
+10. A8 三模型正式训练；
+11. A9–A11 全部任务评估；
+12. A12 recurrent contribution；
+13. A13 numerical convergence；
+14. A14 latency/VRAM；
+15. 聚合 CSV、图、报告和decision；
+16. 运行最终 integrity audit，确认报告中的每个数字可追溯到机器生成文件；
+17. 提交代码和小型结果到 Git；大文件使用 release/LFS 或保留可验证下载位置，不绕过 GitHub 限制。
+
+---
+
+# 22. 最终回复格式
+
+最终回复必须先给真实状态，然后列出：
+
+1. Git commit 和运行目录；
+2. 数据数量、生成版本、manifest hash；
+3. shortcut suite 的最高 accuracy 及是否通过；
+4. 三模型参数量和差异；
+5. sanity checks A–L；
+6. 每模型实际正式 updates、训练时间、峰值显存；
+7. budget8 主结果；
+8. unseen budget accuracy drop 和 harmful flips；
+9. matched-NFE solver 结果；
+10. numerical reference gate；
+11. GO / UNCLEAR / STOP 及门槛证据；
+12. 报告、CSV、图和日志的路径。
+
+如果没有达到 `FORMAL_COMPLETE`，必须直接写：
+
+`正式 seed=0 对照实验未完成。`
+
+随后给出唯一主阻塞状态 `DATA_INVALID` / `INFRA_BLOCKED` / `LEARNING_GATE_FAILED`，说明已完成阶段和恢复所需动作。不得声称“基本完成”，不得生成方法胜负结论。
+
+现在开始执行，不要只返回计划。先读取仓库和旧报告，然后从新的 V2 数据修复分支开始。
