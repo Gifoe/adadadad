@@ -40,7 +40,8 @@ Frozen choices before formal outcomes:
 - Mechanism reference gate: grounded CF rate at least20pp above baseline and
   its own noise at K=D, plus majority same-state preservation and a structured
   CF trajectory advantage over noise. Utility reference: matched-K OOD>=5pp,
-  or terminal stability>=5pp, or demonstrably deeper useful performance.
+  or terminal stability>=5pp, or a deepest matched-K OOD hop at90% accuracy
+  at least4hops deeper (use training depth5 as the floor if no OOD depth passes).
 - No method changes after outcomes. A negative result is reported as such.
 
 Run on the server (activated Torch2.8/cu128 environment):
