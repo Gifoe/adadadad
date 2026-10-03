@@ -1,0 +1,52 @@
+{
+  "baseline": {
+    "by_hop": {
+      "2": {
+        "correct": 8,
+        "total": 750,
+        "accuracy": 0.010666666666666666
+      },
+      "3": {
+        "correct": 4,
+        "total": 750,
+        "accuracy": 0.005333333333333333
+      },
+      "4": {
+        "correct": 10,
+        "total": 750,
+        "accuracy": 0.013333333333333334
+      },
+      "5": {
+        "correct": 3,
+        "total": 750,
+        "accuracy": 0.004
+      }
+    },
+    "macro": 0.008333333333333335
+  },
+  "grounded": {
+    "by_hop": {
+      "2": {
+        "correct": 145,
+        "total": 750,
+        "accuracy": 0.19333333333333333
+      },
+      "3": {
+        "correct": 27,
+        "total": 750,
+        "accuracy": 0.036
+      },
+      "4": {
+        "correct": 6,
+        "total": 750,
+        "accuracy": 0.008
+      },
+      "5": {
+        "correct": 4,
+        "total": 750,
+        "accuracy": 0.005333333333333333
+      }
+    },
+    "macro": 0.06066666666666667
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "random_replays": 1000,
+  "all_generated_paths_replayed": 301250,
+  "mismatches": 0,
+  "split_overlap": 0,
+  "training_ood_examples": 0,
+  "permutation_relations": true
+}

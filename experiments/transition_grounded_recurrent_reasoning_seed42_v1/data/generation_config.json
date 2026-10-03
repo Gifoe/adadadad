@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "entities": 200,
+  "relations": 10,
+  "max_hop": 20,
+  "generator": "official functions extracted verbatim with AST to avoid module top-level I/O",
+  "chains_per_hop": 15750,
+  "train_per_hop": 15000,
+  "test_per_hop": 750,
+  "train_max_hop": 5
+}

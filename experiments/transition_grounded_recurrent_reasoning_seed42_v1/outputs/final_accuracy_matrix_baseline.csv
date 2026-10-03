@@ -1,0 +1,5 @@
+model,D,K,correct,total,accuracy,compute_regime
+baseline,2,5,7,750,0.009333333333333334,over
+baseline,3,5,5,750,0.006666666666666667,over
+baseline,4,5,6,750,0.008,over
+baseline,5,5,4,750,0.005333333333333333,matched

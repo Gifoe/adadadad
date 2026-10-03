@@ -1,0 +1,6 @@
+{
+  "steps": 20000,
+  "batch_size": 128,
+  "sha256": "986668a181dbbde8a09c39dc41537b1696ce8a020c7321a37ceb2447cec2a1a1",
+  "max_training_hop": 5
+}

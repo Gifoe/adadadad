@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "completed": true,
+  "training_valid": false,
+  "formal_steps_per_arm": 20000,
+  "examples_seen_per_arm": 2560000,
+  "shared_initial_sha256": "acfc223cc2d6e99e18c3601f71a2853822a84581c5a726d27fda02f5e768b3f0",
+  "shared_sample_plan_sha256": "986668a181dbbde8a09c39dc41537b1696ce8a020c7321a37ceb2447cec2a1a1",
+  "same_step_hop_lr_records": true,
+  "max_training_hop": 5,
+  "finite_final_weights": true,
+  "tied_head_verified": true,
+  "figure_sizes": {
+    "final_accuracy_vs_hop": [
+      1240,
+      701
+    ],
+    "recurrence_hop_heatmap_baseline": [
+      1242,
+      522
+    ],
+    "recurrence_hop_heatmap_grounded": [
+      1242,
+      522
+    ],
+    "state_accuracy_heatmap_baseline": [
+      1242,
+      522
+    ],
+    "state_accuracy_heatmap_grounded": [
+      1242,
+      522
+    ],
+    "computational_frontier": [
+      1242,
+      522
+    ],
+    "overthinking_curve": [
+      1242,
+      522
+    ],
+    "counterfactual_intervention": [
+      1242,
+      522
+    ]
+  },
+  "skipped_evaluation_reason": "predeclared ID sanity gate failed at matched maximum budget",
+  "time": "2026-10-04 02:42:50"
+}

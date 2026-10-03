@@ -1,0 +1,6 @@
+{
+  "path": "D:\\transition_grounded_recurrent_reasoning_seed42_v1\\data\\verified_dataset_seed42.zip",
+  "bytes": 36354789,
+  "sha256": "38ca1df25e4736d0415786248337b981857561fb3eab5df34a21eb8d23656440",
+  "includes": "all actual generated train/test JSON, array caches, relation table, vocabulary, data audit, and shared 20000-step sample plan"
+}

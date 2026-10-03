@@ -1,10 +1,11 @@
 """Post-training execution sanity; does not select or alter a model."""
-import torch,numpy as np,json
+import torch,numpy as np,json,sys
 from run_experiment import OUT,ROOT,batch,load_data,dump
 from evaluate import load_model
 torch.set_num_threads(1)
-train,test=load_data();m=load_model('baseline');m.num_iterations=5
-results={}
+name=sys.argv[1] if len(sys.argv)>1 else 'baseline'
+train,test=load_data();m=load_model(name);m.num_iterations=5
+results=dict(model=name,checkpoint_step=m.checkpoint_step)
 with torch.no_grad():
     for split,data in [('train',train),('test',test)]:
         results[split]={}
@@ -33,4 +34,6 @@ with torch.no_grad():
         for i in np.random.RandomState(42).choice(len(raw),1000,replace=False):
             r=raw[i];tok=[r['start_entity']]+r['relations']+['<state>'];assert [ids[x] for x in tok]==data['input_ids'][i,:len(tok)].tolist();assert ids[r['final_entity']]==data['state_targets'][i,-1]
     results['text_cache_checks']=2000;results['status']='PASS'
-dump(OUT/'post_training_execution_sanity.json',results);print(json.dumps(results,indent=2),flush=True)
+dump(OUT/f'training_execution_sanity_{name}.json',results)
+if name=='baseline':dump(OUT/'post_training_execution_sanity.json',results)
+print(json.dumps(results,indent=2),flush=True)

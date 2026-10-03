@@ -9,5 +9,8 @@
   "upstream_commit": "bb22b192977b1b136fde985c8e7a2392d172d97a",
   "start": "2026-10-04 02:00:12",
   "parameters": 28520448,
-  "hostname": "DESKTOP-C4FOPGI"
+  "hostname": "DESKTOP-C4FOPGI",
+  "completed": "2026-10-04 02:42:50",
+  "execution_status": "COMPLETE_WITH_INVALID_TRAINING",
+  "formal_steps_per_arm": 20000
 }

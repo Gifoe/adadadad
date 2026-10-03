@@ -1,0 +1,94 @@
+{
+  "training": {
+    "baseline": {
+      "seconds": 1019.0281817999203,
+      "peak_vram_mib": 2088.123046875,
+      "optimizer_steps": 20000,
+      "examples_seen": 2560000,
+      "examples_per_second": 2512.1974502002927,
+      "id": {
+        "by_hop": {
+          "2": {
+            "correct": 7,
+            "total": 750,
+            "accuracy": 0.009333333333333334
+          },
+          "3": {
+            "correct": 5,
+            "total": 750,
+            "accuracy": 0.006666666666666667
+          },
+          "4": {
+            "correct": 6,
+            "total": 750,
+            "accuracy": 0.008
+          },
+          "5": {
+            "correct": 4,
+            "total": 750,
+            "accuracy": 0.005333333333333333
+          }
+        },
+        "macro": 0.007333333333333333
+      }
+    },
+    "grounded": {
+      "seconds": 1025.2977537999395,
+      "peak_vram_mib": 2416.35107421875,
+      "optimizer_steps": 20000,
+      "examples_seen": 2560000,
+      "examples_per_second": 2496.8356660415725,
+      "id": {
+        "by_hop": {
+          "2": {
+            "correct": 292,
+            "total": 750,
+            "accuracy": 0.3893333333333333
+          },
+          "3": {
+            "correct": 58,
+            "total": 750,
+            "accuracy": 0.07733333333333334
+          },
+          "4": {
+            "correct": 6,
+            "total": 750,
+            "accuracy": 0.008
+          },
+          "5": {
+            "correct": 3,
+            "total": 750,
+            "accuracy": 0.004
+          }
+        },
+        "macro": 0.11966666666666667
+      }
+    }
+  },
+  "smoke": {
+    "baseline": {
+      "seconds": 9.708471699967049,
+      "peak_vram_mib": 1132.88671875,
+      "optimizer_steps": 200,
+      "examples_seen": 25600,
+      "examples_per_second": 2636.8722895990813,
+      "first20_loss": 748.949609375,
+      "last20_loss": 6.392641758918762,
+      "loss_decreased": true,
+      "projected_two_model_12000_hours": 0.323615723332235
+    },
+    "grounded": {
+      "seconds": 8.423235299997032,
+      "peak_vram_mib": 1132.88671875,
+      "optimizer_steps": 200,
+      "examples_seen": 25600,
+      "examples_per_second": 3039.2122608766517,
+      "first20_loss": 1498.5066772460937,
+      "last20_loss": 15.736899614334106,
+      "loss_decreased": true,
+      "projected_two_model_12000_hours": 0.280774509999901
+    }
+  },
+  "total_gpu_hours": 0.5729049007221733,
+  "training_valid": false
+}

@@ -9,7 +9,7 @@ def csvwrite(path,rows):
     with path.open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 def load_model(name):
-    m=make_model(218).cuda();m.load_state_dict(torch.load(CK/(name+'_final.pt'),weights_only=True,map_location='cuda')['model_state_dict']);m.eval();return m
+    m=make_model(218).cuda();ck=torch.load(CK/(name+'_final.pt'),weights_only=True,map_location='cuda');m.load_state_dict(ck['model_state_dict']);m.checkpoint_step=ck['step'];m.eval();return m
 @torch.no_grad()
 def sweep(name,model,test):
     final=[];states=[];over=[];frontier=[]

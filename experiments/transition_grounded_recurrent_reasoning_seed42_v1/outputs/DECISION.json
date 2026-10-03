@@ -1,0 +1,10 @@
+{
+  "decision": "INVALID TRAINING RUN",
+  "training_valid": false,
+  "causal_gate": null,
+  "utility_gate": null,
+  "id_macro": {
+    "baseline": 0.007333333333333333,
+    "grounded": 0.11966666666666667
+  }
+}

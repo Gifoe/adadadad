@@ -1,0 +1,84 @@
+{
+  "model": "baseline",
+  "checkpoint_step": 20000,
+  "train": {
+    "1": {
+      "n": 512,
+      "correct": 468,
+      "accuracy": 0.9140625,
+      "padded_correct": 464,
+      "prediction_agreement": 0.98046875,
+      "max_padding_logit_difference": 0.25
+    },
+    "2": {
+      "n": 512,
+      "correct": 499,
+      "accuracy": 0.974609375,
+      "padded_correct": 499,
+      "prediction_agreement": 1.0,
+      "max_padding_logit_difference": 0.25
+    },
+    "3": {
+      "n": 512,
+      "correct": 501,
+      "accuracy": 0.978515625,
+      "padded_correct": 501,
+      "prediction_agreement": 1.0,
+      "max_padding_logit_difference": 0.375
+    },
+    "4": {
+      "n": 512,
+      "correct": 512,
+      "accuracy": 1.0,
+      "padded_correct": 512,
+      "prediction_agreement": 1.0,
+      "max_padding_logit_difference": 0.5
+    },
+    "5": {
+      "n": 512,
+      "correct": 512,
+      "accuracy": 1.0,
+      "padded_correct": 512,
+      "prediction_agreement": 1.0,
+      "max_padding_logit_difference": 0.0
+    }
+  },
+  "test": {
+    "2": {
+      "n": 512,
+      "correct": 3,
+      "accuracy": 0.005859375,
+      "padded_correct": 2,
+      "prediction_agreement": 0.978515625,
+      "max_padding_logit_difference": 0.25
+    },
+    "3": {
+      "n": 512,
+      "correct": 4,
+      "accuracy": 0.0078125,
+      "padded_correct": 4,
+      "prediction_agreement": 0.986328125,
+      "max_padding_logit_difference": 0.5
+    },
+    "4": {
+      "n": 512,
+      "correct": 3,
+      "accuracy": 0.005859375,
+      "padded_correct": 2,
+      "prediction_agreement": 0.98828125,
+      "max_padding_logit_difference": 0.5
+    },
+    "5": {
+      "n": 512,
+      "correct": 3,
+      "accuracy": 0.005859375,
+      "padded_correct": 3,
+      "prediction_agreement": 1.0,
+      "max_padding_logit_difference": 0.0
+    }
+  },
+  "recurrence_prefix_max_difference": 0.0,
+  "exact_raw_state_noop_max_difference": 0.0,
+  "text_cache_checks": 2000,
+  "status": "PASS"
+}

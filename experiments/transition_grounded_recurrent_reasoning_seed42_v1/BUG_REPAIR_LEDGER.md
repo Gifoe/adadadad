@@ -16,3 +16,11 @@
 The methods, architecture, initialization, data sampling and optimization are
 unchanged by these engineering repairs. The older project's native runtime
 crashes are not reused as evidence about the current experiment.
+
+4. Delivery review found that a later rerun could re-label a20k checkpoint as
+   a12k result while reconstructing the initial phase. Completed directories now
+   exit without mutating artifacts; interrupted extensions resume the declared
+   20k phase. This post-run guard does not change any executed optimizer update.
+5. Local SHA/source-delivery checker attempted to read a __pycache__ directory
+   as text. Filter to files; all three checkpoint hashes, the dataset archive
+   hash and six verbatim official sources verified successfully.

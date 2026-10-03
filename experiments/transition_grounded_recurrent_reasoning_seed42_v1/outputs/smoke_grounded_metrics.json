@@ -1,0 +1,11 @@
+{
+  "seconds": 8.423235299997032,
+  "peak_vram_mib": 1132.88671875,
+  "optimizer_steps": 200,
+  "examples_seen": 25600,
+  "examples_per_second": 3039.2122608766517,
+  "first20_loss": 1498.5066772460937,
+  "last20_loss": 15.736899614334106,
+  "loss_decreased": true,
+  "projected_two_model_12000_hours": 0.280774509999901
+}

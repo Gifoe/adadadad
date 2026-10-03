@@ -1,5 +1,14 @@
 # Transition-Grounded Recurrent Reasoning: seed42 viability experiment
 
+Completed result: **INVALID TRAINING RUN**. Both arms ran 20,000 matched
+updates; held-out ID macro is 0.73% baseline and 11.97% grounded (target 90%).
+No OOD recurrence sweep or counterfactual intervention was executed after the
+predeclared validity gate failed. Final-accuracy CSVs retain measured ID K5
+counts; unexecuted evaluation files contain headers and status figures.
+See `FINAL_REPORT.md`, `outputs/DECISION.json` and `outputs/completion_audit.json`.
+Real checkpoints and the complete verified dataset/sample plan are included
+through Git LFS; run `git lfs pull` after checking out this branch.
+
 Question: does supervising intermediate states induce causally used recurrent
 state transitions, and does that improve extrapolation or terminal stability?
 
@@ -44,8 +53,13 @@ Frozen choices before formal outcomes:
   at least4hops deeper (use training depth5 as the floor if no OOD depth passes).
 - No method changes after outcomes. A negative result is reported as such.
 
-Run on the server (activated Torch2.8/cu128 environment):
+Run in a fresh directory on the server (activated Torch2.8/cu128 environment):
 `python data_pipeline.py` then `python run_experiment.py`.
+The delivered directory already contains completed artifacts; rerunning its
+driver preserves them and exits. For reproduction copy the source and official
+files into a new directory without existing outputs/checkpoints, then regenerate
+data. An interrupted extension resumes at20,000 rather than re-labeling later
+weights as the12,000-step outcome.
 Dependencies: torch2.8.0+cu128, transformers4.44.2, numpy, tqdm, matplotlib,
 scipy. `run_server.cmd` sets one CPU thread and writes `execution.log`.
 An SSH connection must remain alive; the driver saves resumable checkpoints

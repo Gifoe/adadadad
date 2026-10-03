@@ -1,0 +1,4 @@
+D:\transition_grounded_recurrent_reasoning_seed42_v1\run_experiment.py:63: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  delta=float(abs(l0-baseline_reference));diff=float((original-default).abs().max())
+SANITY_PASS independent baseline CE vs lambda0

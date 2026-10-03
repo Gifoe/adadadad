@@ -1,0 +1,32 @@
+{
+  "seconds": 1019.0281817999203,
+  "peak_vram_mib": 2088.123046875,
+  "optimizer_steps": 20000,
+  "examples_seen": 2560000,
+  "examples_per_second": 2512.1974502002927,
+  "id": {
+    "by_hop": {
+      "2": {
+        "correct": 7,
+        "total": 750,
+        "accuracy": 0.009333333333333334
+      },
+      "3": {
+        "correct": 5,
+        "total": 750,
+        "accuracy": 0.006666666666666667
+      },
+      "4": {
+        "correct": 6,
+        "total": 750,
+        "accuracy": 0.008
+      },
+      "5": {
+        "correct": 4,
+        "total": 750,
+        "accuracy": 0.005333333333333333
+      }
+    },
+    "macro": 0.007333333333333333
+  }
+}

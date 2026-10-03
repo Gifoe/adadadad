@@ -1,0 +1,84 @@
+{
+  "model": "grounded",
+  "checkpoint_step": 20000,
+  "train": {
+    "1": {
+      "n": 512,
+      "correct": 459,
+      "accuracy": 0.896484375,
+      "padded_correct": 459,
+      "prediction_agreement": 0.984375,
+      "max_padding_logit_difference": 1.0
+    },
+    "2": {
+      "n": 512,
+      "correct": 502,
+      "accuracy": 0.98046875,
+      "padded_correct": 500,
+      "prediction_agreement": 0.99609375,
+      "max_padding_logit_difference": 1.0
+    },
+    "3": {
+      "n": 512,
+      "correct": 507,
+      "accuracy": 0.990234375,
+      "padded_correct": 507,
+      "prediction_agreement": 0.99609375,
+      "max_padding_logit_difference": 1.0
+    },
+    "4": {
+      "n": 512,
+      "correct": 510,
+      "accuracy": 0.99609375,
+      "padded_correct": 509,
+      "prediction_agreement": 0.998046875,
+      "max_padding_logit_difference": 2.0
+    },
+    "5": {
+      "n": 512,
+      "correct": 510,
+      "accuracy": 0.99609375,
+      "padded_correct": 510,
+      "prediction_agreement": 1.0,
+      "max_padding_logit_difference": 0.0
+    }
+  },
+  "test": {
+    "2": {
+      "n": 512,
+      "correct": 199,
+      "accuracy": 0.388671875,
+      "padded_correct": 197,
+      "prediction_agreement": 0.990234375,
+      "max_padding_logit_difference": 1.0
+    },
+    "3": {
+      "n": 512,
+      "correct": 42,
+      "accuracy": 0.08203125,
+      "padded_correct": 42,
+      "prediction_agreement": 0.98828125,
+      "max_padding_logit_difference": 1.0
+    },
+    "4": {
+      "n": 512,
+      "correct": 3,
+      "accuracy": 0.005859375,
+      "padded_correct": 3,
+      "prediction_agreement": 0.986328125,
+      "max_padding_logit_difference": 2.0
+    },
+    "5": {
+      "n": 512,
+      "correct": 3,
+      "accuracy": 0.005859375,
+      "padded_correct": 3,
+      "prediction_agreement": 1.0,
+      "max_padding_logit_difference": 0.0
+    }
+  },
+  "recurrence_prefix_max_difference": 0.0,
+  "exact_raw_state_noop_max_difference": 0.0,
+  "text_cache_checks": 2000,
+  "status": "PASS"
+}

@@ -59,7 +59,8 @@ def unit(model,train,test):
         out=model(x,mask,p,True);l0,lf,li=losses(out,t,0.)
         original=RecurrentGPT2Block.forward(model,x,mask).logits
         default=model(x,mask).logits
-    delta=float(abs(l0-lf));diff=float((original-default).abs().max())
+    baseline_reference=torch.nn.functional.cross_entropy(out.final_logits.float(),t[:,4])
+    delta=float(abs(l0-baseline_reference));diff=float((original-default).abs().max())
     assert delta<1e-6 and diff<1e-6
     assert model.lm_head.weight is model.token_embedding.weight
     for h in out.hidden_states_per_recurrence:h.retain_grad()
@@ -119,6 +120,9 @@ def train_arm(name,budget,train,test,sample_plan,smoke=False):
     return result
 def main():
     torch.set_num_threads(1);OUT.mkdir(exist_ok=True);CK.mkdir(exist_ok=True)
+    completed=OUT/'completion_audit.json'
+    if completed.exists() and json.loads(completed.read_text()).get('completed'):
+        print('ALREADY_COMPLETED: preserving frozen artifacts; reproduce in a fresh directory.',flush=True);return
     dump(ROOT/'CONFIG.json',CONFIG)
     train,test=load_data();sample_plan=plan(train)
     if not (CK/'initial_weights.pt').exists():
@@ -131,8 +135,9 @@ def main():
         if not (OUT/f'smoke_{name}_metrics.json').exists():train_arm(name,200,train,test,sample_plan,True)
     status('SMOKE_PASS')
     results={}
-    for name in ['baseline','grounded']:results[name]=train_arm(name,12000,train,test,sample_plan)
-    if any(x['id']['macro']<.9 for x in results.values()):
+    extension_already_started=(OUT/'extension_trigger.json').exists()
+    for name in ['baseline','grounded']:results[name]=train_arm(name,20000 if extension_already_started else 12000,train,test,sample_plan)
+    if not extension_already_started and any(x['id']['macro']<.9 for x in results.values()):
         status('MATCHED_EXTENSION_TO_20000',initial_id={k:v['id'] for k,v in results.items()})
         dump(OUT/'extension_trigger.json',{k:v['id'] for k,v in results.items()})
         for name in ['baseline','grounded']:results[name]=train_arm(name,20000,train,test,sample_plan)

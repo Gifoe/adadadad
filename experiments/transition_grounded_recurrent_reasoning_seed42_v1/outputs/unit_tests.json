@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "lambda0_difference": 0.0,
+  "default_vs_official_max_difference": 0.0,
+  "grad_norm_per_recurrence": [
+    12.602250099182129,
+    12.602250099182129,
+    12.602250099182129,
+    12.602250099182129,
+    12.602250099182129
+  ],
+  "state_pos_checked": true,
+  "targets_absorbing_checked": true,
+  "pre_state_patch_leakage": 0.0
+}

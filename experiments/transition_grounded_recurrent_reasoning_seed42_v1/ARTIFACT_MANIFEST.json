@@ -1,0 +1,31 @@
+{
+  "checkpoints": [
+    {
+      "path": "D:\\transition_grounded_recurrent_reasoning_seed42_v1\\checkpoints\\baseline_final.pt",
+      "bytes": 114101145,
+      "sha256": "8d7126eba40464a7b828db7d91bd9642664dc71d49d86f7f90437506285aa371"
+    },
+    {
+      "path": "D:\\transition_grounded_recurrent_reasoning_seed42_v1\\checkpoints\\baseline_resume.pt",
+      "bytes": 342310007,
+      "sha256": "b3ba76a45baae8c74b443c4a8a5ea69d0cb56c364a4f2d920523127133eacf3c"
+    },
+    {
+      "path": "D:\\transition_grounded_recurrent_reasoning_seed42_v1\\checkpoints\\grounded_final.pt",
+      "bytes": 114101145,
+      "sha256": "7e036e433143d96f63219c277f9fa9c3c83cc99fc5e20a16ba29f310fc15a3a7"
+    },
+    {
+      "path": "D:\\transition_grounded_recurrent_reasoning_seed42_v1\\checkpoints\\grounded_resume.pt",
+      "bytes": 342310007,
+      "sha256": "8ef1adfc821d5f383f8b69ab52e733ee4549d9e04697aab16b391f436978e001"
+    },
+    {
+      "path": "D:\\transition_grounded_recurrent_reasoning_seed42_v1\\checkpoints\\initial_weights.pt",
+      "bytes": 114100434,
+      "sha256": "acfc223cc2d6e99e18c3601f71a2853822a84581c5a726d27fda02f5e768b3f0"
+    }
+  ],
+  "full_data_directory": "D:\\transition_grounded_recurrent_reasoning_seed42_v1\\data\\generated",
+  "large_files_retained_on_server": true
+}
