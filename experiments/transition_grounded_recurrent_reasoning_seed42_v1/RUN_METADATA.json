@@ -1,0 +1,13 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.44.2",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "platform": "Windows-10-10.0.18363-SP0",
+  "initial_sha256": "acfc223cc2d6e99e18c3601f71a2853822a84581c5a726d27fda02f5e768b3f0",
+  "upstream_commit": "bb22b192977b1b136fde985c8e7a2392d172d97a",
+  "start": "2026-10-04 02:00:12",
+  "parameters": 28520448,
+  "hostname": "DESKTOP-C4FOPGI"
+}

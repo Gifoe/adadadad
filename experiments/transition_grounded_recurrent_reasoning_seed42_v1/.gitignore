@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+data/generated/
+data/sample_plan.npy
+checkpoints/*.pt
+outputs/*.npz
+outputs/*.pt
+*.tmp
