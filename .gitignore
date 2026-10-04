@@ -25,3 +25,7 @@ mock_features/
 *.safetensors
 *.part
 
+# V3 original public artifacts and server carrier archives are reproducible by hash.
+experiments/transition_grounded_competent_checkpoint_seed42_v3/official_artifacts/
+experiments/transition_grounded_competent_checkpoint_seed42_v3/carriers/
+

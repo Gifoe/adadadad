@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "all_paths_replayed": 69500,
+  "random_replays": 1000,
+  "train_test_overlap": 0,
+  "training_hop_limit": 5,
+  "training_records": 62000,
+  "test_counts": {
+    "2": 750,
+    "3": 750,
+    "4": 750,
+    "5": 750,
+    "6": 750,
+    "8": 750,
+    "10": 750,
+    "12": 750,
+    "16": 750,
+    "20": 750
+  },
+  "source_type_labels_not_used_for_training_hop": true,
+  "permutation_relations": true,
+  "source_sha256": {
+    "train.json": "7f56438ed63fdd66761848607c283a1f534815300896c466cb1d249858205aef",
+    "test.json": "75facaf41bb9d15236a2d2b7e6fab8d606d884f187bf3c9b5440d9d5c2967d87",
+    "vocab.json": "54beefa3f1d310ad96376c80f2bbfbc689703d42188e41d211a1bafa416cbd93"
+  }
+}

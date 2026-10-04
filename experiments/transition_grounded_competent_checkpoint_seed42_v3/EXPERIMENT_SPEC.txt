@@ -1,0 +1,1212 @@
+你现在需要启动一个新的机制验证实验，停止把“从零复现 long-grokking curriculum”作为主路径。
+
+不要删除、覆盖或修改此前 v1 / v2 的任何结果、checkpoint 或日志。
+v2 当前 A1 可以停止并保留为“from-scratch training-cost evidence”。
+
+======================================================================
+NEW EXPERIMENT
+======================================================================
+
+创建：
+
+experiments/
+  transition_grounded_competent_checkpoint_seed42_v3/
+
+研究问题：
+
+Can transition supervision reorganize the recurrent computation of an
+already competent recurrent reasoner into verifiable and causally used
+problem-state transitions?
+
+中文：
+
+对于一个已经具备 multi-hop compositional reasoning 能力的官方
+Recurrent-Depth Transformer，
+给 recurrence 加入 intermediate transition supervision 后，
+能否让第 k 次 recurrence 真正对应第 k 次 problem-state transition，
+并且这种 state representation 被后续计算因果使用？
+
+======================================================================
+WHY THIS EXPERIMENT
+======================================================================
+
+此前 v1 / v2 暴露的主要问题是：
+
+从随机初始化训练官方 recurrent model 存在非常长的 grokking phase，
+因此我们大量 GPU 时间花在“让模型先学会 reasoning”，
+而不是验证我们的研究假设。
+
+这一轮绕过该 confound。
+
+从官方已经成功训练的 checkpoint 出发：
+
+    competent recurrent reasoner
+
+然后比较：
+
+    same competent checkpoint
+        |
+        |-----------------------|
+        |                       |
+    final-only FT         transition-grounded FT
+
+这样我们问的是：
+
+    transition supervision 是否改变“如何计算”
+
+而不是：
+
+    transition supervision 是否只是帮助模型更早学会任务。
+
+======================================================================
+STRICT RULES
+======================================================================
+
+1. 只允许使用官方真实代码和官方发布的 checkpoint。
+
+Base repository：
+
+    https://github.com/OSU-NLP-Group/Loop-Think-Generalize
+
+禁止使用：
+- 第三方复现 checkpoint
+- 自己猜测的 checkpoint
+- paper PDF 中没有对应官方 artifact 的实现
+- 其他人的非官方权重
+
+2. 首先必须确认 checkpoint provenance。
+
+建立：
+
+    CHECKPOINT_PROVENANCE.md
+
+至少写清：
+
+    checkpoint path
+    official source URL
+    architecture
+    d_model
+    num recurrent layers
+    training recurrence policy
+    maximum training hop seen
+    dataset version
+    seed if known
+    reported role in official experiments
+
+3. 优先寻找：
+
+    trained only up to approximately 5-hop
+
+的官方 successful checkpoint。
+
+因为这样可以继续测试：
+
+    6/8/10/12/16/20-hop
+
+depth extrapolation。
+
+如果没有 <=5-hop successful checkpoint：
+
+    使用官方可获得的最浅 successful checkpoint。
+
+然后把：
+
+    H_train = checkpoint 已经训练过的最大 hop
+
+记录下来。
+
+OOD 只能定义为：
+
+    D > H_train
+
+严禁把 checkpoint 已经见过的 hop 称为 OOD。
+
+4. 如果官方只有已经训练到很深（例如 12-hop 或更高）的权重：
+
+仍可执行：
+
+    causal mechanism audit
+
+但是不能对 <=H_train 的 hop 做 depth-extrapolation claim。
+
+======================================================================
+IMPORTANT ARCHITECTURE DECISION
+======================================================================
+
+不要给官方 checkpoint 新增 <state> token。
+
+原因：
+
+官方 checkpoint 没有这个 vocabulary / embedding，
+新增 token 会破坏 warm-start 的严格可比性。
+
+这一轮直接使用官方代码原本的：
+
+    prediction position hidden state
+
+作为 recurrent state carrier q_k。
+
+官方默认：
+
+    pred_pos = last_token
+
+如果官方 successful checkpoint 的真实配置确实使用 last padded
+prediction position，则完全保留这个行为。
+
+定义：
+
+    q_k =
+        hidden representation at prediction position
+        after recurrence k
+
+每一次 recurrence 后，通过原模型已有的 tied lm_head：
+
+    p_k = softmax(lm_head(q_k))
+
+来读取 intermediate entity prediction。
+
+不要增加：
+- state head
+- new embedding
+- new parameters
+- bottleneck
+- discrete token feedback
+
+这样 baseline / grounded / original checkpoint
+参数结构完全一致。
+
+======================================================================
+PHASE 0 — VERIFY OFFICIAL CHECKPOINT IS ACTUALLY COMPETENT
+======================================================================
+
+加载官方 checkpoint。
+
+不要训练。
+
+在其对应官方 dataset 上运行：
+
+ID hops：
+
+    all hops <= H_train
+
+如果 checkpoint 预计是 5-hop：
+
+    D = 2,3,4,5
+
+按官方 inference recurrence setting
+首先复现其 expected performance。
+
+同时 sweep：
+
+    K = 1,2,3,4,5,6,8,10,12,16,20,24
+
+保存：
+
+    pretrained_accuracy_matrix.csv
+
+必须确认这个 checkpoint 确实具备 held-out compositional reasoning。
+
+最低要求：
+
+    ID macro accuracy >= 85%
+
+否则：
+
+    OFFICIAL CHECKPOINT VALIDATION FAILURE
+
+停止实验。
+
+不要 fine-tune 一个本身不会 reasoning 的 checkpoint。
+
+======================================================================
+PHASE 1 — ZERO-TRAINING MECHANISM AUDIT
+======================================================================
+
+在任何新训练之前，
+直接测试官方 competent checkpoint 自己是否已经形成
+state-transition semantics。
+
+这是非常重要的 baseline。
+
+--------------------------------------------------
+1A. Reconstruct ground-truth intermediate states
+--------------------------------------------------
+
+从官方 atomic transition table / dataset generator
+重建：
+
+    e0 --r1--> e1 --r2--> ... --rD--> eD
+
+对每条 evaluation chain 保存：
+
+    start_entity
+    relations
+    state_path
+    final_entity
+
+随机抽至少 1000 个样本 replay transition table，
+验证所有 intermediate states 正确。
+
+--------------------------------------------------
+1B. Intermediate-state decodability
+--------------------------------------------------
+
+运行官方 checkpoint。
+
+保存每次 recurrence：
+
+    q_1, q_2, ..., q_K
+
+以及：
+
+    lm_head(q_k)
+
+对于 D-hop sample：
+
+target：
+
+    e_k        if k <= D
+    e_D        if k > D
+
+计算：
+
+    pretrained_state_accuracy[D,k]
+
+注意：
+
+不训练 linear probe。
+
+主指标必须是官方已有 lm_head 对 q_k 的直接读取。
+
+原因：
+
+我们关心 recurrence hidden state 是否已经自然对齐到 entity state，
+而不是额外 probe 是否能从高维 representation 挖出信息。
+
+输出：
+
+    pretrained_state_accuracy.csv
+
+--------------------------------------------------
+1C. Pretrained causal intervention
+--------------------------------------------------
+
+这是 Phase 1 最重要的部分。
+
+只使用 TRAIN split 建 prototype。
+
+对于：
+
+    k = 2
+    k = 4
+
+收集 prediction-position hidden：
+
+    q_k
+
+按照真实 intermediate state entity e 分组：
+
+    mu[k,e] =
+        mean(q_k | true state at recurrence k = e)
+
+minimum count：
+
+    10
+
+对 evaluation sample：
+
+    original path:
+
+    e0 -> ... -> e_k -> ... -> e_D
+
+选择：
+
+    e_cf != e_k
+
+要求：
+
+    mu[k,e_cf] exists
+
+并且执行剩余 relations：
+
+    r_{k+1}, ..., r_D
+
+得到：
+
+    e_cf
+        -> e'_{k+1}
+        -> ...
+        -> y_cf
+
+且：
+
+    y_cf != y_original
+
+在 recurrence k 后：
+
+只替换 prediction-position hidden：
+
+    q_k <- mu[k,e_cf]
+
+其他 token hidden vectors 完全不改。
+
+然后继续使用原 recurrent block：
+
+    k+1 ... K
+
+主设置：
+
+    K = max(D, H_train)
+
+若合理，再补：
+
+    K = min(D+4,24)
+
+计算：
+
+1.
+Counterfactual Final Target Rate
+
+    P(final prediction == y_cf)
+
+2.
+Original Retention Rate
+
+    P(final prediction == y_original)
+
+3.
+Counterfactual Trajectory Accuracy
+
+    for j=k+1...D:
+
+    P(predicted state_j == true counterfactual state_j)
+
+4.
+Same-state prototype control
+
+    q_k <- mu[k,e_original]
+
+应该尽量保持原预测。
+
+5.
+Norm-matched random noise control
+
+不能只是扰乱模型，
+必须检查 prototype intervention 是否产生
+“有方向的、符合 transition table 的错误”。
+
+输出：
+
+    pretrained_intervention_results.csv
+    pretrained_intervention_summary.csv
+
+======================================================================
+PHASE 1 DECISION
+======================================================================
+
+Phase 1 会出现三种可能。
+
+--------------------------------------------------
+CASE P1-A
+--------------------------------------------------
+
+如果 official checkpoint 已经同时：
+
+    high intermediate state accuracy
+
+并且：
+
+    counterfactual intervention
+        ->
+    correct counterfactual trajectory
+        ->
+    correct y_cf
+
+说明：
+
+普通 recurrent-depth Transformer
+本身已经形成 causally grounded transition semantics。
+
+那么：
+
+    transition supervision 作为核心方法的 novelty 较弱。
+
+仍可执行 Phase 2，
+但最终必须考虑：
+
+    BASELINE ALREADY EXHIBITS MECHANISM
+
+不能声称机制由我们提出的方法首次产生。
+
+--------------------------------------------------
+CASE P1-B
+--------------------------------------------------
+
+如果：
+
+    intermediate state reasonably decodable
+
+但是：
+
+    counterfactual intervention fails
+
+这是最理想的研究 gap：
+
+    state information is represented
+    but not causally organized as a transition state.
+
+进入 Phase 2。
+
+--------------------------------------------------
+CASE P1-C
+--------------------------------------------------
+
+如果：
+
+    intermediate state decoding itself is weak
+
+也进入 Phase 2。
+
+此时问题变为：
+
+    can transition supervision impose
+    recurrence-indexed state semantics
+    onto a competent reasoner?
+
+======================================================================
+PHASE 2 — MATCHED SHORT FINE-TUNING
+======================================================================
+
+从完全同一个 official competent checkpoint：
+
+    M0
+
+复制两份：
+
+    M_base
+    M_grounded
+
+保存 checksum，
+确认初始化完全一致。
+
+不要重新随机初始化。
+
+--------------------------------------------------
+MODEL A — FINAL-ONLY FINE-TUNING
+--------------------------------------------------
+
+结构完全不变。
+
+固定：
+
+    K_train = 5
+
+loss：
+
+    L_base =
+        CE(
+            final recurrence logits at prediction position,
+            final entity
+        )
+
+--------------------------------------------------
+MODEL B — TRANSITION-GROUNDED FINE-TUNING
+--------------------------------------------------
+
+结构完全不变。
+
+同样：
+
+    K_train = 5
+
+对于每个 D-hop sample：
+
+    target(k) =
+        e_k     if k <= D
+        e_D     if k > D
+
+loss：
+
+    L_final =
+        CE(logits_K, e_D)
+
+    L_transition =
+        mean_{k=1...(K-1)}
+        CE(logits_k, e_min(k,D))
+
+    L_total =
+        L_final
+        +
+        lambda_transition * L_transition
+
+固定：
+
+    lambda_transition = 1.0
+
+不要调参。
+
+--------------------------------------------------
+TRAINING DATA
+--------------------------------------------------
+
+只使用：
+
+    D <= min(5, H_train)
+
+如果 checkpoint 本身训练到 5-hop：
+
+    使用 2/3/4/5-hop mixed training data
+
+可以包含 atomic facts，
+但 baseline / grounded 必须完全一样。
+
+不要继续 curriculum。
+
+不要重新学习 reasoning。
+
+这是 post-training / mechanism shaping。
+
+--------------------------------------------------
+FIXED TRAINING BUDGET
+--------------------------------------------------
+
+primary：
+
+    5,000 optimizer updates
+
+同时保存：
+
+    step 0
+    step 500
+    step 1000
+    step 2000
+    step 5000
+
+主结果必须使用：
+
+    step 5000
+
+中间 checkpoints 只用于 learning-dynamics analysis，
+不能根据结果挑最好 checkpoint 当主结果。
+
+--------------------------------------------------
+OPTIMIZATION
+--------------------------------------------------
+
+由于是 competent-checkpoint fine-tuning，
+不要继续使用 from-scratch 1e-4 + long warmup。
+
+固定：
+
+    AdamW
+    lr = 1e-5
+    weight_decay = 0.01
+    batch_size = 128
+    BF16
+    constant LR or very simple short warmup <= 200 steps
+
+baseline 和 grounded 完全一致。
+
+不要调不同 LR。
+
+不要因为某一组掉点而单独 rescue。
+
+如果已有官方 checkpoint 对 small-LR fine-tuning
+有官方默认设置，
+优先使用官方真实设置，
+但必须两组完全相同，并记录依据。
+
+======================================================================
+PHASE 3 — ID RETENTION
+======================================================================
+
+fine-tuning 后首先检查：
+
+    did we destroy the competent reasoner?
+
+对：
+
+    D <= H_train
+
+固定：
+
+    K = 5
+
+评估：
+
+    pretrained checkpoint
+    final-only FT
+    transition-grounded FT
+
+输出：
+
+    id_retention.csv
+
+定义：
+
+    ID_retention_drop =
+        pretrained_ID_acc - finetuned_ID_acc
+
+如果 grounded 相对于 pretrained
+掉超过：
+
+    5 percentage points
+
+标记：
+
+    REPRESENTATION SHAPING DESTROYS REASONING
+
+仍然继续机制分析，
+但不能称方法实用。
+
+参考理想要求：
+
+    <= 2 pp drop
+
+======================================================================
+PHASE 4 — DEPTH EXTRAPOLATION
+======================================================================
+
+仅对：
+
+    D > H_train
+
+称为 OOD。
+
+如果 H_train = 5：
+
+    D = 6,8,10,12,16,20
+
+如果 H_train = 12：
+
+    D = 16,20
+
+等等。
+
+recurrence sweep：
+
+    K = 1,2,3,4,5,6,8,10,12,16,20,24
+
+比较：
+
+    pretrained
+    final-only FT
+    grounded FT
+
+输出：
+
+    ood_accuracy_pretrained.csv
+    ood_accuracy_final_only.csv
+    ood_accuracy_grounded.csv
+
+计算：
+
+    OOD macro accuracy
+    computational frontier K*(D)
+    overthinking drop
+
+不要把 checkpoint 已经训练过的 depth
+重新包装成 OOD。
+
+======================================================================
+PHASE 5 — INTERMEDIATE STATE SEMANTICS
+======================================================================
+
+重新运行：
+
+    state_accuracy[D,k]
+
+比较：
+
+    pretrained
+    final-only FT
+    grounded FT
+
+关键问题：
+
+grounded 是否出现：
+
+    recurrence index k
+        ->
+    state e_k
+
+更明确的 one-step alignment。
+
+输出：
+
+    state_accuracy_pretrained.csv
+    state_accuracy_final_only.csv
+    state_accuracy_grounded.csv
+
+======================================================================
+PHASE 6 — CAUSAL INTERVENTION AFTER FINE-TUNING
+======================================================================
+
+完全重复 Phase 1 intervention。
+
+注意：
+
+prototype 必须分别为：
+
+    pretrained
+    final-only
+    grounded
+
+独立从同一个 TRAIN split 提取。
+
+不要把 grounded prototype
+用于 baseline。
+
+使用完全相同 sample IDs、
+counterfactual entity selection、
+k values 和 random controls。
+
+输出：
+
+    intervention_pretrained.csv
+    intervention_final_only.csv
+    intervention_grounded.csv
+
+以及：
+
+    intervention_comparison.csv
+
+最重要指标：
+
+    CF_target_rate
+
+比较：
+
+    pretrained
+    final-only
+    grounded
+    noise control
+
+======================================================================
+PRIMARY MECHANISM CLAIM
+======================================================================
+
+只有出现：
+
+    grounded CF target rate
+        >>
+    pretrained CF target rate
+
+且：
+
+    grounded CF target rate
+        >>
+    final-only CF target rate
+
+且：
+
+    grounded CF trajectory accuracy
+        >>
+    controls
+
+才能支持：
+
+    transition supervision makes recurrent hidden state
+    causally function as a problem-state transition.
+
+建议把：
+
+    +20 percentage points
+
+作为明显 effect 的参考，
+但不要为了达到阈值调参。
+
+======================================================================
+IMPORTANT NEGATIVE CASES
+======================================================================
+
+--------------------------------------------------
+NEGATIVE A
+--------------------------------------------------
+
+如果：
+
+    state decoding ↑
+
+但：
+
+    CF target rate 不升
+
+结论：
+
+    transition supervision improves decodability
+    but not causal use.
+
+NO-GO for grounded state-rollout claim.
+
+--------------------------------------------------
+NEGATIVE B
+--------------------------------------------------
+
+如果：
+
+    final accuracy ↑
+
+但：
+
+    causal intervention 不成立
+
+结论：
+
+    auxiliary regularization improves performance,
+    not evidence of world-state computation.
+
+--------------------------------------------------
+NEGATIVE C
+--------------------------------------------------
+
+如果：
+
+    pretrained baseline 已经有同样强的 causal mechanism
+
+结论：
+
+    mechanism is emergent in recurrent reasoning;
+    proposed supervision is not necessary.
+
+需要重新定位 idea。
+
+--------------------------------------------------
+POSITIVE
+--------------------------------------------------
+
+如果：
+
+    ID ability preserved
+
+并且：
+
+    intermediate state semantics ↑
+
+并且：
+
+    targeted intervention follows
+    counterfactual transition path
+
+则：
+
+    MECHANISM SUPPORTED
+
+如果进一步：
+
+    OOD extrapolation
+或
+    overthinking stability
+
+也改善，则：
+
+    GO
+
+======================================================================
+OVERTHINKING
+======================================================================
+
+对所有三种模型 sweep：
+
+    K up to 24
+
+计算：
+
+    peak_accuracy
+    K24_accuracy
+    overthinking_drop
+    correct_to_wrong_flip_rate
+
+如果 grounded 的 absorbing terminal-state supervision
+真的建立了稳定 terminal state，
+
+应该观察到：
+
+    after state e_D is reached,
+    extra recurrences preserve it better.
+
+但这不是 mechanism gate，
+只是 secondary utility claim。
+
+======================================================================
+FAIRNESS
+======================================================================
+
+必须保证：
+
+M_base 和 M_grounded：
+
+    exact same starting checkpoint
+    exact same training data
+    exact same batch order if practical
+    exact same seed
+    exact same K_train=5
+    exact same updates=5000
+    exact same optimizer
+    exact same LR
+    exact same batch size
+    exact same inference sweep
+
+区别只有：
+
+    lambda_transition = 0
+vs
+    lambda_transition = 1
+
+不要增加任何新参数到 grounded model。
+
+======================================================================
+RUNTIME
+======================================================================
+
+目标硬件：
+
+    1 × RTX 5090 32GB
+
+预计这轮不应该需要长时间训练。
+
+记录：
+
+    pretrained audit time
+    baseline FT time
+    grounded FT time
+    peak VRAM
+    evaluation time
+    intervention time
+    total GPU hours
+
+如果 5000 updates 明显超过预期，
+先检查是否无意中：
+- 开启了大规模 debug tensor save
+- 每 step 做 full evaluation
+- 没用 BF16
+- 没 batch
+- 保存全部 hidden state 到 CPU
+
+不要通过改科学设置加速。
+
+======================================================================
+OUTPUT DIRECTORY
+======================================================================
+
+experiments/
+  transition_grounded_competent_checkpoint_seed42_v3/
+
+至少包含：
+
+README.md
+CONFIG.json
+RUN_METADATA.json
+CHECKPOINT_PROVENANCE.md
+METHOD_DIFF.md
+
+outputs/
+  pretrained_accuracy_matrix.csv
+  pretrained_state_accuracy.csv
+  pretrained_intervention_results.csv
+  pretrained_intervention_summary.csv
+
+  finetune_history_baseline.csv
+  finetune_history_grounded.csv
+
+  id_retention.csv
+
+  ood_accuracy_pretrained.csv
+  ood_accuracy_final_only.csv
+  ood_accuracy_grounded.csv
+
+  state_accuracy_pretrained.csv
+  state_accuracy_final_only.csv
+  state_accuracy_grounded.csv
+
+  intervention_pretrained.csv
+  intervention_final_only.csv
+  intervention_grounded.csv
+  intervention_comparison.csv
+
+  overthinking_metrics.csv
+  runtime_metrics.json
+
+figures/
+  pretrained_recurrence_hop_heatmap.png
+  pretrained_state_accuracy_heatmap.png
+
+  id_retention.png
+  ood_recurrence_hop_comparison.png
+
+  state_accuracy_comparison.png
+  counterfactual_target_rate.png
+  counterfactual_trajectory_accuracy.png
+  overthinking_comparison.png
+
+checkpoints/
+  official_starting_checkpoint_reference.json
+  final_only_step500.pt
+  final_only_step1000.pt
+  final_only_step2000.pt
+  final_only_step5000.pt
+
+  grounded_step500.pt
+  grounded_step1000.pt
+  grounded_step2000.pt
+  grounded_step5000.pt
+
+FINAL_REPORT.md
+
+======================================================================
+FINAL REPORT
+======================================================================
+
+FINAL_REPORT.md 必须回答：
+
+1. Which official checkpoint did we use?
+
+包括：
+
+    provenance
+    H_train
+    official reproduced ID accuracy
+
+2. What mechanism exists BEFORE our training?
+
+回答：
+
+    does pretrained recurrent model already encode e_k?
+    does it causally use e_k?
+
+3. Did matched short FT preserve reasoning ability?
+
+比较：
+
+    pretrained
+    final-only
+    grounded
+
+4. Did transition supervision increase state decodability?
+
+5. Did transition supervision increase causal state use?
+
+这是整篇最重要问题。
+
+必须重点报告：
+
+    CF target rate
+    CF trajectory accuracy
+    same-state preservation
+    noise control
+
+6. Did it help OOD reasoning depth?
+
+仅在 D > H_train 上回答。
+
+7. Did it reduce overthinking?
+
+8. What did transition supervision actually change?
+
+只允许选择有证据支持的说法：
+
+    learning representation only
+    causal computation
+    final task performance
+    none
+
+9. Final decision
+
+只允许：
+
+    OFFICIAL CHECKPOINT INVALID
+
+    BASELINE ALREADY HAS MECHANISM
+
+    DECODE-ONLY — NO CAUSAL EFFECT
+
+    CAUSAL EFFECT — NO UTILITY
+
+    MECHANISM SUPPORTED
+
+    GO
+
+======================================================================
+GO / NO-GO
+======================================================================
+
+最核心 gate：
+
+如果 grounded 相比 pretrained + final-only：
+
+    counterfactual target rate
+    和
+    counterfactual trajectory accuracy
+
+没有明确提升，
+
+则：
+
+    NO-GO
+
+即使：
+    state accuracy 更高
+或者
+    final accuracy 更高
+
+都不能救这个 claim。
+
+如果 causal intervention 成立，
+再看 utility：
+
+    depth extrapolation
+    overthinking
+    ID retention
+
+如果 causal mechanism 成立且至少一项 utility 改善：
+
+    GO
+
+======================================================================
+EXECUTION ORDER
+======================================================================
+
+严格按：
+
+1. inspect official artifacts
+2. identify shallowest competent official checkpoint
+3. document provenance
+4. validate official checkpoint
+5. reconstruct intermediate state paths
+6. zero-training state audit
+7. zero-training causal intervention
+8. create two identical checkpoint copies
+9. 200-step fine-tuning smoke test
+10. run 5000-step final-only FT
+11. run 5000-step grounded FT
+12. ID retention
+13. OOD recurrence sweep
+14. state semantics evaluation
+15. matched causal intervention
+16. overthinking
+17. figures
+18. FINAL_REPORT.md
+19. GO / NO-GO
+
+不要在看到结果后改方法。
+
+======================================================================
+USER-FACING FINAL RESPONSE
+======================================================================
+
+最后先只回答我六句话：
+
+1. 用的是哪个官方 checkpoint，它训练到几 hop？
+2. 原始官方 checkpoint 本身有没有 intermediate-state semantics？
+3. 原始 checkpoint 的 causal intervention 成功率是多少？
+4. Grounded FT 后 causal intervention 提升到多少？
+5. Grounded 是否保持/提升了 ID 和 OOD reasoning？
+6. 最终是 GO 还是 NO-GO？
+
+然后给我：
+
+    FINAL_REPORT.md
+
+路径。
+
+现在直接执行完整实验，不要只给方案。

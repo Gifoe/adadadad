@@ -1,0 +1,12 @@
+{
+  "server_path": "D:/transition_grounded_competent_checkpoint_seed42_v3/official_artifacts/r2_checkpoint_epoch_2765.pt",
+  "official_url": "https://drive.google.com/file/d/1oLx2oeD-NpCuokw0AN5PMZNCB-5Ts_kr/view",
+  "H_train": 6,
+  "sha256": "4e89fde1f592d7afece63a6182f8427beedc85a216adb474777830b6b56495d8",
+  "bytes": 342301539,
+  "original_recurrence": 2,
+  "H_train_inferred": true,
+  "upstream_commit": "bb22b192977b1b136fde985c8e7a2392d172d97a",
+  "official_path": "checkpoints/multi_hop/final_models/r2/checkpoint_epoch_2765.pt",
+  "seed": "unknown; official source default42 is not proof"
+}

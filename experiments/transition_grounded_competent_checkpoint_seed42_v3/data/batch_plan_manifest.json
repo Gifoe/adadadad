@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "updates": 5000,
+  "batch_size": 128,
+  "sha256": "1b6e8bb34f8b5fede6e0e07de92e71b5201553c9128b4d9f9f6cacf654df98fb"
+}

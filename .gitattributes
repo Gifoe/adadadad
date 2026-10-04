@@ -2,3 +2,5 @@ experiments/transition_grounded_recurrent_reasoning_seed42_v1/checkpoints/initia
 experiments/transition_grounded_recurrent_reasoning_seed42_v1/checkpoints/baseline_final.pt filter=lfs diff=lfs merge=lfs -text
 experiments/transition_grounded_recurrent_reasoning_seed42_v1/checkpoints/grounded_final.pt filter=lfs diff=lfs merge=lfs -text
 experiments/transition_grounded_recurrent_reasoning_seed42_v1/data/verified_dataset_seed42.zip filter=lfs diff=lfs merge=lfs -text
+experiments/transition_grounded_competent_checkpoint_seed42_v3/checkpoints/*_step*.pt filter=lfs diff=lfs merge=lfs -text
+experiments/transition_grounded_competent_checkpoint_seed42_v3/archives/*.zip filter=lfs diff=lfs merge=lfs -text
