@@ -10,4 +10,3 @@ set V3_CPU_AFFINITY=FFFF0000
 cd /d D:\transition_grounded_competent_checkpoint_seed42_v3
 D:\transition_grounded_recurrent_reasoning_seed42_v1\.venv\Scripts\python.exe report.py > report_finalization.log 2>&1
 exit /b %errorlevel%
-
