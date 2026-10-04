@@ -1,0 +1,6 @@
+__pycache__/
+data/generated/
+checkpoints/*_resume.pt
+checkpoints/baseline_final.pt
+outputs/prototypes_*.pt
+*.tmp

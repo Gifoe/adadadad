@@ -1,0 +1,863 @@
+你现在需要完成上一轮实验的 Training Protocol Closure。
+
+上一轮实验位置：
+
+experiments/transition_grounded_recurrent_reasoning_seed42_v1/
+
+上一轮结论：
+
+INVALID TRAINING RUN / TRAINING FAILURE
+
+不是 hypothesis-level NO-GO。
+
+核心原因：
+
+baseline 在训练集达到约 98–100% accuracy，
+但 held-out ID 2–5 hop macro accuracy 仅约 0.73%，接近随机猜测。
+
+grounded model 的 ID macro accuracy 约 11.97%，
+其中 D2=38.93%、D3=7.73%，但 D4/D5 接近随机。
+
+因此上一轮尚未建立 compositional generalization，
+不允许解释 OOD、overthinking 或 causal intervention。
+
+======================================================================
+NEW EXPERIMENT
+======================================================================
+
+创建：
+
+experiments/
+  transition_grounded_recurrent_reasoning_training_closure_seed42_v2/
+
+目标：
+
+先回答：
+
+    Can both the official recurrent baseline and the transition-grounded
+    model reach strong held-out 2–5 hop compositional generalization
+    under a success-dependent curriculum?
+
+只有这个问题闭环以后，才允许继续原来的 OOD + intervention。
+
+======================================================================
+RULE 0 — DO NOT CHANGE THE RESEARCH METHOD
+======================================================================
+
+禁止加入：
+
+- new architecture
+- timestep embedding
+- Flow Matching
+- discrete state bottleneck
+- RL
+- adaptive halting
+- new pretrained model
+- CoT
+- teacher
+- verifier
+- hard state feedback
+- larger hidden size
+- more Transformer layers
+- new dataset
+
+Transition-grounded method保持上一轮完全不变：
+
+    same <state> token
+    same continuous hidden state
+    same intermediate transition supervision
+    lambda_transition = 1.0
+    K_train = 5
+
+baseline 也保持上一轮 matched-state-token architecture：
+
+    same <state> token
+    lambda_transition = 0
+
+唯一允许修改的内容：
+
+    TRAINING PROTOCOL
+
+======================================================================
+PART A — FIRST REPRODUCE THE OFFICIAL TRAINING BEHAVIOR
+======================================================================
+
+在正式比较 baseline vs grounded 之前，
+必须重新阅读官方真实代码：
+
+    OSU-NLP-Group/Loop-Think-Generalize
+
+至少检查：
+
+    README.md
+    train_extrapolation.py
+    gpt_utils_extrapolation.py
+    inference_extrapolation.py
+
+特别确认官方 curriculum 的实际执行逻辑。
+
+已知官方代码的重要行为包括：
+
+1. curriculum 按 hop stage 推进；
+2. 每个 stage 使用所有 hop <= current_hop 的训练数据；
+3. 当前 stage 的 held-out accuracy 达到 threshold 后才进入下一 stage；
+4. train_model() 每个 curriculum stage 都重新创建 optimizer 和 LR scheduler；
+5. 官方默认 acc_threshold_curriculum 约为 0.95；
+6. dynamic recurrence 可以使用 Poisson sampling；
+7. max epoch 是 safety ceiling，不意味着固定训练到该值。
+
+不要再使用上一轮：
+
+    2000 / 2000 / 3000 / 5000 updates
+
+这种固定 stage budget。
+
+这是上一轮无效的主要 protocol mismatch。
+
+--------------------------------------------------
+A1. Exact official baseline sanity reproduction
+--------------------------------------------------
+
+先运行一个尽可能接近官方原始实现的 baseline：
+
+    RecurrentGPT2Block
+    d_model=768
+    num_recurrent_layers=4
+    num_heads=12
+    positional_embedding_type=none
+    dropout=0
+    seed=42
+
+使用官方训练策略。
+
+先只要求复现：
+
+    2-hop
+    3-hop
+    4-hop
+    5-hop
+
+held-out composition。
+
+这一阶段使用官方 architecture，
+不加入我们自己的 transition loss。
+
+如果官方 baseline 本身无法在当前代码/数据设置下达到：
+
+    D2-D5 current-stage accuracy >= 90%
+
+则停止整个实验，并报告：
+
+    OFFICIAL BASELINE REPRODUCTION FAILURE
+
+此时不要继续 grounded comparison。
+
+我们必须先证明实验环境能复现原始 recurrent reasoning phenomenon。
+
+======================================================================
+PART B — SUCCESS-DEPENDENT CURRICULUM
+======================================================================
+
+正式 matched comparison 使用：
+
+Stage 2:
+    train atomic + 2-hop
+
+Stage 3:
+    train atomic + 2-hop + 3-hop
+
+Stage 4:
+    train <=4-hop
+
+Stage 5:
+    train <=5-hop
+
+对每一个 stage：
+
+    不按固定 update 数推进。
+
+而是：
+
+    current-stage held-out accuracy >= 95%
+
+连续达到 3 次 evaluation，
+才进入下一阶段。
+
+例如：
+
+Stage 2 advancement condition:
+
+    Acc(D=2) >= 0.95
+    for 3 consecutive evaluations
+
+Stage 3:
+
+    Acc(D=3) >= 0.95
+    for 3 consecutive evaluations
+
+以此类推。
+
+evaluation frequency：
+
+    every 500 optimizer updates
+
+如果某个 stage 很快达到 95%，
+可以提前推进。
+
+--------------------------------------------------
+Hard ceiling
+--------------------------------------------------
+
+为了避免无限运行：
+
+    max_updates_per_stage = 50,000
+
+如果达到 50k updates 后仍未满足 advancement condition：
+
+    stop this arm
+    mark stage failure
+
+禁止继续后续 stage。
+
+======================================================================
+PART C — MATCHED FAIRNESS
+======================================================================
+
+baseline 与 grounded：
+
+必须使用完全相同的：
+
+    seed
+    initial weights
+    training data
+    batch size
+    optimizer type
+    LR
+    weight decay
+    warmup
+    recurrence policy
+    stage advancement rule
+    evaluation frequency
+    maximum stage budget
+    architecture
+    K_train
+    state token
+
+区别只有：
+
+baseline:
+    lambda_transition = 0
+
+grounded:
+    lambda_transition = 1
+
+重要：
+
+不要要求两个模型在每个 stage 使用完全相同 update 数。
+
+公平性定义为：
+
+    same learning environment
+    +
+    same advancement criterion
+    +
+    same maximum budget
+
+因为我们的研究问题不是：
+
+    who is better after exactly 20k updates?
+
+而是：
+
+    under the same curriculum criterion,
+    does transition supervision change compositional learning dynamics
+    and the final recurrent reasoning behavior?
+
+必须额外记录：
+
+    updates_to_95[D]
+
+也就是说：
+
+    each model needs how many optimizer updates
+    to reach 95% on D-hop held-out composition.
+
+这本身就是一个重要 learning-dynamics metric。
+
+======================================================================
+PART D — OPTIMIZER / LR MUST MATCH OFFICIAL CODE
+======================================================================
+
+上一轮使用了一个固定 20k horizon 的 global LR schedule。
+
+这一轮不要继续这么做。
+
+检查官方 train_model()。
+
+如果官方代码确实在每个 curriculum stage：
+
+    re-create AdamW
+    re-create scheduler
+
+那么 closure run 也必须遵循这一逻辑。
+
+记录每个 stage：
+
+    optimizer reset = yes/no
+    initial LR
+    warmup steps
+    total scheduler horizon
+    final LR
+
+如果 grounded 和 baseline 使用相同 protocol，
+这是公平的。
+
+不要自行“改良”官方 optimizer policy。
+
+======================================================================
+PART E — RECURRENCE TRAINING
+======================================================================
+
+优先匹配官方 depth extrapolation protocol。
+
+如果官方 successful configuration 使用 dynamic recurrence：
+
+    recurrence_type = dynamic
+    dynamic_min = 2
+    dynamic_max = 8
+    dynamic_mean = 4
+
+则 baseline 和 grounded 都使用完全相同设置。
+
+如果官方 final checkpoint 所用设置不同，
+以官方真实代码 / config / checkpoint metadata 为准。
+
+把最终选择写进：
+
+    OFFICIAL_PROTOCOL_AUDIT.md
+
+不要根据 PDF 猜。
+
+======================================================================
+PART F — LEARNING CURVES
+======================================================================
+
+这一轮必须保存完整 learning dynamics。
+
+每 500 updates 记录：
+
+    stage
+    global updates
+    stage updates
+    train loss
+    current-stage held-out accuracy
+    previous-stage accuracy
+    train accuracy sample
+    LR
+    recurrence statistics
+
+输出：
+
+outputs/
+    baseline_learning_curve.csv
+    grounded_learning_curve.csv
+    updates_to_threshold.csv
+
+必须绘图：
+
+figures/
+    d2_learning_curve.png
+    d3_learning_curve.png
+    d4_learning_curve.png
+    d5_learning_curve.png
+    updates_to_95.png
+
+每张 learning curve：
+
+x-axis:
+    optimizer updates
+
+y-axis:
+    held-out accuracy
+
+同图显示：
+
+    baseline
+    grounded
+
+我们特别关心：
+
+    transition supervision 是否改变
+    memorization -> compositional generalization
+    的出现时间。
+
+不要只报告最后 accuracy。
+
+======================================================================
+PART G — ID CLOSURE GATE
+======================================================================
+
+一个模型完成 Stage 5 后，
+重新在独立 held-out test 上评估：
+
+    D = 2,3,4,5
+
+固定合理 recurrence sweep，例如：
+
+    K = 1,2,3,4,5,6,8,10,12
+
+但 ID closure 主指标使用：
+
+    K = 5
+
+要求：
+
+    Macro(D2-D5) >= 90%
+
+并且最好：
+
+    each D >= 85%
+
+定义：
+
+    ID_CLOSED = true
+
+如果 baseline 和 grounded 都：
+
+    ID_CLOSED = true
+
+才允许进入 Part H。
+
+如果：
+
+baseline CLOSED
+grounded NOT CLOSED
+
+则：
+
+    METHOD-LEVEL FAILURE:
+    transition grounding harms compositional training
+
+停止。
+
+如果：
+
+baseline NOT CLOSED
+grounded CLOSED
+
+仍然不能直接做最终 scientific claim。
+
+先报告：
+
+    baseline reproduction / protocol discrepancy
+
+因为 baseline 必须可复现。
+
+如果两者都 NOT CLOSED：
+
+    TRAINING CLOSURE FAILURE
+
+停止。
+
+======================================================================
+PART H — ONLY AFTER BOTH ID CLOSE
+======================================================================
+
+如果且仅如果：
+
+    baseline ID_CLOSED
+    grounded ID_CLOSED
+
+则自动继续上一轮未执行的核心 evaluation。
+
+--------------------------------------------------
+H1. Depth extrapolation
+--------------------------------------------------
+
+OOD hops：
+
+    D = 6,8,10,12,16,20
+
+recurrence sweep：
+
+    K = 1,2,3,4,5,6,8,10,12,16,20,24
+
+输出：
+
+    final_accuracy_matrix_baseline.csv
+    final_accuracy_matrix_grounded.csv
+
+计算：
+
+    OOD macro accuracy
+    K*(D)
+    Spearman(D, K*)
+    overcompute behavior
+
+--------------------------------------------------
+H2. Intermediate state semantics
+--------------------------------------------------
+
+计算：
+
+    state_accuracy(D,k)
+
+对 baseline 和 grounded 都测。
+
+terminal target：
+
+    target(k) = e_min(k,D)
+
+也就是：
+
+    after reaching e_D,
+    remaining recurrences should preserve e_D.
+
+输出：
+
+    state_accuracy_baseline.csv
+    state_accuracy_grounded.csv
+
+--------------------------------------------------
+H3. Overthinking
+--------------------------------------------------
+
+计算：
+
+    peak_acc(D)
+    acc(D,K=24)
+    overthinking_drop
+    answer_flip_rate
+    terminal_state_stability
+
+--------------------------------------------------
+H4. Causal counterfactual intervention
+--------------------------------------------------
+
+完全沿用 v1 预注册 intervention，
+不要根据新结果修改。
+
+prototype recurrence：
+
+    k=2
+    k=4
+
+prototype source：
+
+    TRAIN split only
+
+prototype：
+
+    mu[k,e] =
+      mean hidden state of <state> slot
+      conditioned on true state e
+
+minimum prototype count：
+
+    10
+
+OOD evaluation：
+
+    D=6,8,10,12,16,20
+
+counterfactual entity e_cf：
+
+    e_cf != original state
+    prototype exists
+    remaining relation chain is valid
+    counterfactual final != original final
+
+patch：
+
+    only replace <state> hidden vector at recurrence k
+
+do NOT modify other token states.
+
+继续 recurrent computation。
+
+测：
+
+1.
+    counterfactual final target rate
+
+2.
+    counterfactual trajectory accuracy
+
+3.
+    original retention rate
+
+4.
+    same-state prototype patch preservation
+
+5.
+    norm-matched random-noise control
+
+禁止 cherry-pick。
+
+======================================================================
+PART I — CRITICAL SCIENTIFIC TEST
+======================================================================
+
+这一轮真正要区分三个可能结果：
+
+CASE A
+
+grounded 比 baseline 更早达到 95%，
+但 ID closure 后 OOD / causal intervention 一样。
+
+解释：
+
+    transition supervision accelerates learning
+    but does not fundamentally alter recurrent computation.
+
+这是 learning dynamics result，
+不是 grounded world-state reasoning result。
+
+--------------------------------------------------
+
+CASE B
+
+两者 ID 都闭环，
+grounded 在 OOD 更好，
+但 intervention 不跟随 counterfactual trajectory。
+
+解释：
+
+    auxiliary transition supervision improves generalization,
+    but causal world-state use is NOT established.
+
+不能 claim：
+
+    recurrent computation is a grounded state rollout.
+
+--------------------------------------------------
+
+CASE C
+
+两者 ID 都闭环，
+grounded 同时表现：
+
+    better depth extrapolation / terminal stability
+
+并且：
+
+    state intervention
+      ->
+    predicted counterfactual transition trajectory
+      ->
+    counterfactual final answer
+
+则支持：
+
+    recurrent depth has acquired causally used
+    problem-state transition semantics.
+
+这是 GO。
+
+======================================================================
+PART J — RESOURCE CONTROL
+======================================================================
+
+Hardware：
+
+    1 × RTX 5090 32GB
+
+记录：
+
+    peak VRAM
+    GPU hours per stage
+    total GPU hours
+    updates per stage
+    examples seen
+    updates-to-95
+    wall-clock
+
+由于上一轮 20k updates/model 约 17 min，
+即使最大 50k/stage 仍在可接受范围。
+
+但不要并行运行多个模型导致显存竞争。
+
+======================================================================
+PART K — OUTPUT STRUCTURE
+======================================================================
+
+创建：
+
+experiments/
+  transition_grounded_recurrent_reasoning_training_closure_seed42_v2/
+
+包含：
+
+README.md
+CONFIG.json
+RUN_METADATA.json
+OFFICIAL_PROTOCOL_AUDIT.md
+
+outputs/
+  official_baseline_reproduction.csv
+
+  baseline_learning_curve.csv
+  grounded_learning_curve.csv
+  updates_to_threshold.csv
+
+  id_closure_baseline.csv
+  id_closure_grounded.csv
+
+  final_accuracy_matrix_baseline.csv
+  final_accuracy_matrix_grounded.csv
+
+  state_accuracy_baseline.csv
+  state_accuracy_grounded.csv
+
+  overthinking_metrics.csv
+
+  intervention_results_baseline.csv
+  intervention_results_grounded.csv
+  intervention_summary.csv
+
+  runtime_metrics.json
+
+figures/
+  d2_learning_curve.png
+  d3_learning_curve.png
+  d4_learning_curve.png
+  d5_learning_curve.png
+  updates_to_95.png
+
+  id_accuracy.png
+
+  recurrence_hop_heatmap_baseline.png
+  recurrence_hop_heatmap_grounded.png
+
+  state_accuracy_heatmap_baseline.png
+  state_accuracy_heatmap_grounded.png
+
+  overthinking_curve.png
+  counterfactual_intervention.png
+
+checkpoints/
+  initial_weights.pt
+
+  official_baseline_final.pt
+  matched_baseline_final.pt
+  grounded_final.pt
+
+FINAL_REPORT.md
+
+======================================================================
+PART L — FINAL REPORT
+======================================================================
+
+FINAL_REPORT.md 按以下顺序写：
+
+1. Why v1 Was Invalid
+
+必须明确：
+
+    fixed-budget curriculum advanced before
+    compositional generalization emerged.
+
+不要把 v1 写成 method failure。
+
+2. Official Protocol Reproduction
+
+回答：
+
+    did we reproduce recurrent compositional generalization?
+
+列出：
+
+    D2-D5 held-out accuracy
+    updates/stage
+    optimizer/LR protocol
+
+3. Training Closure
+
+baseline vs grounded：
+
+    updates-to-95
+    learning curves
+    final ID accuracy
+
+4. Learning Dynamics
+
+回答：
+
+    does transition supervision accelerate
+    emergence of held-out composition?
+
+5. ID Gate
+
+明确：
+
+    baseline ID_CLOSED?
+    grounded ID_CLOSED?
+
+6. OOD Extrapolation
+仅在 gate 通过后写。
+
+7. Transition Semantics
+仅在 gate 通过后写。
+
+8. Overthinking
+仅在 gate 通过后写。
+
+9. Counterfactual Intervention
+最重要。
+
+10. Resource Report
+
+11. Final Decision
+
+只允许以下之一：
+
+    OFFICIAL BASELINE REPRODUCTION FAILURE
+
+    TRAINING CLOSURE FAILURE
+
+    METHOD TRAINING FAILURE
+
+    ID CLOSED — MECHANISM NOT SUPPORTED
+
+    MECHANISM SUPPORTED — UTILITY NOT SUPPORTED
+
+    GO
+
+======================================================================
+FINAL USER-FACING SUMMARY
+======================================================================
+
+任务结束后先只告诉我：
+
+1. 官方 baseline 复现成功了吗？
+2. baseline / grounded 各用了多少 updates 才达到 95%？
+3. 两个模型 D2-D5 最终 ID accuracy 是多少？
+4. 是否进入了 OOD + intervention？
+5. 如果进入：counterfactual intervention 成功了吗？
+6. 最终结论是哪一类？
+
+然后提供：
+
+    FINAL_REPORT.md
+
+路径。
+
+======================================================================
+IMPORTANT
+======================================================================
+
+这轮的原则是：
+
+    修复实验有效性，
+    不是修复研究假设。
+
+不要根据结果继续修改 architecture。
+
+如果正确官方训练协议下
+transition-grounded model 仍然失败，
+接受负结果。
+
+如果它成功，
+才进入第二轮自然语言 / math reasoning。
+
+现在直接执行，不要只输出计划。
