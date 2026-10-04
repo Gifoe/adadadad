@@ -166,7 +166,9 @@ def main():
     if (OUT/'completion_audit.json').exists():status('ALREADY_COMPLETE');return
     train,test,split=prepare()
     import transformers,platform
-    dump(ROOT/'RUN_METADATA.json',dict(start=time.strftime('%Y-%m-%d %H:%M:%S'),python=sys.version,torch=torch.__version__,transformers=transformers.__version__,cuda=torch.version.cuda,gpu=torch.cuda.get_device_name(),hostname=platform.node(),initial_sha256=hashlib.sha256((CK/'initial_weights.pt').read_bytes()).hexdigest(),model_extension_sha256=hashlib.sha256((ROOT/'model_extension.py').read_bytes()).hexdigest()))
+    metadata_path=ROOT/'RUN_METADATA.json';now=time.strftime('%Y-%m-%d %H:%M:%S')
+    previous=json.loads(metadata_path.read_text()) if metadata_path.exists() else {}
+    dump(metadata_path,dict(start=previous.get('start',now),process_starts=previous.get('process_starts',[previous['start']] if 'start' in previous else [])+[now],python=sys.version,torch=torch.__version__,transformers=transformers.__version__,cuda=torch.version.cuda,gpu=torch.cuda.get_device_name(),hostname=platform.node(),initial_sha256=hashlib.sha256((CK/'initial_weights.pt').read_bytes()).hexdigest(),model_extension_sha256=hashlib.sha256((ROOT/'model_extension.py').read_bytes()).hexdigest()))
     if not (OUT/'unit_tests.json').exists():sanity(train,test)
     results={'official_baseline':train_arm('official_baseline',train,test,split)}
     if not results['official_baseline']['official_reproduced']:decision='OFFICIAL BASELINE REPRODUCTION FAILURE'
