@@ -1,0 +1,11 @@
+model,D,K_star,peak_accuracy
+pretrained,2,1,1.0
+pretrained,3,2,1.0
+pretrained,4,2,1.0
+pretrained,5,2,0.9946666666666667
+pretrained,6,2,0.9493333333333334
+pretrained,8,2,0.008
+pretrained,10,3,0.009333333333333334
+pretrained,12,2,0.005333333333333333
+pretrained,16,4,0.006666666666666667
+pretrained,20,2,0.005333333333333333

@@ -1,0 +1,11 @@
+model,D,K_star,peak_accuracy
+final_only,2,1,1.0
+final_only,3,2,1.0
+final_only,4,2,0.9973333333333333
+final_only,5,2,0.9973333333333333
+final_only,6,2,0.9466666666666667
+final_only,8,3,0.005333333333333333
+final_only,10,4,0.005333333333333333
+final_only,12,3,0.0026666666666666666
+final_only,16,4,0.004
+final_only,20,3,0.004

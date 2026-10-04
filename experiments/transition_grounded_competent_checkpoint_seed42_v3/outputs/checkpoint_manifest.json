@@ -1,0 +1,72 @@
+[
+  {
+    "path": "checkpoints\\final_only_step0.pt",
+    "bytes": 114098315,
+    "sha256": "f48de003e87a2d18913537739d0165f5ce79d33c555d3c36516d42c7bdbf6c60",
+    "step": 0,
+    "model": "final_only"
+  },
+  {
+    "path": "checkpoints\\final_only_step500.pt",
+    "bytes": 114098493,
+    "sha256": "b5c13ee299c848fcf13f2dcb2c120f2e627661eae5ec758fb8dc421d16cc640b",
+    "step": 500,
+    "model": "final_only"
+  },
+  {
+    "path": "checkpoints\\final_only_step1000.pt",
+    "bytes": 114098550,
+    "sha256": "ff5d0b692585371b518d199118df43340ea8bca0aca0aa5bf4dd44c8849ea185",
+    "step": 1000,
+    "model": "final_only"
+  },
+  {
+    "path": "checkpoints\\final_only_step2000.pt",
+    "bytes": 114098550,
+    "sha256": "a864f8059b81c417a751b670d6a097009d113727eaa6cc19f586f72de6ddaf49",
+    "step": 2000,
+    "model": "final_only"
+  },
+  {
+    "path": "checkpoints\\final_only_step5000.pt",
+    "bytes": 114098550,
+    "sha256": "2b63b5996df481f56c0920384af8194cdde99d03f3a8752999ef2bfcdd6670a8",
+    "step": 5000,
+    "model": "final_only"
+  },
+  {
+    "path": "checkpoints\\grounded_step0.pt",
+    "bytes": 114098201,
+    "sha256": "9ff01754698be4e42a730e11a9e9bb5c1e6366eb464a9891562e76b1f88bf299",
+    "step": 0,
+    "model": "grounded"
+  },
+  {
+    "path": "checkpoints\\grounded_step500.pt",
+    "bytes": 114098379,
+    "sha256": "f3e587218d867ee0541234e63e654d742f7140483c855379adf0d1234fd9961a",
+    "step": 500,
+    "model": "grounded"
+  },
+  {
+    "path": "checkpoints\\grounded_step1000.pt",
+    "bytes": 114098436,
+    "sha256": "a061870072b14c78d9a2f5937ac422387a0db06cd541bae6e158e02933dcbcf9",
+    "step": 1000,
+    "model": "grounded"
+  },
+  {
+    "path": "checkpoints\\grounded_step2000.pt",
+    "bytes": 114098436,
+    "sha256": "182414b674da1f29005b4e1f4ee97a78cbef1ba2ac39a0cadcb4e7d3d141270b",
+    "step": 2000,
+    "model": "grounded"
+  },
+  {
+    "path": "checkpoints\\grounded_step5000.pt",
+    "bytes": 114098436,
+    "sha256": "cc782cea9d2e2c6b589a06903f6c43574fb95d253faafca7df905bd78fd7652c",
+    "step": 5000,
+    "model": "grounded"
+  }
+]

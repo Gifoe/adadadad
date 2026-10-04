@@ -1,0 +1,9 @@
+{
+  "model": "pretrained",
+  "seconds": 73.58825859997887,
+  "sweep_seconds": 43.2033611999359,
+  "prototype_seconds": 13.053533800062723,
+  "intervention_seconds": 15.889179900055751,
+  "peak_vram_mib": 1009.96533203125,
+  "starting_checkpoint_sha256": "4e89fde1f592d7afece63a6182f8427beedc85a216adb474777830b6b56495d8"
+}

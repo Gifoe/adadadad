@@ -1,0 +1,13 @@
+{
+  "model": "final_only",
+  "smoke": false,
+  "updates": 5000,
+  "examples_seen": 640000,
+  "seconds": 484.9806262999773,
+  "peak_vram_mib": 9261.65087890625,
+  "initial_parameter_sha256": "d9f62e36e46aa5adfb99ecd7bbf2adbd055feebda138c49c2fac59d97407288e",
+  "first20_loss": 1.961308741569519,
+  "last20_loss": 8.787176363966865e-06,
+  "LR": 1e-05,
+  "recurrence": 5
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "path": "archives/verified_selected_official_dataset.zip",
+    "bytes": 7811766,
+    "sha256": "e970dfa6aa2187cb934b4c85acc8f0237351cdf0235bee237f4abdf77556029e",
+    "members": 9
+  },
+  {
+    "path": "archives/recorded_carriers_prototypes_and_controls.zip",
+    "bytes": 573757831,
+    "sha256": "add192ca5ebbe2038eca25771551674e105120ed2d09cab0ce9d06a2b7aaad57",
+    "members": 17
+  },
+  {
+    "path": "archives/complete_result_tables_figures_and_logs.zip",
+    "bytes": 4870759,
+    "sha256": "f35935d7e308d51162b31256c8bd51bcad9c9804733278a9c181c0b0e40cddca",
+    "members": 106
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "model": "final_only",
+  "seconds": 38.30538080004044,
+  "sweep_seconds": 9.060264599975199,
+  "prototype_seconds": 12.982884699944407,
+  "intervention_seconds": 15.977223100024275,
+  "peak_vram_mib": 1372.091796875,
+  "starting_checkpoint_sha256": null
+}

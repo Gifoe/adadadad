@@ -1,0 +1,11 @@
+EXECUTION_ERROR {'error': "SystemError('<built-in function min> returned NULL without setting an exception')", 'traceback': 'Traceback (most recent call last):\n  File "D:\\transition_grounded_competent_checkpoint_seed42_v3\\run_experiment.py", line 126, in <module>\n    try:main()\n  File "D:\\transition_grounded_competent_checkpoint_seed42_v3\\run_experiment.py", line 104, in main\n    prepare(CONFIG[\'H_train\'])\n  File "D:\\transition_grounded_competent_checkpoint_seed42_v3\\data_pipeline.py", line 45, in prepare\n    convert(train_records,\'train\');convert(test_records,\'test\')\n  File "D:\\transition_grounded_competent_checkpoint_seed42_v3\\data_pipeline.py", line 40, in convert\n    for k in range(24):target[j,k]=ids[path[min(k,d-1)]]\nSystemError: <built-in function min> returned NULL without setting an exception\n'}
+Traceback (most recent call last):
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\run_experiment.py", line 126, in <module>
+    try:main()
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\run_experiment.py", line 104, in main
+    prepare(CONFIG['H_train'])
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\data_pipeline.py", line 45, in prepare
+    convert(train_records,'train');convert(test_records,'test')
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\data_pipeline.py", line 40, in convert
+    for k in range(24):target[j,k]=ids[path[min(k,d-1)]]
+SystemError: <built-in function min> returned NULL without setting an exception

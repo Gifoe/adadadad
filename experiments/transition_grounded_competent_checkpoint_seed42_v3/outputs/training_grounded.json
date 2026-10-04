@@ -1,0 +1,13 @@
+{
+  "model": "grounded",
+  "smoke": false,
+  "updates": 5000,
+  "examples_seen": 640000,
+  "seconds": 485.14427629997954,
+  "peak_vram_mib": 9513.16259765625,
+  "initial_parameter_sha256": "d9f62e36e46aa5adfb99ecd7bbf2adbd055feebda138c49c2fac59d97407288e",
+  "first20_loss": 23.375139808654787,
+  "last20_loss": 0.07491392148658634,
+  "LR": 1e-05,
+  "recurrence": 5
+}

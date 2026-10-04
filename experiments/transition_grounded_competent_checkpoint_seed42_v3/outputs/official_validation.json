@@ -1,0 +1,42 @@
+{
+  "validated": true,
+  "macro": 0.9888,
+  "by_hop": [
+    {
+      "D": 2,
+      "K": 2,
+      "correct": 750,
+      "total": 750,
+      "accuracy": 1.0
+    },
+    {
+      "D": 3,
+      "K": 2,
+      "correct": 750,
+      "total": 750,
+      "accuracy": 1.0
+    },
+    {
+      "D": 4,
+      "K": 2,
+      "correct": 750,
+      "total": 750,
+      "accuracy": 1.0
+    },
+    {
+      "D": 5,
+      "K": 2,
+      "correct": 746,
+      "total": 750,
+      "accuracy": 0.9946666666666667
+    },
+    {
+      "D": 6,
+      "K": 2,
+      "correct": 712,
+      "total": 750,
+      "accuracy": 0.9493333333333334
+    }
+  ],
+  "seconds": 0.4012453000759706
+}

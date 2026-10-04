@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "decision": "DECODE-ONLY \u2014 NO CAUSAL EFFECT",
+  "same_starting_parameters": true,
+  "same_batch_plan": true,
+  "formal_updates_per_arm": 5000,
+  "no_new_parameter_keys": true,
+  "all_saved_checkpoint_parameters_finite": true,
+  "matched_causal_sample_plan": true,
+  "true_OOD_only": true,
+  "checkpoints": 10,
+  "completed": "2026-10-04 17:09:43"
+}

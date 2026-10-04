@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "published_checkpoints": 8,
+  "verified_archives": 3,
+  "canonical_dataset_arrays_equal": true,
+  "canonical_source_and_data_hashes_equal": true,
+  "counterfactual_paths_replayed": 3200,
+  "paired_intervention_records_per_model": 19200,
+  "CF_main_target_counts": {
+    "pretrained": 1,
+    "final_only": 10,
+    "grounded": 18
+  },
+  "CF_main_samples_per_model": 3200,
+  "recorded_rollout_accuracies_recomputed": true,
+  "formal_history_rows_per_arm": 5000,
+  "UTF8_valid": true
+}

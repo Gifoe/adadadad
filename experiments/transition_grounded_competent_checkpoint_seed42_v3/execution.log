@@ -1,0 +1,302 @@
+SWEEP_pretrained {'D': 2, 'K5': 0.9093333333333333, 'peak': 1.0}
+SWEEP_pretrained {'D': 3, 'K5': 0.524, 'peak': 1.0}
+SWEEP_pretrained {'D': 4, 'K5': 0.18533333333333332, 'peak': 1.0}
+SWEEP_pretrained {'D': 5, 'K5': 0.116, 'peak': 0.9946666666666667}
+SWEEP_pretrained {'D': 6, 'K5': 0.09333333333333334, 'peak': 0.9493333333333334}
+SWEEP_pretrained {'D': 8, 'K5': 0.004, 'peak': 0.008}
+SWEEP_pretrained {'D': 10, 'K5': 0.0, 'peak': 0.009333333333333334}
+SWEEP_pretrained {'D': 12, 'K5': 0.0, 'peak': 0.005333333333333333}
+SWEEP_pretrained {'D': 16, 'K5': 0.0, 'peak': 0.006666666666666667}
+SWEEP_pretrained {'D': 20, 'K5': 0.0, 'peak': 0.005333333333333333}
+PROTOTYPES_pretrained {'records': 128, 'total': 62000}
+PROTOTYPES_pretrained {'records': 16512, 'total': 62000}
+PROTOTYPES_pretrained {'records': 32896, 'total': 62000}
+PROTOTYPES_pretrained {'records': 49280, 'total': 62000}
+INTERVENTION_pretrained {'D': 3, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 4, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 5, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 5, 'k': 4, 'n': 200}
+INTERVENTION_pretrained {'D': 6, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 6, 'k': 4, 'n': 200}
+INTERVENTION_pretrained {'D': 8, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 8, 'k': 4, 'n': 200}
+INTERVENTION_pretrained {'D': 10, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 10, 'k': 4, 'n': 200}
+INTERVENTION_pretrained {'D': 12, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 12, 'k': 4, 'n': 200}
+INTERVENTION_pretrained {'D': 16, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 16, 'k': 4, 'n': 200}
+INTERVENTION_pretrained {'D': 20, 'k': 2, 'n': 200}
+INTERVENTION_pretrained {'D': 20, 'k': 4, 'n': 200}
+AUDIT_COMPLETE_pretrained {}
+SMOKE_final_only {'step': 50, 'budget': 200, 'loss': 0.39258289337158203, 'seconds': 4.930682100006379}
+SMOKE_final_only {'step': 100, 'budget': 200, 'loss': 0.11022413522005081, 'seconds': 9.688285399926826}
+SMOKE_final_only {'step': 150, 'budget': 200, 'loss': 0.04984854906797409, 'seconds': 14.438143500010483}
+SMOKE_final_only {'step': 200, 'budget': 200, 'loss': 0.007229874841868877, 'seconds': 19.197389799985103}
+SMOKE_grounded {'step': 50, 'budget': 200, 'loss': 13.964641571044922, 'seconds': 4.818326799897477}
+SMOKE_grounded {'step': 100, 'budget': 200, 'loss': 11.280864715576172, 'seconds': 9.576777699985541}
+SMOKE_grounded {'step': 150, 'budget': 200, 'loss': 9.957845687866211, 'seconds': 14.337795999948867}
+SMOKE_grounded {'step': 200, 'budget': 200, 'loss': 9.354643821716309, 'seconds': 19.101695699966513}
+FT_final_only {'step': 50, 'budget': 5000, 'loss': 0.39258289337158203, 'seconds': 4.8145538999233395}
+FT_final_only {'step': 100, 'budget': 5000, 'loss': 0.11022413522005081, 'seconds': 9.580692899995483}
+FT_final_only {'step': 150, 'budget': 5000, 'loss': 0.04984854906797409, 'seconds': 14.343968100030906}
+FT_final_only {'step': 200, 'budget': 5000, 'loss': 0.007229874841868877, 'seconds': 19.108765400014818}
+FT_final_only {'step': 250, 'budget': 5000, 'loss': 0.005921491421759129, 'seconds': 23.877709500025958}
+FT_final_only {'step': 300, 'budget': 5000, 'loss': 0.001314603490754962, 'seconds': 28.644147499930114}
+FT_final_only {'step': 350, 'budget': 5000, 'loss': 0.0014003841206431389, 'seconds': 33.40889810002409}
+FT_final_only {'step': 400, 'budget': 5000, 'loss': 0.0035276913549751043, 'seconds': 38.17853020003531}
+FT_final_only {'step': 450, 'budget': 5000, 'loss': 0.0028746360912919044, 'seconds': 42.94479899993166}
+FT_final_only {'step': 500, 'budget': 5000, 'loss': 0.0011203509056940675, 'seconds': 47.714310899958946}
+FT_final_only {'step': 550, 'budget': 5000, 'loss': 0.0026474592741578817, 'seconds': 53.83538840000983}
+FT_final_only {'step': 600, 'budget': 5000, 'loss': 0.0013826754875481129, 'seconds': 58.64425869996194}
+FT_final_only {'step': 650, 'budget': 5000, 'loss': 0.0006580139743164182, 'seconds': 63.45465319999494}
+FT_final_only {'step': 700, 'budget': 5000, 'loss': 0.000846570183057338, 'seconds': 68.26610529993195}
+FT_final_only {'step': 750, 'budget': 5000, 'loss': 0.0014937722589820623, 'seconds': 73.08347579999827}
+FT_final_only {'step': 800, 'budget': 5000, 'loss': 0.00017779978225007653, 'seconds': 77.8779544000281}
+FT_final_only {'step': 850, 'budget': 5000, 'loss': 0.00020243505423422903, 'seconds': 82.68524469994009}
+FT_final_only {'step': 900, 'budget': 5000, 'loss': 0.00010433882562210783, 'seconds': 87.50016880000476}
+FT_final_only {'step': 950, 'budget': 5000, 'loss': 0.0011387611739337444, 'seconds': 92.28684750001412}
+FT_final_only {'step': 1000, 'budget': 5000, 'loss': 0.00030420851544477046, 'seconds': 97.05902029993013}
+FT_final_only {'step': 1050, 'budget': 5000, 'loss': 0.00011946850281674415, 'seconds': 103.19913500000257}
+FT_final_only {'step': 1100, 'budget': 5000, 'loss': 0.00020106071315240115, 'seconds': 107.96788949996699}
+FT_final_only {'step': 1150, 'budget': 5000, 'loss': 0.00018153456039726734, 'seconds': 112.73982369992882}
+FT_final_only {'step': 1200, 'budget': 5000, 'loss': 0.00011446946155047044, 'seconds': 117.52855569997337}
+FT_final_only {'step': 1250, 'budget': 5000, 'loss': 0.0002401923411525786, 'seconds': 122.32938619994093}
+FT_final_only {'step': 1300, 'budget': 5000, 'loss': 0.00010000458132708445, 'seconds': 127.13252490002196}
+FT_final_only {'step': 1350, 'budget': 5000, 'loss': 0.00024167876108549535, 'seconds': 131.92857640003785}
+FT_final_only {'step': 1400, 'budget': 5000, 'loss': 0.00015061843441799283, 'seconds': 136.72371709998697}
+FT_final_only {'step': 1450, 'budget': 5000, 'loss': 0.0002758297778200358, 'seconds': 141.52252809994388}
+FT_final_only {'step': 1500, 'budget': 5000, 'loss': 7.869403634686023e-05, 'seconds': 146.31866560003255}
+FT_final_only {'step': 1550, 'budget': 5000, 'loss': 6.251638842513785e-05, 'seconds': 151.43647559999954}
+FT_final_only {'step': 1600, 'budget': 5000, 'loss': 0.0005429406883195043, 'seconds': 156.23601699993014}
+FT_final_only {'step': 1650, 'budget': 5000, 'loss': 7.986626587808132e-05, 'seconds': 161.03940619993955}
+FT_final_only {'step': 1700, 'budget': 5000, 'loss': 8.725794032216072e-05, 'seconds': 165.80722419999074}
+FT_final_only {'step': 1750, 'budget': 5000, 'loss': 0.00017657240096013993, 'seconds': 170.5761269000359}
+FT_final_only {'step': 1800, 'budget': 5000, 'loss': 0.0001921007060445845, 'seconds': 175.34412569995038}
+FT_final_only {'step': 1850, 'budget': 5000, 'loss': 1.327791869698558e-05, 'seconds': 180.11272879992612}
+FT_final_only {'step': 1900, 'budget': 5000, 'loss': 6.970173126319423e-05, 'seconds': 184.88293710001744}
+FT_final_only {'step': 1950, 'budget': 5000, 'loss': 8.142544538713992e-05, 'seconds': 189.65296869992744}
+FT_final_only {'step': 2000, 'budget': 5000, 'loss': 0.00014210701920092106, 'seconds': 194.42287270002998}
+FT_final_only {'step': 2050, 'budget': 5000, 'loss': 0.00012519376468844712, 'seconds': 200.58306139998604}
+FT_final_only {'step': 2100, 'budget': 5000, 'loss': 6.280403613345698e-05, 'seconds': 205.35877019993495}
+FT_final_only {'step': 2150, 'budget': 5000, 'loss': 0.00013911491259932518, 'seconds': 210.12679799995385}
+FT_final_only {'step': 2200, 'budget': 5000, 'loss': 2.2431711840908974e-05, 'seconds': 214.89238530001603}
+FT_final_only {'step': 2250, 'budget': 5000, 'loss': 1.3840461178915575e-05, 'seconds': 219.66116329992656}
+FT_final_only {'step': 2300, 'budget': 5000, 'loss': 6.303595000645146e-05, 'seconds': 224.42831360001583}
+FT_final_only {'step': 2350, 'budget': 5000, 'loss': 5.3588948503602296e-05, 'seconds': 229.19730300002266}
+FT_final_only {'step': 2400, 'budget': 5000, 'loss': 6.313874473562464e-05, 'seconds': 233.96944469993468}
+FT_final_only {'step': 2450, 'budget': 5000, 'loss': 3.748622111743316e-05, 'seconds': 238.73704149993137}
+FT_final_only {'step': 2500, 'budget': 5000, 'loss': 2.6552366762189195e-05, 'seconds': 243.5078240999719}
+FT_final_only {'step': 2550, 'budget': 5000, 'loss': 5.196673373575322e-05, 'seconds': 248.5887901999522}
+FT_final_only {'step': 2600, 'budget': 5000, 'loss': 3.5818477044813335e-05, 'seconds': 253.35620909999125}
+FT_final_only {'step': 2650, 'budget': 5000, 'loss': 3.286948049208149e-05, 'seconds': 258.1238059999887}
+FT_final_only {'step': 2700, 'budget': 5000, 'loss': 4.0210914448834956e-05, 'seconds': 262.8951980000129}
+FT_final_only {'step': 2750, 'budget': 5000, 'loss': 3.707854193635285e-05, 'seconds': 267.66228980000596}
+FT_final_only {'step': 2800, 'budget': 5000, 'loss': 2.0750798285007477e-05, 'seconds': 272.4332149999682}
+FT_final_only {'step': 2850, 'budget': 5000, 'loss': 0.00014867381833028048, 'seconds': 277.1988314000191}
+FT_final_only {'step': 2900, 'budget': 5000, 'loss': 5.137447078595869e-05, 'seconds': 281.9705275000306}
+FT_final_only {'step': 2950, 'budget': 5000, 'loss': 2.4508492060704157e-05, 'seconds': 286.73594139993656}
+FT_final_only {'step': 3000, 'budget': 5000, 'loss': 9.944506018655375e-06, 'seconds': 291.50576510000974}
+FT_final_only {'step': 3050, 'budget': 5000, 'loss': 8.055366924963892e-05, 'seconds': 296.58676039997954}
+FT_final_only {'step': 3100, 'budget': 5000, 'loss': 2.9303804694791324e-05, 'seconds': 301.3686518999748}
+FT_final_only {'step': 3150, 'budget': 5000, 'loss': 2.0002014935016632e-05, 'seconds': 306.14864619995933}
+FT_final_only {'step': 3200, 'budget': 5000, 'loss': 0.00018835291848517954, 'seconds': 310.92426010000054}
+FT_final_only {'step': 3250, 'budget': 5000, 'loss': 1.7412256056559272e-05, 'seconds': 315.69674489996396}
+FT_final_only {'step': 3300, 'budget': 5000, 'loss': 6.138253229437396e-05, 'seconds': 320.46609689993784}
+FT_final_only {'step': 3350, 'budget': 5000, 'loss': 0.00035606749588623643, 'seconds': 325.2352492000209}
+FT_final_only {'step': 3400, 'budget': 5000, 'loss': 1.6018220776459202e-05, 'seconds': 330.0016338999849}
+FT_final_only {'step': 3450, 'budget': 5000, 'loss': 4.425362203619443e-05, 'seconds': 334.77147699997295}
+FT_final_only {'step': 3500, 'budget': 5000, 'loss': 8.747039828449488e-06, 'seconds': 339.54318409995176}
+FT_final_only {'step': 3550, 'budget': 5000, 'loss': 7.835004362277687e-05, 'seconds': 344.6239991999464}
+FT_final_only {'step': 3600, 'budget': 5000, 'loss': 1.2292452993278857e-05, 'seconds': 349.39533860003576}
+FT_final_only {'step': 3650, 'budget': 5000, 'loss': 1.930763028212823e-05, 'seconds': 354.1642373999348}
+FT_final_only {'step': 3700, 'budget': 5000, 'loss': 3.8840451452415437e-05, 'seconds': 358.9304473999655}
+FT_final_only {'step': 3750, 'budget': 5000, 'loss': 0.00010559670772636309, 'seconds': 363.70651679998264}
+FT_final_only {'step': 3800, 'budget': 5000, 'loss': 2.705233418964781e-05, 'seconds': 368.48196689994074}
+FT_final_only {'step': 3850, 'budget': 5000, 'loss': 0.0001244568411493674, 'seconds': 373.2508139000274}
+FT_final_only {'step': 3900, 'budget': 5000, 'loss': 2.8090869818697684e-05, 'seconds': 378.0175696000224}
+FT_final_only {'step': 3950, 'budget': 5000, 'loss': 1.0193371053901501e-05, 'seconds': 382.78370199992787}
+FT_final_only {'step': 4000, 'budget': 5000, 'loss': 6.082083564251661e-05, 'seconds': 387.55934519995935}
+FT_final_only {'step': 4050, 'budget': 5000, 'loss': 3.8723314901289996e-06, 'seconds': 392.6425734999357}
+FT_final_only {'step': 4100, 'budget': 5000, 'loss': 2.919665348599665e-05, 'seconds': 397.40943450003397}
+FT_final_only {'step': 4150, 'budget': 5000, 'loss': 3.950224709114991e-06, 'seconds': 402.18093599996064}
+FT_final_only {'step': 4200, 'budget': 5000, 'loss': 3.037092392332852e-05, 'seconds': 406.95182550000027}
+FT_final_only {'step': 4250, 'budget': 5000, 'loss': 7.604643997183302e-06, 'seconds': 411.72191980003845}
+FT_final_only {'step': 4300, 'budget': 5000, 'loss': 7.1720933192409575e-06, 'seconds': 416.4948424999602}
+FT_final_only {'step': 4350, 'budget': 5000, 'loss': 5.0147864385508e-06, 'seconds': 421.2629439999582}
+FT_final_only {'step': 4400, 'budget': 5000, 'loss': 4.640496626961976e-06, 'seconds': 426.0345350999851}
+FT_final_only {'step': 4450, 'budget': 5000, 'loss': 6.555568688781932e-06, 'seconds': 430.8080169999739}
+FT_final_only {'step': 4500, 'budget': 5000, 'loss': 1.596863876329735e-05, 'seconds': 435.57757970003877}
+FT_final_only {'step': 4550, 'budget': 5000, 'loss': 6.58032467981684e-06, 'seconds': 440.664820099948}
+FT_final_only {'step': 4600, 'budget': 5000, 'loss': 3.763267886824906e-05, 'seconds': 445.4307610000251}
+FT_final_only {'step': 4650, 'budget': 5000, 'loss': 7.238826583488844e-06, 'seconds': 450.19960769999307}
+FT_final_only {'step': 4700, 'budget': 5000, 'loss': 1.3501381545211188e-05, 'seconds': 454.96961369994096}
+FT_final_only {'step': 4750, 'budget': 5000, 'loss': 4.663825166062452e-06, 'seconds': 459.74109599995427}
+FT_final_only {'step': 4800, 'budget': 5000, 'loss': 1.5383586287498474e-05, 'seconds': 464.50988729996607}
+FT_final_only {'step': 4850, 'budget': 5000, 'loss': 0.00010586748248897493, 'seconds': 469.2771899999352}
+FT_final_only {'step': 4900, 'budget': 5000, 'loss': 5.269430766929872e-05, 'seconds': 474.0472615000326}
+FT_final_only {'step': 4950, 'budget': 5000, 'loss': 1.3875656804884784e-05, 'seconds': 478.8255826999666}
+FT_final_only {'step': 5000, 'budget': 5000, 'loss': 2.648599320309586e-06, 'seconds': 483.6031354999868}
+FT_grounded {'step': 50, 'budget': 5000, 'loss': 13.964641571044922, 'seconds': 4.834270399995148}
+FT_grounded {'step': 100, 'budget': 5000, 'loss': 11.280864715576172, 'seconds': 9.613454299978912}
+FT_grounded {'step': 150, 'budget': 5000, 'loss': 9.957845687866211, 'seconds': 14.3988199000014}
+FT_grounded {'step': 200, 'budget': 5000, 'loss': 9.354643821716309, 'seconds': 19.172554700053297}
+FT_grounded {'step': 250, 'budget': 5000, 'loss': 9.005967140197754, 'seconds': 23.94121499999892}
+FT_grounded {'step': 300, 'budget': 5000, 'loss': 8.49390983581543, 'seconds': 28.710965499980375}
+FT_grounded {'step': 350, 'budget': 5000, 'loss': 8.784865379333496, 'seconds': 33.481734000029974}
+FT_grounded {'step': 400, 'budget': 5000, 'loss': 8.186396598815918, 'seconds': 38.259245500084944}
+FT_grounded {'step': 450, 'budget': 5000, 'loss': 6.974979400634766, 'seconds': 43.03467020008247}
+FT_grounded {'step': 500, 'budget': 5000, 'loss': 8.216550827026367, 'seconds': 47.80996210000012}
+FT_grounded {'step': 550, 'budget': 5000, 'loss': 8.048036575317383, 'seconds': 53.916712400037795}
+FT_grounded {'step': 600, 'budget': 5000, 'loss': 7.137515068054199, 'seconds': 58.69549830001779}
+FT_grounded {'step': 650, 'budget': 5000, 'loss': 7.0224103927612305, 'seconds': 63.471401900053024}
+FT_grounded {'step': 700, 'budget': 5000, 'loss': 6.67399787902832, 'seconds': 68.24644940008875}
+FT_grounded {'step': 750, 'budget': 5000, 'loss': 6.842523574829102, 'seconds': 73.01692940003704}
+FT_grounded {'step': 800, 'budget': 5000, 'loss': 6.673433303833008, 'seconds': 77.79152099997737}
+FT_grounded {'step': 850, 'budget': 5000, 'loss': 5.9675774574279785, 'seconds': 82.56745710002724}
+FT_grounded {'step': 900, 'budget': 5000, 'loss': 6.2793474197387695, 'seconds': 87.34190730005503}
+FT_grounded {'step': 950, 'budget': 5000, 'loss': 5.925408363342285, 'seconds': 92.12148480000906}
+FT_grounded {'step': 1000, 'budget': 5000, 'loss': 5.703502655029297, 'seconds': 96.89671850006562}
+FT_grounded {'step': 1050, 'budget': 5000, 'loss': 5.362158298492432, 'seconds': 103.03713700000662}
+FT_grounded {'step': 1100, 'budget': 5000, 'loss': 5.6775665283203125, 'seconds': 107.81538990000263}
+FT_grounded {'step': 1150, 'budget': 5000, 'loss': 5.079861640930176, 'seconds': 112.59674690000247}
+FT_grounded {'step': 1200, 'budget': 5000, 'loss': 4.884969711303711, 'seconds': 117.36922640004195}
+FT_grounded {'step': 1250, 'budget': 5000, 'loss': 5.2372307777404785, 'seconds': 122.1433802000247}
+FT_grounded {'step': 1300, 'budget': 5000, 'loss': 4.670888900756836, 'seconds': 126.91815829998814}
+FT_grounded {'step': 1350, 'budget': 5000, 'loss': 4.287151336669922, 'seconds': 131.69114320003428}
+FT_grounded {'step': 1400, 'budget': 5000, 'loss': 4.654825687408447, 'seconds': 136.46962049999274}
+FT_grounded {'step': 1450, 'budget': 5000, 'loss': 4.235541343688965, 'seconds': 141.24702070001513}
+FT_grounded {'step': 1500, 'budget': 5000, 'loss': 4.835074424743652, 'seconds': 146.0168311999878}
+FT_grounded {'step': 1550, 'budget': 5000, 'loss': 4.6739501953125, 'seconds': 151.10462900006678}
+FT_grounded {'step': 1600, 'budget': 5000, 'loss': 4.59150505065918, 'seconds': 155.8771508000791}
+FT_grounded {'step': 1650, 'budget': 5000, 'loss': 4.111804485321045, 'seconds': 160.65463620005175}
+FT_grounded {'step': 1700, 'budget': 5000, 'loss': 3.895033359527588, 'seconds': 165.44236400001682}
+FT_grounded {'step': 1750, 'budget': 5000, 'loss': 4.610767841339111, 'seconds': 170.22531220002566}
+FT_grounded {'step': 1800, 'budget': 5000, 'loss': 4.444787979125977, 'seconds': 175.00804620003328}
+FT_grounded {'step': 1850, 'budget': 5000, 'loss': 4.546904563903809, 'seconds': 179.79004270001315}
+FT_grounded {'step': 1900, 'budget': 5000, 'loss': 3.747546672821045, 'seconds': 184.57568490004633}
+FT_grounded {'step': 1950, 'budget': 5000, 'loss': 3.406320333480835, 'seconds': 189.3612706999993}
+FT_grounded {'step': 2000, 'budget': 5000, 'loss': 3.84112811088562, 'seconds': 194.1437654000474}
+FT_grounded {'step': 2050, 'budget': 5000, 'loss': 4.256506443023682, 'seconds': 200.30292320006993}
+FT_grounded {'step': 2100, 'budget': 5000, 'loss': 3.5914411544799805, 'seconds': 205.08371490007266}
+FT_grounded {'step': 2150, 'budget': 5000, 'loss': 4.227659225463867, 'seconds': 209.8626955000218}
+FT_grounded {'step': 2200, 'budget': 5000, 'loss': 3.909140110015869, 'seconds': 214.64872130006552}
+FT_grounded {'step': 2250, 'budget': 5000, 'loss': 3.88596773147583, 'seconds': 219.42943770007696}
+FT_grounded {'step': 2300, 'budget': 5000, 'loss': 3.817800760269165, 'seconds': 224.20983649999835}
+FT_grounded {'step': 2350, 'budget': 5000, 'loss': 3.654918670654297, 'seconds': 228.99107490002643}
+FT_grounded {'step': 2400, 'budget': 5000, 'loss': 2.8250818252563477, 'seconds': 233.7711267999839}
+FT_grounded {'step': 2450, 'budget': 5000, 'loss': 3.2772035598754883, 'seconds': 238.54743200005032}
+FT_grounded {'step': 2500, 'budget': 5000, 'loss': 3.711121082305908, 'seconds': 243.32791510003153}
+FT_grounded {'step': 2550, 'budget': 5000, 'loss': 3.8127498626708984, 'seconds': 248.42645889997948}
+FT_grounded {'step': 2600, 'budget': 5000, 'loss': 3.246673583984375, 'seconds': 253.21250090003014}
+FT_grounded {'step': 2650, 'budget': 5000, 'loss': 3.468130111694336, 'seconds': 257.9846089000348}
+FT_grounded {'step': 2700, 'budget': 5000, 'loss': 3.2154688835144043, 'seconds': 262.7689802000532}
+FT_grounded {'step': 2750, 'budget': 5000, 'loss': 3.61214017868042, 'seconds': 267.54637500003446}
+FT_grounded {'step': 2800, 'budget': 5000, 'loss': 3.65614914894104, 'seconds': 272.3317179000005}
+FT_grounded {'step': 2850, 'budget': 5000, 'loss': 2.6131234169006348, 'seconds': 277.1108762000222}
+FT_grounded {'step': 2900, 'budget': 5000, 'loss': 2.513990879058838, 'seconds': 281.88554920000024}
+FT_grounded {'step': 2950, 'budget': 5000, 'loss': 2.860233783721924, 'seconds': 286.65662480005994}
+FT_grounded {'step': 3000, 'budget': 5000, 'loss': 2.6134233474731445, 'seconds': 291.4373164999997}
+FT_grounded {'step': 3050, 'budget': 5000, 'loss': 2.3117494583129883, 'seconds': 296.5404614000581}
+FT_grounded {'step': 3100, 'budget': 5000, 'loss': 2.401900291442871, 'seconds': 301.3155732000014}
+FT_grounded {'step': 3150, 'budget': 5000, 'loss': 2.156905174255371, 'seconds': 306.09170049999375}
+FT_grounded {'step': 3200, 'budget': 5000, 'loss': 1.5727896690368652, 'seconds': 310.8685596000869}
+FT_grounded {'step': 3250, 'budget': 5000, 'loss': 1.0105127096176147, 'seconds': 315.64688300003763}
+FT_grounded {'step': 3300, 'budget': 5000, 'loss': 0.7692346572875977, 'seconds': 320.42352349997964}
+FT_grounded {'step': 3350, 'budget': 5000, 'loss': 1.0206804275512695, 'seconds': 325.1999452000018}
+FT_grounded {'step': 3400, 'budget': 5000, 'loss': 0.6015558242797852, 'seconds': 329.97787830000743}
+FT_grounded {'step': 3450, 'budget': 5000, 'loss': 0.4559153914451599, 'seconds': 334.75151450000703}
+FT_grounded {'step': 3500, 'budget': 5000, 'loss': 0.40678319334983826, 'seconds': 339.53507540002465}
+FT_grounded {'step': 3550, 'budget': 5000, 'loss': 0.6073173880577087, 'seconds': 344.6231145000784}
+FT_grounded {'step': 3600, 'budget': 5000, 'loss': 0.3940544128417969, 'seconds': 349.40283190004993}
+FT_grounded {'step': 3650, 'budget': 5000, 'loss': 0.3929821848869324, 'seconds': 354.18074400001206}
+FT_grounded {'step': 3700, 'budget': 5000, 'loss': 0.5144463181495667, 'seconds': 358.95667510002386}
+FT_grounded {'step': 3750, 'budget': 5000, 'loss': 0.4661772549152374, 'seconds': 363.7350581000792}
+FT_grounded {'step': 3800, 'budget': 5000, 'loss': 0.24245549738407135, 'seconds': 368.51421639998443}
+FT_grounded {'step': 3850, 'budget': 5000, 'loss': 0.35437148809432983, 'seconds': 373.2873405000428}
+FT_grounded {'step': 3900, 'budget': 5000, 'loss': 0.22943012416362762, 'seconds': 378.06355439999606}
+FT_grounded {'step': 3950, 'budget': 5000, 'loss': 0.28452593088150024, 'seconds': 382.83835520001594}
+FT_grounded {'step': 4000, 'budget': 5000, 'loss': 0.2833923101425171, 'seconds': 387.620174300042}
+FT_grounded {'step': 4050, 'budget': 5000, 'loss': 0.14836052060127258, 'seconds': 392.7080232000444}
+FT_grounded {'step': 4100, 'budget': 5000, 'loss': 0.16087493300437927, 'seconds': 397.4799423000077}
+FT_grounded {'step': 4150, 'budget': 5000, 'loss': 0.16624638438224792, 'seconds': 402.255865400075}
+FT_grounded {'step': 4200, 'budget': 5000, 'loss': 0.16672952473163605, 'seconds': 407.0275941999862}
+FT_grounded {'step': 4250, 'budget': 5000, 'loss': 0.09808555245399475, 'seconds': 411.8029828000581}
+FT_grounded {'step': 4300, 'budget': 5000, 'loss': 0.11080469191074371, 'seconds': 416.5828079000348}
+FT_grounded {'step': 4350, 'budget': 5000, 'loss': 0.2830326557159424, 'seconds': 421.3546838000184}
+FT_grounded {'step': 4400, 'budget': 5000, 'loss': 0.17770007252693176, 'seconds': 426.12494120001793}
+FT_grounded {'step': 4450, 'budget': 5000, 'loss': 0.14674457907676697, 'seconds': 430.90697920008097}
+FT_grounded {'step': 4500, 'budget': 5000, 'loss': 0.07975507527589798, 'seconds': 435.68386009999085}
+FT_grounded {'step': 4550, 'budget': 5000, 'loss': 0.0735807791352272, 'seconds': 440.78161130007356}
+FT_grounded {'step': 4600, 'budget': 5000, 'loss': 0.1549561321735382, 'seconds': 445.5618535000831}
+FT_grounded {'step': 4650, 'budget': 5000, 'loss': 0.08363937586545944, 'seconds': 450.33977090008557}
+FT_grounded {'step': 4700, 'budget': 5000, 'loss': 0.08291636407375336, 'seconds': 455.1132041000528}
+FT_grounded {'step': 4750, 'budget': 5000, 'loss': 0.09957471489906311, 'seconds': 459.88953460007906}
+FT_grounded {'step': 4800, 'budget': 5000, 'loss': 0.05107870697975159, 'seconds': 464.66551429999527}
+FT_grounded {'step': 4850, 'budget': 5000, 'loss': 0.13739611208438873, 'seconds': 469.44123640004545}
+FT_grounded {'step': 4900, 'budget': 5000, 'loss': 0.08779077976942062, 'seconds': 474.2214944000589}
+FT_grounded {'step': 4950, 'budget': 5000, 'loss': 0.04342592880129814, 'seconds': 478.9946834000293}
+FT_grounded {'step': 5000, 'budget': 5000, 'loss': 0.051751334220170975, 'seconds': 483.7784560000291}
+SWEEP_final_only {'D': 2, 'K5': 1.0, 'peak': 1.0}
+SWEEP_final_only {'D': 3, 'K5': 1.0, 'peak': 1.0}
+SWEEP_final_only {'D': 4, 'K5': 0.9973333333333333, 'peak': 0.9973333333333333}
+SWEEP_final_only {'D': 5, 'K5': 0.996, 'peak': 0.9973333333333333}
+SWEEP_final_only {'D': 6, 'K5': 0.916, 'peak': 0.9466666666666667}
+SWEEP_final_only {'D': 8, 'K5': 0.0, 'peak': 0.005333333333333333}
+SWEEP_final_only {'D': 10, 'K5': 0.0013333333333333333, 'peak': 0.005333333333333333}
+SWEEP_final_only {'D': 12, 'K5': 0.0, 'peak': 0.0026666666666666666}
+SWEEP_final_only {'D': 16, 'K5': 0.0, 'peak': 0.004}
+SWEEP_final_only {'D': 20, 'K5': 0.0, 'peak': 0.004}
+PROTOTYPES_final_only {'records': 128, 'total': 62000}
+PROTOTYPES_final_only {'records': 16512, 'total': 62000}
+PROTOTYPES_final_only {'records': 32896, 'total': 62000}
+PROTOTYPES_final_only {'records': 49280, 'total': 62000}
+INTERVENTION_final_only {'D': 3, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 4, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 5, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 5, 'k': 4, 'n': 200}
+INTERVENTION_final_only {'D': 6, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 6, 'k': 4, 'n': 200}
+INTERVENTION_final_only {'D': 8, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 8, 'k': 4, 'n': 200}
+INTERVENTION_final_only {'D': 10, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 10, 'k': 4, 'n': 200}
+INTERVENTION_final_only {'D': 12, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 12, 'k': 4, 'n': 200}
+INTERVENTION_final_only {'D': 16, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 16, 'k': 4, 'n': 200}
+INTERVENTION_final_only {'D': 20, 'k': 2, 'n': 200}
+INTERVENTION_final_only {'D': 20, 'k': 4, 'n': 200}
+AUDIT_COMPLETE_final_only {}
+SWEEP_grounded {'D': 2, 'K5': 0.988, 'peak': 0.9933333333333333}
+SWEEP_grounded {'D': 3, 'K5': 0.9986666666666667, 'peak': 0.9986666666666667}
+SWEEP_grounded {'D': 4, 'K5': 0.9946666666666667, 'peak': 0.9973333333333333}
+SWEEP_grounded {'D': 5, 'K5': 0.9613333333333334, 'peak': 0.9613333333333334}
+SWEEP_grounded {'D': 6, 'K5': 0.0026666666666666666, 'peak': 0.592}
+SWEEP_grounded {'D': 8, 'K5': 0.005333333333333333, 'peak': 0.009333333333333334}
+SWEEP_grounded {'D': 10, 'K5': 0.006666666666666667, 'peak': 0.008}
+SWEEP_grounded {'D': 12, 'K5': 0.005333333333333333, 'peak': 0.008}
+SWEEP_grounded {'D': 16, 'K5': 0.004, 'peak': 0.010666666666666666}
+SWEEP_grounded {'D': 20, 'K5': 0.004, 'peak': 0.006666666666666667}
+PROTOTYPES_grounded {'records': 128, 'total': 62000}
+PROTOTYPES_grounded {'records': 16512, 'total': 62000}
+PROTOTYPES_grounded {'records': 32896, 'total': 62000}
+PROTOTYPES_grounded {'records': 49280, 'total': 62000}
+INTERVENTION_grounded {'D': 3, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 4, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 5, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 5, 'k': 4, 'n': 200}
+INTERVENTION_grounded {'D': 6, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 6, 'k': 4, 'n': 200}
+INTERVENTION_grounded {'D': 8, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 8, 'k': 4, 'n': 200}
+INTERVENTION_grounded {'D': 10, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 10, 'k': 4, 'n': 200}
+INTERVENTION_grounded {'D': 12, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 12, 'k': 4, 'n': 200}
+INTERVENTION_grounded {'D': 16, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 16, 'k': 4, 'n': 200}
+INTERVENTION_grounded {'D': 20, 'k': 2, 'n': 200}
+INTERVENTION_grounded {'D': 20, 'k': 4, 'n': 200}
+AUDIT_COMPLETE_grounded {}
+COMPLETE {'decision': 'DECODE-ONLY — NO CAUSAL EFFECT'}

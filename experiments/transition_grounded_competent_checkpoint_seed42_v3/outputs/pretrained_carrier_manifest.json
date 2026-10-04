@@ -1,0 +1,62 @@
+[
+  {
+    "path": "carriers\\pretrained_D2.npz",
+    "bytes": 55965298,
+    "sha256": "a5fbf49275a79ee8c3d600e5f3874b8b25cb5c4f1606eb2db31104e42135719b",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D3.npz",
+    "bytes": 56094657,
+    "sha256": "b03936d5d42c6380317c10162572fd52e94ba83af6df31c441ee95bdbfb8886c",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D4.npz",
+    "bytes": 56017536,
+    "sha256": "97b5b7187e081c41f2ae5bea8a7c3a6b6c3fd170739e980f58e1d85c00a42475",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D5.npz",
+    "bytes": 56028361,
+    "sha256": "ccbcc0489e8aa04ec524f837490051499b0fb345edbf3b7c150a319d73b9e7c5",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D6.npz",
+    "bytes": 56144315,
+    "sha256": "d0134eb4a026386be961a4bb01670658d9233a5dc258123d102167ae890d1cd9",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D8.npz",
+    "bytes": 55973759,
+    "sha256": "fb339c13e585587b5ffa072cac87e316f7a711512c9651b2b5da21f133ebe5f2",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D10.npz",
+    "bytes": 55780487,
+    "sha256": "241e18e3fe55afc6229eda9a10fc9efc41fc2937714f5adcc3adbe78d07efb90",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D12.npz",
+    "bytes": 55691642,
+    "sha256": "0e5ab08ab5522a9acfceb1180c2885b9f1e8adac21bd30abde3ae34167fbc250",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D16.npz",
+    "bytes": 55614298,
+    "sha256": "47dd9d33a8c72a69806de95ddd4d38fdab0b8e59e89cc8128a51ab8237afb1ba",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  },
+  {
+    "path": "carriers\\pretrained_D20.npz",
+    "bytes": 55548980,
+    "sha256": "483447d195c539d213a0ba713735b449b3adf72762d863f6ea0e746d28cf1b94",
+    "q": "raw existing prediction-position hidden; decoder includes existing final LN"
+  }
+]

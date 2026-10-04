@@ -1,0 +1,38 @@
+D:\transition_grounded_competent_checkpoint_seed42_v3\run_experiment.py:52: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  assert torch.equal(a,b.final_logits) and float(abs(loss-final))==0
+OFFICIAL_CHECKPOINT_VALIDATED {'macro': 0.9888, 'by_hop': [{'D': 2, 'K': 2, 'correct': 750, 'total': 750, 'accuracy': 1.0}, {'D': 3, 'K': 2, 'correct': 750, 'total': 750, 'accuracy': 1.0}, {'D': 4, 'K': 2, 'correct': 750, 'total': 750, 'accuracy': 1.0}, {'D': 5, 'K': 2, 'correct': 746, 'total': 750, 'accuracy': 0.9946666666666667}, {'D': 6, 'K': 2, 'correct': 712, 'total': 750, 'accuracy': 0.9493333333333334}]}
+SWEEP_pretrained {'D': 2, 'K5': 0.9093333333333333, 'peak': 1.0}
+SWEEP_pretrained {'D': 3, 'K5': 0.524, 'peak': 1.0}
+SWEEP_pretrained {'D': 4, 'K5': 0.18533333333333332, 'peak': 1.0}
+SWEEP_pretrained {'D': 5, 'K5': 0.116, 'peak': 0.9946666666666667}
+SWEEP_pretrained {'D': 6, 'K5': 0.09333333333333334, 'peak': 0.9493333333333334}
+SWEEP_pretrained {'D': 8, 'K5': 0.004, 'peak': 0.008}
+SWEEP_pretrained {'D': 10, 'K5': 0.0, 'peak': 0.009333333333333334}
+SWEEP_pretrained {'D': 12, 'K5': 0.0, 'peak': 0.005333333333333333}
+SWEEP_pretrained {'D': 16, 'K5': 0.0, 'peak': 0.006666666666666667}
+SWEEP_pretrained {'D': 20, 'K5': 0.0, 'peak': 0.005333333333333333}
+Windows fatal exception: code 0xc000001d
+
+Thread 0x00002414 (most recent call first):
+  <no Python frame>
+
+Current thread 0x00009f50 (most recent call first):
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\evaluate.py", line 57 in <listcomp>
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\evaluate.py", line 57 in plan
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\evaluate.py", line 105 in audit
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\run_experiment.py", line 117 in main
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\run_experiment.py", line 126 in <module>
+Fatal Python error: Illegal instruction
+
+Thread 0x00002414 (most recent call first):
+  <no Python frame>
+
+Current thread 0x00009f50 (most recent call first):
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\evaluate.py", line 57 in <listcomp>
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\evaluate.py", line 57 in plan
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\evaluate.py", line 105 in audit
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\run_experiment.py", line 117 in main
+  File "D:\transition_grounded_competent_checkpoint_seed42_v3\run_experiment.py", line 126 in <module>
+
+Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, torch._C, torch._C._dynamo.autograd_compiler, torch._C._dynamo.eval_frame, torch._C._dynamo.guards, torch._C._dynamo.utils, torch._C._fft, torch._C._linalg, torch._C._nested, torch._C._nn, torch._C._sparse, torch._C._special, _brotli, backports.zstd._zstd, yaml._yaml, PIL._imaging, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator (total: 26)

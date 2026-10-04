@@ -4,3 +4,5 @@ experiments/transition_grounded_recurrent_reasoning_seed42_v1/checkpoints/ground
 experiments/transition_grounded_recurrent_reasoning_seed42_v1/data/verified_dataset_seed42.zip filter=lfs diff=lfs merge=lfs -text
 experiments/transition_grounded_competent_checkpoint_seed42_v3/checkpoints/*_step*.pt filter=lfs diff=lfs merge=lfs -text
 experiments/transition_grounded_competent_checkpoint_seed42_v3/archives/*.zip filter=lfs diff=lfs merge=lfs -text
+# Preserve exact V3 source/output bytes for recorded provenance hashes.
+experiments/transition_grounded_competent_checkpoint_seed42_v3/** -text

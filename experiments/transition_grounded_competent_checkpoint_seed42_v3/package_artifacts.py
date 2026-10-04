@@ -16,4 +16,7 @@ rows=[package('verified_selected_official_dataset.zip',list((ROOT/'data').glob('
 if len(list((ROOT/'outputs').glob('prototypes_*.pt')))==3:
  paths=list((ROOT/'carriers').glob('*.npz'))+list((ROOT/'outputs').glob('prototypes_*.pt'))+[ROOT/'outputs'/n for n in ['intervention_plan.json','intervention_noise_directions.npy','intervention_plan_manifest.json','pretrained_carrier_manifest.json']]
  rows.append(package('recorded_carriers_prototypes_and_controls.zip',paths,zipfile.ZIP_STORED))
+if (ROOT/'outputs/completion_audit.json').exists():
+ paths=[p for p in (ROOT/'outputs').glob('*') if p.suffix in ['.csv','.json','.npz'] and p.name!='archive_manifest.json']+list((ROOT/'figures').glob('*.png'))+list(ROOT.glob('*.md'))+list(ROOT.glob('*.log'))+[ROOT/n for n in ['CONFIG.json','RUN_METADATA.json','STATUS.json']]
+ rows.append(package('complete_result_tables_figures_and_logs.zip',paths,zipfile.ZIP_DEFLATED))
 (ROOT/'outputs/archive_manifest.json').write_text(json.dumps(rows,indent=2),encoding='utf-8');print(json.dumps(rows),flush=True)

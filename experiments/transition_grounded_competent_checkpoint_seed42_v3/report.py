@@ -42,14 +42,17 @@ def figures(s):
  import matplotlib.pyplot as plt
  plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False,'figure.dpi':120})
  figdir=ROOT/'figures';colors=['#555555','#2678ad','#ce5727']
- def end(fig,name):fig.tight_layout();fig.savefig(figdir/(name+'.png'),dpi=180,bbox_inches='tight');plt.close(fig)
+ def end(fig,name,tight=True):
+  if tight:fig.tight_layout()
+  fig.savefig(figdir/(name+'.png'),dpi=180,bbox_inches='tight');plt.close(fig)
  def heat(n,file,state=False,ax=None):
   rows=read(f'state_accuracy_{n}.csv') if state else matrix(n);ks=list(range(1,25)) if state else CONFIG['K'];arr=np.array([[next(float(r['accuracy']) for r in rows if int(r['D'])==d and int(r['k' if state else 'K'])==k) for k in ks] for d in CONFIG['D']]);im=ax.imshow(arr,aspect='auto',vmin=0,vmax=1,cmap='viridis');ax.set_xticks(range(len(ks)));ax.set_xticklabels(ks,rotation=90);ax.set_yticks(range(len(CONFIG['D'])));ax.set_yticklabels(CONFIG['D']);ax.set_xlabel('Recurrences K' if not state else 'State readout k');ax.set_ylabel('Problem depth D');ax.set_title(n);return im
  for file,state in [('pretrained_recurrence_hop_heatmap',False),('pretrained_state_accuracy_heatmap',True)]:
   fig,ax=plt.subplots(figsize=(8,4));im=heat('pretrained',file,state,ax);fig.colorbar(im,ax=ax,label='Accuracy');end(fig,file)
  fig,axs=plt.subplots(1,3,figsize=(14,4))
- for ax,n in zip(axs,NAMES):heat(n,'',True,ax)
- end(fig,'state_accuracy_comparison')
+ for ax,n in zip(axs,NAMES):im=heat(n,'',True,ax)
+ fig.tight_layout(rect=(0,0,.95,1));cax=fig.add_axes([.955,.18,.012,.65]);fig.colorbar(im,cax=cax,label='Accuracy')
+ end(fig,'state_accuracy_comparison',False)
  fig,ax=plt.subplots(figsize=(7,4));x=np.arange(5)
  for j,n in enumerate(NAMES):ax.bar(x+(j-1)*.25,[float(r['accuracy']) for r in matrix(n) if int(r['D'])<=6 and int(r['K'])==5],.25,label=n,color=colors[j])
  ax.set_xticks(x);ax.set_xticklabels(CONFIG['ID']);ax.set_ylim(0,1);ax.set_xlabel('ID depth (K=5)');ax.set_ylabel('Accuracy');ax.legend();end(fig,'id_retention')
@@ -60,8 +63,11 @@ def figures(s):
  axs[0].set_ylabel('Final accuracy');axs[-1].legend(fontsize=8);end(fig,'ood_recurrence_hop_comparison')
  for metric,file in [('cf_target_rate','counterfactual_target_rate'),('trajectory_accuracy','counterfactual_trajectory_accuracy')]:
   fig,ax=plt.subplots(figsize=(7,4));x=np.arange(3)
-  for j,c in enumerate(['counterfactual','same_state','noise']):ax.bar(x+(j-1)*.25,[s[n][c][metric] for n in NAMES],.25,label=c)
-  ax.set_xticks(x);ax.set_xticklabels(NAMES);ax.set_ylim(0,1);ax.set_ylabel(metric);ax.set_title('Main K; equal D,k cell mean');ax.legend();end(fig,file)
+  from matplotlib.ticker import PercentFormatter
+  for j,c in enumerate(['counterfactual','same_state','noise']):
+   vals=[s[n][c][metric] for n in NAMES];bars=ax.bar(x+(j-1)*.25,vals,.25,label=c);ax.bar_label(bars,labels=[f'{v:.2%}' for v in vals],padding=3,fontsize=8)
+  upper=min(1,max(.02,max(s[n][c][metric] for n in NAMES for c in ['counterfactual','same_state','noise'])*1.3));ax.axhline(.005,ls='--',color='#555555',lw=1,label='Entity chance (0.5%)');ax.yaxis.set_major_formatter(PercentFormatter(1))
+  ax.set_xticks(x);ax.set_xticklabels(NAMES);ax.set_ylim(0,upper);ax.set_ylabel(metric);ax.set_title('Main K; equal D,k cell mean');ax.legend(fontsize=8);end(fig,file)
  fig,axs=plt.subplots(1,2,figsize=(10,4));x=np.arange(10)
  for j,n in enumerate(NAMES):
   rows=read(f'overthinking_{n}.csv')
@@ -112,10 +118,14 @@ def finalize(d):
   s=summary['grounded'];b=summary['final_only'];p=summary['pretrained'];changes=[]
   if g['causal_supported']:changes.append('causal computation')
   elif s['transition_state_macro']>max(b['transition_state_macro'],p['transition_state_macro']):changes.append('learning representation only')
-  if s['ID_K5']>max(b['ID_K5'],p['ID_K5']) or s['OOD_KD']>max(b['OOD_KD'],p['OOD_KD']):changes.append('final task performance')
+  if s['ID_K5']-max(b['ID_K5'],p['ID_K5'])>=CONFIG['utility_gain_pp']/100 or s['OOD_KD']-max(b['OOD_KD'],p['OOD_KD'])>=CONFIG['utility_gain_pp']/100:changes.append('final task performance')
   lines+=['', 'Measured supported change categories: **'+(', '.join(changes) if changes else 'none')+'**. Positive numerical differences are descriptive at this single seed, not significance claims.','',f'Additional native-setting reference: the original checkpoint scores {pct(validation["macro"])} at K2, while grounded scores {pct(s["ID_K5"])} at its trained K5. The requested matched-K5 retention comparison does not by itself prove preservation of the original K2 computation. Both references are exposed rather than conflated.']
+  lines+=['',f'Grounded ID accuracy is {100*(b["ID_K5"]-s["ID_K5"]):.2f}pp below the matched final-only arm and {100*(validation["macro"]-s["ID_K5"]):.2f}pp below the original checkpoint at its native K2. Thus the formal matched-K5 retention flag is not evidence that the original competence was preserved. OOD {pct(s["OOD_KD"])} is near the nominal 1/200=0.5% entity chance rate; it is not a useful extrapolation gain.','', 'Same-state replacement on originally correct chains preserves only '+pct(s['same_state_correct_preservation'])+' in grounded. This positive-control failure makes the prototype intervention strongly disruptive. The experiment supplies no positive causal evidence; it cannot distinguish absence of a usable carrier from failure of mean-prototype interchangeability, and it cannot rule out mechanisms in other token positions. A separate future audit would need to establish same-state interchangeability before interpreting counterfactual replacement as a clean mechanism test. No such rescue experiment was substituted into this fixed run.']
+ if not invalid:lines+=['','Relative-to-peak K* is descriptive; near-chance OOD peaks do not establish a useful computational frontier.','', 'Publication integrity checks also compare recorded dataset arrays with the canonical selected official data and fingerprint the executed training/instrumentation/intervention bytecode, including the used official constructor/forward. `executed_bytecode_audit.json` records the scope and matches. A damaged README in an earlier transport/archive snapshot was restored from canonical source; core source/data checks matched. Final artifacts are published only after checksum and UTF-8 checks.']
  (ROOT/'FINAL_REPORT.md').write_text('\n'.join(lines).replace('DEC0DE-ONLY','DECODE-ONLY')+'\n',encoding='utf-8')
  if completion is not None:
   assert len(list((ROOT/'figures').glob('*.png')))==8
   assert json.loads((OUT/'training_final_only.json').read_text())['initial_parameter_sha256']==json.loads((OUT/'training_grounded.json').read_text())['initial_parameter_sha256']
   dump(OUT/'completion_audit.json',completion)
+
+if __name__=='__main__':finalize(decision())

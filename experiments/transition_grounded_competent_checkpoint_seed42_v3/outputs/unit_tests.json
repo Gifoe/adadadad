@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "original_forward_exact_equal": true,
+  "lambda0_equals_finalCE": true,
+  "tied_head": true,
+  "parameter_keys_unchanged": true,
+  "gradient_norm": 35.51438903808594,
+  "raw_carrier_noop_max_difference": 0.0,
+  "vocab_size": 217,
+  "state_token_added": false
+}

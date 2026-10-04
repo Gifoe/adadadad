@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "comparison": "recursive bytecode/constants/name fingerprint; excludes filenames/line tables, no execution",
+  "modules": {
+    "data_pipeline": {
+      "match": true,
+      "scope": "full executed module",
+      "executed_bytecode_sha256": "6bc94db3e504c12a17882a0e96bdcf8765ce37d922854c0c13a00d3682e5be4f",
+      "canonical_compile_sha256": "6bc94db3e504c12a17882a0e96bdcf8765ce37d922854c0c13a00d3682e5be4f",
+      "cached_file_sha256": "7a7212667d2a8e9270ac2b761c41edb7507bc58d94c3e5d148128891f9934ba3"
+    },
+    "evaluate": {
+      "match": true,
+      "scope": "full executed module",
+      "executed_bytecode_sha256": "498bb389c56a21a106f77256614ba62f641afa3b1351c851057b427fe725760d",
+      "canonical_compile_sha256": "498bb389c56a21a106f77256614ba62f641afa3b1351c851057b427fe725760d",
+      "cached_file_sha256": "ae25b9a2a67a0ea27e7d613d4c7b8b2a6243b841ddfe30b811ce3d61acca9941"
+    },
+    "model_carrier": {
+      "match": true,
+      "scope": "full executed module",
+      "executed_bytecode_sha256": "448e4a7c3da38f9c56eefac5baa8d783aac4cf51a66ea3ab72c4a2d578b917b8",
+      "canonical_compile_sha256": "448e4a7c3da38f9c56eefac5baa8d783aac4cf51a66ea3ab72c4a2d578b917b8",
+      "cached_file_sha256": "ff11cca5a083c6413ddd30917d9b45dcc1e23aca437d49d167375e7d74d25d74"
+    },
+    "run_experiment": {
+      "match": true,
+      "scope": "full executed module",
+      "executed_bytecode_sha256": "49379493df0bce62f4f712a707d3bd0a7b153ac42d752502ac044a21c53df876",
+      "canonical_compile_sha256": "49379493df0bce62f4f712a707d3bd0a7b153ac42d752502ac044a21c53df876",
+      "cached_file_sha256": "2465b5e32639bf26f642943a2364860e6485421e0d021661445986eb3afbb492"
+    },
+    "official/gpt_utils_extrapolation": {
+      "match": true,
+      "scope": "official class constructor and actual fixed-recurrence forward; unused adaptive routines excluded from cross-Python3.10.0/3.10.20 bytecode comparison",
+      "executed_bytecode_sha256": "7bf7b9bae9374f67f2f8ce74e12612d51daf59af2ced9703ad437869e93a2303",
+      "canonical_compile_sha256": "7bf7b9bae9374f67f2f8ce74e12612d51daf59af2ced9703ad437869e93a2303",
+      "cached_file_sha256": "528c9b7fd05492c5c5559f1fcd1b5d3dbd2a1ac5e6fdbb529347e89d16dd49c6"
+    }
+  }
+}

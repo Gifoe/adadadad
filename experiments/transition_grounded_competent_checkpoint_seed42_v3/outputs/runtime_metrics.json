@@ -1,0 +1,126 @@
+{
+  "official_validation": {
+    "validated": true,
+    "macro": 0.9888,
+    "by_hop": [
+      {
+        "D": 2,
+        "K": 2,
+        "correct": 750,
+        "total": 750,
+        "accuracy": 1.0
+      },
+      {
+        "D": 3,
+        "K": 2,
+        "correct": 750,
+        "total": 750,
+        "accuracy": 1.0
+      },
+      {
+        "D": 4,
+        "K": 2,
+        "correct": 750,
+        "total": 750,
+        "accuracy": 1.0
+      },
+      {
+        "D": 5,
+        "K": 2,
+        "correct": 746,
+        "total": 750,
+        "accuracy": 0.9946666666666667
+      },
+      {
+        "D": 6,
+        "K": 2,
+        "correct": 712,
+        "total": 750,
+        "accuracy": 0.9493333333333334
+      }
+    ],
+    "seconds": 0.4012453000759706
+  },
+  "invalid_checkpoint_gate": false,
+  "pretrained_audit": {
+    "model": "pretrained",
+    "seconds": 73.58825859997887,
+    "sweep_seconds": 43.2033611999359,
+    "prototype_seconds": 13.053533800062723,
+    "intervention_seconds": 15.889179900055751,
+    "peak_vram_mib": 1009.96533203125,
+    "starting_checkpoint_sha256": "4e89fde1f592d7afece63a6182f8427beedc85a216adb474777830b6b56495d8"
+  },
+  "final_only_audit": {
+    "model": "final_only",
+    "seconds": 38.30538080004044,
+    "sweep_seconds": 9.060264599975199,
+    "prototype_seconds": 12.982884699944407,
+    "intervention_seconds": 15.977223100024275,
+    "peak_vram_mib": 1372.091796875,
+    "starting_checkpoint_sha256": null
+  },
+  "grounded_audit": {
+    "model": "grounded",
+    "seconds": 38.29578100005165,
+    "sweep_seconds": 9.125239499961026,
+    "prototype_seconds": 13.05034339998383,
+    "intervention_seconds": 15.841420799959451,
+    "peak_vram_mib": 1044.1435546875,
+    "starting_checkpoint_sha256": null
+  },
+  "final_only_FT": {
+    "model": "final_only",
+    "smoke": false,
+    "updates": 5000,
+    "examples_seen": 640000,
+    "seconds": 484.9806262999773,
+    "peak_vram_mib": 9261.65087890625,
+    "initial_parameter_sha256": "d9f62e36e46aa5adfb99ecd7bbf2adbd055feebda138c49c2fac59d97407288e",
+    "first20_loss": 1.961308741569519,
+    "last20_loss": 8.787176363966865e-06,
+    "LR": 1e-05,
+    "recurrence": 5
+  },
+  "final_only_smoke": {
+    "model": "final_only",
+    "smoke": true,
+    "updates": 200,
+    "examples_seen": 25600,
+    "seconds": 19.19937819999177,
+    "peak_vram_mib": 9177.34326171875,
+    "initial_parameter_sha256": "d9f62e36e46aa5adfb99ecd7bbf2adbd055feebda138c49c2fac59d97407288e",
+    "first20_loss": 1.961308741569519,
+    "last20_loss": 0.01342339396942407,
+    "LR": 1e-05,
+    "recurrence": 5
+  },
+  "grounded_FT": {
+    "model": "grounded",
+    "smoke": false,
+    "updates": 5000,
+    "examples_seen": 640000,
+    "seconds": 485.14427629997954,
+    "peak_vram_mib": 9513.16259765625,
+    "initial_parameter_sha256": "d9f62e36e46aa5adfb99ecd7bbf2adbd055feebda138c49c2fac59d97407288e",
+    "first20_loss": 23.375139808654787,
+    "last20_loss": 0.07491392148658634,
+    "LR": 1e-05,
+    "recurrence": 5
+  },
+  "grounded_smoke": {
+    "model": "grounded",
+    "smoke": true,
+    "updates": 200,
+    "examples_seen": 25600,
+    "seconds": 19.103798299911432,
+    "peak_vram_mib": 9182.54248046875,
+    "initial_parameter_sha256": "d9f62e36e46aa5adfb99ecd7bbf2adbd055feebda138c49c2fac59d97407288e",
+    "first20_loss": 23.375139808654787,
+    "last20_loss": 9.47235746383667,
+    "LR": 1e-05,
+    "recurrence": 5
+  },
+  "total_GPU_workload_hours": 0.32194965133333525,
+  "retry_accounting": "Successful-phase workload sum; prior failed native attempts and idle/debug/download intervals are not included in GPU workload hours. Their logs and process start timestamps are preserved; kernel-active total across failed attempts was not measured."
+}

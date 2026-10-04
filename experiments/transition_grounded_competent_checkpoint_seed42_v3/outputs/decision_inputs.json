@@ -1,0 +1,130 @@
+{
+  "summary": {
+    "pretrained": {
+      "ID_K5": 0.36560000000000004,
+      "OOD_KD": 0.0,
+      "OOD_K5": 0.0008,
+      "transition_state_macro": 0.03244961240310078,
+      "supervised_range_state_macro": 0.06257575757575759,
+      "OOD_terminal_stability": 0.0,
+      "OOD_overthinking_drop": 0.006933333333333333,
+      "counterfactual": {
+        "cf_target_rate": 0.0003125,
+        "trajectory_accuracy": 0.003045634920634921,
+        "original_retention": 0.0,
+        "preservation": 0.9225,
+        "n": 3200,
+        "cells": 16
+      },
+      "same_state": {
+        "cf_target_rate": 0.0,
+        "trajectory_accuracy": 0.0030508432539682545,
+        "original_retention": 0.0,
+        "preservation": 0.9221874999999999,
+        "n": 3200,
+        "cells": 16
+      },
+      "noise": {
+        "cf_target_rate": 0.00375,
+        "trajectory_accuracy": 0.0037124875992063495,
+        "original_retention": 0.004687500000000001,
+        "preservation": 0.169375,
+        "n": 3200,
+        "cells": 16
+      },
+      "same_state_correct_preservation": 0.0
+    },
+    "final_only": {
+      "ID_K5": 0.9818666666666667,
+      "OOD_KD": 0.0,
+      "OOD_K5": 0.0002666666666666667,
+      "transition_state_macro": 0.05817054263565891,
+      "supervised_range_state_macro": 0.0938787878787879,
+      "OOD_terminal_stability": 0.0,
+      "OOD_overthinking_drop": 0.004266666666666667,
+      "counterfactual": {
+        "cf_target_rate": 0.003125,
+        "trajectory_accuracy": 0.003911582341269842,
+        "original_retention": 0.0021875,
+        "preservation": 0.49687499999999996,
+        "n": 3200,
+        "cells": 16
+      },
+      "same_state": {
+        "cf_target_rate": 0.0025,
+        "trajectory_accuracy": 0.003765500992063492,
+        "original_retention": 0.0021875,
+        "preservation": 0.50125,
+        "n": 3200,
+        "cells": 16
+      },
+      "noise": {
+        "cf_target_rate": 0.004687500000000001,
+        "trajectory_accuracy": 0.003599764384920635,
+        "original_retention": 0.004687500000000001,
+        "preservation": 0.28312499999999996,
+        "n": 3200,
+        "cells": 16
+      },
+      "same_state_correct_preservation": 0.004488314588817101
+    },
+    "grounded": {
+      "ID_K5": 0.7890666666666667,
+      "OOD_KD": 0.0048,
+      "OOD_K5": 0.005066666666666666,
+      "transition_state_macro": 0.37874418604651167,
+      "supervised_range_state_macro": 0.7094848484848485,
+      "OOD_terminal_stability": 0.0,
+      "OOD_overthinking_drop": 0.0074666666666666675,
+      "counterfactual": {
+        "cf_target_rate": 0.005625000000000001,
+        "trajectory_accuracy": 0.005401971726190476,
+        "original_retention": 0.00375,
+        "preservation": 0.01625,
+        "n": 3200,
+        "cells": 16
+      },
+      "same_state": {
+        "cf_target_rate": 0.0053124999999999995,
+        "trajectory_accuracy": 0.004942770337301588,
+        "original_retention": 0.005625,
+        "preservation": 0.019062500000000003,
+        "n": 3200,
+        "cells": 16
+      },
+      "noise": {
+        "cf_target_rate": 0.0034375,
+        "trajectory_accuracy": 0.0038222346230158736,
+        "original_retention": 0.004375,
+        "preservation": 0.029062499999999998,
+        "n": 3200,
+        "cells": 16
+      },
+      "same_state_correct_preservation": 0.003458206778128781
+    }
+  },
+  "gates": {
+    "pretrained_already_has_mechanism": false,
+    "causal_supported": false,
+    "grounded_ID_damaged": false,
+    "ID_retention_drop": -0.42346666666666666,
+    "causal_differences": {
+      "cf_target_rate": {
+        "pretrained": 0.0053125,
+        "final_only": 0.0025000000000000005
+      },
+      "trajectory_accuracy": {
+        "pretrained": 0.002356336805555555,
+        "final_only": 0.0014903893849206344
+      }
+    },
+    "grounded_CF_minus_noise": {
+      "cf_target_rate": 0.0021875000000000006,
+      "trajectory_accuracy": 0.0015797371031746024
+    },
+    "utility": {
+      "OOD_KD": false,
+      "OOD_terminal_stability": false
+    }
+  }
+}

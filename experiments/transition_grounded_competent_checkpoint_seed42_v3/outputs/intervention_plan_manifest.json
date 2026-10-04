@@ -1,0 +1,8 @@
+{
+  "plan_sha256": "657b5d2e908bd78afa9e2d31e1808c1894cd1de10ba56c2f1b7e33e167898170",
+  "noise_direction_sha256": "e6167dfccb65300623ddb90da8680f505ace488081417993d6e1cd0166fa0aa6",
+  "n_samples": 3200,
+  "selection": "seed42 without replacement200 per eligible D,k; lexicographic ordering independent of predictions",
+  "noise": "same fixed Gaussian unit directions across all three models; norm matched to each model CF prototype",
+  "carrier_only": "position49, no other token hidden modified"
+}
