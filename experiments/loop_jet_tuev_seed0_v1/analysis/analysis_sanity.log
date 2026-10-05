@@ -1,0 +1,51 @@
+{
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "device": "NVIDIA GeForce RTX 5090",
+  "capability": [
+    12,
+    0
+  ],
+  "arch_list": [
+    "sm_61",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "process_affinity_mask": "0xffff0000",
+  "synthetic_only": true,
+  "k1_max_abs_float32": 0.0,
+  "k1_max_abs_bfloat16": 0.0,
+  "official_parameter_count": 129865160,
+  "official_trainable_parameter_count": 129861320,
+  "k2_parameter_count": 129865160,
+  "shared_decode_block_call_counts": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "untrained_endpoint_difference": 0.40747135877609253,
+  "bf16_forward_backward_pass": true,
+  "ds_formula_exact": true,
+  "synthetic_batch_size": 2,
+  "synthetic_loss": 2.338043212890625,
+  "loop_block_gradient_norm": 1.4770528078079224,
+  "smoke_seconds": 1.2234464999928605,
+  "peak_allocated_bytes": 1126782976,
+  "peak_reserved_bytes": 1239416832,
+  "naive_bf16_forward_backward_pass": true
+}

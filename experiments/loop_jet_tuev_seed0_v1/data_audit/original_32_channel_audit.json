@@ -1,0 +1,179 @@
+{
+  "variant": "original_32",
+  "source_repository": "USuCgex0122e/demo_dataset",
+  "source_commit": "db96e77affa66398c553427045ee040f06230c2a",
+  "n_channels": 32,
+  "sampling_rate": 200,
+  "window_seconds": 5.0,
+  "timepoints": 1000,
+  "source_preprocessing_script": null,
+  "source_raw_dataset_version": "v2.0.1, declared by unchanged-H5 historical metadata",
+  "filtering": {
+    "metadata_claim": "0.3-75 Hz bandpass; 60 Hz notch",
+    "source_code_verified": false,
+    "status": "metadata-declared; filtering execution provenance unverified; do not refilter"
+  },
+  "channel_order": [],
+  "channel_index_identity": [
+    {
+      "index": 0,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 1,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 2,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 3,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 4,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 5,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 6,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 7,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 8,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 9,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 10,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 11,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 12,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 13,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 14,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 15,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 16,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 17,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 18,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 19,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 20,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 21,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 22,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 23,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 24,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 25,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 26,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 27,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 28,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 29,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 30,
+      "physical_channel_or_derivation": null
+    },
+    {
+      "index": 31,
+      "physical_channel_or_derivation": null
+    }
+  ],
+  "reference_type": "D. unknown",
+  "montage": "unknown",
+  "signal_unit": "unknown",
+  "jet_required_electrodes_available": false,
+  "availability_status": "unverified in processed tensors",
+  "jet16_reconstructable": false,
+  "confidence_level": "C",
+  "processed_sample_to_raw_edf": "not recoverable from released X/y-only files",
+  "split_counts": {
+    "train": 16409,
+    "val": 13206,
+    "test": 12908
+  },
+  "split_provenance": "not specified; original JET split equivalence unverified",
+  "actual_hdf5_shapes": {
+    "train": [
+      16409,
+      32,
+      1000
+    ],
+    "val": [
+      13206,
+      32,
+      1000
+    ],
+    "test": [
+      12908,
+      32,
+      1000
+    ]
+  },
+  "decision": "NEED_RAW_TUEV"
+}

@@ -1,0 +1,20 @@
+{
+  "policy": "D/E/F directories to depth 4; to depth 12 only inside TUH/TUEV/event paths. Skip system/software/cache trees. No file contents read.",
+  "directories_visited": 17337,
+  "candidate_directories": [
+    "D:/loop_jet_tuev_seed0_v1",
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev",
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev\\.cache\\huggingface\\download\\TUEV",
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev\\TUEV",
+    "D:/loop_jet_tuev_seed0_v1\\data_audit\\processed_provenance\\alternate_22\\current\\TUEV",
+    "D:/loop_jet_tuev_seed0_v1\\data_audit\\processed_provenance\\original_32\\current\\TUEV"
+  ],
+  "matched_raw_files": [],
+  "matched_processed_files": [
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev\\TUEV\\test.h5",
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev\\TUEV\\train.h5",
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev\\TUEV\\val.h5"
+  ],
+  "all_seen_edf_rec_files_count": 1231,
+  "errors": []
+}

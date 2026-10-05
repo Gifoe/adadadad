@@ -1,0 +1,13 @@
+data/
+__pycache__/
+*.pyc
+*.h5
+*.hdf5
+*.part
+loader_smoke_*/
+official/docs/
+data_audit/provenance_git/
+data_audit/processed_provenance/
+data_audit/raw_manifest/
+data_audit/raw_tuev_recordings.json
+data_audit/raw_tuev_channels.json

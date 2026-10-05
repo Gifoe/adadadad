@@ -1,0 +1,104 @@
+{
+  "repo": "USuCgex0122e/demo_dataset_seed20260726",
+  "revision": "41602cf9363d83204e6b7145b04efaeafebd9ae4",
+  "endpoint": "https://hf-mirror.com",
+  "splits": {
+    "train": {
+      "file_bytes": 564091643,
+      "root_attrs": {},
+      "datasets": {
+        "X": {
+          "shape": [
+            8370,
+            22,
+            1000
+          ],
+          "dtype": "float32",
+          "attrs": {}
+        },
+        "y": {
+          "shape": [
+            8370
+          ],
+          "dtype": "int32",
+          "attrs": {}
+        }
+      },
+      "class_counts": {
+        "0": 160,
+        "1": 2695,
+        "2": 1741,
+        "3": 394,
+        "4": 1037,
+        "5": 2343
+      },
+      "verified_hdf5_header": true,
+      "http_bytes_transferred": 88827
+    },
+    "val": {
+      "file_bytes": 177513040,
+      "root_attrs": {},
+      "datasets": {
+        "X": {
+          "shape": [
+            2496,
+            22,
+            1000
+          ],
+          "dtype": "float32",
+          "attrs": {}
+        },
+        "y": {
+          "shape": [
+            2496
+          ],
+          "dtype": "int32",
+          "attrs": {}
+        }
+      },
+      "class_counts": {
+        "0": 20,
+        "1": 53,
+        "2": 291,
+        "3": 174,
+        "4": 528,
+        "5": 1430
+      },
+      "verified_hdf5_header": true,
+      "http_bytes_transferred": 107088
+    },
+    "test": {
+      "file_bytes": 104258765,
+      "root_attrs": {},
+      "datasets": {
+        "X": {
+          "shape": [
+            1684,
+            22,
+            1000
+          ],
+          "dtype": "float32",
+          "attrs": {}
+        },
+        "y": {
+          "shape": [
+            1684
+          ],
+          "dtype": "int32",
+          "attrs": {}
+        }
+      },
+      "class_counts": {
+        "0": 3,
+        "1": 405,
+        "2": 682,
+        "3": 24,
+        "4": 184,
+        "5": 386
+      },
+      "verified_hdf5_header": true,
+      "http_bytes_transferred": 122061
+    }
+  },
+  "policy": "Only headers and labels, max 4 MiB per file, abort on non-206. No X signal slices."
+}

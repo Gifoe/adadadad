@@ -1,0 +1,10 @@
+{
+  "synthetic_only": true,
+  "lazy_before_first_read": true,
+  "transpose_and_float64_conversion": true,
+  "windows_two_worker_loading": true,
+  "official_divide_by_100": true,
+  "rejects_32_channels": true,
+  "fixed_noise_batch_order_independent": true,
+  "distinct_val_test_streams": true
+}

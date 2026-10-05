@@ -1,0 +1,183 @@
+{
+  "official_commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "official_files": [
+    {
+      "path": "denoiser.py",
+      "sha256": "7ae3edea3ea0fb8ff7eb377e053d419500ad2bc2c0633ec05369ee61e719bc59"
+    },
+    {
+      "path": "engine_eeg.py",
+      "sha256": "449b16ef9cb38952165e2f5937e2e7a27aa24ecc1940e77b5c06527347540657"
+    },
+    {
+      "path": "inference.py",
+      "sha256": "4dcf1adb7e38e333ab8e78939c82176ddd81ced83583afb5e7d88daf1d9404b8"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "1f9632db86d6c402d15715bf4b9ca39e1942abae33f91be2bf8a9de4e5fb7857"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1497980174883dedcc0f4e2435e118b0bd6d16fdd332fba5e2949bb3b8986b96"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "da441abe0c0dc29cd4389dcf83e3931446b88df744a8d33294a78eb83296ceb9"
+    },
+    {
+      "path": "train_eeg.py",
+      "sha256": "8cb99534633d8e3d033a6cd56c1b0577c723b6a5f865126975d5609089587b4c"
+    },
+    {
+      "path": "data/data.py",
+      "sha256": "c8d7edbb538038fe933a228b50a61fadaeb8d888ae39db18fe686f458b64de75"
+    },
+    {
+      "path": "data/metrics.py",
+      "sha256": "d9dad63f507e96c7047645934b6cfd8ce3113b28bbb4e2cb46a2db79f5b7703e"
+    },
+    {
+      "path": "data/preprocess_tuab.py",
+      "sha256": "6b4696f86382dba61a4fc05fbe9df20f241fcc827498b2257c1f7dfcb0aabf5a"
+    },
+    {
+      "path": "data/preprocess_tuev.py",
+      "sha256": "4824aced0ec881e70ef9dddd326069b3d703a11b7b8fd8b0a2c10ab8cecd3b5b"
+    },
+    {
+      "path": "data/preprocess_tusz.py",
+      "sha256": "5cd4836e48a15c96e7c30f49bb4e22a934ffe8cdd5daaa18b94f35e5c9883b24"
+    },
+    {
+      "path": "data/tuab_dataset.py",
+      "sha256": "2b66b583b00fdbca0f19e02a6eb43fe275a6611073e7f9abfe0db59417f723f2"
+    },
+    {
+      "path": "data/tuev_dataset.py",
+      "sha256": "c0c7edf653ad8719ae7f867e5f288e89054aff58bb0074ed6d0336090a569b3f"
+    },
+    {
+      "path": "data/tusz_dataset.py",
+      "sha256": "8c223aef03d6c83980c4e1b08afc9705ad53bfe9015bb4d09b719027e6ca1cd1"
+    },
+    {
+      "path": "data/__init__.py",
+      "sha256": "371d1741316ddfd06d101166ee3a3d24e79f0ad4ab0564b56a2bc77b397ef617"
+    },
+    {
+      "path": "models/common.py",
+      "sha256": "25f04f8f86a14b8a32df6b2aa5b3361434f5c342a553180017115a674f49e96a"
+    },
+    {
+      "path": "models/raw_vit.py",
+      "sha256": "234828b7d5ccf34d600280356c05780022823594e2a87e25f0b45b69c861788d"
+    },
+    {
+      "path": "scripts/infer_tuab.sh",
+      "sha256": "f683db21f3ff9c066646aae884c15b838853b489507c0364ea596db9b78632d2"
+    },
+    {
+      "path": "scripts/infer_tuev.sh",
+      "sha256": "96392386bf803cfaa6815634b7a1f00da777efb0415839b3ee2bcd212104171e"
+    },
+    {
+      "path": "scripts/infer_tusz.sh",
+      "sha256": "2cdd46aa0a710bb0de4c1409d49e0e28c1d05e02b54133fd377d8427abf40594"
+    },
+    {
+      "path": "scripts/train_tuab.sh",
+      "sha256": "871851df87dc3fa908924b5817486c75730ce979bf017ceef63d5297aef9c332"
+    },
+    {
+      "path": "scripts/train_tuev.sh",
+      "sha256": "fbdb64a4e356ee28cb66f1f6b0e8fe4d9ef45997153788f763532b83bc4e1d38"
+    },
+    {
+      "path": "scripts/train_tusz.sh",
+      "sha256": "fdd1ec731888f1a1d0624971dd3a6e19ad1a315bdf6b5bacf8e037200d25b8ed"
+    },
+    {
+      "path": "util/lr_sched.py",
+      "sha256": "0ff451e6702ba83ef850de8dea792901d13e8166d251a11dfbdf411e3201c98a"
+    },
+    {
+      "path": "util/misc.py",
+      "sha256": "1569dfb7bd247773a5095159fd8124f0cef4290c289153ea24d31ecd3b11ce09"
+    },
+    {
+      "path": "util/model_util.py",
+      "sha256": "e35ffbe5b5bceebf51b9623de8d24ff0e8e65a2247c8d61b8a992c520f5880e0"
+    }
+  ],
+  "experiment_sources": [
+    {
+      "path": "analyze_raw_manifest.py",
+      "sha256": "4753a3059204804f3451efc1e8e1c31b5996b7859f0f4716df21d99c6d2673a7"
+    },
+    {
+      "path": "audit_data.py",
+      "sha256": "2a4da0931ab5cacf1c2e5bae139507d9676b0eb57b0541cdaae0d05771a14b98"
+    },
+    {
+      "path": "audit_magnitude.py",
+      "sha256": "dcc7d0c95e33ef3d45b6b82cec44c8775854ccbaebc6169db2813cf56092bed5"
+    },
+    {
+      "path": "audit_provenance.py",
+      "sha256": "00228756831df3bf3b2ab2f3ca753cd2dc3af457924b996bef8f8e05e027105a"
+    },
+    {
+      "path": "audit_variant22_headers.py",
+      "sha256": "2422e97b8edc21b5b8ac7462f528da86f45befdbfd2f1cb5ce7b1f238fe21a05"
+    },
+    {
+      "path": "check_loader.py",
+      "sha256": "4fab55dae56746df9e8e1860acf57a975b6812218a2b1d067e5d12973bdfd805"
+    },
+    {
+      "path": "check_preflight.py",
+      "sha256": "c7c7ea496ebe3da20077438cd648f6c8457afccab9491536893af655a976e756"
+    },
+    {
+      "path": "download_tuev.py",
+      "sha256": "caee53c4e5317bcb5ecf6578b7ff2e85eca4b0cb10cb4ec447263b898acbaa6a"
+    },
+    {
+      "path": "inspect_manifest_schema.py",
+      "sha256": "d5ccca87d35b40f7d489055ceb1af3eb05d6a57eb927d7489d3476dd10914931"
+    },
+    {
+      "path": "inventory_sources.py",
+      "sha256": "2445bb200fe9ab88c5d0425b28cb1002c1eef2fe00098738961b03dae22ec66c"
+    },
+    {
+      "path": "lazy_h5.py",
+      "sha256": "36f5b334ca9640323e0d93ca13d1bcce8dc6c71c3c621abaa261d3357111668f"
+    },
+    {
+      "path": "loop_model.py",
+      "sha256": "7ebc30a80b546899287f76245375cd929ff597f25bff12344178469b94185e4a"
+    },
+    {
+      "path": "package_provenance_evidence.py",
+      "sha256": "1e8321cd35a681d225c081987e1a62011aff27746339f729ba2a4e78832f48ab"
+    },
+    {
+      "path": "process_affinity.py",
+      "sha256": "18c5558d4e5d0d229dab77a1502346f12c3f816bef59fa3c043a89ffef75f7a8"
+    },
+    {
+      "path": "sanity.py",
+      "sha256": "249f87daecbf7b6530e334c4db34e16a0d0cd1f79a4cc52b6a69da0d8112ce7c"
+    },
+    {
+      "path": "search_raw_sources.py",
+      "sha256": "18dabb5a7c066c23bb67a1eebf092d1cb012e2e7f783d1fba08db28dae76da33"
+    },
+    {
+      "path": "write_channel_report.py",
+      "sha256": "32ab30545569733cd591323dd3c6301078be8c0a269c2c8a4405ec1e0219279b"
+    }
+  ]
+}

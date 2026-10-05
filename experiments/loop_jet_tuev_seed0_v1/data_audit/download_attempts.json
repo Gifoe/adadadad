@@ -1,0 +1,16 @@
+{
+  "repo": "USuCgex0122e/demo_dataset",
+  "revision": "db96e77affa66398c553427045ee040f06230c2a",
+  "allow_patterns": [
+    "TUEV/*",
+    "TUEV/**"
+  ],
+  "attempts": [
+    {
+      "endpoint": "https://hf-mirror.com",
+      "returncode": 0,
+      "seconds": 35.04969358444214,
+      "error": null
+    }
+  ]
+}

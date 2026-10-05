@@ -1,0 +1,41 @@
+{
+  "datasets": {
+    "rows": 419,
+    "row_groups": 1,
+    "schema": "dataset_id: string not null\nname: string not null\nshort_name: string not null\ns3_prefix: string not null\nsource: string not null\nsource_url: string\nsource_dataset_doi: string\nsource_paper_doi: string\nlicense: string not null\nlicense_url: string\nbids_compliant: bool not null\nmodality: string not null\nspecies: string not null\nclinical_status: string not null\nparadigm_summary: string\nparadigm_categories: list<element: string>\n  child 0, element: string\nnotes: string",
+    "tuev_rows": [
+      {
+        "dataset_id": "tuh_eeg_events",
+        "name": "TUH EEG Events Corpus (TUEV)",
+        "short_name": "TUEV",
+        "s3_prefix": "s3://eeg-datasets-139156132535/raw/tuh_eeg_corpus/tuh_eeg_events/",
+        "source": "Temple University NEDC",
+        "source_url": "https://isip.piconepress.com/projects/nedc/html/tuh_eeg/",
+        "source_dataset_doi": null,
+        "source_paper_doi": "10.3389/fnins.2016.00196",
+        "license": "TUH-DUA",
+        "license_url": "https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml",
+        "bids_compliant": false,
+        "modality": "eeg",
+        "species": "human",
+        "clinical_status": "patient",
+        "paradigm_summary": "Six-class event annotations (spike/sharp wave, generalized periodic discharges, periodic lateralized epileptiform discharges, eye movement, artifact, background). Headline benchmark in LaBraM/CBraMod/REVE.",
+        "paradigm_categories": [
+          "clinical_events",
+          "abnormality"
+        ],
+        "notes": "Non-BIDS. EDF."
+      }
+    ]
+  },
+  "recordings": {
+    "rows": 186386,
+    "row_groups": 1,
+    "schema": "recording_id: string not null\ndataset_id: string not null\nsubject_id_in_dataset: string not null\nsubject_canonical_hash: string\nsession_id: string\nrun_id: string\ntask: string\nparadigm: string\narchival_uri: string not null\narchival_format: string not null\nfile_size_bytes: int64 not null\nduration_s: double\nn_channels: int32\nn_eeg_channels: int32\nsampling_rate_hz: float\nreference: string\nmontage_name: string\nchannel_names: list<element: string>\n  child 0, element: string\nrecording_type: string\nmanufacturer: string\npower_line_frequency: float\nmodality: string not null\nbids_compliant: bool not null\nbids_entities: string\ncompanion_uris: string\nparent_recording_id: string\nsegment_index: int32\nheader_source: string not null\nheader_read_status: string not null\nheader_error: string\ningestion_date: timestamp[us, tz=UTC] not null\ncanonical_uri: string\ncanonical_size_bytes: int64\ncanonical_sha256: string\nconversion_pipeline_id: string\nconversion_status: string not null\nroundtrip_class: string\nconversion_dt_utc: timestamp[us, tz=UTC]\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 4988"
+  },
+  "channels": {
+    "rows": 11530668,
+    "row_groups": 11,
+    "schema": "recording_id: string not null\nchannel_index: int32 not null\nchannel_name: string not null\nchannel_name_canonical: string\nchannel_type: string\nunits: string\nstatus: string\nx: float\ny: float\nz: float"
+  }
+}

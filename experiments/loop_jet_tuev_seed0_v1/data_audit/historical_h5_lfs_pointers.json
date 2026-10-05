@@ -1,0 +1,24 @@
+{
+  "hf-original.git": {
+    "TUEV/test.h5": {
+      "5c70d57fa0f31f5b4781892241bc1bbf4eb3a65f": "version https://git-lfs.github.com/spec/v1\noid sha256:774fb4957dd8148eeccddc4c63f283ccc30e8d29404bc2da788deb7b58ceaac0\nsize 144788691\n"
+    },
+    "TUEV/train.h5": {
+      "ec15ac29881544baa179aa0a8511fd9b15f827a8": "version https://git-lfs.github.com/spec/v1\noid sha256:e40adf5321a73e394d0ccae4bc50286cf85248bcaa36ea699e182b42e95c2d56\nsize 615573204\n"
+    },
+    "TUEV/val.h5": {
+      "fdb6a782fd66eb27398be5093fabe48458d44f52": "version https://git-lfs.github.com/spec/v1\noid sha256:bcf0c4664994864b7a4f54e7327e36dbb0cea446b180051a11aaae0711aafd5c\nsize 165604803\n"
+    }
+  },
+  "hf-alternate.git": {
+    "TUEV/test.h5": {
+      "755de5556ac4e80052263a592787a92ca4dd58ca": "version https://git-lfs.github.com/spec/v1\noid sha256:b51ddcdc3a255aa64d70a15a80b54b7b194ca27bffe6487d7cb627e0e2299dc1\nsize 104258765\n"
+    },
+    "TUEV/train.h5": {
+      "d8f2ac1915efc850e9e46bf6fe7bf94ee7095287": "version https://git-lfs.github.com/spec/v1\noid sha256:8aae1d91c21af99683efaaae0730a9a5f2a5c4849a1100518eb6bfdd1e2ccbc3\nsize 564091643\n"
+    },
+    "TUEV/val.h5": {
+      "202587d266a95e812349170f0574e1862b146b4e": "version https://git-lfs.github.com/spec/v1\noid sha256:a88a835f3bfe293b6d57477cac32d1c31c524750d4fdfde938e5f16c561aa337\nsize 177513040\n"
+    }
+  }
+}

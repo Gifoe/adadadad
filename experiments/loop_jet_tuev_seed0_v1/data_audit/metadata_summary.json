@@ -1,0 +1,60 @@
+{
+  "dataset_name": "TUEV",
+  "display_name": "TUEV",
+  "task": "Epilepsy and abnormalities",
+  "task_description": "EEG event classification.",
+  "reference_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4874511/",
+  "citation_text": "Harati et al. Improved EEG Event Classification Using Differential Energy. IEEE SPMB, 2015.",
+  "n_subjects": 370,
+  "n_samples_total": 42523,
+  "split_counts": {
+    "train": 16409,
+    "val": 13206,
+    "test": 12908
+  },
+  "channel_count": 32,
+  "channel_names": [],
+  "sampling_rate_hz": 200,
+  "window_length_seconds": 5.0,
+  "timepoints_per_sample": 1000,
+  "label_vocab": {
+    "0": {
+      "name": "spsw",
+      "raw_aliases": [
+        "1"
+      ]
+    },
+    "1": {
+      "name": "gped",
+      "raw_aliases": [
+        "2"
+      ]
+    },
+    "2": {
+      "name": "pled",
+      "raw_aliases": [
+        "3"
+      ]
+    },
+    "3": {
+      "name": "eyem",
+      "raw_aliases": [
+        "4"
+      ]
+    },
+    "4": {
+      "name": "artf",
+      "raw_aliases": [
+        "5"
+      ]
+    },
+    "5": {
+      "name": "bckg",
+      "raw_aliases": [
+        "6"
+      ]
+    }
+  },
+  "source_root": null,
+  "preprocessing": "Signals were processed as follows: source format edf+.rec; target sampling rate 200.0 Hz; window length 5.0 seconds; band-pass filter 0.3–75.0 Hz; notch filter 60.0 Hz."
+}

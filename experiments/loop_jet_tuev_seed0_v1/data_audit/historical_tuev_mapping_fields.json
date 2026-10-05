@@ -1,0 +1,80 @@
+{
+  "hf-original.git": [
+    {
+      "path": "TUEV/croissant.json",
+      "blob": "bb0a80c1586e24bc83bb79b0a32b36642d492f9f",
+      "commit": "db96e77affa66398c553427045ee040f06230c2a",
+      "channel_names": [],
+      "source_root": null,
+      "derived": [],
+      "n_channels": 32
+    },
+    {
+      "path": "TUEV/croissant_manifest.csv",
+      "blob": "412d6bf4ad78705bb9ae846dc0c7d0dba9d377eb",
+      "commit": "db96e77affa66398c553427045ee040f06230c2a",
+      "channel_names": null,
+      "source_root": null,
+      "derived": null,
+      "n_channels": null
+    },
+    {
+      "path": "TUEV/metadata_summary.json",
+      "blob": "474bf5d3b080c667457b95d040b63471e967f6ad",
+      "commit": "db96e77affa66398c553427045ee040f06230c2a",
+      "channel_names": [],
+      "source_root": null,
+      "derived": null,
+      "n_channels": 32
+    },
+    {
+      "path": "TUEV/croissant.json",
+      "blob": "64c7d2ffa2cdae0b4684b3360e00785196e7f162",
+      "commit": "281c4515d354ffe86a2e2f6bf00159c9df7c1002",
+      "channel_names": [],
+      "source_root": null,
+      "derived": [
+        "/vePFS-0x0d/eeg-h5/raw/TUEV/v2.0.1/edf"
+      ],
+      "n_channels": 32
+    },
+    {
+      "path": "TUEV/metadata_summary.json",
+      "blob": "841e3e55c5a34ea7b01a1b326877d91edfc5f97b",
+      "commit": "281c4515d354ffe86a2e2f6bf00159c9df7c1002",
+      "channel_names": [],
+      "source_root": "/vePFS-0x0d/eeg-h5/raw/TUEV/v2.0.1/edf",
+      "derived": null,
+      "n_channels": 32
+    }
+  ],
+  "hf-alternate.git": [
+    {
+      "path": "TUEV/croissant.json",
+      "blob": "a27c3c200dc58c8c6de313ceabc2f2b14a3c9018",
+      "commit": "41602cf9363d83204e6b7145b04efaeafebd9ae4",
+      "channel_names": [],
+      "source_root": null,
+      "derived": [],
+      "n_channels": 22
+    },
+    {
+      "path": "TUEV/croissant_manifest.csv",
+      "blob": "5295c783478780f4d2354313b851c417af17c627",
+      "commit": "41602cf9363d83204e6b7145b04efaeafebd9ae4",
+      "channel_names": null,
+      "source_root": null,
+      "derived": null,
+      "n_channels": null
+    },
+    {
+      "path": "TUEV/metadata_summary.json",
+      "blob": "4b7383e741b5167b5784c2891c00403d16e2b8db",
+      "commit": "41602cf9363d83204e6b7145b04efaeafebd9ae4",
+      "channel_names": [],
+      "source_root": null,
+      "derived": null,
+      "n_channels": 22
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "formal_optimizer_steps": 0,
+  "trained": false,
+  "blocker": "Level C channel identity/order/reference; unit also unverified",
+  "not_produced": [
+    "200-step benchmark",
+    "train_log.csv",
+    "val_log.csv",
+    "best_val_checkpoint.pt",
+    "last_checkpoint.pt",
+    "trajectory metrics",
+    "generation metrics",
+    "training figures"
+  ]
+}

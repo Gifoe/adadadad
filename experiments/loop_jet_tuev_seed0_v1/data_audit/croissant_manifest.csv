@@ -1,0 +1,4 @@
+split,file_name,n_samples,n_channels,n_timepoints,x_dtype,y_dtype,labels_present,has_labels
+train,train.h5,16409,32,1000,float32,int32,"[0, 1, 2, 3, 4, 5]",True
+val,val.h5,13206,32,1000,float32,int32,"[0, 1, 2, 3, 4, 5]",True
+test,test.h5,12908,32,1000,float32,int32,"[0, 1, 2, 3, 4, 5]",True

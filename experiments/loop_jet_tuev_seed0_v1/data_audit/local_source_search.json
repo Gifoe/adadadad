@@ -1,0 +1,15 @@
+{
+  "search": "Directory names through depth 4 on D/E/F; no claim of exhaustive raw-data absence.",
+  "roots": [
+    "D:/",
+    "E:/",
+    "F:/"
+  ],
+  "hits": [
+    "D:/loop_jet_tuev_seed0_v1",
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev",
+    "D:/loop_jet_tuev_seed0_v1\\data\\hf_tuev\\TUEV"
+  ],
+  "directories_visited": 17236,
+  "permission_errors": []
+}

@@ -1,0 +1,247 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "name": "TUEV",
+  "description": "TUEV (TUEV) is a processed EEG benchmark dataset packaged as train/validation/test HDF5 files. It contains 42523 segment-level samples, 32 channels, 1000 timepoints per sample, sampling rate 200 Hz, and window length 5.0 seconds. EEG event classification. Split sizes are train: 16409, val: 13206, test: 12908.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "TUEV",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "train_h5",
+      "name": "train.h5",
+      "contentUrl": "train.h5",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "val_h5",
+      "name": "val.h5",
+      "contentUrl": "val.h5",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "test_h5",
+      "name": "test.h5",
+      "contentUrl": "test.h5",
+      "encodingFormat": "application/x-hdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "manifest_csv",
+      "name": "croissant_manifest.csv",
+      "contentUrl": "croissant_manifest.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "metadata_summary",
+      "name": "metadata_summary.json",
+      "contentUrl": "metadata_summary.json",
+      "encodingFormat": "application/json"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "splits",
+      "name": "splits",
+      "description": "Split-level manifest describing train/validation/test HDF5 files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "split",
+          "name": "split",
+          "description": "Dataset split name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "manifest_csv"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file_name",
+          "name": "file_name",
+          "description": "Name of the HDF5 file for the split.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "manifest_csv"
+            },
+            "extract": {
+              "column": "file_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "n_samples",
+          "name": "n_samples",
+          "description": "Number of segment-level samples in the split.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "manifest_csv"
+            },
+            "extract": {
+              "column": "n_samples"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "n_channels",
+          "name": "n_channels",
+          "description": "Number of channels per sample.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "manifest_csv"
+            },
+            "extract": {
+              "column": "n_channels"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "n_timepoints",
+          "name": "n_timepoints",
+          "description": "Number of timepoints per sample.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "manifest_csv"
+            },
+            "extract": {
+              "column": "n_timepoints"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "labels_present",
+          "name": "labels_present",
+          "description": "JSON-encoded list of label ids present in the split.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "manifest_csv"
+            },
+            "extract": {
+              "column": "labels_present"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "has_labels",
+          "name": "has_labels",
+          "description": "Whether the split file contains a y label array.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "manifest_csv"
+            },
+            "extract": {
+              "column": "has_labels"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "citation": "Harati et al. Improved EEG Event Classification Using Differential Energy. IEEE SPMB, 2015.",
+  "sameAs": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4874511/",
+  "keywords": [
+    "EEG",
+    "electroencephalography",
+    "Epilepsy and abnormalities",
+    "32_channels"
+  ],
+  "variableMeasured": [
+    "EEG signals",
+    "class label",
+    "train/val/test split"
+  ],
+  "channelCount": 32,
+  "channelNames": [],
+  "sampleRateHz": 200,
+  "windowLengthSeconds": 5.0,
+  "timepointsPerSample": 1000,
+  "labelVocab": {
+    "0": {
+      "name": "spsw",
+      "raw_aliases": [
+        "1"
+      ]
+    },
+    "1": {
+      "name": "gped",
+      "raw_aliases": [
+        "2"
+      ]
+    },
+    "2": {
+      "name": "pled",
+      "raw_aliases": [
+        "3"
+      ]
+    },
+    "3": {
+      "name": "eyem",
+      "raw_aliases": [
+        "4"
+      ]
+    },
+    "4": {
+      "name": "artf",
+      "raw_aliases": [
+        "5"
+      ]
+    },
+    "5": {
+      "name": "bckg",
+      "raw_aliases": [
+        "6"
+      ]
+    }
+  },
+  "splitSummary": {
+    "train": 16409,
+    "val": 13206,
+    "test": 12908
+  },
+  "prov:wasDerivedFrom": [],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "sc:CreateAction",
+      "name": "Benchmark packaging to HDF5",
+      "description": "Signals were processed as follows: source format edf+.rec; target sampling rate 200.0 Hz; window length 5.0 seconds; band-pass filter 0.3–75.0 Hz; notch filter 60.0 Hz."
+    },
+    {
+      "@type": "sc:UpdateAction",
+      "name": "Train/validation/test split packaging",
+      "description": "The released HDF5 files are split as follows: train: 16409, val: 13206, test: 12908."
+    }
+  ],
+  "rai:dataLimitations": "This packaged benchmark release is a processed derivative of original EEG datasets. Applicability is limited by the original cohort composition, label definitions, acquisition protocol, and the preprocessing and split strategy documented in metadata_summary.json.",
+  "rai:dataBiases": "Potential biases may arise from cohort imbalance, split imbalance, label imbalance, recording-site effects, and preprocessing-induced selection effects.",
+  "rai:personalSensitiveInformation": "The HDF5 release contains segment-level EEG arrays and labels only. Depending on the source dataset, the original underlying data may involve sensitive health, demographic, or behavioral information.",
+  "rai:dataUseCases": "Primary use case: EEG event classification.. Suitable for representation learning, classification benchmarking, and reproducible evaluation.",
+  "rai:dataSocialImpact": "Potential benefits include reproducible EEG benchmarking and easier model comparison. Potential harms include unsupported clinical use, propagation of dataset bias, and overclaiming beyond the source population.",
+  "rai:hasSyntheticData": false
+}

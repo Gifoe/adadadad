@@ -1,0 +1,88 @@
+{
+  "source_repo": "tankalapavankalyan/eeg-corpus-manifest",
+  "source_revision": "e4c2d62a9230d053c948a6681a63d1ca0d3f353e",
+  "dataset_rows": [
+    {
+      "dataset_id": "tuh_eeg_events",
+      "name": "TUH EEG Events Corpus (TUEV)",
+      "short_name": "TUEV",
+      "s3_prefix": "s3://eeg-datasets-139156132535/raw/tuh_eeg_corpus/tuh_eeg_events/",
+      "source": "Temple University NEDC",
+      "source_url": "https://isip.piconepress.com/projects/nedc/html/tuh_eeg/",
+      "source_dataset_doi": null,
+      "source_paper_doi": "10.3389/fnins.2016.00196",
+      "license": "TUH-DUA",
+      "license_url": "https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml",
+      "bids_compliant": false,
+      "modality": "eeg",
+      "species": "human",
+      "clinical_status": "patient",
+      "paradigm_summary": "Six-class event annotations (spike/sharp wave, generalized periodic discharges, periodic lateralized epileptiform discharges, eye movement, artifact, background). Headline benchmark in LaBraM/CBraMod/REVE.",
+      "paradigm_categories": [
+        "clinical_events",
+        "abnormality"
+      ],
+      "notes": "Non-BIDS. EDF."
+    }
+  ],
+  "n_recordings": 518,
+  "n_unique_recording_ids": 518,
+  "n_subjects": 370,
+  "n_unique_ordered_layouts": 15,
+  "n_channels_distribution": {
+    "33": 187,
+    "32": 24,
+    "31": 102,
+    "24": 20,
+    "27": 122,
+    "25": 14,
+    "30": 2,
+    "28": 47
+  },
+  "sampling_rate_distribution": {
+    "250.0": 518
+  },
+  "reference_distribution": {
+    "<missing>": 518
+  },
+  "montage_distribution": {
+    "<missing>": 518
+  },
+  "header_read_status_distribution": {
+    "ok": 518
+  },
+  "required_electrodes": [
+    "C3",
+    "C4",
+    "F3",
+    "F4",
+    "F7",
+    "F8",
+    "FP1",
+    "FP2",
+    "O1",
+    "O2",
+    "P3",
+    "P4",
+    "T3",
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "recordings_with_required_electrodes": 518,
+  "fraction_with_required_electrodes": 1.0,
+  "normalization_policy": "Uppercase; strip whitespace; remove EEG prefix and terminal -REF/-LE only. No T7/T8/P7/P8 aliases, no bipolar collapse.",
+  "normalization_collisions": [],
+  "channels_table_rows_for_tuev": 15601,
+  "channels_table_units_distribution": {
+    "uV": 15600,
+    "bpm": 1
+  },
+  "channels_table_type_distribution": {
+    "eeg": 14764,
+    "ecg": 518,
+    "emg": 319
+  },
+  "channel_table_vs_recording_order_mismatches": [],
+  "processed_to_raw_alignment": "NOT ESTABLISHED: raw recording identity/order is not evidence of processed row/channel identity/order."
+}

@@ -1,0 +1,115 @@
+{
+  "dataset_info": {
+    "url": "https://huggingface.co/api/datasets/USuCgex0122e/demo_dataset",
+    "status_code": 200,
+    "response": {
+      "sha": "db96e77affa66398c553427045ee040f06230c2a",
+      "TUEV_files": [
+        "TUEV/croissant.json",
+        "TUEV/croissant_manifest.csv",
+        "TUEV/metadata_summary.json",
+        "TUEV/test.h5",
+        "TUEV/train.h5",
+        "TUEV/val.h5"
+      ]
+    }
+  },
+  "refs": {
+    "url": "https://huggingface.co/api/datasets/USuCgex0122e/demo_dataset/refs",
+    "status_code": 200,
+    "response": {
+      "tags": [],
+      "branches": [
+        {
+          "name": "main",
+          "ref": "refs/heads/main",
+          "targetCommit": "db96e77affa66398c553427045ee040f06230c2a"
+        }
+      ],
+      "converts": []
+    }
+  },
+  "search_TUEV": {
+    "url": "https://huggingface.co/api/datasets?search=TUEV&limit=100",
+    "status_code": 200,
+    "response": []
+  },
+  "search_tuev": {
+    "url": "https://huggingface.co/api/datasets?search=tuev&limit=100",
+    "status_code": 200,
+    "response": []
+  },
+  "search_TUH_events": {
+    "url": "https://huggingface.co/api/datasets?search=tuh_eeg_events&limit=100",
+    "status_code": 200,
+    "response": []
+  },
+  "same_author": {
+    "url": "https://huggingface.co/api/datasets?author=USuCgex0122e&limit=100",
+    "status_code": 200,
+    "response": [
+      "USuCgex0122e/demo_dataset",
+      "USuCgex0122e/demo_dataset_seed20260726"
+    ]
+  },
+  "TUEV_tree": {
+    "url": "https://huggingface.co/api/datasets/USuCgex0122e/demo_dataset/tree/db96e77affa66398c553427045ee040f06230c2a/TUEV?recursive=true",
+    "status_code": 200,
+    "response": [
+      {
+        "type": "file",
+        "oid": "bb0a80c1586e24bc83bb79b0a32b36642d492f9f",
+        "size": 7545,
+        "path": "TUEV/croissant.json"
+      },
+      {
+        "type": "file",
+        "oid": "412d6bf4ad78705bb9ae846dc0c7d0dba9d377eb",
+        "size": 297,
+        "path": "TUEV/croissant_manifest.csv"
+      },
+      {
+        "type": "file",
+        "oid": "474bf5d3b080c667457b95d040b63471e967f6ad",
+        "size": 1337,
+        "path": "TUEV/metadata_summary.json"
+      },
+      {
+        "type": "file",
+        "oid": "5c70d57fa0f31f5b4781892241bc1bbf4eb3a65f",
+        "size": 144788691,
+        "lfs": {
+          "oid": "774fb4957dd8148eeccddc4c63f283ccc30e8d29404bc2da788deb7b58ceaac0",
+          "size": 144788691,
+          "pointerSize": 134
+        },
+        "xetHash": "a06a96182a71c3bf2286ec814d924bdced6778c3474b69031cb079cb800f07aa",
+        "path": "TUEV/test.h5"
+      },
+      {
+        "type": "file",
+        "oid": "ec15ac29881544baa179aa0a8511fd9b15f827a8",
+        "size": 615573204,
+        "lfs": {
+          "oid": "e40adf5321a73e394d0ccae4bc50286cf85248bcaa36ea699e182b42e95c2d56",
+          "size": 615573204,
+          "pointerSize": 134
+        },
+        "xetHash": "138ec00d4033270ac26ff45c074efcb93527310ad7f932e53d57ac61201425e5",
+        "path": "TUEV/train.h5"
+      },
+      {
+        "type": "file",
+        "oid": "fdb6a782fd66eb27398be5093fabe48458d44f52",
+        "size": 165604803,
+        "lfs": {
+          "oid": "bcf0c4664994864b7a4f54e7327e36dbb0cea446b180051a11aaae0711aafd5c",
+          "size": 165604803,
+          "pointerSize": 134
+        },
+        "xetHash": "c005ecb8d0d1e4138517d99c8cdb67206622df00881447cab3361c36b3a413f0",
+        "path": "TUEV/val.h5"
+      }
+    ]
+  }
+}

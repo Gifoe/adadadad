@@ -1,0 +1,7 @@
+{
+  "status": "not_measured_due_to_data_gate",
+  "naive_k2_seconds_per_step": null,
+  "ds_k2_seconds_per_step": null,
+  "estimated_200_epoch_hours": null,
+  "reason": "No incompatible-data benchmark or training executed. Synthetic smoke is not a runtime estimate."
+}
