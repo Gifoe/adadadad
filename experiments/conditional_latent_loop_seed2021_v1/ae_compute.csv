@@ -1,0 +1,3 @@
+dataset,parameters,train_seconds,epochs,best_epoch,latent_forecaster_configurations_using_AE
+NP,4385,20.71458870000788,62,42,11
+PJM,4385,10.80361350000021,33,13,11

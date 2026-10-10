@@ -1,0 +1,92 @@
+{
+  "dataset": "NP",
+  "history": 720,
+  "horizon": 360,
+  "variant": "B2",
+  "K": 2,
+  "seed": 2021,
+  "patch_len": 24,
+  "d_model": 64,
+  "heads": 4,
+  "initial_layers": 2,
+  "d_ff": 128,
+  "dropout": 0,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "max_epochs": 50,
+  "patience": 5,
+  "lradj": "type3",
+  "checkpoint_selection": "decoded validation MSE",
+  "drop_last": false,
+  "loss": "10 * latent MSE + 15 * per-timestamp cosine loss",
+  "intermediate_supervision": false,
+  "residual_refinement_scale": 0.1,
+  "AE_frozen": true,
+  "future_conditions_initial": true,
+  "future_conditions_refinement": false,
+  "mse": 0.9641523957252502,
+  "mae": 0.7176839709281921,
+  "per_iteration_mse": [
+    0.9641523957252502
+  ],
+  "mask_mse": {
+    "zero": 1.2919049263000488,
+    "shuffle": 1.3964312076568604
+  },
+  "latent_mse": 0.2226639688014984,
+  "latent_cosine": 0.04090723395347595,
+  "decoded_true_latent_mse": 9.416588000021875e-06,
+  "windows": 10125,
+  "inference_ms_batch1": 1.6829050000524148,
+  "profiled_flops_batch1": 28617600,
+  "flop_scope": "PyTorch with_flops: supported matmul/conv only; excludes some ops",
+  "analytic_dense_attention_flops_batch1": 29057280,
+  "analytic_flop_scope": "multiply/add FLOPs of linear and dense attention products; excludes bias, activation, normalization, scalar residuals; final-only decoder",
+  "trainable_parameters": 229169,
+  "all_parameters": 233554,
+  "best_val_mse": 0.08580764154906452,
+  "best_epoch": 1,
+  "epochs": 6,
+  "history_log": [
+    {
+      "epoch": 1,
+      "train_loss": 1.225718545804399,
+      "val_mse": 0.08580764154906452,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.47757766557849185,
+      "val_mse": 0.14360002822419396,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3497656552135009,
+      "val_mse": 0.09409358666738309,
+      "lr": 0.001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.26902342272391966,
+      "val_mse": 0.09813731538125603,
+      "lr": 0.001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.23111420002479346,
+      "val_mse": 0.11046193135211385,
+      "lr": 0.0009000000000000001
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.20499850836019703,
+      "val_mse": 0.09985360621179924,
+      "lr": 0.0008100000000000001
+    }
+  ],
+  "train_seconds": 38.94711490001646,
+  "peak_cuda_bytes": 138541056,
+  "optimizer_updates": 3342
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "metric_agreement_tolerance": 2e-05,
+  "checks": [
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "mse_difference": -1.261860060886022e-08,
+      "mae_difference": 1.7594540546728155e-09,
+      "reference_relative_mse_difference": -0.0011969267731846145
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "mse_difference": 2.8263324569621773e-08,
+      "mae_difference": 1.4461104869134545e-08,
+      "reference_relative_mse_difference": 0.01289730840818426
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "mse_difference": -2.0025343536178575e-09,
+      "mae_difference": -6.840909755334579e-09,
+      "reference_relative_mse_difference": 0.007761936961558691
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "mse_difference": 3.1008609013838395e-09,
+      "mae_difference": -7.913890542887714e-09,
+      "reference_relative_mse_difference": -0.0021218474094684137
+    }
+  ],
+  "significant_difference_flag": [],
+  "investigation": [
+    "Exact published commands and architecture; exact pinned official dataset bytes",
+    "Official TFB normalized metrics independently matched using training-only scaler and identical rolling origins",
+    "Current sm120-compatible torch2.8/numpy1.26/sklearn1.7/pandas2.3 differ from published environment; single-seed values are not rounded-reference guarantees",
+    "No test-selected retuning allowed; large remaining numeric deviations must be flagged in the final report"
+  ]
+}

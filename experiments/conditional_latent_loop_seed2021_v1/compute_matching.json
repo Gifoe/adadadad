@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "NP",
+    "horizon": 24,
+    "K": 2,
+    "B5_to_B3_profiled_flops_ratio": 1.0001275686478786,
+    "B3_B5_equal_analytical_linear_attention_flops": true,
+    "B4_B5_equal_parameters": true
+  },
+  {
+    "dataset": "NP",
+    "horizon": 360,
+    "K": 2,
+    "B5_to_B3_profiled_flops_ratio": 1.0002917720287883,
+    "B3_B5_equal_analytical_linear_attention_flops": true,
+    "B4_B5_equal_parameters": true
+  },
+  {
+    "dataset": "NP",
+    "horizon": 360,
+    "K": 4,
+    "B5_to_B3_profiled_flops_ratio": 1.0002288067726806,
+    "B3_B5_equal_analytical_linear_attention_flops": true,
+    "B4_B5_equal_parameters": true
+  },
+  {
+    "dataset": "PJM",
+    "horizon": 24,
+    "K": 2,
+    "B5_to_B3_profiled_flops_ratio": 1.0001173490841881,
+    "B3_B5_equal_analytical_linear_attention_flops": true,
+    "B4_B5_equal_parameters": true
+  },
+  {
+    "dataset": "PJM",
+    "horizon": 360,
+    "K": 2,
+    "B5_to_B3_profiled_flops_ratio": 1.0002714932126697,
+    "B3_B5_equal_analytical_linear_attention_flops": true,
+    "B4_B5_equal_parameters": true
+  },
+  {
+    "dataset": "PJM",
+    "horizon": 360,
+    "K": 4,
+    "B5_to_B3_profiled_flops_ratio": 1.0002122316154363,
+    "B3_B5_equal_analytical_linear_attention_flops": true,
+    "B4_B5_equal_parameters": true
+  }
+]

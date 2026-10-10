@@ -1,0 +1,160 @@
+{
+  "dataset": "PJM",
+  "history": 168,
+  "horizon": 24,
+  "variant": "B3",
+  "K": 2,
+  "seed": 2021,
+  "patch_len": 24,
+  "d_model": 64,
+  "heads": 4,
+  "initial_layers": 2,
+  "d_ff": 256,
+  "dropout": 0,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "max_epochs": 50,
+  "patience": 5,
+  "lradj": "type1",
+  "checkpoint_selection": "decoded validation MSE",
+  "drop_last": false,
+  "loss": "10 * latent MSE + 15 * per-timestamp cosine loss",
+  "intermediate_supervision": false,
+  "residual_refinement_scale": 0.1,
+  "AE_frozen": true,
+  "future_conditions_initial": true,
+  "future_conditions_refinement": true,
+  "mse": 0.09355082362890244,
+  "mae": 0.17522327601909637,
+  "per_iteration_mse": [
+    0.48963919281959534,
+    0.20883160829544067,
+    0.09355092793703079
+  ],
+  "mask_mse": {
+    "zero": 0.29697397351264954,
+    "shuffle": 0.45485150814056396
+  },
+  "latent_mse": 0.020138856023550034,
+  "latent_cosine": 0.014042021706700325,
+  "decoded_true_latent_mse": 7.339867238442821e-07,
+  "windows": 10461,
+  "inference_ms_batch1": 2.604693000030238,
+  "profiled_flops_batch1": 6544576,
+  "flop_scope": "PyTorch with_flops: supported matmul/conv only; excludes some ops",
+  "analytic_dense_attention_flops_batch1": 6563712,
+  "analytic_flop_scope": "multiply/add FLOPs of linear and dense attention products; excludes bias, activation, normalization, scalar residuals; final-only decoder",
+  "trainable_parameters": 656936,
+  "all_parameters": 661321,
+  "best_val_mse": 0.06304206791497849,
+  "best_epoch": 12,
+  "epochs": 17,
+  "history_log": [
+    {
+      "epoch": 1,
+      "train_loss": 2.0406655071345043,
+      "val_mse": 0.08097567518392254,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2708433673017243,
+      "val_mse": 0.07901650153639643,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8005950304282103,
+      "val_mse": 0.06997806792774823,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6335895981593388,
+      "val_mse": 0.06579806017846739,
+      "lr": 0.00025
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5632452048107567,
+      "val_mse": 0.0660797154346843,
+      "lr": 0.000125
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5217557615239495,
+      "val_mse": 0.0637630368204891,
+      "lr": 6.25e-05
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5006369629273099,
+      "val_mse": 0.06405063166413993,
+      "lr": 3.125e-05
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.4904384894223601,
+      "val_mse": 0.06405199008814226,
+      "lr": 1.5625e-05
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.48504919523591716,
+      "val_mse": 0.0630536467406061,
+      "lr": 7.8125e-06
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.4819576476919458,
+      "val_mse": 0.06314604276440386,
+      "lr": 3.90625e-06
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.4803904332201162,
+      "val_mse": 0.06311299141974423,
+      "lr": 1.953125e-06
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.47957187615347846,
+      "val_mse": 0.06304206791497849,
+      "lr": 9.765625e-07
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.4791425713732058,
+      "val_mse": 0.06304932843605632,
+      "lr": 4.8828125e-07
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.4789200045353955,
+      "val_mse": 0.06307325628424022,
+      "lr": 2.44140625e-07
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.4788046694820249,
+      "val_mse": 0.0630839129871447,
+      "lr": 1.220703125e-07
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.478747823508871,
+      "val_mse": 0.06307821110259255,
+      "lr": 6.103515625e-08
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.47871695832897987,
+      "val_mse": 0.06307899241567137,
+      "lr": 3.0517578125e-08
+    }
+  ],
+  "train_seconds": 166.08178189999308,
+  "peak_cuda_bytes": 47689216,
+  "optimizer_updates": 9707
+}

@@ -1,0 +1,83 @@
+D:\conditional_latent_loop_seed2021_v1\upstream\DAG\ts_benchmark\baselines\time_series_library\models\Crossformer.py:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  1 if l is 0 else self.win_size,
+D:\conditional_latent_loop_seed2021_v1\upstream\DAG\ts_benchmark\baselines\time_series_library\models\Crossformer.py:70: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if l is 0
+2026-10-11 05:27:24 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-11 05:27:24 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-11 05:27:24 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-11 05:27:24 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-11 05:27:24 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-11 05:27:24 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-11 05:27:24 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.dag.DAG
+scheduling DAG:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-11 05:27:24 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- DAG
+Total trainable parameters: 491719
+DAG_EPOCH NP 24 1 VALID_MAE 0.12306929
+Validation loss decreased (inf --> 0.123069).  Saving model ...
+Updating learning rate to 0.001
+DAG_EPOCH NP 24 2 VALID_MAE 0.11903518
+Validation loss decreased (0.123069 --> 0.119035).  Saving model ...
+Updating learning rate to 0.001
+DAG_EPOCH NP 24 3 VALID_MAE 0.11526529
+Validation loss decreased (0.119035 --> 0.115265).  Saving model ...
+Updating learning rate to 0.001
+DAG_EPOCH NP 24 4 VALID_MAE 0.11512055
+Validation loss decreased (0.115265 --> 0.115121).  Saving model ...
+Updating learning rate to 0.0009000000000000001
+DAG_EPOCH NP 24 5 VALID_MAE 0.1169152
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0008100000000000001
+DAG_EPOCH NP 24 6 VALID_MAE 0.11449221
+Validation loss decreased (0.115121 --> 0.114492).  Saving model ...
+Updating learning rate to 0.0007290000000000002
+DAG_EPOCH NP 24 7 VALID_MAE 0.11475598
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0006561000000000001
+DAG_EPOCH NP 24 8 VALID_MAE 0.11414057
+Validation loss decreased (0.114492 --> 0.114141).  Saving model ...
+Updating learning rate to 0.00059049
+DAG_EPOCH NP 24 9 VALID_MAE 0.11387048
+Validation loss decreased (0.114141 --> 0.113870).  Saving model ...
+Updating learning rate to 0.000531441
+DAG_EPOCH NP 24 10 VALID_MAE 0.11382136
+Validation loss decreased (0.113870 --> 0.113821).  Saving model ...
+Updating learning rate to 0.0004782969000000001
+DAG_EPOCH NP 24 11 VALID_MAE 0.114366546
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0004304672100000001
+DAG_EPOCH NP 24 12 VALID_MAE 0.11338559
+Validation loss decreased (0.113821 --> 0.113386).  Saving model ...
+Updating learning rate to 0.0003874204890000001
+DAG_EPOCH NP 24 13 VALID_MAE 0.11373348
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0003486784401000001
+DAG_EPOCH NP 24 14 VALID_MAE 0.11325297
+Validation loss decreased (0.113386 --> 0.113253).  Saving model ...
+Updating learning rate to 0.0003138105960900001
+DAG_EPOCH NP 24 15 VALID_MAE 0.11354701
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0002824295364810001
+DAG_EPOCH NP 24 16 VALID_MAE 0.11289526
+Validation loss decreased (0.113253 --> 0.112895).  Saving model ...
+Updating learning rate to 0.0002541865828329001
+DAG_EPOCH NP 24 17 VALID_MAE 0.11283651
+Validation loss decreased (0.112895 --> 0.112837).  Saving model ...
+Updating learning rate to 0.0002287679245496101
+DAG_EPOCH NP 24 18 VALID_MAE 0.11416732
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0002058911320946491
+DAG_EPOCH NP 24 19 VALID_MAE 0.113330655
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.00018530201888518417
+DAG_EPOCH NP 24 20 VALID_MAE 0.11389108
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.00016677181699666576
+DAG_EPOCH NP 24 21 VALID_MAE 0.11394738
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.00015009463529699917
+DAG_EPOCH NP 24 22 VALID_MAE 0.113017336
+EarlyStopping counter: 5 out of 5
+DAG_RESULT NP_24_B0 0.2017582207918167 0.23680809140205383
+scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [08:27<00:00, 507.17s/it]scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [08:27<00:00, 507.19s/it]
+collecting DAG:   0%|          | 0/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-11 05:35:51 [INFO] ts_benchmark.recording(103): loading log file D:\conditional_latent_loop_seed2021_v1\upstream\DAG\result\NP/DAG\DAG.1791668151.DESKTOP-C4FOPGI.15112.csv.tar.gz

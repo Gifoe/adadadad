@@ -1,0 +1,18 @@
+{
+  "seed": 2021,
+  "datasets": ["NP", "PJM"],
+  "tasks": [{"history": 168, "horizon": 24}, {"history": 720, "horizon": 360}],
+  "chronological_tv_ratio": 0.8,
+  "train_ratio_in_tv": 0.875,
+  "rolling_stride": 1,
+  "test_selection": "none; decoded validation MSE only",
+  "conditional_models": {"width": 64, "latent_dim": 32, "patch_len": 24, "heads": 4, "initial_layers": 2, "dropout": 0, "max_epochs": 50, "patience": 5, "batch_size": 64, "learning_rate": 0.001, "intermediate_supervision": false},
+  "K2": ["B1", "B2", "B3", "B4", "B5"],
+  "K4": {"tasks": "long horizons only", "variants": ["B3", "B4", "B5"], "gate": "all K2 runs complete, finite train/validation losses; evaluate a predeclared fixed depth, no test-based depth selection"},
+  "AE": {"input_dim": 1, "latent_dim": 32, "hidden_dim": 64, "loss": "MAE", "lr": 0.0005, "batch_size": 512, "max_epochs": 500, "patience": 20, "train_timestamps_only": true},
+  "bootstrap": {"replicates": 2000, "confidence": 0.95, "block_lengths": "max(H,168) and 2*max(H,168) origins", "method": "paired non-overlapping time-block resampling, weighted by block sizes; at least one week for hourly series"},
+  "high_change": {"score": "mean absolute difference of training-standardized future covariates, including origin boundary", "threshold": "training-window 90th percentile"},
+  "GO": {"long_B5_vs_B2_reduction_at_least": 0.05, "long_B5_better_than_B3": true, "other_long_max_regression": 0.05, "short_max_regression": 0.05, "evaluation_scale_matched": true, "primary_depth": 2},
+  "sources": {"DAG_commit": "0758990e2c73bb54138ea3e7b11a35cbc5476bcc", "LatentTSF_commit": "7c8ae947ee1220bf4e788ace6bc2f0f122cb26c2", "WorldTS": "https://arxiv.org/abs/2609.31162"},
+  "declared_adjustments": ["AE training unique timestamps with batch512 instead of overlapping target windows, since the official MLP is pointwise", "K4 expansion restricted to long tasks; K2 remains primary", "Existing sm120-compatible torch2.8 used; official numerical/environment deviations recorded", "DAG published MAE selection retained; all new models use decoded validation MSE", "B3 independently parameterized blocks start from identical initial weights to match B5 initial computation"]
+}

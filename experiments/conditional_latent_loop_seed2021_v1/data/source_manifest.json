@@ -1,0 +1,22 @@
+{
+  "url": "https://drive.usercontent.google.com/download?id=1K2AvogpOpSz1PiQ53dPchzGv_PqlCWAK&export=download&confirm=t",
+  "archive_bytes": 223982637,
+  "downloaded_bytes": 1930594,
+  "files": [
+    {
+      "archive_member": "dataset/forecasting/FORECAST_META.csv",
+      "bytes": 897,
+      "sha256": "7e81fe0a55589ab327df8a0ed11539a8c31cdc604c9283813f120bf02a68d884"
+    },
+    {
+      "archive_member": "dataset/forecasting/NP.csv",
+      "bytes": 5977132,
+      "sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1"
+    },
+    {
+      "archive_member": "dataset/forecasting/PJM.csv",
+      "bytes": 6629123,
+      "sha256": "14feec9daa86e14ba4ed062c690468fa615af6fb18ba56006149b087e26058e5"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "dataset": "PJM",
+  "history": 168,
+  "horizon": 24,
+  "variant": "B2",
+  "K": 2,
+  "seed": 2021,
+  "patch_len": 24,
+  "d_model": 64,
+  "heads": 4,
+  "initial_layers": 2,
+  "d_ff": 256,
+  "dropout": 0,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "max_epochs": 50,
+  "patience": 5,
+  "lradj": "type1",
+  "checkpoint_selection": "decoded validation MSE",
+  "drop_last": false,
+  "loss": "10 * latent MSE + 15 * per-timestamp cosine loss",
+  "intermediate_supervision": false,
+  "residual_refinement_scale": 0.1,
+  "AE_frozen": true,
+  "future_conditions_initial": true,
+  "future_conditions_refinement": false,
+  "mse": 0.0946856141090393,
+  "mae": 0.17677642405033112,
+  "per_iteration_mse": [
+    0.0946856141090393
+  ],
+  "mask_mse": {
+    "zero": 0.3179609775543213,
+    "shuffle": 0.40366649627685547
+  },
+  "latent_mse": 0.020117413252592087,
+  "latent_cosine": 0.014860043302178383,
+  "decoded_true_latent_mse": 7.339867238442821e-07,
+  "windows": 10461,
+  "inference_ms_batch1": 1.615555000025779,
+  "profiled_flops_batch1": 5754688,
+  "flop_scope": "PyTorch with_flops: supported matmul/conv only; excludes some ops",
+  "analytic_dense_attention_flops_batch1": 5776768,
+  "analytic_flop_scope": "multiply/add FLOPs of linear and dense attention products; excludes bias, activation, normalization, scalar residuals; final-only decoder",
+  "trainable_parameters": 260264,
+  "all_parameters": 264649,
+  "best_val_mse": 0.060887689843841415,
+  "best_epoch": 10,
+  "epochs": 15,
+  "history_log": [
+    {
+      "epoch": 1,
+      "train_loss": 2.156151279048948,
+      "val_mse": 0.07770523306525072,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2118696040292483,
+      "val_mse": 0.08017189864980738,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7884770859600456,
+      "val_mse": 0.07564751474673229,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.608775269497244,
+      "val_mse": 0.06338918177859341,
+      "lr": 0.00025
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5277760354317966,
+      "val_mse": 0.061542687885391384,
+      "lr": 0.000125
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.4858842280419638,
+      "val_mse": 0.06512207885031242,
+      "lr": 6.25e-05
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.4671435140414402,
+      "val_mse": 0.06089641956973291,
+      "lr": 3.125e-05
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.4566203150482301,
+      "val_mse": 0.06095455021299971,
+      "lr": 1.5625e-05
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.45101350707065085,
+      "val_mse": 0.061005130614815314,
+      "lr": 7.8125e-06
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.4481235825936106,
+      "val_mse": 0.060887689843841415,
+      "lr": 3.90625e-06
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.4466197726871808,
+      "val_mse": 0.06105066084302902,
+      "lr": 1.953125e-06
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.4458383047107788,
+      "val_mse": 0.061163532998116145,
+      "lr": 9.765625e-07
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.4454204372173891,
+      "val_mse": 0.061086852911248504,
+      "lr": 4.8828125e-07
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.44520270584006777,
+      "val_mse": 0.06112296436453807,
+      "lr": 2.44140625e-07
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.44509144890533414,
+      "val_mse": 0.06111772839895281,
+      "lr": 1.220703125e-07
+    }
+  ],
+  "train_seconds": 95.1679107999953,
+  "peak_cuda_bytes": 40158720,
+  "optimizer_updates": 8565
+}

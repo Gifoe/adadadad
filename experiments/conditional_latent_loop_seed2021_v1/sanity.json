@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "B1/B2 identical common backbone initialization",
+    "B4/B5 identical initial parameters and architecture",
+    "no shared B3 block parameters",
+    "future label perturbation leaves prediction identical",
+    "AE frozen through backward and optimizer",
+    "all five variants finite real-data backward"
+  ]
+}

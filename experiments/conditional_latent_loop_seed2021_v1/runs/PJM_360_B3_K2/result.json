@@ -1,0 +1,106 @@
+{
+  "dataset": "PJM",
+  "history": 720,
+  "horizon": 360,
+  "variant": "B3",
+  "K": 2,
+  "seed": 2021,
+  "patch_len": 24,
+  "d_model": 64,
+  "heads": 4,
+  "initial_layers": 2,
+  "d_ff": 256,
+  "dropout": 0,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "max_epochs": 50,
+  "patience": 5,
+  "lradj": "type1",
+  "checkpoint_selection": "decoded validation MSE",
+  "drop_last": false,
+  "loss": "10 * latent MSE + 15 * per-timestamp cosine loss",
+  "intermediate_supervision": false,
+  "residual_refinement_scale": 0.1,
+  "AE_frozen": true,
+  "future_conditions_initial": true,
+  "future_conditions_refinement": true,
+  "mse": 0.12504594027996063,
+  "mae": 0.2091849446296692,
+  "per_iteration_mse": [
+    0.22216497361660004,
+    0.2692755460739136,
+    0.12504592537879944
+  ],
+  "mask_mse": {
+    "zero": 0.30619147419929504,
+    "shuffle": 0.48051267862319946
+  },
+  "latent_mse": 0.024689797312021255,
+  "latent_cosine": 0.020637571811676025,
+  "decoded_true_latent_mse": 7.360461609096092e-07,
+  "windows": 10125,
+  "inference_ms_batch1": 2.6479570000083186,
+  "profiled_flops_batch1": 42432000,
+  "flop_scope": "PyTorch with_flops: supported matmul/conv only; excludes some ops",
+  "analytic_dense_attention_flops_batch1": 42935040,
+  "analytic_flop_scope": "multiply/add FLOPs of linear and dense attention products; excludes bias, activation, normalization, scalar residuals; final-only decoder",
+  "trainable_parameters": 658865,
+  "all_parameters": 663250,
+  "best_val_mse": 0.08678505139499866,
+  "best_epoch": 3,
+  "epochs": 8,
+  "history_log": [
+    {
+      "epoch": 1,
+      "train_loss": 2.0436469908562156,
+      "val_mse": 0.0946398848214784,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.994330991988589,
+      "val_mse": 0.08791615766537898,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7236686481645108,
+      "val_mse": 0.08678505139499866,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6145005988269958,
+      "val_mse": 0.0920606569541063,
+      "lr": 0.00025
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5395902248458732,
+      "val_mse": 0.09938087884369684,
+      "lr": 0.000125
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.4955303109727229,
+      "val_mse": 0.09362175962929134,
+      "lr": 6.25e-05
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.47126784437893315,
+      "val_mse": 0.09310188988742832,
+      "lr": 3.125e-05
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.4587896458656269,
+      "val_mse": 0.09257731871151703,
+      "lr": 1.5625e-05
+    }
+  ],
+  "train_seconds": 80.48103969998192,
+  "peak_cuda_bytes": 193821696,
+  "optimizer_updates": 4456
+}

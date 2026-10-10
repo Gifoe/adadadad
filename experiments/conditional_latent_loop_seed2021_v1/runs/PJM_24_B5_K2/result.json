@@ -1,0 +1,160 @@
+{
+  "dataset": "PJM",
+  "history": 168,
+  "horizon": 24,
+  "variant": "B5",
+  "K": 2,
+  "seed": 2021,
+  "patch_len": 24,
+  "d_model": 64,
+  "heads": 4,
+  "initial_layers": 2,
+  "d_ff": 256,
+  "dropout": 0,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "max_epochs": 50,
+  "patience": 5,
+  "lradj": "type1",
+  "checkpoint_selection": "decoded validation MSE",
+  "drop_last": false,
+  "loss": "10 * latent MSE + 15 * per-timestamp cosine loss",
+  "intermediate_supervision": false,
+  "residual_refinement_scale": 0.1,
+  "AE_frozen": true,
+  "future_conditions_initial": true,
+  "future_conditions_refinement": true,
+  "mse": 0.09864629060029984,
+  "mae": 0.1736672967672348,
+  "per_iteration_mse": [
+    0.6050242185592651,
+    0.24391524493694305,
+    0.09864627569913864
+  ],
+  "mask_mse": {
+    "zero": 0.29141172766685486,
+    "shuffle": 0.42824164032936096
+  },
+  "latent_mse": 0.021744927391409874,
+  "latent_cosine": 0.013987448997795582,
+  "decoded_true_latent_mse": 7.339867238442821e-07,
+  "windows": 10461,
+  "inference_ms_batch1": 2.636970999883488,
+  "profiled_flops_batch1": 6545344,
+  "flop_scope": "PyTorch with_flops: supported matmul/conv only; excludes some ops",
+  "analytic_dense_attention_flops_batch1": 6563712,
+  "analytic_flop_scope": "multiply/add FLOPs of linear and dense attention products; excludes bias, activation, normalization, scalar residuals; final-only decoder",
+  "trainable_parameters": 458600,
+  "all_parameters": 462985,
+  "best_val_mse": 0.061499910457552855,
+  "best_epoch": 12,
+  "epochs": 17,
+  "history_log": [
+    {
+      "epoch": 1,
+      "train_loss": 1.9879725494986773,
+      "val_mse": 0.07348402717328661,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2467154535593314,
+      "val_mse": 0.07153170759166087,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7699449626337114,
+      "val_mse": 0.06382126441790377,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.5984611077149792,
+      "val_mse": 0.06174412773830601,
+      "lr": 0.00025
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5274759314560512,
+      "val_mse": 0.06480369607767414,
+      "lr": 0.000125
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.493090454505017,
+      "val_mse": 0.062356469183046714,
+      "lr": 6.25e-05
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.4719018940766507,
+      "val_mse": 0.062632738999528,
+      "lr": 3.125e-05
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.4608226242121835,
+      "val_mse": 0.06242381159720342,
+      "lr": 1.5625e-05
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.45525803778014046,
+      "val_mse": 0.06164448103046192,
+      "lr": 7.8125e-06
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.45238384282008576,
+      "val_mse": 0.06167401227106222,
+      "lr": 3.90625e-06
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.4509203451145655,
+      "val_mse": 0.061536619974947554,
+      "lr": 1.953125e-06
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.4501262933041136,
+      "val_mse": 0.061499910457552855,
+      "lr": 9.765625e-07
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.44971098177527535,
+      "val_mse": 0.06150713057980011,
+      "lr": 4.8828125e-07
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.44950167842434086,
+      "val_mse": 0.061518435064933305,
+      "lr": 2.44140625e-07
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.4493924467545633,
+      "val_mse": 0.06152917274823018,
+      "lr": 1.220703125e-07
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.4493405465988392,
+      "val_mse": 0.06152460947723203,
+      "lr": 6.103515625e-08
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.44931173375372774,
+      "val_mse": 0.061524724247675334,
+      "lr": 3.0517578125e-08
+    }
+  ],
+  "train_seconds": 163.69421249997686,
+  "peak_cuda_bytes": 45274112,
+  "optimizer_updates": 9707
+}

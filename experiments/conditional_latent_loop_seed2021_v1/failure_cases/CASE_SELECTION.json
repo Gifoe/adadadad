@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "NP",
+    "horizon": 24,
+    "improved_windows": 4445,
+    "worsened_windows": 6016,
+    "illustration_selection": "largest positive/largest negative B2-B5 MSE differences after final evaluation only"
+  },
+  {
+    "dataset": "NP",
+    "horizon": 360,
+    "improved_windows": 3246,
+    "worsened_windows": 6879,
+    "illustration_selection": "largest positive/largest negative B2-B5 MSE differences after final evaluation only"
+  },
+  {
+    "dataset": "PJM",
+    "horizon": 24,
+    "improved_windows": 5894,
+    "worsened_windows": 4567,
+    "illustration_selection": "largest positive/largest negative B2-B5 MSE differences after final evaluation only"
+  },
+  {
+    "dataset": "PJM",
+    "horizon": 360,
+    "improved_windows": 7146,
+    "worsened_windows": 2979,
+    "illustration_selection": "largest positive/largest negative B2-B5 MSE differences after final evaluation only"
+  }
+]

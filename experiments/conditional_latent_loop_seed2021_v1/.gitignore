@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+upstream/
+data/*.csv
+data/*.npz
+runs/**/checkpoint.pt
+runs/**/predictions.npz
+ae/**/checkpoint.pt
+*.part

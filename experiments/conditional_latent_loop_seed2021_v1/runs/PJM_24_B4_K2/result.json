@@ -1,0 +1,160 @@
+{
+  "dataset": "PJM",
+  "history": 168,
+  "horizon": 24,
+  "variant": "B4",
+  "K": 2,
+  "seed": 2021,
+  "patch_len": 24,
+  "d_model": 64,
+  "heads": 4,
+  "initial_layers": 2,
+  "d_ff": 256,
+  "dropout": 0,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "max_epochs": 50,
+  "patience": 5,
+  "lradj": "type1",
+  "checkpoint_selection": "decoded validation MSE",
+  "drop_last": false,
+  "loss": "10 * latent MSE + 15 * per-timestamp cosine loss",
+  "intermediate_supervision": false,
+  "residual_refinement_scale": 0.1,
+  "AE_frozen": true,
+  "future_conditions_initial": true,
+  "future_conditions_refinement": false,
+  "mse": 0.1079305037856102,
+  "mae": 0.17650899291038513,
+  "per_iteration_mse": [
+    0.7288634181022644,
+    0.2837834656238556,
+    0.10793043673038483
+  ],
+  "mask_mse": {
+    "zero": 0.287191241979599,
+    "shuffle": 0.4431675374507904
+  },
+  "latent_mse": 0.024268928915262222,
+  "latent_cosine": 0.014359373599290848,
+  "decoded_true_latent_mse": 7.339867238442821e-07,
+  "windows": 10461,
+  "inference_ms_batch1": 2.6928809998207726,
+  "profiled_flops_batch1": 6545344,
+  "flop_scope": "PyTorch with_flops: supported matmul/conv only; excludes some ops",
+  "analytic_dense_attention_flops_batch1": 6563712,
+  "analytic_flop_scope": "multiply/add FLOPs of linear and dense attention products; excludes bias, activation, normalization, scalar residuals; final-only decoder",
+  "trainable_parameters": 458600,
+  "all_parameters": 462985,
+  "best_val_mse": 0.060766776615977784,
+  "best_epoch": 12,
+  "epochs": 17,
+  "history_log": [
+    {
+      "epoch": 1,
+      "train_loss": 2.0357104479681123,
+      "val_mse": 0.07782506533126504,
+      "lr": 0.001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3134716017152706,
+      "val_mse": 0.07415772358439408,
+      "lr": 0.001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.9028324420352372,
+      "val_mse": 0.07200208005377058,
+      "lr": 0.0005
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6718403134951151,
+      "val_mse": 0.06501285425432113,
+      "lr": 0.00025
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5813281721159375,
+      "val_mse": 0.0623112344769231,
+      "lr": 0.000125
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5294542447789512,
+      "val_mse": 0.061508910123161516,
+      "lr": 6.25e-05
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5026261332716111,
+      "val_mse": 0.06209118600594264,
+      "lr": 3.125e-05
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.49003019911213613,
+      "val_mse": 0.06172789823523943,
+      "lr": 1.5625e-05
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.48342895917054507,
+      "val_mse": 0.06097233248996485,
+      "lr": 7.8125e-06
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.47973425238944883,
+      "val_mse": 0.06091995615988709,
+      "lr": 3.90625e-06
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.47794533205289064,
+      "val_mse": 0.06083243417200811,
+      "lr": 1.953125e-06
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.47702257133545317,
+      "val_mse": 0.060766776615977784,
+      "lr": 9.765625e-07
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.47652432026103797,
+      "val_mse": 0.06078303567582166,
+      "lr": 4.8828125e-07
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.47628019640418207,
+      "val_mse": 0.060806951737840904,
+      "lr": 2.44140625e-07
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.47615443233351284,
+      "val_mse": 0.060824032113676506,
+      "lr": 1.220703125e-07
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.4760898678083087,
+      "val_mse": 0.06081959463790618,
+      "lr": 6.103515625e-08
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.47605637059727385,
+      "val_mse": 0.060817308959478525,
+      "lr": 3.0517578125e-08
+    }
+  ],
+  "train_seconds": 164.50281529998756,
+  "peak_cuda_bytes": 45274112,
+  "optimizer_updates": 9707
+}

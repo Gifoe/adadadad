@@ -1,0 +1,225 @@
+{
+  "passed": true,
+  "formal_runs": 30,
+  "AE_runs": 2,
+  "checks": [
+    "independent float64 MSE/MAE from every saved forecast",
+    "all exact rolling test origins",
+    "frozen AE weights unchanged in all selected checkpoints",
+    "new-model checkpoints selected by validation MSE",
+    "source hashes match pristine upstream ZIP and executed sources",
+    "required tables and diagnostics complete"
+  ],
+  "runs": [
+    {
+      "run": "NP_24_B0",
+      "test_windows": 10461,
+      "independent_mse": 0.2017582054956512,
+      "independent_mae": 0.23680809796578578,
+      "passed": true
+    },
+    {
+      "run": "NP_24_B1",
+      "test_windows": 10461,
+      "independent_mse": 0.3315929234132967,
+      "independent_mae": 0.3648805193716291,
+      "passed": true
+    },
+    {
+      "run": "NP_24_B2",
+      "test_windows": 10461,
+      "independent_mse": 0.4160185780324691,
+      "independent_mae": 0.420932164694598,
+      "passed": true
+    },
+    {
+      "run": "NP_24_B3_K2",
+      "test_windows": 10461,
+      "independent_mse": 0.40423836771384475,
+      "independent_mae": 0.4080114405528885,
+      "passed": true
+    },
+    {
+      "run": "NP_24_B4_K2",
+      "test_windows": 10461,
+      "independent_mse": 0.43814741068416635,
+      "independent_mae": 0.4349209167386868,
+      "passed": true
+    },
+    {
+      "run": "NP_24_B5_K2",
+      "test_windows": 10461,
+      "independent_mse": 0.5090576880471783,
+      "independent_mae": 0.4580359592127273,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B0",
+      "test_windows": 10125,
+      "independent_mse": 0.5277195137543976,
+      "independent_mae": 0.45692173257067686,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B1",
+      "test_windows": 10125,
+      "independent_mse": 1.5283679022961236,
+      "independent_mae": 0.8955259838265596,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B2",
+      "test_windows": 10125,
+      "independent_mse": 0.9641523388087435,
+      "independent_mae": 0.717683930996113,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B3_K2",
+      "test_windows": 10125,
+      "independent_mse": 1.5018046929812179,
+      "independent_mae": 0.9033602609673357,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B3_K4",
+      "test_windows": 10125,
+      "independent_mse": 0.9991987297191286,
+      "independent_mae": 0.7494371232983136,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B4_K2",
+      "test_windows": 10125,
+      "independent_mse": 1.4353246397556918,
+      "independent_mae": 0.8589997444033948,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B4_K4",
+      "test_windows": 10125,
+      "independent_mse": 0.9121058973253039,
+      "independent_mae": 0.6934997913257154,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B5_K2",
+      "test_windows": 10125,
+      "independent_mse": 1.4091586013056563,
+      "independent_mae": 0.8641132947802628,
+      "passed": true
+    },
+    {
+      "run": "NP_360_B5_K4",
+      "test_windows": 10125,
+      "independent_mse": 1.010141226544712,
+      "independent_mae": 0.7438449089841135,
+      "passed": true
+    },
+    {
+      "run": "PJM_24_B0",
+      "test_windows": 10461,
+      "independent_mse": 0.05744242859758403,
+      "independent_mae": 0.14328082739115244,
+      "passed": true
+    },
+    {
+      "run": "PJM_24_B1",
+      "test_windows": 10461,
+      "independent_mse": 0.09435604043840638,
+      "independent_mae": 0.18244383556238844,
+      "passed": true
+    },
+    {
+      "run": "PJM_24_B2",
+      "test_windows": 10461,
+      "independent_mse": 0.0946856113776693,
+      "independent_mae": 0.17677642412269337,
+      "passed": true
+    },
+    {
+      "run": "PJM_24_B3_K2",
+      "test_windows": 10461,
+      "independent_mse": 0.09355082095811185,
+      "independent_mae": 0.17522327981235647,
+      "passed": true
+    },
+    {
+      "run": "PJM_24_B4_K2",
+      "test_windows": 10461,
+      "independent_mse": 0.1079305055693341,
+      "independent_mae": 0.17650897895712145,
+      "passed": true
+    },
+    {
+      "run": "PJM_24_B5_K2",
+      "test_windows": 10461,
+      "independent_mse": 0.09864628779742117,
+      "independent_mae": 0.17366729456103006,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B0",
+      "test_windows": 10125,
+      "independent_mse": 0.12972416287568925,
+      "independent_mae": 0.21757426166436955,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B1",
+      "test_windows": 10125,
+      "independent_mse": 0.15957892557032688,
+      "independent_mae": 0.24432027474726334,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B2",
+      "test_windows": 10125,
+      "independent_mse": 0.14674532831001966,
+      "independent_mae": 0.2296388893548641,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B3_K2",
+      "test_windows": 10125,
+      "independent_mse": 0.12504594769271832,
+      "independent_mae": 0.20918492969511635,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B3_K4",
+      "test_windows": 10125,
+      "independent_mse": 0.12086153444287086,
+      "independent_mae": 0.21912514917162,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B4_K2",
+      "test_windows": 10125,
+      "independent_mse": 0.12922818367849606,
+      "independent_mae": 0.21171212488162577,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B4_K4",
+      "test_windows": 10125,
+      "independent_mse": 0.12433513662368835,
+      "independent_mae": 0.20876667453997227,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B5_K2",
+      "test_windows": 10125,
+      "independent_mse": 0.1265408949999571,
+      "independent_mae": 0.2110240061629026,
+      "passed": true
+    },
+    {
+      "run": "PJM_360_B5_K4",
+      "test_windows": 10125,
+      "independent_mse": 0.12182185190660953,
+      "independent_mae": 0.2190193384085156,
+      "passed": true
+    }
+  ]
+}

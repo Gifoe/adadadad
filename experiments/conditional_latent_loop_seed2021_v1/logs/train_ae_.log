@@ -1,0 +1,18 @@
+
+ATTEMPT 2026-10-11 05:48:48
+D:\conditional_latent_loop_seed2021_v1\scripts\train_ae.py:15: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  x=x.cuda();opt.zero_grad();loss=(ae(x)-x).abs().mean();loss.backward();opt.step();total+=float(loss)*len(x)
+AE NP 1 {'epoch': 1, 'train_mae': 0.41009808563510286, 'val_mae': 0.039293717592954636}
+AE NP 11 {'epoch': 11, 'train_mae': 0.002119928364726111, 'val_mae': 0.0012846222380176187}
+AE NP 21 {'epoch': 21, 'train_mae': 0.002950856576803904, 'val_mae': 0.001827925443649292}
+AE NP 31 {'epoch': 31, 'train_mae': 0.0026610605869176714, 'val_mae': 0.004796029068529606}
+AE NP 41 {'epoch': 41, 'train_mae': 0.0019593016549517926, 'val_mae': 0.00347395078279078}
+AE NP 51 {'epoch': 51, 'train_mae': 0.003385798724720538, 'val_mae': 0.0008375920006074011}
+AE NP 61 {'epoch': 61, 'train_mae': 0.002393914093469054, 'val_mae': 0.0024072567466646433}
+AE_FINISHED NP {'train': {'mae': 0.0009701544186100364, 'mse': 2.4503567601641407e-06}, 'validation': {'mae': 0.0005119126872159541, 'mse': 4.4415122602003976e-07}}
+AE PJM 1 {'epoch': 1, 'train_mae': 0.25336790903813833, 'val_mae': 0.03480580821633339}
+AE PJM 11 {'epoch': 11, 'train_mae': 0.002497596545378444, 'val_mae': 0.0018118483712896705}
+AE PJM 21 {'epoch': 21, 'train_mae': 0.0021490481557742344, 'val_mae': 0.0018390435725450516}
+AE PJM 31 {'epoch': 31, 'train_mae': 0.004505479840536872, 'val_mae': 0.0032262259628623724}
+AE_FINISHED PJM {'train': {'mae': 0.0007088895654305816, 'mse': 8.774803745836834e-07}, 'validation': {'mae': 0.0007001794874668121, 'mse': 7.172963591983716e-07}}

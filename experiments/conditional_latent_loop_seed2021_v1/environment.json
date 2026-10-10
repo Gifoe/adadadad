@@ -1,0 +1,23 @@
+{
+  "platform": "Windows-10-10.0.18363-SP0",
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "einops": "0.8.1",
+    "ray": "2.10.0",
+    "dash": "2.17.0",
+    "matplotlib": "3.10.8",
+    "reformer-pytorch": "1.4.4",
+    "psutil": "5.9.6"
+  },
+  "GPU": "NVIDIA GeForce RTX 5090",
+  "CUDA": "12.8",
+  "cpu_threads": 4,
+  "CPU_affinity_mask": "0xffff0000",
+  "venv": "system-site-packages plus private overrides",
+  "seed": 2021
+}

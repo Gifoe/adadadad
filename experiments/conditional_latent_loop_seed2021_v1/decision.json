@@ -1,0 +1,46 @@
+{
+  "decision": "NO-GO",
+  "primary_K": 2,
+  "long_task_threshold_pass": {
+    "NP": false,
+    "PJM": false
+  },
+  "long_B5_vs_B2_relative_reduction": {
+    "NP": -0.4615517149607442,
+    "PJM": 0.13768368993511615
+  },
+  "short_B5_vs_B2_relative_reduction": {
+    "NP": -0.22364175712091483,
+    "PJM": -0.04182975976371073
+  },
+  "hypotheses": {
+    "H1": {
+      "positive_tasks": 2,
+      "negative_tasks": 2,
+      "supported_tasks": 1,
+      "falsified_tasks": 1,
+      "uncertain_tasks": 2
+    },
+    "H2": {
+      "positive_tasks": 1,
+      "negative_tasks": 3,
+      "supported_tasks": 1,
+      "falsified_tasks": 2,
+      "uncertain_tasks": 1
+    },
+    "H3": {
+      "positive_tasks": 1,
+      "negative_tasks": 3,
+      "supported_tasks": 0,
+      "falsified_tasks": 1,
+      "uncertain_tasks": 3
+    },
+    "H4": {
+      "positive_tasks": 3,
+      "negative_tasks": 1,
+      "supported_tasks": 0,
+      "falsified_tasks": 1,
+      "uncertain_tasks": 3
+    }
+  }
+}
