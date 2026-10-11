@@ -1,0 +1,25 @@
+model,dataset,backbone,input_len,horizon,seed,status,reason
+DAG,NP,DAG,168,24,2021,MATCHED,
+DAG,NP,DAG,720,360,2021,MATCHED,
+DAG,PJM,DAG,168,24,2021,MATCHED,
+DAG,PJM,DAG,720,360,2021,MATCHED,
+LatentTSF,Electricity,DLinear,720,192,42,MATCHED,
+LatentTSF,Electricity,DLinear,720,336,42,CLOSE,
+LatentTSF,Electricity,DLinear,720,720,42,CLOSE,
+LatentTSF,Electricity,DLinear,720,96,42,MATCHED,
+LatentTSF,Electricity,iTransformer,720,192,42,MATCHED,
+LatentTSF,Electricity,iTransformer,720,336,42,MATCHED,
+LatentTSF,Electricity,iTransformer,720,720,42,MATCHED,
+LatentTSF,Electricity,iTransformer,720,96,42,MATCHED,
+LatentTSF,ETTh1,DLinear,720,192,42,MATCHED,
+LatentTSF,ETTh1,DLinear,720,336,42,MATCHED,
+LatentTSF,ETTh1,DLinear,720,720,42,MATCHED,
+LatentTSF,ETTh1,DLinear,720,96,42,MATCHED,
+LatentTSF,ETTh1,iTransformer,720,192,42,MATCHED,
+LatentTSF,ETTh1,iTransformer,720,336,42,MATCHED,
+LatentTSF,ETTh1,iTransformer,720,720,42,MATCHED,
+LatentTSF,ETTh1,iTransformer,720,96,42,MATCHED,
+WorldTS,PJM,PatchTST-state-transition,168,24,2021,MATCHED,
+WorldTS,NP,PatchTST-state-transition,168,24,2021,INCOMPLETE,Server offline
+WorldTS,PJM,PatchTST-state-transition,720,360,2021,INCOMPLETE,Server offline
+WorldTS,NP,PatchTST-state-transition,720,360,2021,INCOMPLETE,Server offline

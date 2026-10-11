@@ -1,0 +1,2 @@
+setting,dataset,seq_len,pred_len,step,model,is_latent,align_weight,perceptual_weight,mse_weight,cosine_weight,reconstruction_weight,actual_epochs,use_lradj,mae,mse,rmse,mape,mspe,max_memory_mb,training_time
+ETTh1_DLinear_H96_seed42,ETTh1,720,96,1,DLinear,True,1.0,0.0,10.0,15.0,0.0,20,1,0.39088145,0.3640435,0.6033602,8.736185,33195.07,228.4267578125,0.0

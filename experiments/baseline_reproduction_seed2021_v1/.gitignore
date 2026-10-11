@@ -1,0 +1,7 @@
+.venv/
+upstream/
+data/
+**/__pycache__/
+**/*.pt
+**/*.pth
+**/*.npz

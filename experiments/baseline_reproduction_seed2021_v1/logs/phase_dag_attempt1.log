@@ -1,0 +1,7 @@
+START DAG NP_H24_seed2021
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_all.py", line 33, in <module>
+    for h in [24,360]:run('DAG',ds,h)
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_all.py", line 17, in run
+    if result.returncode:raise RuntimeError('Run failed: '+rid+'; retained log: '+str(attempt))
+RuntimeError: Run failed: NP_H24_seed2021; retained log: D:\baseline_reproduction_seed2021_v1\logs\NP_H24_seed2021_attempt1.log

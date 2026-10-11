@@ -1,0 +1,2 @@
+setting,dataset,seq_len,pred_len,step,model,is_latent,align_weight,perceptual_weight,mse_weight,cosine_weight,reconstruction_weight,actual_epochs,use_lradj,mae,mse,rmse,mape,mspe,max_memory_mb,training_time
+Electricity_DLinear_H720_seed42,electricity,720,720,60,DLinear,True,1.0,0.0,10.0,15.0,0.0,20,1,0.34422213,0.23907824,0.48895627,2.2707825,102149.66,903.3486328125,0.0

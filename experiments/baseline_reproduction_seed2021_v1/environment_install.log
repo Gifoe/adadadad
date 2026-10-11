@@ -1,0 +1,219 @@
+WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting numpy==1.26.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/19/77/538f202862b9183f54108557bfda67e17603fc560c384559e769321c9d92/numpy-1.26.4-cp310-cp310-win_amd64.whl (15.8 MB)
+     --------------------------------------- 15.8/15.8 MB 50.4 MB/s eta 0:00:00
+Collecting ray==2.10.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/59/94/e8d55a131ba8e74e4826da58209a8f4dbfe1f7c819eb54b64d4d39f2dd14/ray-2.10.0-cp310-cp310-win_amd64.whl (25.4 MB)
+     --------------------------------------- 25.4/25.4 MB 73.1 MB/s eta 0:00:00
+Collecting dash==2.17.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/63/22/bc266b167111e70a2da940e78b78d22fea5b1ee32b512ed0789bd6cc2a9f/dash-2.17.0-py3-none-any.whl (7.5 MB)
+     ---------------------------------------- 7.5/7.5 MB 68.0 MB/s eta 0:00:00
+Collecting dash-bootstrap-components==1.6.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/cc/72/dda12d6c6a9a2901f5549cea05c7f180e89dee6fb8c5f5f037ce7101ba24/dash_bootstrap_components-1.6.0-py3-none-any.whl (222 kB)
+     ------------------------------------- 222.5/222.5 kB 14.2 MB/s eta 0:00:00
+Collecting reformer-pytorch==1.4.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/42/15/80280e06afc2b8a1b1289a3bec91bea2ec9989a23e4dd36465a679f06ff2/reformer_pytorch-1.4.4-py3-none-any.whl (16 kB)
+Collecting sktime
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/eb/67/98c89e7a17691ca473b7cc7200f74e43e47ad61680db59bfe791f341b056/sktime-1.2.0-py3-none-any.whl (8.2 MB)
+     ---------------------------------------- 8.2/8.2 MB 75.1 MB/s eta 0:00:00
+Collecting PyWavelets
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/01/e2/06e08230c26049740b2773952fbb12cc7186e5df655a73b1c30ba493e864/pywavelets-1.8.0-cp310-cp310-win_amd64.whl (4.2 MB)
+     ---------------------------------------- 4.2/4.2 MB 89.4 MB/s eta 0:00:00
+Collecting datasets
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/24/cc/7f624629846c709ef1c68aa61bfb8d0ae2638cbe265104a1c2f7a630949e/datasets-5.1.0-py3-none-any.whl (604 kB)
+     ------------------------------------- 604.4/604.4 kB 39.6 MB/s eta 0:00:00
+Collecting wandb
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2f/e7/821c363f0a74aa9826ca058d3f6f8f8e41697001a0a869b5ccc7eca5b0e4/wandb-0.30.0-py3-none-win_amd64.whl (24.1 MB)
+     --------------------------------------- 24.1/24.1 MB 81.8 MB/s eta 0:00:00
+Requirement already satisfied: jsonschema in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (4.26.0)
+Collecting click>=7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl (125 kB)
+     ---------------------------------------- 125.3/125.3 kB ? eta 0:00:00
+Requirement already satisfied: frozenlist in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (1.8.0)
+Requirement already satisfied: protobuf!=3.19.5,>=3.15.3 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (7.34.1)
+Requirement already satisfied: requests in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (2.33.1)
+Requirement already satisfied: filelock in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (3.32.3)
+Requirement already satisfied: pyyaml in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (6.0.3)
+Requirement already satisfied: aiosignal in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (1.4.0)
+Requirement already satisfied: packaging in e:\anaconda\envs\persist_stable_251\lib\site-packages (from ray==2.10.0) (26.1)
+Collecting msgpack<2.0.0,>=1.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/28/7a/a00d5d7abc5601099260e0d0af8fadc54fbfac2191315aa56eaee3641d9d/msgpack-1.2.3-cp310-cp310-win_amd64.whl (75 kB)
+     ---------------------------------------- 75.6/75.6 kB ? eta 0:00:00
+Collecting dash-core-components==2.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/00/9e/a29f726e84e531a36d56cff187e61d8c96d2cc253c5bcef9a7695acb7e6a/dash_core_components-2.0.0-py3-none-any.whl (3.8 kB)
+Collecting retrying
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/67/f3/6cd296376653270ac1b423bb30bd70942d9916b6978c6f40472d6ac038e7/retrying-1.4.2-py3-none-any.whl (10 kB)
+Collecting importlib-metadata
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b3/55/ecca97ae19075f1fac62def77731e7f535e6c1fb8f92ff08160c5e6dade8/importlib_metadata-9.0.1-py3-none-any.whl (27 kB)
+Collecting plotly>=5.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e5/7d/905a3a3d51087515719058c94cfbda2ff0fc14417c20d557ae3e82d8b250/plotly-7.1.0-py3-none-any.whl (9.7 MB)
+     ---------------------------------------- 9.7/9.7 MB 77.5 MB/s eta 0:00:00
+Requirement already satisfied: nest-asyncio in e:\anaconda\envs\persist_stable_251\lib\site-packages (from dash==2.17.0) (1.6.0)
+Requirement already satisfied: setuptools in d:\baseline_reproduction_seed2021_v1\.venv\lib\site-packages (from dash==2.17.0) (79.0.1)
+Collecting Flask<3.1,>=1.0.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/61/80/ffe1da13ad9300f87c93af113edd0638c75138c42a0994becfacac078c06/flask-3.0.3-py3-none-any.whl (101 kB)
+     -------------------------------------- 101.7/101.7 kB 5.7 MB/s eta 0:00:00
+Collecting dash-html-components==2.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/75/65/1b16b853844ef59b2742a7de74a598f376ac0ab581f0dcc34db294e5c90e/dash_html_components-2.0.0-py3-none-any.whl (4.1 kB)
+Collecting Werkzeug<3.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6c/69/05837f91dfe42109203ffa3e488214ff86a6d68b2ed6c167da6cdc42349b/werkzeug-3.0.6-py3-none-any.whl (227 kB)
+     ---------------------------------------- 228.0/228.0 kB ? eta 0:00:00
+Requirement already satisfied: typing-extensions>=4.1.1 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from dash==2.17.0) (4.16.0)
+Collecting dash-table==5.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/da/ce/43f77dc8e7bbad02a9f88d07bf794eaf68359df756a28bb9f2f78e255bb1/dash_table-5.0.0-py3-none-any.whl (3.9 kB)
+Requirement already satisfied: axial-positional-embedding>=0.1.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from reformer-pytorch==1.4.4) (0.3.12)
+Requirement already satisfied: local-attention in e:\anaconda\envs\persist_stable_251\lib\site-packages (from reformer-pytorch==1.4.4) (1.11.2)
+Requirement already satisfied: product-key-memory in e:\anaconda\envs\persist_stable_251\lib\site-packages (from reformer-pytorch==1.4.4) (0.3.0)
+Requirement already satisfied: torch in e:\anaconda\envs\persist_stable_251\lib\site-packages (from reformer-pytorch==1.4.4) (2.8.0+cu128)
+Requirement already satisfied: einops in e:\anaconda\envs\persist_stable_251\lib\site-packages (from reformer-pytorch==1.4.4) (0.8.2)
+Collecting scikit-base<1.2.0,>=1.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/61/5c/a5147bb42b30d1c24362c342349656c5df20aa07479652313a17643e2bde/scikit_base-1.1.1-py3-none-any.whl (162 kB)
+     ------------------------------------- 162.6/162.6 kB 10.2 MB/s eta 0:00:00
+Requirement already satisfied: joblib<1.7,>=1.2.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from sktime) (1.3.2)
+Requirement already satisfied: scikit-learn<1.10.0,>=0.24 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from sktime) (1.7.2)
+Requirement already satisfied: pandas<3.1.0,>=1.5 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from sktime) (2.3.3)
+Requirement already satisfied: scipy<2.0.0,>=1.2 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from sktime) (1.15.3)
+Requirement already satisfied: tqdm>=4.66.3 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from datasets) (4.67.3)
+Requirement already satisfied: pyarrow>=24.0.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from datasets) (25.0.1)
+Requirement already satisfied: fsspec[http]<=2026.7.0,>=2023.1.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from datasets) (2026.7.0)
+Collecting dill<0.4.2,>=0.3.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1e/77/dc8c558f7593132cf8fefec57c4f60c83b16941c574ac5f619abb3ae7933/dill-0.4.1-py3-none-any.whl (120 kB)
+     -------------------------------------- 120.0/120.0 kB 7.3 MB/s eta 0:00:00
+Collecting xxhash
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6c/9b/4e8384b299b40664a225ce9deef54c42b3d59f5181a16d4a374ea3503f8f/xxhash-4.0.1-cp310-cp310-win_amd64.whl (37 kB)
+Collecting multiprocess<0.70.20
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e3/45/8004d1e6b9185c1a444d6b55ac5682acf9d98035e54386d967366035a03a/multiprocess-0.70.19-py310-none-any.whl (134 kB)
+     ---------------------------------------- 134.9/134.9 kB ? eta 0:00:00
+Collecting huggingface-hub<3.0,>=1.31.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/eb/b0/0f7b430fd100b3a3b037fdbb314878200241082e607b3383c63d91a13a72/huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+     ------------------------------------- 839.9/839.9 kB 55.3 MB/s eta 0:00:00
+Collecting opentelemetry-sdk>=1.43.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/95/3c/87c42b4bd6dd297536f04cd9383d212ac557ecd49f2cbdcd46da1c9ef5c8/opentelemetry_sdk-1.45.1-py3-none-any.whl (140 kB)
+     -------------------------------------- 140.1/140.1 kB 8.7 MB/s eta 0:00:00
+Collecting pydantic<3,>=2.6
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2d/eb/9146591cc819d040475bf7f2be786710c7f7eb8083693bf859728da2ca9c/pydantic-2.14.0-py3-none-any.whl (487 kB)
+     ------------------------------------- 487.1/487.1 kB 15.4 MB/s eta 0:00:00
+Requirement already satisfied: platformdirs in e:\anaconda\envs\persist_stable_251\lib\site-packages (from wandb) (4.9.6)
+Collecting opentelemetry-exporter-otlp-proto-http>=1.43.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/aa/1f/517eaa0187ba106a9da97160ce2add3a371812681dc440930b267f714e42/opentelemetry_exporter_otlp_proto_http-1.45.1-py3-none-any.whl (22 kB)
+Collecting opentelemetry-api>=1.43.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1e/41/f7dcf80b81ee8e71c1a2b59f14208bc723edbd89ed027a73b175abf6348e/opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+     ---------------------------------------- 60.3/60.3 kB ? eta 0:00:00
+Collecting itsdangerous>=2.1.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/04/96/92447566d16df59b2a776c0fb82dbc4d9e07cd95062562af01e408583fc4/itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Requirement already satisfied: Jinja2>=3.1.2 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from Flask<3.1,>=1.0.4->dash==2.17.0) (3.1.6)
+Collecting blinker>=1.6.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/10/cb/f2ad4230dc2eb1a74edf38f1a38b9b52277f75bef262d8908e60d957e13c/blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from fsspec[http]<=2026.7.0,>=2023.1.0->datasets) (3.13.5)
+Collecting httpx2<3,>=2.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d8/9c/6fe8931fd9f381042a9e4c7d5a7b4cbf7016b252bec0c99a49fce42c3326/httpx2-2.13.1-py3-none-any.whl (95 kB)
+     ---------------------------------------- 95.6/95.6 kB ? eta 0:00:00
+Collecting hf-xet<2.0.0,>=1.6.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4d/59/b35106dfa71b6eef605dc88bd038fe99c7f86fb132a15b60d0bf2f235b2c/hf_xet-1.7.0-cp38-abi3-win_amd64.whl (3.8 MB)
+     ---------------------------------------- 3.8/3.8 MB 48.3 MB/s eta 0:00:00
+Requirement already satisfied: tomli>=1.1.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from huggingface-hub<3.0,>=1.31.0->datasets) (2.4.1)
+Collecting opentelemetry-exporter-otlp-proto-common==1.45.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/84/aa/92f225d353904e7f70b8b3e3c1b02db0cf56f744c2e83c581dc372e78873/opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl (15 kB)
+Collecting googleapis-common-protos~=1.52
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/65/b9/6b29500a1c581ff4d77fd83c6568d068bee06f1b139fb6eb0a4f2d4bce8a/googleapis_common_protos-1.75.5-py3-none-any.whl (307 kB)
+     ------------------------------------- 307.7/307.7 kB 18.6 MB/s eta 0:00:00
+Collecting opentelemetry-proto==1.45.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ab/9a/42ec8180a769516ae757e893b69736826efceac7332553915b4528a91c6d/opentelemetry_proto-1.45.1-py3-none-any.whl (72 kB)
+     ---------------------------------------- 72.5/72.5 kB 4.1 MB/s eta 0:00:00
+Collecting opentelemetry-exporter-otlp-common==0.66b1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fc/39/8c23d67665c762aa51840fa06f86e902e8f6f1693bc8d7e3d98cd6e2f753/opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl (12 kB)
+Collecting opentelemetry-exporter-http-transport[requests]==0.66b1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/04/69/6af86ff66492b481c6a4c05dcfd68beb47ed8ba046440a26a2aac76b95c7/opentelemetry_exporter_http_transport-0.66b1-py3-none-any.whl (12 kB)
+Collecting opentelemetry-semantic-conventions==0.66b1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/bc/14/67f8aa798857f8cf686f515bf93d9bb877ce952ddc8efae0fa25b45ce0d6/opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl (206 kB)
+     ---------------------------------------- 206.3/206.3 kB ? eta 0:00:00
+Requirement already satisfied: tzdata>=2022.7 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from pandas<3.1.0,>=1.5->sktime) (2026.1)
+Requirement already satisfied: pytz>=2020.1 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from pandas<3.1.0,>=1.5->sktime) (2026.1.post1)
+Requirement already satisfied: python-dateutil>=2.8.2 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from pandas<3.1.0,>=1.5->sktime) (2.9.0.post0)
+Collecting narwhals>=1.15.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d1/89/5d4c86da1130d9059681e5b6cd7645df5c10279a6a079c5c37dcb2cc6f3f/narwhals-2.27.1-py3-none-any.whl (483 kB)
+     ------------------------------------- 483.2/483.2 kB 29.6 MB/s eta 0:00:00
+Collecting annotated-types>=0.6.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Collecting pydantic-core==2.50.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/00/0d/232cae06119357f3f0184e3d5ff409c52dab34a7481e7ea16e97d41ac8ca/pydantic_core-2.50.0-cp310-cp310-win_amd64.whl (2.2 MB)
+     ---------------------------------------- 2.2/2.2 MB 67.8 MB/s eta 0:00:00
+Collecting typing-inspection>=0.4.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Requirement already satisfied: idna<4,>=2.5 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from requests->ray==2.10.0) (3.11)
+Requirement already satisfied: certifi>=2023.5.7 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from requests->ray==2.10.0) (2026.4.22)
+Requirement already satisfied: urllib3<3,>=1.26 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from requests->ray==2.10.0) (2.6.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from requests->ray==2.10.0) (3.4.7)
+Requirement already satisfied: threadpoolctl>=3.1.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from scikit-learn<1.10.0,>=0.24->sktime) (3.6.0)
+Requirement already satisfied: sympy>=1.13.3 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from torch->reformer-pytorch==1.4.4) (1.14.0)
+Requirement already satisfied: networkx in e:\anaconda\envs\persist_stable_251\lib\site-packages (from torch->reformer-pytorch==1.4.4) (3.4.2)
+Requirement already satisfied: colorama in e:\anaconda\envs\persist_stable_251\lib\site-packages (from tqdm>=4.66.3->datasets) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.1.1 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from Werkzeug<3.1->dash==2.17.0) (3.0.3)
+Collecting zipp>=3.20
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b5/98/df615823cd9419131ce19fba00de53a663794369e198aade064a244b385d/zipp-4.1.1-py3-none-any.whl (10 kB)
+Requirement already satisfied: rpds-py>=0.25.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from jsonschema->ray==2.10.0) (0.30.0)
+Requirement already satisfied: attrs>=22.2.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from jsonschema->ray==2.10.0) (26.1.0)
+Requirement already satisfied: referencing>=0.28.4 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from jsonschema->ray==2.10.0) (0.37.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from jsonschema->ray==2.10.0) (2025.9.1)
+Requirement already satisfied: hyper-connections>=0.1.8 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from local-attention->reformer-pytorch==1.4.4) (0.4.9)
+Requirement already satisfied: colt5-attention>=0.10.14 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from product-key-memory->reformer-pytorch==1.4.4) (0.11.1)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.7.0,>=2023.1.0->datasets) (2.6.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.7.0,>=2023.1.0->datasets) (1.23.0)
+Requirement already satisfied: async-timeout<6.0,>=4.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.7.0,>=2023.1.0->datasets) (5.0.1)
+Requirement already satisfied: multidict<7.0,>=4.5 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.7.0,>=2023.1.0->datasets) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.7.0,>=2023.1.0->datasets) (0.4.1)
+Collecting truststore>=0.10
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/19/97/56608b2249fe206a67cd573bc93cd9896e1efb9e98bce9c163bcdc704b88/truststore-0.10.4-py3-none-any.whl (18 kB)
+Collecting idna<4,>=2.5
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl (69 kB)
+     -------------------------------------- 69.6/69.6 kB 189.6 kB/s eta 0:00:00
+Collecting httpcore2==2.13.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/09/ba/a4568248771ce81957bfb7cc600264a40fbcda092391ee1c415c50be4bea/httpcore2-2.13.1-py3-none-any.whl (83 kB)
+     ---------------------------------------- 83.4/83.4 kB 4.9 MB/s eta 0:00:00
+Requirement already satisfied: anyio>=4.10 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->datasets) (4.13.0)
+Requirement already satisfied: h11>=0.16 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from httpcore2==2.13.1->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->datasets) (0.16.0)
+Requirement already satisfied: torch-einops-utils>=0.0.20 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from hyper-connections>=0.1.8->local-attention->reformer-pytorch==1.4.4) (0.0.30)
+Requirement already satisfied: six>=1.5 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from python-dateutil>=2.8.2->pandas<3.1.0,>=1.5->sktime) (1.17.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from sympy>=1.13.3->torch->reformer-pytorch==1.4.4) (1.3.0)
+Requirement already satisfied: exceptiongroup>=1.0.2 in e:\anaconda\envs\persist_stable_251\lib\site-packages (from anyio>=4.10->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->datasets) (1.3.1)
+WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+Installing collected packages: dash-table, dash-html-components, dash-core-components, zipp, xxhash, Werkzeug, typing-inspection, truststore, scikit-base, retrying, pydantic-core, opentelemetry-proto, opentelemetry-api, numpy, narwhals, msgpack, itsdangerous, idna, hf-xet, googleapis-common-protos, dill, click, blinker, annotated-types, PyWavelets, pydantic, plotly, opentelemetry-semantic-conventions, opentelemetry-exporter-otlp-proto-common, opentelemetry-exporter-http-transport, multiprocess, importlib-metadata, httpcore2, Flask, opentelemetry-sdk, httpx2, dash, sktime, ray, opentelemetry-exporter-otlp-common, huggingface-hub, dash-bootstrap-components, opentelemetry-exporter-otlp-proto-http, datasets, wandb, reformer-pytorch
+  Attempting uninstall: Werkzeug
+    WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+    Found existing installation: Werkzeug 3.1.8
+    Not uninstalling werkzeug at e:\anaconda\envs\persist_stable_251\lib\site-packages, outside environment D:\baseline_reproduction_seed2021_v1\.venv
+    Can't uninstall 'Werkzeug'. No files were found to uninstall.
+  Attempting uninstall: numpy
+    WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+    Found existing installation: numpy 2.2.6
+    Not uninstalling numpy at e:\anaconda\envs\persist_stable_251\lib\site-packages, outside environment D:\baseline_reproduction_seed2021_v1\.venv
+    Can't uninstall 'numpy'. No files were found to uninstall.
+  Attempting uninstall: idna
+    WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+    Found existing installation: idna 3.11
+    Not uninstalling idna at e:\anaconda\envs\persist_stable_251\lib\site-packages, outside environment D:\baseline_reproduction_seed2021_v1\.venv
+    Can't uninstall 'idna'. No files were found to uninstall.
+  Attempting uninstall: huggingface-hub
+    WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+    Found existing installation: huggingface-hub 0.20.3
+    Not uninstalling huggingface-hub at e:\anaconda\envs\persist_stable_251\lib\site-packages, outside environment D:\baseline_reproduction_seed2021_v1\.venv
+    Can't uninstall 'huggingface-hub'. No files were found to uninstall.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+imageio 2.31.6 requires pillow<10.1.0,>=8.3.2, but you have pillow 12.3.0 which is incompatible.
+device 0.1 requires requests==2.0.0, but you have requests 2.33.1 which is incompatible.
+Successfully installed Flask-3.0.3 PyWavelets-1.8.0 Werkzeug-3.0.6 annotated-types-0.8.0 blinker-1.9.0 click-8.5.0 dash-2.17.0 dash-bootstrap-components-1.6.0 dash-core-components-2.0.0 dash-html-components-2.0.0 dash-table-5.0.0 datasets-5.1.0 dill-0.4.1 googleapis-common-protos-1.75.5 hf-xet-1.7.0 httpcore2-2.13.1 httpx2-2.13.1 huggingface-hub-2.2.0 idna-3.20 importlib-metadata-9.0.1 itsdangerous-2.2.0 msgpack-1.2.3 multiprocess-0.70.19 narwhals-2.27.1 numpy-1.26.4 opentelemetry-api-1.45.1 opentelemetry-exporter-http-transport-0.66b1 opentelemetry-exporter-otlp-common-0.66b1 opentelemetry-exporter-otlp-proto-common-1.45.1 opentelemetry-exporter-otlp-proto-http-1.45.1 opentelemetry-proto-1.45.1 opentelemetry-sdk-1.45.1 opentelemetry-semantic-conventions-0.66b1 plotly-7.1.0 pydantic-2.14.0 pydantic-core-2.50.0 ray-2.10.0 reformer-pytorch-1.4.4 retrying-1.4.2 scikit-base-1.1.1 sktime-1.2.0 truststore-0.10.4 typing-inspection-0.4.4 wandb-0.30.0 xxhash-4.0.1 zipp-4.1.1
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: D:\baseline_reproduction_seed2021_v1\.venv\Scripts\python.exe -m pip install --upgrade pip
+WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting patool
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d2/07/a7aefd5b3ee565b4d959bcf7061666c7fbf66ed83e58d07cdcdca35c9b33/patool-4.0.1-py2.py3-none-any.whl (86 kB)
+     ---------------------------------------- 86.5/86.5 kB 2.5 MB/s eta 0:00:00
+WARNING: Ignoring invalid distribution -ympy (e:\anaconda\envs\persist_stable_251\lib\site-packages)
+Installing collected packages: patool
+Successfully installed patool-4.0.1
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.1
+[notice] To update, run: D:\baseline_reproduction_seed2021_v1\.venv\Scripts\python.exe -m pip install --upgrade pip

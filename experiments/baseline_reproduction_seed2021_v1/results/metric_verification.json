@@ -1,0 +1,252 @@
+{
+  "complete": false,
+  "completed_metric_crosschecks": 21,
+  "full_raw_target_posthoc_audit_configs": 20,
+  "expected_configs": 24,
+  "remote_verify_results_allow_partial_exited_zero": true,
+  "results": [
+    {
+      "run_id": "DAG_NP_H24_seed2021",
+      "independent_metrics": {
+        "mse": 0.2017582054956512,
+        "mae": 0.23680809796578578,
+        "windows": 10461,
+        "all_origins_match": true,
+        "max_prediction_difference": 0.0,
+        "previous_mse": 0.2017582207918167,
+        "previous_mae": 0.23680809140205383,
+        "max_metric_abs_diff": 4.804277892178632e-09
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "DAG_NP_H360_seed2021",
+      "independent_metrics": {
+        "mse": 0.5277195137543976,
+        "mae": 0.45692173257067686,
+        "windows": 10125,
+        "all_origins_match": true,
+        "max_prediction_difference": 0.0,
+        "previous_mse": 0.5277194976806641,
+        "previous_mae": 0.4569217264652252,
+        "max_metric_abs_diff": 1.2189591003242128e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "DAG_PJM_H24_seed2021",
+      "independent_metrics": {
+        "mse": 0.05744242859758403,
+        "mae": 0.14328082739115244,
+        "windows": 10461,
+        "all_origins_match": true,
+        "max_prediction_difference": 0.0,
+        "previous_mse": 0.05744243040680885,
+        "previous_mae": 0.14328083395957947,
+        "max_metric_abs_diff": 2.7248273082314256e-10
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "DAG_PJM_H360_seed2021",
+      "independent_metrics": {
+        "mse": 0.12972416287568925,
+        "mae": 0.21757426166436955,
+        "windows": 10125,
+        "all_origins_match": true,
+        "max_prediction_difference": 0.0,
+        "previous_mse": 0.1297241598367691,
+        "previous_mae": 0.21757426857948303,
+        "max_metric_abs_diff": 9.98777061056444e-10
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_DLinear_H192_seed42",
+      "independent_metrics": {
+        "mse": 0.17153753212860026,
+        "mae": 0.27872260036219976,
+        "elements": 5238720,
+        "windows": 85,
+        "max_metric_abs_diff": 4.5916933033574026e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_DLinear_H336_seed42",
+      "independent_metrics": {
+        "mse": 0.19671606163567038,
+        "mae": 0.30600964698089667,
+        "elements": 8952048,
+        "windows": 83,
+        "max_metric_abs_diff": 3.834182291106991e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_DLinear_H720_seed42",
+      "independent_metrics": {
+        "mse": 0.23907836392582896,
+        "mae": 0.3442221032208051,
+        "elements": 17565120,
+        "windows": 76,
+        "max_metric_abs_diff": 1.253193760153426e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_DLinear_H96_seed42",
+      "independent_metrics": {
+        "mse": 0.15754704597153005,
+        "mae": 0.26755421393117595,
+        "elements": 2680992,
+        "windows": 87,
+        "max_metric_abs_diff": 4.999837566188603e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_iTransformer_H192_seed42",
+      "independent_metrics": {
+        "mse": 0.18122322197366017,
+        "mae": 0.29260808077592515,
+        "elements": 5238720,
+        "windows": 85,
+        "max_metric_abs_diff": 9.770798939379155e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_iTransformer_H336_seed42",
+      "independent_metrics": {
+        "mse": 0.1957089602269269,
+        "mae": 0.3078311174774516,
+        "elements": 8952048,
+        "windows": 83,
+        "max_metric_abs_diff": 7.457360257090428e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_iTransformer_H720_seed42",
+      "independent_metrics": {
+        "mse": 0.2535409130059669,
+        "mae": 0.3522150755641613,
+        "elements": 17565120,
+        "windows": 76,
+        "max_metric_abs_diff": 9.908308479245065e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_Electricity_iTransformer_H96_seed42",
+      "independent_metrics": {
+        "mse": 0.15746511559643625,
+        "mae": 0.2676209700998294,
+        "elements": 2680992,
+        "windows": 87,
+        "max_metric_abs_diff": 1.9162558262397766e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_DLinear_H192_seed42",
+      "independent_metrics": {
+        "mse": 0.4030508645538252,
+        "mae": 0.4143839828445224,
+        "elements": 3614016,
+        "windows": 2689,
+        "max_metric_abs_diff": 1.2435875718086464e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_DLinear_H336_seed42",
+      "independent_metrics": {
+        "mse": 0.43264215413066354,
+        "mae": 0.4342280292502061,
+        "elements": 5985840,
+        "windows": 2545,
+        "max_metric_abs_diff": 9.712246451520912e-08
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_DLinear_H720_seed42",
+      "independent_metrics": {
+        "mse": 0.4368372929470309,
+        "mae": 0.467428219498233,
+        "elements": 10891440,
+        "windows": 2161,
+        "max_metric_abs_diff": 3.9953096309108815e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_DLinear_H96_seed42",
+      "independent_metrics": {
+        "mse": 0.3640436002775681,
+        "mae": 0.39088159436883874,
+        "elements": 1871520,
+        "windows": 2785,
+        "max_metric_abs_diff": 1.4538469261804465e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_iTransformer_H192_seed42",
+      "independent_metrics": {
+        "mse": 0.42963832910633154,
+        "mae": 0.4453509062321592,
+        "elements": 3614016,
+        "windows": 2689,
+        "max_metric_abs_diff": 1.2214756078821054e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_iTransformer_H336_seed42",
+      "independent_metrics": {
+        "mse": 0.45184381693950093,
+        "mae": 0.46290709622052384,
+        "elements": 5985840,
+        "windows": 2545,
+        "max_metric_abs_diff": 1.6935017776997796e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_iTransformer_H720_seed42",
+      "independent_metrics": {
+        "mse": 0.5061900391615106,
+        "mae": 0.5123773870205353,
+        "elements": 10891440,
+        "windows": 2161,
+        "max_metric_abs_diff": 2.441143462927897e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "LatentTSF_ETTh1_iTransformer_H96_seed42",
+      "independent_metrics": {
+        "mse": 0.3943217671223567,
+        "mae": 0.42083890819409175,
+        "elements": 1871520,
+        "windows": 2785,
+        "max_metric_abs_diff": 1.0347506718133559e-07
+      },
+      "full_posthoc_raw_target_audit_passed": true
+    },
+    {
+      "run_id": "WorldTS_PJM_H24_seed2021",
+      "independent_metrics": {
+        "mse": 0.05751596967883973,
+        "mae": 0.14278754282707617,
+        "windows": 10461,
+        "max_metric_abs_diff": 1.4476780330063832e-09
+      },
+      "full_posthoc_raw_target_audit_passed": false
+    }
+  ],
+  "note": "20 full raw-target/scaler/hash posthoc checks passed remotely; result JSON was not collected before connection loss. PJM24 official and independent metric agreement was captured by SSH."
+}

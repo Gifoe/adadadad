@@ -1,0 +1,2 @@
+setting,dataset,seq_len,pred_len,step,model,is_latent,align_weight,perceptual_weight,mse_weight,cosine_weight,reconstruction_weight,actual_epochs,use_lradj,mae,mse,rmse,mape,mspe,max_memory_mb,training_time
+Electricity_iTransformer_H192_seed42,electricity,720,192,60,iTransformer,True,1.0,0.0,10.0,15.0,0.0,10,1,0.2926081,0.18122312,0.4257031,2.3751736,332837.94,1945.09326171875,0.0

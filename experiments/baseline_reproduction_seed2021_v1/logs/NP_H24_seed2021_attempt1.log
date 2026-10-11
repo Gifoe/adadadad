@@ -1,0 +1,10 @@
+D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\baselines\time_series_library\models\Crossformer.py:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  1 if l is 0 else self.win_size,
+D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\baselines\time_series_library\models\Crossformer.py:70: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if l is 0
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag.py", line 42, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',choices=['NP','PJM'],required=True);p.add_argument('--horizon',type=int,choices=[24,360],required=True);a=p.parse_args();execute(a.dataset,a.horizon)
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag.py", line 18, in execute
+    assert before.is_file() and sha(f)==sha(before),str(f);source_verification.append(str(f.relative_to(src)))
+AssertionError: D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\pipeline.py

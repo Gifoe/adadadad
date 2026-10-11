@@ -1,0 +1,13 @@
+{
+  "file_sha256_before": "cc52174161d7c9ec885a3595907e45d76688130ee1780b5aa4ef308ae4a6b46f",
+  "tensor_sha_before": "c88f2c75a46ad8a96689b463269b02fb29fa45792bc8a1423a3434fc384e5eb6",
+  "all_parameters_frozen": true,
+  "validation_unique_observation_points": 2880,
+  "reconstruction_mae": 0.015317376617020359,
+  "reconstruction_mse": 0.002817549622472277,
+  "scale": "train-only StandardScaler normalized",
+  "diagnostic_rng_preserved": true,
+  "file_sha256_after": "cc52174161d7c9ec885a3595907e45d76688130ee1780b5aa4ef308ae4a6b46f",
+  "tensor_sha_after": "c88f2c75a46ad8a96689b463269b02fb29fa45792bc8a1423a3434fc384e5eb6",
+  "unchanged": true
+}

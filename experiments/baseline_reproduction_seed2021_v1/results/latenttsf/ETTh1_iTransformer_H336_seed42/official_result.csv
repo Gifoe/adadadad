@@ -1,0 +1,2 @@
+setting,dataset,seq_len,pred_len,step,model,is_latent,align_weight,perceptual_weight,mse_weight,cosine_weight,reconstruction_weight,actual_epochs,use_lradj,mae,mse,rmse,mape,mspe,max_memory_mb,training_time
+ETTh1_iTransformer_H336_seed42,ETTh1,720,336,1,iTransformer,True,1.0,0.0,10.0,15.0,0.0,18,1,0.46290693,0.45184368,0.67219317,10.426551,44191.133,333.48876953125,0.0

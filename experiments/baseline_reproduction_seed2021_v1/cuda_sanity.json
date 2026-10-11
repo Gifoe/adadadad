@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "device": "NVIDIA GeForce RTX 5090",
+  "capability": [
+    12,
+    0
+  ],
+  "loss": 60.80171585083008,
+  "x_grad_norm": 4.726195812225342,
+  "w_grad_norm": 4.6512227058410645,
+  "free_total_bytes": [
+    28059998617,
+    34162016256
+  ],
+  "arch_list": [
+    "sm_61",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ]
+}

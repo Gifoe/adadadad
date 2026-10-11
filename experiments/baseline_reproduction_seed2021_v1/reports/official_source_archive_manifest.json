@@ -1,0 +1,3561 @@
+{
+  "archive_sha256": "e7f3ac069776876145f6a7104abbcaad3d2ce889bf21ed554d074d7e3927f89a",
+  "archive_bytes": 3238889,
+  "files": [
+    {
+      "path": "upstream/DAG/.gitignore",
+      "bytes": 54,
+      "sha256": "4cfd0b364f20e955096b745ed984c0c68f55d10352d8e2f034f543ce20c9b00c"
+    },
+    {
+      "path": "upstream/DAG/config/fixed_forecast_config_daily.json",
+      "bytes": 1157,
+      "sha256": "d0dd7ca0fb7fc710b53c5ccad154d5354cdced71c0784f810077b410e15ade92"
+    },
+    {
+      "path": "upstream/DAG/config/fixed_forecast_config_hourly.json",
+      "bytes": 1158,
+      "sha256": "f49a5a8387c524c946b4cdb68ab2927d928ae961216bcc0fe276dd4ae9007329"
+    },
+    {
+      "path": "upstream/DAG/config/fixed_forecast_config_monthly.json",
+      "bytes": 1160,
+      "sha256": "fe24959a29dcf5f3ed32efe121de1a8bf91e168512301cd2801934340cc97432"
+    },
+    {
+      "path": "upstream/DAG/config/fixed_forecast_config_other.json",
+      "bytes": 1155,
+      "sha256": "b08f6d97c6947c57bfb8f49841772d03a21bef2c816ffd16a3c11df66a7181c9"
+    },
+    {
+      "path": "upstream/DAG/config/fixed_forecast_config_quarterly.json",
+      "bytes": 1159,
+      "sha256": "b9d2dc44f8a80849ba6153bf6765da80a16acef1809c03a58d0ab96302507efc"
+    },
+    {
+      "path": "upstream/DAG/config/fixed_forecast_config_weekly.json",
+      "bytes": 1157,
+      "sha256": "c6b86661e19c40797ca0ce643b58d52fd5fe300da137e605ac8254a8fa7e32e0"
+    },
+    {
+      "path": "upstream/DAG/config/fixed_forecast_config_yearly.json",
+      "bytes": 1155,
+      "sha256": "eaae58c564575098b9695a58d665bf598e47a36c665f24db569e9209ad20a7f7"
+    },
+    {
+      "path": "upstream/DAG/config/rolling_forecast_config.json",
+      "bytes": 1432,
+      "sha256": "395169bda4b41d0bbf5631a8b57ea346f145b26596bcdf32eb31fb6d1f0ccb09"
+    },
+    {
+      "path": "upstream/DAG/docs/figures/icon.png",
+      "bytes": 35216,
+      "sha256": "a8fad538a6029379f8a35b26e6497fd35e823c85b31a5d23345d743f1a810705"
+    },
+    {
+      "path": "upstream/DAG/docs/figures/main.png",
+      "bytes": 443579,
+      "sha256": "66a5687b8ff754e64e502c7230b56ef42c8c7e565c74522b4b4e518cf801bb7e"
+    },
+    {
+      "path": "upstream/DAG/docs/figures/result1.png",
+      "bytes": 1435049,
+      "sha256": "188db0b444afc7c285482548a234fb019b3a8e85111887c7ffb0ac08cc6a002b"
+    },
+    {
+      "path": "upstream/DAG/LICENSE",
+      "bytes": 1062,
+      "sha256": "50a885e5eea0e0c5c39c417a4f602bf99c18e340ec494a4840b33f537c651501"
+    },
+    {
+      "path": "upstream/DAG/README.md",
+      "bytes": 3765,
+      "sha256": "240ced10160b28c05a502125eb0db605b5d7279d1eddbc958382317898f4b57a"
+    },
+    {
+      "path": "upstream/DAG/requirements.txt",
+      "bytes": 264,
+      "sha256": "712878e69f1222d24f54f7ed5e2d1769448988aea9da2159efa54dd98f9dfdfc"
+    },
+    {
+      "path": "upstream/DAG/scripts/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/DAG/scripts/run_benchmark.py",
+      "bytes": 10632,
+      "sha256": "f906c38dde7168206de494cfcd0fd769514e60172ea319e76add6f04eb21dfca"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/Amplifier.sh",
+      "bytes": 14292,
+      "sha256": "7145afd23e4adbc4383414561c7b23d138f9a4c45af13b6bb2e19ca51bda4612"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/CrossLinear.sh",
+      "bytes": 18076,
+      "sha256": "9e497d07a972639590934c9a0aa8050d4b1f774724cbb9e2b4f8b62900bcee41"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/DAG.sh",
+      "bytes": 18220,
+      "sha256": "2c74fa5c65076836dff9580af726e86cb6728d7bacfc7fdc03df018d93167b00"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/DLinear.sh",
+      "bytes": 16044,
+      "sha256": "69ebd8bc37708b795d6188997d3f23c5defd94de6840e6fee76cd743f207c918"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/DUET.sh",
+      "bytes": 19252,
+      "sha256": "c1f13668a4ffa3f1c1b11f34b5a55a780a61327a67119acd0e62c43c77980711"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/PatchTST.sh",
+      "bytes": 16256,
+      "sha256": "59312ffbc876a14796a533088f864e74478207c4dd2e94dec4fcfe55e88ef711"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/TemporalFusionTransformer.sh",
+      "bytes": 21700,
+      "sha256": "b58fccb9a4e872f028140150930453d5936ad10e770c7adeb1fa1a9fe0862062"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/TiDE.sh",
+      "bytes": 17372,
+      "sha256": "d3cf148f9bb53040b182daf87f7c591e07425867787bf76937e803d0c384298f"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/TimeKAN.sh",
+      "bytes": 17448,
+      "sha256": "5cc31d05d5df325943a92804dd95f166dbe48e3cccefa5d33765d4bb1b34e23e"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/TimeXer.sh",
+      "bytes": 13520,
+      "sha256": "6b43f86220cf9755eb7ce70d811acd6e8ad3578e921bc39550ea6314e310f48e"
+    },
+    {
+      "path": "upstream/DAG/scripts/TFB_wo_future/xPatch.sh",
+      "bytes": 14644,
+      "sha256": "5ca29d24c5a148efd3341a53cbf5a081366a6d127d6d6296c484071e991ac5f0"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/Amplifier.sh",
+      "bytes": 10679,
+      "sha256": "73677eccea4770410c2d6076f7a054e1ddbbed3914d1cf5182febedec473bcea"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/CrossLinear.sh",
+      "bytes": 12709,
+      "sha256": "41cd9c34d186a5b7f77b6e9ec3808577e81983c566ee7ba3372e925e1b792d11"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/DAG.sh",
+      "bytes": 14313,
+      "sha256": "f47f939cc6d6f0e37e7943c999d16bdca1b655b780b1f1c5874d905a4584d0e5"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/DLinear.sh",
+      "bytes": 11993,
+      "sha256": "147581e0f517a580cf4a1ecde3fd792c42f746463da82ea81f9208d20d95d706"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/DUET.sh",
+      "bytes": 6269,
+      "sha256": "8da73c977e453f5eaab2f46c59189cd4357a92bb59ba82cbf731fe28fb584eea"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/GCGNet.sh",
+      "bytes": 11698,
+      "sha256": "f41276757caf97f8253b90bad0ca1cb664b70f82f02905df6a9418631a9e8feb"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/PatchTST.sh",
+      "bytes": 12409,
+      "sha256": "8b6cefadd7b030bd486275ebedf9218ef049e434e8ca4ed445e8f6ac5060fc0b"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/TemporalFusionTransformer.sh",
+      "bytes": 17239,
+      "sha256": "02eca5f831f91753516d00d87799bf9cfcb89c5bf72a4123a72e5b0e99ac4446"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/TiDE.sh",
+      "bytes": 13093,
+      "sha256": "4de6917e0be3ce80a8f8b15909472b2b9f478412e27cff3aafda0a020101042b"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/TimeKAN.sh",
+      "bytes": 13973,
+      "sha256": "52326ce18adf1e68430973342ada8e36894728b7140f0f62dd861635ca307854"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/TimeXer.sh",
+      "bytes": 13595,
+      "sha256": "23439e691f19dda7a85f369826d1cdc7df93058e489c66b7bf3af13afc7e1d3e"
+    },
+    {
+      "path": "upstream/DAG/scripts/w_future/xPatch.sh",
+      "bytes": 11637,
+      "sha256": "d07063c7b5a4969a20733675b86716870bcb3c5bd91f04db1f220acc6ffc45ee"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/Amplifier.sh",
+      "bytes": 10692,
+      "sha256": "e3a679cae512e72238fc5b6a37709433ecfa69a803dbefbfdaabef8fcb155645"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/CrossLinear.sh",
+      "bytes": 13430,
+      "sha256": "e8ef4604d7c1191680bf82d87d849c83243ee1cf9250083f30b27f4e6c3c09ef"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/DAG.sh",
+      "bytes": 13842,
+      "sha256": "26c080c19b9e6af814a5ca523de916862898898100004c569d18cc54e734ecf1"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/DLinear.sh",
+      "bytes": 11990,
+      "sha256": "0ee9df439798ac7e16ddf29f4327d4a68307b7ac716797e07466b37740e8f58f"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/DUET.sh",
+      "bytes": 14540,
+      "sha256": "d742db7da06021257573ae6d986f631e653a9aed478c9e037650dda03cf89698"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/GCGNet.sh",
+      "bytes": 12175,
+      "sha256": "e55e3051b84ccc5773a3c4d4dd03f1888805075179465b4092abecc81a32aca5"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/PatchTST.sh",
+      "bytes": 12310,
+      "sha256": "554322f5cfa6a6278b14d886ce568f0ba07b0f2fd330886c1340c1569e06a9a4"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/TemporalFusionTransformer.sh",
+      "bytes": 16220,
+      "sha256": "bc58f39898a50cf8f72cdb577f2007a8356e8b73a362f3dc05920fa13fd39fea"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/TiDE.sh",
+      "bytes": 12950,
+      "sha256": "026f51405f592b43ab866cfcaf142d4a19e52fd08833aba877897a37b195f58b"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/TimeKAN.sh",
+      "bytes": 7648,
+      "sha256": "d1d6c58797673a7260cb427d2c21492e9544b409811ba67b39206112cc22c2ad"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/TimeXer.sh",
+      "bytes": 10144,
+      "sha256": "bb7f7146da72445e3f9f80e80fa4d44fe757b850a356048e41520401333593ca"
+    },
+    {
+      "path": "upstream/DAG/scripts/wo_future/xPatch.sh",
+      "bytes": 6424,
+      "sha256": "1250dd2bec98cd503a44dd7cd4f87da0a84b45d3028c9d09afc1fe732045d765"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/__init__.py",
+      "bytes": 450,
+      "sha256": "90281d85719c9c99925c5958474aa70933cfde24e6ba7e5f2ef65d5679a5eeef"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/amplifier/__init__.py",
+      "bytes": 90,
+      "sha256": "70523b4baa62790acdba215befee07ce7bc3e41e229ace83490a52bafc6cfd01"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/amplifier/amplifier.py",
+      "bytes": 2346,
+      "sha256": "14123b971554acdfed1bdf9e5b711a36f1966b1e8dbfb405db07ff43fe73936e"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/amplifier/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/amplifier/layers/RevIN.py",
+      "bytes": 2054,
+      "sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/amplifier/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/amplifier/models/amplifier_model.py",
+      "bytes": 4707,
+      "sha256": "f51b60d2aec8f106fcde92642d938a9fd49bb84c67e0155227d63d1b32401532"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/crosslinear/__init__.py",
+      "bytes": 104,
+      "sha256": "7237650dd13e5787ab18d003458f949ee544aaa5d158568b7e68367172c58935"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/crosslinear/crosslinear.py",
+      "bytes": 1975,
+      "sha256": "e93da167d7e17c5bc2db385d1010a724114f26242bbf1c4d18818d8c987fa4c7"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/crosslinear/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/crosslinear/layers/SelfAttention_Family.py",
+      "bytes": 12378,
+      "sha256": "aa7ecc50c907ff12265c420d9bac2db2c7002129125910de638d997d1bac04af"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/crosslinear/layers/Transformer_EncDec.py",
+      "bytes": 4930,
+      "sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/crosslinear/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/crosslinear/models/crosslinear_model.py",
+      "bytes": 4472,
+      "sha256": "983c02b0c53846b6f4ecc231737e17c68830dbdad7066d916f80ebde56c4f5c0"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/__init__.py",
+      "bytes": 71,
+      "sha256": "7c86cc07a3461809e7937f8925c44ce605069276ca9aedf5bfc5c70a4eb50b3e"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/dag.py",
+      "bytes": 2180,
+      "sha256": "41165990881828a43d837791810fded5b6e429834e5970fd59686ced33ba4145"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/layers/CC_EncDec.py",
+      "bytes": 7411,
+      "sha256": "48710ae9b8abc79642d4adb9a728442281103145614772e524f6f8310cfb8339"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/layers/Embed.py",
+      "bytes": 7544,
+      "sha256": "531047e17c50357d0093b54bdae33dad0f923c1670629c7d7127ecc94a85ca00"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/layers/SelfAttention_Family.py",
+      "bytes": 12563,
+      "sha256": "486f5493c3f7214ca7d32f88248cb83752235b94b93204c2a5a36ce46525a778"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/layers/TC_EncDec.py",
+      "bytes": 7181,
+      "sha256": "094fc25f070794f7545a4e07019fea34ec228e7e6d9d341acf7e68469351c9ef"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/layers/Transformer_EncDec.py",
+      "bytes": 5365,
+      "sha256": "c3bb0a411a6df5bdb86f33589ae851304907084974c0a155138f1902aae653d3"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/models/dag_model.py",
+      "bytes": 3231,
+      "sha256": "d26c3d861f10faeb6a48ea7ffe9064ec385e3152e584eca8cc96862d408dec79"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/dag/utils/tools.py",
+      "bytes": 2072,
+      "sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/darts/__init__.py",
+      "bytes": 3307,
+      "sha256": "7efcd56b8238552029f74d8c27b5878e01a874c5d6e5c6111f91f343f59602b8"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/darts/darts_models.py",
+      "bytes": 16299,
+      "sha256": "8ad3b9521a41bdf5da96e7885ff38664bfd82c21737e3e4afd32bdd5d0a4b6b4"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/deep_forecasting_model_base.py",
+      "bytes": 39954,
+      "sha256": "f1fbedd56ac1b1d3fd841ac57f2374a69a28e9c6199f627a02457e325647fa3c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/__init__.py",
+      "bytes": 70,
+      "sha256": "c43ec25f878da9ac296a9a14be464328c202f60df1e0c8366eba6676c1ab1959"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/duet.py",
+      "bytes": 1807,
+      "sha256": "5389dd6801683f46d5d3ab0ef9a5f2c7863c071db6cdff3fcc6478d320ce1794"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/Autoformer_EncDec.py",
+      "bytes": 7065,
+      "sha256": "f3cda7c36b43e4a959f9f6c6a69487aaa7338e6d4dd8ce7045484ab67adc84a6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/distributional_router_encoder.py",
+      "bytes": 604,
+      "sha256": "4c07daaf45ece7df1e007c224513df7d6a5eba455b59dd49a1a5caa0c5bcd76c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/Embed.py",
+      "bytes": 7087,
+      "sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/linear_extractor_cluster.py",
+      "bytes": 12493,
+      "sha256": "46ec8d4986e5579ce93066a205f4986ec2bfbc90a7fc221cd6a29ef0726754e1"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/linear_pattern_extractor.py",
+      "bytes": 3204,
+      "sha256": "558becad06d912ebe8012f71b348b58e677c0acfcd0856ff48fdb42025fa3f0e"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/RevIN.py",
+      "bytes": 2145,
+      "sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/SelfAttention_Family.py",
+      "bytes": 12348,
+      "sha256": "cb1266e7aadee3da2040966029f08e5fe30d391d09f06600480e11e3938172db"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/layers/Transformer_EncDec.py",
+      "bytes": 4930,
+      "sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/models/duet_model.py",
+      "bytes": 2770,
+      "sha256": "840690b13fecdd08fdc4a602f3d700ede940731a29ad0fe1de7830b7bb9b22b7"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/utils/losses.py",
+      "bytes": 3598,
+      "sha256": "6e455268b25c90d6b1b9f763d991c7e67775e306caa26f7ef3eb1a9ae5d74f62"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/utils/masked_attention.py",
+      "bytes": 7143,
+      "sha256": "edc17a01d813f6847d847b21ac53c9cb090af99e0b4d35c530d588f182bdb57c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/utils/timefeatures.py",
+      "bytes": 4369,
+      "sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/duet/utils/tools.py",
+      "bytes": 809,
+      "sha256": "6aefce4f1b80053cb4a4b72520800ede25f585efe93f4aef0f90bf2bc69fe285"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/fits/__init__.py",
+      "bytes": 102,
+      "sha256": "bb6cab0598fc945352226b64dba86939f35e007fd285a4c1a34e027b23b494ff"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/fits/fits.py",
+      "bytes": 1497,
+      "sha256": "92a1ee689100ced06a3cf9cc19a8b57a997863538501b7bef8695461bf9913a3"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/fits/fits_model.py",
+      "bytes": 3097,
+      "sha256": "300299770ad2eba76aa00fa63bd6a9cb74ea025bcc29a88fc710cab4958d6478"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/__init__.py",
+      "bytes": 84,
+      "sha256": "29a8f8bece6257fc35df87a0391b903ddc26bae375a2457b74a5ee99e958649c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/GCGNet.py",
+      "bytes": 35284,
+      "sha256": "55b0a4df5a115145e61eff762d38a99179186627bfa041769dab6a887fab0a45"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/layers/blocks.py",
+      "bytes": 5438,
+      "sha256": "ea0f3e4fa08c0fdead367d6c1004e67d4aaa9ca01dd5dc15b443352e81779da4"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/layers/Embed.py",
+      "bytes": 1707,
+      "sha256": "45a7be70bf31772a752edda304903a5047490ac52e8c11bc5f90d8a383d9261a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/layers/graph.py",
+      "bytes": 4760,
+      "sha256": "595beb743d9738306612ab5edb0530b6a21d87efcfd16162fa071ce1e88fe373"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/models/gcgnet_model.py",
+      "bytes": 7858,
+      "sha256": "61ac164c8cb134512a85a7a51b40c31e0850f5558e3d24c651fa3e6ffbb1b8ba"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/utils/tools.py",
+      "bytes": 2072,
+      "sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/GCGNet/utils/utils.py",
+      "bytes": 17326,
+      "sha256": "a43f673727074bad86ca31073fe888c0ec4129598a683b9ef36232be9eba8ce6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/hdmixer/__init__.py",
+      "bytes": 82,
+      "sha256": "d6b8ae34e54473afcca8d9329bcc0b2937199bbed989f49a7a2bf3ce4c7a9d0c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/hdmixer/hdmixer.py",
+      "bytes": 2404,
+      "sha256": "2ae6530a93787aad4845dcbcb25d755143c980ba90f383b0dd8cb6b1a423f493"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/hdmixer/layers/box_coder1D.py",
+      "bytes": 4484,
+      "sha256": "0cda4df0f8bb85b5d633aa0e9499491e5ea018570ee9c9acce6d2b14370d1bc9"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/hdmixer/layers/PatchTST_layers.py",
+      "bytes": 5017,
+      "sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/hdmixer/layers/RevIN.py",
+      "bytes": 2054,
+      "sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/hdmixer/models/HDMixer.py",
+      "bytes": 18631,
+      "sha256": "91f4f864fda1687c3ac66806e7b42663ac49c2fbc0b3e12eae0bfdc2a6ad1213"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/merlion/__init__.py",
+      "bytes": 1559,
+      "sha256": "46b6c119be103aa8bf78e62ec90ada752b585ba9bcab4e76c30efb72205a3487"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/merlion/merlion_models.py",
+      "bytes": 7409,
+      "sha256": "929aa682084e2a406c755429abef4c933b4bad6f8a714987122f2ae86359e420"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/patchmlp/__init__.py",
+      "bytes": 86,
+      "sha256": "7722ed05ac21e9354a8591a762c37feedec8b14b7c536a98371bd607cb432c77"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/patchmlp/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/patchmlp/layers/Embed.py",
+      "bytes": 6756,
+      "sha256": "9ed34a9f29d99bf0e1ec9b7897664d160e335e469516b7cb0fcfaf53db359d9f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/patchmlp/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/patchmlp/models/patchmlp_model.py",
+      "bytes": 3867,
+      "sha256": "9e2ebba9cdd880fb7148f4e5244f30ca53b69bb55fb15844ff4fb5e2e43bfd6d"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/patchmlp/patchmlp.py",
+      "bytes": 2479,
+      "sha256": "fc0eb30187f7a5296879b5e9e5a4de572980a693af103c242f3a1804808145f5"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/__init__.py",
+      "bytes": 126,
+      "sha256": "c20f792c95a58d5a3843da94854e608c3ea921962694d12a12e7d51b06342d10"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/layers/AMS.py",
+      "bytes": 6399,
+      "sha256": "15a42978e8eb485b4445b7e21c760fa5312fd7a4bba0509df0861ff7ec965efc"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/layers/Embedding.py",
+      "bytes": 8209,
+      "sha256": "d6aa6ba87b6f01a7cb658b6ada8cce6bc8cf8c5aa0de58404c25d865e74bed8a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/layers/Layer.py",
+      "bytes": 17011,
+      "sha256": "636265ea5b3ac794f121e2dbce9891ad1bf5fee461d19f39db0492d855d4b11d"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/layers/RevIN.py",
+      "bytes": 2054,
+      "sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/models/pathformer_model.py",
+      "bytes": 2886,
+      "sha256": "faf7267a9d6e681a9db4cfa2993a0e12ceff7ca5fe608ef734084485fb1c07ba"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/pathformer.py",
+      "bytes": 3460,
+      "sha256": "7edd1e5524d316e132360c43ff5624cbbd1ff7654d58df79ca5abfb87c105882"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/utils/decomposition.py",
+      "bytes": 1560,
+      "sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/utils/metrics.py",
+      "bytes": 967,
+      "sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/utils/Other.py",
+      "bytes": 7702,
+      "sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pathformer/utils/tools.py",
+      "bytes": 1529,
+      "sha256": "a2bd8f38ec42b62cdb6c2717065c3d2f25ebc6a90ebd520187ffb504aa8e59e5"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/__init__.py",
+      "bytes": 156,
+      "sha256": "b2f5861cc63b88a27a4d9b667769a1ed2001bbd553cefc2b6f3d8f8bf14fdf0a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/layers/__init__.py",
+      "bytes": 81,
+      "sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/layers/PDF_backbone.py",
+      "bytes": 23524,
+      "sha256": "43a90474eabebcdf1b392157374db20f5723a5e9183628b820dbd64e7c668955"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/layers/PDF_layers.py",
+      "bytes": 5017,
+      "sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/layers/RevIN.py",
+      "bytes": 2145,
+      "sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/models/__init__.py",
+      "bytes": 81,
+      "sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/models/PDF.py",
+      "bytes": 3302,
+      "sha256": "af8444b5b8da87307cc72e61af44e20e4a957297d51ec13852ece026a5d72a64"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/PDF.py",
+      "bytes": 3590,
+      "sha256": "f4efc12137795a5a2e9d8baa7e9dca5282d76e62887a96c494b4121b4ea5c254"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/utils/decomposition.py",
+      "bytes": 1560,
+      "sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/utils/metrics.py",
+      "bytes": 967,
+      "sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/utils/Other.py",
+      "bytes": 7702,
+      "sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/pdf/utils/tools.py",
+      "bytes": 1393,
+      "sha256": "c0340cb24dd2f9e9a4e52abc4e96dd839fdd82c37a0e54f9da5a6882e0a5d5ad"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/self_impl/__init__.py",
+      "bytes": 96,
+      "sha256": "7658d0f7faafe786d22e8ce0352d45598bba3398d1a80cb9883bddd3aed8b4ee"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/self_impl/VAR/VAR.py",
+      "bytes": 2341,
+      "sha256": "8523d69d83b701b83c56f7f10772a8b6ef560c46c84351c319d82ce71b4c5a61"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/tag_csv/darts_tag.csv",
+      "bytes": 636,
+      "sha256": "2eee192b1e812f7d4e7a8deb96e4a2906d7fd875fc60e2668eca00a082abd1b8"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/tag_csv/other_methods_tag.csv",
+      "bytes": 44,
+      "sha256": "a26dc7427baeb9006b267c9f9f6e76c7d8b8c99bcd8977349a1369b6dd703ba0"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/tag_csv/tslib_tag.csv",
+      "bytes": 327,
+      "sha256": "6848e0cce1777c789a7410f1a41d8dd6358c4c4b194571bf0893d78584fa81d0"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/__init__.py",
+      "bytes": 2353,
+      "sha256": "00ad3153b353cd53c7942e4b22b7f58fe7b4f4ae3f45cb6d06ea644d793adb12"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/adapters_for_transformers.py",
+      "bytes": 4095,
+      "sha256": "3c8eb2d4046622c94d9171432ed324f18b5e0031bd42c2e11b5421b4519a5027"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/AutoCorrelation.py",
+      "bytes": 6831,
+      "sha256": "0491f29e5a6cc70f25d3fd53e28e039868a2302395c16144db9e550a24144e96"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/Autoformer_EncDec.py",
+      "bytes": 7069,
+      "sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/Conv_Blocks.py",
+      "bytes": 2655,
+      "sha256": "e7b13cb38557718338e041b535deafc6a4e870f23f3a599a895d2ae26c99e7de"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/Crossformer_EncDec.py",
+      "bytes": 4589,
+      "sha256": "c57cc68d8aa3b4910e8e511c6c4345630e2b3a9da2e45b98407ec87d4c54996c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/Embed.py",
+      "bytes": 7087,
+      "sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/ETSformer_EncDec.py",
+      "bytes": 11571,
+      "sha256": "d8c189515226413e371db399aadb00aa379c2b5d93db5cb0fbcf68003b76f4e1"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/FourierCorrelation.py",
+      "bytes": 8236,
+      "sha256": "62e920667402eb0fe23d9c42c19214dc91b7fe58641e98fe2f757bfbc6bf7c87"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/MultiWaveletCorrelation.py",
+      "bytes": 24381,
+      "sha256": "d16680006abe1ddda2ed3186968ad6ec6eca84680b9c533b3d98567e721cd090"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/Pyraformer_EncDec.py",
+      "bytes": 7818,
+      "sha256": "1b7603e1ffbee7277ba2cbe30e045ed263a469d4639b7b58841e2f06e058f141"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/SelfAttention_Family.py",
+      "bytes": 12390,
+      "sha256": "c3a45401d0dd532df45e85da2d158c056b7eb07337dacf053f8aeb698c26dc59"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/StandardNorm.py",
+      "bytes": 2261,
+      "sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/layers/Transformer_EncDec.py",
+      "bytes": 4930,
+      "sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Autoformer.py",
+      "bytes": 7446,
+      "sha256": "b2be3b094537beb7ef74cd2ddf546a716dcc006d98ebee606423464ea43397d8"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Crossformer.py",
+      "bytes": 7342,
+      "sha256": "bdb699e8dbc70f072357367f2f105df6977779facaea3ba6bdb22711d82f7ad9"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/DLinear.py",
+      "bytes": 4726,
+      "sha256": "9b5cade2b638346c398991b49cbd4a0a7f84fe0b39cf2725ef33d959aa7958fa"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/ETSformer.py",
+      "bytes": 5041,
+      "sha256": "0689de5fb2984207241a2b51b8da9186865a06d6471366cf5c8b0cc93824e59f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/FEDformer.py",
+      "bytes": 8218,
+      "sha256": "cd2ce6d7864bb681f42d3c4d96a6aeb7942bd5a00fbf76da361b9585ba06eb94"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/FiLM.py",
+      "bytes": 12209,
+      "sha256": "dfe2a908ffceb7c08f5384d0460c36df7222726eaaa9c19fd141c36e25167c5d"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/FreTS.py",
+      "bytes": 4780,
+      "sha256": "eecfbc156bc9a7df0d97b9f2794174bc7d17c6add4f41df94e145ba5e701d3e9"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Informer.py",
+      "bytes": 7133,
+      "sha256": "e4d9ddff37c549de415cd06521d5c41fa69e51b2cb58b3be1bf387accb54fea1"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/iTransformer.py",
+      "bytes": 6146,
+      "sha256": "27f0e509152fdbb8e2b4d2236a82deab4e29052731ddd21bcf9c641518fa4ab6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Koopa.py",
+      "bytes": 13731,
+      "sha256": "b24e0eb202aa28ab7961310c2abf4cd9a8abdf2c4a491b588a9f7be8ff604778"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/LightTS.py",
+      "bytes": 5519,
+      "sha256": "cc756ac30d283c6839fbc4fdfae513be152caaf8eae51c1b04ed8bef0f277236"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/MICN.py",
+      "bytes": 10774,
+      "sha256": "b11f146e5bc4c54ac3f2a69a15577c47132227f7e27e48db91926828d1b023f0"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Nonstationary_Transformer.py",
+      "bytes": 10893,
+      "sha256": "0ceba484602a40a0b6e8156d2d53eaa9e5a2145c4aa6c238e56bfc1204f89d9f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/PatchTST.py",
+      "bytes": 9020,
+      "sha256": "c6b3247a8ac0584218c367629bc391d3bb5cc972aed29287f48f8734ed9612ca"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Pyraformer.py",
+      "bytes": 4297,
+      "sha256": "050222339617ca355cc3f8f65933849d50a0f2a579a932643fbb95a51324227f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Reformer.py",
+      "bytes": 5302,
+      "sha256": "3cf00b4375b81d5bf07be0d2f4af956beb59c222fe377637ad05b54177ff140c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/SegRNN.py",
+      "bytes": 4495,
+      "sha256": "9fe71e22611bf34c93169dc16a64e582fb0251cfd4f686865d9f465da8c468ab"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/TemporalFusionTransformer.py",
+      "bytes": 17692,
+      "sha256": "84d191e8933c7a501f7bb50ce996aa6023fd464d05a581887b7fa1696cdbe555"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/TiDE.py",
+      "bytes": 10427,
+      "sha256": "f6097046640636eee52f370191ce9f397f8c77ba3ea8879ebc881edc47d5be02"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/TimeMixer.py",
+      "bytes": 20519,
+      "sha256": "374f3f6443509ae07bd12cb89cd5b9204f9fceaea5d43b92d81516be9663edfa"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/TimesNet.py",
+      "bytes": 8656,
+      "sha256": "d13f132a4bb0782bdc78b3ab42a14adb31e5582121bc0c2719b0ef6dbe99e6e6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/Transformer.py",
+      "bytes": 6381,
+      "sha256": "b23b111d857273cc2e5d0c01d598e751cc7c8914dcd0870f0430fc2aaf816b22"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/models/TSMixer.py",
+      "bytes": 1821,
+      "sha256": "88b859c09e56495c03dba84b366df8b43574ac0e2430c8609e650232b48e8288"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/patchs/Linear.py",
+      "bytes": 2854,
+      "sha256": "f860e53ab52069d788b742ed2511e21f8d410276d826afdf6a773e13dfb9a31c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/patchs/NLinear.py",
+      "bytes": 2946,
+      "sha256": "d1be9098965503b2249ab3396f3f95526eb865b2c10a297587a803aed8b7b208"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/patchs/Triformer.py",
+      "bytes": 11234,
+      "sha256": "fb314cf2573be23a765b4dc4bccc1fbae5feff0b91b9a6b1a9172db0e44376f7"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/utils/losses.py",
+      "bytes": 3600,
+      "sha256": "0a6acaed2583dd99684f114a0bb5a7a52c49fe4933096b5d97a316433813be0f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/utils/timefeatures.py",
+      "bytes": 4369,
+      "sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/time_series_library/utils/tools.py",
+      "bytes": 3356,
+      "sha256": "3f0b89a47e4a4d1277aed278b529e41fb50d6354215525b589f37b778a531ab2"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/__init__.py",
+      "bytes": 82,
+      "sha256": "554aeaee423422a6be800e09a03c2fed5fa00fc44940721b667479c0d1eb54bf"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/layers/Autoformer_EncDec.py",
+      "bytes": 7069,
+      "sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/layers/ChebyKANLayer.py",
+      "bytes": 1952,
+      "sha256": "801501991050aac8a4a18c64ce646dbcf3ce581b8b4a7f9c18bb3b5631e352e5"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/layers/Embed.py",
+      "bytes": 8965,
+      "sha256": "b02403e62ebecce8eb691db36292353ad6828f641d8356b39f2184373784f267"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/layers/StandardNorm.py",
+      "bytes": 2261,
+      "sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/models/timekan_model.py",
+      "bytes": 9944,
+      "sha256": "0c182dcc148142777a164db2ef8d60b683fc42050639b753f0061da2fca9d2d3"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/timekan.py",
+      "bytes": 2047,
+      "sha256": "8af30bb204503c87a7094336a4b64e9fd9c4781c57a672003c72120a5bce7c92"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/utils/metrics.py",
+      "bytes": 935,
+      "sha256": "1b3e57f39efab3bc5c671bb378cd0af2a48ca5baa4df8b115cbede3b2ce7c83b"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timekan/utils/tools.py",
+      "bytes": 4060,
+      "sha256": "a0fd30a013010af2cafd658a936c9298067d332ca1ab0a7e90f25579dd289ef6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timexer/__init__.py",
+      "bytes": 88,
+      "sha256": "724cea5015b1f0eb528bed8fb289dab7624dd20660c3b6fdd05e3f3e9521f29d"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timexer/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timexer/layers/Embed.py",
+      "bytes": 6941,
+      "sha256": "48b2dc4262a7d82334905c8f433a6222299f35baffe2bcdd671f78f26d27d233"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timexer/layers/SelfAttention_Family.py",
+      "bytes": 12102,
+      "sha256": "062e4c761128407755d312b798b95647f566669c15cf0a6c1bb86c96bdb4999b"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timexer/model/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timexer/model/timexer_model.py",
+      "bytes": 8335,
+      "sha256": "3eccd0e184467cbc9b0c5db4868acdc581d3d8bdb0442777a7e1ff4b07826a07"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/timexer/timexer.py",
+      "bytes": 1866,
+      "sha256": "50b654a5e257b3e351beb908780eb35a9bc45cea5c1eaffcba44106dd9437a44"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/utils.py",
+      "bytes": 17042,
+      "sha256": "a5f40a51367c6b62600c7cea076575dcfc142fc59e66b61c2055af695afcd1fc"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/__init__.py",
+      "bytes": 78,
+      "sha256": "0fdcb8ea5a855c4b1f7db068ac0bbdda779abe6e1b674b63af09a4072aed04d1"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/layers/decomp.py",
+      "bytes": 520,
+      "sha256": "d4accfda080c686c9d14ab28da4fa1b6f02d55a4b8a5b97b204a5259aa66a2c2"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/layers/dema.py",
+      "bytes": 1031,
+      "sha256": "25c0f664d626161c8fbfa2968fa3db7fa27c4214f145164ea3132f0e03baccc6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/layers/ema.py",
+      "bytes": 1395,
+      "sha256": "8d4ff9bc29a6171ccbbd1353d5367298ce23e19a5fb13fab11a527ca88724715"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/layers/network.py",
+      "bytes": 3853,
+      "sha256": "1003531371c1bad9311c2235df01a9b9368e2fb011cd05d27c6d08e23eda1bde"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/layers/network_cnn.py",
+      "bytes": 2891,
+      "sha256": "1c17edd2b515cb1f54960125fc50ffaead39564bc241b2d7b059ad24de5eb95c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/layers/network_mlp.py",
+      "bytes": 1351,
+      "sha256": "f7f9e79c58cff4b97dc4ac59954ac6e1c987811a559365d150b6e4793d9271cf"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/layers/revin.py",
+      "bytes": 2053,
+      "sha256": "5c41332e9975c6ec4d2d6ab0492322e278c2db855462ad5a404fc4393ef916b6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/models/xPatch.py",
+      "bytes": 2236,
+      "sha256": "d32ce88b7742bdf1413e9869df29dc194ef7796a9191d026754de7594d8cbd7f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/utils/metrics.py",
+      "bytes": 999,
+      "sha256": "cf212398c1f001f4ef411b48e3b2da447155cfb8684065e87eb31b8cbd958112"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/utils/tools.py",
+      "bytes": 3497,
+      "sha256": "fe034e4f5f949dd28e93df934d23beb8d5d3fef2b15f55b75bda9c275245a141"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/baselines/xpatch/xpatch.py",
+      "bytes": 2027,
+      "sha256": "8571dce8cd1a48239a45ded3dc5eea6f553fb11a4a3ee8fe4f6362f4549da082"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/common/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/common/constant.py",
+      "bytes": 452,
+      "sha256": "27d7ed6ebc5ee7cfc5b6bdc59ec5f9e6443e5418f07e9439bcc39252cb88be37"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/__init__.py",
+      "bytes": 81,
+      "sha256": "1b4d686e9c14670264eb5d586a93fc8e6e93cb0a936af2af6df24995b7d310a9"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/data_pool.py",
+      "bytes": 637,
+      "sha256": "dc642478ae90489374502aaf20cb9c670e341432f5ca647c3e2549933f47dc08"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/data_pool_impl_base.py",
+      "bytes": 1237,
+      "sha256": "207e2687ca7253302229fae30a9cd756743b83de55f5d3da0f95fcbe12b9893f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/data_server_base.py",
+      "bytes": 461,
+      "sha256": "12aab29d3a941bdacc9e91f542e4362ac791a15025d97a1965c6a81f74f8cae4"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/data_source.py",
+      "bytes": 5582,
+      "sha256": "ce770916b3d49f50ab56b8adc132ddb85620dfadcf62fd4048d68a09456167c8"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/dataset.py",
+      "bytes": 5550,
+      "sha256": "67cf0f52fa4f6226f88b27bfc226a0c023561916757258cc1292a961721963dd"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/suites/__init__.py",
+      "bytes": 80,
+      "sha256": "b44fb5a2e3c102802f2fcc20630a603aa7e908bf075c6127183ca940fd50d69f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/suites/global_storage.py",
+      "bytes": 4361,
+      "sha256": "851d866df60cbc5938a5b8db9b2d31ab94cc4319eee6d1d214b9b1ff7e0d7387"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/data/utils.py",
+      "bytes": 5678,
+      "sha256": "92e077fd069f812a6ae75adc39c91ea721eedd6f54b3ded99af8b831bdb9dad5"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/evaluate_model.py",
+      "bytes": 6413,
+      "sha256": "113def002af7939e379ede525a0992caaad33de3e4831bd0c95c649fcd10344c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/evaluator.py",
+      "bytes": 3389,
+      "sha256": "b2e09acf5197b24b584b54b8ca544af997969680a894e20877a73d1df6e98523"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/metrics/__init__.py",
+      "bytes": 227,
+      "sha256": "b1e1b0964e05d1dce68867e52f7076ca2ddd7b6cfec6f044457ad07252a75a12"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/metrics/regression_metrics.py",
+      "bytes": 7048,
+      "sha256": "05a94a3852eb9a160a08fafd5f0acfe74558e3fa6d2533c906b21362f99a9405"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/metrics/utils.py",
+      "bytes": 1692,
+      "sha256": "2964baadad2d3a94b034d95fcdac6bbe3beb088ccc0f2583cd28eb69796f5d21"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/strategy/__init__.py",
+      "bytes": 270,
+      "sha256": "f6011743e535552776088f339099bb0ca72ec0d59feaa911fb594f65e6685f23"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/strategy/constants.py",
+      "bytes": 742,
+      "sha256": "794906824977b57d9a3bcc874b9f7ff0aff230747a1488230e715f5b31500211"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/strategy/fixed_forecast.py",
+      "bytes": 4601,
+      "sha256": "8e27779f1323d49f4ba931182cce42cc4a0210b5cce676271ebeb2243f9dc524"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/strategy/forecasting.py",
+      "bytes": 3571,
+      "sha256": "cb8e165bdeee49713f485c452ccb4a1cd8d600f5e5b6a31d9338a1c1bb1823cd"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/strategy/rolling_forecast.py",
+      "bytes": 17383,
+      "sha256": "0022ff0e3948fda544e37c55a266aa0d0e38f02d84ba488de3e20e84928eda5a"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/evaluation/strategy/strategy.py",
+      "bytes": 9020,
+      "sha256": "3b4f9c43907b91edebda49db6b8329e3134716325846346decf6bd4a266e0ff0"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/models/__init__.py",
+      "bytes": 218,
+      "sha256": "939ff75bf1dd11bfdfa73a0028d9e5a2ce1497b3e71f5a6ee48f181628efe124"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/models/model_base.py",
+      "bytes": 3154,
+      "sha256": "be5520b4cb1299bd94dd8aa46edc5451d5052ec8fb8c2cf8a8b1edcd2c585532"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/models/model_loader.py",
+      "bytes": 9920,
+      "sha256": "933882a9d9ed93c64433714be635bb09560c5d7532083972eea55e791d0ace66"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/pipeline.py",
+      "bytes": 5712,
+      "sha256": "7faa76b852005fee431940749626c8c24b961ace899f999b7dd0f7c24adf3d88"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/recording.py",
+      "bytes": 5572,
+      "sha256": "b2a6bd86b66ff9d1912bf894be386af0d2c1fd0b5756088efa35ccfb9e683aa6"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/__init__.py",
+      "bytes": 417,
+      "sha256": "95b8b2b4b9acb4069b3e320f551881ea3f02c8b14c18b645182420bfc74a91c7"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/report_csv.py",
+      "bytes": 2855,
+      "sha256": "9fc1d8ce8ba98845ab09fc0051c43453486cc03b489c1e7082260e415d909261"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/report_dash/__init__.py",
+      "bytes": 142,
+      "sha256": "43e1f225106466b744df7c08027e5b94be8bd64f93756082464a0ce364f35b5c"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/report_dash/app.py",
+      "bytes": 2114,
+      "sha256": "4bcf53da07388c6e0d81f9827bc7a2ba57a1a6c3184853ae7f2158734f3dfea4"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/report_dash/layout.py",
+      "bytes": 1871,
+      "sha256": "08ef1ed22283c3993c21ffe8267542dab18eaa949fb33bcc37e15722d0ff427f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/report_dash/memory.py",
+      "bytes": 176,
+      "sha256": "3ef2af551cc0d05ed9effb01968f4217635eb50be3798a644360e844ad197855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/report_dash/pages/leaderboard.py",
+      "bytes": 950,
+      "sha256": "2c7e6f2a727bf2b1a5f4e6b1cfad64849e3611bb4b14200171c51a40e750e40f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/report_dash/pages/query.py",
+      "bytes": 2443,
+      "sha256": "ccc8c3427061991810e4ab0ccc3e56ae79b5a2734298af5a4609261e86bb6391"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/report/utils/leaderboard.py",
+      "bytes": 6588,
+      "sha256": "822023f0c30d23f983ab5e9314dac0f68fe13a181ad968f12c83e8a818452533"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/compress.py",
+      "bytes": 2743,
+      "sha256": "f89b3bc6388aa750b0b0a82a360fd46a953b5324ee2d3f07c686da6c7789e745"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/data_processing.py",
+      "bytes": 5129,
+      "sha256": "40dbf699abb6fc513c9f3bcd2ca34577aa675cb49d5f4ef5a2fca1dde3738577"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/design_pattern.py",
+      "bytes": 371,
+      "sha256": "a0be9df05c79680e480685a8b6f5629a88be9db94f0b284421b5b3cbae3449ff"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/get_file_name.py",
+      "bytes": 948,
+      "sha256": "f91b6e7bdf83f0bd3640aed99ab9c41cd64725e98956aec8cfb956eba6823248"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/parallel/__init__.py",
+      "bytes": 2474,
+      "sha256": "52d53cd4f3ece729bdfef434dd08f5700bbbf2d35117764092625b0daf4b955e"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/parallel/base.py",
+      "bytes": 726,
+      "sha256": "e8dd80a62de8ff695f8cb9d398292a6dc407b1f2fdcfc8de5405fd2c1e7e8c1f"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/parallel/ray_backend.py",
+      "bytes": 17639,
+      "sha256": "b3206a3015e1086cf333e94ba29519774f140ec67c7549ff4333aaf070b85655"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/parallel/sequential_backend.py",
+      "bytes": 1882,
+      "sha256": "07aa802d3085e466e73df427bf82547f01c74146a316203302b62ff3fb243748"
+    },
+    {
+      "path": "upstream/DAG/ts_benchmark/utils/random_utils.py",
+      "bytes": 692,
+      "sha256": "0afeedb0cafc23385d00c41bbe2db9cf1d3aa37e34de77a8732da68580493a75"
+    },
+    {
+      "path": "upstream/LatentTSF/.gitignore",
+      "bytes": 2934,
+      "sha256": "7b0122c17ade6084f940dffe2de81ec3fc11aaca5eaabe9616205eabdc2fb82d"
+    },
+    {
+      "path": "upstream/LatentTSF/assets/LatentTSF.png",
+      "bytes": 388497,
+      "sha256": "c5af7648de6b7eb7fcba1f371ab0d3e3c0d3d6d74c2d37135f354d654dfb1e90"
+    },
+    {
+      "path": "upstream/LatentTSF/CITATION.cff",
+      "bytes": 1101,
+      "sha256": "ec1276586efb0e97e3fc13a0c65e13b2094c46db1a4df9d4c614a259d59efa25"
+    },
+    {
+      "path": "upstream/LatentTSF/data_provider/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "upstream/LatentTSF/data_provider/data_factory.py",
+      "bytes": 2917,
+      "sha256": "5d16c41bd5aba3d6821755c2c6cecf0ec3f0b9fb055474467f85faaa0e95d83a"
+    },
+    {
+      "path": "upstream/LatentTSF/data_provider/data_loader.py",
+      "bytes": 50371,
+      "sha256": "b6fd25a0aeee7d508a6274eb08cdfd4a52523c7870f6d6c5f618c6ed3184740e"
+    },
+    {
+      "path": "upstream/LatentTSF/data_provider/data_loader_base.py",
+      "bytes": 36439,
+      "sha256": "3fcf59f01f1889a9d9436964ba0d1190e61453f82819049f85d2a58b4cae508f"
+    },
+    {
+      "path": "upstream/LatentTSF/data_provider/m4.py",
+      "bytes": 5260,
+      "sha256": "88cb5d523690142f4a3d68fbc92d783bb41fc1034f63849ba85c4fb3268dfad0"
+    },
+    {
+      "path": "upstream/LatentTSF/data_provider/uea.py",
+      "bytes": 5036,
+      "sha256": "49e011c8119fa791296dd930a688c075d05a1c13e2f37e06495e569521eb348e"
+    },
+    {
+      "path": "upstream/LatentTSF/download_datasets.py",
+      "bytes": 2174,
+      "sha256": "2204305255a41af6d1192834a750cab3c7931118b69f90c5ea1b00f6303ad195"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/exp_anomaly_detection.py",
+      "bytes": 7811,
+      "sha256": "052ac8b9cc050d0106f0e7b1568cc683d215615b8a517c24010a36d5b0bbf726"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/exp_basic.py",
+      "bytes": 3109,
+      "sha256": "3e7e2e4dfba0df49ffc7814c248956ffa5848a95accc3da69b2872db1e62690a"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/exp_classification.py",
+      "bytes": 7458,
+      "sha256": "5c98497b43cd3ddf1199d28a0da4dbf588f81de6eb8b450009c265a2173a6aad"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/exp_imputation.py",
+      "bytes": 8637,
+      "sha256": "dc7de094623126ce8092a5ccc4874e817d7a46a2f956fcefb78bc43ad28f4ade"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/exp_long_term_forecasting.py",
+      "bytes": 11448,
+      "sha256": "ecfe610df785f9888baf06029c5169c1e123f20a369ec90a7638713e3be2d47d"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/exp_short_term_forecasting.py",
+      "bytes": 10331,
+      "sha256": "0827693e4fcb93d29739890c499e9314cdc63989bee51c14963c3d6a1eb8b228"
+    },
+    {
+      "path": "upstream/LatentTSF/exp/exp_zero_shot_forecasting.py",
+      "bytes": 5793,
+      "sha256": "4d05f624068e00539c3c28c46ba44b690a618ff2b5ae26915cbfa6d141e4d81d"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/AutoCorrelation.py",
+      "bytes": 6462,
+      "sha256": "354b44e54bdd39380c9f5c2bfaaf3b967fdbe80dc7998741dbfdfa5d521a040c"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/Autoformer_EncDec.py",
+      "bytes": 6831,
+      "sha256": "48745b4bb647355e9845792a855df9c59fd7df7fcc664c765351fec390c4073e"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/Conv_Blocks.py",
+      "bytes": 2376,
+      "sha256": "16d9f2d9e4fa094dc357901e32beecda9839709bcca02625e6447186933ce4e1"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/Crossformer_EncDec.py",
+      "bytes": 4333,
+      "sha256": "ee2cc5c8d3a44f4de67ce986e6b442488826a20fa4d8f87991941a75587936a1"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/DWT_Decomposition.py",
+      "bytes": 46759,
+      "sha256": "422af1eec77df1b9dcfdea3d457e545c8575da69da4f505f27ba54db0c9f7764"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/Embed.py",
+      "bytes": 7012,
+      "sha256": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/ETSformer_EncDec.py",
+      "bytes": 11433,
+      "sha256": "4ba2a0b76381602e32341fcc1a6a74ca86d2347905589fb34a74f8e54d7023e3"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/FourierCorrelation.py",
+      "bytes": 7523,
+      "sha256": "cea1095b3a94764f240e6ac67280d6ea7fac9f5ef54de137cd1f5e5adab1305f"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/MSGBlock.py",
+      "bytes": 9954,
+      "sha256": "01d3d446a214c33062ba098f251a1e49ed8a342dd4372e973a0a8c0dde5cd8c0"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/MultiWaveletCorrelation.py",
+      "bytes": 23039,
+      "sha256": "cf0b8faf45a1b7fab4a3c1c521623c0762e2f9d7375b20ba9a9acd2142747342"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/Pyraformer_EncDec.py",
+      "bytes": 7433,
+      "sha256": "ab92396677a9ad2e49c7bf171e15c96108d388b8898d29ee520d18dfe0bd5306"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/RevIN.py",
+      "bytes": 2011,
+      "sha256": "1e08d0b3679f4ef79ac7f98a7f719f8d7f8a04595022ed34f702c7d70c0c4d90"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/SelfAttention_Family.py",
+      "bytes": 12001,
+      "sha256": "6f6592aed0753e342fc04c01db70528c2eb191eeb067cd5fd4c8d348fddcb794"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/StandardNorm.py",
+      "bytes": 2184,
+      "sha256": "3f690dc5fc0e395d4f1ffe6396717548d18bd04f4518258308bbe5f392703f5f"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/TimeFilter_layers.py",
+      "bytes": 10046,
+      "sha256": "3441713bdb54de1153afe3d5e746de4e251c07b545492180a073c4f275df6b9f"
+    },
+    {
+      "path": "upstream/LatentTSF/layers/Transformer_EncDec.py",
+      "bytes": 4929,
+      "sha256": "7b26f4459735c341f161011f6bc24b9deb8ecc3bcf61e4f15431998272a44fb4"
+    },
+    {
+      "path": "upstream/LatentTSF/LICENSE",
+      "bytes": 1444,
+      "sha256": "ca8037ee265a10ee28e23c73862c6c2e03bd517a6e10111668314408acdd16cc"
+    },
+    {
+      "path": "upstream/LatentTSF/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Autoformer.py",
+      "bytes": 6815,
+      "sha256": "e7d31b5071e4412bcece030f343450d2ca93932988ee912b95058d9955473810"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Chronos.py",
+      "bytes": 1420,
+      "sha256": "7386167682450aeaf40fd6faaf07444f4bc95348d7a59c4793451c9815e70965"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Chronos2.py",
+      "bytes": 1759,
+      "sha256": "093198a31974e720e72c1f438640334dabc5a8cfc88546e8b02e4ade85d80e5a"
+    },
+    {
+      "path": "upstream/LatentTSF/models/CMoS.py",
+      "bytes": 2921,
+      "sha256": "63fcf6943c65c55227411881cda07279531bc0de1fc972d006a57d8f78cdb1d9"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Crossformer.py",
+      "bytes": 6363,
+      "sha256": "f5892f70eb3fc320f69fa0a9b2019b68537cc5a5e5aa2ec544c15127b19e36f0"
+    },
+    {
+      "path": "upstream/LatentTSF/models/DLinear.py",
+      "bytes": 4501,
+      "sha256": "e03acaf97e70c85ea6bda6776b3a62550f84470afa7bc53dffccb6121626e7eb"
+    },
+    {
+      "path": "upstream/LatentTSF/models/ETSformer.py",
+      "bytes": 4599,
+      "sha256": "3cd25f1ea4dc18e926720b2976d86820363dcc5db0436e490f2b794630086035"
+    },
+    {
+      "path": "upstream/LatentTSF/models/FEDformer.py",
+      "bytes": 8587,
+      "sha256": "2d9051784362cf848f061cfec9038aff8ec2bb3047abdffe47f0ad0abdf88e62"
+    },
+    {
+      "path": "upstream/LatentTSF/models/FiLM.py",
+      "bytes": 11567,
+      "sha256": "866054afc57411ebaf47c270566c05302b19acf3a3663b0b86e9153e386d2dc6"
+    },
+    {
+      "path": "upstream/LatentTSF/models/FreTS.py",
+      "bytes": 4630,
+      "sha256": "2b6c9e0cd3d4f42bc74736343147812db94f029f1a8b13b098b9841705de5c18"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Informer.py",
+      "bytes": 6395,
+      "sha256": "95dee85f6c0642dbfeee7736d526f9e20a54b5f5871a7085343b6a8be3cf56d2"
+    },
+    {
+      "path": "upstream/LatentTSF/models/iTransformer.py",
+      "bytes": 5756,
+      "sha256": "aff6039730d3a4507b92ddfcf6c873c6f448c0363f4cfd236f38a03e53e67621"
+    },
+    {
+      "path": "upstream/LatentTSF/models/KANAD.py",
+      "bytes": 3832,
+      "sha256": "8503dc8fffb3c1c5212c60da9d645c28ecf590ef5846d37dea9bcc6568f7e95d"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Koopa.py",
+      "bytes": 13374,
+      "sha256": "056464ecec26ff00893f8ff4c372992c1c46c0563990d7c0593a945b8d7c4402"
+    },
+    {
+      "path": "upstream/LatentTSF/models/LightTS.py",
+      "bytes": 5622,
+      "sha256": "1de1583c4ee0bbfa0764fa9b158f09ac8bcd7ddf7f2d9f1b58ab1a03a7d13989"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Mamba.py",
+      "bytes": 1590,
+      "sha256": "de6c2ce01371e8cc7b0524df8caffaf299b58d093c4096661ad4cc66d216595e"
+    },
+    {
+      "path": "upstream/LatentTSF/models/MambaSimple.py",
+      "bytes": 5501,
+      "sha256": "0d8251e73c4b74eff403bf913bb4277bbc9427f69a419767121dc7ea0d0f6a95"
+    },
+    {
+      "path": "upstream/LatentTSF/models/MICN.py",
+      "bytes": 9946,
+      "sha256": "a0cb59254e850bfd1d94114a73126c290e6baf2ea700132ede8aade680bbedbf"
+    },
+    {
+      "path": "upstream/LatentTSF/models/ModernTCN.py",
+      "bytes": 18141,
+      "sha256": "a0938ca67ce7390cff901338e374eaa3322c7b678e3a2f99ad0efed95c697aae"
+    },
+    {
+      "path": "upstream/LatentTSF/models/ModernTCN_Layer.py",
+      "bytes": 2729,
+      "sha256": "28e539f3c0eb8f9829d08c0299df92c13244eb6a72290c9c86d920423e194a9d"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Moirai.py",
+      "bytes": 1791,
+      "sha256": "f387c8ff2f06d37893d0c72bf93cf509e68e270c51da7887dbefbda02879ab41"
+    },
+    {
+      "path": "upstream/LatentTSF/models/MSGNet.py",
+      "bytes": 9560,
+      "sha256": "e6f8f3fbd4e0bc9d77c78e2409969c4fe4b2fc6560e7c1f5cced2a809d8e9e59"
+    },
+    {
+      "path": "upstream/LatentTSF/models/MultiPatchFormer.py",
+      "bytes": 12067,
+      "sha256": "e8603a9d8b1e796a822171399a057bd3945cf51b38fb1661d91fe60ad79313b3"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Nonstationary_Transformer.py",
+      "bytes": 10251,
+      "sha256": "8c12c8bddbfe7414a87efee19f019079e62e9ad7cc4e7627cb25d2886ae60c33"
+    },
+    {
+      "path": "upstream/LatentTSF/models/PatchTST.py",
+      "bytes": 9101,
+      "sha256": "644bb2b59fb9ca7a09219bc2c490c140d3ffdf444c8bb23c1548153a177471e4"
+    },
+    {
+      "path": "upstream/LatentTSF/models/PAttn.py",
+      "bytes": 2500,
+      "sha256": "04a11e5b15afd261e005982c76424b219303114a3b32bfe3da00d1df862dae88"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Pyraformer.py",
+      "bytes": 4215,
+      "sha256": "6ec9a21d56fa47b81b706b05b7caf76f440daf3cb4ffe2dca9d2f149b02dd877"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Reformer.py",
+      "bytes": 5090,
+      "sha256": "d559a572111615a3a6c0b2ed25e29a2678997a6406d44814aba97b24c1c63517"
+    },
+    {
+      "path": "upstream/LatentTSF/models/SCINet.py",
+      "bytes": 7357,
+      "sha256": "06dcae9cfce5d3dc09e8db9b537479421848ee678ffbd1d3ca0b5c335a1baf25"
+    },
+    {
+      "path": "upstream/LatentTSF/models/SegRNN.py",
+      "bytes": 4215,
+      "sha256": "764d4ad950ee65162c70746248754942cfb4ba661162d515caab0a4eedd12252"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Sundial.py",
+      "bytes": 1309,
+      "sha256": "4acd97dbda41f644cda908c98178b9995b1853d707aba22dc21bbd9e56c74ae5"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TemporalFusionTransformer.py",
+      "bytes": 14027,
+      "sha256": "f1b348f304bcf8954059eaa356a2b2bafd73c2278e85bd62be5f794e73e59388"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TiDE.py",
+      "bytes": 7222,
+      "sha256": "4ab07dec4ae85f8b7c3062ff7d2fec00be342968d41cf09e48d599d8e40f6143"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TimeBase.py",
+      "bytes": 4624,
+      "sha256": "3db2e7c8a8f7d1b63279cbe60fd8bce7bfc90c5af9574b797c17eafa98bbf81a"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TimeFilter.py",
+      "bytes": 6769,
+      "sha256": "6cbce92f112a9907fe6117ea23527bf1864c0ea00721a812d786e86e0a1b0724"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TimeMixer.py",
+      "bytes": 20042,
+      "sha256": "8da10910bdff0970bcd0751d9d9eae8cf1c492d9db85d03706b731aaf9ac16ac"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TimeMoE.py",
+      "bytes": 1720,
+      "sha256": "6be52df6633b9c2086bd1c002588b5801e917531ebebde8abcf9787005ead4d5"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TimesFM.py",
+      "bytes": 2187,
+      "sha256": "f313b35e7f4a3e97d946c443381e0a7568f2d1222bb58889439a1662de78f2b2"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TimesNet.py",
+      "bytes": 8735,
+      "sha256": "f64c4bed1fd7347090044a0163bd4209c9f9ec1c1b19ceff47842df36b64bba7"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TimeXer.py",
+      "bytes": 9019,
+      "sha256": "b334d7869544d0a5de7a35501d0342d7bd0be4ebda06ccc045855a42819728c0"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TiRex.py",
+      "bytes": 1643,
+      "sha256": "7278b0b51d0cd085135f5fd21c930dd0e616919ec059b91c78c1e32605f7f851"
+    },
+    {
+      "path": "upstream/LatentTSF/models/Transformer.py",
+      "bytes": 5561,
+      "sha256": "46ded6c516fd03951bce0a82c3f4245f0247efd01fb5bde775145cfbb6d8435d"
+    },
+    {
+      "path": "upstream/LatentTSF/models/TSMixer.py",
+      "bytes": 1814,
+      "sha256": "a82942ddc22cba59f4161f3ea480eb0e474eba6f0ab2d13f2bd949f100b2ce87"
+    },
+    {
+      "path": "upstream/LatentTSF/models/WPMixer.py",
+      "bytes": 13212,
+      "sha256": "5b549f5454864d19a230747f0060dc00732fb0de6b50a359173e0d7a6b04ce8f"
+    },
+    {
+      "path": "upstream/LatentTSF/my_AE.py",
+      "bytes": 20153,
+      "sha256": "399d4fb5486a41d24739e4516dfa2f2823ec2d425d684dbf4f307b6ae893cb7d"
+    },
+    {
+      "path": "upstream/LatentTSF/my_MAE.py",
+      "bytes": 16575,
+      "sha256": "be4eed781b7850ec2b764f92c8b6e7316350fec23215f4bdfa72a0cf0593f381"
+    },
+    {
+      "path": "upstream/LatentTSF/my_temporal_AE.py",
+      "bytes": 11008,
+      "sha256": "d879487f7477bdca8895e8bd7c25401a4fdcf54ae205f07fc326753dbfbf966b"
+    },
+    {
+      "path": "upstream/LatentTSF/my_train.py",
+      "bytes": 32617,
+      "sha256": "1403df8eb4bf819903f6a51c6c2f11132fa924617c99d220e3d994a1c21a9baa"
+    },
+    {
+      "path": "upstream/LatentTSF/my_utils.py",
+      "bytes": 32285,
+      "sha256": "1b9cdf1e30fc85a726d0162cc7edf9a3d6aee65b3b90d2d4aea5440d8902054f"
+    },
+    {
+      "path": "upstream/LatentTSF/NOTICE.md",
+      "bytes": 2302,
+      "sha256": "a33a4e9061e6abc85c8d852396b592c8e3645923a3840104ae4b2099890da4eb"
+    },
+    {
+      "path": "upstream/LatentTSF/README.md",
+      "bytes": 11523,
+      "sha256": "43ed1003e17c51d9269167a01b74b4c74cda45b109ef0e04d683a83a9c9bd985"
+    },
+    {
+      "path": "upstream/LatentTSF/requirements.txt",
+      "bytes": 859,
+      "sha256": "370ebad77eaec5fc5026a57900c2db51fa6d163e83c6e42ac11e17895a82cbb1"
+    },
+    {
+      "path": "upstream/LatentTSF/RevIN.py",
+      "bytes": 1701,
+      "sha256": "07513875c30cdb0726da8d9b9aa540c57969f4b1a2b7e861b730051a8fe2ead3"
+    },
+    {
+      "path": "upstream/LatentTSF/run.py",
+      "bytes": 14361,
+      "sha256": "aa26db8d9a108adc9a2b9210a1bac80bdf16d0441774e142e324b16d80ceea62"
+    },
+    {
+      "path": "upstream/LatentTSF/run_ae.sh",
+      "bytes": 7024,
+      "sha256": "10ebf216c552fb73024eae9447a11655755705471f7c136fe47eeac96d1b2ae3"
+    },
+    {
+      "path": "upstream/LatentTSF/run_train.sh",
+      "bytes": 8221,
+      "sha256": "90583a7c5873493e1fcd5c63f616673fb604f3721f881f727a496d33e0c89b86"
+    },
+    {
+      "path": "upstream/LatentTSF/run_train_all.sh",
+      "bytes": 9376,
+      "sha256": "115070e1641cfc6e35e634f2f79588a4a335cee807407b6e34904b333f86a059"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/ADFtest.py",
+      "bytes": 2490,
+      "sha256": "fcc30ead66778d2f70409740f8d54287fbeb032cd080695879a370722f7a4b26"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/augmentation.py",
+      "bytes": 19234,
+      "sha256": "17bac803a96fb6c98d0822052c1edc9f6bc72ae37eec5aa859e9e2918d537b69"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/dtw.py",
+      "bytes": 7197,
+      "sha256": "a12084ab35783e4c09ddfadb54b0253f1fa8a3499abd88c772f93f499bcffa2a"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/dtw_metric.py",
+      "bytes": 5817,
+      "sha256": "308c56507b01a945f38796f2f9b4bb104adc213ab574aa2693f93635c9748889"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/losses.py",
+      "bytes": 3459,
+      "sha256": "d7f924f9abdf9dbbf097b60329a25ad727b163111014954ebf5856370a1aa116"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/m4_summary.py",
+      "bytes": 6174,
+      "sha256": "bfc7ba06736c3919b4542b0e68a15280642d80989a7f837132121136e8a4e8a7"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/masking.py",
+      "bytes": 832,
+      "sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/metrics.py",
+      "bytes": 866,
+      "sha256": "0a565c3f64d7cd29d9a87dee0c22d48f4a6a329476f893458cc18a35fa46a5df"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/print_args.py",
+      "bytes": 3141,
+      "sha256": "423454ec7e2cefe6d24a458903f6080e866efdbe78c0ac2481b2cf32d44c558a"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/timefeatures.py",
+      "bytes": 4369,
+      "sha256": "319b3da2ef15ccae95162b1b4f4a9a0b0da63fa0062a7f6006a06dd567258d85"
+    },
+    {
+      "path": "upstream/LatentTSF/utils/tools.py",
+      "bytes": 3693,
+      "sha256": "fe042b3a19d961a8f354214185eec03812d0b0f29b7226017a8892454d08c3c1"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/.gitignore",
+      "bytes": 331,
+      "sha256": "034d085048be66241b690ece12a55cc9d295b347d296bab95053d99dc510e4c9"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/codyjepa_patch_state_visreg_expected_horizons.json",
+      "bytes": 261,
+      "sha256": "8a111b48ef1d560ff350025bf55b3629da199fb8a2eb673f924d50e69462cf16"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/fixed_forecast_config_daily.json",
+      "bytes": 1157,
+      "sha256": "d0dd7ca0fb7fc710b53c5ccad154d5354cdced71c0784f810077b410e15ade92"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/fixed_forecast_config_hourly.json",
+      "bytes": 1158,
+      "sha256": "f49a5a8387c524c946b4cdb68ab2927d928ae961216bcc0fe276dd4ae9007329"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/fixed_forecast_config_monthly.json",
+      "bytes": 1160,
+      "sha256": "fe24959a29dcf5f3ed32efe121de1a8bf91e168512301cd2801934340cc97432"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/fixed_forecast_config_other.json",
+      "bytes": 1155,
+      "sha256": "b08f6d97c6947c57bfb8f49841772d03a21bef2c816ffd16a3c11df66a7181c9"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/fixed_forecast_config_quarterly.json",
+      "bytes": 1159,
+      "sha256": "b9d2dc44f8a80849ba6153bf6765da80a16acef1809c03a58d0ab96302507efc"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/fixed_forecast_config_weekly.json",
+      "bytes": 1157,
+      "sha256": "c6b86661e19c40797ca0ce643b58d52fd5fe300da137e605ac8254a8fa7e32e0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/fixed_forecast_config_yearly.json",
+      "bytes": 1155,
+      "sha256": "eaae58c564575098b9695a58d665bf598e47a36c665f24db569e9209ad20a7f7"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/config/rolling_forecast_config.json",
+      "bytes": 1432,
+      "sha256": "395169bda4b41d0bbf5631a8b57ea346f145b26596bcdf32eb31fb6d1f0ccb09"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/environment-codyjepa.yml",
+      "bytes": 115,
+      "sha256": "ee72f0dde06e1288f2cda5f307aa806393298e95cb9dc3d924e172e2f420bfeb"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/LICENSE",
+      "bytes": 1062,
+      "sha256": "50a885e5eea0e0c5c39c417a4f602bf99c18e340ec494a4840b33f537c651501"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/README.md",
+      "bytes": 3765,
+      "sha256": "240ced10160b28c05a502125eb0db605b5d7279d1eddbc958382317898f4b57a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/requirements.txt",
+      "bytes": 264,
+      "sha256": "712878e69f1222d24f54f7ed5e2d1769448988aea9da2159efa54dd98f9dfdfc"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/run_benchmark.py",
+      "bytes": 10632,
+      "sha256": "f906c38dde7168206de494cfcd0fd769514e60172ea319e76add6f04eb21dfca"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/Amplifier.sh",
+      "bytes": 14292,
+      "sha256": "7145afd23e4adbc4383414561c7b23d138f9a4c45af13b6bb2e19ca51bda4612"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/CrossLinear.sh",
+      "bytes": 18076,
+      "sha256": "9e497d07a972639590934c9a0aa8050d4b1f774724cbb9e2b4f8b62900bcee41"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/DAG.sh",
+      "bytes": 18220,
+      "sha256": "2c74fa5c65076836dff9580af726e86cb6728d7bacfc7fdc03df018d93167b00"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/DLinear.sh",
+      "bytes": 16044,
+      "sha256": "69ebd8bc37708b795d6188997d3f23c5defd94de6840e6fee76cd743f207c918"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/DUET.sh",
+      "bytes": 19252,
+      "sha256": "c1f13668a4ffa3f1c1b11f34b5a55a780a61327a67119acd0e62c43c77980711"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/PatchTST.sh",
+      "bytes": 16256,
+      "sha256": "59312ffbc876a14796a533088f864e74478207c4dd2e94dec4fcfe55e88ef711"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/TemporalFusionTransformer.sh",
+      "bytes": 21700,
+      "sha256": "b58fccb9a4e872f028140150930453d5936ad10e770c7adeb1fa1a9fe0862062"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/TiDE.sh",
+      "bytes": 17372,
+      "sha256": "d3cf148f9bb53040b182daf87f7c591e07425867787bf76937e803d0c384298f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/TimeKAN.sh",
+      "bytes": 17448,
+      "sha256": "5cc31d05d5df325943a92804dd95f166dbe48e3cccefa5d33765d4bb1b34e23e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/TimeXer.sh",
+      "bytes": 13520,
+      "sha256": "6b43f86220cf9755eb7ce70d811acd6e8ad3578e921bc39550ea6314e310f48e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/TFB_wo_future/xPatch.sh",
+      "bytes": 14644,
+      "sha256": "5ca29d24c5a148efd3341a53cbf5a081366a6d127d6d6296c484071e991ac5f0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/Amplifier.sh",
+      "bytes": 10679,
+      "sha256": "73677eccea4770410c2d6076f7a054e1ddbbed3914d1cf5182febedec473bcea"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/CrossLinear.sh",
+      "bytes": 12709,
+      "sha256": "41cd9c34d186a5b7f77b6e9ec3808577e81983c566ee7ba3372e925e1b792d11"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/DAG.sh",
+      "bytes": 14313,
+      "sha256": "f47f939cc6d6f0e37e7943c999d16bdca1b655b780b1f1c5874d905a4584d0e5"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/DLinear.sh",
+      "bytes": 11993,
+      "sha256": "147581e0f517a580cf4a1ecde3fd792c42f746463da82ea81f9208d20d95d706"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/DUET.sh",
+      "bytes": 6269,
+      "sha256": "8da73c977e453f5eaab2f46c59189cd4357a92bb59ba82cbf731fe28fb584eea"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/GCGNet.sh",
+      "bytes": 11698,
+      "sha256": "f41276757caf97f8253b90bad0ca1cb664b70f82f02905df6a9418631a9e8feb"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/PatchTST.sh",
+      "bytes": 12409,
+      "sha256": "8b6cefadd7b030bd486275ebedf9218ef049e434e8ca4ed445e8f6ac5060fc0b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/TemporalFusionTransformer.sh",
+      "bytes": 17239,
+      "sha256": "02eca5f831f91753516d00d87799bf9cfcb89c5bf72a4123a72e5b0e99ac4446"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/TiDE.sh",
+      "bytes": 13093,
+      "sha256": "4de6917e0be3ce80a8f8b15909472b2b9f478412e27cff3aafda0a020101042b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/TimeKAN.sh",
+      "bytes": 13973,
+      "sha256": "52326ce18adf1e68430973342ada8e36894728b7140f0f62dd861635ca307854"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/TimeXer.sh",
+      "bytes": 13595,
+      "sha256": "23439e691f19dda7a85f369826d1cdc7df93058e489c66b7bf3af13afc7e1d3e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/worldts.sh",
+      "bytes": 43590,
+      "sha256": "47a154f8fb56c9163fb75096861b9decb4385b1a24ae6610d5fff0b7f9979745"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/w_future/xPatch.sh",
+      "bytes": 11637,
+      "sha256": "d07063c7b5a4969a20733675b86716870bcb3c5bd91f04db1f220acc6ffc45ee"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/Amplifier.sh",
+      "bytes": 10692,
+      "sha256": "e3a679cae512e72238fc5b6a37709433ecfa69a803dbefbfdaabef8fcb155645"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/CrossLinear.sh",
+      "bytes": 13430,
+      "sha256": "e8ef4604d7c1191680bf82d87d849c83243ee1cf9250083f30b27f4e6c3c09ef"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/DAG.sh",
+      "bytes": 13842,
+      "sha256": "26c080c19b9e6af814a5ca523de916862898898100004c569d18cc54e734ecf1"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/DLinear.sh",
+      "bytes": 11990,
+      "sha256": "0ee9df439798ac7e16ddf29f4327d4a68307b7ac716797e07466b37740e8f58f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/DUET.sh",
+      "bytes": 14540,
+      "sha256": "d742db7da06021257573ae6d986f631e653a9aed478c9e037650dda03cf89698"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/GCGNet.sh",
+      "bytes": 12175,
+      "sha256": "e55e3051b84ccc5773a3c4d4dd03f1888805075179465b4092abecc81a32aca5"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/PatchTST.sh",
+      "bytes": 12310,
+      "sha256": "554322f5cfa6a6278b14d886ce568f0ba07b0f2fd330886c1340c1569e06a9a4"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/TemporalFusionTransformer.sh",
+      "bytes": 16220,
+      "sha256": "bc58f39898a50cf8f72cdb577f2007a8356e8b73a362f3dc05920fa13fd39fea"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/TiDE.sh",
+      "bytes": 12950,
+      "sha256": "026f51405f592b43ab866cfcaf142d4a19e52fd08833aba877897a37b195f58b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/TimeKAN.sh",
+      "bytes": 7648,
+      "sha256": "d1d6c58797673a7260cb427d2c21492e9544b409811ba67b39206112cc22c2ad"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/TimeXer.sh",
+      "bytes": 10144,
+      "sha256": "bb7f7146da72445e3f9f80e80fa4d44fe757b850a356048e41520401333593ca"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/scripts/wo_future/xPatch.sh",
+      "bytes": 6424,
+      "sha256": "1250dd2bec98cd503a44dd7cd4f87da0a84b45d3028c9d09afc1fe732045d765"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/__init__.py",
+      "bytes": 450,
+      "sha256": "90281d85719c9c99925c5958474aa70933cfde24e6ba7e5f2ef65d5679a5eeef"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/amplifier/__init__.py",
+      "bytes": 90,
+      "sha256": "70523b4baa62790acdba215befee07ce7bc3e41e229ace83490a52bafc6cfd01"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/amplifier/amplifier.py",
+      "bytes": 2346,
+      "sha256": "14123b971554acdfed1bdf9e5b711a36f1966b1e8dbfb405db07ff43fe73936e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/amplifier/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/amplifier/layers/RevIN.py",
+      "bytes": 2054,
+      "sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/amplifier/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/amplifier/models/amplifier_model.py",
+      "bytes": 4707,
+      "sha256": "f51b60d2aec8f106fcde92642d938a9fd49bb84c67e0155227d63d1b32401532"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/crosslinear/__init__.py",
+      "bytes": 104,
+      "sha256": "7237650dd13e5787ab18d003458f949ee544aaa5d158568b7e68367172c58935"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/crosslinear/crosslinear.py",
+      "bytes": 1975,
+      "sha256": "e93da167d7e17c5bc2db385d1010a724114f26242bbf1c4d18818d8c987fa4c7"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/crosslinear/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/crosslinear/layers/SelfAttention_Family.py",
+      "bytes": 12378,
+      "sha256": "aa7ecc50c907ff12265c420d9bac2db2c7002129125910de638d997d1bac04af"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/crosslinear/layers/Transformer_EncDec.py",
+      "bytes": 4930,
+      "sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/crosslinear/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/crosslinear/models/crosslinear_model.py",
+      "bytes": 4472,
+      "sha256": "983c02b0c53846b6f4ecc231737e17c68830dbdad7066d916f80ebde56c4f5c0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/__init__.py",
+      "bytes": 71,
+      "sha256": "7c86cc07a3461809e7937f8925c44ce605069276ca9aedf5bfc5c70a4eb50b3e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/dag.py",
+      "bytes": 2180,
+      "sha256": "41165990881828a43d837791810fded5b6e429834e5970fd59686ced33ba4145"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/layers/CC_EncDec.py",
+      "bytes": 7411,
+      "sha256": "48710ae9b8abc79642d4adb9a728442281103145614772e524f6f8310cfb8339"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/layers/Embed.py",
+      "bytes": 7544,
+      "sha256": "531047e17c50357d0093b54bdae33dad0f923c1670629c7d7127ecc94a85ca00"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/layers/SelfAttention_Family.py",
+      "bytes": 12563,
+      "sha256": "486f5493c3f7214ca7d32f88248cb83752235b94b93204c2a5a36ce46525a778"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/layers/TC_EncDec.py",
+      "bytes": 7181,
+      "sha256": "094fc25f070794f7545a4e07019fea34ec228e7e6d9d341acf7e68469351c9ef"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/layers/Transformer_EncDec.py",
+      "bytes": 5365,
+      "sha256": "c3bb0a411a6df5bdb86f33589ae851304907084974c0a155138f1902aae653d3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/models/dag_model.py",
+      "bytes": 3231,
+      "sha256": "d26c3d861f10faeb6a48ea7ffe9064ec385e3152e584eca8cc96862d408dec79"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/dag/utils/tools.py",
+      "bytes": 2072,
+      "sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/darts/__init__.py",
+      "bytes": 3307,
+      "sha256": "7efcd56b8238552029f74d8c27b5878e01a874c5d6e5c6111f91f343f59602b8"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/darts/darts_models.py",
+      "bytes": 16299,
+      "sha256": "8ad3b9521a41bdf5da96e7885ff38664bfd82c21737e3e4afd32bdd5d0a4b6b4"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/deep_forecasting_model_base.py",
+      "bytes": 40237,
+      "sha256": "6377c68d812c7a9455356497dba757641f33e41ce9b393ea92cf122df4f109e5"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/__init__.py",
+      "bytes": 70,
+      "sha256": "c43ec25f878da9ac296a9a14be464328c202f60df1e0c8366eba6676c1ab1959"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/duet.py",
+      "bytes": 1807,
+      "sha256": "5389dd6801683f46d5d3ab0ef9a5f2c7863c071db6cdff3fcc6478d320ce1794"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/Autoformer_EncDec.py",
+      "bytes": 7065,
+      "sha256": "f3cda7c36b43e4a959f9f6c6a69487aaa7338e6d4dd8ce7045484ab67adc84a6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/distributional_router_encoder.py",
+      "bytes": 604,
+      "sha256": "4c07daaf45ece7df1e007c224513df7d6a5eba455b59dd49a1a5caa0c5bcd76c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/Embed.py",
+      "bytes": 7087,
+      "sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/linear_extractor_cluster.py",
+      "bytes": 12493,
+      "sha256": "46ec8d4986e5579ce93066a205f4986ec2bfbc90a7fc221cd6a29ef0726754e1"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/linear_pattern_extractor.py",
+      "bytes": 3204,
+      "sha256": "558becad06d912ebe8012f71b348b58e677c0acfcd0856ff48fdb42025fa3f0e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/RevIN.py",
+      "bytes": 2145,
+      "sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/SelfAttention_Family.py",
+      "bytes": 12348,
+      "sha256": "cb1266e7aadee3da2040966029f08e5fe30d391d09f06600480e11e3938172db"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/layers/Transformer_EncDec.py",
+      "bytes": 4930,
+      "sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/models/duet_model.py",
+      "bytes": 2770,
+      "sha256": "840690b13fecdd08fdc4a602f3d700ede940731a29ad0fe1de7830b7bb9b22b7"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/utils/losses.py",
+      "bytes": 3598,
+      "sha256": "6e455268b25c90d6b1b9f763d991c7e67775e306caa26f7ef3eb1a9ae5d74f62"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/utils/masked_attention.py",
+      "bytes": 7143,
+      "sha256": "edc17a01d813f6847d847b21ac53c9cb090af99e0b4d35c530d588f182bdb57c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/utils/timefeatures.py",
+      "bytes": 4369,
+      "sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/duet/utils/tools.py",
+      "bytes": 809,
+      "sha256": "6aefce4f1b80053cb4a4b72520800ede25f585efe93f4aef0f90bf2bc69fe285"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/fits/__init__.py",
+      "bytes": 102,
+      "sha256": "bb6cab0598fc945352226b64dba86939f35e007fd285a4c1a34e027b23b494ff"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/fits/fits.py",
+      "bytes": 1497,
+      "sha256": "92a1ee689100ced06a3cf9cc19a8b57a997863538501b7bef8695461bf9913a3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/fits/fits_model.py",
+      "bytes": 3097,
+      "sha256": "300299770ad2eba76aa00fa63bd6a9cb74ea025bcc29a88fc710cab4958d6478"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/__init__.py",
+      "bytes": 84,
+      "sha256": "29a8f8bece6257fc35df87a0391b903ddc26bae375a2457b74a5ee99e958649c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/GCGNet.py",
+      "bytes": 35284,
+      "sha256": "55b0a4df5a115145e61eff762d38a99179186627bfa041769dab6a887fab0a45"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/layers/blocks.py",
+      "bytes": 5438,
+      "sha256": "ea0f3e4fa08c0fdead367d6c1004e67d4aaa9ca01dd5dc15b443352e81779da4"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/layers/Embed.py",
+      "bytes": 1707,
+      "sha256": "45a7be70bf31772a752edda304903a5047490ac52e8c11bc5f90d8a383d9261a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/layers/graph.py",
+      "bytes": 4760,
+      "sha256": "595beb743d9738306612ab5edb0530b6a21d87efcfd16162fa071ce1e88fe373"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/models/gcgnet_model.py",
+      "bytes": 7858,
+      "sha256": "61ac164c8cb134512a85a7a51b40c31e0850f5558e3d24c651fa3e6ffbb1b8ba"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/utils/tools.py",
+      "bytes": 2072,
+      "sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/GCGNet/utils/utils.py",
+      "bytes": 17326,
+      "sha256": "a43f673727074bad86ca31073fe888c0ec4129598a683b9ef36232be9eba8ce6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/hdmixer/__init__.py",
+      "bytes": 82,
+      "sha256": "d6b8ae34e54473afcca8d9329bcc0b2937199bbed989f49a7a2bf3ce4c7a9d0c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/hdmixer/hdmixer.py",
+      "bytes": 2404,
+      "sha256": "2ae6530a93787aad4845dcbcb25d755143c980ba90f383b0dd8cb6b1a423f493"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/hdmixer/layers/box_coder1D.py",
+      "bytes": 4484,
+      "sha256": "0cda4df0f8bb85b5d633aa0e9499491e5ea018570ee9c9acce6d2b14370d1bc9"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/hdmixer/layers/PatchTST_layers.py",
+      "bytes": 5017,
+      "sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/hdmixer/layers/RevIN.py",
+      "bytes": 2054,
+      "sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/hdmixer/models/HDMixer.py",
+      "bytes": 18631,
+      "sha256": "91f4f864fda1687c3ac66806e7b42663ac49c2fbc0b3e12eae0bfdc2a6ad1213"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/merlion/__init__.py",
+      "bytes": 1559,
+      "sha256": "46b6c119be103aa8bf78e62ec90ada752b585ba9bcab4e76c30efb72205a3487"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/merlion/merlion_models.py",
+      "bytes": 7409,
+      "sha256": "929aa682084e2a406c755429abef4c933b4bad6f8a714987122f2ae86359e420"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/patchmlp/__init__.py",
+      "bytes": 86,
+      "sha256": "7722ed05ac21e9354a8591a762c37feedec8b14b7c536a98371bd607cb432c77"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/patchmlp/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/patchmlp/layers/Embed.py",
+      "bytes": 6756,
+      "sha256": "9ed34a9f29d99bf0e1ec9b7897664d160e335e469516b7cb0fcfaf53db359d9f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/patchmlp/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/patchmlp/models/patchmlp_model.py",
+      "bytes": 3867,
+      "sha256": "9e2ebba9cdd880fb7148f4e5244f30ca53b69bb55fb15844ff4fb5e2e43bfd6d"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/patchmlp/patchmlp.py",
+      "bytes": 2479,
+      "sha256": "fc0eb30187f7a5296879b5e9e5a4de572980a693af103c242f3a1804808145f5"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/__init__.py",
+      "bytes": 126,
+      "sha256": "c20f792c95a58d5a3843da94854e608c3ea921962694d12a12e7d51b06342d10"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/layers/AMS.py",
+      "bytes": 6399,
+      "sha256": "15a42978e8eb485b4445b7e21c760fa5312fd7a4bba0509df0861ff7ec965efc"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/layers/Embedding.py",
+      "bytes": 8209,
+      "sha256": "d6aa6ba87b6f01a7cb658b6ada8cce6bc8cf8c5aa0de58404c25d865e74bed8a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/layers/Layer.py",
+      "bytes": 17011,
+      "sha256": "636265ea5b3ac794f121e2dbce9891ad1bf5fee461d19f39db0492d855d4b11d"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/layers/RevIN.py",
+      "bytes": 2054,
+      "sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/models/pathformer_model.py",
+      "bytes": 2886,
+      "sha256": "faf7267a9d6e681a9db4cfa2993a0e12ceff7ca5fe608ef734084485fb1c07ba"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/pathformer.py",
+      "bytes": 3460,
+      "sha256": "7edd1e5524d316e132360c43ff5624cbbd1ff7654d58df79ca5abfb87c105882"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/utils/decomposition.py",
+      "bytes": 1560,
+      "sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/utils/metrics.py",
+      "bytes": 967,
+      "sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/utils/Other.py",
+      "bytes": 7702,
+      "sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pathformer/utils/tools.py",
+      "bytes": 1529,
+      "sha256": "a2bd8f38ec42b62cdb6c2717065c3d2f25ebc6a90ebd520187ffb504aa8e59e5"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/__init__.py",
+      "bytes": 156,
+      "sha256": "b2f5861cc63b88a27a4d9b667769a1ed2001bbd553cefc2b6f3d8f8bf14fdf0a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/layers/__init__.py",
+      "bytes": 81,
+      "sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/layers/PDF_backbone.py",
+      "bytes": 23524,
+      "sha256": "43a90474eabebcdf1b392157374db20f5723a5e9183628b820dbd64e7c668955"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/layers/PDF_layers.py",
+      "bytes": 5017,
+      "sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/layers/RevIN.py",
+      "bytes": 2145,
+      "sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/models/__init__.py",
+      "bytes": 81,
+      "sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/models/PDF.py",
+      "bytes": 3302,
+      "sha256": "af8444b5b8da87307cc72e61af44e20e4a957297d51ec13852ece026a5d72a64"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/PDF.py",
+      "bytes": 3590,
+      "sha256": "f4efc12137795a5a2e9d8baa7e9dca5282d76e62887a96c494b4121b4ea5c254"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/utils/decomposition.py",
+      "bytes": 1560,
+      "sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/utils/metrics.py",
+      "bytes": 967,
+      "sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/utils/Other.py",
+      "bytes": 7702,
+      "sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/pdf/utils/tools.py",
+      "bytes": 1393,
+      "sha256": "c0340cb24dd2f9e9a4e52abc4e96dd839fdd82c37a0e54f9da5a6882e0a5d5ad"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/self_impl/__init__.py",
+      "bytes": 96,
+      "sha256": "7658d0f7faafe786d22e8ce0352d45598bba3398d1a80cb9883bddd3aed8b4ee"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/self_impl/VAR/VAR.py",
+      "bytes": 2341,
+      "sha256": "8523d69d83b701b83c56f7f10772a8b6ef560c46c84351c319d82ce71b4c5a61"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/tag_csv/darts_tag.csv",
+      "bytes": 636,
+      "sha256": "2eee192b1e812f7d4e7a8deb96e4a2906d7fd875fc60e2668eca00a082abd1b8"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/tag_csv/other_methods_tag.csv",
+      "bytes": 44,
+      "sha256": "a26dc7427baeb9006b267c9f9f6e76c7d8b8c99bcd8977349a1369b6dd703ba0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/tag_csv/tslib_tag.csv",
+      "bytes": 327,
+      "sha256": "6848e0cce1777c789a7410f1a41d8dd6358c4c4b194571bf0893d78584fa81d0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/__init__.py",
+      "bytes": 2353,
+      "sha256": "00ad3153b353cd53c7942e4b22b7f58fe7b4f4ae3f45cb6d06ea644d793adb12"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/adapters_for_transformers.py",
+      "bytes": 4095,
+      "sha256": "3c8eb2d4046622c94d9171432ed324f18b5e0031bd42c2e11b5421b4519a5027"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/AutoCorrelation.py",
+      "bytes": 6831,
+      "sha256": "0491f29e5a6cc70f25d3fd53e28e039868a2302395c16144db9e550a24144e96"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/Autoformer_EncDec.py",
+      "bytes": 7069,
+      "sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/Conv_Blocks.py",
+      "bytes": 2655,
+      "sha256": "e7b13cb38557718338e041b535deafc6a4e870f23f3a599a895d2ae26c99e7de"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/Crossformer_EncDec.py",
+      "bytes": 4589,
+      "sha256": "c57cc68d8aa3b4910e8e511c6c4345630e2b3a9da2e45b98407ec87d4c54996c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/Embed.py",
+      "bytes": 7087,
+      "sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/ETSformer_EncDec.py",
+      "bytes": 11571,
+      "sha256": "d8c189515226413e371db399aadb00aa379c2b5d93db5cb0fbcf68003b76f4e1"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/FourierCorrelation.py",
+      "bytes": 8236,
+      "sha256": "62e920667402eb0fe23d9c42c19214dc91b7fe58641e98fe2f757bfbc6bf7c87"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/MultiWaveletCorrelation.py",
+      "bytes": 24381,
+      "sha256": "d16680006abe1ddda2ed3186968ad6ec6eca84680b9c533b3d98567e721cd090"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/Pyraformer_EncDec.py",
+      "bytes": 7818,
+      "sha256": "1b7603e1ffbee7277ba2cbe30e045ed263a469d4639b7b58841e2f06e058f141"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/SelfAttention_Family.py",
+      "bytes": 12390,
+      "sha256": "c3a45401d0dd532df45e85da2d158c056b7eb07337dacf053f8aeb698c26dc59"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/StandardNorm.py",
+      "bytes": 2261,
+      "sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/layers/Transformer_EncDec.py",
+      "bytes": 4930,
+      "sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Autoformer.py",
+      "bytes": 7446,
+      "sha256": "b2be3b094537beb7ef74cd2ddf546a716dcc006d98ebee606423464ea43397d8"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Crossformer.py",
+      "bytes": 7342,
+      "sha256": "bdb699e8dbc70f072357367f2f105df6977779facaea3ba6bdb22711d82f7ad9"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/DLinear.py",
+      "bytes": 4726,
+      "sha256": "9b5cade2b638346c398991b49cbd4a0a7f84fe0b39cf2725ef33d959aa7958fa"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/ETSformer.py",
+      "bytes": 5041,
+      "sha256": "0689de5fb2984207241a2b51b8da9186865a06d6471366cf5c8b0cc93824e59f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/FEDformer.py",
+      "bytes": 8218,
+      "sha256": "cd2ce6d7864bb681f42d3c4d96a6aeb7942bd5a00fbf76da361b9585ba06eb94"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/FiLM.py",
+      "bytes": 12209,
+      "sha256": "dfe2a908ffceb7c08f5384d0460c36df7222726eaaa9c19fd141c36e25167c5d"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/FreTS.py",
+      "bytes": 4780,
+      "sha256": "eecfbc156bc9a7df0d97b9f2794174bc7d17c6add4f41df94e145ba5e701d3e9"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Informer.py",
+      "bytes": 7133,
+      "sha256": "e4d9ddff37c549de415cd06521d5c41fa69e51b2cb58b3be1bf387accb54fea1"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/iTransformer.py",
+      "bytes": 6146,
+      "sha256": "27f0e509152fdbb8e2b4d2236a82deab4e29052731ddd21bcf9c641518fa4ab6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Koopa.py",
+      "bytes": 13731,
+      "sha256": "b24e0eb202aa28ab7961310c2abf4cd9a8abdf2c4a491b588a9f7be8ff604778"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/LightTS.py",
+      "bytes": 5519,
+      "sha256": "cc756ac30d283c6839fbc4fdfae513be152caaf8eae51c1b04ed8bef0f277236"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/MICN.py",
+      "bytes": 10774,
+      "sha256": "b11f146e5bc4c54ac3f2a69a15577c47132227f7e27e48db91926828d1b023f0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Nonstationary_Transformer.py",
+      "bytes": 10893,
+      "sha256": "0ceba484602a40a0b6e8156d2d53eaa9e5a2145c4aa6c238e56bfc1204f89d9f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/PatchTST.py",
+      "bytes": 9020,
+      "sha256": "c6b3247a8ac0584218c367629bc391d3bb5cc972aed29287f48f8734ed9612ca"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Pyraformer.py",
+      "bytes": 4297,
+      "sha256": "050222339617ca355cc3f8f65933849d50a0f2a579a932643fbb95a51324227f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Reformer.py",
+      "bytes": 5302,
+      "sha256": "3cf00b4375b81d5bf07be0d2f4af956beb59c222fe377637ad05b54177ff140c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/SegRNN.py",
+      "bytes": 4495,
+      "sha256": "9fe71e22611bf34c93169dc16a64e582fb0251cfd4f686865d9f465da8c468ab"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/TemporalFusionTransformer.py",
+      "bytes": 17692,
+      "sha256": "84d191e8933c7a501f7bb50ce996aa6023fd464d05a581887b7fa1696cdbe555"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/TiDE.py",
+      "bytes": 10427,
+      "sha256": "f6097046640636eee52f370191ce9f397f8c77ba3ea8879ebc881edc47d5be02"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/TimeMixer.py",
+      "bytes": 20519,
+      "sha256": "374f3f6443509ae07bd12cb89cd5b9204f9fceaea5d43b92d81516be9663edfa"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/TimesNet.py",
+      "bytes": 8656,
+      "sha256": "d13f132a4bb0782bdc78b3ab42a14adb31e5582121bc0c2719b0ef6dbe99e6e6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/Transformer.py",
+      "bytes": 6381,
+      "sha256": "b23b111d857273cc2e5d0c01d598e751cc7c8914dcd0870f0430fc2aaf816b22"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/models/TSMixer.py",
+      "bytes": 1821,
+      "sha256": "88b859c09e56495c03dba84b366df8b43574ac0e2430c8609e650232b48e8288"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/patchs/Linear.py",
+      "bytes": 2854,
+      "sha256": "f860e53ab52069d788b742ed2511e21f8d410276d826afdf6a773e13dfb9a31c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/patchs/NLinear.py",
+      "bytes": 2946,
+      "sha256": "d1be9098965503b2249ab3396f3f95526eb865b2c10a297587a803aed8b7b208"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/patchs/Triformer.py",
+      "bytes": 11234,
+      "sha256": "fb314cf2573be23a765b4dc4bccc1fbae5feff0b91b9a6b1a9172db0e44376f7"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/utils/losses.py",
+      "bytes": 3600,
+      "sha256": "0a6acaed2583dd99684f114a0bb5a7a52c49fe4933096b5d97a316433813be0f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/utils/timefeatures.py",
+      "bytes": 4369,
+      "sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/time_series_library/utils/tools.py",
+      "bytes": 3356,
+      "sha256": "3f0b89a47e4a4d1277aed278b529e41fb50d6354215525b589f37b778a531ab2"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/__init__.py",
+      "bytes": 82,
+      "sha256": "554aeaee423422a6be800e09a03c2fed5fa00fc44940721b667479c0d1eb54bf"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/layers/Autoformer_EncDec.py",
+      "bytes": 7069,
+      "sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/layers/ChebyKANLayer.py",
+      "bytes": 1952,
+      "sha256": "801501991050aac8a4a18c64ce646dbcf3ce581b8b4a7f9c18bb3b5631e352e5"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/layers/Embed.py",
+      "bytes": 8965,
+      "sha256": "b02403e62ebecce8eb691db36292353ad6828f641d8356b39f2184373784f267"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/layers/StandardNorm.py",
+      "bytes": 2261,
+      "sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/models/timekan_model.py",
+      "bytes": 9944,
+      "sha256": "0c182dcc148142777a164db2ef8d60b683fc42050639b753f0061da2fca9d2d3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/timekan.py",
+      "bytes": 2047,
+      "sha256": "8af30bb204503c87a7094336a4b64e9fd9c4781c57a672003c72120a5bce7c92"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/utils/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/utils/metrics.py",
+      "bytes": 935,
+      "sha256": "1b3e57f39efab3bc5c671bb378cd0af2a48ca5baa4df8b115cbede3b2ce7c83b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timekan/utils/tools.py",
+      "bytes": 4060,
+      "sha256": "a0fd30a013010af2cafd658a936c9298067d332ca1ab0a7e90f25579dd289ef6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timexer/__init__.py",
+      "bytes": 88,
+      "sha256": "724cea5015b1f0eb528bed8fb289dab7624dd20660c3b6fdd05e3f3e9521f29d"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timexer/layers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timexer/layers/Embed.py",
+      "bytes": 6941,
+      "sha256": "48b2dc4262a7d82334905c8f433a6222299f35baffe2bcdd671f78f26d27d233"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timexer/layers/SelfAttention_Family.py",
+      "bytes": 12102,
+      "sha256": "062e4c761128407755d312b798b95647f566669c15cf0a6c1bb86c96bdb4999b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timexer/model/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timexer/model/timexer_model.py",
+      "bytes": 8335,
+      "sha256": "3eccd0e184467cbc9b0c5db4868acdc581d3d8bdb0442777a7e1ff4b07826a07"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/timexer/timexer.py",
+      "bytes": 1866,
+      "sha256": "50b654a5e257b3e351beb908780eb35a9bc45cea5c1eaffcba44106dd9437a44"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/utils.py",
+      "bytes": 17042,
+      "sha256": "a5f40a51367c6b62600c7cea076575dcfc142fc59e66b61c2055af695afcd1fc"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/__init__.py",
+      "bytes": 128,
+      "sha256": "bb247a53695e20516aceb72a7265b3e8e2ef05052dd316c697c6fb8699070987"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/__init__.py",
+      "bytes": 904,
+      "sha256": "f07a2dd4527f5623ebac075b36916fbfa33f1aaecac4d052561e66bbe2e14e17"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/deterministic_padding.py",
+      "bytes": 830,
+      "sha256": "0df897fc941d769d8f0ffbe18168050403daa9cf4ace75362fc4fcc3fb650096"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/latent_encoder.py",
+      "bytes": 3463,
+      "sha256": "bdee5fab86a0c12a72b3f3847af6569ca0428ff3a3de6eb7cbcf6abb16fdb608"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/latent_patchtst.py",
+      "bytes": 19976,
+      "sha256": "3c7272f91f2a108e42891de298f409453240ea947a0da28516db143c0655156f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/masking.py",
+      "bytes": 840,
+      "sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/multimodal_fusion.py",
+      "bytes": 4616,
+      "sha256": "900dbe777ebd169f696428a4ef08eaada917f54d0a1a6ccbe89614bc38b43139"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/SelfAttention_Family.py",
+      "bytes": 12552,
+      "sha256": "beffcdd3287fc4add2905b15811e7b3b60a8bafa7cb796529786c3b06b84e145"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/state_to_observation_mlp_decoder.py",
+      "bytes": 4541,
+      "sha256": "8a7406c1d526f0f38c6e8d94dd869b2f648cd44223e2ff00c6bdf8955228efbc"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/Transformer_EncDec.py",
+      "bytes": 5365,
+      "sha256": "c3bb0a411a6df5bdb86f33589ae851304907084974c0a155138f1902aae653d3"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/layers/visreg_projector.py",
+      "bytes": 2367,
+      "sha256": "cdbc6c15df1ce5d82b3b2a302e1620c11599e83a8efbabc61ea98f42daf16181"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/losses/__init__.py",
+      "bytes": 314,
+      "sha256": "8d8820cd1309b57db9782dca6ebc779844abf4ce142e2bf533bfb3fac868177f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/losses/latent_state_loss.py",
+      "bytes": 9908,
+      "sha256": "194b9965a8813ef075d76efdecdac040ebe266d91fbb7723a55825aba01c2b71"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/losses/sigreg_loss.py",
+      "bytes": 1788,
+      "sha256": "0d68c66f5f1401cc9356003b70d713f4f8f8b3df60c94a4305139ebaa9bc3274"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/losses/visreg_loss.py",
+      "bytes": 3691,
+      "sha256": "a6fa052ebe3b8d3813e6ee8a2943fe3006ac4cba0905c020f6ed9378b6d11faf"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/models/__init__.py",
+      "bytes": 105,
+      "sha256": "9c74130fd14b0818b99d40a817e0e9c7d88ee5c8add703745411bdda4f424472"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/models/worldts_model.py",
+      "bytes": 23613,
+      "sha256": "5cf2fc1d1a8b8738d7a7f1c4eb8a017737c13a6c4d06e75e0d24a1873e5d02cd"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/worldts/worldts.py",
+      "bytes": 36615,
+      "sha256": "20dec8b07fc8b26b555856bc4ffade7901cbc483a22151e5c12748f14c0fdbb0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/__init__.py",
+      "bytes": 78,
+      "sha256": "0fdcb8ea5a855c4b1f7db068ac0bbdda779abe6e1b674b63af09a4072aed04d1"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/layers/decomp.py",
+      "bytes": 520,
+      "sha256": "d4accfda080c686c9d14ab28da4fa1b6f02d55a4b8a5b97b204a5259aa66a2c2"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/layers/dema.py",
+      "bytes": 1031,
+      "sha256": "25c0f664d626161c8fbfa2968fa3db7fa27c4214f145164ea3132f0e03baccc6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/layers/ema.py",
+      "bytes": 1395,
+      "sha256": "8d4ff9bc29a6171ccbbd1353d5367298ce23e19a5fb13fab11a527ca88724715"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/layers/network.py",
+      "bytes": 3853,
+      "sha256": "1003531371c1bad9311c2235df01a9b9368e2fb011cd05d27c6d08e23eda1bde"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/layers/network_cnn.py",
+      "bytes": 2891,
+      "sha256": "1c17edd2b515cb1f54960125fc50ffaead39564bc241b2d7b059ad24de5eb95c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/layers/network_mlp.py",
+      "bytes": 1351,
+      "sha256": "f7f9e79c58cff4b97dc4ac59954ac6e1c987811a559365d150b6e4793d9271cf"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/layers/revin.py",
+      "bytes": 2053,
+      "sha256": "5c41332e9975c6ec4d2d6ab0492322e278c2db855462ad5a404fc4393ef916b6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/models/xPatch.py",
+      "bytes": 2236,
+      "sha256": "d32ce88b7742bdf1413e9869df29dc194ef7796a9191d026754de7594d8cbd7f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/utils/metrics.py",
+      "bytes": 999,
+      "sha256": "cf212398c1f001f4ef411b48e3b2da447155cfb8684065e87eb31b8cbd958112"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/utils/timefeatures.py",
+      "bytes": 3743,
+      "sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/utils/tools.py",
+      "bytes": 3497,
+      "sha256": "fe034e4f5f949dd28e93df934d23beb8d5d3fef2b15f55b75bda9c275245a141"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/baselines/xpatch/xpatch.py",
+      "bytes": 2027,
+      "sha256": "8571dce8cd1a48239a45ded3dc5eea6f553fb11a4a3ee8fe4f6362f4549da082"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/common/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/common/constant.py",
+      "bytes": 541,
+      "sha256": "fd38216ff33c5772ddc758e2ddcedaad33b3b67965bff2842bfe895ae402a02e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/__init__.py",
+      "bytes": 81,
+      "sha256": "1b4d686e9c14670264eb5d586a93fc8e6e93cb0a936af2af6df24995b7d310a9"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/data_pool.py",
+      "bytes": 637,
+      "sha256": "dc642478ae90489374502aaf20cb9c670e341432f5ca647c3e2549933f47dc08"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/data_pool_impl_base.py",
+      "bytes": 1237,
+      "sha256": "207e2687ca7253302229fae30a9cd756743b83de55f5d3da0f95fcbe12b9893f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/data_server_base.py",
+      "bytes": 461,
+      "sha256": "12aab29d3a941bdacc9e91f542e4362ac791a15025d97a1965c6a81f74f8cae4"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/data_source.py",
+      "bytes": 5582,
+      "sha256": "ce770916b3d49f50ab56b8adc132ddb85620dfadcf62fd4048d68a09456167c8"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/dataset.py",
+      "bytes": 5550,
+      "sha256": "67cf0f52fa4f6226f88b27bfc226a0c023561916757258cc1292a961721963dd"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/suites/__init__.py",
+      "bytes": 80,
+      "sha256": "b44fb5a2e3c102802f2fcc20630a603aa7e908bf075c6127183ca940fd50d69f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/suites/global_storage.py",
+      "bytes": 4361,
+      "sha256": "851d866df60cbc5938a5b8db9b2d31ab94cc4319eee6d1d214b9b1ff7e0d7387"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/data/utils.py",
+      "bytes": 5678,
+      "sha256": "92e077fd069f812a6ae75adc39c91ea721eedd6f54b3ded99af8b831bdb9dad5"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/evaluate_model.py",
+      "bytes": 6413,
+      "sha256": "113def002af7939e379ede525a0992caaad33de3e4831bd0c95c649fcd10344c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/evaluator.py",
+      "bytes": 3389,
+      "sha256": "b2e09acf5197b24b584b54b8ca544af997969680a894e20877a73d1df6e98523"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/metrics/__init__.py",
+      "bytes": 227,
+      "sha256": "b1e1b0964e05d1dce68867e52f7076ca2ddd7b6cfec6f044457ad07252a75a12"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/metrics/regression_metrics.py",
+      "bytes": 7048,
+      "sha256": "05a94a3852eb9a160a08fafd5f0acfe74558e3fa6d2533c906b21362f99a9405"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/metrics/utils.py",
+      "bytes": 1692,
+      "sha256": "2964baadad2d3a94b034d95fcdac6bbe3beb088ccc0f2583cd28eb69796f5d21"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/strategy/__init__.py",
+      "bytes": 270,
+      "sha256": "f6011743e535552776088f339099bb0ca72ec0d59feaa911fb594f65e6685f23"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/strategy/constants.py",
+      "bytes": 742,
+      "sha256": "794906824977b57d9a3bcc874b9f7ff0aff230747a1488230e715f5b31500211"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/strategy/fixed_forecast.py",
+      "bytes": 4601,
+      "sha256": "8e27779f1323d49f4ba931182cce42cc4a0210b5cce676271ebeb2243f9dc524"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/strategy/forecasting.py",
+      "bytes": 3571,
+      "sha256": "cb8e165bdeee49713f485c452ccb4a1cd8d600f5e5b6a31d9338a1c1bb1823cd"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/strategy/rolling_forecast.py",
+      "bytes": 23581,
+      "sha256": "c896972ac22ddcd6c6311f902807f9e06d6dc80bd9ce79cb9850a037e892954c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/evaluation/strategy/strategy.py",
+      "bytes": 9020,
+      "sha256": "3b4f9c43907b91edebda49db6b8329e3134716325846346decf6bd4a266e0ff0"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/models/__init__.py",
+      "bytes": 218,
+      "sha256": "939ff75bf1dd11bfdfa73a0028d9e5a2ce1497b3e71f5a6ee48f181628efe124"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/models/model_base.py",
+      "bytes": 3154,
+      "sha256": "be5520b4cb1299bd94dd8aa46edc5451d5052ec8fb8c2cf8a8b1edcd2c585532"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/models/model_loader.py",
+      "bytes": 9920,
+      "sha256": "933882a9d9ed93c64433714be635bb09560c5d7532083972eea55e791d0ace66"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/pipeline.py",
+      "bytes": 5712,
+      "sha256": "7faa76b852005fee431940749626c8c24b961ace899f999b7dd0f7c24adf3d88"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/recording.py",
+      "bytes": 5572,
+      "sha256": "b2a6bd86b66ff9d1912bf894be386af0d2c1fd0b5756088efa35ccfb9e683aa6"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/__init__.py",
+      "bytes": 417,
+      "sha256": "95b8b2b4b9acb4069b3e320f551881ea3f02c8b14c18b645182420bfc74a91c7"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/report_csv.py",
+      "bytes": 2855,
+      "sha256": "9fc1d8ce8ba98845ab09fc0051c43453486cc03b489c1e7082260e415d909261"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/report_dash/__init__.py",
+      "bytes": 142,
+      "sha256": "43e1f225106466b744df7c08027e5b94be8bd64f93756082464a0ce364f35b5c"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/report_dash/app.py",
+      "bytes": 2114,
+      "sha256": "4bcf53da07388c6e0d81f9827bc7a2ba57a1a6c3184853ae7f2158734f3dfea4"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/report_dash/layout.py",
+      "bytes": 1871,
+      "sha256": "08ef1ed22283c3993c21ffe8267542dab18eaa949fb33bcc37e15722d0ff427f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/report_dash/memory.py",
+      "bytes": 176,
+      "sha256": "3ef2af551cc0d05ed9effb01968f4217635eb50be3798a644360e844ad197855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/report_dash/pages/leaderboard.py",
+      "bytes": 950,
+      "sha256": "2c7e6f2a727bf2b1a5f4e6b1cfad64849e3611bb4b14200171c51a40e750e40f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/report_dash/pages/query.py",
+      "bytes": 2443,
+      "sha256": "ccc8c3427061991810e4ab0ccc3e56ae79b5a2734298af5a4609261e86bb6391"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/report/utils/leaderboard.py",
+      "bytes": 6588,
+      "sha256": "822023f0c30d23f983ab5e9314dac0f68fe13a181ad968f12c83e8a818452533"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/__init__.py",
+      "bytes": 24,
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/compress.py",
+      "bytes": 2743,
+      "sha256": "f89b3bc6388aa750b0b0a82a360fd46a953b5324ee2d3f07c686da6c7789e745"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/data_processing.py",
+      "bytes": 5129,
+      "sha256": "40dbf699abb6fc513c9f3bcd2ca34577aa675cb49d5f4ef5a2fca1dde3738577"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/design_pattern.py",
+      "bytes": 371,
+      "sha256": "a0be9df05c79680e480685a8b6f5629a88be9db94f0b284421b5b3cbae3449ff"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/get_file_name.py",
+      "bytes": 948,
+      "sha256": "f91b6e7bdf83f0bd3640aed99ab9c41cd64725e98956aec8cfb956eba6823248"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/parallel/__init__.py",
+      "bytes": 2474,
+      "sha256": "52d53cd4f3ece729bdfef434dd08f5700bbbf2d35117764092625b0daf4b955e"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/parallel/base.py",
+      "bytes": 726,
+      "sha256": "e8dd80a62de8ff695f8cb9d398292a6dc407b1f2fdcfc8de5405fd2c1e7e8c1f"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/parallel/ray_backend.py",
+      "bytes": 17639,
+      "sha256": "b3206a3015e1086cf333e94ba29519774f140ec67c7549ff4333aaf070b85655"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/parallel/sequential_backend.py",
+      "bytes": 1882,
+      "sha256": "07aa802d3085e466e73df427bf82547f01c74146a316203302b62ff3fb243748"
+    },
+    {
+      "path": "upstream/WorldTS/DAG-bench/ts_benchmark/utils/random_utils.py",
+      "bytes": 692,
+      "sha256": "0afeedb0cafc23385d00c41bbe2db9cf1d3aa37e34de77a8732da68580493a75"
+    },
+    {
+      "path": "upstream/WorldTS/README.md",
+      "bytes": 2951,
+      "sha256": "2eba5df88c3452aca29025b557ac4ef9d8905f48cb30b7a2db6088faff465b21"
+    }
+  ]
+}

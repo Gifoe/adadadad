@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "official_archive": "D:\\conditional_latent_loop_seed2021_v1\\upstream\\DAG\\result\\NP\\DAG\\DAG.1791668151.DESKTOP-C4FOPGI.15112.csv.tar.gz",
+      "archive_sha256": "ba16485317be0c0d7bd255591008724f16d46865d813ff3696ae912943851ff3",
+      "mse_norm": 0.2017582081732161,
+      "mae_norm": 0.2368080931615079,
+      "max_abs_diff": 4.804277892178632e-09,
+      "dataset": "NP",
+      "horizon": 24
+    },
+    {
+      "official_archive": "D:\\conditional_latent_loop_seed2021_v1\\upstream\\DAG\\result\\NP\\DAG\\DAG.1791668337.DESKTOP-C4FOPGI.37800.csv.tar.gz",
+      "archive_sha256": "249234f6632b1c7ad165581c673ba150694adcc71cf65158a2ce5fb13c53beb2",
+      "mse_norm": 0.5277195259439886,
+      "mae_norm": 0.4569217409263301,
+      "max_abs_diff": 1.2189591003242128e-08,
+      "dataset": "NP",
+      "horizon": 360
+    },
+    {
+      "official_archive": "D:\\conditional_latent_loop_seed2021_v1\\upstream\\DAG\\result\\PJM\\DAG\\DAG.1791668680.DESKTOP-C4FOPGI.9572.csv.tar.gz",
+      "archive_sha256": "34e0c380385503445ba3b74145449146342ccf9dbb3707ec1594d8bf9dee7fd4",
+      "mse_norm": 0.0574424284042745,
+      "mae_norm": 0.1432808271186697,
+      "max_abs_diff": 2.7248273082314256e-10,
+      "dataset": "PJM",
+      "horizon": 24
+    },
+    {
+      "official_archive": "D:\\conditional_latent_loop_seed2021_v1\\upstream\\DAG\\result\\PJM\\DAG\\DAG.1791668919.DESKTOP-C4FOPGI.35852.csv.tar.gz",
+      "archive_sha256": "88acb2130139a22c6f81c7a151406c56cb1e2aab548b11e99daff358624161fa",
+      "mse_norm": 0.12972416293763,
+      "mae_norm": 0.2175742606655925,
+      "max_abs_diff": 9.98777061056444e-10,
+      "dataset": "PJM",
+      "horizon": 360
+    }
+  ]
+}

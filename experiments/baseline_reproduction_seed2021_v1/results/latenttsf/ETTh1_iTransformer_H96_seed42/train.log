@@ -1,0 +1,217 @@
+Using GPU
+Args in experiment:
+[1mBasic Config[0m
+  Task Name:          long_term_forecast  Is Training:        1                   
+  Model ID:           ETTh1_iTransformer_H96_seed42Model:              iTransformer        
+
+[1mData Loader[0m
+  Data:               ETTh1               Root Path:          D:\baseline_reproduction_seed2021_v1\data\ETT-small
+  Data Path:          ETTh1.csv           Features:           M                   
+  Target:             OT                  Freq:               h                   
+  Checkpoints:        D:\baseline_reproduction_seed2021_v1\results\latenttsf\ETTh1_iTransformer_H96_seed42\checkpoints
+
+[1mForecasting Task[0m
+  Seq Len:            720                 Label Len:          0                   
+  Pred Len:           96                  Seasonal Patterns:  Monthly             
+  Inverse:            0                   
+
+[1mModel Parameters[0m
+  Top k:              5                   Num Kernels:        6                   
+  Enc In:             7                   Dec In:             7                   
+  C Out:              7                   d model:            32                  
+  n heads:            4                   e layers:           2                   
+  d layers:           1                   d FF:               64                  
+  Moving Avg:         25                  Factor:             1                   
+  Distil:             1                   Dropout:            0.1                 
+  Embed:              timeF               Activation:         gelu                
+
+[1mRun Parameters[0m
+  Num Workers:        0                   Itr:                1                   
+  Train Epochs:       100                 Batch Size:         256                 
+  Patience:           5                   Learning Rate:      0.0003              
+  Des:                Exp                 Loss:               MSE                 
+  Lradj:              cosine              Use Amp:            0                   
+
+[1mGPU[0m
+  Use GPU:            1                   GPU:                0                   
+  Use Multi GPU:      0                   Devices:            0,1,2,3             
+
+[1mDe-stationary Projector Params[0m
+  P Hidden Dims:      128, 128            P Hidden Layers:    2                   
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>  <<<<<<<<<<<<<<<<<<<<<<<<<<
+Use GPU: cuda:0
+train 7825
+val 2785
+test 2785
+V20: Latent Space Forecasting
+Encoder type: AE
+Perceptual weight (¦Á): 0.0
+MSE weight: 10.0
+Cosine weight (¦Â): 15.0
+Reconstruction weight (¦Ã): 0.0
+Loss = Latent_Loss + 0.0 * Perceptual_Loss + 0.0 * Reconstruction_Loss
+Latent_Loss = 10.0 * MSE + 15.0 * Cosine
+Using MLP AutoEncoder (enc_in ¡ú d_model)
+  Latent shape: (batch, seq_len, d_model)
+Loading pretrained AE (ae_type=MLP) from D:\baseline_reproduction_seed2021_v1\upstream\LatentTSF\checkpoints\AutoEncoder_MLP_MAE_ETTh1_AE_ETTh1_ftM_sl24_dm32_dff64_lradj0_Exp-sl24-lr0.0005-500-32bs_0\checkpoint.pth
+Freezing AE (encoder + decoder)
+>>>>>>>start training : ETTh1_iTransformer_H96_seed42>>>>>>>>>>>>>>>>>>>>>>>>>>
+WandB Project: LatentTSF-V20-Latent
+  - Environment WANDB_PROJECT: NOT SET
+  - Default project name: LatentTSF-V20-Latent
+Model learning rate: 0.0003
+Epoch: 1, cost time: 1.449s
+Train Loss: 2.9085185
+  Latent: 2.9085185 (MSE: 0.1524267, Cos: 0.0922834)
+  Perceptual: 0.6343729, Reconstruction: 0.0027818
+Epoch: 1, Valid Loss: 1.1979891
+Validation loss decreased (inf --> 1.197989).  Saving model ...
+Updating learning rate to 0.0002999259840548597
+Epoch: 2, cost time: 0.656s
+Train Loss: 2.4114450
+  Latent: 2.4114450 (MSE: 0.1265383, Cos: 0.0764042)
+  Perceptual: 0.5284118, Reconstruction: 0.0027838
+Epoch: 2, Valid Loss: 1.0595752
+Validation loss decreased (1.197989 --> 1.059575).  Saving model ...
+Updating learning rate to 0.0002997040092642407
+Epoch: 3, cost time: 0.658s
+Train Loss: 2.1785148
+  Latent: 2.1785148 (MSE: 0.1138186, Cos: 0.0693553)
+  Perceptual: 0.4746068, Reconstruction: 0.0027833
+Epoch: 3, Valid Loss: 0.9589240
+Validation loss decreased (1.059575 --> 0.958924).  Saving model ...
+Updating learning rate to 0.000299334294690462
+Epoch: 4, cost time: 0.655s
+Train Loss: 2.0245304
+  Latent: 2.0245304 (MSE: 0.1055266, Cos: 0.0646176)
+  Perceptual: 0.4378972, Reconstruction: 0.0027846
+Epoch: 4, Valid Loss: 0.8921749
+Validation loss decreased (0.958924 --> 0.892175).  Saving model ...
+Updating learning rate to 0.0002988172051971717
+Epoch: 5, cost time: 0.656s
+Train Loss: 1.9273722
+  Latent: 1.9273722 (MSE: 0.1003084, Cos: 0.0616192)
+  Perceptual: 0.4140060, Reconstruction: 0.0027830
+Epoch: 5, Valid Loss: 0.8460764
+Validation loss decreased (0.892175 --> 0.846076).  Saving model ...
+Updating learning rate to 0.00029815325108927063
+Epoch: 6, cost time: 0.657s
+Train Loss: 1.8680494
+  Latent: 1.8680494 (MSE: 0.0970946, Cos: 0.0598069)
+  Perceptual: 0.3994884, Reconstruction: 0.0027823
+Epoch: 6, Valid Loss: 0.8233554
+Validation loss decreased (0.846076 --> 0.823355).  Saving model ...
+Updating learning rate to 0.0002973430876093033
+Epoch: 7, cost time: 0.657s
+Train Loss: 1.8208284
+  Latent: 1.8208284 (MSE: 0.0945046, Cos: 0.0583855)
+  Perceptual: 0.3881470, Reconstruction: 0.0027847
+Epoch: 7, Valid Loss: 0.8077635
+Validation loss decreased (0.823355 --> 0.807764).  Saving model ...
+Updating learning rate to 0.0002963875142908121
+Epoch: 8, cost time: 0.654s
+Train Loss: 1.7873852
+  Latent: 1.7873852 (MSE: 0.0926585, Cos: 0.0573867)
+  Perceptual: 0.3804415, Reconstruction: 0.0027835
+Epoch: 8, Valid Loss: 0.7855012
+Validation loss decreased (0.807764 --> 0.785501).  Saving model ...
+Updating learning rate to 0.00029528747416929463
+Epoch: 9, cost time: 0.667s
+Train Loss: 1.7580765
+  Latent: 1.7580765 (MSE: 0.0910111, Cos: 0.0565310)
+  Perceptual: 0.3734655, Reconstruction: 0.0027836
+Epoch: 9, Valid Loss: 0.7671798
+Validation loss decreased (0.785501 --> 0.767180).  Saving model ...
+Updating learning rate to 0.0002940440528515414
+Epoch: 10, cost time: 0.654s
+Train Loss: 1.7324643
+  Latent: 1.7324643 (MSE: 0.0896199, Cos: 0.0557510)
+  Perceptual: 0.3677368, Reconstruction: 0.0027831
+Epoch: 10, Valid Loss: 0.7650947
+Validation loss decreased (0.767180 --> 0.765095).  Saving model ...
+Updating learning rate to 0.00029265847744427303
+Epoch: 11, cost time: 0.655s
+Train Loss: 1.7116780
+  Latent: 1.7116780 (MSE: 0.0884256, Cos: 0.0551615)
+  Perceptual: 0.3630454, Reconstruction: 0.0027844
+Epoch: 11, Valid Loss: 0.7615537
+Validation loss decreased (0.765095 --> 0.761554).  Saving model ...
+Updating learning rate to 0.0002911321153431338
+Epoch: 12, cost time: 0.680s
+Train Loss: 1.6920378
+  Latent: 1.6920378 (MSE: 0.0873694, Cos: 0.0545563)
+  Perceptual: 0.3586715, Reconstruction: 0.0027825
+Epoch: 12, Valid Loss: 0.7511201
+Validation loss decreased (0.761554 --> 0.751120).  Saving model ...
+Updating learning rate to 0.00028946647288323766
+Epoch: 13, cost time: 0.677s
+Train Loss: 1.6752155
+  Latent: 1.6752155 (MSE: 0.0864301, Cos: 0.0540610)
+  Perceptual: 0.3551327, Reconstruction: 0.0027845
+Epoch: 13, Valid Loss: 0.7423981
+Validation loss decreased (0.751120 --> 0.742398).  Saving model ...
+Updating learning rate to 0.00028766319385259713
+Epoch: 14, cost time: 0.658s
+Train Loss: 1.6563333
+  Latent: 1.6563333 (MSE: 0.0854280, Cos: 0.0534703)
+  Perceptual: 0.3509321, Reconstruction: 0.0027827
+Epoch: 14, Valid Loss: 0.7407905
+Validation loss decreased (0.742398 --> 0.740791).  Saving model ...
+Updating learning rate to 0.00028572405786990294
+Epoch: 15, cost time: 0.658s
+Train Loss: 1.6396818
+  Latent: 1.6396818 (MSE: 0.0844511, Cos: 0.0530114)
+  Perceptual: 0.3472661, Reconstruction: 0.0027845
+Epoch: 15, Valid Loss: 0.7386109
+Validation loss decreased (0.740791 --> 0.738611).  Saving model ...
+Updating learning rate to 0.00028365097862825513
+Epoch: 16, cost time: 0.657s
+Train Loss: 1.6247630
+  Latent: 1.6247630 (MSE: 0.0836047, Cos: 0.0525810)
+  Perceptual: 0.3436260, Reconstruction: 0.0027846
+Epoch: 16, Valid Loss: 0.7378338
+Validation loss decreased (0.738611 --> 0.737834).  Saving model ...
+Updating learning rate to 0.0002814460020065795
+Epoch: 17, cost time: 0.658s
+Train Loss: 1.6091084
+  Latent: 1.6091084 (MSE: 0.0826910, Cos: 0.0521466)
+  Perceptual: 0.3399551, Reconstruction: 0.0027831
+Epoch: 17, Valid Loss: 0.7385356
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0002791113040505915
+Epoch: 18, cost time: 0.658s
+Train Loss: 1.5944882
+  Latent: 1.5944882 (MSE: 0.0818944, Cos: 0.0517030)
+  Perceptual: 0.3367880, Reconstruction: 0.0027835
+Epoch: 18, Valid Loss: 0.7453809
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.00027664918882530225
+Epoch: 19, cost time: 0.667s
+Train Loss: 1.5812168
+  Latent: 1.5812168 (MSE: 0.0811154, Cos: 0.0513375)
+  Perceptual: 0.3334367, Reconstruction: 0.0027823
+Epoch: 19, Valid Loss: 0.7454860
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.00027406208614118424
+Epoch: 20, cost time: 0.656s
+Train Loss: 1.5718375
+  Latent: 1.5718375 (MSE: 0.0805891, Cos: 0.0510631)
+  Perceptual: 0.3311822, Reconstruction: 0.0027813
+Epoch: 20, Valid Loss: 0.7394794
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0002713525491562421
+Epoch: 21, cost time: 0.658s
+Train Loss: 1.5600704
+  Latent: 1.5600704 (MSE: 0.0799467, Cos: 0.0507069)
+  Perceptual: 0.3285342, Reconstruction: 0.0027827
+Epoch: 21, Valid Loss: 0.7422553
+EarlyStopping counter: 5 out of 5
+Early stopping
+Total training time: 18.65s (0.31min)
+>>>>>>>start testing : ETTh1_iTransformer_H96_seed42>>>>>>>>>>>>>>>>>>>>>>>>>>
+loading model from D:\baseline_reproduction_seed2021_v1\results\latenttsf\ETTh1_iTransformer_H96_seed42\checkpoints\ETTh1_iTransformer_H96_seed42\checkpoint.pth
+test shape: (2785, 96, 7) (2785, 96, 7)
+mae:0.42083901166915894, mse:0.3943217694759369, rmse:0.6279504299163818, mape:9.79138469696045, mspe:37777.14453125
+Results saved to D:\baseline_reproduction_seed2021_v1\results\latenttsf\ETTh1_iTransformer_H96_seed42\official_result.csv
+LATENTTSF_RESULT {"model": "LatentTSF", "dataset": "ETTh1", "backbone": "iTransformer", "input_len": 720, "horizon": 96, "seed": 42, "source_type": "official_source", "run_type": "fresh_run", "paper_mse": 0.392, "paper_mae": 0.422, "reproduced_mse": 0.3943217671223567, "reproduced_mae": 0.42083890819409175, "relative_mse_diff": 0.0059228753121345346, "best_epoch": 16, "epochs": 21, "train_seconds": 18.408169269561768, "eval_seconds": 0.5717458724975586, "peak_gpu_mb": 230.36572265625, "num_parameters": 43392, "frozen_ae_parameters": 5159, "config_path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\config.json", "checkpoint_path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\checkpoints\\ETTh1_iTransformer_H96_seed42\\checkpoint.pth", "checkpoint_sha256": "2ed22658ae96b2be1707c82fc7b89fa0f33ccee98d7616a1377c272a70549378", "predictions_sha256": "e82525e4db204860479e424890a4ac96925704d0edab6d74e3851607f8c4fa54", "data_sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066", "source_commit": "7c8ae947ee1220bf4e788ace6bc2f0f122cb26c2", "official_metrics": [0.42083901166915894, 0.3943217694759369, 0.6279504299163818, 9.79138469696045, 37777.14453125], "independent_verification": {"mse": 0.3943217671223567, "mae": 0.42083890819409175, "elements": 1871520, "windows": 2785, "max_metric_abs_diff": 1.0347506718133559e-07}, "status": "MATCHED", "exit_code": 0, "start_time": 1791726895.564165, "end_time": 1791726919.5874765}

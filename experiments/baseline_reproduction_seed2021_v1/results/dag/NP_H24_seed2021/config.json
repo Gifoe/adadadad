@@ -1,0 +1,1769 @@
+{
+  "source_commit": "0758990e2c73bb54138ea3e7b11a35cbc5476bcc",
+  "official_command": {
+    "published_line": "python ./scripts/run_benchmark.py --config-path \"rolling_forecast_config.json\" --data-name-list \"NP.csv\" --strategy-args '{\"horizon\": 24, \"target_channel\": [-1]}' --model-name \"dag.DAG\" --model-hyper-params '{\"alpha\": 0.9, \"batch_size\": 64, \"d_ff\": 128, \"d_model\": 64, \"dropout\": 0.0, \"e_layers\": 1, \"horizon\": 24, \"loss\": \"MAE\", \"lr\": 0.001, \"lradj\": \"type3\", \"n_heads\": 4, \"norm\": true, \"num_epochs\": 50, \"patch_len\": 48, \"patience\": 5, \"seq_len\": 168, \"stride\": 48, \"use_c\": 1, \"use_c_exog\": 1, \"use_t\": 1, \"use_t_exog\": 1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path \"NP/DAG\"",
+    "argv": [
+      "./scripts/run_benchmark.py",
+      "--config-path",
+      "rolling_forecast_config.json",
+      "--data-name-list",
+      "NP.csv",
+      "--strategy-args",
+      "{\"horizon\": 24, \"target_channel\": [-1]}",
+      "--model-name",
+      "dag.DAG",
+      "--model-hyper-params",
+      "{\"alpha\": 0.9, \"batch_size\": 64, \"d_ff\": 128, \"d_model\": 64, \"dropout\": 0.0, \"e_layers\": 1, \"horizon\": 24, \"loss\": \"MAE\", \"lr\": 0.001, \"lradj\": \"type3\", \"n_heads\": 4, \"norm\": true, \"num_epochs\": 50, \"patch_len\": 48, \"patience\": 5, \"seq_len\": 168, \"stride\": 48, \"use_c\": 1, \"use_c_exog\": 1, \"use_t\": 1, \"use_t_exog\": 1}",
+      "--gpus",
+      "0",
+      "--num-workers",
+      "1",
+      "--timeout",
+      "60000",
+      "--save-path",
+      "NP/DAG",
+      "--eval-backend",
+      "sequential",
+      "--seed",
+      "2021",
+      "--deterministic",
+      "efficient",
+      "--save-true-pred",
+      "True",
+      "--report-method",
+      "csv"
+    ],
+    "architecture_modified": false,
+    "execution_adjustments": [
+      "sequential evaluation backend (same strategy)",
+      "CPU affinity and four CPU threads",
+      "PyTorch 2.8 sm120 support instead of incompatible 2.4 build"
+    ]
+  },
+  "resolved_config": {
+    "use_amp": 0,
+    "loss": "MAE",
+    "batch_size": 64,
+    "lradj": "type3",
+    "lr": 0.001,
+    "num_workers": 0,
+    "patience": 5,
+    "num_epochs": 50,
+    "adj_lr_in_epoch": true,
+    "adj_lr_in_batch": false,
+    "parallel_strategy": null,
+    "fusion_method": "",
+    "covariate_dim": 6,
+    "cross_attention_head": 12,
+    "cross_attention_dropout": 0.1,
+    "cross_attention_factor": 2,
+    "conv_dropout": 0.1,
+    "alpha_cov": 1.0,
+    "mlp_hidden_dims": 64,
+    "d_model": 64,
+    "d_ff": 128,
+    "n_heads": 4,
+    "factor": 1,
+    "patch_len": 48,
+    "stride": 48,
+    "activation": "gelu",
+    "dbloss_alpha": 0.2,
+    "dbloss_beta": 0.5,
+    "alpha": 0.9,
+    "beta": 0.1,
+    "use_c_exog": 1,
+    "use_t_exog": 1,
+    "use_c": 1,
+    "use_t": 1,
+    "infer_use_future": true,
+    "seq_len": 168,
+    "horizon": 24,
+    "norm": true,
+    "dropout": 0.0,
+    "e_layers": 1,
+    "pred_len": 24,
+    "freq": "h",
+    "enc_in": 3,
+    "dec_in": 3,
+    "c_out": 3,
+    "label_len": 84,
+    "series_dim": 1,
+    "input_dim": 3,
+    "output_dim": 1,
+    "criterion": "L1Loss()"
+  },
+  "data_sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1",
+  "run_type": "verified_reuse",
+  "original_checkpoint": "D:\\conditional_latent_loop_seed2021_v1\\runs\\NP_24_B0\\checkpoint.pt",
+  "original_checkpoint_sha256": "d074fa384d0947566f6cac98b2ae8c6f0c64416ea40567b72d1bf5ae115a567d",
+  "all_source_files_verified": [
+    {
+      "file": "ts_benchmark\\pipeline.py",
+      "current_sha256": "7faa76b852005fee431940749626c8c24b961ace899f999b7dd0f7c24adf3d88",
+      "previous_sha256": "033978f62ec5c0519e3dccb1cfa19289a3c5d5fe1481edc27066378c31f9099d",
+      "canonical_lf_sha256": "7faa76b852005fee431940749626c8c24b961ace899f999b7dd0f7c24adf3d88",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\recording.py",
+      "current_sha256": "b2a6bd86b66ff9d1912bf894be386af0d2c1fd0b5756088efa35ccfb9e683aa6",
+      "previous_sha256": "69bfe04a9752ea33002f1e26ee259e8f602007b2a0015c3bf858d56d34021412",
+      "canonical_lf_sha256": "b2a6bd86b66ff9d1912bf894be386af0d2c1fd0b5756088efa35ccfb9e683aa6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\__init__.py",
+      "current_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "previous_sha256": "9552f854fcf77389160a08cfb4be2eb902cd9a0c0af76ab57df02cbf9125d369",
+      "canonical_lf_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\deep_forecasting_model_base.py",
+      "current_sha256": "f1fbedd56ac1b1d3fd841ac57f2374a69a28e9c6199f627a02457e325647fa3c",
+      "previous_sha256": "c812a309acf3ba40517746111980c6a5c2b9137bf6df4982c59b6fb5d16fea49",
+      "canonical_lf_sha256": "f1fbedd56ac1b1d3fd841ac57f2374a69a28e9c6199f627a02457e325647fa3c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\utils.py",
+      "current_sha256": "a5f40a51367c6b62600c7cea076575dcfc142fc59e66b61c2055af695afcd1fc",
+      "previous_sha256": "3857817638b45c0876e34c1dcfa1443dac4dbcdaeb856d0c8f6acbcbef2243a8",
+      "canonical_lf_sha256": "a5f40a51367c6b62600c7cea076575dcfc142fc59e66b61c2055af695afcd1fc",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\__init__.py",
+      "current_sha256": "90281d85719c9c99925c5958474aa70933cfde24e6ba7e5f2ef65d5679a5eeef",
+      "previous_sha256": "ed2060067e4b999d925a36fdf1c3b7bd24152acd47f0f1d33bb997db6a1466f0",
+      "canonical_lf_sha256": "90281d85719c9c99925c5958474aa70933cfde24e6ba7e5f2ef65d5679a5eeef",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\amplifier\\amplifier.py",
+      "current_sha256": "14123b971554acdfed1bdf9e5b711a36f1966b1e8dbfb405db07ff43fe73936e",
+      "previous_sha256": "a55cf914b5935ad250b82f7fbfdc4b47a59ae7afc01c9b4af258f3212d9c464b",
+      "canonical_lf_sha256": "14123b971554acdfed1bdf9e5b711a36f1966b1e8dbfb405db07ff43fe73936e",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\amplifier\\__init__.py",
+      "current_sha256": "70523b4baa62790acdba215befee07ce7bc3e41e229ace83490a52bafc6cfd01",
+      "previous_sha256": "40232a39101ccc14a1240d52bac363b72db8551741f937c860b0a6495b1c76c9",
+      "canonical_lf_sha256": "70523b4baa62790acdba215befee07ce7bc3e41e229ace83490a52bafc6cfd01",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\amplifier\\layers\\RevIN.py",
+      "current_sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde",
+      "previous_sha256": "bcc6c3c78d5ed2a446b774ad72d62392aaa5cfd5decb189e919ec31f7a885699",
+      "canonical_lf_sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\amplifier\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\amplifier\\models\\amplifier_model.py",
+      "current_sha256": "f51b60d2aec8f106fcde92642d938a9fd49bb84c67e0155227d63d1b32401532",
+      "previous_sha256": "5fb18c51f97c0c05ebf94572c5a53f7de842493f255407baac815e0a03c7cdbe",
+      "canonical_lf_sha256": "f51b60d2aec8f106fcde92642d938a9fd49bb84c67e0155227d63d1b32401532",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\amplifier\\models\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\crosslinear\\crosslinear.py",
+      "current_sha256": "e93da167d7e17c5bc2db385d1010a724114f26242bbf1c4d18818d8c987fa4c7",
+      "previous_sha256": "457b6ebba33198bddd9b55d8ea04cebb7b9bd6d0893b3bcf24c57d7bff0dbed5",
+      "canonical_lf_sha256": "e93da167d7e17c5bc2db385d1010a724114f26242bbf1c4d18818d8c987fa4c7",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\crosslinear\\__init__.py",
+      "current_sha256": "7237650dd13e5787ab18d003458f949ee544aaa5d158568b7e68367172c58935",
+      "previous_sha256": "859f0071a605eb84979e6f65e4eb3aa5c45608a5722b7e18d45d31019cbbf96d",
+      "canonical_lf_sha256": "7237650dd13e5787ab18d003458f949ee544aaa5d158568b7e68367172c58935",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\crosslinear\\layers\\SelfAttention_Family.py",
+      "current_sha256": "aa7ecc50c907ff12265c420d9bac2db2c7002129125910de638d997d1bac04af",
+      "previous_sha256": "00352e4839f7535c61a2bb78ea0619be0881a20a8c7f14b11bee1bda971b2c56",
+      "canonical_lf_sha256": "aa7ecc50c907ff12265c420d9bac2db2c7002129125910de638d997d1bac04af",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\crosslinear\\layers\\Transformer_EncDec.py",
+      "current_sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336",
+      "previous_sha256": "9571fabbb3c3e503726904370f676d119f245d6526888048e61cdc28873586a9",
+      "canonical_lf_sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\crosslinear\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\crosslinear\\models\\crosslinear_model.py",
+      "current_sha256": "983c02b0c53846b6f4ecc231737e17c68830dbdad7066d916f80ebde56c4f5c0",
+      "previous_sha256": "e1f8049903650770c6a3dc37e699d011cf60b0ba9e7314bceeadaddd8fd17603",
+      "canonical_lf_sha256": "983c02b0c53846b6f4ecc231737e17c68830dbdad7066d916f80ebde56c4f5c0",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\crosslinear\\models\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\dag.py",
+      "current_sha256": "41165990881828a43d837791810fded5b6e429834e5970fd59686ced33ba4145",
+      "previous_sha256": "cf465b77effbb5e5df30726411e4cbc34dc1759a7137b27b16d720e6cdb0a99b",
+      "canonical_lf_sha256": "41165990881828a43d837791810fded5b6e429834e5970fd59686ced33ba4145",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\__init__.py",
+      "current_sha256": "7c86cc07a3461809e7937f8925c44ce605069276ca9aedf5bfc5c70a4eb50b3e",
+      "previous_sha256": "304d924f6a490e4418168de3b7436c23e091684d74f8cc55e52bfd22146d25b8",
+      "canonical_lf_sha256": "7c86cc07a3461809e7937f8925c44ce605069276ca9aedf5bfc5c70a4eb50b3e",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\layers\\CC_EncDec.py",
+      "current_sha256": "48710ae9b8abc79642d4adb9a728442281103145614772e524f6f8310cfb8339",
+      "previous_sha256": "67e363134d41ded015ab30509d9dc47f59e89a97256f62fb8c62511d3a7646d2",
+      "canonical_lf_sha256": "48710ae9b8abc79642d4adb9a728442281103145614772e524f6f8310cfb8339",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\layers\\Embed.py",
+      "current_sha256": "531047e17c50357d0093b54bdae33dad0f923c1670629c7d7127ecc94a85ca00",
+      "previous_sha256": "a116eb65f6f60cb2804c278958567f5b81298eb8f908f13f2959671771d5c761",
+      "canonical_lf_sha256": "531047e17c50357d0093b54bdae33dad0f923c1670629c7d7127ecc94a85ca00",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\layers\\SelfAttention_Family.py",
+      "current_sha256": "486f5493c3f7214ca7d32f88248cb83752235b94b93204c2a5a36ce46525a778",
+      "previous_sha256": "14dbdab17cc44c3c2ec89a6b290f074ae75fc36d09094f9d78ddcdffff63a43a",
+      "canonical_lf_sha256": "486f5493c3f7214ca7d32f88248cb83752235b94b93204c2a5a36ce46525a778",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\layers\\TC_EncDec.py",
+      "current_sha256": "094fc25f070794f7545a4e07019fea34ec228e7e6d9d341acf7e68469351c9ef",
+      "previous_sha256": "a6be1deddb3e8f1cd5882da8acaed970fd69eefa73522178478deb2267b38db5",
+      "canonical_lf_sha256": "094fc25f070794f7545a4e07019fea34ec228e7e6d9d341acf7e68469351c9ef",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\layers\\Transformer_EncDec.py",
+      "current_sha256": "c3bb0a411a6df5bdb86f33589ae851304907084974c0a155138f1902aae653d3",
+      "previous_sha256": "211494d214d31beb1dacca0d5ac16d946bb2fbfdad84c3ebfb269bbeebe40cd0",
+      "canonical_lf_sha256": "c3bb0a411a6df5bdb86f33589ae851304907084974c0a155138f1902aae653d3",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\models\\dag_model.py",
+      "current_sha256": "d26c3d861f10faeb6a48ea7ffe9064ec385e3152e584eca8cc96862d408dec79",
+      "previous_sha256": "7ad6e85fd734444b302b7d522d52f113470e9927893c441fb5185848bad1d488",
+      "canonical_lf_sha256": "d26c3d861f10faeb6a48ea7ffe9064ec385e3152e584eca8cc96862d408dec79",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\models\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\utils\\tools.py",
+      "current_sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029",
+      "previous_sha256": "91d7d273dda5388f2f3d31b9d0a7978f42d29b1037b7e09e04776861102540cb",
+      "canonical_lf_sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\dag\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\darts\\darts_models.py",
+      "current_sha256": "8ad3b9521a41bdf5da96e7885ff38664bfd82c21737e3e4afd32bdd5d0a4b6b4",
+      "previous_sha256": "c4239ee9bd286a971d32e8b15d8b92f5de15ab61b217dfd3299d11bb2865b4a7",
+      "canonical_lf_sha256": "8ad3b9521a41bdf5da96e7885ff38664bfd82c21737e3e4afd32bdd5d0a4b6b4",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\darts\\__init__.py",
+      "current_sha256": "7efcd56b8238552029f74d8c27b5878e01a874c5d6e5c6111f91f343f59602b8",
+      "previous_sha256": "542f2c6ca0f617deeca80641015d844c8b83236a95ee7f7c6b392d344b6f83e5",
+      "canonical_lf_sha256": "7efcd56b8238552029f74d8c27b5878e01a874c5d6e5c6111f91f343f59602b8",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\duet.py",
+      "current_sha256": "5389dd6801683f46d5d3ab0ef9a5f2c7863c071db6cdff3fcc6478d320ce1794",
+      "previous_sha256": "b1b98c9e2a8dee3800a21b503f05fd6182121aed140a833c5a03b4a0e6e9c455",
+      "canonical_lf_sha256": "5389dd6801683f46d5d3ab0ef9a5f2c7863c071db6cdff3fcc6478d320ce1794",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\__init__.py",
+      "current_sha256": "c43ec25f878da9ac296a9a14be464328c202f60df1e0c8366eba6676c1ab1959",
+      "previous_sha256": "d1053ac1d3662b21645b3999c3d73a29e9f8cd8de63228c9eb77cea016e9ad32",
+      "canonical_lf_sha256": "c43ec25f878da9ac296a9a14be464328c202f60df1e0c8366eba6676c1ab1959",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\Autoformer_EncDec.py",
+      "current_sha256": "f3cda7c36b43e4a959f9f6c6a69487aaa7338e6d4dd8ce7045484ab67adc84a6",
+      "previous_sha256": "fe9b4062deae09c1b50e91a59db8e39be104f931650ce6cb3e5a6b1fa11ffc12",
+      "canonical_lf_sha256": "f3cda7c36b43e4a959f9f6c6a69487aaa7338e6d4dd8ce7045484ab67adc84a6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\distributional_router_encoder.py",
+      "current_sha256": "4c07daaf45ece7df1e007c224513df7d6a5eba455b59dd49a1a5caa0c5bcd76c",
+      "previous_sha256": "7307bed45e925f33b2bfa72cf3442183a6962c1fc8981cf7c81d82cb37898e51",
+      "canonical_lf_sha256": "4c07daaf45ece7df1e007c224513df7d6a5eba455b59dd49a1a5caa0c5bcd76c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\Embed.py",
+      "current_sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3",
+      "previous_sha256": "db913403990e83c3527416bc97ad76f6dfc64af346ad36eabd65eee748fb785b",
+      "canonical_lf_sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\linear_extractor_cluster.py",
+      "current_sha256": "46ec8d4986e5579ce93066a205f4986ec2bfbc90a7fc221cd6a29ef0726754e1",
+      "previous_sha256": "72fc358c6eb4b61c23b3738eaa968a78d5db291f67a7e632771e577d190a605b",
+      "canonical_lf_sha256": "46ec8d4986e5579ce93066a205f4986ec2bfbc90a7fc221cd6a29ef0726754e1",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\linear_pattern_extractor.py",
+      "current_sha256": "558becad06d912ebe8012f71b348b58e677c0acfcd0856ff48fdb42025fa3f0e",
+      "previous_sha256": "b673d7f38682dbadd1dcd2297a2e42a7e47ffb098edd6548a642c81f44c04f82",
+      "canonical_lf_sha256": "558becad06d912ebe8012f71b348b58e677c0acfcd0856ff48fdb42025fa3f0e",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\RevIN.py",
+      "current_sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49",
+      "previous_sha256": "c706ffeab2bbb46ec2b86ebee540e140ca39c2ee5e4e1c1908269be0641b5c36",
+      "canonical_lf_sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\SelfAttention_Family.py",
+      "current_sha256": "cb1266e7aadee3da2040966029f08e5fe30d391d09f06600480e11e3938172db",
+      "previous_sha256": "db6b902f70aa775c9ba701a73ea49efb21e5892fd989199bcabe953122bdf673",
+      "canonical_lf_sha256": "cb1266e7aadee3da2040966029f08e5fe30d391d09f06600480e11e3938172db",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\Transformer_EncDec.py",
+      "current_sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336",
+      "previous_sha256": "9571fabbb3c3e503726904370f676d119f245d6526888048e61cdc28873586a9",
+      "canonical_lf_sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\models\\duet_model.py",
+      "current_sha256": "840690b13fecdd08fdc4a602f3d700ede940731a29ad0fe1de7830b7bb9b22b7",
+      "previous_sha256": "d83379f848fa1a0570b4b2c88ebced06a8bd120bd71ba5276bc87855ec31a840",
+      "canonical_lf_sha256": "840690b13fecdd08fdc4a602f3d700ede940731a29ad0fe1de7830b7bb9b22b7",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\models\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\utils\\losses.py",
+      "current_sha256": "6e455268b25c90d6b1b9f763d991c7e67775e306caa26f7ef3eb1a9ae5d74f62",
+      "previous_sha256": "c3128a18791da1fe4e3bfea290d81535c478ebf9e950f0f15d99bb6772dd61e0",
+      "canonical_lf_sha256": "6e455268b25c90d6b1b9f763d991c7e67775e306caa26f7ef3eb1a9ae5d74f62",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\utils\\masked_attention.py",
+      "current_sha256": "edc17a01d813f6847d847b21ac53c9cb090af99e0b4d35c530d588f182bdb57c",
+      "previous_sha256": "36c81cd750171e6eba174f183a50117a060fc220ab3ef279a3c4c1cf834ece50",
+      "canonical_lf_sha256": "edc17a01d813f6847d847b21ac53c9cb090af99e0b4d35c530d588f182bdb57c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\utils\\masking.py",
+      "current_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "previous_sha256": "b8a0d5ff11fcd9cbd88d8cd41e0d67de63829b3e4c8b1c1797e8af5d04d46088",
+      "canonical_lf_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\utils\\timefeatures.py",
+      "current_sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3",
+      "previous_sha256": "21a99fcd0452b809a839fce55405d7fb5fa5e7f92cab0d305530cd01b2a262ff",
+      "canonical_lf_sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\utils\\tools.py",
+      "current_sha256": "6aefce4f1b80053cb4a4b72520800ede25f585efe93f4aef0f90bf2bc69fe285",
+      "previous_sha256": "33f3ac133669645bcf96104c7d203db4e6250b939e5e959b69390cc4ff0d09a4",
+      "canonical_lf_sha256": "6aefce4f1b80053cb4a4b72520800ede25f585efe93f4aef0f90bf2bc69fe285",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\duet\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\fits\\fits.py",
+      "current_sha256": "92a1ee689100ced06a3cf9cc19a8b57a997863538501b7bef8695461bf9913a3",
+      "previous_sha256": "165eca089221a6351f0a446b5698134418fb1e67b2d654463b59651723c97a46",
+      "canonical_lf_sha256": "92a1ee689100ced06a3cf9cc19a8b57a997863538501b7bef8695461bf9913a3",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\fits\\fits_model.py",
+      "current_sha256": "300299770ad2eba76aa00fa63bd6a9cb74ea025bcc29a88fc710cab4958d6478",
+      "previous_sha256": "04f565f258ace5c1423c02ade06a9565e22e6cca816b23741c4d913b40619365",
+      "canonical_lf_sha256": "300299770ad2eba76aa00fa63bd6a9cb74ea025bcc29a88fc710cab4958d6478",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\fits\\__init__.py",
+      "current_sha256": "bb6cab0598fc945352226b64dba86939f35e007fd285a4c1a34e027b23b494ff",
+      "previous_sha256": "ba7a1cbefa132dd0b6156e780b7021c9fcb54cc1cf696adfb08e5f9d6becb8ea",
+      "canonical_lf_sha256": "bb6cab0598fc945352226b64dba86939f35e007fd285a4c1a34e027b23b494ff",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\GCGNet.py",
+      "current_sha256": "55b0a4df5a115145e61eff762d38a99179186627bfa041769dab6a887fab0a45",
+      "previous_sha256": "11299d3f9fc59b8b99ffc649c6f57839cba40b3761253c054612243508ff8b0c",
+      "canonical_lf_sha256": "55b0a4df5a115145e61eff762d38a99179186627bfa041769dab6a887fab0a45",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\__init__.py",
+      "current_sha256": "29a8f8bece6257fc35df87a0391b903ddc26bae375a2457b74a5ee99e958649c",
+      "previous_sha256": "b9653ce318adad00988693412893516301918055e2fcdcfd7cabc06186fd428d",
+      "canonical_lf_sha256": "29a8f8bece6257fc35df87a0391b903ddc26bae375a2457b74a5ee99e958649c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\layers\\blocks.py",
+      "current_sha256": "ea0f3e4fa08c0fdead367d6c1004e67d4aaa9ca01dd5dc15b443352e81779da4",
+      "previous_sha256": "e98093bd00b10ffdf188c1132d1447d3e97907a174c0664f0c8b7c5ff5448741",
+      "canonical_lf_sha256": "ea0f3e4fa08c0fdead367d6c1004e67d4aaa9ca01dd5dc15b443352e81779da4",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\layers\\Embed.py",
+      "current_sha256": "45a7be70bf31772a752edda304903a5047490ac52e8c11bc5f90d8a383d9261a",
+      "previous_sha256": "65936c7966af5ecf743c0fbce2eeaf928d7fa10868deb5744f8af8209637b59a",
+      "canonical_lf_sha256": "45a7be70bf31772a752edda304903a5047490ac52e8c11bc5f90d8a383d9261a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\layers\\graph.py",
+      "current_sha256": "595beb743d9738306612ab5edb0530b6a21d87efcfd16162fa071ce1e88fe373",
+      "previous_sha256": "22eb8b12cc60d6edcd64bcdd8b09de2b97ef5b966f29ab580a11d8f00d34b6ea",
+      "canonical_lf_sha256": "595beb743d9738306612ab5edb0530b6a21d87efcfd16162fa071ce1e88fe373",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\models\\gcgnet_model.py",
+      "current_sha256": "61ac164c8cb134512a85a7a51b40c31e0850f5558e3d24c651fa3e6ffbb1b8ba",
+      "previous_sha256": "fd1ee96ccc17878c0985c7ec239f9ba9e868f2579abccc2e2aeda9ef415faa07",
+      "canonical_lf_sha256": "61ac164c8cb134512a85a7a51b40c31e0850f5558e3d24c651fa3e6ffbb1b8ba",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\models\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\utils\\tools.py",
+      "current_sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029",
+      "previous_sha256": "91d7d273dda5388f2f3d31b9d0a7978f42d29b1037b7e09e04776861102540cb",
+      "canonical_lf_sha256": "097e82b8e3e87b928ab714c1d26f28b0f59788218b65f13225190208321ac029",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\utils\\utils.py",
+      "current_sha256": "a43f673727074bad86ca31073fe888c0ec4129598a683b9ef36232be9eba8ce6",
+      "previous_sha256": "c773fc374bb74b1a0df0dd02ff6bef2da1db4525b41e914fb59a332577c65eca",
+      "canonical_lf_sha256": "a43f673727074bad86ca31073fe888c0ec4129598a683b9ef36232be9eba8ce6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\GCGNet\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\hdmixer\\hdmixer.py",
+      "current_sha256": "2ae6530a93787aad4845dcbcb25d755143c980ba90f383b0dd8cb6b1a423f493",
+      "previous_sha256": "b50bd5a9526de8c8a2d24d62a233e66fdfb3c0e94d39be456cab69f50f645a71",
+      "canonical_lf_sha256": "2ae6530a93787aad4845dcbcb25d755143c980ba90f383b0dd8cb6b1a423f493",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\hdmixer\\__init__.py",
+      "current_sha256": "d6b8ae34e54473afcca8d9329bcc0b2937199bbed989f49a7a2bf3ce4c7a9d0c",
+      "previous_sha256": "c82956e923c86d530c47eebada2a6c38054e4572227ea92c8a9752b8675683c0",
+      "canonical_lf_sha256": "d6b8ae34e54473afcca8d9329bcc0b2937199bbed989f49a7a2bf3ce4c7a9d0c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\hdmixer\\layers\\box_coder1D.py",
+      "current_sha256": "0cda4df0f8bb85b5d633aa0e9499491e5ea018570ee9c9acce6d2b14370d1bc9",
+      "previous_sha256": "a141f6d8a190fd0d8f1338bc3ae3e0f4afe1fa248f6797c39ff2b025eb8b051a",
+      "canonical_lf_sha256": "0cda4df0f8bb85b5d633aa0e9499491e5ea018570ee9c9acce6d2b14370d1bc9",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\hdmixer\\layers\\PatchTST_layers.py",
+      "current_sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4",
+      "previous_sha256": "b3e683b862d7947b22c6c825336411ed026fd9bbece77f3fa131a712f80d4054",
+      "canonical_lf_sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\hdmixer\\layers\\RevIN.py",
+      "current_sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde",
+      "previous_sha256": "bcc6c3c78d5ed2a446b774ad72d62392aaa5cfd5decb189e919ec31f7a885699",
+      "canonical_lf_sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\hdmixer\\models\\HDMixer.py",
+      "current_sha256": "91f4f864fda1687c3ac66806e7b42663ac49c2fbc0b3e12eae0bfdc2a6ad1213",
+      "previous_sha256": "db9c871e3e87c33ea083a61d52d831a4f0c5e63d94de51adda1641ec4c560917",
+      "canonical_lf_sha256": "91f4f864fda1687c3ac66806e7b42663ac49c2fbc0b3e12eae0bfdc2a6ad1213",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\merlion\\merlion_models.py",
+      "current_sha256": "929aa682084e2a406c755429abef4c933b4bad6f8a714987122f2ae86359e420",
+      "previous_sha256": "e568fad48ae6f45dbf1fad0ea1a0bab73c11c7695de913ea1d6f4d9b5a2c9900",
+      "canonical_lf_sha256": "929aa682084e2a406c755429abef4c933b4bad6f8a714987122f2ae86359e420",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\merlion\\__init__.py",
+      "current_sha256": "46b6c119be103aa8bf78e62ec90ada752b585ba9bcab4e76c30efb72205a3487",
+      "previous_sha256": "3a876a5c8110700c8e8d754c8d4c0feab010d100ce09d1aa66c706aab89e7739",
+      "canonical_lf_sha256": "46b6c119be103aa8bf78e62ec90ada752b585ba9bcab4e76c30efb72205a3487",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\patchmlp\\patchmlp.py",
+      "current_sha256": "fc0eb30187f7a5296879b5e9e5a4de572980a693af103c242f3a1804808145f5",
+      "previous_sha256": "bfaf32632d9e1857dee7d5e5e1af43262024c4fd542162e108558218cd498708",
+      "canonical_lf_sha256": "fc0eb30187f7a5296879b5e9e5a4de572980a693af103c242f3a1804808145f5",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\patchmlp\\__init__.py",
+      "current_sha256": "7722ed05ac21e9354a8591a762c37feedec8b14b7c536a98371bd607cb432c77",
+      "previous_sha256": "ca6a8f8868562509a12cf18dfec0e0a4603e45f485793ee831208277f1ff3431",
+      "canonical_lf_sha256": "7722ed05ac21e9354a8591a762c37feedec8b14b7c536a98371bd607cb432c77",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\patchmlp\\layers\\Embed.py",
+      "current_sha256": "9ed34a9f29d99bf0e1ec9b7897664d160e335e469516b7cb0fcfaf53db359d9f",
+      "previous_sha256": "bb0ebc4ac250d54dea0c2b007d84de4556d5eb6e6fb04229c077820346330ab0",
+      "canonical_lf_sha256": "9ed34a9f29d99bf0e1ec9b7897664d160e335e469516b7cb0fcfaf53db359d9f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\patchmlp\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\patchmlp\\models\\patchmlp_model.py",
+      "current_sha256": "9e2ebba9cdd880fb7148f4e5244f30ca53b69bb55fb15844ff4fb5e2e43bfd6d",
+      "previous_sha256": "6962fd7de647632a870b3358590e252bccec31e0919512dffa6bf4aa83401b32",
+      "canonical_lf_sha256": "9e2ebba9cdd880fb7148f4e5244f30ca53b69bb55fb15844ff4fb5e2e43bfd6d",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\patchmlp\\models\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\pathformer.py",
+      "current_sha256": "7edd1e5524d316e132360c43ff5624cbbd1ff7654d58df79ca5abfb87c105882",
+      "previous_sha256": "0ba7725ac0e6e139990ac3d50f9e5a85d530ca1bdf8850581626f3b5a7d1c14f",
+      "canonical_lf_sha256": "7edd1e5524d316e132360c43ff5624cbbd1ff7654d58df79ca5abfb87c105882",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\__init__.py",
+      "current_sha256": "c20f792c95a58d5a3843da94854e608c3ea921962694d12a12e7d51b06342d10",
+      "previous_sha256": "5a1a4f1a9186648abaac2d60237f7ff56e7e9807f530d6d67dfb266ada826322",
+      "canonical_lf_sha256": "c20f792c95a58d5a3843da94854e608c3ea921962694d12a12e7d51b06342d10",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\layers\\AMS.py",
+      "current_sha256": "15a42978e8eb485b4445b7e21c760fa5312fd7a4bba0509df0861ff7ec965efc",
+      "previous_sha256": "35a853ba57f696f9642f333c53bb4ecafcf87ec2f4765af763424994711e3bdd",
+      "canonical_lf_sha256": "15a42978e8eb485b4445b7e21c760fa5312fd7a4bba0509df0861ff7ec965efc",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\layers\\Embedding.py",
+      "current_sha256": "d6aa6ba87b6f01a7cb658b6ada8cce6bc8cf8c5aa0de58404c25d865e74bed8a",
+      "previous_sha256": "ffe8f11463a292323ab8684ee108c99e866e5af90b96d90c993a87d6c6df3c2f",
+      "canonical_lf_sha256": "d6aa6ba87b6f01a7cb658b6ada8cce6bc8cf8c5aa0de58404c25d865e74bed8a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\layers\\Layer.py",
+      "current_sha256": "636265ea5b3ac794f121e2dbce9891ad1bf5fee461d19f39db0492d855d4b11d",
+      "previous_sha256": "7816ba86ee3fad14459da4b45b379c5cea8845257a591c6fbe70fdfbd71a6738",
+      "canonical_lf_sha256": "636265ea5b3ac794f121e2dbce9891ad1bf5fee461d19f39db0492d855d4b11d",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\layers\\RevIN.py",
+      "current_sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde",
+      "previous_sha256": "bcc6c3c78d5ed2a446b774ad72d62392aaa5cfd5decb189e919ec31f7a885699",
+      "canonical_lf_sha256": "2c464b5272c45a9c9dbfcc2dd3454300588aed7d813adec526e79b1fe7945dde",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\models\\pathformer_model.py",
+      "current_sha256": "faf7267a9d6e681a9db4cfa2993a0e12ceff7ca5fe608ef734084485fb1c07ba",
+      "previous_sha256": "0674f3638c337fabd4255e5188912e9c7d0fb479da0d921318785547ba7131bb",
+      "canonical_lf_sha256": "faf7267a9d6e681a9db4cfa2993a0e12ceff7ca5fe608ef734084485fb1c07ba",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\models\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\utils\\decomposition.py",
+      "current_sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f",
+      "previous_sha256": "c4790ffd5d20b85c5a95d85471b79e136b111e29bcddf610169ec64956d7682e",
+      "canonical_lf_sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\utils\\masking.py",
+      "current_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "previous_sha256": "b8a0d5ff11fcd9cbd88d8cd41e0d67de63829b3e4c8b1c1797e8af5d04d46088",
+      "canonical_lf_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\utils\\metrics.py",
+      "current_sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16",
+      "previous_sha256": "a259d601e8e80791f8aec6320cf3eff1586f9ac9991a4cad6d01a8c09f0564e1",
+      "canonical_lf_sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\utils\\Other.py",
+      "current_sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a",
+      "previous_sha256": "b98608b8906be67711dc9e7ac7ac2cc86f6e83dfe9e6f2d6d880cf82e6a566c2",
+      "canonical_lf_sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\utils\\timefeatures.py",
+      "current_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "previous_sha256": "a9d0db8c05d828db2192710fea98242783f8a1ce1a6af0c25b9900f82310923f",
+      "canonical_lf_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\utils\\tools.py",
+      "current_sha256": "a2bd8f38ec42b62cdb6c2717065c3d2f25ebc6a90ebd520187ffb504aa8e59e5",
+      "previous_sha256": "1ea8f22fc762557c289b5fdffe94180790115094c0359c99fa5ea9c8c8c73cf7",
+      "canonical_lf_sha256": "a2bd8f38ec42b62cdb6c2717065c3d2f25ebc6a90ebd520187ffb504aa8e59e5",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pathformer\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\PDF.py",
+      "current_sha256": "f4efc12137795a5a2e9d8baa7e9dca5282d76e62887a96c494b4121b4ea5c254",
+      "previous_sha256": "ac515a95e1a05d7c42e47d333f0458ac932152859e1b418d6aaf6d006dd12be8",
+      "canonical_lf_sha256": "f4efc12137795a5a2e9d8baa7e9dca5282d76e62887a96c494b4121b4ea5c254",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\__init__.py",
+      "current_sha256": "b2f5861cc63b88a27a4d9b667769a1ed2001bbd553cefc2b6f3d8f8bf14fdf0a",
+      "previous_sha256": "d2abb9be6f347f3c710b91a814947dba3ae927780774df203d7d5531b3c3523f",
+      "canonical_lf_sha256": "b2f5861cc63b88a27a4d9b667769a1ed2001bbd553cefc2b6f3d8f8bf14fdf0a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\layers\\PDF_backbone.py",
+      "current_sha256": "43a90474eabebcdf1b392157374db20f5723a5e9183628b820dbd64e7c668955",
+      "previous_sha256": "53a65ca5e3267fb998be54e58ac6e53bc72bc2c43b0ac09a9e1046af6e5459ec",
+      "canonical_lf_sha256": "43a90474eabebcdf1b392157374db20f5723a5e9183628b820dbd64e7c668955",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\layers\\PDF_layers.py",
+      "current_sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4",
+      "previous_sha256": "b3e683b862d7947b22c6c825336411ed026fd9bbece77f3fa131a712f80d4054",
+      "canonical_lf_sha256": "6147418e358dccd74be04ec25a75a68a3e0f831ac80c6c9ff1b487c97dbc3ce4",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\layers\\RevIN.py",
+      "current_sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49",
+      "previous_sha256": "c706ffeab2bbb46ec2b86ebee540e140ca39c2ee5e4e1c1908269be0641b5c36",
+      "canonical_lf_sha256": "965a2dab1a9d8f36009073800030276022633d0b89c2aa201c18444d24b8ec49",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\layers\\__init__.py",
+      "current_sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d",
+      "previous_sha256": "0aef9beed8af49fc7efb735390fc181014275ca23427b0f71686c43cb53830eb",
+      "canonical_lf_sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\models\\PDF.py",
+      "current_sha256": "af8444b5b8da87307cc72e61af44e20e4a957297d51ec13852ece026a5d72a64",
+      "previous_sha256": "15dc761fc2df2ebb5bc4869f20d0244da728f931f9ad69f6999e91647b921fc2",
+      "canonical_lf_sha256": "af8444b5b8da87307cc72e61af44e20e4a957297d51ec13852ece026a5d72a64",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\models\\__init__.py",
+      "current_sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d",
+      "previous_sha256": "0aef9beed8af49fc7efb735390fc181014275ca23427b0f71686c43cb53830eb",
+      "canonical_lf_sha256": "8a9e908b2c75f32b5b4bc1c195bad1289d6c2a3f4f0797295f15b349faacc92d",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\utils\\decomposition.py",
+      "current_sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f",
+      "previous_sha256": "c4790ffd5d20b85c5a95d85471b79e136b111e29bcddf610169ec64956d7682e",
+      "canonical_lf_sha256": "d83e22607588e1d3d64ef8512d70c027bf52770794bd3ce342eda4d9e8385c2f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\utils\\masking.py",
+      "current_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "previous_sha256": "b8a0d5ff11fcd9cbd88d8cd41e0d67de63829b3e4c8b1c1797e8af5d04d46088",
+      "canonical_lf_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\utils\\metrics.py",
+      "current_sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16",
+      "previous_sha256": "a259d601e8e80791f8aec6320cf3eff1586f9ac9991a4cad6d01a8c09f0564e1",
+      "canonical_lf_sha256": "6ca89d6bebcd22ac933123a690f94db8a63bdd883361c938c73d3712bf499a16",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\utils\\Other.py",
+      "current_sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a",
+      "previous_sha256": "b98608b8906be67711dc9e7ac7ac2cc86f6e83dfe9e6f2d6d880cf82e6a566c2",
+      "canonical_lf_sha256": "48fb786839fe31b4ca97fffc277583749d6788304d12c76aea3ae640577a519a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\utils\\timefeatures.py",
+      "current_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "previous_sha256": "a9d0db8c05d828db2192710fea98242783f8a1ce1a6af0c25b9900f82310923f",
+      "canonical_lf_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\utils\\tools.py",
+      "current_sha256": "c0340cb24dd2f9e9a4e52abc4e96dd839fdd82c37a0e54f9da5a6882e0a5d5ad",
+      "previous_sha256": "f699b7c31fa572799bfdc9ebbd6c5dc8b3dc6ae86a9df7048dccf834408ea6c3",
+      "canonical_lf_sha256": "c0340cb24dd2f9e9a4e52abc4e96dd839fdd82c37a0e54f9da5a6882e0a5d5ad",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\pdf\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\self_impl\\__init__.py",
+      "current_sha256": "7658d0f7faafe786d22e8ce0352d45598bba3398d1a80cb9883bddd3aed8b4ee",
+      "previous_sha256": "3671f21e4141ca5387171ab60b23e66f62da5fc59c8eb50a7f6353e480d5cecb",
+      "canonical_lf_sha256": "7658d0f7faafe786d22e8ce0352d45598bba3398d1a80cb9883bddd3aed8b4ee",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\self_impl\\VAR\\VAR.py",
+      "current_sha256": "8523d69d83b701b83c56f7f10772a8b6ef560c46c84351c319d82ce71b4c5a61",
+      "previous_sha256": "f06ef048ff066fe2a4263eafcdaefc52b435e46a5bcd8fbc2112caedda1b9aff",
+      "canonical_lf_sha256": "8523d69d83b701b83c56f7f10772a8b6ef560c46c84351c319d82ce71b4c5a61",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\timekan.py",
+      "current_sha256": "8af30bb204503c87a7094336a4b64e9fd9c4781c57a672003c72120a5bce7c92",
+      "previous_sha256": "457365a0c0db242316a37c36c73f919b5fe66f3bead7b5d2c42dd979bc7c7588",
+      "canonical_lf_sha256": "8af30bb204503c87a7094336a4b64e9fd9c4781c57a672003c72120a5bce7c92",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\__init__.py",
+      "current_sha256": "554aeaee423422a6be800e09a03c2fed5fa00fc44940721b667479c0d1eb54bf",
+      "previous_sha256": "f9d4edc432c6086016c845ce370d661d8d055aa08f53d7084d67f579e894acbd",
+      "canonical_lf_sha256": "554aeaee423422a6be800e09a03c2fed5fa00fc44940721b667479c0d1eb54bf",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\layers\\Autoformer_EncDec.py",
+      "current_sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a",
+      "previous_sha256": "9a8ddf83d317bbb8935a63783e8ddda999a4f4a1f03e47ca1a8e8a2aac1c0204",
+      "canonical_lf_sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\layers\\ChebyKANLayer.py",
+      "current_sha256": "801501991050aac8a4a18c64ce646dbcf3ce581b8b4a7f9c18bb3b5631e352e5",
+      "previous_sha256": "ab8d2d86b3404163abae9d3323b3afe892f2c5103b32c2f8821721a2d238745d",
+      "canonical_lf_sha256": "801501991050aac8a4a18c64ce646dbcf3ce581b8b4a7f9c18bb3b5631e352e5",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\layers\\Embed.py",
+      "current_sha256": "b02403e62ebecce8eb691db36292353ad6828f641d8356b39f2184373784f267",
+      "previous_sha256": "a8fa9d7a8cd16ddbfcfcf70d3a0f8b36215cf18c5ba9dfd7e829c209d4327b40",
+      "canonical_lf_sha256": "b02403e62ebecce8eb691db36292353ad6828f641d8356b39f2184373784f267",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\layers\\StandardNorm.py",
+      "current_sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84",
+      "previous_sha256": "33f3bf48cd4098180c2f937d7ed44908e35fe4645a519ea13100baeaebfadf10",
+      "canonical_lf_sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\models\\timekan_model.py",
+      "current_sha256": "0c182dcc148142777a164db2ef8d60b683fc42050639b753f0061da2fca9d2d3",
+      "previous_sha256": "b7131722c41913d25a77d570731644a2c95cbe4c32a45dad32c26970e949de00",
+      "canonical_lf_sha256": "0c182dcc148142777a164db2ef8d60b683fc42050639b753f0061da2fca9d2d3",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\utils\\masking.py",
+      "current_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "previous_sha256": "b8a0d5ff11fcd9cbd88d8cd41e0d67de63829b3e4c8b1c1797e8af5d04d46088",
+      "canonical_lf_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\utils\\metrics.py",
+      "current_sha256": "1b3e57f39efab3bc5c671bb378cd0af2a48ca5baa4df8b115cbede3b2ce7c83b",
+      "previous_sha256": "e1cc1d6b52d9e048ff01188d7a0f3842fcd9f381860f0dba863a154e730fb8e3",
+      "canonical_lf_sha256": "1b3e57f39efab3bc5c671bb378cd0af2a48ca5baa4df8b115cbede3b2ce7c83b",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\utils\\timefeatures.py",
+      "current_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "previous_sha256": "a9d0db8c05d828db2192710fea98242783f8a1ce1a6af0c25b9900f82310923f",
+      "canonical_lf_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\utils\\tools.py",
+      "current_sha256": "a0fd30a013010af2cafd658a936c9298067d332ca1ab0a7e90f25579dd289ef6",
+      "previous_sha256": "7123ab78b36e1c7bde1c0cfad86531cc63e1b2550da9ddfa9ca4953dbfcd3266",
+      "canonical_lf_sha256": "a0fd30a013010af2cafd658a936c9298067d332ca1ab0a7e90f25579dd289ef6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timekan\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timexer\\timexer.py",
+      "current_sha256": "50b654a5e257b3e351beb908780eb35a9bc45cea5c1eaffcba44106dd9437a44",
+      "previous_sha256": "4f4652d0d60103efcc4f165b0c9cfb517e6506db984cb05d73b36d8d6bbf22c9",
+      "canonical_lf_sha256": "50b654a5e257b3e351beb908780eb35a9bc45cea5c1eaffcba44106dd9437a44",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timexer\\__init__.py",
+      "current_sha256": "724cea5015b1f0eb528bed8fb289dab7624dd20660c3b6fdd05e3f3e9521f29d",
+      "previous_sha256": "522f7476b722ea468c9b217a6d2a0278a455c8f96eca5317d9699132ae478c5e",
+      "canonical_lf_sha256": "724cea5015b1f0eb528bed8fb289dab7624dd20660c3b6fdd05e3f3e9521f29d",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timexer\\layers\\Embed.py",
+      "current_sha256": "48b2dc4262a7d82334905c8f433a6222299f35baffe2bcdd671f78f26d27d233",
+      "previous_sha256": "cc18c29764c4f77466ba74823fc322ff6ff329ffd46f3ed05f5f853f384a21b5",
+      "canonical_lf_sha256": "48b2dc4262a7d82334905c8f433a6222299f35baffe2bcdd671f78f26d27d233",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timexer\\layers\\SelfAttention_Family.py",
+      "current_sha256": "062e4c761128407755d312b798b95647f566669c15cf0a6c1bb86c96bdb4999b",
+      "previous_sha256": "a4272b18382c57aa15b540ed5c21a1a2543901fe0882a7f6cb0cf5be0ed59304",
+      "canonical_lf_sha256": "062e4c761128407755d312b798b95647f566669c15cf0a6c1bb86c96bdb4999b",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timexer\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timexer\\model\\timexer_model.py",
+      "current_sha256": "3eccd0e184467cbc9b0c5db4868acdc581d3d8bdb0442777a7e1ff4b07826a07",
+      "previous_sha256": "5e6d17bf8475d4901f973456944b10d0c0402f2db1a89f2a010859bc55e04e2d",
+      "canonical_lf_sha256": "3eccd0e184467cbc9b0c5db4868acdc581d3d8bdb0442777a7e1ff4b07826a07",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\timexer\\model\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\adapters_for_transformers.py",
+      "current_sha256": "3c8eb2d4046622c94d9171432ed324f18b5e0031bd42c2e11b5421b4519a5027",
+      "previous_sha256": "75076ead8df6a051b1311c18419730a2d957260e4d6da286e2888f1305d49f5e",
+      "canonical_lf_sha256": "3c8eb2d4046622c94d9171432ed324f18b5e0031bd42c2e11b5421b4519a5027",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\__init__.py",
+      "current_sha256": "00ad3153b353cd53c7942e4b22b7f58fe7b4f4ae3f45cb6d06ea644d793adb12",
+      "previous_sha256": "aa50c387dcde7c9eea4d5022314ccea9677a4b392730d9a5af1c575d12818917",
+      "canonical_lf_sha256": "00ad3153b353cd53c7942e4b22b7f58fe7b4f4ae3f45cb6d06ea644d793adb12",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\AutoCorrelation.py",
+      "current_sha256": "0491f29e5a6cc70f25d3fd53e28e039868a2302395c16144db9e550a24144e96",
+      "previous_sha256": "d2ae6e683efbf671878af0259e02d0309e938fe4c0a9239f4e923c6ab51c599f",
+      "canonical_lf_sha256": "0491f29e5a6cc70f25d3fd53e28e039868a2302395c16144db9e550a24144e96",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\Autoformer_EncDec.py",
+      "current_sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a",
+      "previous_sha256": "9a8ddf83d317bbb8935a63783e8ddda999a4f4a1f03e47ca1a8e8a2aac1c0204",
+      "canonical_lf_sha256": "9d3e7fb449c0025df297de3371bf88dd7551cf4b3d9a156a5a8f1abb85df025a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\Conv_Blocks.py",
+      "current_sha256": "e7b13cb38557718338e041b535deafc6a4e870f23f3a599a895d2ae26c99e7de",
+      "previous_sha256": "141d7f227f0c9ce5d7eeabdf6e19c6edf4ca8bca05457f930fe0deb304939397",
+      "canonical_lf_sha256": "e7b13cb38557718338e041b535deafc6a4e870f23f3a599a895d2ae26c99e7de",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\Crossformer_EncDec.py",
+      "current_sha256": "c57cc68d8aa3b4910e8e511c6c4345630e2b3a9da2e45b98407ec87d4c54996c",
+      "previous_sha256": "d55e56d4ffd7d637175c5128b5d4d0749cb2b229812aa4544799e6b2ffa1466c",
+      "canonical_lf_sha256": "c57cc68d8aa3b4910e8e511c6c4345630e2b3a9da2e45b98407ec87d4c54996c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\Embed.py",
+      "current_sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3",
+      "previous_sha256": "db913403990e83c3527416bc97ad76f6dfc64af346ad36eabd65eee748fb785b",
+      "canonical_lf_sha256": "7e49caeb63ceabcbd7ca6b8122cf59553bb5f18e54f771b846db9ac5a44274a3",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\ETSformer_EncDec.py",
+      "current_sha256": "d8c189515226413e371db399aadb00aa379c2b5d93db5cb0fbcf68003b76f4e1",
+      "previous_sha256": "7eed8b9684003a8e4f30f9d26045272ad0b5dff2aef2e852641941352908f8cb",
+      "canonical_lf_sha256": "d8c189515226413e371db399aadb00aa379c2b5d93db5cb0fbcf68003b76f4e1",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\FourierCorrelation.py",
+      "current_sha256": "62e920667402eb0fe23d9c42c19214dc91b7fe58641e98fe2f757bfbc6bf7c87",
+      "previous_sha256": "c8b01b0d351cf209bb808b49d9b44967e4a0b776030a311459938bf0ad474e47",
+      "canonical_lf_sha256": "62e920667402eb0fe23d9c42c19214dc91b7fe58641e98fe2f757bfbc6bf7c87",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\MultiWaveletCorrelation.py",
+      "current_sha256": "d16680006abe1ddda2ed3186968ad6ec6eca84680b9c533b3d98567e721cd090",
+      "previous_sha256": "f33568bc59075333a278b56623effdbe3147ee0d6dff3fc934d51e93762c9e8e",
+      "canonical_lf_sha256": "d16680006abe1ddda2ed3186968ad6ec6eca84680b9c533b3d98567e721cd090",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\Pyraformer_EncDec.py",
+      "current_sha256": "1b7603e1ffbee7277ba2cbe30e045ed263a469d4639b7b58841e2f06e058f141",
+      "previous_sha256": "b199d364768324717c615bc95b144f779cfd13b3fdc7a1544aa92111f84acffd",
+      "canonical_lf_sha256": "1b7603e1ffbee7277ba2cbe30e045ed263a469d4639b7b58841e2f06e058f141",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\SelfAttention_Family.py",
+      "current_sha256": "c3a45401d0dd532df45e85da2d158c056b7eb07337dacf053f8aeb698c26dc59",
+      "previous_sha256": "b58a9a12c454499f3b23aeb94f75ac0a7c266ab24b84c814e17799f5207f1731",
+      "canonical_lf_sha256": "c3a45401d0dd532df45e85da2d158c056b7eb07337dacf053f8aeb698c26dc59",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\StandardNorm.py",
+      "current_sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84",
+      "previous_sha256": "33f3bf48cd4098180c2f937d7ed44908e35fe4645a519ea13100baeaebfadf10",
+      "canonical_lf_sha256": "ab4ac8ab190f4c920c1416d5de268fafc2ad44a77f54eb7d618aabbc183b4a84",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\Transformer_EncDec.py",
+      "current_sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336",
+      "previous_sha256": "9571fabbb3c3e503726904370f676d119f245d6526888048e61cdc28873586a9",
+      "canonical_lf_sha256": "cb24a9a94eadff626d826463b28e3a89aa37aba1b724a3f460526c263118b336",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\layers\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Autoformer.py",
+      "current_sha256": "b2be3b094537beb7ef74cd2ddf546a716dcc006d98ebee606423464ea43397d8",
+      "previous_sha256": "c05fd08b0888a93bbd47f03208b243d099db6b7d878115ebe51a09dd4065da01",
+      "canonical_lf_sha256": "b2be3b094537beb7ef74cd2ddf546a716dcc006d98ebee606423464ea43397d8",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Crossformer.py",
+      "current_sha256": "bdb699e8dbc70f072357367f2f105df6977779facaea3ba6bdb22711d82f7ad9",
+      "previous_sha256": "597e58fa252c30647b0085964a2e261a390b64d8891cd1e7a02f188867f82c52",
+      "canonical_lf_sha256": "bdb699e8dbc70f072357367f2f105df6977779facaea3ba6bdb22711d82f7ad9",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\DLinear.py",
+      "current_sha256": "9b5cade2b638346c398991b49cbd4a0a7f84fe0b39cf2725ef33d959aa7958fa",
+      "previous_sha256": "cca4f3ae6c369c159772bdc4467d186cb03f2d5608048abd41229854b57d9c6e",
+      "canonical_lf_sha256": "9b5cade2b638346c398991b49cbd4a0a7f84fe0b39cf2725ef33d959aa7958fa",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\ETSformer.py",
+      "current_sha256": "0689de5fb2984207241a2b51b8da9186865a06d6471366cf5c8b0cc93824e59f",
+      "previous_sha256": "c753ae3f0c42e88d1888fa4a6756461e08cf7ef1c574347c192189eb0f09ee7e",
+      "canonical_lf_sha256": "0689de5fb2984207241a2b51b8da9186865a06d6471366cf5c8b0cc93824e59f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\FEDformer.py",
+      "current_sha256": "cd2ce6d7864bb681f42d3c4d96a6aeb7942bd5a00fbf76da361b9585ba06eb94",
+      "previous_sha256": "9eb3eaf7c583d58f3627599e2c0d56245d13d48c34e69c567c4f3c8c048f5e22",
+      "canonical_lf_sha256": "cd2ce6d7864bb681f42d3c4d96a6aeb7942bd5a00fbf76da361b9585ba06eb94",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\FiLM.py",
+      "current_sha256": "dfe2a908ffceb7c08f5384d0460c36df7222726eaaa9c19fd141c36e25167c5d",
+      "previous_sha256": "f13b1836ef1779cd01cf3f56f0cbc4e92b1ec36f607d4588ccb3262a066ef1c9",
+      "canonical_lf_sha256": "dfe2a908ffceb7c08f5384d0460c36df7222726eaaa9c19fd141c36e25167c5d",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\FreTS.py",
+      "current_sha256": "eecfbc156bc9a7df0d97b9f2794174bc7d17c6add4f41df94e145ba5e701d3e9",
+      "previous_sha256": "9d6246faf659aab97387826bcdb99b2e2209d5522098d325547f69e0e16602ed",
+      "canonical_lf_sha256": "eecfbc156bc9a7df0d97b9f2794174bc7d17c6add4f41df94e145ba5e701d3e9",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Informer.py",
+      "current_sha256": "e4d9ddff37c549de415cd06521d5c41fa69e51b2cb58b3be1bf387accb54fea1",
+      "previous_sha256": "a55d11b1fa4ac2759f1311abf774becb6d8ef135a5f2f5d6fc3ca9957716fed2",
+      "canonical_lf_sha256": "e4d9ddff37c549de415cd06521d5c41fa69e51b2cb58b3be1bf387accb54fea1",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\iTransformer.py",
+      "current_sha256": "27f0e509152fdbb8e2b4d2236a82deab4e29052731ddd21bcf9c641518fa4ab6",
+      "previous_sha256": "e298a52e0fe123c499349e81f29772cf13daedb5dfc895fa776a1b281e116c34",
+      "canonical_lf_sha256": "27f0e509152fdbb8e2b4d2236a82deab4e29052731ddd21bcf9c641518fa4ab6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Koopa.py",
+      "current_sha256": "b24e0eb202aa28ab7961310c2abf4cd9a8abdf2c4a491b588a9f7be8ff604778",
+      "previous_sha256": "d39e5b8ccfd3af33202e7f918a185b92f2cb1c64d34c21a5189610697ca60a79",
+      "canonical_lf_sha256": "b24e0eb202aa28ab7961310c2abf4cd9a8abdf2c4a491b588a9f7be8ff604778",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\LightTS.py",
+      "current_sha256": "cc756ac30d283c6839fbc4fdfae513be152caaf8eae51c1b04ed8bef0f277236",
+      "previous_sha256": "a1eaab26419b2fd29d3ae778f2df8bdfc9439915373dc043370385a2487b17de",
+      "canonical_lf_sha256": "cc756ac30d283c6839fbc4fdfae513be152caaf8eae51c1b04ed8bef0f277236",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\MICN.py",
+      "current_sha256": "b11f146e5bc4c54ac3f2a69a15577c47132227f7e27e48db91926828d1b023f0",
+      "previous_sha256": "d7e06830f1456294f872fa28e0fc05baf257a092e8c830f8faf5996dae288dd1",
+      "canonical_lf_sha256": "b11f146e5bc4c54ac3f2a69a15577c47132227f7e27e48db91926828d1b023f0",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Nonstationary_Transformer.py",
+      "current_sha256": "0ceba484602a40a0b6e8156d2d53eaa9e5a2145c4aa6c238e56bfc1204f89d9f",
+      "previous_sha256": "49fdf580c109d89234793adaf3b41611690094b18625ba9af29aa9228029bf6f",
+      "canonical_lf_sha256": "0ceba484602a40a0b6e8156d2d53eaa9e5a2145c4aa6c238e56bfc1204f89d9f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\PatchTST.py",
+      "current_sha256": "c6b3247a8ac0584218c367629bc391d3bb5cc972aed29287f48f8734ed9612ca",
+      "previous_sha256": "f324a8bb7d27a02d34023e5431d78047519425129272e3af31a490f1b8f7cc4c",
+      "canonical_lf_sha256": "c6b3247a8ac0584218c367629bc391d3bb5cc972aed29287f48f8734ed9612ca",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Pyraformer.py",
+      "current_sha256": "050222339617ca355cc3f8f65933849d50a0f2a579a932643fbb95a51324227f",
+      "previous_sha256": "f974205e64fb93f79db310b28643b88a7ee6096e85a11340634471fac739480f",
+      "canonical_lf_sha256": "050222339617ca355cc3f8f65933849d50a0f2a579a932643fbb95a51324227f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Reformer.py",
+      "current_sha256": "3cf00b4375b81d5bf07be0d2f4af956beb59c222fe377637ad05b54177ff140c",
+      "previous_sha256": "f6ed94d40baa008dd69147fdfb82e5c2ce9f35fb664a00398cdaca6dda34884d",
+      "canonical_lf_sha256": "3cf00b4375b81d5bf07be0d2f4af956beb59c222fe377637ad05b54177ff140c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\SegRNN.py",
+      "current_sha256": "9fe71e22611bf34c93169dc16a64e582fb0251cfd4f686865d9f465da8c468ab",
+      "previous_sha256": "32e3afac065ca7f0191cebf8a0b2fa65433bb6f96389baf896d1c96c4da96911",
+      "canonical_lf_sha256": "9fe71e22611bf34c93169dc16a64e582fb0251cfd4f686865d9f465da8c468ab",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\TemporalFusionTransformer.py",
+      "current_sha256": "84d191e8933c7a501f7bb50ce996aa6023fd464d05a581887b7fa1696cdbe555",
+      "previous_sha256": "a303ed9a3ee3eece2f76436b177d48c610c652aed58c7c68eeeb905f7293833d",
+      "canonical_lf_sha256": "84d191e8933c7a501f7bb50ce996aa6023fd464d05a581887b7fa1696cdbe555",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\TiDE.py",
+      "current_sha256": "f6097046640636eee52f370191ce9f397f8c77ba3ea8879ebc881edc47d5be02",
+      "previous_sha256": "c66fe34aba78dc6cfbbdb91ddbbd8710d434e086da7849ab51110b4b02c7dede",
+      "canonical_lf_sha256": "f6097046640636eee52f370191ce9f397f8c77ba3ea8879ebc881edc47d5be02",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\TimeMixer.py",
+      "current_sha256": "374f3f6443509ae07bd12cb89cd5b9204f9fceaea5d43b92d81516be9663edfa",
+      "previous_sha256": "27991f22247862001859c2343d3559c9154b6f38a968e37d19909a0fb917057b",
+      "canonical_lf_sha256": "374f3f6443509ae07bd12cb89cd5b9204f9fceaea5d43b92d81516be9663edfa",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\TimesNet.py",
+      "current_sha256": "d13f132a4bb0782bdc78b3ab42a14adb31e5582121bc0c2719b0ef6dbe99e6e6",
+      "previous_sha256": "2f4ce3a033886f402135a49e7026f3d54f8b87e8ff246dc16c4eea75d420fab9",
+      "canonical_lf_sha256": "d13f132a4bb0782bdc78b3ab42a14adb31e5582121bc0c2719b0ef6dbe99e6e6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\Transformer.py",
+      "current_sha256": "b23b111d857273cc2e5d0c01d598e751cc7c8914dcd0870f0430fc2aaf816b22",
+      "previous_sha256": "0ee7a0bff563cb62834cad131f952cc2883f7185afc284b03e209b34a3e78b0a",
+      "canonical_lf_sha256": "b23b111d857273cc2e5d0c01d598e751cc7c8914dcd0870f0430fc2aaf816b22",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\models\\TSMixer.py",
+      "current_sha256": "88b859c09e56495c03dba84b366df8b43574ac0e2430c8609e650232b48e8288",
+      "previous_sha256": "543e8f63b2f6af8557aa6835645a69df9df29ccce7658758b9ba232b67ddd4d1",
+      "canonical_lf_sha256": "88b859c09e56495c03dba84b366df8b43574ac0e2430c8609e650232b48e8288",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\patchs\\Linear.py",
+      "current_sha256": "f860e53ab52069d788b742ed2511e21f8d410276d826afdf6a773e13dfb9a31c",
+      "previous_sha256": "a6a456f737e4d4db8d26588eec72adf613e7fa4933be7c3964b862c6514f2494",
+      "canonical_lf_sha256": "f860e53ab52069d788b742ed2511e21f8d410276d826afdf6a773e13dfb9a31c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\patchs\\NLinear.py",
+      "current_sha256": "d1be9098965503b2249ab3396f3f95526eb865b2c10a297587a803aed8b7b208",
+      "previous_sha256": "1b86b46e853c092db4ed367f6fec57906bf973c765b13ef32b0b97f555d904a1",
+      "canonical_lf_sha256": "d1be9098965503b2249ab3396f3f95526eb865b2c10a297587a803aed8b7b208",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\patchs\\Triformer.py",
+      "current_sha256": "fb314cf2573be23a765b4dc4bccc1fbae5feff0b91b9a6b1a9172db0e44376f7",
+      "previous_sha256": "cf4758896ce48ffebb6f2b4004df17bbe0d54b80e7867c4d7cd7df3d04175ee5",
+      "canonical_lf_sha256": "fb314cf2573be23a765b4dc4bccc1fbae5feff0b91b9a6b1a9172db0e44376f7",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\utils\\losses.py",
+      "current_sha256": "0a6acaed2583dd99684f114a0bb5a7a52c49fe4933096b5d97a316433813be0f",
+      "previous_sha256": "f6afaa740aed6fda1830cc3bc675eb2b9289c529283ba8b8460c9a4f4cbc9d2b",
+      "canonical_lf_sha256": "0a6acaed2583dd99684f114a0bb5a7a52c49fe4933096b5d97a316433813be0f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\utils\\masking.py",
+      "current_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "previous_sha256": "b8a0d5ff11fcd9cbd88d8cd41e0d67de63829b3e4c8b1c1797e8af5d04d46088",
+      "canonical_lf_sha256": "c734bc424298367bc3fcf187b4a73476317ffc06411e9ae103d0a77a91d1b386",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\utils\\timefeatures.py",
+      "current_sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3",
+      "previous_sha256": "21a99fcd0452b809a839fce55405d7fb5fa5e7f92cab0d305530cd01b2a262ff",
+      "canonical_lf_sha256": "700dd1de06943d3225ffd3c10352fc49b8ecd1a029c931fb8cf2bab45a6067f3",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\utils\\tools.py",
+      "current_sha256": "3f0b89a47e4a4d1277aed278b529e41fb50d6354215525b589f37b778a531ab2",
+      "previous_sha256": "ce3c78ce682cb5a481d8945335aa9790e4f78758441366c55df0b167306a2b23",
+      "canonical_lf_sha256": "3f0b89a47e4a4d1277aed278b529e41fb50d6354215525b589f37b778a531ab2",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\time_series_library\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\xpatch.py",
+      "current_sha256": "8571dce8cd1a48239a45ded3dc5eea6f553fb11a4a3ee8fe4f6362f4549da082",
+      "previous_sha256": "9e253fc462dad4e00f4060b5f5f69f5eef4317fb36c2511926eccd20ad4bcd40",
+      "canonical_lf_sha256": "8571dce8cd1a48239a45ded3dc5eea6f553fb11a4a3ee8fe4f6362f4549da082",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\__init__.py",
+      "current_sha256": "0fdcb8ea5a855c4b1f7db068ac0bbdda779abe6e1b674b63af09a4072aed04d1",
+      "previous_sha256": "7cd1dcf1a5987e3185603b6bea7caf4843bfb0668970cfa787f1b480bb08cb82",
+      "canonical_lf_sha256": "0fdcb8ea5a855c4b1f7db068ac0bbdda779abe6e1b674b63af09a4072aed04d1",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\layers\\decomp.py",
+      "current_sha256": "d4accfda080c686c9d14ab28da4fa1b6f02d55a4b8a5b97b204a5259aa66a2c2",
+      "previous_sha256": "75e98d64d0971719a01d798130ea0968d5d2c2968b44c12b540030c84800ad58",
+      "canonical_lf_sha256": "d4accfda080c686c9d14ab28da4fa1b6f02d55a4b8a5b97b204a5259aa66a2c2",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\layers\\dema.py",
+      "current_sha256": "25c0f664d626161c8fbfa2968fa3db7fa27c4214f145164ea3132f0e03baccc6",
+      "previous_sha256": "c2afdea0fe53e940e88f8453211297a35caefee4c162061804fef3a014d0443f",
+      "canonical_lf_sha256": "25c0f664d626161c8fbfa2968fa3db7fa27c4214f145164ea3132f0e03baccc6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\layers\\ema.py",
+      "current_sha256": "8d4ff9bc29a6171ccbbd1353d5367298ce23e19a5fb13fab11a527ca88724715",
+      "previous_sha256": "fbcf5385f4d5829bc4be019689a57aafe021094a754dc952c7c24581901b3c8c",
+      "canonical_lf_sha256": "8d4ff9bc29a6171ccbbd1353d5367298ce23e19a5fb13fab11a527ca88724715",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\layers\\network.py",
+      "current_sha256": "1003531371c1bad9311c2235df01a9b9368e2fb011cd05d27c6d08e23eda1bde",
+      "previous_sha256": "e8d6561eb17bbed16709a9697ac89fb063ef72e22bc1d5cc911e78affdb85195",
+      "canonical_lf_sha256": "1003531371c1bad9311c2235df01a9b9368e2fb011cd05d27c6d08e23eda1bde",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\layers\\network_cnn.py",
+      "current_sha256": "1c17edd2b515cb1f54960125fc50ffaead39564bc241b2d7b059ad24de5eb95c",
+      "previous_sha256": "9bc339c0e7e0621034738080b5884c1684b44259b2f99cbc1e02522160073c47",
+      "canonical_lf_sha256": "1c17edd2b515cb1f54960125fc50ffaead39564bc241b2d7b059ad24de5eb95c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\layers\\network_mlp.py",
+      "current_sha256": "f7f9e79c58cff4b97dc4ac59954ac6e1c987811a559365d150b6e4793d9271cf",
+      "previous_sha256": "0f190a43f70ca010826c77b64720f082d20cda11c5fe222f6aa8bb5fdbfdeb75",
+      "canonical_lf_sha256": "f7f9e79c58cff4b97dc4ac59954ac6e1c987811a559365d150b6e4793d9271cf",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\layers\\revin.py",
+      "current_sha256": "5c41332e9975c6ec4d2d6ab0492322e278c2db855462ad5a404fc4393ef916b6",
+      "previous_sha256": "e85682f7ee437d56f363ee909e5bc126e707467dbe86a56700091d22fcabac35",
+      "canonical_lf_sha256": "5c41332e9975c6ec4d2d6ab0492322e278c2db855462ad5a404fc4393ef916b6",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\models\\xPatch.py",
+      "current_sha256": "d32ce88b7742bdf1413e9869df29dc194ef7796a9191d026754de7594d8cbd7f",
+      "previous_sha256": "230f23692b8cd9f708430938b67b29e93477a08388541b5fe74fdbde9a2741e8",
+      "canonical_lf_sha256": "d32ce88b7742bdf1413e9869df29dc194ef7796a9191d026754de7594d8cbd7f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\utils\\metrics.py",
+      "current_sha256": "cf212398c1f001f4ef411b48e3b2da447155cfb8684065e87eb31b8cbd958112",
+      "previous_sha256": "295ea44b400e77bbcf28928424d74b0e2806d515b6be6fa352b61df3f769a0bf",
+      "canonical_lf_sha256": "cf212398c1f001f4ef411b48e3b2da447155cfb8684065e87eb31b8cbd958112",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\utils\\timefeatures.py",
+      "current_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "previous_sha256": "a9d0db8c05d828db2192710fea98242783f8a1ce1a6af0c25b9900f82310923f",
+      "canonical_lf_sha256": "911bf0cc708f843e20f6478706766cbab83c0dd3cf9af551c50128ee7c0a403b",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\baselines\\xpatch\\utils\\tools.py",
+      "current_sha256": "fe034e4f5f949dd28e93df934d23beb8d5d3fef2b15f55b75bda9c275245a141",
+      "previous_sha256": "6de3b52efe950d4f36ed9077b7635e77e93066468402bcad6dfa277453f3fdea",
+      "canonical_lf_sha256": "fe034e4f5f949dd28e93df934d23beb8d5d3fef2b15f55b75bda9c275245a141",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\common\\constant.py",
+      "current_sha256": "27d7ed6ebc5ee7cfc5b6bdc59ec5f9e6443e5418f07e9439bcc39252cb88be37",
+      "previous_sha256": "c59bea84f722eca1cc16f88b04231909e0c745d4cf583405b5ba432efbe5b329",
+      "canonical_lf_sha256": "27d7ed6ebc5ee7cfc5b6bdc59ec5f9e6443e5418f07e9439bcc39252cb88be37",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\common\\__init__.py",
+      "current_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "previous_sha256": "9552f854fcf77389160a08cfb4be2eb902cd9a0c0af76ab57df02cbf9125d369",
+      "canonical_lf_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\dataset.py",
+      "current_sha256": "67cf0f52fa4f6226f88b27bfc226a0c023561916757258cc1292a961721963dd",
+      "previous_sha256": "11b545c312bd78cfcc6606b54dc2dbf1d72d5c5cd2c64f2e20cda98bdc6d154b",
+      "canonical_lf_sha256": "67cf0f52fa4f6226f88b27bfc226a0c023561916757258cc1292a961721963dd",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\data_pool.py",
+      "current_sha256": "dc642478ae90489374502aaf20cb9c670e341432f5ca647c3e2549933f47dc08",
+      "previous_sha256": "59c44e4616ffad54cb1771426e6584e9f7f795cce7ef4c6119fdf86f7647104b",
+      "canonical_lf_sha256": "dc642478ae90489374502aaf20cb9c670e341432f5ca647c3e2549933f47dc08",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\data_pool_impl_base.py",
+      "current_sha256": "207e2687ca7253302229fae30a9cd756743b83de55f5d3da0f95fcbe12b9893f",
+      "previous_sha256": "3885624f5a030abc20a127fd54db33cb34a334ce3914db15731cdf84adf11e44",
+      "canonical_lf_sha256": "207e2687ca7253302229fae30a9cd756743b83de55f5d3da0f95fcbe12b9893f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\data_server_base.py",
+      "current_sha256": "12aab29d3a941bdacc9e91f542e4362ac791a15025d97a1965c6a81f74f8cae4",
+      "previous_sha256": "d5cccfc142a95bb298d9424bb1578236d1f54ab0ab05dbcf64a0389f96c0a3aa",
+      "canonical_lf_sha256": "12aab29d3a941bdacc9e91f542e4362ac791a15025d97a1965c6a81f74f8cae4",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\data_source.py",
+      "current_sha256": "ce770916b3d49f50ab56b8adc132ddb85620dfadcf62fd4048d68a09456167c8",
+      "previous_sha256": "0ab7e523bb44903179474e88f45bc5b2336b400286ee0b12e7b35e8d6e0fd5a1",
+      "canonical_lf_sha256": "ce770916b3d49f50ab56b8adc132ddb85620dfadcf62fd4048d68a09456167c8",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\utils.py",
+      "current_sha256": "92e077fd069f812a6ae75adc39c91ea721eedd6f54b3ded99af8b831bdb9dad5",
+      "previous_sha256": "63085aa06122d66cc3ab8d3554248caad5fcb47d044aed79be85b644899a3380",
+      "canonical_lf_sha256": "92e077fd069f812a6ae75adc39c91ea721eedd6f54b3ded99af8b831bdb9dad5",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\__init__.py",
+      "current_sha256": "1b4d686e9c14670264eb5d586a93fc8e6e93cb0a936af2af6df24995b7d310a9",
+      "previous_sha256": "d8e25cf0cba418666ca9daa699d69820e6619f95b89579c27f22505c0b715778",
+      "canonical_lf_sha256": "1b4d686e9c14670264eb5d586a93fc8e6e93cb0a936af2af6df24995b7d310a9",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\suites\\global_storage.py",
+      "current_sha256": "851d866df60cbc5938a5b8db9b2d31ab94cc4319eee6d1d214b9b1ff7e0d7387",
+      "previous_sha256": "b2abd59fc7569d4f9f64536296c3cd629110519b8b45c49ed6f12973e49e9971",
+      "canonical_lf_sha256": "851d866df60cbc5938a5b8db9b2d31ab94cc4319eee6d1d214b9b1ff7e0d7387",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\data\\suites\\__init__.py",
+      "current_sha256": "b44fb5a2e3c102802f2fcc20630a603aa7e908bf075c6127183ca940fd50d69f",
+      "previous_sha256": "1d792c05dfca05992cd74bc3d93269247783d3c85e327e63505f047a0c49e48d",
+      "canonical_lf_sha256": "b44fb5a2e3c102802f2fcc20630a603aa7e908bf075c6127183ca940fd50d69f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\evaluate_model.py",
+      "current_sha256": "113def002af7939e379ede525a0992caaad33de3e4831bd0c95c649fcd10344c",
+      "previous_sha256": "990ce682355a30d84c7e425f0512072e06e9837329d5a8f0f994b824e6a68d62",
+      "canonical_lf_sha256": "113def002af7939e379ede525a0992caaad33de3e4831bd0c95c649fcd10344c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\evaluator.py",
+      "current_sha256": "b2e09acf5197b24b584b54b8ca544af997969680a894e20877a73d1df6e98523",
+      "previous_sha256": "9cfeec93e017b787b4dc21c610fe35433c42d821a8dac55f1e7faea231712d49",
+      "canonical_lf_sha256": "b2e09acf5197b24b584b54b8ca544af997969680a894e20877a73d1df6e98523",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\__init__.py",
+      "current_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "previous_sha256": "9552f854fcf77389160a08cfb4be2eb902cd9a0c0af76ab57df02cbf9125d369",
+      "canonical_lf_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\metrics\\regression_metrics.py",
+      "current_sha256": "05a94a3852eb9a160a08fafd5f0acfe74558e3fa6d2533c906b21362f99a9405",
+      "previous_sha256": "b7a35faa6289188a555a1d8fb03847548168fcfc58017bd86ed48d42f0e61b7b",
+      "canonical_lf_sha256": "05a94a3852eb9a160a08fafd5f0acfe74558e3fa6d2533c906b21362f99a9405",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\metrics\\utils.py",
+      "current_sha256": "2964baadad2d3a94b034d95fcdac6bbe3beb088ccc0f2583cd28eb69796f5d21",
+      "previous_sha256": "51e2fab35a76b00da7957164f0bf002c9aa9aa0ca67481d997c935c306a17140",
+      "canonical_lf_sha256": "2964baadad2d3a94b034d95fcdac6bbe3beb088ccc0f2583cd28eb69796f5d21",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\metrics\\__init__.py",
+      "current_sha256": "b1e1b0964e05d1dce68867e52f7076ca2ddd7b6cfec6f044457ad07252a75a12",
+      "previous_sha256": "02ef5625e77d30e9699a85bb55726d258d48f770ab342e7aadeafa022e6beb27",
+      "canonical_lf_sha256": "b1e1b0964e05d1dce68867e52f7076ca2ddd7b6cfec6f044457ad07252a75a12",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\strategy\\constants.py",
+      "current_sha256": "794906824977b57d9a3bcc874b9f7ff0aff230747a1488230e715f5b31500211",
+      "previous_sha256": "7b4d2176c994053f9f66e626dfcb648f1a3e5a7f49a2a0f7bfcc3bc5ebc3572c",
+      "canonical_lf_sha256": "794906824977b57d9a3bcc874b9f7ff0aff230747a1488230e715f5b31500211",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\strategy\\fixed_forecast.py",
+      "current_sha256": "8e27779f1323d49f4ba931182cce42cc4a0210b5cce676271ebeb2243f9dc524",
+      "previous_sha256": "75e5fb4ced1b4930e169128ac9b5a76e7f12f8e28e6eba07c4e6867095cebfb5",
+      "canonical_lf_sha256": "8e27779f1323d49f4ba931182cce42cc4a0210b5cce676271ebeb2243f9dc524",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\strategy\\forecasting.py",
+      "current_sha256": "cb8e165bdeee49713f485c452ccb4a1cd8d600f5e5b6a31d9338a1c1bb1823cd",
+      "previous_sha256": "7ef8e54de03c73fb268c9fc5395b8799fc321ab0baee7ac982e9bea1ee7b2bad",
+      "canonical_lf_sha256": "cb8e165bdeee49713f485c452ccb4a1cd8d600f5e5b6a31d9338a1c1bb1823cd",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\strategy\\rolling_forecast.py",
+      "current_sha256": "0022ff0e3948fda544e37c55a266aa0d0e38f02d84ba488de3e20e84928eda5a",
+      "previous_sha256": "de4cafd3768fb97524a8c5d09bd762e488d7b132ddfd8e1f1c3ee86b551d3c1f",
+      "canonical_lf_sha256": "0022ff0e3948fda544e37c55a266aa0d0e38f02d84ba488de3e20e84928eda5a",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\strategy\\strategy.py",
+      "current_sha256": "3b4f9c43907b91edebda49db6b8329e3134716325846346decf6bd4a266e0ff0",
+      "previous_sha256": "81c9950b0dccaca97129e462f690617ff422125d4aec85d989646ea3e1ed5299",
+      "canonical_lf_sha256": "3b4f9c43907b91edebda49db6b8329e3134716325846346decf6bd4a266e0ff0",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\evaluation\\strategy\\__init__.py",
+      "current_sha256": "f6011743e535552776088f339099bb0ca72ec0d59feaa911fb594f65e6685f23",
+      "previous_sha256": "2122f8c1ac6d4181f5917f940ebf74665cda898cdfb0e0b2e99ea0fc872f814a",
+      "canonical_lf_sha256": "f6011743e535552776088f339099bb0ca72ec0d59feaa911fb594f65e6685f23",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\models\\model_base.py",
+      "current_sha256": "be5520b4cb1299bd94dd8aa46edc5451d5052ec8fb8c2cf8a8b1edcd2c585532",
+      "previous_sha256": "751a0324ffb81325c79a3852d4a70f7ab928ddb32921d21955e788f9f9a57d94",
+      "canonical_lf_sha256": "be5520b4cb1299bd94dd8aa46edc5451d5052ec8fb8c2cf8a8b1edcd2c585532",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\models\\model_loader.py",
+      "current_sha256": "933882a9d9ed93c64433714be635bb09560c5d7532083972eea55e791d0ace66",
+      "previous_sha256": "415dc381bf71e9f303f26696c945c59ceb5e7413830870cb5d3d2eb5916e6346",
+      "canonical_lf_sha256": "933882a9d9ed93c64433714be635bb09560c5d7532083972eea55e791d0ace66",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\models\\__init__.py",
+      "current_sha256": "939ff75bf1dd11bfdfa73a0028d9e5a2ce1497b3e71f5a6ee48f181628efe124",
+      "previous_sha256": "54aa2967e443e36e760db2d6405d62f8be15c82e61471815369dddc2566575d7",
+      "canonical_lf_sha256": "939ff75bf1dd11bfdfa73a0028d9e5a2ce1497b3e71f5a6ee48f181628efe124",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\report_csv.py",
+      "current_sha256": "9fc1d8ce8ba98845ab09fc0051c43453486cc03b489c1e7082260e415d909261",
+      "previous_sha256": "d3eb6155abe0dc9398628f4bd180b364719729f209235c01382a5edf62bc45de",
+      "canonical_lf_sha256": "9fc1d8ce8ba98845ab09fc0051c43453486cc03b489c1e7082260e415d909261",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\__init__.py",
+      "current_sha256": "95b8b2b4b9acb4069b3e320f551881ea3f02c8b14c18b645182420bfc74a91c7",
+      "previous_sha256": "40f974f0c3ec485f0356136f0ce22d0244c450ae5b173196ee2647194bbbed2a",
+      "canonical_lf_sha256": "95b8b2b4b9acb4069b3e320f551881ea3f02c8b14c18b645182420bfc74a91c7",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\report_dash\\app.py",
+      "current_sha256": "4bcf53da07388c6e0d81f9827bc7a2ba57a1a6c3184853ae7f2158734f3dfea4",
+      "previous_sha256": "77a008f507baaf7ab76380e953c953c582bd1f8fa81d9079f77c3c87a8d11959",
+      "canonical_lf_sha256": "4bcf53da07388c6e0d81f9827bc7a2ba57a1a6c3184853ae7f2158734f3dfea4",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\report_dash\\layout.py",
+      "current_sha256": "08ef1ed22283c3993c21ffe8267542dab18eaa949fb33bcc37e15722d0ff427f",
+      "previous_sha256": "d716b46b9bdd895fc6b0c4f6deea65616e3931d728f1b32aaa20ad63f252426c",
+      "canonical_lf_sha256": "08ef1ed22283c3993c21ffe8267542dab18eaa949fb33bcc37e15722d0ff427f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\report_dash\\memory.py",
+      "current_sha256": "3ef2af551cc0d05ed9effb01968f4217635eb50be3798a644360e844ad197855",
+      "previous_sha256": "d192b3ebe6db2485933033eab86077d4faabdd7aaeb601179480ffb2b779096b",
+      "canonical_lf_sha256": "3ef2af551cc0d05ed9effb01968f4217635eb50be3798a644360e844ad197855",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\report_dash\\__init__.py",
+      "current_sha256": "43e1f225106466b744df7c08027e5b94be8bd64f93756082464a0ce364f35b5c",
+      "previous_sha256": "512f329ff46431473132081ca4f4bc755771342e352b6938dac4d97068c8a0d4",
+      "canonical_lf_sha256": "43e1f225106466b744df7c08027e5b94be8bd64f93756082464a0ce364f35b5c",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\report_dash\\pages\\leaderboard.py",
+      "current_sha256": "2c7e6f2a727bf2b1a5f4e6b1cfad64849e3611bb4b14200171c51a40e750e40f",
+      "previous_sha256": "92e379fb07a261a0b26398af01662f9d9646ab101b04534bc936e7987bf92244",
+      "canonical_lf_sha256": "2c7e6f2a727bf2b1a5f4e6b1cfad64849e3611bb4b14200171c51a40e750e40f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\report_dash\\pages\\query.py",
+      "current_sha256": "ccc8c3427061991810e4ab0ccc3e56ae79b5a2734298af5a4609261e86bb6391",
+      "previous_sha256": "816a3a8f4d8eef9c15ccb52be6622ecf5ad9612915bafa6e283e9486e2fb2e38",
+      "canonical_lf_sha256": "ccc8c3427061991810e4ab0ccc3e56ae79b5a2734298af5a4609261e86bb6391",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\utils\\leaderboard.py",
+      "current_sha256": "822023f0c30d23f983ab5e9314dac0f68fe13a181ad968f12c83e8a818452533",
+      "previous_sha256": "a80dc64ce4f09a5b4b87499097b95054493bfc1e89f53e17c39a4a7d6784359c",
+      "canonical_lf_sha256": "822023f0c30d23f983ab5e9314dac0f68fe13a181ad968f12c83e8a818452533",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\report\\utils\\__init__.py",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonical_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "only_line_endings_differ": false
+    },
+    {
+      "file": "ts_benchmark\\utils\\compress.py",
+      "current_sha256": "f89b3bc6388aa750b0b0a82a360fd46a953b5324ee2d3f07c686da6c7789e745",
+      "previous_sha256": "3aaf6c7d76f10d3e66d4f4ad5395407d5e08b6f212d292ce93b4815e12bac182",
+      "canonical_lf_sha256": "f89b3bc6388aa750b0b0a82a360fd46a953b5324ee2d3f07c686da6c7789e745",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\data_processing.py",
+      "current_sha256": "40dbf699abb6fc513c9f3bcd2ca34577aa675cb49d5f4ef5a2fca1dde3738577",
+      "previous_sha256": "f914de75de69ec7ff60aac8b845b987e69efbe5696e205979b84eb75662b4055",
+      "canonical_lf_sha256": "40dbf699abb6fc513c9f3bcd2ca34577aa675cb49d5f4ef5a2fca1dde3738577",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\design_pattern.py",
+      "current_sha256": "a0be9df05c79680e480685a8b6f5629a88be9db94f0b284421b5b3cbae3449ff",
+      "previous_sha256": "f07a9f51ba99e1ea9a45af09f98e12c27d9b6a852cacb63b8972da1a7a1444ff",
+      "canonical_lf_sha256": "a0be9df05c79680e480685a8b6f5629a88be9db94f0b284421b5b3cbae3449ff",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\get_file_name.py",
+      "current_sha256": "f91b6e7bdf83f0bd3640aed99ab9c41cd64725e98956aec8cfb956eba6823248",
+      "previous_sha256": "79996d8bb256c8d722e33ff7b980c8b00848a149fb64a89945fe3308f4714048",
+      "canonical_lf_sha256": "f91b6e7bdf83f0bd3640aed99ab9c41cd64725e98956aec8cfb956eba6823248",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\random_utils.py",
+      "current_sha256": "0afeedb0cafc23385d00c41bbe2db9cf1d3aa37e34de77a8732da68580493a75",
+      "previous_sha256": "66820939f31f5b7649f1245538ca6b4b08fa1d411b6fc0cf687ad5606005a332",
+      "canonical_lf_sha256": "0afeedb0cafc23385d00c41bbe2db9cf1d3aa37e34de77a8732da68580493a75",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\__init__.py",
+      "current_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "previous_sha256": "9552f854fcf77389160a08cfb4be2eb902cd9a0c0af76ab57df02cbf9125d369",
+      "canonical_lf_sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\parallel\\base.py",
+      "current_sha256": "e8dd80a62de8ff695f8cb9d398292a6dc407b1f2fdcfc8de5405fd2c1e7e8c1f",
+      "previous_sha256": "2ceea050c635288012cf6963132c34c96c10ccc3f636a64795f2716c5a1d6380",
+      "canonical_lf_sha256": "e8dd80a62de8ff695f8cb9d398292a6dc407b1f2fdcfc8de5405fd2c1e7e8c1f",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\parallel\\ray_backend.py",
+      "current_sha256": "b3206a3015e1086cf333e94ba29519774f140ec67c7549ff4333aaf070b85655",
+      "previous_sha256": "27730ce12772bc8e036c8263c7a7f8226db354009bab58ff6f5b548f8ba89fd1",
+      "canonical_lf_sha256": "b3206a3015e1086cf333e94ba29519774f140ec67c7549ff4333aaf070b85655",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\parallel\\sequential_backend.py",
+      "current_sha256": "07aa802d3085e466e73df427bf82547f01c74146a316203302b62ff3fb243748",
+      "previous_sha256": "c1934a09ffc607cd80b6b09c051fee0d357ca82155b40a324235243069dedcf7",
+      "canonical_lf_sha256": "07aa802d3085e466e73df427bf82547f01c74146a316203302b62ff3fb243748",
+      "only_line_endings_differ": true
+    },
+    {
+      "file": "ts_benchmark\\utils\\parallel\\__init__.py",
+      "current_sha256": "52d53cd4f3ece729bdfef434dd08f5700bbbf2d35117764092625b0daf4b955e",
+      "previous_sha256": "369208000586b9049bb08029b425786a510c2dec9939e1b3e9095d8ea61b2182",
+      "canonical_lf_sha256": "52d53cd4f3ece729bdfef434dd08f5700bbbf2d35117764092625b0daf4b955e",
+      "only_line_endings_differ": true
+    }
+  ],
+  "train_drop_last": true,
+  "test_drop_last": false
+}

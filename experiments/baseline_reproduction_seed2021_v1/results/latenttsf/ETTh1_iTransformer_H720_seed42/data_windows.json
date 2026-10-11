@@ -1,0 +1,12 @@
+{
+  "train": 7201,
+  "validation": 2161,
+  "test": 2161,
+  "step": 1,
+  "drop_last": false,
+  "validation_shuffle": true,
+  "validation_aggregation": "unweighted mean of per-batch MSE; retained official behavior",
+  "features": "M",
+  "all_channels": 7,
+  "scaler_train_only": true
+}

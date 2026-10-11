@@ -1,0 +1,54 @@
+{
+  "time_utc": "2026-10-11T13:46:08Z",
+  "os": "Windows-10-10.0.18363-SP0",
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\baseline_reproduction_seed2021_v1\\.venv\\Scripts\\python.exe",
+  "torch": "2.8.0+cu128",
+  "torch_file": "E:\\Anaconda\\envs\\persist_stable_251\\lib\\site-packages\\torch\\__init__.py",
+  "numpy": "1.26.4",
+  "numpy_file": "D:\\baseline_reproduction_seed2021_v1\\.venv\\lib\\site-packages\\numpy\\__init__.py",
+  "cuda_runtime": "12.8",
+  "cuda_arch_list": [
+    "sm_61",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "cpu_count": 32,
+  "ram": {
+    "total": 68498305024,
+    "available": 49194094592,
+    "percent": 28.2,
+    "used": 19304210432,
+    "free": 49194094592
+  },
+  "disk": {
+    "total": 484357902336,
+    "used": 432369229824,
+    "free": 51988672512,
+    "percent": 89.3
+  },
+  "nvidia_smi": "Sun Oct 11 21:46:08 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 616.56                 KMD Version: 616.56        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:01:00.0  On |                  N/A |\n| 30%   42C    P0             55W /  575W |    1036MiB /  32607MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2488    C+G   C:\\Windows\\System32\\dwm.exe           N/A      |\n|    0   N/A  N/A            5480    C+G   ...na_cw5n1h2txyewy\\SearchUI.exe      N/A      |\n|    0   N/A  N/A            6944    C+G   ....0.4258.62\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           12312    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           12396    C+G   ...iences.TextInput.InputApp.exe      N/A      |\n|    0   N/A  N/A           14328    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           14640    C+G   ...\u6e5b\u9e24AweSun\\flutter\\AweSun.exe      N/A      |\n|    0   N/A  N/A           14704    C+G   ...IA App\\CEF\\NVIDIA Overlay.exe      N/A      |\n|    0   N/A  N/A           15704    C+G   D:\\todesk\\ToDesk.exe                  N/A      |\n|    0   N/A  N/A           21348    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A           22688    C+G   ...udDrive\\quark_cloud_drive.exe      N/A      |\n|    0   N/A  N/A           22720    C+G   ...udDrive\\quark_cloud_drive.exe      N/A      |\n|    0   N/A  N/A           25544    C+G   ...t\\Edge\\Application\\msedge.exe      N/A      |\n|    0   N/A  N/A           27760    C+G   D:\\Microsoft VS Code\\Code.exe         N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "git": "D:\\Git\\cmd\\git.EXE",
+  "conda_base": "E:/Anaconda/envs/persist_stable_251",
+  "private_dependencies": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "einops": "0.8.1",
+    "ray": "2.10.0",
+    "dash": "2.17.0",
+    "dash-bootstrap-components": "1.6.0",
+    "reformer-pytorch": "1.4.4",
+    "wandb": "0.30.0",
+    "datasets": "5.1.0",
+    "sktime": "1.2.0",
+    "statsmodels": "0.14.6",
+    "PyWavelets": "1.8.0"
+  }
+}

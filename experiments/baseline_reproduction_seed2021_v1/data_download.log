@@ -1,0 +1,9 @@
+DOWNLOAD_VERIFIED Electricity D:\baseline_reproduction_seed2021_v1\data\electricity\electricity.csv
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\download_and_verify_data.py", line 51, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--verify-only',action='store_true');a=p.parse_args();audit() if a.verify_only else download()
+  File "D:\baseline_reproduction_seed2021_v1\scripts\download_and_verify_data.py", line 49, in download
+    audit()
+  File "D:\baseline_reproduction_seed2021_v1\scripts\download_and_verify_data.py", line 18, in audit
+    assert times.is_unique and times.is_monotonic_increasing
+AssertionError

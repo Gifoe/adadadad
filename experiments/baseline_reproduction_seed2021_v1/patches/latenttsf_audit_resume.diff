@@ -1,0 +1,58 @@
+--- upstream/LatentTSF/my_train.py
++++ instrumented/LatentTSF/my_train.py
+@@ -227,7 +227,7 @@
+     trues = np.concatenate(trues, axis=0)
+     print('test shape:', preds.shape, trues.shape)
+ 
+-    mae, mse, rmse, mape, mspe = metric(preds, trues)
++    mae, mse, rmse, mape, mspe = _audit_metric(preds, trues)
+     print(f"mae:{mae}, mse:{mse}, rmse:{rmse}, mape:{mape}, mspe:{mspe}")
+ 
+     result_file = args.result_txt
+@@ -285,6 +285,7 @@
+ 
+             setting = f"LatentV20_{encoder_type}_{ae_loss_type}_{args.task_name}_{args.model_id}_{args.model}_{args.data}_ft{args.features}_sl{args.seq_len}_ll{args.label_len}_pl{args.pred_len}_st{args.step}_batch{args.batch_size}_dm{args.d_model}_nh{args.n_heads}_el{args.e_layers}_dl{args.d_layers}_df{args.d_ff}_lr{args.learning_rate}_pw{perceptual_weight}_mw{mse_weight}_cw{cosine_weight}_rw{reconstruction_weight}_lradj{use_lradj_value}_{args.des}_{iteration}"
+ 
++            setting = _audit_run_id  # Short filesystem name for Windows MAX_PATH.
+             # Build encoder
+             ae_type = getattr(args, 'ae_type', 'MLP').upper()
+             load_pretrained_ae = getattr(args, 'load_pretrained_ae', True)
+@@ -434,7 +435,7 @@
+             project=wandb_project,
+             name=setting,
+             config=wandb_config,
+-            settings=wandb.Settings(start_method="thread")
++            settings=wandb.Settings()
+         )
+ 
+         if args.use_multi_gpu and args.use_gpu:
+@@ -497,7 +498,8 @@
+         f_dim = -1 if args.features == 'MS' else 0
+         actual_epochs = 0
+ 
+-        for epoch in range(args.train_epochs):
++        start_epoch = _audit_setup(locals())
++        for epoch in range(start_epoch, args.train_epochs):
+             actual_epochs = epoch + 1
+             iter_count = 0
+             train_loss = []
+@@ -653,14 +655,18 @@
+             wandb.log(wandb_log)
+ 
+             early_stopping(valid_loss, model, path)
++            _audit_record(locals())
+             if early_stopping.early_stop:
+                 print("Early stopping")
++                _audit_snapshot(locals())
+                 break
+ 
+             # Adjust learning rate if enabled
+             if use_lradj_value:
+                 adjust_learning_rate(model_optim, epoch+1, args)
+-
++            _audit_snapshot(locals())
++
++        _audit_finish_training(locals())
+         # Total training time
+         training_time = time.time() - training_start_time
+         print(f"Total training time: {training_time:.2f}s ({training_time/60:.2f}min)")

@@ -1,0 +1,7 @@
+START WorldTS PJM_H24_seed2021
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_all.py", line 36, in <module>
+    for ds,h in [('PJM',24),('NP',24),('PJM',360),('NP',360)]:run('WorldTS',ds,h)
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_all.py", line 17, in run
+    if result.returncode:raise RuntimeError('Run failed: '+rid+'; retained log: '+str(attempt))
+RuntimeError: Run failed: PJM_H24_seed2021; retained log: D:\baseline_reproduction_seed2021_v1\logs\PJM_H24_seed2021_attempt2.log

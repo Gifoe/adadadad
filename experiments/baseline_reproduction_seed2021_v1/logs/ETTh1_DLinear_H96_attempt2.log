@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_latenttsf.py", line 78, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',choices=['ETTh1','Electricity'],required=True);p.add_argument('--backbone',choices=['DLinear','iTransformer'],required=True);p.add_argument('--horizon',type=int,choices=[96,192,336,720],required=True);a=p.parse_args();execute(a.dataset,a.backbone,a.horizon)
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_latenttsf.py", line 70, in execute
+    exec(compile(patched,str(src/'my_train.py'),'exec'),ns)
+  File "D:\baseline_reproduction_seed2021_v1\upstream\LatentTSF\my_train.py", line 37, in <module>
+    from my_utils import model_dict, args_train, set_seed, acquire_device, get_data, save_result_csv
+  File "D:\baseline_reproduction_seed2021_v1\upstream\LatentTSF\my_utils.py", line 18, in <module>
+    from data_provider.data_factory import data_provider
+  File "D:\baseline_reproduction_seed2021_v1\upstream\LatentTSF\data_provider\data_factory.py", line 1, in <module>
+    from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_M4, PSMSegLoader, \
+  File "D:\baseline_reproduction_seed2021_v1\upstream\LatentTSF\data_provider\data_loader.py", line 10, in <module>
+    from data_provider.m4 import M4Dataset, M4Meta
+  File "D:\baseline_reproduction_seed2021_v1\upstream\LatentTSF\data_provider\m4.py", line 26, in <module>
+    import patoolib
+ModuleNotFoundError: No module named 'patoolib'
