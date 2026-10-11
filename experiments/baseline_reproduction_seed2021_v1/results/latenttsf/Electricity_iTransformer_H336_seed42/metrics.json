@@ -42,5 +42,6 @@
   "status": "MATCHED",
   "exit_code": 0,
   "start_time": 1791727108.2958093,
-  "end_time": 1791727130.340065
+  "end_time": 1791727130.340065,
+  "run_id": "LatentTSF_Electricity_iTransformer_H336_seed42"
 }

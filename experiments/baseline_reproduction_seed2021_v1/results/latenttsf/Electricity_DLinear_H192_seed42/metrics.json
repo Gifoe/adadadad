@@ -42,5 +42,6 @@
   "status": "MATCHED",
   "exit_code": 0,
   "start_time": 1791727019.2085326,
-  "end_time": 1791727037.4541488
+  "end_time": 1791727037.4541488,
+  "run_id": "LatentTSF_Electricity_DLinear_H192_seed42"
 }

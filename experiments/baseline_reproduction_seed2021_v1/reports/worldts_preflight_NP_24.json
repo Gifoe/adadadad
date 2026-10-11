@@ -1,0 +1,51 @@
+{
+  "dataset": "NP",
+  "horizon": 24,
+  "passed": true,
+  "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f",
+  "future_label_invariance": true,
+  "history_encoder_causal": true,
+  "future_target_historical_context": true,
+  "future_covariate_historical_context": true,
+  "latent_target_stopgrad_for_match": true,
+  "vicreg_target_branch_receives_gradient": true,
+  "trajectory_cosine_verified": true,
+  "stage1_decoder_frozen": true,
+  "stage2_encoder_predictor_unchanged_after_step": true,
+  "encoder_patch": 3,
+  "decoder_patch": 3,
+  "latent_dim": 128,
+  "predictor": {
+    "input": [
+      2,
+      168,
+      128
+    ],
+    "patch_projection": [
+      48,
+      64
+    ],
+    "patch_count": 7,
+    "embedded_shape": [
+      256,
+      7,
+      64
+    ],
+    "attention_heads": 4,
+    "encoder_layers": 1,
+    "ffn_width": 256,
+    "sinusoidal_position": true,
+    "head_projection": [
+      448,
+      24
+    ],
+    "output": [
+      2,
+      24,
+      128
+    ]
+  },
+  "latent_regularizer_type": "legacy_vc",
+  "configuration_source": "OFFICIAL_SOURCE",
+  "test_device": "CPU; same module equations"
+}

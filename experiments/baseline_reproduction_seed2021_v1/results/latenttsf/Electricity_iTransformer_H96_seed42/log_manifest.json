@@ -1,0 +1,12 @@
+[
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\Electricity_iTransformer_H96_seed42_attempt1.log",
+    "sha256": "444ab1d773050e229e2d6f8131c5f0af1a555fde72b1716d9e8dddd4dc3299e0",
+    "bytes": 8636
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\Electricity_iTransformer_H96_seed42_attempt2.log",
+    "sha256": "5398c561852d4279c591cf495cceac80220e44444a4d9188d36834b7dc27d35a",
+    "bytes": 58
+  }
+]

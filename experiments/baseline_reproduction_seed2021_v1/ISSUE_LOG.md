@@ -52,3 +52,16 @@ The CPU-only fresh-run preflight built DAGModel before calling the official adap
 ## 2026-10-11 22:24–22:30: remote connection loss
 
 Existing SSH foreground session closed with Windows socket error 10054. Two new SSH attempts timed out at TCP connect. Read-only Tailscale status shows DESKTOP-C4FOPGI / 100.94.171.11 offline, last seen 2026-10-11T14:20:00.1Z. Local Tailscale is Running with no health errors. No remote reboot or process termination was issued. The server had completed WorldTS PJM24 and was training NP24; its last observed Stage1 epoch was 5. Server recovery is required to read its current epoch snapshot and finish the remaining three WorldTS configurations. A follow-up fresh DAG NP24 run is prepared to close the old original stdout gap. The project is not marked complete.
+
+
+## 2026-10-11 22:55: remote connection recovered
+
+SSH connected again after the user requested another check. Read-only LastBootUpTime was 2026-10-11 18:57:56, before the outage; no reboot occurred during the interruption. The original sequential job kept running: all four WorldTS metric files, histories and official TFB records were read and SHA-verified after recovery. No completed stage was repeated. The old interrupted delivery is retained as historical evidence and superseded by the final 24-configuration report.
+
+## 2026-10-11 22:56: additional DAG epoch snapshot placement
+
+Command: run_dag_fresh.py --dataset NP --horizon 24. Original traceback is retained in logs/DAG_fresh_NP_H24_seed2021_attempt1.log: AttributeError, DAG object has no attribute check_point. The audit wrapper inserted an epoch snapshot after a matching in-batch TST scheduler block, before the first validation initialized the best checkpoint. Anchor insertion explicitly to the end-of-epoch `if self.config.lradj != "TST"` block, after validation, early stopping and learning-rate adjustment. The exact instrumentation diff is patches/dag_audit_resume.diff. Attempt 2 records validation and resumable model/optimizer/RNG/best-checkpoint state. This fixes observation/resumption only; the original model, batch, loss, validation selection and seed remain unchanged. Verified old NP24 artifacts are preserved separately.
+
+## 2026-10-11: clarify resumed PJM24 resource observation
+
+The WorldTS wrapper measures peak memory at the end of forecast_fit, before independent inference. Correct the old wording `resumed fit/evaluation` to `resumed fit before independent evaluation`. Only the descriptive scope fields in metrics.json/resource_audit.json change; the measured 19.78173828125 MB, model/prediction hashes, scores and original training time are unchanged. The first training peak is unavailable and remains reported as unavailable, rather than treating the resumed measurement as its replacement.

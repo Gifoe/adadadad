@@ -42,5 +42,6 @@
   "status": "MATCHED",
   "exit_code": 0,
   "start_time": 1791726895.564165,
-  "end_time": 1791726919.5874765
+  "end_time": 1791726919.5874765,
+  "run_id": "LatentTSF_ETTh1_iTransformer_H96_seed42"
 }

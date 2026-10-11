@@ -1,0 +1,29 @@
+{
+  "published_hyperparameters": {
+    "alpha": 0.9,
+    "batch_size": 64,
+    "d_ff": 128,
+    "d_model": 64,
+    "dropout": 0.0,
+    "e_layers": 1,
+    "horizon": 24,
+    "loss": "MAE",
+    "lr": 0.001,
+    "lradj": "type3",
+    "n_heads": 4,
+    "norm": true,
+    "num_epochs": 50,
+    "patch_len": 48,
+    "patience": 5,
+    "seq_len": 168,
+    "stride": 48,
+    "use_c": 1,
+    "use_c_exog": 1,
+    "use_t": 1,
+    "use_t_exog": 1
+  },
+  "source_commit": "0758990e2c73bb54138ea3e7b11a35cbc5476bcc",
+  "run_type": "fresh_run",
+  "architecture_modified": false,
+  "data_sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1"
+}

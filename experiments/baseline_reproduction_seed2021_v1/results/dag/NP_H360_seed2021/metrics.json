@@ -40,5 +40,6 @@
   "start_time": 1791727284.3027427,
   "end_time": 1791727287.2661133,
   "official_mse": 0.5277195259439886,
-  "official_mae": 0.4569217409263301
+  "official_mae": 0.4569217409263301,
+  "run_id": "DAG_NP_H360_seed2021"
 }

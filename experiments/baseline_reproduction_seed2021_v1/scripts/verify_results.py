@@ -8,7 +8,7 @@ def verify(allow_partial=False):
  if not allow_partial:assert len(files)==24,f'Expected 24 completed configurations, found {len(files)}'
  checks=[];rows=[];cache={};provenance=[];stage1=[];stage2=[]
  for path in files:
-  out=path.parent;m=json.loads(path.read_text());ds=m['dataset'];h=m['horizon'];model=m['model']
+  out=path.parent;m=json.loads(path.read_text());ds=m['dataset'];h=m['horizon'];model=m['model'];run_id=model+'_'+out.name
   assert m['exit_code']==0 and m['source_commit']==COMMITS[model] and m['data_sha256']==DATA_SHA[ds]
   assert sha(m['checkpoint_path'])==m['checkpoint_sha256'] and sha(out/'predictions.npz')==m['predictions_sha256']
   assert (out/'source_commit.txt').read_text().strip()==COMMITS[model]
@@ -39,21 +39,23 @@ def verify(allow_partial=False):
    ae=json.loads((out/'ae_audit.json').read_text());assert ae['unchanged'] and ae['all_parameters_frozen'] and ae['tensor_sha_before']==ae['tensor_sha_after'] and ae['file_sha256_before']==ae['file_sha256_after']
   if model=='WorldTS':
    freeze=json.loads((out/'freeze_audit.json').read_text());assert freeze['unchanged'] and freeze['only_decoder_trainable'];preflight=json.loads((ROOT/'reports'/f'worldts_preflight_{ds}_{h}.json').read_text());assert preflight['passed']
+   if not allow_partial:
+    trained=json.loads((out/'collapse_diagnostics.json').read_text());assert trained['checkpoint_sha256']==m['checkpoint_sha256'] and trained['trained_future_label_max_abs_diff']==0 and not trained['test_set_used']
+    assert not trained['predicted_states']['severe_collapse_flag'] and not trained['target_states']['severe_collapse_flag']
    hist=pd.read_csv(out/'history.csv');assert np.isfinite(hist.validation_loss).all()
    for stage,destination in [('stage1_latent',stage1),('stage2_decoder_mix',stage2)]:
-    for record in hist[hist.stage==stage].to_dict('records'):destination.append({'run_id':out.name,'dataset':ds,'horizon':h,**{k:v for k,v in record.items() if pd.notna(v)}})
-  check={'run_id':out.name,'model':model,'dataset':ds,'horizon':h,'passed':True,'shape':list(pred.shape),'test_windows':len(origins),'elements':count,'float64_mse':mse,'float64_mae':mae,'reported_max_abs_diff':reported_delta,'official_max_abs_diff':official_delta,'ground_truth_max_abs_diff':max_target_error,'train_only_scaler_verified':True,'checkpoint_sha_verified':True,'predictions_sha_verified':True,'all_test_origins_verified':True}
-  checks.append(check);flat={k:v for k,v in m.items() if not isinstance(v,(dict,list))};flat['run_id']=out.name;flat['metric_verification']='PASSED';flat['test_windows']=len(origins);flat['train_log_path']=str(out/'train.log');rows.append(flat)
+    for record in hist[hist.stage==stage].to_dict('records'):destination.append({'run_id':run_id,'dataset':ds,'horizon':h,**{k:v for k,v in record.items() if pd.notna(v)}})
+  check={'run_id':run_id,'model':model,'dataset':ds,'horizon':h,'passed':True,'shape':list(pred.shape),'test_windows':len(origins),'elements':count,'float64_mse':mse,'float64_mae':mae,'reported_max_abs_diff':reported_delta,'official_max_abs_diff':official_delta,'ground_truth_max_abs_diff':max_target_error,'train_only_scaler_verified':True,'checkpoint_sha_verified':True,'predictions_sha_verified':True,'all_test_origins_verified':True}
+  checks.append(check);flat={k:v for k,v in m.items() if not isinstance(v,(dict,list))};flat['run_id']=run_id;flat['metric_verification']='PASSED';flat['test_windows']=len(origins);flat['train_log_path']=str(out/'train.log');rows.append(flat)
   cfg=config.get('arguments',config.get('published_hyperparameters',config.get('resolved_config',{})))
-  execution_keys=['num_workers','checkpoints','autoencoder_path','result_csv','result_txt','root_path','data_path','model_id'] if model=='LatentTSF' else []
-  for k,v in cfg.items():provenance.append({'run_id':out.name,'model':model,'parameter':k,'value':json.dumps(v,default=str),'source':'REPRODUCTION_ASSUMPTION' if k in execution_keys else 'OFFICIAL_SOURCE','source_commit':COMMITS[model],'execution_note':'Windows execution/path/logging choice; no architecture change' if k in execution_keys else ''})
+  execution_keys=['num_workers','checkpoints','autoencoder_path','result_csv','result_txt','root_path','data_path','model_id'] if model=='LatentTSF' else ['stage1_checkpoint_path','final_checkpoint_path','stage_save_dir','log_stage1_loss_components','log_stage2_loss_components'] if model=='WorldTS' else []
+  if model=='WorldTS':cfg={**json.loads((out/'resolved_config.json').read_text()),**config['executed_hyperparameters']}
+  for k,v in cfg.items():provenance.append({'run_id':run_id,'model':model,'parameter':k,'value':json.dumps(v,default=str),'source':'REPRODUCTION_ASSUMPTION' if k in execution_keys else 'OFFICIAL_SOURCE','source_commit':COMMITS[model],'execution_note':'Windows execution/path/logging choice; no architecture change' if k in execution_keys else ''})
   print('VERIFIED',model,out.name,mse,mae,flush=True)
  write_csv(ROOT/'results/all_baselines.csv',rows)
  for model,name in [('LatentTSF','latenttsf_results.csv'),('DAG','dag_results.csv'),('WorldTS','worldts_results.csv')]:write_csv(ROOT/'results'/name,[r for r in rows if r['model']==model])
  write_csv(ROOT/'results/dag_official_results.csv',[r for r in rows if r['model']=='DAG']);write_csv(ROOT/'results/worldts_stage1_metrics.csv',stage1);write_csv(ROOT/'results/worldts_stage2_metrics.csv',stage2)
- previous=ROOT/'results/worldts_parameter_provenance.csv'
- if not previous.is_file() and (ROOT/'results/config_provenance.csv').is_file():previous.write_bytes((ROOT/'results/config_provenance.csv').read_bytes())
- if previous.is_file():provenance+=list(csv.DictReader(previous.open(encoding='utf-8')))
+ assert len({r['run_id'] for r in rows})==len(rows)
  write_csv(ROOT/'results/config_provenance.csv',provenance);write_csv(ROOT/'results/run_manifest.csv',rows)
  verification={'all_passed':True,'complete':len(rows)==24,'verified_configs':len(rows),'expected_configs':24,'independent_dtype':'float64','target_validation':'All saved targets exactly equal independently standardized raw CSV targets at every official test origin','results':checks};write_json(ROOT/'results/metric_verification.json',verification)
  print('METRIC_VERIFICATION_PASSED',len(rows),flush=True);return rows

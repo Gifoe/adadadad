@@ -1,1 +1,4 @@
-{"status": "MATCHED", "collection_note": "Last successful SSH stdout capture; newer full history/log not yet downloaded"}
+{
+  "status": "MATCHED",
+  "exit_code": 0
+}

@@ -42,5 +42,6 @@
   "status": "MATCHED",
   "exit_code": 0,
   "start_time": 1791726945.3651886,
-  "end_time": 1791726969.1582582
+  "end_time": 1791726969.1582582,
+  "run_id": "LatentTSF_ETTh1_iTransformer_H336_seed42"
 }

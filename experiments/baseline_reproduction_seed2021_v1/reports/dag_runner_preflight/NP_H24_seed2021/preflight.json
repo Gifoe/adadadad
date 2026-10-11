@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "published_command_parsed": true,
+  "official_training_hook_compiled": true,
+  "cpu_forward_shape": [
+    2,
+    24,
+    1
+  ],
+  "fresh_training_executed": false
+}

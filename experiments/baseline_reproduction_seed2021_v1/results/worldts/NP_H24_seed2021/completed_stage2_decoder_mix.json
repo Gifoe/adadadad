@@ -1,0 +1,117 @@
+{
+  "stage": "stage2_decoder_mix",
+  "train_seconds": 193.0793035030365,
+  "peak_gpu_mb": 275.64013671875,
+  "history": [
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 1,
+      "validation_loss": 0.10803458417152487,
+      "lr": 0.0001,
+      "elapsed_seconds": 17.756002187728882,
+      "train_decoder_pred_loss": 0.13157866160597717,
+      "train_decoder_warm_loss": 0.018383712958332087,
+      "train_decoder_warm_weighted_loss": 0.005515114105410727
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 2,
+      "validation_loss": 0.10812271368212817,
+      "lr": 0.0001,
+      "elapsed_seconds": 35.19434332847595,
+      "train_decoder_pred_loss": 0.12754469434812404,
+      "train_decoder_warm_loss": 0.0075112405153432565,
+      "train_decoder_warm_weighted_loss": 0.002253372245263962
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 3,
+      "validation_loss": 0.10780281727997268,
+      "lr": 0.0001,
+      "elapsed_seconds": 52.635674715042114,
+      "train_decoder_pred_loss": 0.1270614338352492,
+      "train_decoder_warm_loss": 0.00707910524787414,
+      "train_decoder_warm_weighted_loss": 0.0021237316562308065
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 4,
+      "validation_loss": 0.10782523248798964,
+      "lr": 0.0001,
+      "elapsed_seconds": 70.07091355323792,
+      "train_decoder_pred_loss": 0.12677996593217056,
+      "train_decoder_warm_loss": 0.006804495039110055,
+      "train_decoder_warm_weighted_loss": 0.00204134859403048
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 5,
+      "validation_loss": 0.1074928060492001,
+      "lr": 9e-05,
+      "elapsed_seconds": 87.84894394874573,
+      "train_decoder_pred_loss": 0.12640184750290293,
+      "train_decoder_warm_loss": 0.005838205422307446,
+      "train_decoder_warm_weighted_loss": 0.0017514616989310046
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 6,
+      "validation_loss": 0.10740064220820986,
+      "lr": 8.1e-05,
+      "elapsed_seconds": 105.71876978874207,
+      "train_decoder_pred_loss": 0.12613050068418186,
+      "train_decoder_warm_loss": 0.005677956466260774,
+      "train_decoder_warm_weighted_loss": 0.0017033870087879335
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 7,
+      "validation_loss": 0.10791642046192797,
+      "lr": 7.290000000000001e-05,
+      "elapsed_seconds": 123.21936798095703,
+      "train_decoder_pred_loss": 0.1258296637158645,
+      "train_decoder_warm_loss": 0.005556996142197596,
+      "train_decoder_warm_weighted_loss": 0.0016670989101393182
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 8,
+      "validation_loss": 0.10769599135510804,
+      "lr": 6.561e-05,
+      "elapsed_seconds": 140.7477991580963,
+      "train_decoder_pred_loss": 0.1256814694391531,
+      "train_decoder_warm_loss": 0.0054229847347494545,
+      "train_decoder_warm_weighted_loss": 0.0016268954870164427
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 9,
+      "validation_loss": 0.10791129973240016,
+      "lr": 5.904900000000001e-05,
+      "elapsed_seconds": 158.1934633255005,
+      "train_decoder_pred_loss": 0.1254974039108084,
+      "train_decoder_warm_loss": 0.005014958055975864,
+      "train_decoder_warm_weighted_loss": 0.001504487476797709
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 10,
+      "validation_loss": 0.10789528943416549,
+      "lr": 5.3144100000000005e-05,
+      "elapsed_seconds": 175.63021731376648,
+      "train_decoder_pred_loss": 0.12527665614166802,
+      "train_decoder_warm_loss": 0.004770238900745059,
+      "train_decoder_warm_weighted_loss": 0.0014310717279410088
+    },
+    {
+      "stage": "stage2_decoder_mix",
+      "epoch": 11,
+      "validation_loss": 0.10778413467654367,
+      "lr": 4.782969000000001e-05,
+      "elapsed_seconds": 193.0207691192627,
+      "train_decoder_pred_loss": 0.1251360989061364,
+      "train_decoder_warm_loss": 0.004579212916034617,
+      "train_decoder_warm_weighted_loss": 0.0013737639294336796
+    }
+  ]
+}

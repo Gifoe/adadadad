@@ -1,29 +1,13 @@
 {
-  "status": "WAITING_FOR_REMOTE_SERVER",
-  "completed_configs": 21,
+  "status": "COMPLETE",
+  "completed_configs": 24,
   "total_configs": 24,
   "counts": {
-    "MATCHED": 19,
+    "MATCHED": 22,
     "CLOSE": 2
   },
-  "server": "100.94.171.11",
-  "server_tailscale_online": false,
-  "peer_last_seen_utc": "2026-10-11T14:20:00.1Z",
-  "remaining": [
-    "WorldTS NP 168->24 (last observed Stage1 epoch5)",
-    "WorldTS PJM 720->360",
-    "WorldTS NP 720->360",
-    "Fresh DAG NP24 to close prior stdout gap",
-    "Trained WorldTS post-audit / 24-config final report / full archive sync"
-  ],
-  "pending_server_deployment": [
-    "scripts/finalize_results.py",
-    "scripts/run_remaining.py",
-    "scripts/setup_environment.cmd",
-    "latest scripts/run_all.py",
-    "latest scripts/run_dag.py",
-    "ISSUE_LOG.md",
-    "REPRODUCE.md"
-  ],
-  "observed_time": "2026-10-11T14:33:36.005892+00:00"
+  "fresh_runs": 21,
+  "verified_reuse": 3,
+  "metric_verification": "PASSED",
+  "time_utc": "2026-10-11T15:14:13.003180+00:00"
 }

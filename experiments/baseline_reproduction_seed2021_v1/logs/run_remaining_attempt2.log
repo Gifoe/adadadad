@@ -1,0 +1,7 @@
+COMMAND_EXIT download_and_verify_data.py 0 D:\baseline_reproduction_seed2021_v1\logs\final_data_verify_attempt2.log
+COMMAND_EXIT run_all.py 0 D:\baseline_reproduction_seed2021_v1\logs\resume_latenttsf_attempt2.log
+COMMAND_EXIT run_dag_fresh.py 0 D:\baseline_reproduction_seed2021_v1\logs\DAG_fresh_NP_H24_seed2021_attempt2.log
+COMMAND_EXIT worldts_post_audit.py 0 D:\baseline_reproduction_seed2021_v1\logs\worldts_trained_audit_attempt1.log
+COMMAND_EXIT setup_environment.py 0 D:\baseline_reproduction_seed2021_v1\logs\final_environment_audit_attempt1.log
+COMMAND_EXIT finalize_results.py 0 D:\baseline_reproduction_seed2021_v1\logs\final_verification_and_report_attempt1.log
+ALL_REQUIRED_EXPERIMENTS_AND_EVIDENCE_COMPLETE

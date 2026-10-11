@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\baseline_reproduction_seed2021_v1\\.venv\\Scripts\\python.exe",
+    "-u",
+    "D:\\baseline_reproduction_seed2021_v1\\scripts\\run_dag_fresh.py",
+    "--dataset",
+    "NP",
+    "--horizon",
+    "24"
+  ],
+  "start_time": 1791731124.1146665,
+  "end_time": 1791731385.2924411,
+  "exit_code": 0,
+  "log_sha256": "e28dbba3d47f1aefb37849d48604b106d22b67936982e3ab1b4f4f1a72a6b477"
+}

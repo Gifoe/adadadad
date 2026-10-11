@@ -42,5 +42,6 @@
   "status": "MATCHED",
   "exit_code": 0,
   "start_time": 1791726678.6389217,
-  "end_time": 1791726697.9114819
+  "end_time": 1791726697.9114819,
+  "run_id": "LatentTSF_ETTh1_DLinear_H96_seed42"
 }

@@ -42,5 +42,6 @@
   "status": "CLOSE",
   "exit_code": 0,
   "start_time": 1791727059.5876656,
-  "end_time": 1791727084.581725
+  "end_time": 1791727084.581725,
+  "run_id": "LatentTSF_Electricity_DLinear_H720_seed42"
 }

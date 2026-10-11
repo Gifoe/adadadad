@@ -1,0 +1,22 @@
+[
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\DAG_fresh_NP_H24_seed2021_attempt1.log",
+    "sha256": "8309e91f7d847665a4bc549a252dafa0ddabd61fa81653dc7457901c842c099e",
+    "bytes": 4124
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\DAG_fresh_NP_H24_seed2021_attempt2.log",
+    "sha256": "e28dbba3d47f1aefb37849d48604b106d22b67936982e3ab1b4f4f1a72a6b477",
+    "bytes": 3915
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\NP_H24_seed2021_attempt1.log",
+    "sha256": "d839b333312328c3690a734f5bbdc0e50e84eac0dfd216c0cbd997f7dab97f6a",
+    "bytes": 1023
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\NP_H24_seed2021_attempt2.log",
+    "sha256": "0c1a4f5a25a21e4405f2b0ffe5b66e1f01dcda96d1a330b85d648cca5c042bac",
+    "bytes": 1417
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\original_training.log",
+    "sha256": "f86155727b3cd4902e9ea757ca1f8d10bd966868aa6e9c7d09e71817f4c8afe9",
+    "bytes": 3495
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\PJM_H24_seed2021_attempt1.log",
+    "sha256": "a57b0b9eec729d66cddef14f71ca73f9bd20c64bb234248bae9568d4746dac6c",
+    "bytes": 1418
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\PJM_H24_seed2021_attempt2.log",
+    "sha256": "9696c54f6008d14dd3d3c409aafc8178362e7554b5c2bc8d6fc4a1ff7755ac0d",
+    "bytes": 2183
+  }
+]

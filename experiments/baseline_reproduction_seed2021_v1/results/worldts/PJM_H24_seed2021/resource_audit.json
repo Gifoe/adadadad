@@ -1,0 +1,6 @@
+{
+  "peak_gpu_mb": 19.78173828125,
+  "peak_gpu_scope": "resumed fit before independent evaluation; initial training peak was not persisted",
+  "resumed": true,
+  "train_seconds": 563.1885204315186
+}

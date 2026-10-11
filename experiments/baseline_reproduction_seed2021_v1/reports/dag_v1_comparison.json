@@ -1,0 +1,50 @@
+[
+  {
+    "run_id": "DAG_NP_H24_seed2021",
+    "run_type": "fresh_run",
+    "previous_v1_mse": 0.2017582207918167,
+    "previous_v1_mae": 0.23680809140205383,
+    "current_mse": 0.20941571295230785,
+    "current_mae": 0.23234340131839012,
+    "mse_abs_diff": 0.007657492160491136,
+    "mae_abs_diff": 0.004464690083663708,
+    "max_prediction_abs_diff": 1.3602900505065918,
+    "all_origins_match": true
+  },
+  {
+    "run_id": "DAG_NP_H360_seed2021",
+    "run_type": "verified_reuse",
+    "previous_v1_mse": 0.5277194976806641,
+    "previous_v1_mae": 0.4569217264652252,
+    "current_mse": 0.5277195137543976,
+    "current_mae": 0.45692173257067686,
+    "mse_abs_diff": 1.6073733566379644e-08,
+    "mae_abs_diff": 6.105451644256021e-09,
+    "max_prediction_abs_diff": 0.0,
+    "all_origins_match": true
+  },
+  {
+    "run_id": "DAG_PJM_H24_seed2021",
+    "run_type": "verified_reuse",
+    "previous_v1_mse": 0.05744243040680885,
+    "previous_v1_mae": 0.14328083395957947,
+    "current_mse": 0.05744242859758403,
+    "current_mae": 0.14328082739115244,
+    "mse_abs_diff": 1.8092248255108245e-09,
+    "mae_abs_diff": 6.568427024511436e-09,
+    "max_prediction_abs_diff": 0.0,
+    "all_origins_match": true
+  },
+  {
+    "run_id": "DAG_PJM_H360_seed2021",
+    "run_type": "verified_reuse",
+    "previous_v1_mse": 0.1297241598367691,
+    "previous_v1_mae": 0.21757426857948303,
+    "current_mse": 0.12972416287568925,
+    "current_mae": 0.21757426166436955,
+    "mse_abs_diff": 3.0389201433056456e-09,
+    "mae_abs_diff": 6.91511348183127e-09,
+    "max_prediction_abs_diff": 0.0,
+    "all_origins_match": true
+  }
+]

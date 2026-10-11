@@ -1,0 +1,1277 @@
+{
+  "server_root": "D:\\baseline_reproduction_seed2021_v1",
+  "source_commits": {
+    "LatentTSF": "7c8ae947ee1220bf4e788ace6bc2f0f122cb26c2",
+    "DAG": "0758990e2c73bb54138ea3e7b11a35cbc5476bcc",
+    "WorldTS": "269426ea6217d7152a244da0e209d922acd46d4f"
+  },
+  "artifacts": [
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\FORECAST_META.csv",
+      "relative_path": "data/FORECAST_META.csv",
+      "bytes": 897,
+      "sha256": "7e81fe0a55589ab327df8a0ed11539a8c31cdc604c9283813f120bf02a68d884",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\NP.csv",
+      "relative_path": "data/NP.csv",
+      "bytes": 5977132,
+      "sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\PJM.csv",
+      "relative_path": "data/PJM.csv",
+      "bytes": 6629123,
+      "sha256": "14feec9daa86e14ba4ed062c690468fa615af6fb18ba56006149b087e26058e5",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\electricity\\electricity.csv",
+      "relative_path": "data/electricity/electricity.csv",
+      "bytes": 95581762,
+      "sha256": "7e45845d54c5219bad0ae6bc1b5316cf8ff9cead5d33fa998a5a51c2e4a497ad",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\ETT-small\\ETTh1.csv",
+      "relative_path": "data/ETT-small/ETTh1.csv",
+      "bytes": 2589657,
+      "sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\reports\\artifact_manifest.csv",
+      "relative_path": "reports/artifact_manifest.csv",
+      "bytes": 42615,
+      "sha256": "3b3805bf396f0d1a2812d96b8abf910a861d163a2a3ebea0da7513dd30cdaa48",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\reports\\dag_verified_reuse_archive\\NP_H24_seed2021\\checkpoint.pt",
+      "relative_path": "reports/dag_verified_reuse_archive/NP_H24_seed2021/checkpoint.pt",
+      "bytes": 4584405,
+      "sha256": "d074fa384d0947566f6cac98b2ae8c6f0c64416ea40567b72d1bf5ae115a567d",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\reports\\dag_verified_reuse_archive\\NP_H24_seed2021\\history.csv",
+      "relative_path": "reports/dag_verified_reuse_archive/NP_H24_seed2021/history.csv",
+      "bytes": 531,
+      "sha256": "11fe2bda021ff479279baeda03823a64cd483cd3324cbac7480580086381acf6",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\reports\\dag_verified_reuse_archive\\NP_H24_seed2021\\official_metric_record.csv",
+      "relative_path": "reports/dag_verified_reuse_archive/NP_H24_seed2021/official_metric_record.csv",
+      "bytes": 1398,
+      "sha256": "3a2be58602fc312a63d7c1f39e0a86386d83142ed35d26e6c9f465e7a1ed9a48",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\reports\\dag_verified_reuse_archive\\NP_H24_seed2021\\predictions.npz",
+      "relative_path": "reports/dag_verified_reuse_archive/NP_H24_seed2021/predictions.npz",
+      "bytes": 957294,
+      "sha256": "6d1714ee41590932a08d2908a3b857b851dc5ff46869564acab224de370ac864",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\reports\\dag_verified_reuse_archive\\NP_H24_seed2021\\scaler.npz",
+      "relative_path": "reports/dag_verified_reuse_archive/NP_H24_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\all_baselines.csv",
+      "relative_path": "results/all_baselines.csv",
+      "bytes": 22190,
+      "sha256": "148fe70d3fff5d1cadf2d09891d704e2b6160e051057babba3547d90cdbaf7e3",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\all_configurations_status.csv",
+      "relative_path": "results/all_configurations_status.csv",
+      "bytes": 22190,
+      "sha256": "148fe70d3fff5d1cadf2d09891d704e2b6160e051057babba3547d90cdbaf7e3",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\config_provenance.csv",
+      "relative_path": "results/config_provenance.csv",
+      "bytes": 172651,
+      "sha256": "15ffe5f75692140010488e20580ad4f07b1b9cb596fe3552f05e90551b274b76",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag_official_results.csv",
+      "relative_path": "results/dag_official_results.csv",
+      "bytes": 3603,
+      "sha256": "02105005ceddbf570d60e86d4186c1ffbaa49eee586c15f91b03315e0ae47bc0",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag_results.csv",
+      "relative_path": "results/dag_results.csv",
+      "bytes": 3603,
+      "sha256": "02105005ceddbf570d60e86d4186c1ffbaa49eee586c15f91b03315e0ae47bc0",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag_v1_comparison.csv",
+      "relative_path": "results/dag_v1_comparison.csv",
+      "bytes": 826,
+      "sha256": "aa8f9e6b0424a6491a48ef882ca6df7a22102f33e24942be8878a25bf3d19c11",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf_results.csv",
+      "relative_path": "results/latenttsf_results.csv",
+      "bytes": 14576,
+      "sha256": "17056a6505c92983f63fb00f8a363ffe43e9a36f91942bcac3e6309ab837b503",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\run_manifest.csv",
+      "relative_path": "results/run_manifest.csv",
+      "bytes": 22190,
+      "sha256": "148fe70d3fff5d1cadf2d09891d704e2b6160e051057babba3547d90cdbaf7e3",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts_results.csv",
+      "relative_path": "results/worldts_results.csv",
+      "bytes": 4628,
+      "sha256": "e2c19eaa2300fcb246fe996a44617746189bad9fef4e8b27a16c9df1992cec9a",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts_stage1_metrics.csv",
+      "relative_path": "results/worldts_stage1_metrics.csv",
+      "bytes": 13741,
+      "sha256": "6ea52d651493cef8f8d59469cfcf3800a0554a83f5932e5d319b4592dd419279",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts_stage2_metrics.csv",
+      "relative_path": "results/worldts_stage2_metrics.csv",
+      "bytes": 8208,
+      "sha256": "160f83b38c0648c1f4ecc791badc5471d33224384f140d4ccd95f4fa5d0af02c",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\checkpoint.pt",
+      "relative_path": "results/dag/NP_H24_seed2021/checkpoint.pt",
+      "bytes": 4584405,
+      "sha256": "67a156e77986d949c36a8538879d17d4d09aaa840a06bf790a033aa6991115de",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\history.csv",
+      "relative_path": "results/dag/NP_H24_seed2021/history.csv",
+      "bytes": 428,
+      "sha256": "89ac31a05f308c84bbd6ab6824b9889e477e61643835cc6cfdc2916000f98f4e",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\official_metric_record.csv",
+      "relative_path": "results/dag/NP_H24_seed2021/official_metric_record.csv",
+      "bytes": 1399,
+      "sha256": "e9f4c80fda4c5f90c2fa2a74518b3e51f077b54fcfeec043781e0b187c891b95",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\predictions.npz",
+      "relative_path": "results/dag/NP_H24_seed2021/predictions.npz",
+      "bytes": 955196,
+      "sha256": "61143cfdda0c2addf93ce14d5092ef60d24aa0fc96b830ba566da5f6989ac894",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\resume.pt",
+      "relative_path": "results/dag/NP_H24_seed2021/resume.pt",
+      "bytes": 13214089,
+      "sha256": "4d73016710385c8fc10ee4295a4d51fcb6ec6914e0c0679315641823627c9b6a",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\scaler.npz",
+      "relative_path": "results/dag/NP_H24_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H360_seed2021\\checkpoint.pt",
+      "relative_path": "results/dag/NP_H360_seed2021/checkpoint.pt",
+      "bytes": 26851989,
+      "sha256": "88961dad2ce564f3fba8aed1a856db0f2799c5444c856e01114a84ee768e91ed",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H360_seed2021\\history.csv",
+      "relative_path": "results/dag/NP_H360_seed2021/history.csv",
+      "bytes": 152,
+      "sha256": "edc97dffe16815b5d03c5a297089d330a8e1f3ec052c0a239f3387a815c2cee7",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H360_seed2021\\official_metric_record.csv",
+      "relative_path": "results/dag/NP_H360_seed2021/official_metric_record.csv",
+      "bytes": 1404,
+      "sha256": "237378cda99d40d3681338b229a418f343812138e91cbcd9e49c5d03ae50d026",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H360_seed2021\\predictions.npz",
+      "relative_path": "results/dag/NP_H360_seed2021/predictions.npz",
+      "bytes": 13042753,
+      "sha256": "2fc0e7afd8b6ddba61657e3c0fed0b19bb09d9fc51f9f2471c74fc63ae0531fd",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H360_seed2021\\scaler.npz",
+      "relative_path": "results/dag/NP_H360_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\checkpoint.pt",
+      "relative_path": "results/dag/PJM_H24_seed2021/checkpoint.pt",
+      "bytes": 4848661,
+      "sha256": "6233eec8b0af8ec51bbac9780c9da1a95d37f410d002a3fef68fd2d4d8d2844e",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\history.csv",
+      "relative_path": "results/dag/PJM_H24_seed2021/history.csv",
+      "bytes": 342,
+      "sha256": "af9913ebc50da5c1319b51d3c8458f24fa307b4e54c828e14733d383afaf2751",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\official_metric_record.csv",
+      "relative_path": "results/dag/PJM_H24_seed2021/official_metric_record.csv",
+      "bytes": 1401,
+      "sha256": "2b48f6f98a7e7e95266a3721f865afac469daf130da30c0a45985aa5f409b031",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\predictions.npz",
+      "relative_path": "results/dag/PJM_H24_seed2021/predictions.npz",
+      "bytes": 989621,
+      "sha256": "b15d46ed546bbe4a6190b5a5f9d37dc9ba5ccf550abfd9cb808f324e3e255bc2",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\scaler.npz",
+      "relative_path": "results/dag/PJM_H24_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H360_seed2021\\checkpoint.pt",
+      "relative_path": "results/dag/PJM_H360_seed2021/checkpoint.pt",
+      "bytes": 27116245,
+      "sha256": "d798583583d35711c4ae531a125919f2524684b0e625785e1d17affd582c8068",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H360_seed2021\\history.csv",
+      "relative_path": "results/dag/PJM_H360_seed2021/history.csv",
+      "bytes": 221,
+      "sha256": "8a9c6be39cd01ea781338d5f62e3b5762f206fe2cfb38430f75ad4657de3797e",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H360_seed2021\\official_metric_record.csv",
+      "relative_path": "results/dag/PJM_H360_seed2021/official_metric_record.csv",
+      "bytes": 1402,
+      "sha256": "10a46d59aabf1833536ddca7b791d73c09cf41a344539862ff26c5e0ec80f884",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H360_seed2021\\predictions.npz",
+      "relative_path": "results/dag/PJM_H360_seed2021/predictions.npz",
+      "bytes": 13534320,
+      "sha256": "980cdc6f1dc8c0196b4333636e15b82353e74bb44c01efb238c03de5f7b483f3",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H360_seed2021\\scaler.npz",
+      "relative_path": "results/dag/PJM_H360_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H192_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H192_seed42/history.csv",
+      "bytes": 4978,
+      "sha256": "26c8e8f39b7d90a49206be790212e73d02d4f369f1581bbf4f583b69c6cbb6f3",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H192_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H192_seed42/official_result.csv",
+      "bytes": 375,
+      "sha256": "771acc14fd5fac59c0243aec28d1d7430e20b5f9467644a8a4ef346115620ae0",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H192_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H192_seed42/predictions.npz",
+      "bytes": 37271878,
+      "sha256": "c2f01db0f88c4c83291a70bc2d907ce1901f8511d474ed81d2e0ee2a379cd08b",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H192_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H192_seed42/resume.pt",
+      "bytes": 3352917,
+      "sha256": "4f4c660882d403b25df17b21cc6d354120c9dd47e7e9a47374101737d8ca62d8",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H192_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H192_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H192_seed42\\checkpoints\\Electricity_DLinear_H192_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H192_seed42/checkpoints/Electricity_DLinear_H192_seed42/checkpoint.pth",
+      "bytes": 1110139,
+      "sha256": "b40b2c864ba0b1cd360211542fd4d5020a812778f03c310664beeca9ecd1d0f1",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H336_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H336_seed42/history.csv",
+      "bytes": 2968,
+      "sha256": "f48c4186477165ad1c4479717f3cad518d92adebe268cb1c4b29cb27e10be422",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H336_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H336_seed42/official_result.csv",
+      "bytes": 373,
+      "sha256": "66655ebe69998aff43e6735492b0e28155c0ca8d0f2efb6dbe60ab737dcd7b7a",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H336_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H336_seed42/predictions.npz",
+      "bytes": 63735288,
+      "sha256": "58e08f2fabf82b920b4e890d1f6637e0ddc9a2f521559f39f867bb8ad9df4495",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H336_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H336_seed42/resume.pt",
+      "bytes": 5839893,
+      "sha256": "4769409a260c141a07e9811307ef14a2621203c316831337f852c273a837aafe",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H336_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H336_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H336_seed42\\checkpoints\\Electricity_DLinear_H336_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H336_seed42/checkpoints/Electricity_DLinear_H336_seed42/checkpoint.pth",
+      "bytes": 1940731,
+      "sha256": "f429a1144648ac6f3ea807daf32d59240476b5d74badf83eb09d06d474ec5e84",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H720_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H720_seed42/history.csv",
+      "bytes": 4176,
+      "sha256": "72efee2b84732af34be481d2d8d355ac0c6841b8500956c5d8653b56500e9b2f",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H720_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H720_seed42/official_result.csv",
+      "bytes": 376,
+      "sha256": "189825e935fa1253e693391d08c0cdbc729559443eab2ddbb6964e96bd67196f",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H720_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H720_seed42/predictions.npz",
+      "bytes": 125070809,
+      "sha256": "287a75bfef40c4bd63eecc616c31ab67cab83ff4c4efe655ede41debddff807b",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H720_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H720_seed42/resume.pt",
+      "bytes": 12487509,
+      "sha256": "1275589d771230453e186f1e07d9dce69fe6bfb174d953e4ec1587e92947a02b",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H720_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H720_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H720_seed42\\checkpoints\\Electricity_DLinear_H720_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H720_seed42/checkpoints/Electricity_DLinear_H720_seed42/checkpoint.pth",
+      "bytes": 4155643,
+      "sha256": "48bf85b3bc1d43d76c53570de64dd7d855adbe87b2c67ee7aca6297a954ebaac",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H96_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H96_seed42/history.csv",
+      "bytes": 4385,
+      "sha256": "892eeefcc0e4fb6a1e916a61141527054e2cc172fd95a0a23a828f14075e2c56",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H96_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H96_seed42/official_result.csv",
+      "bytes": 373,
+      "sha256": "2511aa26837640da81aaf4ab83835324279732bdcd63ac57df5645dcbb83a113",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H96_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H96_seed42/predictions.npz",
+      "bytes": 19085731,
+      "sha256": "7ecfaa705f0c380ec139782b5b2850e72e0fcf0f8bcef210d4914f0aeeece4d6",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H96_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H96_seed42/resume.pt",
+      "bytes": 1690261,
+      "sha256": "5656283eee1b20aeb262bf5042a0701113b7e0320e961a4a4a7aefe5102f710b",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H96_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H96_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_DLinear_H96_seed42\\checkpoints\\Electricity_DLinear_H96_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_DLinear_H96_seed42/checkpoints/Electricity_DLinear_H96_seed42/checkpoint.pth",
+      "bytes": 556411,
+      "sha256": "ec0251511fd743124d71a0bbf5e542bd000a615ce113b913ae0b2b89e4d01259",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H192_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H192_seed42/history.csv",
+      "bytes": 2157,
+      "sha256": "0dda289f200e77a840a195c63aac3ac1a89e8f8fb1d7c911a3a0a96ea6824af1",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H192_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H192_seed42/official_result.csv",
+      "bytes": 386,
+      "sha256": "18a9545882b5b098e91365acdc54fed22f0ce171cf9a83817d64053c9eb59970",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H192_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H192_seed42/predictions.npz",
+      "bytes": 37282975,
+      "sha256": "e1ef98e4ac5b83207c0e9eff48b10f1d0c44d0f712edd8dc677f4caa089e3bbf",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H192_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H192_seed42/resume.pt",
+      "bytes": 56153195,
+      "sha256": "84f470a9982b7fec33c3b844bee6fe6259b8aca24e2e6d33b19171e8a65dc824",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H192_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H192_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H192_seed42\\checkpoints\\Electricity_iTransformer_H192_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H192_seed42/checkpoints/Electricity_iTransformer_H192_seed42/checkpoint.pth",
+      "bytes": 18712117,
+      "sha256": "7771f7b949d9c9f09316b0d2f75b2ee9bb084fdcbca4b65a46a501aec3907379",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H336_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H336_seed42/history.csv",
+      "bytes": 3780,
+      "sha256": "6374c5693a6ba3c1ef468224f2fa0e3e6705e932fafe1dbfc393b0f88f0ba211",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H336_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H336_seed42/official_result.csv",
+      "bytes": 388,
+      "sha256": "0a7e5ea926ecc9f3c274001ca6ef01d6520ae227510bbde93cd4d4f6c60e6a1a",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H336_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H336_seed42/predictions.npz",
+      "bytes": 63743963,
+      "sha256": "c503f969a616a87edc5bf071609ba1662d3879f6ec1e992bf6903013a2f8361f",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H336_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H336_seed42/resume.pt",
+      "bytes": 57044523,
+      "sha256": "905595ff37c7d169cefa5794acefe2e1dc9ec6d3e529fa5ae5afb057d1b573e5",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H336_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H336_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H336_seed42\\checkpoints\\Electricity_iTransformer_H336_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H336_seed42/checkpoints/Electricity_iTransformer_H336_seed42/checkpoint.pth",
+      "bytes": 19007605,
+      "sha256": "0f1a05668ea79ae67a1e735bfb3f4ea003157acdbd3d07cc94f588f7f313132d",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H720_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H720_seed42/history.csv",
+      "bytes": 4552,
+      "sha256": "0d4c80a0f2f9550cd055dab74216e6bb6e4dfd18766a8c0f51760bf2bc54ee48",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H720_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H720_seed42/official_result.csv",
+      "bytes": 386,
+      "sha256": "78d7c4b981454c3966a4ab8517b05dbce5d210219ec36b170d4a588cb2e51c30",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H720_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H720_seed42/predictions.npz",
+      "bytes": 125043167,
+      "sha256": "0246c2f26f34bab86e2df756c8098b223b3f740b296e6dc03d2e0a6f0c4d0802",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H720_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H720_seed42/resume.pt",
+      "bytes": 59410795,
+      "sha256": "a0b8e31ea65ebccac3a75ecae194ee057063d008f304d79931875f1b2e5873f5",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H720_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H720_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H720_seed42\\checkpoints\\Electricity_iTransformer_H720_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H720_seed42/checkpoints/Electricity_iTransformer_H720_seed42/checkpoint.pth",
+      "bytes": 19795573,
+      "sha256": "e6875811055c00485cdf8605417364e95a2e160ea09f19c87167806cb22682fb",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H96_seed42\\history.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H96_seed42/history.csv",
+      "bytes": 2363,
+      "sha256": "f4fefc417f21541e58200a938f0ea2c1b63e541a2da4d5f06fb106074b8db3d4",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H96_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H96_seed42/official_result.csv",
+      "bytes": 386,
+      "sha256": "fadff306460ca70c7fc64a4c929bd5e7ded981f8bca6477a0d57dafbd79654c9",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H96_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H96_seed42/predictions.npz",
+      "bytes": 19084028,
+      "sha256": "7e405a9940eb9f9a7c4574d3b920839a479e1dce904cca4209089c802108cb2e",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H96_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H96_seed42/resume.pt",
+      "bytes": 55562795,
+      "sha256": "2a041319e59264bd7ae1cf601f0cd98a17d69fdd43b9c0ad1167ec547e234216",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H96_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H96_seed42/scaler.npz",
+      "bytes": 5640,
+      "sha256": "979d1329c06697a8be09a3b7430d9aeb6d84f6f7dd11fbb02701b9bd719c8a28",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\Electricity_iTransformer_H96_seed42\\checkpoints\\Electricity_iTransformer_H96_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/Electricity_iTransformer_H96_seed42/checkpoints/Electricity_iTransformer_H96_seed42/checkpoint.pth",
+      "bytes": 18515125,
+      "sha256": "b472d18cb2d7c3754d8d1b35385caf547e8adb059833c58dcefd10addf4874ef",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H192_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H192_seed42/history.csv",
+      "bytes": 5180,
+      "sha256": "199d1a1e7fe0fff6ca9a3cf4a5edd117940bfc2ec18618cdfc15f82d4c1e7704",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H192_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H192_seed42/official_result.csv",
+      "bytes": 361,
+      "sha256": "71c22be3b80f7436d7b77390dbb19862750e79a5264caf780d1f902888f559d9",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H192_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H192_seed42/predictions.npz",
+      "bytes": 13437105,
+      "sha256": "1575054191193dbe322262f5081258e4ca55f923b617150757a050c1e8c8b059",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H192_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H192_seed42/resume.pt",
+      "bytes": 3353429,
+      "sha256": "df86081ad04d29bc7c8db6e1734c180a818c7bf1faef783b8701fe2e94060e3f",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H192_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H192_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H192_seed42\\checkpoints\\ETTh1_DLinear_H192_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H192_seed42/checkpoints/ETTh1_DLinear_H192_seed42/checkpoint.pth",
+      "bytes": 1110139,
+      "sha256": "bb9b26a18fdc8ee1ebab53c6a015c303dfda89c89e61c0e79de2a2c25f847405",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H336_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H336_seed42/history.csv",
+      "bytes": 4966,
+      "sha256": "331375ba6818a34b02b0af9a482274423dc77e59fece8eba87ee0978827c3a16",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H336_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H336_seed42/official_result.csv",
+      "bytes": 362,
+      "sha256": "a5d564e928bfdcc6c49428de401681525bc7f4b6f8160a22cb369e8cfd1da18f",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H336_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H336_seed42/predictions.npz",
+      "bytes": 22238382,
+      "sha256": "a52ee8f0bf2eb317b7afd75b159f55a9734534e7605d0bed78d039aec1e1ad0b",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H336_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H336_seed42/resume.pt",
+      "bytes": 5844757,
+      "sha256": "9a6329fed90b961eb5f20d633e9ae27947b4b9875d59055b1631866ea7862000",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H336_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H336_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H336_seed42\\checkpoints\\ETTh1_DLinear_H336_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H336_seed42/checkpoints/ETTh1_DLinear_H336_seed42/checkpoint.pth",
+      "bytes": 1940731,
+      "sha256": "946ecbfeef043b5e063301d65c994d45979a41592fca0cf46ef81b996613aa25",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H720_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H720_seed42/history.csv",
+      "bytes": 2543,
+      "sha256": "a1fb9520ecc59185612f6f71eb9e4ec3cec393dfbbad37b2dd56a97e9dc418e9",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H720_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H720_seed42/official_result.csv",
+      "bytes": 361,
+      "sha256": "f7d1c2d227dd903e0d9742e77f3d252c931feb86d028cda2025798a7cdc7e611",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H720_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H720_seed42/predictions.npz",
+      "bytes": 40473695,
+      "sha256": "a8e823073f42d06620d45c55e999a641ac380804c4b0ddd8d85aeb767e39306d",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H720_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H720_seed42/resume.pt",
+      "bytes": 12483733,
+      "sha256": "a9e101bf7cf2ed0f2696843155eedaee0743fdd277c7e9f8107f9f0500064316",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H720_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H720_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H720_seed42\\checkpoints\\ETTh1_DLinear_H720_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H720_seed42/checkpoints/ETTh1_DLinear_H720_seed42/checkpoint.pth",
+      "bytes": 4155643,
+      "sha256": "c8063e9e1ad661b70a3d447a616354b887cb2d5c37252430d5d53f3243413a21",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H96_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H96_seed42/history.csv",
+      "bytes": 4166,
+      "sha256": "6eb4e100af7c4b834b56493c9104663e2aed849e7d5bc9c314311ec8712d3868",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H96_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H96_seed42/official_result.csv",
+      "bytes": 357,
+      "sha256": "cdf9892e909582544c5bf3922bcd8e95bdeb9b8a7c46620cfd002386ce6935eb",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H96_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H96_seed42/predictions.npz",
+      "bytes": 6986788,
+      "sha256": "3b3dc330ef88d02316b4a5e3248aef786ad4f40b26f64b38e2810db29bc5d0aa",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H96_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H96_seed42/resume.pt",
+      "bytes": 1689877,
+      "sha256": "50bd8ea2a06bd160364fdebcc84d66312594f4e3fbc0eba96e006618effa6676",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H96_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H96_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_DLinear_H96_seed42\\checkpoints\\ETTh1_DLinear_H96_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_DLinear_H96_seed42/checkpoints/ETTh1_DLinear_H96_seed42/checkpoint.pth",
+      "bytes": 556411,
+      "sha256": "fb285d5cc4bd7f1794d41dd373b2e5de1c881685a0eaa6cee817d33639049212",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H192_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H192_seed42/history.csv",
+      "bytes": 3361,
+      "sha256": "c7d94b6076cf15e63e37f5b62cd4f86328f7cfcf1494bd8a406dab372fd80769",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H192_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H192_seed42/official_result.csv",
+      "bytes": 371,
+      "sha256": "6b7d3e3c2881f6ed8999c2f0485d8b7d6c96f182b7c35a2aa3670dc176478c46",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H192_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H192_seed42/predictions.npz",
+      "bytes": 13413467,
+      "sha256": "b271f44caf4e6e0745af2564d805172949fc6df26bd47012e2df578774a069f2",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H192_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H192_seed42/resume.pt",
+      "bytes": 624363,
+      "sha256": "6cfd6dca05eb1fd12b6468c148b55f0f810bda9aaaf893bf4ed2674b9902850b",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H192_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H192_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H192_seed42\\checkpoints\\ETTh1_iTransformer_H192_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H192_seed42/checkpoints/ETTh1_iTransformer_H192_seed42/checkpoint.pth",
+      "bytes": 201269,
+      "sha256": "b88011e41fef1c4b046f93cf17c05f2c68ccad96704bb839d277c93a42089ee9",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H336_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H336_seed42/history.csv",
+      "bytes": 3744,
+      "sha256": "669ae96dd5c06a3e535cfe70d8a2b5a01dafb8008dedb690ebf0450d42e0a7d0",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H336_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H336_seed42/official_result.csv",
+      "bytes": 374,
+      "sha256": "8c4b59b6d143d302b1775caf7a890316074b9695a1fcaf4c9a5fe47f9cc26a4d",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H336_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H336_seed42/predictions.npz",
+      "bytes": 22188295,
+      "sha256": "c5c0cf1e612c92bd85c7d096652a7826ef5a81715f8750828bb91de8e8e7444d",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H336_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H336_seed42/resume.pt",
+      "bytes": 682539,
+      "sha256": "c6c9524271a107b34b8953fead896206008cc1cc4661ad87b703b558d486f532",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H336_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H336_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H336_seed42\\checkpoints\\ETTh1_iTransformer_H336_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H336_seed42/checkpoints/ETTh1_iTransformer_H336_seed42/checkpoint.pth",
+      "bytes": 220277,
+      "sha256": "7fd172a1d51467ffd96a7367d9e98e9b480cdd905115598c0ae1b53c3b3babd7",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H720_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H720_seed42/history.csv",
+      "bytes": 3535,
+      "sha256": "6c7d593d6359a9e1a3dd17c8e4e2b515b2c35ab5bc24856e4a25cc2af4c4ab3d",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H720_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H720_seed42/official_result.csv",
+      "bytes": 371,
+      "sha256": "ca81baec18654a31d43c90e7f8c2fc9867a010ac3c32e3bf2696210c7588cff3",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H720_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H720_seed42/predictions.npz",
+      "bytes": 40345178,
+      "sha256": "dfb46d2fd20d0a9725fb200d5849077c11493f8c63937bb1fd64f80d5c3b0719",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H720_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H720_seed42/resume.pt",
+      "bytes": 834027,
+      "sha256": "4ad9ab9bcbae1bb39778713adeab2d33f5718a304847aaa5a6bae5744daf5094",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H720_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H720_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H720_seed42\\checkpoints\\ETTh1_iTransformer_H720_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H720_seed42/checkpoints/ETTh1_iTransformer_H720_seed42/checkpoint.pth",
+      "bytes": 270965,
+      "sha256": "bba3d36f0d3a02cf79c444e8a1c585de5037bae8f1974fd4b5566e3ab377014f",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\history.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H96_seed42/history.csv",
+      "bytes": 4367,
+      "sha256": "0473167cfa6a174ce7f294604643c126cb5f2409a0760dc1b4505e32ec1dfb4d",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\official_result.csv",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H96_seed42/official_result.csv",
+      "bytes": 369,
+      "sha256": "7e39f792d5b424f65d258f431ef8cc5c834f6cb1047af9e7a522360c6c85523f",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\predictions.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H96_seed42/predictions.npz",
+      "bytes": 6978347,
+      "sha256": "e82525e4db204860479e424890a4ac96925704d0edab6d74e3851607f8c4fa54",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\resume.pt",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H96_seed42/resume.pt",
+      "bytes": 589419,
+      "sha256": "8e2fe6ca7bb2ff9302b7cf84e651fca42ff0484932026bf1f40f11975400fc51",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\scaler.npz",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H96_seed42/scaler.npz",
+      "bytes": 616,
+      "sha256": "7cfe2f5e9a1c0799821e6eae8f18c6b21b343a2b308b3a4aa03a1807e3aaf796",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\latenttsf\\ETTh1_iTransformer_H96_seed42\\checkpoints\\ETTh1_iTransformer_H96_seed42\\checkpoint.pth",
+      "relative_path": "results/latenttsf/ETTh1_iTransformer_H96_seed42/checkpoints/ETTh1_iTransformer_H96_seed42/checkpoint.pth",
+      "bytes": 188597,
+      "sha256": "2ed22658ae96b2be1707c82fc7b89fa0f33ccee98d7616a1377c272a70549378",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\boundary_stage1_latent.pt",
+      "relative_path": "results/worldts/NP_H24_seed2021/boundary_stage1_latent.pt",
+      "bytes": 14813,
+      "sha256": "bbc02ea6813d86b263ef34e1bbe8ac5266d184afa56fcd94d474a0d4205f2e36",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\boundary_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/NP_H24_seed2021/boundary_stage2_decoder_mix.pt",
+      "bytes": 14853,
+      "sha256": "8ba9ea5c93c93d6d512109ed6efb44bc6a83b1055d7f5d9756db75d6028d11cc",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\history.csv",
+      "relative_path": "results/worldts/NP_H24_seed2021/history.csv",
+      "bytes": 5919,
+      "sha256": "d455c2121f8d0d50f48f5a010f1956f6c5c006555ab21165c7475d606fb2011b",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\official_metric_record.csv",
+      "relative_path": "results/worldts/NP_H24_seed2021/official_metric_record.csv",
+      "bytes": 2858,
+      "sha256": "12b828deab9cd933caaa9d896efae2f02b3c9e547bea8ac6e1a11cd80dacc0ab",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\predictions.npz",
+      "relative_path": "results/worldts/NP_H24_seed2021/predictions.npz",
+      "bytes": 953656,
+      "sha256": "c5f725cf732ff7c28098ba8aad2f14707fd72412820d7f32cebd426598e603c0",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\resume_stage1_latent.pt",
+      "relative_path": "results/worldts/NP_H24_seed2021/resume_stage1_latent.pt",
+      "bytes": 7279252,
+      "sha256": "9dd691088ec4019d2a7e3feda23015a1e7ab82fbba1fcd2482d9dc04439a50ad",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\resume_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/NP_H24_seed2021/resume_stage2_decoder_mix.pt",
+      "bytes": 6318667,
+      "sha256": "83b5d14e2e990d9e8a1106e2913eeab9a273236e094bdc7a4b21aa79dfa8fb49",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\scaler.npz",
+      "relative_path": "results/worldts/NP_H24_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\stages\\stage1_latent.pt",
+      "relative_path": "results/worldts/NP_H24_seed2021/stages/stage1_latent.pt",
+      "bytes": 2685801,
+      "sha256": "13e55cf2f9cf9d434cb4dec446913dbfa5fc8eb31f3c23994208788ec2580039",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\stages\\stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/NP_H24_seed2021/stages/stage2_decoder_mix.pt",
+      "bytes": 2686101,
+      "sha256": "9b4ebcbc3a22268f554f9e37e92dad0da0613a6e1bf29ecd0085aa830c9d79bd",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\boundary_stage1_latent.pt",
+      "relative_path": "results/worldts/NP_H360_seed2021/boundary_stage1_latent.pt",
+      "bytes": 14813,
+      "sha256": "b3102ab9f3ccb073227f76a4062bfd76e83dee1232c94f46a12e6e51a2f5b666",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\boundary_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/NP_H360_seed2021/boundary_stage2_decoder_mix.pt",
+      "bytes": 14853,
+      "sha256": "a04fc62bbdfdde05e0258d8209951db8a7eb2c0ab35ed7a41e812f924652445a",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\history.csv",
+      "relative_path": "results/worldts/NP_H360_seed2021/history.csv",
+      "bytes": 5212,
+      "sha256": "a2ac632f7012724a4564f0d2fe2cb128a2b4e286661e05640e3291def681ba53",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\official_metric_record.csv",
+      "relative_path": "results/worldts/NP_H360_seed2021/official_metric_record.csv",
+      "bytes": 2862,
+      "sha256": "cab71af28f89b96c6858c6ecb044bcc6f14762d94f95ad40fe2892ef9d3fccfd",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\predictions.npz",
+      "relative_path": "results/worldts/NP_H360_seed2021/predictions.npz",
+      "bytes": 13085197,
+      "sha256": "dec92553aabb66fb7edc7377880b5f617a336d3b1370ce38ec6f3b08e75e4ab7",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\resume_stage1_latent.pt",
+      "relative_path": "results/worldts/NP_H360_seed2021/resume_stage1_latent.pt",
+      "bytes": 18171860,
+      "sha256": "2d5f343fd3f365325407bd61b2c481506e6209f3d2009f4e476be673cbf382b3",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\resume_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/NP_H360_seed2021/resume_stage2_decoder_mix.pt",
+      "bytes": 11764171,
+      "sha256": "d94dd7b5b8af5758b0e3f42c23cd9c0d750ce5b5ced24174a7505b39d8918f84",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\scaler.npz",
+      "relative_path": "results/worldts/NP_H360_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\stages\\stage1_latent.pt",
+      "relative_path": "results/worldts/NP_H360_seed2021/stages/stage1_latent.pt",
+      "bytes": 5408937,
+      "sha256": "2a6ad57cf2c7cb5744376a83f543693f9ab1245a6fe6d5a1263d86aa6e437e63",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\stages\\stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/NP_H360_seed2021/stages/stage2_decoder_mix.pt",
+      "bytes": 5409237,
+      "sha256": "8752d0b807bef87405c2bbfc48741cac6936367f9dcb1ddee781266c8d11dc4f",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\boundary_stage1_latent.pt",
+      "relative_path": "results/worldts/PJM_H24_seed2021/boundary_stage1_latent.pt",
+      "bytes": 14813,
+      "sha256": "b363c780a71e12f3cd6b20a1a8abb1abde9dbf006e7199d5809e3ccb5002e215",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\boundary_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/PJM_H24_seed2021/boundary_stage2_decoder_mix.pt",
+      "bytes": 14853,
+      "sha256": "e72907c0e5f5056b31f1ebe13838a6d590ea37cf810826944334d1ebd970b412",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\history.csv",
+      "relative_path": "results/worldts/PJM_H24_seed2021/history.csv",
+      "bytes": 7530,
+      "sha256": "9077152b106ad3d218183a2bf01a9eb558d3ddc84fcc0d42f1466ba50c3efa5a",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\official_metric_record.csv",
+      "relative_path": "results/worldts/PJM_H24_seed2021/official_metric_record.csv",
+      "bytes": 2867,
+      "sha256": "8ccdeaa25ffebd318020b4cd7b5a293c201aa6723c77cdcc7c38be88f7c39732",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\predictions.npz",
+      "relative_path": "results/worldts/PJM_H24_seed2021/predictions.npz",
+      "bytes": 988739,
+      "sha256": "06a34142dab5e8a1bc3a0b8f1287aa1db896eeb3ad8e9f3bb6f56261cee17cd0",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\resume_stage1_latent.pt",
+      "relative_path": "results/worldts/PJM_H24_seed2021/resume_stage1_latent.pt",
+      "bytes": 19809492,
+      "sha256": "6ca30c4a2223a9571c67d463a36c8d84badf4463dfb4ce43a0ce99b1c436bdda",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\resume_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/PJM_H24_seed2021/resume_stage2_decoder_mix.pt",
+      "bytes": 16707211,
+      "sha256": "d36e96207cbd2dd6045133f0f5459e5daccfe83391a327a47176619f370e0207",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\scaler.npz",
+      "relative_path": "results/worldts/PJM_H24_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\stages\\stage1_latent.pt",
+      "relative_path": "results/worldts/PJM_H24_seed2021/stages/stage1_latent.pt",
+      "bytes": 6931945,
+      "sha256": "9212cc51b85ede238d81483ddbf5611c8bcec99d890462cfdf5e9a7388e28b0b",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\stages\\stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/PJM_H24_seed2021/stages/stage2_decoder_mix.pt",
+      "bytes": 6932245,
+      "sha256": "656f84c58bb04cd45b14a05f32ba06bd103e190ea33f6beeb9dc579327d1defc",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\boundary_stage1_latent.pt",
+      "relative_path": "results/worldts/PJM_H360_seed2021/boundary_stage1_latent.pt",
+      "bytes": 14813,
+      "sha256": "66fb604d6f618fe0a3a9ec32154f8761988c561800127d921d1ab4adf7694c4c",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\boundary_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/PJM_H360_seed2021/boundary_stage2_decoder_mix.pt",
+      "bytes": 14853,
+      "sha256": "243a4a611ea537a7e46078eac51021ff63b43cb5ee578d3050d41fc200a349f9",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\history.csv",
+      "relative_path": "results/worldts/PJM_H360_seed2021/history.csv",
+      "bytes": 6106,
+      "sha256": "9737bcdbc6e2a7a02ccc2c0deff3433ed55df47f736b2a711abfbf88424be767",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\official_metric_record.csv",
+      "relative_path": "results/worldts/PJM_H360_seed2021/official_metric_record.csv",
+      "bytes": 2872,
+      "sha256": "e574dd2658cde352aa86802fc6b68e47f33c1fb35530fa043eb2464dd5755fcf",
+      "storage": "git_summary"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\predictions.npz",
+      "relative_path": "results/worldts/PJM_H360_seed2021/predictions.npz",
+      "bytes": 13485701,
+      "sha256": "154bd2ff9679fa085a351a78f0abb872d23141166a52e2f86a74a0e38f45469c",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\resume_stage1_latent.pt",
+      "relative_path": "results/worldts/PJM_H360_seed2021/resume_stage1_latent.pt",
+      "bytes": 41589204,
+      "sha256": "1f4f1bda6d55d39fcbd9ca6a9eb1402f21acb0da1f0e78fc402c3796a3927b87",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\resume_stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/PJM_H360_seed2021/resume_stage2_decoder_mix.pt",
+      "bytes": 27595467,
+      "sha256": "efa9fa78fc8ea8a3c784cf519b66f1589f174594639f72d11e9f44146c07f7c7",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\scaler.npz",
+      "relative_path": "results/worldts/PJM_H360_seed2021/scaler.npz",
+      "bytes": 1050,
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\stages\\stage1_latent.pt",
+      "relative_path": "results/worldts/PJM_H360_seed2021/stages/stage1_latent.pt",
+      "bytes": 12376873,
+      "sha256": "d06a8b6c7f6209d5312baa712fcc5fd87854615715c27702a16784698a1fd6b4",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\stages\\stage2_decoder_mix.pt",
+      "relative_path": "results/worldts/PJM_H360_seed2021/stages/stage2_decoder_mix.pt",
+      "bytes": 12377173,
+      "sha256": "40050763a2e9d731eefc02b0ab26e69899246cf8dd6f59a330d58b9e18018e90",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\upstream\\LatentTSF\\checkpoints\\AutoEncoder_MLP_MAE_electricity_AE_custom_ftM_sl24_dm512_dff1024_lradj0_Exp-lr0.0001-500-16bs_0\\checkpoint.pth",
+      "relative_path": "upstream/LatentTSF/checkpoints/AutoEncoder_MLP_MAE_electricity_AE_custom_ftM_sl24_dm512_dff1024_lradj0_Exp-lr0.0001-500-16bs_0/checkpoint.pth",
+      "bytes": 6838884,
+      "sha256": "b5feb5e512e616c7d92e9a88f9b7ffb5933f681cff9cf368c0004d679bfadf3c",
+      "storage": "server_only"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\upstream\\LatentTSF\\checkpoints\\AutoEncoder_MLP_MAE_ETTh1_AE_ETTh1_ftM_sl24_dm32_dff64_lradj0_Exp-sl24-lr0.0005-500-32bs_0\\checkpoint.pth",
+      "relative_path": "upstream/LatentTSF/checkpoints/AutoEncoder_MLP_MAE_ETTh1_AE_ETTh1_ftM_sl24_dm32_dff64_lradj0_Exp-sl24-lr0.0005-500-32bs_0/checkpoint.pth",
+      "bytes": 24036,
+      "sha256": "cc52174161d7c9ec885a3595907e45d76688130ee1780b5aa4ef308ae4a6b46f",
+      "storage": "server_only"
+    }
+  ]
+}

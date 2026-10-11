@@ -152,6 +152,7 @@ packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_
 pandas==2.3.3
 pandocfilters==1.5.1
 parso==0.8.6
+patool==4.0.1
 patsy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_patsy_1760998269/work
 pillow==12.3.0
 platformdirs==4.9.6

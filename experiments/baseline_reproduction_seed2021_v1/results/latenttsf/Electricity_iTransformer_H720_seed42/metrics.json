@@ -42,5 +42,6 @@
   "status": "MATCHED",
   "exit_code": 0,
   "start_time": 1791727133.214527,
-  "end_time": 1791727163.5934563
+  "end_time": 1791727163.5934563,
+  "run_id": "LatentTSF_Electricity_iTransformer_H720_seed42"
 }

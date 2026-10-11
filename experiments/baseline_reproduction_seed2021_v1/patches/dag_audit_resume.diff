@@ -1,0 +1,30 @@
+--- official/forecast_fit
++++ instrumented/forecast_fit
+@@ -152,7 +152,8 @@
+             )
+         print(f"Total trainable parameters: {total_params}")
+ 
+-        for epoch in range(config.num_epochs):
++        start_epoch = _audit_begin(locals())
++        for epoch in range(start_epoch, config.num_epochs):
+             self.model.train()
+             if self.CovariateFusion is not None:
+                 self.CovariateFusion.train()
+@@ -205,6 +206,7 @@
+ 
+             if train_ratio_in_tv != 1:
+                 valid_loss = self.validate(valid_data_loader, series_dim, criterion)
++                _audit_record(locals())
+                 improved = self.early_stopping(valid_loss, self.model)
+                 if improved:
+                     if self.CovariateFusion is not None:
+@@ -217,7 +219,9 @@
+                     else:
+                         self.check_point = self.save_checkpoint({"Model": self.model})
+                 if self.early_stopping.early_stop:
++                    _audit_save(locals())
+                     break
+ 
+             if self.config.lradj != "TST":
+                 self._adjust_lr(optimizer, epoch + 1, config)
++            _audit_save(locals())

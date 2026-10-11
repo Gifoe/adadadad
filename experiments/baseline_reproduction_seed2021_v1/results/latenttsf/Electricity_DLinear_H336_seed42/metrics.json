@@ -42,5 +42,6 @@
   "status": "CLOSE",
   "exit_code": 0,
   "start_time": 1791727040.1867123,
-  "end_time": 1791727056.8590646
+  "end_time": 1791727056.8590646,
+  "run_id": "LatentTSF_Electricity_DLinear_H336_seed42"
 }

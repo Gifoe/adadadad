@@ -1,0 +1,35 @@
+2026-10-11 23:05:30 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-11 23:05:30 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-11 23:05:30 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-11 23:05:30 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-11 23:05:30 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-11 23:05:30 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-11 23:05:30 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.dag.DAG
+scheduling DAG:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-11 23:05:30 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- DAG
+Total trainable parameters: 491719
+Validation loss decreased (inf --> 0.123880).  Saving model ...
+Updating learning rate to 0.001
+Validation loss decreased (0.123880 --> 0.119403).  Saving model ...
+Updating learning rate to 0.001
+Validation loss decreased (0.119403 --> 0.115822).  Saving model ...
+Updating learning rate to 0.001
+Validation loss decreased (0.115822 --> 0.115339).  Saving model ...
+Updating learning rate to 0.0009000000000000001
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0008100000000000001
+Validation loss decreased (0.115339 --> 0.114453).  Saving model ...
+Updating learning rate to 0.0007290000000000002
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0006561000000000001
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.00059049
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.000531441
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0004782969000000001
+EarlyStopping counter: 5 out of 5
+scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [04:13<00:00, 253.15s/it]scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [04:13<00:00, 253.16s/it]
+collecting DAG:   0%|          | 0/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-11 23:09:44 [INFO] ts_benchmark.recording(103): loading log file D:\baseline_reproduction_seed2021_v1\upstream\DAG\result\baseline_reproduction/NP/H24\DAG.1791731383.DESKTOP-C4FOPGI.35660.csv.tar.gz
+DAG_FRESH_RESULT {"model": "DAG", "dataset": "NP", "backbone": "DAG", "input_len": 168, "horizon": 24, "seed": 2021, "source_type": "official_source", "run_type": "fresh_run", "paper_mse": 0.202, "paper_mae": 0.237, "reproduced_mse": 0.20941571295230785, "reproduced_mae": 0.23234340131839012, "relative_mse_diff": 0.03671145025894962, "best_epoch": 6, "epochs": 11, "train_seconds": 228.33854365348816, "eval_seconds": 1.6917765140533447, "peak_gpu_mb": 40.37548828125, "num_parameters": 491719, "config_path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\config.json", "checkpoint_path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\NP_H24_seed2021\\checkpoint.pt", "checkpoint_sha256": "67a156e77986d949c36a8538879d17d4d09aaa840a06bf790a033aa6991115de", "predictions_sha256": "61143cfdda0c2addf93ce14d5092ef60d24aa0fc96b830ba566da5f6989ac894", "data_sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1", "source_commit": "0758990e2c73bb54138ea3e7b11a35cbc5476bcc", "official_mse": 0.209415719818983, "official_mae": 0.2323434022759973, "independent_verification": {"mse": 0.20941571295230785, "mae": 0.23234340131839012, "windows": 10461, "max_metric_abs_diff": 6.866675145156265e-09}, "exit_code": 0, "start_time": 1791731127.8962684, "end_time": 1791731384.156005, "status": "MATCHED"}

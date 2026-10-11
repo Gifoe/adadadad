@@ -1,0 +1,10 @@
+{
+  "project_disk_bytes_including_private_venv": 2002491996,
+  "fresh_configurations": 21,
+  "verified_reuse_configurations": 3,
+  "fresh_training_wall_seconds": 2237.193324804306,
+  "prior_reused_training_wall_seconds": 640.0965082000184,
+  "independent_eval_wall_seconds": 54.08022427558899,
+  "timing_note": "Wall-clock GPU job time includes data movement and checkpoint I/O; not a GPU kernel profiler measurement",
+  "worldts_pjm24_original_peak_record_missing": true
+}

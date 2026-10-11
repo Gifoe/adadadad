@@ -1,0 +1,12 @@
+[
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H360_seed2021\\original_training.log",
+    "sha256": "e1c22b9109237869cf28432867f8f148b5f50ceb5e50b69135a1c1820a92a34b",
+    "bytes": 2741
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\PJM_H360_seed2021_attempt1.log",
+    "sha256": "272818ff9d23dd688de2242119303ea95c5d8ea0037be9d8fe52e22077ed9b25",
+    "bytes": 1424
+  }
+]

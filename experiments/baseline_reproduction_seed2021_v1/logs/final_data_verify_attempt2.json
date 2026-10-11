@@ -1,0 +1,12 @@
+{
+  "command": [
+    "D:\\baseline_reproduction_seed2021_v1\\.venv\\Scripts\\python.exe",
+    "-u",
+    "D:\\baseline_reproduction_seed2021_v1\\scripts\\download_and_verify_data.py",
+    "--verify-only"
+  ],
+  "start_time": 1791731118.23628,
+  "end_time": 1791731122.1155381,
+  "exit_code": 0,
+  "log_sha256": "f1dfa34a49cc1ace8a90adf84e4eb8148e3cf8e32ba87922d4fb5408317dc94e"
+}

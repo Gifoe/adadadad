@@ -1,1 +1,83 @@
+
+=== Original retained log: D:\baseline_reproduction_seed2021_v1\results\dag\PJM_H24_seed2021\original_training.log ===
+
+ATTEMPT 2026-10-11 05:39:02
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-11 05:39:09 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.dag.DAG
+scheduling DAG:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-11 05:39:09 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- DAG
+Total trainable parameters: 557767
+DAG_EPOCH PJM 24 1 VALID_MAE 0.127293
+Validation loss decreased (inf --> 0.127293).  Saving model ...
+Updating learning rate to 0.001
+DAG_EPOCH PJM 24 2 VALID_MAE 0.119884655
+Validation loss decreased (0.127293 --> 0.119885).  Saving model ...
+Updating learning rate to 0.0005
+DAG_EPOCH PJM 24 3 VALID_MAE 0.12002873
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.00025
+DAG_EPOCH PJM 24 4 VALID_MAE 0.11348299
+Validation loss decreased (0.119885 --> 0.113483).  Saving model ...
+Updating learning rate to 0.000125
+DAG_EPOCH PJM 24 5 VALID_MAE 0.11327483
+Validation loss decreased (0.113483 --> 0.113275).  Saving model ...
+Updating learning rate to 6.25e-05
+DAG_EPOCH PJM 24 6 VALID_MAE 0.11277854
+Validation loss decreased (0.113275 --> 0.112779).  Saving model ...
+Updating learning rate to 3.125e-05
+DAG_EPOCH PJM 24 7 VALID_MAE 0.11233869
+Validation loss decreased (0.112779 --> 0.112339).  Saving model ...
+Updating learning rate to 1.5625e-05
+DAG_EPOCH PJM 24 8 VALID_MAE 0.11216016
+Validation loss decreased (0.112339 --> 0.112160).  Saving model ...
+Updating learning rate to 7.8125e-06
+DAG_EPOCH PJM 24 9 VALID_MAE 0.11195277
+Validation loss decreased (0.112160 --> 0.111953).  Saving model ...
+Updating learning rate to 3.90625e-06
+DAG_EPOCH PJM 24 10 VALID_MAE 0.11228698
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 1.953125e-06
+DAG_EPOCH PJM 24 11 VALID_MAE 0.11209086
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 9.765625e-07
+DAG_EPOCH PJM 24 12 VALID_MAE 0.11213356
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 4.8828125e-07
+DAG_EPOCH PJM 24 13 VALID_MAE 0.11212271
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 2.44140625e-07
+DAG_EPOCH PJM 24 14 VALID_MAE 0.112121455
+EarlyStopping counter: 5 out of 5
+DAG_RESULT PJM_24_B0 0.05744243040680885 0.14328083395957947
+scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:30<00:00, 330.74s/it]scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:30<00:00, 330.74s/it]
+collecting DAG:   0%|          | 0/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-11 05:44:40 [INFO] ts_benchmark.recording(103): loading log file D:\conditional_latent_loop_seed2021_v1\upstream\DAG\result\PJM/DAG\DAG.1791668680.DESKTOP-C4FOPGI.9572.csv.tar.gz
+
+=== Original retained log: D:\baseline_reproduction_seed2021_v1\logs\PJM_H24_seed2021_attempt1.log ===
 DAG_VERIFIED_RESULT {"model": "DAG", "dataset": "PJM", "backbone": "DAG", "input_len": 168, "horizon": 24, "seed": 2021, "source_type": "official_source", "run_type": "verified_reuse", "paper_mse": 0.057, "paper_mae": 0.143, "reproduced_mse": 0.05744242859758403, "reproduced_mae": 0.14328082739115244, "relative_mse_diff": 0.007761905220772469, "best_epoch": 9, "epochs": 14, "train_seconds": 305.47741690001567, "eval_seconds": 2.1026554107666016, "peak_gpu_mb": 43.2021484375, "reevaluation_peak_gpu_mb": 14.828125, "num_parameters": 557767, "config_path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\config.json", "checkpoint_path": "D:\\baseline_reproduction_seed2021_v1\\results\\dag\\PJM_H24_seed2021\\checkpoint.pt", "checkpoint_sha256": "6233eec8b0af8ec51bbac9780c9da1a95d37f410d002a3fef68fd2d4d8d2844e", "predictions_sha256": "b15d46ed546bbe4a6190b5a5f9d37dc9ba5ccf550abfd9cb808f324e3e255bc2", "data_sha256": "14feec9daa86e14ba4ed062c690468fa615af6fb18ba56006149b087e26058e5", "source_commit": "0758990e2c73bb54138ea3e7b11a35cbc5476bcc", "status": "MATCHED", "independent_verification": {"mse": 0.05744242859758403, "mae": 0.14328082739115244, "windows": 10461, "all_origins_match": true, "max_prediction_difference": 0.0, "previous_mse": 0.05744243040680885, "previous_mae": 0.14328083395957947}, "exit_code": 0, "start_time": 1791727292.607151, "end_time": 1791727294.7938373}
+
+=== Original retained log: D:\baseline_reproduction_seed2021_v1\logs\PJM_H24_seed2021_attempt2.log ===
+The model parameter horizon is deprecated. Please use pred_len.
+WORLDTS_PREFLIGHT_PASSED {"dataset": "PJM", "horizon": 24, "passed": true, "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f", "future_label_invariance": true, "history_encoder_causal": true, "future_target_historical_context": true, "future_covariate_historical_context": true, "latent_target_stopgrad_for_match": true, "vicreg_target_branch_receives_gradient": true, "trajectory_cosine_verified": true, "stage1_decoder_frozen": true, "stage2_encoder_predictor_unchanged_after_step": true, "encoder_patch": 5, "decoder_patch": 5, "latent_dim": 224, "predictor": {"input": [2, 168, 224], "patch_projection": [48, 128], "patch_count": 7, "embedded_shape": [448, 7, 128], "attention_heads": 4, "encoder_layers": 1, "ffn_width": 512, "sinusoidal_position": true, "head_projection": [896, 24], "output": [2, 24, 224]}, "latent_regularizer_type": "legacy_vc", "configuration_source": "OFFICIAL_SOURCE", "test_device": "CPU; same module equations"}
+usage: run_benchmark.py [-h] --config-path CONFIG_PATH
+                        [--data-name-list DATA_NAME_LIST [DATA_NAME_LIST ...]]
+                        [--data-set-name DATA_SET_NAME [DATA_SET_NAME ...]]
+                        [--adapter ADAPTER [ADAPTER ...]] --model-name
+                        MODEL_NAME [MODEL_NAME ...]
+                        [--model-hyper-params MODEL_HYPER_PARAMS [MODEL_HYPER_PARAMS ...]]
+                        [--metrics METRICS [METRICS ...]]
+                        [--strategy-args STRATEGY_ARGS] [--seed SEED]
+                        [--deterministic {full,efficient,none}]
+                        [--eval-backend {sequential,ray}]
+                        [--num-cpus NUM_CPUS] [--gpus GPUS [GPUS ...]]
+                        [--num-workers NUM_WORKERS] [--timeout TIMEOUT]
+                        [--max-tasks-per-child MAX_TASKS_PER_CHILD]
+                        [--aggregate_type AGGREGATE_TYPE]
+                        [--report-method {dash,csv}] [--save-path SAVE_PATH]
+                        [--save-true-pred SAVE_TRUE_PRED]
+run_benchmark.py: error: argument --gpus: invalid int value: '${GPU}'

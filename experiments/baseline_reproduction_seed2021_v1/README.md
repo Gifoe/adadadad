@@ -1,5 +1,14 @@
-# Baseline reproduction - interrupted run
+# Baseline reproduction — completed
 
-21/24 configurations completed. See [CURRENT_REPORT.md](CURRENT_REPORT.md) and [STATUS.json](STATUS.json) for actual results and pending work. Remote server 100.94.171.11 is offline; this is not a completed 24-config result. Official source was pinned and archived. No Loop was added.
+24/24 configurations completed and independently verified: {'MATCHED': 22, 'CLOSE': 2}. 21 fresh training runs and 3 strictly verified prior DAG runs. WorldTS uses pinned official author source. No Loop was added.
 
-Scripts prepared after the disconnect still need deployment to the server. See [REPRODUCE.md](REPRODUCE.md).
+- [Full report](FINAL_REPORT.md)
+- [All results](results/all_baselines.csv)
+- [Float64 metric and raw-target verification](results/metric_verification.json)
+- [Reproduction commands](REPRODUCE.md)
+- [Issues and retained failures](ISSUE_LOG.md)
+- [Server artifact SHA256 manifest](reports/artifact_manifest.json)
+
+Raw data, trained checkpoints and predictions are retained at `D:\baseline_reproduction_seed2021_v1` on the server. Electricity+DLinear H336/H720 remain CLOSE, with unresolved differences; PJM WorldTS H24 initial training peak memory was not persisted and is explicitly unavailable.
+
+The earlier interruption report remains archived as historical evidence and is superseded by this delivery.

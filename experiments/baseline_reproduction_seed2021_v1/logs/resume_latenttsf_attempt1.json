@@ -1,0 +1,13 @@
+{
+  "command": [
+    "D:\\baseline_reproduction_seed2021_v1\\.venv\\Scripts\\python.exe",
+    "-u",
+    "D:\\baseline_reproduction_seed2021_v1\\scripts\\run_all.py",
+    "--phase",
+    "latenttsf"
+  ],
+  "start_time": 1791730566.8249538,
+  "end_time": 1791730568.785604,
+  "exit_code": 0,
+  "log_sha256": "2e43ab166129101943f8218c29841f03aa8744a90e9788aeaecae726f2fb344b"
+}

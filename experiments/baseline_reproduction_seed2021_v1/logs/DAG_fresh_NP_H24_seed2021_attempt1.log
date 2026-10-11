@@ -1,0 +1,35 @@
+2026-10-11 22:56:15 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-11 22:56:15 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-11 22:56:15 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-11 22:56:15 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-11 22:56:15 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-11 22:56:15 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-11 22:56:15 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.dag.DAG
+scheduling DAG:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-11 22:56:15 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- DAG
+Total trainable parameters: 491719
+scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:19<00:00, 19.49s/it]scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:19<00:00, 19.49s/it]
+collecting DAG:   0%|          | 0/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-11 22:56:34 [INFO] ts_benchmark.recording(148): Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\evaluation\strategy\forecasting.py", line 51, in execute
+    single_series_results = self._execute(
+  File "D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\evaluation\strategy\rolling_forecast.py", line 245, in _execute
+    return self._eval_batch(series, meta_info, model, series_name)
+  File "D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\evaluation\strategy\rolling_forecast.py", line 384, in _eval_batch
+    fit_method(
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag_fresh.py", line 38, in observed
+    state['train_start']=time.time();torch.cuda.reset_peak_memory_stats();original_fit(self,*a,**kw);torch.cuda.synchronize();state['train_seconds']=state['previous_seconds']+time.time()-state['train_start'];state['peak_gpu_mb']=torch.cuda.max_memory_allocated()/1024**2
+  File "D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\baselines\deep_forecasting_model_base.py", line 206, in forecast_fit
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag_fresh.py", line 28, in save
+    self=g['self'];payload={'model':self.model.state_dict(),'optimizer':g['optimizer'].state_dict(),'early_stopping':self.early_stopping.__dict__,'best_checkpoint':self.check_point,'rng':rng(),'history':state['history'],'next_epoch':g['epoch']+1,'train_seconds':state['previous_seconds']+time.time()-state['train_start']}
+AttributeError: 'DAG' object has no attribute 'check_point'
+
+'DAG' object has no attribute 'check_point'
+2026-10-11 22:56:34 [INFO] ts_benchmark.recording(103): loading log file D:\baseline_reproduction_seed2021_v1\upstream\DAG\result\baseline_reproduction/NP/H24\DAG.1791730594.DESKTOP-C4FOPGI.23908.csv.tar.gz
+2026-10-11 22:56:34 [INFO] ts_benchmark.report.utils.leaderboard(164): There are 7 NaN values in the leaderboard due to a higher-than-threshold NaN ratio in the corresponding model+algorithm pairs.
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag_fresh.py", line 69, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',choices=['NP','PJM'],required=True);p.add_argument('--horizon',type=int,choices=[24,360],required=True);p.add_argument('--preflight-only',action='store_true');a=p.parse_args();execute(a.dataset,a.horizon,a.preflight_only)
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag_fresh.py", line 57, in execute
+    sys.argv=argv;runpy.run_path(str(src/'scripts/run_benchmark.py'),run_name='__main__');assert 'score' in state,'Official runner failed'
+AssertionError: Official runner failed

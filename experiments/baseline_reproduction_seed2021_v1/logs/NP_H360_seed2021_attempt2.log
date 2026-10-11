@@ -1,0 +1,76 @@
+The model parameter horizon is deprecated. Please use pred_len.
+WORLDTS_PREFLIGHT_PASSED {"dataset": "NP", "horizon": 360, "passed": true, "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f", "future_label_invariance": true, "history_encoder_causal": true, "future_target_historical_context": true, "future_covariate_historical_context": true, "latent_target_stopgrad_for_match": true, "vicreg_target_branch_receives_gradient": true, "trajectory_cosine_verified": true, "stage1_decoder_frozen": true, "stage2_encoder_predictor_unchanged_after_step": true, "encoder_patch": 3, "decoder_patch": 3, "latent_dim": 128, "predictor": {"input": [2, 720, 128], "patch_projection": [48, 64], "patch_count": 30, "embedded_shape": [256, 30, 64], "attention_heads": 4, "encoder_layers": 1, "ffn_width": 256, "sinusoidal_position": true, "head_projection": [1920, 360], "output": [2, 360, 128]}, "latent_regularizer_type": "legacy_vc", "configuration_source": "OFFICIAL_SOURCE", "test_device": "CPU; same module equations"}
+2026-10-11 22:36:32 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-11 22:36:32 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-11 22:36:32 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-11 22:36:32 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-11 22:36:32 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-11 22:36:32 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-11 22:36:32 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.worldts.WorldTS
+scheduling WorldTS:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-11 22:36:32 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- WorldTS
+[WorldTS] stage=stage1_latent trainable_params=911400 num_epochs=20 lr=0.001
+[WorldTS][validate] stage=stage1_latent epoch=1/20 valid_loss=6.800942
+[WorldTS][stage1_components] epoch=1/20 total=6.800942 latent_cosine_loss=0.280698 latent_mse_loss=0.252670 latent_sigreg_loss=0.637667
+Validation loss decreased (inf --> 6.800942).  Saving model ...
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=2/20 valid_loss=7.726920
+[WorldTS][stage1_components] epoch=2/20 total=7.726920 latent_cosine_loss=0.338381 latent_mse_loss=0.259348 latent_sigreg_loss=0.577165
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=3/20 valid_loss=8.148788
+[WorldTS][stage1_components] epoch=3/20 total=8.148788 latent_cosine_loss=0.370656 latent_mse_loss=0.252986 latent_sigreg_loss=0.590889
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=4/20 valid_loss=8.431330
+[WorldTS][stage1_components] epoch=4/20 total=8.431330 latent_cosine_loss=0.389644 latent_mse_loss=0.252754 latent_sigreg_loss=0.591310
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.0009000000000000001
+[WorldTS][validate] stage=stage1_latent epoch=5/20 valid_loss=8.631128
+[WorldTS][stage1_components] epoch=5/20 total=8.631128 latent_cosine_loss=0.400762 latent_mse_loss=0.256231 latent_sigreg_loss=0.573843
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0008100000000000001
+[WorldTS][validate] stage=stage1_latent epoch=6/20 valid_loss=8.668731
+[WorldTS][stage1_components] epoch=6/20 total=8.668731 latent_cosine_loss=0.403948 latent_mse_loss=0.255233 latent_sigreg_loss=0.571862
+EarlyStopping counter: 5 out of 5
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] stage=stage2_decoder_mix trainable_params=115329 num_epochs=20 lr=0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=1/20 valid_loss=0.205885
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=1/20 total=0.205885 stage_forecast_loss=0.205885
+Validation loss decreased (inf --> 0.205885).  Saving model ...
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=2/20 valid_loss=0.203650
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=2/20 total=0.203650 stage_forecast_loss=0.203650
+Validation loss decreased (0.205885 --> 0.203650).  Saving model ...
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=3/20 valid_loss=0.204209
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=3/20 total=0.204209 stage_forecast_loss=0.204209
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=4/20 valid_loss=0.204861
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=4/20 total=0.204861 stage_forecast_loss=0.204861
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 9e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=5/20 valid_loss=0.205323
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=5/20 total=0.205323 stage_forecast_loss=0.205323
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 8.1e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=6/20 valid_loss=0.204650
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=6/20 total=0.204650 stage_forecast_loss=0.204650
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 7.290000000000001e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=7/20 valid_loss=0.206046
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=7/20 total=0.206046 stage_forecast_loss=0.206046
+EarlyStopping counter: 5 out of 5
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+WORLDTS_INDEPENDENT_EVALUATION {"mse": 0.430394854231652, "mae": 0.4162013873348485, "windows": 10125}
+scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:28<00:00, 328.68s/it]scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:28<00:00, 328.68s/it]
+collecting WorldTS:   0%|          | 0/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-11 22:42:03 [INFO] ts_benchmark.recording(103): loading log file D:\baseline_reproduction_seed2021_v1\upstream\WorldTS\DAG-bench\result\baseline_reproduction/NP/H360\WorldTS.1791729721.DESKTOP-C4FOPGI.21888.csv.tar.gz
+WORLDTS_RESULT {"model": "WorldTS", "dataset": "NP", "backbone": "PatchTST-state-transition", "input_len": 720, "horizon": 360, "seed": 2021, "source_type": "official_source", "run_type": "fresh_run", "paper_mse": 0.423, "paper_mae": 0.42, "reproduced_mse": 0.430394854231652, "reproduced_mae": 0.4162013873348485, "relative_mse_diff": 0.01748192489752265, "best_epoch": 2, "stage1_best_epoch": 1, "stage1_epochs": 6, "stage2_epochs": 7, "train_seconds": 300.7191495895386, "eval_seconds": 1.8081467151641846, "peak_gpu_mb": 1352.24072265625, "num_parameters": 1026729, "config_path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\config.json", "checkpoint_path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\stages\\stage2_decoder_mix.pt", "checkpoint_sha256": "8752d0b807bef87405c2bbfc48741cac6936367f9dcb1ddee781266c8d11dc4f", "predictions_sha256": "dec92553aabb66fb7edc7377880b5f617a336d3b1370ce38ec6f3b08e75e4ab7", "data_sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1", "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f", "official_mse": 0.4303948582956837, "official_mae": 0.4162013910941267, "official_record_path": "D:\\baseline_reproduction_seed2021_v1\\upstream\\WorldTS\\DAG-bench\\result\\baseline_reproduction\\NP\\H360\\WorldTS.1791729721.DESKTOP-C4FOPGI.21888.csv.tar.gz", "independent_verification": {"mse": 0.430394854231652, "mae": 0.4162013873348485, "windows": 10125, "max_metric_abs_diff": 4.064031666750623e-09}, "status": "MATCHED", "exit_code": 0, "start_time": 1791729390.1609857, "end_time": 1791729725.0841599, "peak_gpu_scope": "original training", "resumed": false}

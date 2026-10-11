@@ -1,0 +1,11 @@
+{
+  "command": [
+    "D:\\baseline_reproduction_seed2021_v1\\.venv\\Scripts\\python.exe",
+    "-u",
+    "D:\\baseline_reproduction_seed2021_v1\\scripts\\finalize_results.py"
+  ],
+  "start_time": 1791731401.1175644,
+  "end_time": 1791731417.1692784,
+  "exit_code": 0,
+  "log_sha256": "05f1466b20cf4664a8a959a1a4174bb224ed9ea2f624b260f3832190a82e4188"
+}

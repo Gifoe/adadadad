@@ -89,7 +89,7 @@ def execute(dataset,horizon):
  def fit_observed(self,*a,**kw):
   torch.cuda.reset_peak_memory_stats();begin=time.time();original_fit(self,*a,**kw);torch.cuda.synchronize()
   model=self._unwrap_model(self.model);model.eval();state['params']=sum(p.numel() for p in model.parameters());state['peak_gpu_mb']=max(state['recorded_training_peak_mb'],torch.cuda.max_memory_allocated()/1024**2)
-  state['peak_gpu_scope']='original training' if state['recorded_training_peak_mb'] else 'resumed fit/evaluation; initial training peak was not persisted'
+  state['peak_gpu_scope']='original training' if state['recorded_training_peak_mb'] else 'resumed fit before independent evaluation; initial training peak was not persisted'
   write_json(out/'resource_audit.json',{'peak_gpu_mb':state['peak_gpu_mb'],'peak_gpu_scope':state['peak_gpu_scope'],'resumed':state['resumed'],'train_seconds':state['total_train_seconds']})
   write_json(out/'resolved_config.json',vars(self.config));checkpoint=pathlib.Path(self.config.final_checkpoint_path);assert checkpoint.is_file();state['checkpoint']=checkpoint
   df,y,c,tr,tv,sy,sc=load_data(dataset);assert np.allclose(sy.mean_,self.scaler1.mean_) and np.allclose(sy.scale_,self.scaler1.scale_);assert np.allclose(sc.mean_,self.scaler2.mean_) and np.allclose(sc.scale_,self.scaler2.scale_)

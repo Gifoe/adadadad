@@ -1,0 +1,57 @@
+
+ATTEMPT 2026-10-11 05:39:02
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-11 05:39:09 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-11 05:39:09 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.dag.DAG
+scheduling DAG:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-11 05:39:09 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- DAG
+Total trainable parameters: 557767
+DAG_EPOCH PJM 24 1 VALID_MAE 0.127293
+Validation loss decreased (inf --> 0.127293).  Saving model ...
+Updating learning rate to 0.001
+DAG_EPOCH PJM 24 2 VALID_MAE 0.119884655
+Validation loss decreased (0.127293 --> 0.119885).  Saving model ...
+Updating learning rate to 0.0005
+DAG_EPOCH PJM 24 3 VALID_MAE 0.12002873
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.00025
+DAG_EPOCH PJM 24 4 VALID_MAE 0.11348299
+Validation loss decreased (0.119885 --> 0.113483).  Saving model ...
+Updating learning rate to 0.000125
+DAG_EPOCH PJM 24 5 VALID_MAE 0.11327483
+Validation loss decreased (0.113483 --> 0.113275).  Saving model ...
+Updating learning rate to 6.25e-05
+DAG_EPOCH PJM 24 6 VALID_MAE 0.11277854
+Validation loss decreased (0.113275 --> 0.112779).  Saving model ...
+Updating learning rate to 3.125e-05
+DAG_EPOCH PJM 24 7 VALID_MAE 0.11233869
+Validation loss decreased (0.112779 --> 0.112339).  Saving model ...
+Updating learning rate to 1.5625e-05
+DAG_EPOCH PJM 24 8 VALID_MAE 0.11216016
+Validation loss decreased (0.112339 --> 0.112160).  Saving model ...
+Updating learning rate to 7.8125e-06
+DAG_EPOCH PJM 24 9 VALID_MAE 0.11195277
+Validation loss decreased (0.112160 --> 0.111953).  Saving model ...
+Updating learning rate to 3.90625e-06
+DAG_EPOCH PJM 24 10 VALID_MAE 0.11228698
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 1.953125e-06
+DAG_EPOCH PJM 24 11 VALID_MAE 0.11209086
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 9.765625e-07
+DAG_EPOCH PJM 24 12 VALID_MAE 0.11213356
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 4.8828125e-07
+DAG_EPOCH PJM 24 13 VALID_MAE 0.11212271
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 2.44140625e-07
+DAG_EPOCH PJM 24 14 VALID_MAE 0.112121455
+EarlyStopping counter: 5 out of 5
+DAG_RESULT PJM_24_B0 0.05744243040680885 0.14328083395957947
+scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:30<00:00, 330.74s/it]scheduling DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:30<00:00, 330.74s/it]
+collecting DAG:   0%|          | 0/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting DAG: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-11 05:44:40 [INFO] ts_benchmark.recording(103): loading log file D:\conditional_latent_loop_seed2021_v1\upstream\DAG\result\PJM/DAG\DAG.1791668680.DESKTOP-C4FOPGI.9572.csv.tar.gz

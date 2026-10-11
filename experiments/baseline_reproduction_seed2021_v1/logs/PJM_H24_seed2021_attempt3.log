@@ -70,3 +70,77 @@ Updating learning rate to 0.00013122
 [WorldTS][stage2_components] stage=stage2_decoder_mix epoch=8/20 total=0.112471 stage_forecast_loss=0.112471
 EarlyStopping counter: 1 out of 5
 Updating learning rate to 0.00011809800000000002
+[WorldTS][validate] stage=stage2_decoder_mix epoch=9/20 valid_loss=0.112249
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=9/20 total=0.112249 stage_forecast_loss=0.112249
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.00010628820000000001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=10/20 valid_loss=0.112713
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=10/20 total=0.112713 stage_forecast_loss=0.112713
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 9.565938000000003e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=11/20 valid_loss=0.111159
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=11/20 total=0.111159 stage_forecast_loss=0.111159
+Validation loss decreased (0.112120 --> 0.111159).  Saving model ...
+Updating learning rate to 8.609344200000003e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=12/20 valid_loss=0.111013
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=12/20 total=0.111013 stage_forecast_loss=0.111013
+Validation loss decreased (0.111159 --> 0.111013).  Saving model ...
+Updating learning rate to 7.748409780000002e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=13/20 valid_loss=0.110955
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=13/20 total=0.110955 stage_forecast_loss=0.110955
+Validation loss decreased (0.111013 --> 0.110955).  Saving model ...
+Updating learning rate to 6.973568802000002e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=14/20 valid_loss=0.111423
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=14/20 total=0.111423 stage_forecast_loss=0.111423
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 6.276211921800002e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=15/20 valid_loss=0.111442
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=15/20 total=0.111442 stage_forecast_loss=0.111442
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 5.648590729620002e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=16/20 valid_loss=0.110875
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=16/20 total=0.110875 stage_forecast_loss=0.110875
+Validation loss decreased (0.110955 --> 0.110875).  Saving model ...
+Updating learning rate to 5.083731656658002e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=17/20 valid_loss=0.111101
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=17/20 total=0.111101 stage_forecast_loss=0.111101
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 4.575358490992202e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=18/20 valid_loss=0.110701
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=18/20 total=0.110701 stage_forecast_loss=0.110701
+Validation loss decreased (0.110875 --> 0.110701).  Saving model ...
+Updating learning rate to 4.117822641892981e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=19/20 valid_loss=0.110529
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=19/20 total=0.110529 stage_forecast_loss=0.110529
+Validation loss decreased (0.110701 --> 0.110529).  Saving model ...
+Updating learning rate to 3.706040377703683e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=20/20 valid_loss=0.110403
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=20/20 total=0.110403 stage_forecast_loss=0.110403
+Validation loss decreased (0.110529 --> 0.110403).  Saving model ...
+Updating learning rate to 3.3354363399333154e-05
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [09:23<00:00, 563.40s/it]scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [09:23<00:00, 563.40s/it]
+collecting WorldTS:   0%|          | 0/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<00:00, 992.03it/s]
+2026-10-11 22:16:54 [INFO] ts_benchmark.recording(148): Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\upstream\WorldTS\DAG-bench\ts_benchmark\evaluation\strategy\forecasting.py", line 51, in execute
+    single_series_results = self._execute(
+  File "D:\baseline_reproduction_seed2021_v1\upstream\WorldTS\DAG-bench\ts_benchmark\evaluation\strategy\rolling_forecast.py", line 245, in _execute
+    return self._eval_batch(series, meta_info, model, series_name)
+  File "D:\baseline_reproduction_seed2021_v1\upstream\WorldTS\DAG-bench\ts_benchmark\evaluation\strategy\rolling_forecast.py", line 445, in _eval_batch
+    fit_method(
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_worldts.py", line 89, in fit_observed
+    write_json(out/'resolved_config.json',vars(self.config));checkpoint=out/'stages/final.pt';assert checkpoint.is_file();state['checkpoint']=checkpoint
+AssertionError
+
+
+2026-10-11 22:16:54 [INFO] ts_benchmark.recording(103): loading log file D:\baseline_reproduction_seed2021_v1\upstream\WorldTS\DAG-bench\result\baseline_reproduction/PJM/H24\WorldTS.1791728214.DESKTOP-C4FOPGI.27876.csv.tar.gz
+2026-10-11 22:16:54 [INFO] ts_benchmark.report.utils.leaderboard(164): There are 7 NaN values in the leaderboard due to a higher-than-threshold NaN ratio in the corresponding model+algorithm pairs.
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_worldts.py", line 120, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',choices=['NP','PJM'],required=True);p.add_argument('--horizon',type=int,choices=[24,360],required=True);a=p.parse_args();execute(a.dataset,a.horizon)
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_worldts.py", line 103, in execute
+    sys.argv=argv;runpy.run_path(str(src/'scripts/run_benchmark.py'),run_name='__main__');assert 'metrics' in state,'Official runner failed; inspect log'
+AssertionError: Official runner failed; inspect log

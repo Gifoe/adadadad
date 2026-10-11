@@ -1,0 +1,37 @@
+[
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\ETTh1_DLinear_H96_attempt1.log",
+    "sha256": "37d2efc841c9df4d53a887449041e750bde5edf51368e128e645809feb95d5e1",
+    "bytes": 1089
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\ETTh1_DLinear_H96_attempt2.log",
+    "sha256": "fa63b46aa25d12c073e8ac0dab104577e7dda40714b461310c1b3d9d695a4b0a",
+    "bytes": 1551
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\ETTh1_DLinear_H96_attempt3.log",
+    "sha256": "4c9d95d8e60ae861844927846d17ea025efcb7d4eae416469a8fa8bf4384d598",
+    "bytes": 4639
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\ETTh1_DLinear_H96_attempt4.log",
+    "sha256": "c52c0fdbdb287f55e5768ea9e6d77b191395119397a1a6ab3289aefe3a1891b2",
+    "bytes": 4569
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\ETTh1_DLinear_H96_attempt5.log",
+    "sha256": "85e49a804032631426e069d188506352fb8eb2e541b47116b454acef23cbba26",
+    "bytes": 11196
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\ETTh1_DLinear_H96_seed42_attempt1.log",
+    "sha256": "3a0c71781e824e1f8bcda9ed18bc89747ffb068c9b901233073d359a4f694271",
+    "bytes": 47
+  },
+  {
+    "path": "D:\\baseline_reproduction_seed2021_v1\\logs\\ETTh1_DLinear_H96_seed42_attempt2.log",
+    "sha256": "3a0c71781e824e1f8bcda9ed18bc89747ffb068c9b901233073d359a4f694271",
+    "bytes": 47
+  }
+]

@@ -42,5 +42,6 @@
   "status": "MATCHED",
   "exit_code": 0,
   "start_time": 1791727089.200185,
-  "end_time": 1791727105.5045352
+  "end_time": 1791727105.5045352,
+  "run_id": "LatentTSF_Electricity_iTransformer_H192_seed42"
 }

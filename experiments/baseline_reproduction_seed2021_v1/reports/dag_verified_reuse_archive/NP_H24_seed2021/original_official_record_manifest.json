@@ -1,0 +1,7 @@
+{
+  "official_archive": "D:\\conditional_latent_loop_seed2021_v1\\upstream\\DAG\\result\\NP\\DAG\\DAG.1791668151.DESKTOP-C4FOPGI.15112.csv.tar.gz",
+  "archive_sha256": "ba16485317be0c0d7bd255591008724f16d46865d813ff3696ae912943851ff3",
+  "mse_norm": 0.2017582081732161,
+  "mae_norm": 0.2368080931615079,
+  "max_abs_diff": 4.804277892178632e-09
+}

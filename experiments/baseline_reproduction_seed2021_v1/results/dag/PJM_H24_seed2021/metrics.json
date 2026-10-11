@@ -40,5 +40,6 @@
   "start_time": 1791727292.607151,
   "end_time": 1791727294.7938373,
   "official_mse": 0.0574424284042745,
-  "official_mae": 0.1432808271186697
+  "official_mae": 0.1432808271186697,
+  "run_id": "DAG_PJM_H24_seed2021"
 }

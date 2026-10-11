@@ -39,6 +39,7 @@
   "exit_code": 0,
   "start_time": 1791728328.7929332,
   "end_time": 1791728357.6895828,
-  "peak_gpu_scope": "resumed fit before evaluation; initial training peak was not persisted",
-  "resumed": true
+  "peak_gpu_scope": "resumed fit before independent evaluation; initial training peak was not persisted",
+  "resumed": true,
+  "run_id": "WorldTS_PJM_H24_seed2021"
 }

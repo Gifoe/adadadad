@@ -1,0 +1,14 @@
+{
+  "before": [
+    "7fbf16a111d049811fba34d56a37ba26a6f189f5bea1bbb72e28ffb1153192ee",
+    "c43d91c88c1ad94fe87d129b402adda339ccc8b308c4635866c405d46c5c81cf",
+    "ad7982bb44ca67ef6849e536d1d3658c80dab919b3d3767816cf2d3a3b3f1505"
+  ],
+  "after": [
+    "7fbf16a111d049811fba34d56a37ba26a6f189f5bea1bbb72e28ffb1153192ee",
+    "c43d91c88c1ad94fe87d129b402adda339ccc8b308c4635866c405d46c5c81cf",
+    "ad7982bb44ca67ef6849e536d1d3658c80dab919b3d3767816cf2d3a3b3f1505"
+  ],
+  "unchanged": true,
+  "only_decoder_trainable": true
+}

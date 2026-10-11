@@ -1,0 +1,9 @@
+The model parameter horizon is deprecated. Please use pred_len.
+Traceback (most recent call last):
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag_fresh.py", line 69, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',choices=['NP','PJM'],required=True);p.add_argument('--horizon',type=int,choices=[24,360],required=True);p.add_argument('--preflight-only',action='store_true');a=p.parse_args();execute(a.dataset,a.horizon,a.preflight_only)
+  File "D:\baseline_reproduction_seed2021_v1\scripts\run_dag_fresh.py", line 52, in execute
+    model=DAGModel(cfg).float().eval()
+  File "D:\baseline_reproduction_seed2021_v1\upstream\DAG\ts_benchmark\baselines\dag\models\dag_model.py", line 38, in __init__
+    criterion=config.criterion
+AttributeError: 'Config' object has no attribute 'criterion'
