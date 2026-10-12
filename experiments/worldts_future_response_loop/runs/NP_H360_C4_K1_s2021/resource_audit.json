@@ -1,0 +1,6 @@
+{
+  "peak_gpu_mb": 1367.66552734375,
+  "peak_gpu_scope": "original training",
+  "resumed": false,
+  "train_seconds": 586.7442197799683
+}

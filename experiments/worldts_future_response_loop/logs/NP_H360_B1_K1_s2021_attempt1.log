@@ -1,0 +1,111 @@
+2026-10-12 02:48:51 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-12 02:48:52 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-12 02:48:52 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-12 02:48:52 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-12 02:48:52 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-12 02:48:52 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-12 02:48:52 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.worldts.WorldTS
+scheduling WorldTS:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-12 02:48:52 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- WorldTS
+[WorldTS] stage=stage1_latent trainable_params=969645 num_epochs=20 lr=0.001
+[WorldTS][validate] stage=stage1_latent epoch=1/20 valid_loss=7.580434
+[WorldTS][stage1_components] epoch=1/20 total=7.580434 latent_cosine_loss=0.326584 latent_mse_loss=0.262422 latent_sigreg_loss=0.574581
+Validation loss decreased (inf --> 7.580434).  Saving model ...
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=2/20 valid_loss=7.842313
+[WorldTS][stage1_components] epoch=2/20 total=7.842313 latent_cosine_loss=0.343559 latent_mse_loss=0.263240 latent_sigreg_loss=0.565260
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=3/20 valid_loss=8.775131
+[WorldTS][stage1_components] epoch=3/20 total=8.775131 latent_cosine_loss=0.392146 latent_mse_loss=0.283656 latent_sigreg_loss=0.563826
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=4/20 valid_loss=8.337338
+[WorldTS][stage1_components] epoch=4/20 total=8.337338 latent_cosine_loss=0.370268 latent_mse_loss=0.272816 latent_sigreg_loss=0.551530
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.0009000000000000001
+[WorldTS][validate] stage=stage1_latent epoch=5/20 valid_loss=8.758795
+[WorldTS][stage1_components] epoch=5/20 total=8.758795 latent_cosine_loss=0.396820 latent_mse_loss=0.275090 latent_sigreg_loss=0.555859
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0008100000000000001
+[WorldTS][validate] stage=stage1_latent epoch=6/20 valid_loss=8.803285
+[WorldTS][stage1_components] epoch=6/20 total=8.803285 latent_cosine_loss=0.399938 latent_mse_loss=0.274919 latent_sigreg_loss=0.550266
+EarlyStopping counter: 5 out of 5
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] stage=stage2_decoder_mix trainable_params=115329 num_epochs=20 lr=0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=1/20 valid_loss=0.219966
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=1/20 total=0.219966 stage_forecast_loss=0.219966
+Validation loss decreased (inf --> 0.219966).  Saving model ...
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=2/20 valid_loss=0.218223
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=2/20 total=0.218223 stage_forecast_loss=0.218223
+Validation loss decreased (0.219966 --> 0.218223).  Saving model ...
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=3/20 valid_loss=0.218107
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=3/20 total=0.218107 stage_forecast_loss=0.218107
+Validation loss decreased (0.218223 --> 0.218107).  Saving model ...
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=4/20 valid_loss=0.217360
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=4/20 total=0.217360 stage_forecast_loss=0.217360
+Validation loss decreased (0.218107 --> 0.217360).  Saving model ...
+Updating learning rate to 9e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=5/20 valid_loss=0.217455
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=5/20 total=0.217455 stage_forecast_loss=0.217455
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 8.1e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=6/20 valid_loss=0.216122
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=6/20 total=0.216122 stage_forecast_loss=0.216122
+Validation loss decreased (0.217360 --> 0.216122).  Saving model ...
+Updating learning rate to 7.290000000000001e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=7/20 valid_loss=0.216286
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=7/20 total=0.216286 stage_forecast_loss=0.216286
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 6.561e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=8/20 valid_loss=0.215863
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=8/20 total=0.215863 stage_forecast_loss=0.215863
+scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:40<00:00, 340.58s/it]scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [05:40<00:00, 340.58s/it]
+collecting WorldTS:   0%|          | 0/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-12 02:54:32 [INFO] ts_benchmark.recording(148): Traceback (most recent call last):
+  File "D:\worldts_future_response_loop\upstream\WorldTS\DAG-bench\ts_benchmark\evaluation\strategy\forecasting.py", line 51, in execute
+    single_series_results = self._execute(
+  File "D:\worldts_future_response_loop\upstream\WorldTS\DAG-bench\ts_benchmark\evaluation\strategy\rolling_forecast.py", line 245, in _execute
+    return self._eval_batch(series, meta_info, model, series_name)
+  File "D:\worldts_future_response_loop\upstream\WorldTS\DAG-bench\ts_benchmark\evaluation\strategy\rolling_forecast.py", line 445, in _eval_batch
+    fit_method(
+  File "D:\worldts_future_response_loop\scripts\train.py", line 110, in fit_observed
+    torch.cuda.reset_peak_memory_stats();begin=time.time();original_fit(self,*a,**kw);torch.cuda.synchronize()
+  File "D:\worldts_future_response_loop\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\worldts\worldts.py", line 726, in forecast_fit
+    self._run_stage_train(
+  File "D:\worldts_future_response_loop\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\worldts\worldts.py", line 112, in _run_stage_train
+    # Preserve the historical path unless an experiment opts into VISReg.
+  File "D:\worldts_future_response_loop\scripts\train.py", line 85, in epoch_record
+    write_json(out/'status.json',{'run_id':out.name,'status':'RUNNING','stage':stage,'epoch':epoch,'validation_loss':row['validation_loss'],'pid':os.getpid()})
+  File "D:\worldts_future_response_loop\scripts\common.py", line 14, in write_json
+    p=pathlib.Path(p);p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(v,indent=2,default=str),encoding='utf-8');tmp.replace(p)
+  File "E:\Anaconda\envs\persist_stable_251\lib\pathlib.py", line 1247, in replace
+    self._accessor.replace(self, target)
+PermissionError: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'D:\\worldts_future_response_loop\\runs\\NP_H360_B1_K1_s2021\\status.json.tmp' -> 'D:\\worldts_future_response_loop\\runs\\NP_H360_B1_K1_s2021\\status.json'
+
+[WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'D:\\worldts_future_response_loop\\runs\\NP_H360_B1_K1_s2021\\status.json.tmp' -> 'D:\\worldts_future_response_loop\\runs\\NP_H360_B1_K1_s2021\\status.json'
+2026-10-12 02:54:32 [INFO] ts_benchmark.recording(103): loading log file D:\worldts_future_response_loop\upstream\WorldTS\DAG-bench\result\worldts_response_loop/NP_H360_B1_K1_s2021\WorldTS.1791744872.DESKTOP-C4FOPGI.25408.csv.tar.gz
+2026-10-12 02:54:32 [INFO] ts_benchmark.report.utils.leaderboard(164): There are 7 NaN values in the leaderboard due to a higher-than-threshold NaN ratio in the corresponding model+algorithm pairs.
+Traceback (most recent call last):
+  File "D:\worldts_future_response_loop\scripts\train.py", line 128, in execute
+    sys.argv=argv;runpy.run_path(str(src/'scripts/run_benchmark.py'),run_name='__main__');assert 'metrics' in state,'Official runner failed; inspect log'
+AssertionError: Official runner failed; inspect log
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\worldts_future_response_loop\scripts\train.py", line 148, in <module>
+    execute(SPEC['dataset'],SPEC['horizon'])
+  File "D:\worldts_future_response_loop\scripts\train.py", line 142, in execute
+    write_json(out/'status.json',{'status':'FAILED','exit_code':1,'traceback':traceback.format_exc(),'run_id':out.name});raise
+  File "D:\worldts_future_response_loop\scripts\common.py", line 14, in write_json
+    p=pathlib.Path(p);p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(v,indent=2,default=str),encoding='utf-8');tmp.replace(p)
+  File "E:\Anaconda\envs\persist_stable_251\lib\pathlib.py", line 1247, in replace
+    self._accessor.replace(self, target)
+PermissionError: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'D:\\worldts_future_response_loop\\runs\\NP_H360_B1_K1_s2021\\status.json.tmp' -> 'D:\\worldts_future_response_loop\\runs\\NP_H360_B1_K1_s2021\\status.json'

@@ -1,0 +1,8 @@
+upstream/
+data/
+__pycache__/
+*.pt
+*.npz
+*.tmp
+!logs/
+!logs/**

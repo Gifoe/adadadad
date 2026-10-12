@@ -1,0 +1,98 @@
+2026-10-12 04:21:54 [INFO] ts_benchmark.data.data_source(126): Start loading 1 series in parallel
+2026-10-12 04:21:54 [INFO] ts_benchmark.data.data_source(135): Data loading finished.
+2026-10-12 04:21:54 [INFO] ts_benchmark.data.suites.global_storage(40): Data server starting...
+2026-10-12 04:21:54 [INFO] ts_benchmark.data.suites.global_storage(41): Start sending data to the global storage.
+2026-10-12 04:21:54 [INFO] ts_benchmark.data.suites.global_storage(46): Notifying all workers to sync data from the global storage.
+2026-10-12 04:21:54 [INFO] ts_benchmark.data.suites.global_storage(49): Data server started.
+2026-10-12 04:21:54 [INFO] ts_benchmark.models.model_loader(102): Trying to load model ts_benchmark.baselines.worldts.WorldTS
+scheduling WorldTS:   0%|          | 0/1 [00:00<?, ?it/s]2026-10-12 04:21:54 [WARNING] ts_benchmark.baselines.deep_forecasting_model_base(63): The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- WorldTS
+[WorldTS] stage=stage1_latent trainable_params=969645 num_epochs=20 lr=0.001
+[WorldTS][validate] stage=stage1_latent epoch=1/20 valid_loss=7.627801
+[WorldTS][stage1_components] epoch=1/20 total=7.627801 latent_cosine_loss=0.327766 latent_mse_loss=0.265407 latent_sigreg_loss=0.572384
+Validation loss decreased (inf --> 7.627801).  Saving model ...
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=2/20 valid_loss=8.034524
+[WorldTS][stage1_components] epoch=2/20 total=8.034524 latent_cosine_loss=0.350418 latent_mse_loss=0.272260 latent_sigreg_loss=0.556485
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=3/20 valid_loss=8.407303
+[WorldTS][stage1_components] epoch=3/20 total=8.407303 latent_cosine_loss=0.374336 latent_mse_loss=0.273446 latent_sigreg_loss=0.578040
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.001
+[WorldTS][validate] stage=stage1_latent epoch=4/20 valid_loss=8.440163
+[WorldTS][stage1_components] epoch=4/20 total=8.440163 latent_cosine_loss=0.375134 latent_mse_loss=0.275785 latent_sigreg_loss=0.553060
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.0009000000000000001
+[WorldTS][validate] stage=stage1_latent epoch=5/20 valid_loss=8.455896
+[WorldTS][stage1_components] epoch=5/20 total=8.455896 latent_cosine_loss=0.372524 latent_mse_loss=0.281363 latent_sigreg_loss=0.544038
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0008100000000000001
+[WorldTS][validate] stage=stage1_latent epoch=6/20 valid_loss=8.662299
+[WorldTS][stage1_components] epoch=6/20 total=8.662299 latent_cosine_loss=0.385900 latent_mse_loss=0.281882 latent_sigreg_loss=0.549841
+EarlyStopping counter: 5 out of 5
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] stage=stage2_decoder_mix trainable_params=115329 num_epochs=20 lr=0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=1/20 valid_loss=0.220415
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=1/20 total=0.220415 stage_forecast_loss=0.220415
+Validation loss decreased (inf --> 0.220415).  Saving model ...
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=2/20 valid_loss=0.219160
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=2/20 total=0.219160 stage_forecast_loss=0.219160
+Validation loss decreased (0.220415 --> 0.219160).  Saving model ...
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=3/20 valid_loss=0.219197
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=3/20 total=0.219197 stage_forecast_loss=0.219197
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0001
+[WorldTS][validate] stage=stage2_decoder_mix epoch=4/20 valid_loss=0.218463
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=4/20 total=0.218463 stage_forecast_loss=0.218463
+Validation loss decreased (0.219160 --> 0.218463).  Saving model ...
+Updating learning rate to 9e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=5/20 valid_loss=0.219138
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=5/20 total=0.219138 stage_forecast_loss=0.219138
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 8.1e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=6/20 valid_loss=0.218717
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=6/20 total=0.218717 stage_forecast_loss=0.218717
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 7.290000000000001e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=7/20 valid_loss=0.218434
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=7/20 total=0.218434 stage_forecast_loss=0.218434
+Validation loss decreased (0.218463 --> 0.218434).  Saving model ...
+Updating learning rate to 6.561e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=8/20 valid_loss=0.218404
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=8/20 total=0.218404 stage_forecast_loss=0.218404
+Validation loss decreased (0.218434 --> 0.218404).  Saving model ...
+Updating learning rate to 5.904900000000001e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=9/20 valid_loss=0.218443
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=9/20 total=0.218443 stage_forecast_loss=0.218443
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 5.3144100000000005e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=10/20 valid_loss=0.218571
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=10/20 total=0.218571 stage_forecast_loss=0.218571
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 4.782969000000001e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=11/20 valid_loss=0.219165
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=11/20 total=0.219165 stage_forecast_loss=0.219165
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 4.304672100000001e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=12/20 valid_loss=0.218557
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=12/20 total=0.218557 stage_forecast_loss=0.218557
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 3.874204890000001e-05
+[WorldTS][validate] stage=stage2_decoder_mix epoch=13/20 valid_loss=0.218667
+[WorldTS][stage2_components] stage=stage2_decoder_mix epoch=13/20 total=0.218667 stage_forecast_loss=0.218667
+EarlyStopping counter: 5 out of 5
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+WORLDTS_INDEPENDENT_EVALUATION {"mse": 0.4824453595799448, "mae": 0.4460742030012231, "windows": 10125}
+scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [08:43<00:00, 523.72s/it]scheduling WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [08:43<00:00, 523.72s/it]
+collecting WorldTS:   0%|          | 0/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]collecting WorldTS: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:00<?, ?it/s]
+2026-10-12 04:30:40 [INFO] ts_benchmark.recording(103): loading log file D:\worldts_future_response_loop\upstream\WorldTS\DAG-bench\result\worldts_response_loop/NP_H360_C5_K4_s2021\WorldTS.1791750638.DESKTOP-C4FOPGI.31844.csv.tar.gz
+WORLDTS_RESULT {"model": "WorldTS", "dataset": "NP", "backbone": "PatchTST-state-transition", "input_len": 720, "horizon": 360, "seed": 2021, "source_type": "official_source", "run_type": "fresh_run", "paper_mse": 0.423, "paper_mae": 0.42, "reproduced_mse": 0.4824453595799448, "reproduced_mae": 0.4460742030012231, "relative_mse_diff": 0.14053276496440859, "best_epoch": 8, "stage1_best_epoch": 1, "stage1_epochs": 6, "stage2_epochs": 13, "train_seconds": 494.74442291259766, "eval_seconds": 2.1837949752807617, "peak_gpu_mb": 1385.25439453125, "num_parameters": 1084974, "config_path": "D:\\worldts_future_response_loop\\runs\\NP_H360_C5_K4_s2021\\config.json", "checkpoint_path": "D:\\worldts_future_response_loop\\runs\\NP_H360_C5_K4_s2021\\stages\\stage2_decoder_mix.pt", "checkpoint_sha256": "059516f5c02b8c5239e0625431485d2ce349c2bfec9c9f46120bb9e4c001eb29", "predictions_sha256": "b4a75b948577e862056fe3d4fe516afe8fc731c6af4c1d2ceb3157d6ee2dcfc8", "data_sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1", "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f", "official_mse": 0.4824453648855469, "official_mae": 0.4460742076766801, "official_record_path": "D:\\worldts_future_response_loop\\upstream\\WorldTS\\DAG-bench\\result\\worldts_response_loop\\NP_H360_C5_K4_s2021\\WorldTS.1791750638.DESKTOP-C4FOPGI.31844.csv.tar.gz", "independent_verification": {"mse": 0.4824453595799448, "mae": 0.4460742030012231, "windows": 10125, "max_metric_abs_diff": 5.305602124305864e-09}, "status": "COMPLETE", "exit_code": 0, "start_time": 1791750112.0609171, "end_time": 1791750642.0292263, "peak_gpu_scope": "original training", "resumed": false, "run_id": "NP_H360_C5_K4_s2021", "variant": "C5", "k": 4, "width": 64, "initialization": "checkpoint_init", "validation_mae": 0.21840434214648077, "training_code_sha256": "fbe703df442aad58814de42d1c7849a167427097a9bbfdcdeae4d3c7693998f8", "response_code_sha256": "dd6a3555fcab0609d2b33ca31e34debe0f8390e4260ade86fccb15e3e99e2fc2", "source_snapshot": "source_snapshot_db0f3d82206a.zip"}

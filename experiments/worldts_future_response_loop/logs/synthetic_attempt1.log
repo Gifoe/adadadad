@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\worldts_future_response_loop\scripts\synthetic.py", line 60, in <module>
+    if __name__=='__main__':main()
+  File "D:\worldts_future_response_loop\scripts\synthetic.py", line 58, in main
+    rows=[run_one(a,noise,v) for a in [.2,.95] for noise in [.05,.5] for v in ['B0','B1','C5']];write_csv(ROOT/'results/stage1_synthetic.csv',rows)
+  File "D:\worldts_future_response_loop\scripts\synthetic.py", line 58, in <listcomp>
+    rows=[run_one(a,noise,v) for a in [.2,.95] for noise in [.05,.5] for v in ['B0','B1','C5']];write_csv(ROOT/'results/stage1_synthetic.csv',rows)
+  File "D:\worldts_future_response_loop\scripts\synthetic.py", line 55, in run_one
+    with torch.no_grad():assert torch.equal(restored.forecast(audit_x,x_future=audit_f),model.forecast(audit_x,x_future=audit_f))
+AssertionError

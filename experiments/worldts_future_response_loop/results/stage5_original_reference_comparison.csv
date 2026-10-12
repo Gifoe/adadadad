@@ -1,0 +1,3 @@
+dataset,seed,shared_loop,mse_gain_vs_verified_original,mae_gain_vs_verified_original,scope
+NP,2021,NP_H360_C5_K2_s2021,-0.12210356738886663,-0.07218537138554071,"verified original checkpoint, no added continuation budget; reference, separate from matched training control"
+PJM,2021,PJM_H360_C5_K4_s2021,-0.055576557282172256,-0.033768068809041374,"verified original checkpoint, no added continuation budget; reference, separate from matched training control"

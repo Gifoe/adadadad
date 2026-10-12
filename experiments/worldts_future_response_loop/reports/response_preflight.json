@@ -1,0 +1,2338 @@
+{
+  "passed": true,
+  "source_sha256": "dd6a3555fcab0609d2b33ca31e34debe0f8390e4260ade86fccb15e3e99e2fc2",
+  "results": [
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "B0",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 1026729
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "B1",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.04080883041024208
+        },
+        {
+          "0.norm.weight": 5.968987898086198e-05,
+          "0.norm.bias": 5.10116879013367e-05,
+          "0.q.weight": 0.0012136565055698156,
+          "0.k.weight": 0.0012405072338879108,
+          "0.value.weight": 0.002267013303935528,
+          "0.out.weight": 0.018761128187179565
+        },
+        {
+          "0.norm.weight": 8.692146366229281e-05,
+          "0.norm.bias": 7.140685193007812e-05,
+          "0.q.weight": 0.0016057733446359634,
+          "0.k.weight": 0.0016891222912818193,
+          "0.value.weight": 0.002808143850415945,
+          "0.out.weight": 0.01755613088607788
+        },
+        {
+          "0.norm.weight": 0.00011199036816833541,
+          "0.norm.bias": 9.218060586135834e-05,
+          "0.q.weight": 0.001851305947639048,
+          "0.k.weight": 0.001852933899499476,
+          "0.value.weight": 0.0031039086170494556,
+          "0.out.weight": 0.0189221128821373
+        },
+        {
+          "0.norm.weight": 0.0001410483819199726,
+          "0.norm.bias": 0.00011839641229016706,
+          "0.q.weight": 0.0021856329403817654,
+          "0.k.weight": 0.0019711246713995934,
+          "0.value.weight": 0.0033506311010569334,
+          "0.out.weight": 0.02116023749113083
+        }
+      ],
+      "parameters": 1084974
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "B2",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.value.weight": 0.0,
+          "0.gate.weight": 0.0,
+          "0.gate.bias": 0.0,
+          "0.convs.0.weight": 0.0,
+          "0.convs.1.weight": 0.0,
+          "0.convs.2.weight": 0.0,
+          "0.convs.3.weight": 0.0,
+          "0.convs.4.weight": 0.0,
+          "0.convs.5.weight": 0.0,
+          "0.convs.6.weight": 0.0,
+          "0.convs.7.weight": 0.0,
+          "0.convs.8.weight": 0.0,
+          "0.out.weight": 0.09794394671916962
+        },
+        {
+          "0.value.weight": 0.005086381454020739,
+          "0.gate.weight": 0.0022033837158232927,
+          "0.gate.bias": 0.00018209856352768838,
+          "0.convs.0.weight": 0.0002066993183689192,
+          "0.convs.1.weight": 0.00019447981321718544,
+          "0.convs.2.weight": 0.00019215972861275077,
+          "0.convs.3.weight": 0.00017867043789010495,
+          "0.convs.4.weight": 0.0001857201277744025,
+          "0.convs.5.weight": 0.00017928377201315016,
+          "0.convs.6.weight": 0.00017197162378579378,
+          "0.convs.7.weight": 0.00016255996888503432,
+          "0.convs.8.weight": 0.00016521244833711535,
+          "0.out.weight": 0.0372663214802742
+        },
+        {
+          "0.value.weight": 0.005350354593247175,
+          "0.gate.weight": 0.0021174056455492973,
+          "0.gate.bias": 0.00020118388056289405,
+          "0.convs.0.weight": 0.00023177779803518206,
+          "0.convs.1.weight": 0.00022646639263257384,
+          "0.convs.2.weight": 0.00022209432790987194,
+          "0.convs.3.weight": 0.0002167957427445799,
+          "0.convs.4.weight": 0.00021390359324868768,
+          "0.convs.5.weight": 0.0002113449590979144,
+          "0.convs.6.weight": 0.00020486961875576526,
+          "0.convs.7.weight": 0.00019594158220570534,
+          "0.convs.8.weight": 0.00019072195573244244,
+          "0.out.weight": 0.025918349623680115
+        },
+        {
+          "0.value.weight": 0.004302429500967264,
+          "0.gate.weight": 0.0017839169595390558,
+          "0.gate.bias": 0.00017913254851009697,
+          "0.convs.0.weight": 0.00021990523964632303,
+          "0.convs.1.weight": 0.0002087847824441269,
+          "0.convs.2.weight": 0.00021390059555415064,
+          "0.convs.3.weight": 0.00021007722534704953,
+          "0.convs.4.weight": 0.00020546349696815014,
+          "0.convs.5.weight": 0.00020292631234042346,
+          "0.convs.6.weight": 0.00019489113765303046,
+          "0.convs.7.weight": 0.00018498477584216744,
+          "0.convs.8.weight": 0.00017383166414219886,
+          "0.out.weight": 0.02125724032521248
+        },
+        {
+          "0.value.weight": 0.0037561520002782345,
+          "0.gate.weight": 0.001617677859030664,
+          "0.gate.bias": 0.00017238159489352256,
+          "0.convs.0.weight": 0.00022704341972712427,
+          "0.convs.1.weight": 0.0002044555003521964,
+          "0.convs.2.weight": 0.00022064112999942154,
+          "0.convs.3.weight": 0.00021925862529315054,
+          "0.convs.4.weight": 0.0002158879942726344,
+          "0.convs.5.weight": 0.0002063835709122941,
+          "0.convs.6.weight": 0.00019843780319206417,
+          "0.convs.7.weight": 0.00018767699657473713,
+          "0.convs.8.weight": 0.00017016829224303365,
+          "0.out.weight": 0.01878131926059723
+        }
+      ],
+      "parameters": 1084714
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "C1",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 1026730
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "C3",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.0,
+          "3.norm.weight": 0.0,
+          "3.norm.bias": 0.0,
+          "3.q.weight": 0.0,
+          "3.k.weight": 0.0,
+          "3.value.weight": 0.0,
+          "3.out.weight": 0.04168557748198509
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.0003443089372012764,
+          "3.norm.weight": 6.924044282641262e-05,
+          "3.norm.bias": 3.576224480639212e-05,
+          "3.q.weight": 0.0012927658390253782,
+          "3.k.weight": 0.0018472587689757347,
+          "3.value.weight": 0.002294461242854595,
+          "3.out.weight": 0.020112419500947
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 6.7455230237101205e-06,
+          "2.norm.weight": 9.353681207358022e-07,
+          "2.norm.bias": 9.337251754004683e-07,
+          "2.q.weight": 1.776407407305669e-05,
+          "2.k.weight": 2.0053708794876002e-05,
+          "2.value.weight": 5.2233262977097183e-05,
+          "2.out.weight": 0.00039587958599440753,
+          "3.norm.weight": 9.731521276989952e-05,
+          "3.norm.bias": 4.7803747293073684e-05,
+          "3.q.weight": 0.001649326179176569,
+          "3.k.weight": 0.0021597386803478003,
+          "3.value.weight": 0.002864437410607934,
+          "3.out.weight": 0.018055949360132217
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 1.680401879866622e-07,
+          "1.norm.weight": 1.9902573811236834e-08,
+          "1.norm.bias": 2.231932327845243e-08,
+          "1.q.weight": 4.2884488493655226e-07,
+          "1.k.weight": 4.3529772142392176e-07,
+          "1.value.weight": 1.1096774414909305e-06,
+          "1.out.weight": 1.461022566218162e-05,
+          "2.norm.weight": 2.346640485484386e-06,
+          "2.norm.bias": 2.0443126231839415e-06,
+          "2.q.weight": 3.843445665552281e-05,
+          "2.k.weight": 4.2574403778417036e-05,
+          "2.value.weight": 0.00011716230801539496,
+          "2.out.weight": 0.0004752631939481944,
+          "3.norm.weight": 0.00010274304077029228,
+          "3.norm.bias": 5.593273453996517e-05,
+          "3.q.weight": 0.0016089940909296274,
+          "3.k.weight": 0.0018037790432572365,
+          "3.value.weight": 0.003112510545179248,
+          "3.out.weight": 0.017364777624607086
+        },
+        {
+          "0.norm.weight": 1.4041380558271754e-10,
+          "0.norm.bias": 1.496300028325237e-10,
+          "0.q.weight": 3.0763427361080176e-09,
+          "0.k.weight": 3.5427609734739463e-09,
+          "0.value.weight": 5.674491543317117e-09,
+          "0.out.weight": 5.568365395447472e-07,
+          "1.norm.weight": 7.429582637996646e-08,
+          "1.norm.bias": 8.054743716456869e-08,
+          "1.q.weight": 1.602244878995407e-06,
+          "1.k.weight": 1.6087815311038867e-06,
+          "1.value.weight": 3.897107944794698e-06,
+          "1.out.weight": 2.2742638975614682e-05,
+          "2.norm.weight": 4.46201920567546e-06,
+          "2.norm.bias": 3.659569529190776e-06,
+          "2.q.weight": 6.639285129494965e-05,
+          "2.k.weight": 6.892255623824894e-05,
+          "2.value.weight": 0.00018377992091700435,
+          "2.out.weight": 0.0005625549238175154,
+          "3.norm.weight": 0.00010968535934807733,
+          "3.norm.bias": 7.653182547073811e-05,
+          "3.q.weight": 0.001689369324594736,
+          "3.k.weight": 0.001541494857519865,
+          "3.value.weight": 0.0032902667298913,
+          "3.out.weight": 0.01808784157037735
+        }
+      ],
+      "parameters": 1259706
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "C4",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.05881986767053604
+        },
+        {
+          "0.norm.weight": 0.00014133783406578004,
+          "0.norm.bias": 5.75136837142054e-05,
+          "0.q.weight": 0.003266303800046444,
+          "0.k.weight": 0.00275846547447145,
+          "0.value.weight": 0.0030229438561946154,
+          "0.out.weight": 0.02326628379523754
+        },
+        {
+          "0.norm.weight": 0.0001804059575079009,
+          "0.norm.bias": 5.7539393310435116e-05,
+          "0.q.weight": 0.0032332399860024452,
+          "0.k.weight": 0.0028480675537139177,
+          "0.value.weight": 0.0035274317488074303,
+          "0.out.weight": 0.021835746243596077
+        },
+        {
+          "0.norm.weight": 0.00018934646504931152,
+          "0.norm.bias": 7.920714415377006e-05,
+          "0.q.weight": 0.0026982231065630913,
+          "0.k.weight": 0.0022871033288538456,
+          "0.value.weight": 0.0037675867788493633,
+          "0.out.weight": 0.021317413076758385
+        },
+        {
+          "0.norm.weight": 0.00018748991715256125,
+          "0.norm.bias": 0.00010752267553471029,
+          "0.q.weight": 0.0025148876011371613,
+          "0.k.weight": 0.0019057763274759054,
+          "0.value.weight": 0.0039701019413769245,
+          "0.out.weight": 0.021392162889242172
+        }
+      ],
+      "parameters": 1142574
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "C5",
+      "k": 2,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.04080883041024208
+        },
+        {
+          "0.norm.weight": 5.934934233664535e-05,
+          "0.norm.bias": 5.050145409768447e-05,
+          "0.q.weight": 0.0012069523800164461,
+          "0.k.weight": 0.0012329944875091314,
+          "0.value.weight": 0.0022253862116485834,
+          "0.out.weight": 0.018454132601618767
+        },
+        {
+          "0.norm.weight": 8.56337501318194e-05,
+          "0.norm.bias": 6.988302629906684e-05,
+          "0.q.weight": 0.0015819238033145666,
+          "0.k.weight": 0.0016613566549494863,
+          "0.value.weight": 0.0027059263084083796,
+          "0.out.weight": 0.017061958089470863
+        },
+        {
+          "0.norm.weight": 0.00010903035581577569,
+          "0.norm.bias": 8.912317571230233e-05,
+          "0.q.weight": 0.0018003627192229033,
+          "0.k.weight": 0.0017995629459619522,
+          "0.value.weight": 0.002935821656137705,
+          "0.out.weight": 0.018218055367469788
+        },
+        {
+          "0.norm.weight": 0.00013608029985334724,
+          "0.norm.bias": 0.00011380261275917292,
+          "0.q.weight": 0.0021068137139081955,
+          "0.k.weight": 0.0018928502686321735,
+          "0.value.weight": 0.0031291109044104815,
+          "0.out.weight": 0.020176945254206657
+        }
+      ],
+      "parameters": 1084974
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "C5",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.04080883041024208
+        },
+        {
+          "0.norm.weight": 5.935337321716361e-05,
+          "0.norm.bias": 5.050716572441161e-05,
+          "0.q.weight": 0.0012070364318788052,
+          "0.k.weight": 0.0012330812169238925,
+          "0.value.weight": 0.002226069336757064,
+          "0.out.weight": 0.01845896616578102
+        },
+        {
+          "0.norm.weight": 8.566315955249593e-05,
+          "0.norm.bias": 6.991801637923345e-05,
+          "0.q.weight": 0.0015824898146092892,
+          "0.k.weight": 0.0016619634116068482,
+          "0.value.weight": 0.002709156833589077,
+          "0.out.weight": 0.01707623526453972
+        },
+        {
+          "0.norm.weight": 0.00010912970174103975,
+          "0.norm.bias": 8.922407141653821e-05,
+          "0.q.weight": 0.0018020664574578404,
+          "0.k.weight": 0.0018013170920312405,
+          "0.value.weight": 0.0029438198544085026,
+          "0.out.weight": 0.018247198313474655
+        },
+        {
+          "0.norm.weight": 0.00013630637840833515,
+          "0.norm.bias": 0.00011400291259633377,
+          "0.q.weight": 0.002110285684466362,
+          "0.k.weight": 0.0018964410992339253,
+          "0.value.weight": 0.0031432840041816235,
+          "0.out.weight": 0.02023056522011757
+        }
+      ],
+      "parameters": 1084974
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "NOANCHOR",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.16323532164096832
+        },
+        {
+          "0.norm.weight": 0.0002304410154465586,
+          "0.norm.bias": 0.00019121980585623533,
+          "0.q.weight": 0.0046977391466498375,
+          "0.k.weight": 0.004778457339853048,
+          "0.value.weight": 0.008370640687644482,
+          "0.out.weight": 0.07161220163106918
+        },
+        {
+          "0.norm.weight": 0.00031659609521739185,
+          "0.norm.bias": 0.00024403334828093648,
+          "0.q.weight": 0.005850051995366812,
+          "0.k.weight": 0.006087103858590126,
+          "0.value.weight": 0.009475873783230782,
+          "0.out.weight": 0.06631364673376083
+        },
+        {
+          "0.norm.weight": 0.0003615343011915684,
+          "0.norm.bias": 0.000272277306066826,
+          "0.q.weight": 0.005878489464521408,
+          "0.k.weight": 0.005856808740645647,
+          "0.value.weight": 0.009026456624269485,
+          "0.out.weight": 0.07153188437223434
+        },
+        {
+          "0.norm.weight": 0.00038477577618323267,
+          "0.norm.bias": 0.0003064179909415543,
+          "0.q.weight": 0.005828824359923601,
+          "0.k.weight": 0.005210091359913349,
+          "0.value.weight": 0.008725852705538273,
+          "0.out.weight": 0.0788586214184761
+        }
+      ],
+      "parameters": 1084974
+    },
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "variant": "FULL",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.04263262823224068
+        },
+        {
+          "0.norm.weight": 5.114604937261902e-05,
+          "0.norm.bias": 3.9955168176675215e-05,
+          "0.q.weight": 0.0010646311566233635,
+          "0.k.weight": 0.0009769099997356534,
+          "0.value.weight": 0.0023600850254297256,
+          "0.out.weight": 0.019201138988137245
+        },
+        {
+          "0.norm.weight": 6.608213880099356e-05,
+          "0.norm.bias": 3.866408587782644e-05,
+          "0.q.weight": 0.0011567811015993357,
+          "0.k.weight": 0.0011404395336285233,
+          "0.value.weight": 0.00250445120036602,
+          "0.out.weight": 0.014858778566122055
+        },
+        {
+          "0.norm.weight": 6.58904536976479e-05,
+          "0.norm.bias": 3.023471072083339e-05,
+          "0.q.weight": 0.0009513393742963672,
+          "0.k.weight": 0.0009544527856633067,
+          "0.value.weight": 0.002371495822444558,
+          "0.out.weight": 0.01219987589865923
+        },
+        {
+          "0.norm.weight": 5.7400207879254594e-05,
+          "0.norm.bias": 2.5391947929165326e-05,
+          "0.q.weight": 0.0007360090967267752,
+          "0.k.weight": 0.0007055650348775089,
+          "0.value.weight": 0.0023307325318455696,
+          "0.out.weight": 0.011391955427825451
+        }
+      ],
+      "parameters": 1084974
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "B0",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 2448713
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "B1",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.019686901941895485
+        },
+        {
+          "0.norm.weight": 3.0094994144747034e-05,
+          "0.norm.bias": 3.055395427509211e-05,
+          "0.q.weight": 0.0009846515022218227,
+          "0.k.weight": 0.0009743407717905939,
+          "0.value.weight": 0.0035433126613497734,
+          "0.out.weight": 0.015515259467065334
+        },
+        {
+          "0.norm.weight": 3.518351513775997e-05,
+          "0.norm.bias": 5.0076243496732786e-05,
+          "0.q.weight": 0.0011188334319740534,
+          "0.k.weight": 0.0010571060702204704,
+          "0.value.weight": 0.003585039172321558,
+          "0.out.weight": 0.014645006507635117
+        },
+        {
+          "0.norm.weight": 5.045534635428339e-05,
+          "0.norm.bias": 6.183962250361219e-05,
+          "0.q.weight": 0.0015101059107109904,
+          "0.k.weight": 0.0013257614336907864,
+          "0.value.weight": 0.0037407944910228252,
+          "0.out.weight": 0.01153560634702444
+        },
+        {
+          "0.norm.weight": 6.941120227565989e-05,
+          "0.norm.bias": 7.407309749396518e-05,
+          "0.q.weight": 0.0019139936193823814,
+          "0.k.weight": 0.001569053390994668,
+          "0.value.weight": 0.0030465994495898485,
+          "0.out.weight": 0.010623992420732975
+        }
+      ],
+      "parameters": 2565006
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "B2",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.value.weight": 0.0,
+          "0.gate.weight": 0.0,
+          "0.gate.bias": 0.0,
+          "0.convs.0.weight": 0.0,
+          "0.convs.1.weight": 0.0,
+          "0.convs.2.weight": 0.0,
+          "0.convs.3.weight": 0.0,
+          "0.convs.4.weight": 0.0,
+          "0.convs.5.weight": 0.0,
+          "0.convs.6.weight": 0.0,
+          "0.convs.7.weight": 0.0,
+          "0.convs.8.weight": 0.0,
+          "0.out.weight": 0.06043916568160057
+        },
+        {
+          "0.value.weight": 0.00461576459929347,
+          "0.gate.weight": 0.0019664864521473646,
+          "0.gate.bias": 0.00013034681614954025,
+          "0.convs.0.weight": 0.00019007816445082426,
+          "0.convs.1.weight": 0.00018122531764674932,
+          "0.convs.2.weight": 0.00015918845019768924,
+          "0.convs.3.weight": 0.00017990860214922577,
+          "0.convs.4.weight": 0.00017671551904641092,
+          "0.convs.5.weight": 0.0001776224235072732,
+          "0.convs.6.weight": 0.00013409015082288533,
+          "0.convs.7.weight": 0.00015365693252533674,
+          "0.convs.8.weight": 0.00014427656424231827,
+          "0.out.weight": 0.03017237037420273
+        },
+        {
+          "0.value.weight": 0.00356327835470438,
+          "0.gate.weight": 0.0016585012199357152,
+          "0.gate.bias": 0.00011137953697470948,
+          "0.convs.0.weight": 0.0002168642677133903,
+          "0.convs.1.weight": 0.0002046882000286132,
+          "0.convs.2.weight": 0.00018121326866094023,
+          "0.convs.3.weight": 0.0002030148170888424,
+          "0.convs.4.weight": 0.0001963521499419585,
+          "0.convs.5.weight": 0.00019849726231768727,
+          "0.convs.6.weight": 0.00014690945681650192,
+          "0.convs.7.weight": 0.0001397475425619632,
+          "0.convs.8.weight": 0.0001252878428203985,
+          "0.out.weight": 0.027417387813329697
+        },
+        {
+          "0.value.weight": 0.003104295814409852,
+          "0.gate.weight": 0.0011331815039739013,
+          "0.gate.bias": 8.284607611130923e-05,
+          "0.convs.0.weight": 0.0002109130728058517,
+          "0.convs.1.weight": 0.0002118097763741389,
+          "0.convs.2.weight": 0.00017039472004398704,
+          "0.convs.3.weight": 0.00019243154383730143,
+          "0.convs.4.weight": 0.00019219618116039783,
+          "0.convs.5.weight": 0.00018627355166245252,
+          "0.convs.6.weight": 0.00014820026990491897,
+          "0.convs.7.weight": 0.00011334600276313722,
+          "0.convs.8.weight": 9.169097756966949e-05,
+          "0.out.weight": 0.015299039892852306
+        },
+        {
+          "0.value.weight": 0.002724340884014964,
+          "0.gate.weight": 0.0008473804919049144,
+          "0.gate.bias": 6.448606291087344e-05,
+          "0.convs.0.weight": 0.00017931820184458047,
+          "0.convs.1.weight": 0.00018350516620557755,
+          "0.convs.2.weight": 0.0001463643420720473,
+          "0.convs.3.weight": 0.0001628880127100274,
+          "0.convs.4.weight": 0.00015513035759795457,
+          "0.convs.5.weight": 0.00015428120968863368,
+          "0.convs.6.weight": 0.00012655369937419891,
+          "0.convs.7.weight": 9.64861101238057e-05,
+          "0.convs.8.weight": 8.027342846617103e-05,
+          "0.out.weight": 0.011444831266999245
+        }
+      ],
+      "parameters": 2558922
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "C1",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 2448714
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "C3",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.0,
+          "3.norm.weight": 0.0,
+          "3.norm.bias": 0.0,
+          "3.q.weight": 0.0,
+          "3.k.weight": 0.0,
+          "3.value.weight": 0.0,
+          "3.out.weight": 0.02207564003765583
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.00034870655508711934,
+          "3.norm.weight": 3.0531056836480275e-05,
+          "3.norm.bias": 3.857074261759408e-05,
+          "3.q.weight": 0.0010389917297288775,
+          "3.k.weight": 0.0008426359272561967,
+          "3.value.weight": 0.003550382098183036,
+          "3.out.weight": 0.016093233600258827
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 7.248384008562425e-06,
+          "2.norm.weight": 9.71820782069699e-07,
+          "2.norm.bias": 1.1790895086960518e-06,
+          "2.q.weight": 3.071538230869919e-05,
+          "2.k.weight": 3.1241917895385996e-05,
+          "2.value.weight": 6.451252556871623e-05,
+          "2.out.weight": 0.0003388326149433851,
+          "3.norm.weight": 3.6978661228204146e-05,
+          "3.norm.bias": 5.4304739023791626e-05,
+          "3.q.weight": 0.0012610951671376824,
+          "3.k.weight": 0.0009450935758650303,
+          "3.value.weight": 0.0037615105975419283,
+          "3.out.weight": 0.015175971202552319
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 2.1575866071543714e-07,
+          "1.norm.weight": 3.149519045564375e-08,
+          "1.norm.bias": 3.26502096470449e-08,
+          "1.q.weight": 9.16909357329132e-07,
+          "1.k.weight": 1.0457781627337681e-06,
+          "1.value.weight": 1.871249310170242e-06,
+          "1.out.weight": 1.5176514352788217e-05,
+          "2.norm.weight": 1.7649903156780056e-06,
+          "2.norm.bias": 2.032213615166256e-06,
+          "2.q.weight": 5.487256930791773e-05,
+          "2.k.weight": 5.565918036154471e-05,
+          "2.value.weight": 0.0001538285578135401,
+          "2.out.weight": 0.00047308349166996777,
+          "3.norm.weight": 5.654712731484324e-05,
+          "3.norm.bias": 7.752716919640079e-05,
+          "3.q.weight": 0.0019835850689560175,
+          "3.k.weight": 0.0011116692330688238,
+          "3.value.weight": 0.003767960937693715,
+          "3.out.weight": 0.012645703740417957
+        },
+        {
+          "0.norm.weight": 1.281135753039564e-10,
+          "0.norm.bias": 1.286488415797038e-10,
+          "0.q.weight": 3.5235119266729953e-09,
+          "0.k.weight": 4.561121258461753e-09,
+          "0.value.weight": 9.474477202786602e-09,
+          "0.out.weight": 5.478437969941297e-07,
+          "1.norm.weight": 7.099057341974913e-08,
+          "1.norm.bias": 7.16229422437209e-08,
+          "1.q.weight": 2.161788188459468e-06,
+          "1.k.weight": 2.4171235963876825e-06,
+          "1.value.weight": 4.96154825668782e-06,
+          "1.out.weight": 1.8661812646314502e-05,
+          "2.norm.weight": 3.468391923888703e-06,
+          "2.norm.bias": 3.463648909018957e-06,
+          "2.q.weight": 9.714763291412964e-05,
+          "2.k.weight": 9.20924503589049e-05,
+          "2.value.weight": 0.00018739989900495857,
+          "2.out.weight": 0.0004529426514636725,
+          "3.norm.weight": 7.539003854617476e-05,
+          "3.norm.bias": 8.626071212347597e-05,
+          "3.q.weight": 0.0024385694414377213,
+          "3.k.weight": 0.001290988060645759,
+          "3.value.weight": 0.0029247102793306112,
+          "3.out.weight": 0.011859712190926075
+        }
+      ],
+      "parameters": 2913882
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "C4",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0323336087167263
+        },
+        {
+          "0.norm.weight": 6.109278911026195e-05,
+          "0.norm.bias": 6.154437869554386e-05,
+          "0.q.weight": 0.0019313115626573563,
+          "0.k.weight": 0.0019024086650460958,
+          "0.value.weight": 0.004931870847940445,
+          "0.out.weight": 0.02170358970761299
+        },
+        {
+          "0.norm.weight": 6.435941031668335e-05,
+          "0.norm.bias": 7.775296398904175e-05,
+          "0.q.weight": 0.0018451189389452338,
+          "0.k.weight": 0.0018645846284925938,
+          "0.value.weight": 0.004792987369000912,
+          "0.out.weight": 0.01951691508293152
+        },
+        {
+          "0.norm.weight": 9.181755740428343e-05,
+          "0.norm.bias": 9.863849845714867e-05,
+          "0.q.weight": 0.0023593762889504433,
+          "0.k.weight": 0.002169496612623334,
+          "0.value.weight": 0.004702658858150244,
+          "0.out.weight": 0.016158774495124817
+        },
+        {
+          "0.norm.weight": 9.961888281395659e-05,
+          "0.norm.bias": 9.285720443585888e-05,
+          "0.q.weight": 0.0023410243447870016,
+          "0.k.weight": 0.0018584432546049356,
+          "0.value.weight": 0.002950606169179082,
+          "0.out.weight": 0.015499597415328026
+        }
+      ],
+      "parameters": 2679950
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "C5",
+      "k": 2,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.019686901941895485
+        },
+        {
+          "0.norm.weight": 2.9924327463959344e-05,
+          "0.norm.bias": 3.027777529496234e-05,
+          "0.q.weight": 0.00097970524802804,
+          "0.k.weight": 0.0009689499856904149,
+          "0.value.weight": 0.0034875194542109966,
+          "0.out.weight": 0.01530189998447895
+        },
+        {
+          "0.norm.weight": 3.459989602561109e-05,
+          "0.norm.bias": 4.9212449084734544e-05,
+          "0.q.weight": 0.001100944820791483,
+          "0.k.weight": 0.0010400364408269525,
+          "0.value.weight": 0.003463865490630269,
+          "0.out.weight": 0.014355054125189781
+        },
+        {
+          "0.norm.weight": 4.927109330310486e-05,
+          "0.norm.bias": 6.057424980099313e-05,
+          "0.q.weight": 0.0014793830923736095,
+          "0.k.weight": 0.001293057925067842,
+          "0.value.weight": 0.0035582613199949265,
+          "0.out.weight": 0.011156142689287663
+        },
+        {
+          "0.norm.weight": 6.792275235056877e-05,
+          "0.norm.bias": 7.268795889103785e-05,
+          "0.q.weight": 0.001882830634713173,
+          "0.k.weight": 0.0015266014961525798,
+          "0.value.weight": 0.002886720933020115,
+          "0.out.weight": 0.010148360393941402
+        }
+      ],
+      "parameters": 2565006
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "C5",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.019686901941895485
+        },
+        {
+          "0.norm.weight": 2.9925944545539096e-05,
+          "0.norm.bias": 3.0280214559752494e-05,
+          "0.q.weight": 0.0009797485545277596,
+          "0.k.weight": 0.0009689987637102604,
+          "0.value.weight": 0.003488229587674141,
+          "0.out.weight": 0.015304481610655785
+        },
+        {
+          "0.norm.weight": 3.4612068702699617e-05,
+          "0.norm.bias": 4.922886364511214e-05,
+          "0.q.weight": 0.0011013023322448134,
+          "0.k.weight": 0.001040389877744019,
+          "0.value.weight": 0.003467445494607091,
+          "0.out.weight": 0.014362379908561707
+        },
+        {
+          "0.norm.weight": 4.930928480462171e-05,
+          "0.norm.bias": 6.061114982003346e-05,
+          "0.q.weight": 0.001480333274230361,
+          "0.k.weight": 0.0012941242894157767,
+          "0.value.weight": 0.00356642110273242,
+          "0.out.weight": 0.01117141917347908
+        },
+        {
+          "0.norm.weight": 6.799097900511697e-05,
+          "0.norm.bias": 7.274368545040488e-05,
+          "0.q.weight": 0.0018841299461200833,
+          "0.k.weight": 0.0015286951093003154,
+          "0.value.weight": 0.002896780613809824,
+          "0.out.weight": 0.010173821821808815
+        }
+      ],
+      "parameters": 2565006
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "NOANCHOR",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.07874760776758194
+        },
+        {
+          "0.norm.weight": 0.00011587756307562813,
+          "0.norm.bias": 0.00011384514073142782,
+          "0.q.weight": 0.003803898813202977,
+          "0.k.weight": 0.00374939339235425,
+          "0.value.weight": 0.013080498203635216,
+          "0.out.weight": 0.05918671190738678
+        },
+        {
+          "0.norm.weight": 0.00011407894635340199,
+          "0.norm.bias": 0.00015758085646666586,
+          "0.q.weight": 0.0036532904487103224,
+          "0.k.weight": 0.0034573839511722326,
+          "0.value.weight": 0.010715743526816368,
+          "0.out.weight": 0.053059205412864685
+        },
+        {
+          "0.norm.weight": 0.00012556581350509077,
+          "0.norm.bias": 0.00015208800323307514,
+          "0.q.weight": 0.003874537069350481,
+          "0.k.weight": 0.0033452939242124557,
+          "0.value.weight": 0.008448272943496704,
+          "0.out.weight": 0.039094649255275726
+        },
+        {
+          "0.norm.weight": 8.723608334548771e-05,
+          "0.norm.bias": 5.486148802447133e-05,
+          "0.q.weight": 0.0026150615885853767,
+          "0.k.weight": 0.0018753752810880542,
+          "0.value.weight": 0.003020657692104578,
+          "0.out.weight": 0.03614399582147598
+        }
+      ],
+      "parameters": 2565006
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "variant": "FULL",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.022543953731656075
+        },
+        {
+          "0.norm.weight": 2.6104686185135506e-05,
+          "0.norm.bias": 2.5794170142035e-05,
+          "0.q.weight": 0.000794221821706742,
+          "0.k.weight": 0.000886876427102834,
+          "0.value.weight": 0.0022411965765058994,
+          "0.out.weight": 0.009078579023480415
+        },
+        {
+          "0.norm.weight": 2.5656592697487213e-05,
+          "0.norm.bias": 2.6071413230965845e-05,
+          "0.q.weight": 0.0006671948940493166,
+          "0.k.weight": 0.0007424915675073862,
+          "0.value.weight": 0.0016405382193624973,
+          "0.out.weight": 0.0057752253487706184
+        },
+        {
+          "0.norm.weight": 2.0755338482558727e-05,
+          "0.norm.bias": 2.0791610950254835e-05,
+          "0.q.weight": 0.000546476396266371,
+          "0.k.weight": 0.0005021118558943272,
+          "0.value.weight": 0.0015418424736708403,
+          "0.out.weight": 0.004333137068897486
+        },
+        {
+          "0.norm.weight": 1.9751658328459598e-05,
+          "0.norm.bias": 1.4487729458778631e-05,
+          "0.q.weight": 0.0005419153603725135,
+          "0.k.weight": 0.0004415252187754959,
+          "0.value.weight": 0.0012802508426830173,
+          "0.out.weight": 0.0034341048449277878
+        }
+      ],
+      "parameters": 2565006
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "B0",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 345945
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "B1",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.03155188634991646
+        },
+        {
+          "0.norm.weight": 2.7424173822510056e-05,
+          "0.norm.bias": 2.485358709236607e-05,
+          "0.q.weight": 0.0006688089924864471,
+          "0.k.weight": 0.0006574750295840204,
+          "0.value.weight": 0.0032191055361181498,
+          "0.out.weight": 0.02593633346259594
+        },
+        {
+          "0.norm.weight": 3.560174809535965e-05,
+          "0.norm.bias": 3.079391535720788e-05,
+          "0.q.weight": 0.0007239491096697748,
+          "0.k.weight": 0.0006926422356627882,
+          "0.value.weight": 0.005318132229149342,
+          "0.out.weight": 0.02791665494441986
+        },
+        {
+          "0.norm.weight": 4.0439481381326914e-05,
+          "0.norm.bias": 3.2337607990484685e-05,
+          "0.q.weight": 0.0007047686376608908,
+          "0.k.weight": 0.0006723897531628609,
+          "0.value.weight": 0.006431296933442354,
+          "0.out.weight": 0.027522118762135506
+        },
+        {
+          "0.norm.weight": 4.222320785629563e-05,
+          "0.norm.bias": 3.697202919283882e-05,
+          "0.q.weight": 0.0007776737329550087,
+          "0.k.weight": 0.0007070022402331233,
+          "0.value.weight": 0.007016312330961227,
+          "0.out.weight": 0.0269254632294178
+        }
+      ],
+      "parameters": 404190
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "B2",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.value.weight": 0.0,
+          "0.gate.weight": 0.0,
+          "0.gate.bias": 0.0,
+          "0.convs.0.weight": 0.0,
+          "0.convs.1.weight": 0.0,
+          "0.convs.2.weight": 0.0,
+          "0.convs.3.weight": 0.0,
+          "0.convs.4.weight": 0.0,
+          "0.convs.5.weight": 0.0,
+          "0.convs.6.weight": 0.0,
+          "0.convs.7.weight": 0.0,
+          "0.convs.8.weight": 0.0,
+          "0.out.weight": 0.04289035126566887
+        },
+        {
+          "0.value.weight": 0.0030821000691503286,
+          "0.gate.weight": 0.0006505164201371372,
+          "0.gate.bias": 9.300807141698897e-05,
+          "0.convs.0.weight": 0.00010635659418767318,
+          "0.convs.1.weight": 0.00010504458623472601,
+          "0.convs.2.weight": 9.946670616045594e-05,
+          "0.convs.3.weight": 0.00010047400428447872,
+          "0.convs.4.weight": 8.99477963685058e-05,
+          "0.convs.5.weight": 8.998629346024245e-05,
+          "0.convs.6.weight": 8.654126577312127e-05,
+          "0.convs.7.weight": 8.603700553067029e-05,
+          "0.convs.8.weight": 8.498360693920404e-05,
+          "0.out.weight": 0.026484845206141472
+        },
+        {
+          "0.value.weight": 0.0038766865618526936,
+          "0.gate.weight": 0.0008456265204586089,
+          "0.gate.bias": 0.00012823943688999861,
+          "0.convs.0.weight": 0.0001605598081368953,
+          "0.convs.1.weight": 0.00015372551570180804,
+          "0.convs.2.weight": 0.0001448861585231498,
+          "0.convs.3.weight": 0.0001507097767898813,
+          "0.convs.4.weight": 0.00012803077697753906,
+          "0.convs.5.weight": 0.00012627302203327417,
+          "0.convs.6.weight": 0.00012056414561811835,
+          "0.convs.7.weight": 0.00012147780216764659,
+          "0.convs.8.weight": 0.00011983189324382693,
+          "0.out.weight": 0.02216252125799656
+        },
+        {
+          "0.value.weight": 0.004446668550372124,
+          "0.gate.weight": 0.0009595912997610867,
+          "0.gate.bias": 0.0001544264960102737,
+          "0.convs.0.weight": 0.00021300866501405835,
+          "0.convs.1.weight": 0.00020212240633554757,
+          "0.convs.2.weight": 0.0001942023227456957,
+          "0.convs.3.weight": 0.00019354282994754612,
+          "0.convs.4.weight": 0.00015587803500238806,
+          "0.convs.5.weight": 0.000151810294482857,
+          "0.convs.6.weight": 0.00014650030061602592,
+          "0.convs.7.weight": 0.0001480867649661377,
+          "0.convs.8.weight": 0.0001447280665161088,
+          "0.out.weight": 0.02014673687517643
+        },
+        {
+          "0.value.weight": 0.004347796086221933,
+          "0.gate.weight": 0.000925880332943052,
+          "0.gate.bias": 0.0001498944329796359,
+          "0.convs.0.weight": 0.0002363282401347533,
+          "0.convs.1.weight": 0.00022150768199935555,
+          "0.convs.2.weight": 0.0002113600930897519,
+          "0.convs.3.weight": 0.0002051172050414607,
+          "0.convs.4.weight": 0.00015633308794349432,
+          "0.convs.5.weight": 0.00015034446550998837,
+          "0.convs.6.weight": 0.00014592407387681305,
+          "0.convs.7.weight": 0.0001476512261433527,
+          "0.convs.8.weight": 0.00014457979705184698,
+          "0.out.weight": 0.018391594290733337
+        }
+      ],
+      "parameters": 403930
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "C1",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 345946
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "C3",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.0,
+          "3.norm.weight": 0.0,
+          "3.norm.bias": 0.0,
+          "3.q.weight": 0.0,
+          "3.k.weight": 0.0,
+          "3.value.weight": 0.0,
+          "3.out.weight": 0.02537289634346962
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.00037308954051695764,
+          "3.norm.weight": 5.2759729442186654e-05,
+          "3.norm.bias": 2.8795288017136045e-05,
+          "3.q.weight": 0.0009770005708560348,
+          "3.k.weight": 0.0012837148969992995,
+          "3.value.weight": 0.002987836254760623,
+          "3.out.weight": 0.022067373618483543
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 1.4098519386607222e-05,
+          "2.norm.weight": 6.879726015540655e-07,
+          "2.norm.bias": 7.545754669990856e-07,
+          "2.q.weight": 1.5149358659982681e-05,
+          "2.k.weight": 1.5607178283971734e-05,
+          "2.value.weight": 9.169211989501491e-05,
+          "2.out.weight": 0.000619992264546454,
+          "3.norm.weight": 6.580121407750994e-05,
+          "3.norm.bias": 3.9225142245413736e-05,
+          "3.q.weight": 0.0010756939882412553,
+          "3.k.weight": 0.0013055113377049565,
+          "3.value.weight": 0.004877468105405569,
+          "3.out.weight": 0.02479635737836361
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 4.784042744176986e-07,
+          "1.norm.weight": 1.9263348249864976e-08,
+          "1.norm.bias": 1.7187792522577183e-08,
+          "1.q.weight": 3.586970365176967e-07,
+          "1.k.weight": 2.86763594203876e-07,
+          "1.value.weight": 3.0316846277855802e-06,
+          "1.out.weight": 3.5192289942642674e-05,
+          "2.norm.weight": 1.6668790294716018e-06,
+          "2.norm.bias": 1.5905330883470015e-06,
+          "2.q.weight": 3.2371081033488736e-05,
+          "2.k.weight": 3.679681321955286e-05,
+          "2.value.weight": 0.00024014670634642243,
+          "2.out.weight": 0.0009227772243320942,
+          "3.norm.weight": 6.841177673777565e-05,
+          "3.norm.bias": 4.3626732804114e-05,
+          "3.q.weight": 0.0009922507451847196,
+          "3.k.weight": 0.0010943053057417274,
+          "3.value.weight": 0.005941509269177914,
+          "3.out.weight": 0.02524166740477085
+        },
+        {
+          "0.norm.weight": 1.8239318388957315e-10,
+          "0.norm.bias": 2.0408684464623406e-10,
+          "0.q.weight": 4.547190179948757e-09,
+          "0.k.weight": 3.984756524744171e-09,
+          "0.value.weight": 4.220389726583562e-08,
+          "0.out.weight": 2.0189011138427304e-06,
+          "1.norm.weight": 8.908130411100501e-08,
+          "1.norm.bias": 7.876462149170038e-08,
+          "1.q.weight": 1.6885328477656003e-06,
+          "1.k.weight": 1.3915617955717607e-06,
+          "1.value.weight": 1.2382696695567574e-05,
+          "1.out.weight": 6.553203274961561e-05,
+          "2.norm.weight": 3.520636028042645e-06,
+          "2.norm.bias": 2.704371581785381e-06,
+          "2.q.weight": 5.371267252485268e-05,
+          "2.k.weight": 6.450905493693426e-05,
+          "2.value.weight": 0.000432258122600615,
+          "2.out.weight": 0.0012063434114679694,
+          "3.norm.weight": 4.969597648596391e-05,
+          "3.norm.bias": 3.5204771847929806e-05,
+          "3.q.weight": 0.000741891679354012,
+          "3.k.weight": 0.0007798364385962486,
+          "3.value.weight": 0.006429828237742186,
+          "3.out.weight": 0.02521987445652485
+        }
+      ],
+      "parameters": 578922
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "C4",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.04247548058629036
+        },
+        {
+          "0.norm.weight": 9.673575550550595e-05,
+          "0.norm.bias": 8.35572209325619e-05,
+          "0.q.weight": 0.002405415754765272,
+          "0.k.weight": 0.001863037352450192,
+          "0.value.weight": 0.0044198776595294476,
+          "0.out.weight": 0.03512232378125191
+        },
+        {
+          "0.norm.weight": 0.0001096229170798324,
+          "0.norm.bias": 6.521821342175826e-05,
+          "0.q.weight": 0.001950715435668826,
+          "0.k.weight": 0.0015468803467229009,
+          "0.value.weight": 0.007047465071082115,
+          "0.out.weight": 0.03752598911523819
+        },
+        {
+          "0.norm.weight": 0.00010567245772108436,
+          "0.norm.bias": 6.32170049357228e-05,
+          "0.q.weight": 0.0015206023817881942,
+          "0.k.weight": 0.0012824757723137736,
+          "0.value.weight": 0.008386313915252686,
+          "0.out.weight": 0.03629990667104721
+        },
+        {
+          "0.norm.weight": 7.451205601682886e-05,
+          "0.norm.bias": 5.966645403532311e-05,
+          "0.q.weight": 0.0013131147716194391,
+          "0.k.weight": 0.0012482781894505024,
+          "0.value.weight": 0.008923039771616459,
+          "0.out.weight": 0.03460397571325302
+        }
+      ],
+      "parameters": 461790
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "C5",
+      "k": 2,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.03155188634991646
+        },
+        {
+          "0.norm.weight": 2.7240619601798244e-05,
+          "0.norm.bias": 2.456012589391321e-05,
+          "0.q.weight": 0.0006639476050622761,
+          "0.k.weight": 0.0006530219106934965,
+          "0.value.weight": 0.0031476570293307304,
+          "0.out.weight": 0.02546556480228901
+        },
+        {
+          "0.norm.weight": 3.507245492073707e-05,
+          "0.norm.bias": 3.0012495699338615e-05,
+          "0.q.weight": 0.0007105371332727373,
+          "0.k.weight": 0.000679260294418782,
+          "0.value.weight": 0.0050507234409451485,
+          "0.out.weight": 0.0269366092979908
+        },
+        {
+          "0.norm.weight": 3.933423067792319e-05,
+          "0.norm.bias": 3.110061152256094e-05,
+          "0.q.weight": 0.0006817445973865688,
+          "0.k.weight": 0.0006481987657025456,
+          "0.value.weight": 0.005916009657084942,
+          "0.out.weight": 0.02595619112253189
+        },
+        {
+          "0.norm.weight": 3.960733374697156e-05,
+          "0.norm.bias": 3.475536504993215e-05,
+          "0.q.weight": 0.0007339856238104403,
+          "0.k.weight": 0.0006574608851224184,
+          "0.value.weight": 0.006234166212379932,
+          "0.out.weight": 0.024854296818375587
+        }
+      ],
+      "parameters": 404190
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "C5",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.03155188634991646
+        },
+        {
+          "0.norm.weight": 2.724319347180426e-05,
+          "0.norm.bias": 2.456365473335609e-05,
+          "0.q.weight": 0.0006640083738602698,
+          "0.k.weight": 0.0006530897226184607,
+          "0.value.weight": 0.0031489464454352856,
+          "0.out.weight": 0.025473466143012047
+        },
+        {
+          "0.norm.weight": 3.5091565223410726e-05,
+          "0.norm.bias": 3.003620440722443e-05,
+          "0.q.weight": 0.0007109633879736066,
+          "0.k.weight": 0.0006797444657422602,
+          "0.value.weight": 0.005060729570686817,
+          "0.out.weight": 0.0269695445895195
+        },
+        {
+          "0.norm.weight": 3.938394002034329e-05,
+          "0.norm.bias": 3.115182335022837e-05,
+          "0.q.weight": 0.0006827391916885972,
+          "0.k.weight": 0.000649422756396234,
+          "0.value.weight": 0.005946393124759197,
+          "0.out.weight": 0.02603950724005699
+        },
+        {
+          "0.norm.weight": 3.976396328653209e-05,
+          "0.norm.bias": 3.4870914532803e-05,
+          "0.q.weight": 0.0007363713812083006,
+          "0.k.weight": 0.000660753226839006,
+          "0.value.weight": 0.0062985485419631,
+          "0.out.weight": 0.025004075840115547
+        }
+      ],
+      "parameters": 404190
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "NOANCHOR",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.12620754539966583
+        },
+        {
+          "0.norm.weight": 0.0001058561829268001,
+          "0.norm.bias": 9.264868276659399e-05,
+          "0.q.weight": 0.002568111289292574,
+          "0.k.weight": 0.0025432698894292116,
+          "0.value.weight": 0.011827724985778332,
+          "0.out.weight": 0.09881028532981873
+        },
+        {
+          "0.norm.weight": 0.00013164985284674913,
+          "0.norm.bias": 0.00010638535604812205,
+          "0.q.weight": 0.002614203840494156,
+          "0.k.weight": 0.0025360118597745895,
+          "0.value.weight": 0.017748145386576653,
+          "0.out.weight": 0.10260623693466187
+        },
+        {
+          "0.norm.weight": 0.0001408551906934008,
+          "0.norm.bias": 0.0001041498253471218,
+          "0.q.weight": 0.0023730406537652016,
+          "0.k.weight": 0.00228977482765913,
+          "0.value.weight": 0.019292743876576424,
+          "0.out.weight": 0.09751800447702408
+        },
+        {
+          "0.norm.weight": 0.00012901003356091678,
+          "0.norm.bias": 0.00010853764251805842,
+          "0.q.weight": 0.002356595592573285,
+          "0.k.weight": 0.002095341682434082,
+          "0.value.weight": 0.019193051382899284,
+          "0.out.weight": 0.09322571009397507
+        }
+      ],
+      "parameters": 404190
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "variant": "FULL",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.03184669464826584
+        },
+        {
+          "0.norm.weight": 2.922683779615909e-05,
+          "0.norm.bias": 2.36249397858046e-05,
+          "0.q.weight": 0.0006584202055819333,
+          "0.k.weight": 0.0006735996576026082,
+          "0.value.weight": 0.003322981996461749,
+          "0.out.weight": 0.026021959260106087
+        },
+        {
+          "0.norm.weight": 3.565227598301135e-05,
+          "0.norm.bias": 3.0029501431272365e-05,
+          "0.q.weight": 0.0007266025641001761,
+          "0.k.weight": 0.0006998667377047241,
+          "0.value.weight": 0.005214739590883255,
+          "0.out.weight": 0.026302194222807884
+        },
+        {
+          "0.norm.weight": 3.870358341373503e-05,
+          "0.norm.bias": 3.2235573598882183e-05,
+          "0.q.weight": 0.000712439650669694,
+          "0.k.weight": 0.0006692002061754465,
+          "0.value.weight": 0.006100201979279518,
+          "0.out.weight": 0.02483346126973629
+        },
+        {
+          "0.norm.weight": 3.9419068343704566e-05,
+          "0.norm.bias": 3.328135790070519e-05,
+          "0.q.weight": 0.000703522702679038,
+          "0.k.weight": 0.0006441912264563143,
+          "0.value.weight": 0.006477776449173689,
+          "0.out.weight": 0.023638680577278137
+        }
+      ],
+      "parameters": 404190
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "B0",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 1087481
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "B1",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.01841660961508751
+        },
+        {
+          "0.norm.weight": 3.44243562722113e-05,
+          "0.norm.bias": 1.9562798115657642e-05,
+          "0.q.weight": 0.0009738225489854813,
+          "0.k.weight": 0.0009575846488587558,
+          "0.value.weight": 0.0020372148137539625,
+          "0.out.weight": 0.012920782901346684
+        },
+        {
+          "0.norm.weight": 3.0235298254410736e-05,
+          "0.norm.bias": 2.116424366249703e-05,
+          "0.q.weight": 0.0007541017839685082,
+          "0.k.weight": 0.0006805905723012984,
+          "0.value.weight": 0.0026526954025030136,
+          "0.out.weight": 0.01196360681205988
+        },
+        {
+          "0.norm.weight": 2.1060746803414077e-05,
+          "0.norm.bias": 2.141327058780007e-05,
+          "0.q.weight": 0.0005804609972983599,
+          "0.k.weight": 0.00048668915405869484,
+          "0.value.weight": 0.00331413303501904,
+          "0.out.weight": 0.01170097291469574
+        },
+        {
+          "0.norm.weight": 2.2877915398566984e-05,
+          "0.norm.bias": 2.9273685868247412e-05,
+          "0.q.weight": 0.0007268289919011295,
+          "0.k.weight": 0.0004999214434064925,
+          "0.value.weight": 0.0029935818165540695,
+          "0.out.weight": 0.009753071703016758
+        }
+      ],
+      "parameters": 1203774
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "B2",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.value.weight": 0.0,
+          "0.gate.weight": 0.0,
+          "0.gate.bias": 0.0,
+          "0.convs.0.weight": 0.0,
+          "0.convs.1.weight": 0.0,
+          "0.convs.2.weight": 0.0,
+          "0.convs.3.weight": 0.0,
+          "0.convs.4.weight": 0.0,
+          "0.convs.5.weight": 0.0,
+          "0.convs.6.weight": 0.0,
+          "0.convs.7.weight": 0.0,
+          "0.convs.8.weight": 0.0,
+          "0.out.weight": 0.05621336027979851
+        },
+        {
+          "0.value.weight": 0.0036532327067106962,
+          "0.gate.weight": 0.0009343152632936835,
+          "0.gate.bias": 8.922758570406586e-05,
+          "0.convs.0.weight": 0.00010422027844469994,
+          "0.convs.1.weight": 0.0001025994133669883,
+          "0.convs.2.weight": 9.916583076119423e-05,
+          "0.convs.3.weight": 0.00010470904089743271,
+          "0.convs.4.weight": 9.72097332123667e-05,
+          "0.convs.5.weight": 9.530172974336892e-05,
+          "0.convs.6.weight": 8.767472900217399e-05,
+          "0.convs.7.weight": 9.56282383413054e-05,
+          "0.convs.8.weight": 9.262887760996819e-05,
+          "0.out.weight": 0.023534348234534264
+        },
+        {
+          "0.value.weight": 0.0025475253351032734,
+          "0.gate.weight": 0.0007571313180960715,
+          "0.gate.bias": 7.57121597416699e-05,
+          "0.convs.0.weight": 9.722587128635496e-05,
+          "0.convs.1.weight": 9.041704470291734e-05,
+          "0.convs.2.weight": 9.665791731094941e-05,
+          "0.convs.3.weight": 9.347782179247588e-05,
+          "0.convs.4.weight": 8.645409980090335e-05,
+          "0.convs.5.weight": 8.207131031667814e-05,
+          "0.convs.6.weight": 7.906309474492446e-05,
+          "0.convs.7.weight": 8.20438945083879e-05,
+          "0.convs.8.weight": 8.23539521661587e-05,
+          "0.out.weight": 0.01671685092151165
+        },
+        {
+          "0.value.weight": 0.001925210701301694,
+          "0.gate.weight": 0.0005857509677298367,
+          "0.gate.bias": 6.0146347095724195e-05,
+          "0.convs.0.weight": 9.285815758630633e-05,
+          "0.convs.1.weight": 8.602692105341703e-05,
+          "0.convs.2.weight": 8.725580846657977e-05,
+          "0.convs.3.weight": 8.469199383398518e-05,
+          "0.convs.4.weight": 7.150122837629169e-05,
+          "0.convs.5.weight": 6.676569319097325e-05,
+          "0.convs.6.weight": 6.5082342189271e-05,
+          "0.convs.7.weight": 6.652730371570215e-05,
+          "0.convs.8.weight": 6.626255344599485e-05,
+          "0.out.weight": 0.013423513621091843
+        },
+        {
+          "0.value.weight": 0.002176369307562709,
+          "0.gate.weight": 0.0004961593658663332,
+          "0.gate.bias": 5.75604681216646e-05,
+          "0.convs.0.weight": 0.00010151503374800086,
+          "0.convs.1.weight": 9.086483623832464e-05,
+          "0.convs.2.weight": 9.854178642854095e-05,
+          "0.convs.3.weight": 8.586941112298518e-05,
+          "0.convs.4.weight": 6.95502312737517e-05,
+          "0.convs.5.weight": 6.320815009530634e-05,
+          "0.convs.6.weight": 6.477145507233217e-05,
+          "0.convs.7.weight": 6.379664409905672e-05,
+          "0.convs.8.weight": 6.437019328586757e-05,
+          "0.out.weight": 0.010813433676958084
+        }
+      ],
+      "parameters": 1197690
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "C1",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [],
+      "parameters": 1087482
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "C3",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.0,
+          "3.norm.weight": 0.0,
+          "3.norm.bias": 0.0,
+          "3.q.weight": 0.0,
+          "3.k.weight": 0.0,
+          "3.value.weight": 0.0,
+          "3.out.weight": 0.01644258014857769
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 0.0,
+          "2.norm.weight": 0.0,
+          "2.norm.bias": 0.0,
+          "2.q.weight": 0.0,
+          "2.k.weight": 0.0,
+          "2.value.weight": 0.0,
+          "2.out.weight": 0.0001775440468918532,
+          "3.norm.weight": 3.4209744626423344e-05,
+          "3.norm.bias": 2.5584389732102863e-05,
+          "3.q.weight": 0.0011582596926018596,
+          "3.k.weight": 0.0009126852382905781,
+          "3.value.weight": 0.002012312412261963,
+          "3.out.weight": 0.013842138461768627
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.0,
+          "1.norm.weight": 0.0,
+          "1.norm.bias": 0.0,
+          "1.q.weight": 0.0,
+          "1.k.weight": 0.0,
+          "1.value.weight": 0.0,
+          "1.out.weight": 4.550454832497053e-06,
+          "2.norm.weight": 4.00776315245821e-07,
+          "2.norm.bias": 4.376344691081613e-07,
+          "2.q.weight": 1.0865373951673973e-05,
+          "2.k.weight": 9.335562026535627e-06,
+          "2.value.weight": 5.182034146855585e-05,
+          "2.out.weight": 0.00023565049923490733,
+          "3.norm.weight": 2.9120179533492774e-05,
+          "3.norm.bias": 2.1891799406148493e-05,
+          "3.q.weight": 0.0007326447521336377,
+          "3.k.weight": 0.0006713080802001059,
+          "3.value.weight": 0.0026270730886608362,
+          "3.out.weight": 0.013788375072181225
+        },
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 1.4253397750962904e-07,
+          "1.norm.weight": 6.162809373932987e-09,
+          "1.norm.bias": 5.608762787545629e-09,
+          "1.q.weight": 1.4751668686585617e-07,
+          "1.k.weight": 2.27312852985051e-07,
+          "1.value.weight": 1.636608885746682e-06,
+          "1.out.weight": 1.3330096408026293e-05,
+          "2.norm.weight": 7.646730750821007e-07,
+          "2.norm.bias": 9.174785873256042e-07,
+          "2.q.weight": 2.347418740100693e-05,
+          "2.k.weight": 1.877262729976792e-05,
+          "2.value.weight": 0.00014635607658419758,
+          "2.out.weight": 0.00040531717240810394,
+          "3.norm.weight": 2.815378684317693e-05,
+          "3.norm.bias": 3.0420338589465246e-05,
+          "3.q.weight": 0.0007676755194552243,
+          "3.k.weight": 0.0005842522950842977,
+          "3.value.weight": 0.0035217702388763428,
+          "3.out.weight": 0.014221949502825737
+        },
+        {
+          "0.norm.weight": 2.6523658269717032e-11,
+          "0.norm.bias": 3.906124035335523e-11,
+          "0.q.weight": 1.0266500982680782e-09,
+          "0.k.weight": 7.225240961084012e-10,
+          "0.value.weight": 7.071116137069566e-09,
+          "0.out.weight": 5.283555992718902e-07,
+          "1.norm.weight": 2.367246310086557e-08,
+          "1.norm.bias": 2.1634852132024207e-08,
+          "1.q.weight": 5.858425424776215e-07,
+          "1.k.weight": 8.71006477609626e-07,
+          "1.value.weight": 5.807644811284263e-06,
+          "1.out.weight": 2.1232654034974985e-05,
+          "2.norm.weight": 9.99424855763209e-07,
+          "2.norm.bias": 1.1809902389359195e-06,
+          "2.q.weight": 3.0824307032162324e-05,
+          "2.k.weight": 2.572197263361886e-05,
+          "2.value.weight": 0.0002041233383351937,
+          "2.out.weight": 0.0004425046208780259,
+          "3.norm.weight": 2.8104301236453466e-05,
+          "3.norm.bias": 3.252386886742897e-05,
+          "3.q.weight": 0.0008452945039607584,
+          "3.k.weight": 0.0005626213387586176,
+          "3.value.weight": 0.0031243525445461273,
+          "3.out.weight": 0.012226437218487263
+        }
+      ],
+      "parameters": 1552650
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "C4",
+      "k": 1,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.028282923623919487
+        },
+        {
+          "0.norm.weight": 5.194837649469264e-05,
+          "0.norm.bias": 3.7743811844848096e-05,
+          "0.q.weight": 0.0014959853142499924,
+          "0.k.weight": 0.001365584903396666,
+          "0.value.weight": 0.0029608202166855335,
+          "0.out.weight": 0.022335926070809364
+        },
+        {
+          "0.norm.weight": 4.964790787198581e-05,
+          "0.norm.bias": 4.0385228203376755e-05,
+          "0.q.weight": 0.0011211727978661656,
+          "0.k.weight": 0.000950262532569468,
+          "0.value.weight": 0.0037799933925271034,
+          "0.out.weight": 0.02075100503861904
+        },
+        {
+          "0.norm.weight": 4.385165811982006e-05,
+          "0.norm.bias": 3.814429874182679e-05,
+          "0.q.weight": 0.000900656043086201,
+          "0.k.weight": 0.0007454683654941618,
+          "0.value.weight": 0.0047124833799898624,
+          "0.out.weight": 0.020239323377609253
+        },
+        {
+          "0.norm.weight": 3.483439650153741e-05,
+          "0.norm.bias": 3.197598198312335e-05,
+          "0.q.weight": 0.0007525074179284275,
+          "0.k.weight": 0.0007159476517699659,
+          "0.value.weight": 0.004079584032297134,
+          "0.out.weight": 0.016394395381212234
+        }
+      ],
+      "parameters": 1318718
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "C5",
+      "k": 2,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.01841660961508751
+        },
+        {
+          "0.norm.weight": 3.4289725590497255e-05,
+          "0.norm.bias": 1.9393126422073692e-05,
+          "0.q.weight": 0.0009706995915621519,
+          "0.k.weight": 0.000953886890783906,
+          "0.value.weight": 0.0020082425326108932,
+          "0.out.weight": 0.012792635709047318
+        },
+        {
+          "0.norm.weight": 2.988405503856484e-05,
+          "0.norm.bias": 2.0872203094768338e-05,
+          "0.q.weight": 0.0007462637731805444,
+          "0.k.weight": 0.0006724874838255346,
+          "0.value.weight": 0.002571252640336752,
+          "0.out.weight": 0.011733829975128174
+        },
+        {
+          "0.norm.weight": 2.0373381630633958e-05,
+          "0.norm.bias": 2.0775230950675905e-05,
+          "0.q.weight": 0.0005636957939714193,
+          "0.k.weight": 0.00047047759289853275,
+          "0.value.weight": 0.0031372748780995607,
+          "0.out.weight": 0.011300114914774895
+        },
+        {
+          "0.norm.weight": 2.2125390387373045e-05,
+          "0.norm.bias": 2.836648309312295e-05,
+          "0.q.weight": 0.0007031939458101988,
+          "0.k.weight": 0.0004795132263097912,
+          "0.value.weight": 0.002782711759209633,
+          "0.out.weight": 0.009291313588619232
+        }
+      ],
+      "parameters": 1203774
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "C5",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.01841660961508751
+        },
+        {
+          "0.norm.weight": 3.4290827898075804e-05,
+          "0.norm.bias": 1.939469984790776e-05,
+          "0.q.weight": 0.0009707215358503163,
+          "0.k.weight": 0.0009539143647998571,
+          "0.value.weight": 0.0020086129661649466,
+          "0.out.weight": 0.012794033624231815
+        },
+        {
+          "0.norm.weight": 2.9890010409872048e-05,
+          "0.norm.bias": 2.0878182112937793e-05,
+          "0.q.weight": 0.0007463967194780707,
+          "0.k.weight": 0.0006726267747581005,
+          "0.value.weight": 0.002573356032371521,
+          "0.out.weight": 0.011739000678062439
+        },
+        {
+          "0.norm.weight": 2.039303035417106e-05,
+          "0.norm.bias": 2.0793175281141885e-05,
+          "0.q.weight": 0.0005641691968776286,
+          "0.k.weight": 0.00047095934860408306,
+          "0.value.weight": 0.0031447000801563263,
+          "0.out.weight": 0.01131495088338852
+        },
+        {
+          "0.norm.weight": 2.215818858530838e-05,
+          "0.norm.bias": 2.840751585608814e-05,
+          "0.q.weight": 0.0007042771321721375,
+          "0.k.weight": 0.00048047557356767356,
+          "0.value.weight": 0.002795454813167453,
+          "0.out.weight": 0.009315619245171547
+        }
+      ],
+      "parameters": 1203774
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "NOANCHOR",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.07366643846035004
+        },
+        {
+          "0.norm.weight": 0.00013493603910319507,
+          "0.norm.bias": 7.432865822920576e-05,
+          "0.q.weight": 0.0038313420955091715,
+          "0.k.weight": 0.0037516248412430286,
+          "0.value.weight": 0.0076314713805913925,
+          "0.out.weight": 0.050456561148166656
+        },
+        {
+          "0.norm.weight": 0.00011458464723546058,
+          "0.norm.bias": 7.829000969650224e-05,
+          "0.q.weight": 0.00286863069050014,
+          "0.k.weight": 0.0025676244404166937,
+          "0.value.weight": 0.009304779581725597,
+          "0.out.weight": 0.04599747061729431
+        },
+        {
+          "0.norm.weight": 7.439125329256058e-05,
+          "0.norm.bias": 7.542988169007003e-05,
+          "0.q.weight": 0.0020662816241383553,
+          "0.k.weight": 0.001699412357993424,
+          "0.value.weight": 0.011018205434083939,
+          "0.out.weight": 0.04406876116991043
+        },
+        {
+          "0.norm.weight": 8.162094309227541e-05,
+          "0.norm.bias": 0.00010409762762719765,
+          "0.q.weight": 0.002567766234278679,
+          "0.k.weight": 0.0017147177131846547,
+          "0.value.weight": 0.009482971392571926,
+          "0.out.weight": 0.036409277468919754
+        }
+      ],
+      "parameters": 1203774
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "variant": "FULL",
+      "k": 4,
+      "passed": true,
+      "initial_prediction_exact": true,
+      "future_label_invariance": true,
+      "zero_response_preserved": true,
+      "stage2_predictor_frozen": true,
+      "gradient_steps": [
+        {
+          "0.norm.weight": 0.0,
+          "0.norm.bias": 0.0,
+          "0.q.weight": 0.0,
+          "0.k.weight": 0.0,
+          "0.value.weight": 0.0,
+          "0.out.weight": 0.018448321148753166
+        },
+        {
+          "0.norm.weight": 3.0074312235228717e-05,
+          "0.norm.bias": 1.6477242752444e-05,
+          "0.q.weight": 0.0008616785635240376,
+          "0.k.weight": 0.0008400068618357182,
+          "0.value.weight": 0.0020789767149835825,
+          "0.out.weight": 0.013489953242242336
+        },
+        {
+          "0.norm.weight": 2.135310205630958e-05,
+          "0.norm.bias": 1.4111052223597653e-05,
+          "0.q.weight": 0.0005333754816092551,
+          "0.k.weight": 0.0004886822425760329,
+          "0.value.weight": 0.0027206838130950928,
+          "0.out.weight": 0.013107369653880596
+        },
+        {
+          "0.norm.weight": 1.1125323908345308e-05,
+          "0.norm.bias": 7.2978482421603985e-06,
+          "0.q.weight": 0.0002474870707374066,
+          "0.k.weight": 0.00024552879040129483,
+          "0.value.weight": 0.0035716125275939703,
+          "0.out.weight": 0.01334397867321968
+        },
+        {
+          "0.norm.weight": 9.776296792551875e-06,
+          "0.norm.bias": 1.0427620509290136e-05,
+          "0.q.weight": 0.0002834068436641246,
+          "0.k.weight": 0.00027208731626160443,
+          "0.value.weight": 0.003219535807147622,
+          "0.out.weight": 0.011484291404485703
+        }
+      ],
+      "parameters": 1203774
+    }
+  ]
+}

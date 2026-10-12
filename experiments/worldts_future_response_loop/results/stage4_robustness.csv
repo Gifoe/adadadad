@@ -1,0 +1,57 @@
+run_id,dataset,horizon,variant,k,condition,mse,mae,scope,noise_units
+NP_H24_B0_K1_s2021,NP,24,B0,1,full,0.1641289442651767,0.20733164697062487,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_B0_K1_s2021,NP,24,B0,1,mask_first,1.7259893821185965,0.9193300701760879,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_B0_K1_s2021,NP,24,B0,1,no_future,0.5380722009160835,0.46059024224302025,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_B0_K1_s2021,NP,24,B0,1,noise_0.25,0.2667744863742555,0.2994555430402314,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+NP_H24_B1_K1_s2021,NP,24,B1,1,full,0.16228242010002247,0.20568968060956064,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_B1_K1_s2021,NP,24,B1,1,mask_first,1.6353491808705718,0.888232047137033,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_B1_K1_s2021,NP,24,B1,1,no_future,0.5372762056627477,0.46393757630170757,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_B1_K1_s2021,NP,24,B1,1,noise_0.25,0.2576768249218725,0.29076436438894654,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+NP_H24_C5_K4_s2021,NP,24,C5,4,full,0.16577182143007727,0.2075797365234322,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_C5_K4_s2021,NP,24,C5,4,mask_first,1.7872300402660795,0.9217939120934111,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_C5_K4_s2021,NP,24,C5,4,no_future,0.5357458612595712,0.46159571539430794,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H24_C5_K4_s2021,NP,24,C5,4,noise_0.25,0.2725874362772195,0.2981856900913464,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+NP_H360_B0_K1_s2021,NP,360,B0,1,full,0.4928173603127064,0.4510980507005997,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_B0_K1_s2021,NP,360,B0,1,mask_first,1.4964159306833482,0.8812124321879574,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_B0_K1_s2021,NP,360,B0,1,no_future,0.9242968520104672,0.6376557747045855,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_B0_K1_s2021,NP,360,B0,1,noise_0.25,0.6293998801818824,0.5185561293948073,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+NP_H360_B1_K1_s2021,NP,360,B1,1,full,0.48377811357018774,0.445734461091859,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_B1_K1_s2021,NP,360,B1,1,mask_first,1.7045412667867026,0.9447974435648202,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_B1_K1_s2021,NP,360,B1,1,no_future,0.9849172664708378,0.6693943531874044,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_B1_K1_s2021,NP,360,B1,1,noise_0.25,0.6209010157129761,0.5123934939924953,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+NP_H360_C5_K2_s2021,NP,360,C5,2,full,0.482947601319148,0.4462450390507919,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_C5_K2_s2021,NP,360,C5,2,mask_first,1.768460096458475,0.9696185972703603,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_C5_K2_s2021,NP,360,C5,2,no_future,0.9476958960432937,0.6494729501971594,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_C5_K2_s2021,NP,360,C5,2,noise_0.25,0.6229677986707817,0.5118203675879506,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+NP_H360_C5_K4_s2021,NP,360,C5,4,full,0.4824453595799448,0.4460742030012231,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_C5_K4_s2021,NP,360,C5,4,mask_first,1.737706093916561,0.9633096612751921,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_C5_K4_s2021,NP,360,C5,4,no_future,0.9273665095837172,0.6405203655456398,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+NP_H360_C5_K4_s2021,NP,360,C5,4,noise_0.25,0.6199993332684155,0.5136867022716067,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+PJM_H24_B0_K1_s2021,PJM,24,B0,1,full,0.056620826576130955,0.14092296758293332,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_B0_K1_s2021,PJM,24,B0,1,mask_first,0.24548557018523362,0.32733791191646194,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_B0_K1_s2021,PJM,24,B0,1,no_future,0.2565544904764836,0.36868734814732884,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_B0_K1_s2021,PJM,24,B0,1,noise_0.25,0.11384482280910228,0.20720701906638941,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+PJM_H24_B1_K1_s2021,PJM,24,B1,1,full,0.05603946171782159,0.1401169455953322,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_B1_K1_s2021,PJM,24,B1,1,mask_first,0.2403311804858581,0.3238342586931902,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_B1_K1_s2021,PJM,24,B1,1,no_future,0.2689736247129038,0.3778413003043939,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_B1_K1_s2021,PJM,24,B1,1,noise_0.25,0.11127630805269344,0.2067041738748992,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+PJM_H24_C5_K4_s2021,PJM,24,C5,4,full,0.05638094228984053,0.14054812037321313,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_C5_K4_s2021,PJM,24,C5,4,mask_first,0.24681148844616502,0.3290920717565994,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_C5_K4_s2021,PJM,24,C5,4,no_future,0.28213358779063824,0.38745342474847655,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H24_C5_K4_s2021,PJM,24,C5,4,noise_0.25,0.10631131818395419,0.20239005100394353,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+PJM_H360_B0_K1_s2021,PJM,360,B0,1,full,0.1275034205868584,0.22333939442455675,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_B0_K1_s2021,PJM,360,B0,1,mask_first,0.2552312284809064,0.3217636800501171,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_B0_K1_s2021,PJM,360,B0,1,no_future,0.32144012778606934,0.3931747359575267,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_B0_K1_s2021,PJM,360,B0,1,noise_0.25,1.2014007042633499,0.4373489144315382,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+PJM_H360_B1_K1_s2021,PJM,360,B1,1,full,0.12046993547315374,0.2178999308321633,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_B1_K1_s2021,PJM,360,B1,1,mask_first,0.24023803799302115,0.3111427843414882,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_B1_K1_s2021,PJM,360,B1,1,no_future,0.3162023544538249,0.3926544700594435,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_B1_K1_s2021,PJM,360,B1,1,noise_0.25,1.405638311754521,0.48659427225857294,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+PJM_H360_C5_K2_s2021,PJM,360,C5,2,full,0.11923939352654589,0.21595475317597884,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_C5_K2_s2021,PJM,360,C5,2,mask_first,0.24675114461312428,0.3163747010845361,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_C5_K2_s2021,PJM,360,C5,2,no_future,0.31265732805066165,0.388606569987271,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_C5_K2_s2021,PJM,360,C5,2,noise_0.25,0.9107053912504167,0.4621662926108712,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations
+PJM_H360_C5_K4_s2021,PJM,360,C5,4,full,0.12147761857648925,0.2154597124281327,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_C5_K4_s2021,PJM,360,C5,4,mask_first,0.23147900201849897,0.30764980077029436,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_C5_K4_s2021,PJM,360,C5,4,no_future,0.3170483653381237,0.38977757650405015,"evaluation sensitivity only, not a retrained ablation or causal intervention",
+PJM_H360_C5_K4_s2021,PJM,360,C5,4,noise_0.25,0.938505184925757,0.4280573605369422,"evaluation sensitivity only, not a retrained ablation or causal intervention",0.25 train-scaled standard deviations

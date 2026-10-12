@@ -1,0 +1,10 @@
+COMMAND_EXIT data_link 0 D:\worldts_future_response_loop\logs\data_link_attempt1.log
+COMMAND_EXIT NP_H360_B1_K1_s2021 1 D:\worldts_future_response_loop\logs\NP_H360_B1_K1_s2021_attempt1.log
+Traceback (most recent call last):
+  File "D:\worldts_future_response_loop\scripts\orchestrate.py", line 40, in <module>
+    if __name__=='__main__':main()
+  File "D:\worldts_future_response_loop\scripts\orchestrate.py", line 17, in main
+    write_json(ROOT/'STATUS.json',{'stage':stage,'status':'RUNNING','active_run':row['run_id'],'overall_complete':False});run_command('train.py','--run-id',row['run_id'],prefix=row['run_id'])
+  File "D:\worldts_future_response_loop\scripts\orchestrate.py", line 9, in run_command
+    if r.returncode:raise RuntimeError(str(log))
+RuntimeError: D:\worldts_future_response_loop\logs\NP_H360_B1_K1_s2021_attempt1.log

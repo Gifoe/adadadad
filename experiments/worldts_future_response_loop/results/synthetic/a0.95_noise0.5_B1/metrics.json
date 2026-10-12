@@ -1,0 +1,20 @@
+{
+  "system_a": 0.95,
+  "noise_std": 0.5,
+  "variant": "B1",
+  "k": 1,
+  "mse": 0.7487157499232038,
+  "mae": 0.6742286635840513,
+  "training_seconds": 56.230525970458984,
+  "status": "COMPLETE",
+  "training_family": "synthetic_from_scratch",
+  "fixed_seed": 2021,
+  "physical_response_above_5_steps": 0.7737809374999998,
+  "source_type": "pinned_WorldTS_small_controlled_configuration",
+  "n_train_points": 2867,
+  "n_validation_points": 409,
+  "n_test_points": 820,
+  "checkpoint_sha256": "8ed5f8441bd8e4423164af165fc6038a0444d00955201a905a346e061ec346ea",
+  "predictions_sha256": "d2f10245c73598a7e16c48de76ea2a6f541d837a85408c2690d9b668a77371be",
+  "checkpoint_reloaded_equal": true
+}

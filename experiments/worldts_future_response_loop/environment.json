@@ -1,0 +1,13 @@
+{
+  "device": "NVIDIA GeForce RTX 5090",
+  "gpu_total_bytes": 34162016256,
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.18363-SP0",
+  "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f",
+  "baseline_root": "D:\\baseline_reproduction_seed2021_v1",
+  "cpu_threads": 4,
+  "affinity": "CPU16-31 only when detected logical CPU count is at least32",
+  "cuda_backward_passed": true
+}

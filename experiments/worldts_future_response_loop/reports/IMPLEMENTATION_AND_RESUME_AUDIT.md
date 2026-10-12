@@ -1,0 +1,19 @@
+# Implementation and resume audit
+
+The pinned official WorldTS files are unchanged. Response propagation is a wrapper around the original predictor. The loss, original two-stage freezing, published learning rates, effective batch size, origins, raw data and scalers remain unchanged across the main comparison family.
+
+The first continued NP B0 was a protocol pilot while controlled synthetic diagnostics were pending. No modified candidate training began before the Stage1 closure. The four old checkpoints are read-only and independently reevaluated. Real-task fits are common-checkpoint continuation; controlled AR fits are separately labeled from scratch.
+
+The first controlled AR attempt failed a strict checkpoint-output assertion. Both restored parameter states were identical by SHA256. A separate diagnosis found a7.15e-7 forward difference when the `requires_grad` freezing flags differed, with identical repeated forward outputs under one configuration. Restoring the trained Stage2 flags repaired the integrity test. Its first log is preserved.
+
+The first NP B1 attempt failed while atomically replacing `status.json` at decoder epoch8 (`PermissionError`, Windows error5). This is consistent with concurrent live SFTP read handles; the offending OS handle was not directly captured. The observer was terminated, and JSON replacement now retries for at most five seconds. Stage1 completed before interruption; Stage2 resumed its epoch7 model, Adam state, learning rate, early stopping, best weights and Python/NumPy/Torch/CUDA RNG states. The partial epoch is replayed. This is a filesystem failure, not evidence of numerical divergence. First-attempt logs and command exit status remain retained.
+
+An isolated controlled probe subsequently reproduced the exact Windows error5 when a new target file had an open SFTP read handle; the same replacement succeeded immediately after closing that handle. Results are saved in `reports/windows_read_handle_probe.json`. Only newly created probe files were used, then cleaned; no training/status/data file was modified by the probe. This verifies the proposed sharing mechanism while not retrospectively identifying the original offending OS handle.
+
+Optimization time records retained/resumed epoch work and validation. A failed partial epoch is excluded from that value; `process_attempt_wall_seconds` additionally reports actual command wall time across failed and successful attempts, with failure count, so recovery overhead remains visible.
+
+Observational tooling was extended during initial B0/B1/B2 pilots. Early runs record the training and response file hashes sampled at completion, rather than a complete immutable source archive at process start. Their loss, RNG, architecture and schedule are unchanged by these instrumentation edits, but those hashes alone cannot establish the exact loaded instrumentation version. Later runs archive `train.py`, `common.py`, `response_model.py` and `worldts_config.py` at process start, including per-file SHA256, and their metrics use these captured hashes. Core model/training sources are frozen for the remaining matrix.
+
+The forty response preflights test original-output equivalence, shapes, future-label invariance, finite and useful gradients, learned `P(0)=0`, and decoder-stage freezing. Main fits log actual propagation gradient norms. Post-analysis strictly reloads checkpoints with matching Stage2 configuration, verifies every official target/origin and scaler, independently recomputes float64 metrics, and compares fresh all-origin inference to saved predictions.
+
+None of these engineering repairs is a test-directed hyperparameter or architecture adjustment. The real-data preregistration remains immutable. K1/2/4 and all control widths are fixed; selection and optional seed expansion use validation only. The prospective synthetic SNR amendment was saved before any synthetic result.

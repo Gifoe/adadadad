@@ -1,0 +1,40 @@
+{
+  "shape_checked": true,
+  "future_target_invariance": true,
+  "finite_gradients": true,
+  "stage2_frozen": true,
+  "sampled_early_gradients": [
+    {
+      "0.norm.weight": 0.0,
+      "0.norm.bias": 0.0,
+      "0.q.weight": 0.0,
+      "0.k.weight": 0.0,
+      "0.value.weight": 0.0,
+      "0.out.weight": 0.0
+    },
+    {
+      "0.norm.weight": 0.0,
+      "0.norm.bias": 0.0,
+      "0.q.weight": 0.0,
+      "0.k.weight": 0.0,
+      "0.value.weight": 0.0,
+      "0.out.weight": 0.010426970198750496
+    },
+    {
+      "0.norm.weight": 2.1824916984769516e-06,
+      "0.norm.bias": 3.791251629081671e-06,
+      "0.q.weight": 1.7258160369237885e-05,
+      "0.k.weight": 2.486705307092052e-05,
+      "0.value.weight": 0.0004279548302292824,
+      "0.out.weight": 0.02300195023417473
+    },
+    {
+      "0.norm.weight": 6.8809067670372315e-06,
+      "0.norm.bias": 1.2012199476885144e-05,
+      "0.q.weight": 5.66644812352024e-05,
+      "0.k.weight": 8.503464778186753e-05,
+      "0.value.weight": 0.001374174258671701,
+      "0.out.weight": 0.03561454266309738
+    }
+  ]
+}

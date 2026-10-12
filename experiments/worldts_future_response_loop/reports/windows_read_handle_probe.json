@@ -1,0 +1,11 @@
+{
+  "held_sftp_read_handle": {
+    "replaced": false,
+    "exception": "PermissionError",
+    "winerror": 5
+  },
+  "after_handle_close": {
+    "replaced": true
+  },
+  "scope": "isolated newly created probe files, no training/status/data file modified"
+}

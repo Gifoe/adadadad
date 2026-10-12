@@ -1,0 +1,10 @@
+{
+  "snapshot": "source_snapshot_db0f3d82206a.zip",
+  "files": {
+    "train.py": "fbe703df442aad58814de42d1c7849a167427097a9bbfdcdeae4d3c7693998f8",
+    "common.py": "c6ea09aed61ba8f38bcecc14bbb5c7fb0d744d9df62045957553a5a26dabba66",
+    "response_model.py": "dd6a3555fcab0609d2b33ca31e34debe0f8390e4260ade86fccb15e3e99e2fc2",
+    "worldts_config.py": "8b71e8ebbde7443cf6271c55fa8f3f80922adf6b05b1bc780c45132dacb5bc6b"
+  },
+  "official_source_commit": "269426ea6217d7152a244da0e209d922acd46d4f"
+}

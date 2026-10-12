@@ -1,0 +1,13 @@
+{
+  "command": [
+    "D:\\baseline_reproduction_seed2021_v1\\.venv\\Scripts\\python.exe",
+    "-u",
+    "D:\\worldts_future_response_loop\\scripts\\train.py",
+    "--run-id",
+    "PJM_H360_C5_K4_s2021"
+  ],
+  "start_time": 1791754408.825225,
+  "end_time": 1791755052.717235,
+  "exit_code": 0,
+  "sha256": "6dd3ca2d1cb415f1f51ae861571543413a1bd7ab553c1c870f98b6be557d7a91"
+}

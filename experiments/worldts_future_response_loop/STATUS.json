@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "overall_complete": true,
+  "stages_completed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "completed_real_training_runs": 26,
+  "synthetic_runs": 12,
+  "optional_three_seed_expansion": false,
+  "conclusion": "E",
+  "next_decision": "INCONCLUSIVE"
+}

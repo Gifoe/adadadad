@@ -1,0 +1,17 @@
+{
+  "run_id": "PJM_H24_B1_K1_s2021",
+  "stage": 4,
+  "dataset": "PJM",
+  "horizon": 24,
+  "variant": "B1",
+  "k": 1,
+  "width": 64,
+  "seed": 2021,
+  "initialization": "checkpoint_init",
+  "optional": false,
+  "status": "PLANNED",
+  "initial_checkpoint": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\stages\\stage2_decoder_mix.pt",
+  "initial_checkpoint_sha256": "656f84c58bb04cd45b14a05f32ba06bd103e190ea33f6beeb9dc579327d1defc",
+  "pretrained_seed": 2021,
+  "training_family": "checkpoint_init_two_stage_continuation"
+}

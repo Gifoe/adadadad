@@ -1,0 +1,3 @@
+dataset,seed,parameter_relative_diff,batch32_latency_relative_diff,within_parameter_10pct,within_latency_25pct
+NP,2021,-0.05041248969432177,0.07336469950676472,True,True
+PJM,2021,0.0023775636772047637,0.07832187624516429,True,True

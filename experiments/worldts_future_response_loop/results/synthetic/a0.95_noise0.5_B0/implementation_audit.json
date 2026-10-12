@@ -1,0 +1,7 @@
+{
+  "shape_checked": true,
+  "future_target_invariance": true,
+  "finite_gradients": true,
+  "stage2_frozen": true,
+  "sampled_early_gradients": []
+}

@@ -1,0 +1,7 @@
+dataset,seed,block_length_origins,mean_mse_difference,ci95_low,ci95_high,bootstrap_repetitions,overlap_note
+NP,2021,360,-0.01056320257450943,-0.03254179845104,0.007774536775974518,2000,"Contiguous rolling-origin blocks; horizon360 overlaps handled, sensitivity to block length reported"
+NP,2021,720,-0.01056320257450943,-0.03458374098001507,0.010583382721632771,2000,"Contiguous rolling-origin blocks; horizon360 overlaps handled, sensitivity to block length reported"
+NP,2021,1680,-0.01056320257450943,-0.04019229256761092,0.013595611835581303,2000,"Contiguous rolling-origin blocks; horizon360 overlaps handled, sensitivity to block length reported"
+PJM,2021,360,0.00010047074987177548,-0.01550762012474068,0.011990005863573256,2000,"Contiguous rolling-origin blocks; horizon360 overlaps handled, sensitivity to block length reported"
+PJM,2021,720,0.00010047074987177548,-0.016686132962989597,0.012687958765528947,2000,"Contiguous rolling-origin blocks; horizon360 overlaps handled, sensitivity to block length reported"
+PJM,2021,1680,0.00010047074987177548,-0.01732387362240566,0.010789087379619082,2000,"Contiguous rolling-origin blocks; horizon360 overlaps handled, sensitivity to block length reported"

@@ -1,0 +1,20 @@
+{
+  "test_scores_used": false,
+  "expand_three_seed": false,
+  "selection": [
+    {
+      "dataset": "NP",
+      "nonrecurrent": "NP_H360_C4_K1_s2021",
+      "shared_loop": "NP_H360_C5_K2_s2021",
+      "validation_mae_gain": -0.03659847460216192
+    },
+    {
+      "dataset": "PJM",
+      "nonrecurrent": "PJM_H360_B2_K1_s2021",
+      "shared_loop": "PJM_H360_C5_K4_s2021",
+      "validation_mae_gain": -0.02453429199140844
+    }
+  ],
+  "gain_mean": -0.030566383296785182,
+  "preregistration_sha256": "222ea22a5437ed129b5871da788a6eec9a29aa4271163d70e262c039596b376f"
+}

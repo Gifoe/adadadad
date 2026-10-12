@@ -1,0 +1,17 @@
+{
+  "run_id": "NP_H360_C3_K4_s2021",
+  "stage": 3,
+  "dataset": "NP",
+  "horizon": 360,
+  "variant": "C3",
+  "k": 4,
+  "width": 64,
+  "seed": 2021,
+  "initialization": "checkpoint_init",
+  "optional": false,
+  "status": "PLANNED",
+  "initial_checkpoint": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\stages\\stage2_decoder_mix.pt",
+  "initial_checkpoint_sha256": "8752d0b807bef87405c2bbfc48741cac6936367f9dcb1ddee781266c8d11dc4f",
+  "pretrained_seed": 2021,
+  "training_family": "checkpoint_init_two_stage_continuation"
+}

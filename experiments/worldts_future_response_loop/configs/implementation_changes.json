@@ -1,0 +1,34 @@
+{
+  "primary_architectures_and_budget_unchanged_after_preregistration": true,
+  "changes": [
+    {
+      "scope": "pre-training FULL ablation correction",
+      "description": "Preserve the fixed anchor in FULL while propagating b+delta; only the propagated object differs from C5. Corrected before any FULL candidate training, without consulting candidate test metrics."
+    },
+    {
+      "scope": "preflight closure",
+      "description": "Added P(0)=0 check after five learning steps and a response-source hash check before each real training run."
+    },
+    {
+      "scope": "observational training instrumentation",
+      "description": "Record actual new-module gradient norms by epoch without changing losses, optimizer, data order or RNG."
+    },
+    {
+      "scope": "synthetic checkpoint integrity repair",
+      "description": "First synthetic attempt failed a bitwise reload assertion. State hashes match; freezing flags account for a measured 7.15e-7 CUDA forward difference. Restored model now receives the same Stage2 requires_grad configuration. First failure and diagnosis retained."
+    },
+    {
+      "scope": "post-analysis integrity",
+      "description": "Strict checkpoint reload uses the trained Stage2 freezing flags; all-origin fresh inference is compared to saved predictions with an explicit absolute tolerance1e-6."
+    },
+    {
+      "scope": "statistical implementation",
+      "description": "Moving block bootstrap samples exactly N origins, truncating its last block to the remainder; preregistered lengths, seed and repetitions unchanged."
+    },
+    {
+      "scope": "Windows status-file replacement repair",
+      "description": "Live SFTP reader blocked atomic status replacement at decoder epoch8. First candidate attempt retained; its complete Stage1 and decoder epoch7 snapshot resume the original trajectory, with model/optimizer/RNG restored. Closed the watcher and added bounded PermissionError retries. Failed-attempt wall time is reported separately from retained optimization time."
+    }
+  ],
+  "baseline_protocol_pilot": "The first continued NP B0 completed before synthetic closure. It is retained as a real completed continuation run. No candidate training started before Stage1 closure."
+}
