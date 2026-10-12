@@ -1,0 +1,7 @@
+PREFLIGHT_COMPARISON_DIAGNOSTIC NP 360 {"origin_equal": true, "target_equal": true, "target_max_difference": 0.0, "prediction_max_difference": 0.0, "pred_shape": [10125, 360, 1], "reference_shape": [10125, 360, 1]}
+Traceback (most recent call last):
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 28, in <module>
+    if __name__=='__main__':run()
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 18, in run
+    history=pd.read_csv(directory/'history.csv');s1=history[history.stage=='stage1_latent'];s2=history[history.stage=='stage2_decoder_mix'];best1=int(s1.loc[s1.validation_loss.idxmin(),'epoch']);oldval=float(s2.validation_loss.min());assert abs(val['selection_mae_batch_mean']-oldval)<1e-6
+AssertionError

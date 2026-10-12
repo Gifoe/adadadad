@@ -1,0 +1,3 @@
+dataset,method,step,predictor_gradient_cosine,latent_gradient_norm,forecast_gradient_norm,status,unused_latent_parameters,unused_forecast_parameters,predictor_mode
+NP,A1,1,0.3423803775583157,5.4702065330018526,0.37874496052750334,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A1,20,0.06659695616916261,3.2477549144058804,0.7715256333058215,VALID,0,0,train; same forward; no accumulated diagnostic gradients

@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "dataset": "NP",
+      "check": "predictor_only_update_A0",
+      "passed": true,
+      "decoded_gradient_norm": 2.0229787826538086,
+      "frozen_hash": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a"
+    },
+    {
+      "dataset": "NP",
+      "check": "predictor_only_update_A1",
+      "passed": true,
+      "decoded_gradient_norm": 2.0229787826538086,
+      "frozen_hash": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a"
+    },
+    {
+      "dataset": "NP",
+      "check": "predictor_only_update_A2",
+      "passed": true,
+      "decoded_gradient_norm": 2.0229787826538086,
+      "frozen_hash": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a"
+    },
+    {
+      "dataset": "NP",
+      "check": "target_label_and_deployment_invariance",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "official_forward_decode_and_predict_only_equivalence",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "history_revin_statistics_exact",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "checkpoint_tensor_and_output_roundtrip",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "state_gradient_through_frozen_decoder",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "manual_cosine_and_zero_gradient_handling",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "float64_forecast_metrics",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "no_grad_audit_guard",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "predictor_only_update_A0",
+      "passed": true,
+      "decoded_gradient_norm": 1.2695168256759644,
+      "frozen_hash": "01059332ae0cce7aaf251f643531c133c1d4355c6e892c0d7c0b4bda82113a94"
+    },
+    {
+      "dataset": "PJM",
+      "check": "predictor_only_update_A1",
+      "passed": true,
+      "decoded_gradient_norm": 1.2695168256759644,
+      "frozen_hash": "01059332ae0cce7aaf251f643531c133c1d4355c6e892c0d7c0b4bda82113a94"
+    },
+    {
+      "dataset": "PJM",
+      "check": "predictor_only_update_A2",
+      "passed": true,
+      "decoded_gradient_norm": 1.2695168256759644,
+      "frozen_hash": "01059332ae0cce7aaf251f643531c133c1d4355c6e892c0d7c0b4bda82113a94"
+    },
+    {
+      "dataset": "PJM",
+      "check": "target_label_and_deployment_invariance",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "official_forward_decode_and_predict_only_equivalence",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "history_revin_statistics_exact",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "checkpoint_tensor_and_output_roundtrip",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "state_gradient_through_frozen_decoder",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "manual_cosine_and_zero_gradient_handling",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "float64_forecast_metrics",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "no_grad_audit_guard",
+      "passed": true
+    }
+  ]
+}

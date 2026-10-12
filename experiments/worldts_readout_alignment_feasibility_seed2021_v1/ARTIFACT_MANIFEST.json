@@ -1,0 +1,1390 @@
+{
+  "sealed_utc": "2026-10-12T19:14:44.578591+00:00",
+  "finalized_after_orchestrator_exit": true,
+  "experiment_root": "D:\\worldts_readout_alignment_feasibility_seed2021_v1",
+  "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f",
+  "repository_parent": "1ddba1c5b81f0045b5c9a884820ef44578e926f9",
+  "formal_fits": 6,
+  "protected_baseline_inputs_verified_unchanged": [
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "8752d0b807bef87405c2bbfc48741cac6936367f9dcb1ddee781266c8d11dc4f"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\resolved_config.json",
+      "sha256": "5402b2358b5d627dd99ca81efdd5bb96ee3793b2d3e75c1f576b217f816a8f29"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\scaler.npz",
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\predictions.npz",
+      "sha256": "dec92553aabb66fb7edc7377880b5f617a336d3b1370ce38ec6f3b08e75e4ab7"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\history.csv",
+      "sha256": "a2ac632f7012724a4564f0d2fe2cb128a2b4e286661e05640e3291def681ba53"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "40050763a2e9d731eefc02b0ab26e69899246cf8dd6f59a330d58b9e18018e90"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\resolved_config.json",
+      "sha256": "d38b079da139b8234eed17b407587184381be4e7561519376c105db5736fac4c"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\scaler.npz",
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\predictions.npz",
+      "sha256": "154bd2ff9679fa085a351a78f0abb872d23141166a52e2f86a74a0e38f45469c"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\history.csv",
+      "sha256": "9737bcdbc6e2a7a02ccc2c0deff3433ed55df47f736b2a711abfbf88424be767"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "9b4ebcbc3a22268f554f9e37e92dad0da0613a6e1bf29ecd0085aa830c9d79bd"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\resolved_config.json",
+      "sha256": "07b6f3bf873b08da349e141f2c87c2adf43ce3f0015ba9741f65f7f7b6594e3c"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\scaler.npz",
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\predictions.npz",
+      "sha256": "c5f725cf732ff7c28098ba8aad2f14707fd72412820d7f32cebd426598e603c0"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\history.csv",
+      "sha256": "d455c2121f8d0d50f48f5a010f1956f6c5c006555ab21165c7475d606fb2011b"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "656f84c58bb04cd45b14a05f32ba06bd103e190ea33f6beeb9dc579327d1defc"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\resolved_config.json",
+      "sha256": "18ac64537aef3781fede2b15e8a1764ccacfdddab0a9575cbacb9d1e0af1f7c0"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\scaler.npz",
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\predictions.npz",
+      "sha256": "06a34142dab5e8a1bc3a0b8f1287aa1db896eeb3ad8e9f3bb6f56261cee17cd0"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\history.csv",
+      "sha256": "9077152b106ad3d218183a2bf01a9eb558d3ddc84fcc0d42f1466ba50c3efa5a"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\NP.csv",
+      "sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\PJM.csv",
+      "sha256": "14feec9daa86e14ba4ed062c690468fa615af6fb18ba56006149b087e26058e5"
+    }
+  ],
+  "official_source_files_verified": 312,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\.gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": ".gitignore",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\.gitignore",
+      "bytes": 97,
+      "sha256": "2b38950e36180556a17f7fb4b8420e6e64866cf36336e429c08cbfd123427b2b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/baseline_reproduction_seed2021_v1_FINAL_REPORT.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\baseline_reproduction_seed2021_v1_FINAL_REPORT.md",
+      "bytes": 15259,
+      "sha256": "81cc0ba2331f7ea84190fd9d3dd1d29af2fe06bb4e2366361333ddaf545d8c33",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/baseline_reproduction_seed2021_v1_REPRODUCE.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\baseline_reproduction_seed2021_v1_REPRODUCE.md",
+      "bytes": 5657,
+      "sha256": "e9c5a35942f660ae0df7caf1b6dfae3a53522bcba7783c8b8b33d7550fed2fa1",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/calibration.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\calibration.json",
+      "bytes": 11377,
+      "sha256": "bc00411e29bc42303a10f0038ff3c276527e737c611368c2395d1d48bd5f18ce",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/conditional_latent_loop_seed2021_v1_FINAL_REPORT.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\conditional_latent_loop_seed2021_v1_FINAL_REPORT.md",
+      "bytes": 24886,
+      "sha256": "e7b28c37a0de95bd07536c8d205f34ac03d387f1e3e172cc6b2e077857621476",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/conditional_latent_loop_seed2021_v1_REPRODUCE.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\conditional_latent_loop_seed2021_v1_REPRODUCE.md",
+      "bytes": 3422,
+      "sha256": "71b74fde7256e690f77bb8877463926fae61d92aa7155427dd9eaded0d950331",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/prior_worldts_future_response_loop_FINAL_REPORT.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\prior_worldts_future_response_loop_FINAL_REPORT.md",
+      "bytes": 161040,
+      "sha256": "100bddfd4eeebe4f2b321bba7930ed3fe1f8550d5ca1c76a14bb41ee3cadb229",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/protocol.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\protocol.json",
+      "bytes": 2288,
+      "sha256": "950d5f00a91a579b63e9e3a1b5551d794ea82247fefcb0deed413b287d8e25ce",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\source_manifest.json",
+      "bytes": 56937,
+      "sha256": "55816e5de72d74f4b3b1910ac422d30f62c0affa57c9e0906942d99450bfe49e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/TASK.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\TASK.md",
+      "bytes": 20515,
+      "sha256": "f0a032218d775678987d338bde92ef999f9cdaa9b61b7d1fae4b441788d94e7d",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "configs/training_origin_order_NP.npy",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\training_origin_order_NP.npy",
+      "bytes": 285016,
+      "sha256": "092c0df518dcf5b9075d20b58d44c324238b39cfeeacf3634a5198e29d26d98c",
+      "delivery": "server_only"
+    },
+    {
+      "path": "configs/training_origin_order_PJM.npy",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\configs\\training_origin_order_PJM.npy",
+      "bytes": 285016,
+      "sha256": "092c0df518dcf5b9075d20b58d44c324238b39cfeeacf3634a5198e29d26d98c",
+      "delivery": "server_only"
+    },
+    {
+      "path": "official_worldts_source.zip",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\official_worldts_source.zip",
+      "bytes": 405038,
+      "sha256": "e8a05c284f8917dc7859c06fff6b48cc72a690fb2f1a9202c32a1d632f7f0bed",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/ALIGNMENT_AUDIT.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\ALIGNMENT_AUDIT.md",
+      "bytes": 10978,
+      "sha256": "cff64afd0ef416051ebb112e07170afb8cae5553115a7bfb9a2be0da8f586bd7",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/alignment_summary.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\alignment_summary.json",
+      "bytes": 6536,
+      "sha256": "c61cfef5d1b359c32a46fa84ac84d02a1c1526881d5f4064032fea85dad16eef",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/audit_analysis.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\audit_analysis.json",
+      "bytes": 20963,
+      "sha256": "3db9d2385df21de845c084eb2c3640acc54d89c3742cc81a4e00f340e217d062",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/block_correlations.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\block_correlations.csv",
+      "bytes": 2928,
+      "sha256": "976cec4e32b03506a6f28d24ed5462500f0a16f9e13120e7ca8778665e5799cb",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/checkpoints/CHECKPOINT_INDEX.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\CHECKPOINT_INDEX.csv",
+      "bytes": 3260,
+      "sha256": "9153f0849dfb7e2dc802bd9118c0ecb7689bf3f4124a0dca6c2977e8c7256959",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/checkpoints/NP_A0_s2021_best.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A0_s2021_best.pt",
+      "bytes": 5405277,
+      "sha256": "93883269b7f8a62b84ea6c9f71329ae977cb84651a059af3ddd3fa7ae628e206",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/NP_A0_s2021_last.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A0_s2021_last.pt",
+      "bytes": 5405277,
+      "sha256": "c003a33089f546988c5a132770aa417624ab6a4018de17fd529cda69746398e4",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/NP_A1_s2021_best.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A1_s2021_best.pt",
+      "bytes": 5405277,
+      "sha256": "429a7e5b16d758d0593d3f35fd218bdd68b3709d183382af764cd390faf4eff2",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/NP_A1_s2021_last.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A1_s2021_last.pt",
+      "bytes": 5405277,
+      "sha256": "ab95e861f1f00f241070f172826d7a9a8a21333970a82801120d875e9b544611",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/NP_A2_s2021_best.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A2_s2021_best.pt",
+      "bytes": 5405277,
+      "sha256": "9b6f1eae2e76f06d0f0be986750b8748657ca878f7b2c9f07a8a11d6859e8c95",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/NP_A2_s2021_last.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A2_s2021_last.pt",
+      "bytes": 5405277,
+      "sha256": "d6d3480de8504cd8e4a5675b778062327231f8ca5023f0e8ab03dc219a2ff024",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/PJM_A0_s2021_best.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\PJM_A0_s2021_best.pt",
+      "bytes": 12373273,
+      "sha256": "e36ed07b4ab2ce824b8148717a0fb2407af9054514b1490b14487e10f8b1481e",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/PJM_A0_s2021_last.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\PJM_A0_s2021_last.pt",
+      "bytes": 12373273,
+      "sha256": "ee0aec8c1ad6816c03e64ba1471948c2655da1cb9846952ce594ae0cbe4c2261",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/PJM_A1_s2021_best.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\PJM_A1_s2021_best.pt",
+      "bytes": 12373273,
+      "sha256": "c34413a90f255f547f97b772ac077d589668d24fe57c5a48ab41e4a733d27f43",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/PJM_A1_s2021_last.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\PJM_A1_s2021_last.pt",
+      "bytes": 12373273,
+      "sha256": "6ccd3b97d39d3bb12ade44026e9f18d71b695ca733fa8532de78913bc22ceec4",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/PJM_A2_s2021_best.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\PJM_A2_s2021_best.pt",
+      "bytes": 12373273,
+      "sha256": "4d73cc03f31b912951e3f587ec2430c3a4ffa2c54036b30fdbc0a6fcc51bc571",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/PJM_A2_s2021_last.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\PJM_A2_s2021_last.pt",
+      "bytes": 12373273,
+      "sha256": "8a49beea0bdc3309443cd0bb18e80adc800721fa1fc0e2d5db7c9f6b093e357c",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/checkpoints/README.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\README.md",
+      "bytes": 483,
+      "sha256": "7d66967769608957942a6922285ea9c2435e9216b2a38ad9e706a0d5aed32f8f",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/error_alignment.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\error_alignment.csv",
+      "bytes": 2860653,
+      "sha256": "fd3d031da17a8b9cea6808fd1085674612142007366b8cf540283f867994df58",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/error_quartile_alignment.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\error_quartile_alignment.csv",
+      "bytes": 1527,
+      "sha256": "2bce607b33a036cfdaafd90e7f541f3db2d5ae1d4ccddbfa32fd088f89de541b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/execution_commands.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\execution_commands.json",
+      "bytes": 5567,
+      "sha256": "702c3f97d6b1aebf9fc1d8784ed999d7f6634f2b8e14801969391533dad6bfef",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/01_latent_vs_forecast.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\01_latent_vs_forecast.png",
+      "bytes": 234021,
+      "sha256": "a15c09ff6f5afe66d5685255a216dd9d713e845b1db6824f5a335d88258cfe4b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/01_latent_vs_forecast.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\01_latent_vs_forecast.svg",
+      "bytes": 1498510,
+      "sha256": "944a3b17c687ecc34f35a876ef4be7cc05d5eb2c2597ea2d8b1dc417cb6d280d",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/02_gradient_cosine_distribution.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\02_gradient_cosine_distribution.png",
+      "bytes": 36871,
+      "sha256": "409f145c020762bff913e8527fded41f0293bece00e701390b13f4386c2886cc",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/02_gradient_cosine_distribution.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\02_gradient_cosine_distribution.svg",
+      "bytes": 63224,
+      "sha256": "fee76626bf83428b7f0575da744b8779dac15fb67f7ea1685680b39fd9bd2bb3",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/03_cosine_vs_forecast_error.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\03_cosine_vs_forecast_error.png",
+      "bytes": 234614,
+      "sha256": "899f41a4b313ddcfa0584b5cdfd4196af6012a1445bfa2ed0f93284325cbbfbc",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/03_cosine_vs_forecast_error.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\03_cosine_vs_forecast_error.svg",
+      "bytes": 1497352,
+      "sha256": "180e5cef8f0b3f97104f837ec8e35b249470d6133ba97f7c705e055c6f729811",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/04_gradient_norms.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\04_gradient_norms.png",
+      "bytes": 34216,
+      "sha256": "919114f6cc8419fc38433b4e1b500fa4e0a5a69e7dd6fcb3ccb4fbc8036a0ce1",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/04_gradient_norms.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\04_gradient_norms.svg",
+      "bytes": 61138,
+      "sha256": "ef174b92ca78dc20af9c6b728af3c88c514318897764babab00a3a6e20d2afff",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/05_np_pjm_comparison.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\05_np_pjm_comparison.png",
+      "bytes": 37228,
+      "sha256": "83af66e09053bd865d9bc43e089496e240eb32ec39181ba5b59cab5a2ea129ae",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/05_np_pjm_comparison.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\05_np_pjm_comparison.svg",
+      "bytes": 34894,
+      "sha256": "23e99141a8c03bb91e1d1efe202b5f5006f6cdf86f7b7c937a9f709fe76c0fec",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/06_time_block_alignment.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\06_time_block_alignment.png",
+      "bytes": 89551,
+      "sha256": "8e457bb811974f07e26caf25cdc929785bf77b62a0f85a6143b3a59e72a08d4a",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/06_time_block_alignment.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\06_time_block_alignment.svg",
+      "bytes": 55200,
+      "sha256": "2b069239e09361362319dd9999dc3f05ade18af0c62bb6b688d203b1c6b66fbd",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/07_validation_training_curves.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\07_validation_training_curves.png",
+      "bytes": 129802,
+      "sha256": "38126ca8098af9fa01790e5516ae5eb3d7ac48a26162a8f476cb74dfe9e2ca31",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/07_validation_training_curves.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\07_validation_training_curves.svg",
+      "bytes": 59929,
+      "sha256": "b588ec057fe7b4aa00bab2f5272e10ec96337f6cff0d20899ce4c327695a9c79",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/08_training_gradient_cosine.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\08_training_gradient_cosine.png",
+      "bytes": 167520,
+      "sha256": "8c3b16c3a28475521b10d0620a1fe9b8d3b830e19d71e435e8603caadcf5afd0",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/08_training_gradient_cosine.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\08_training_gradient_cosine.svg",
+      "bytes": 49075,
+      "sha256": "7b7d8893afd6b8f76a7ca0f613e96334a6543f8e5cae5224a6e45ed0cc882594",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/09_training_time_block_gains.png",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\09_training_time_block_gains.png",
+      "bytes": 114008,
+      "sha256": "d7d8ed71562504451387c0b9a31af6e0283c9934229bb5b6e76bc71140c9ae22",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/figures/09_training_time_block_gains.svg",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\figures\\09_training_time_block_gains.svg",
+      "bytes": 53210,
+      "sha256": "0170d6a37e26137afb1b6cb50bcb269f205943cae33b1fee253711401d42963a",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/FINAL_RESEARCH_REPORT.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\FINAL_RESEARCH_REPORT.md",
+      "bytes": 11771,
+      "sha256": "0ca353bb8da71ff47b7b3ab1e2a6c368965fd87c8d8cb3869e41d3aac962ee31",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/gradient_alignment.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\gradient_alignment.csv",
+      "bytes": 2385983,
+      "sha256": "c8f4d5ebc515baae0cf3c00cdb0c02e65583cd9dde1fced4070d3230f4753f57",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/gradient_norm_summary.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\gradient_norm_summary.csv",
+      "bytes": 1802,
+      "sha256": "7125808a7262e884dfea6414992e0d43149820a6e512562dbf70a334e87d9adc",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/gradient_scale_calibration.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\gradient_scale_calibration.csv",
+      "bytes": 4224,
+      "sha256": "e9a0ee61036c34c9fb01945cccd76705ae0bc68aa487aca9603a3cdc7ca8257e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/horizon_alignment.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\horizon_alignment.csv",
+      "bytes": 585048,
+      "sha256": "ab55c0413509b1a529cbe1c756723aba91a43a79b32f6e0563ca886e65be1d34",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/horizon_alignment_raw.npz",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\horizon_alignment_raw.npz",
+      "bytes": 1382682,
+      "sha256": "fb70be786ff205c518ed2a9f88fb7bf765ba6ca7a8a72169f0f9ddf2501f784f",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/horizon_gradient_summary.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\horizon_gradient_summary.csv",
+      "bytes": 3188,
+      "sha256": "d88634b4a57683a457c70189a9e12be86d5390d3fb192e5f1f72eb42436978c1",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/improvement_concentration.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\improvement_concentration.csv",
+      "bytes": 602,
+      "sha256": "fd5ffdda0d0ded627c75ae715e531b7a87c73dd747183c022670de83c75ec0a8",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/latent_objective_components.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\latent_objective_components.csv",
+      "bytes": 57812,
+      "sha256": "b472f1ecc9ed5904924faed982e43bdeb9ace17d7feae4da97f2c9a930fc5df0",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/audit_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\audit_attempt1.log",
+      "bytes": 326,
+      "sha256": "c040d231e87ce78bfb41e80167c8b0b93996089a263a830f993499575c2c1477",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/audit_report_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\audit_report_attempt1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/calibration_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\calibration_attempt1.log",
+      "bytes": 82,
+      "sha256": "70b602012d999d21ce4dc9d860c30bfc90a26a266b5a61be6ab98b4ce8e1ac0a",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/final_report_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\final_report_attempt1.log",
+      "bytes": 3012,
+      "sha256": "5f2b21d438398e6bd2ed8e54f3a4073bb8e6dc251ac7e828e19c953f6c045cca",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/finish_reports_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\finish_reports_attempt1.log",
+      "bytes": 593,
+      "sha256": "65570611f20d74baae3f5581552ec8004274bc29bc3da0f34038098025b7490e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/finish_reports_attempt2.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\finish_reports_attempt2.log",
+      "bytes": 593,
+      "sha256": "65570611f20d74baae3f5581552ec8004274bc29bc3da0f34038098025b7490e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/finish_reports_attempt3.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\finish_reports_attempt3.log",
+      "bytes": 593,
+      "sha256": "65570611f20d74baae3f5581552ec8004274bc29bc3da0f34038098025b7490e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/formal_NP_A0_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\formal_NP_A0_attempt1.log",
+      "bytes": 748,
+      "sha256": "d0391eccc9cdf8fdaf716844a0dde6379c928c5d754f4f180af3142a3ceb297d",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/formal_NP_A1_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\formal_NP_A1_attempt1.log",
+      "bytes": 667,
+      "sha256": "9c8bdb48bc562d65b1c0643875b065d86eb39c6b323fa8adbb033709df675a1f",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/formal_NP_A2_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\formal_NP_A2_attempt1.log",
+      "bytes": 666,
+      "sha256": "cb95d4d1d4ac1c6e94ac6be65f0327e0712bc1924989d772e197413e99de131e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/formal_PJM_A0_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\formal_PJM_A0_attempt1.log",
+      "bytes": 911,
+      "sha256": "ace0a4d88bd6f0537c7f111cf77be3adf641e88638d5acbe7b8cabf1ce0d457e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/formal_PJM_A1_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\formal_PJM_A1_attempt1.log",
+      "bytes": 756,
+      "sha256": "0656cba6a899a195ae788c827a797dacfe85d4d6ad6dc257b3ab5c8142cb599e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/formal_PJM_A2_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\formal_PJM_A2_attempt1.log",
+      "bytes": 917,
+      "sha256": "bd1869ea3f1ca084ab6e95c76e588dd1d2e274b0865ebd12340dc12917f15113",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/pipeline_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\pipeline_attempt1.log",
+      "bytes": 1217,
+      "sha256": "25057dd50736925dc77df433faffb33467899cd9597dd965865c1f24f4ac47fe",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/post_audit_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\post_audit_attempt1.log",
+      "bytes": 219,
+      "sha256": "abb6b6697a650d497027e045fe938b806e26a47328069d100297dce4d0968f95",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/preflight_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\preflight_attempt1.log",
+      "bytes": 925,
+      "sha256": "521442a2f19151c96d38ed4e8442ddca4e3edea9dca029625b1bdac3170c9ae4",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/preflight_attempt2.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\preflight_attempt2.log",
+      "bytes": 647,
+      "sha256": "d617de3979e245bb2e8969eb634a0384888cd54b6caebff79c738efd3efd590f",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/preflight_attempt3.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\preflight_attempt3.log",
+      "bytes": 801,
+      "sha256": "90133d237d7e60a48c13ce6a2533b6668e1eaf24ab10c714f9bd6921f7946c1b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/preflight_attempt4.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\preflight_attempt4.log",
+      "bytes": 834,
+      "sha256": "a2490ab4159b0f2faedb0d958ebe930e2aae12f8ce02d5ff6607d598a687cc14",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/preflight_attempt5.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\preflight_attempt5.log",
+      "bytes": 2198,
+      "sha256": "fbcb9bff665064e96a2e2089fc9c97a23f2755a40162abab24d0e30167abb43a",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/logs/smoke_attempt1.log",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\logs\\smoke_attempt1.log",
+      "bytes": 147,
+      "sha256": "b69cc095f58626fd161fe439ad68020cae4379379901b3329d85dcb259c18cd3",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/NEXT_RESEARCH_DECISION.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\NEXT_RESEARCH_DECISION.md",
+      "bytes": 4332,
+      "sha256": "9f4df4450ee148570c88b33b46b61f8e4f85a1f2bf9098573a665c8167b63b47",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/paired_block_bootstrap.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\paired_block_bootstrap.csv",
+      "bytes": 16993,
+      "sha256": "1a9b5488132f007da75971cb013a1acb4cb0a090512c395b77a5e780d90ff0d0",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/post_selected_alignment.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\post_selected_alignment.csv",
+      "bytes": 7583,
+      "sha256": "5a1e6ba95fb4891daf0fdf1e81266f60159ad43bcad9e7e598d446d297a52baa",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/post_selected_audit.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\post_selected_audit.json",
+      "bytes": 179,
+      "sha256": "ece591319b46c63b69c043ef7eef96029918279d868d0b3ae2cec44be8bfcdbd",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/predictor_parameter_alignment.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\predictor_parameter_alignment.csv",
+      "bytes": 5802,
+      "sha256": "bee5a61bfce011dc5b74113615abc8297776e1f3aed209eecb4ca753e092dc3e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/preflight_metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\preflight_metrics.json",
+      "bytes": 18280,
+      "sha256": "2bb614562aa4dafbe41da47c1dbcaa4fcfe51032efc15843491d4a090e80977b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/PREFLIGHT_REPORT.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\PREFLIGHT_REPORT.md",
+      "bytes": 3525,
+      "sha256": "9ed9ea98cb99a46968642db2da205991959b2a0b59d37c7c56e48803ac888233",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/research_decision.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\research_decision.json",
+      "bytes": 3579,
+      "sha256": "2256c17f59e98b74c360dbf5c83b6ba3f765566ed603acd5f27a09e8c71a281b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/resource_summary.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\resource_summary.json",
+      "bytes": 495,
+      "sha256": "bd6c8c65075ba7836e2e853aa2e5472e71a5e9c6202cdd4812cba92eea8549f2",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A0_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A0_s2021\\curves.csv",
+      "bytes": 105491,
+      "sha256": "8d941272ed501be36f25bd871d4234e28657bf1bdff3e97818fcc19752b7b10d",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A0_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A0_s2021\\gradient_trajectory.csv",
+      "bytes": 2452,
+      "sha256": "3d0ee4bc33f38ea26a34e8de138aa39a368b23337b5dc6ce4cf8d54a0c6b20aa",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A0_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A0_s2021\\metrics.json",
+      "bytes": 2475,
+      "sha256": "5f6a24b687f279031689093bd14124eaa3254a57ad2f5b12457a7af1583ee1b1",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A0_s2021/resume.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A0_s2021\\resume.pt",
+      "bytes": 17576710,
+      "sha256": "65118109ec3a660565bb10debb468675878bab67df9bfc02320dffe26642d263",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/NP_A0_s2021/selected_validation.npz",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A0_s2021\\selected_validation.npz",
+      "bytes": 6461246,
+      "sha256": "29b60e554f1e6cbf6b1f50ee3c1553099d42ee40a2fa1ba2f6609622ab8657bf",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/NP_A0_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A0_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A0_s2021/status.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A0_s2021\\status.json",
+      "bytes": 66,
+      "sha256": "ed4290e7daf52a53482d4b3b6355047a3bf9d8579b11f05a1815c238b1568567",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A1_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A1_s2021\\curves.csv",
+      "bytes": 92839,
+      "sha256": "f7ee2bfd9e8472b39e949b8e8a3bddb75db4efe83cd274f107fac7564dba1100",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A1_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A1_s2021\\gradient_trajectory.csv",
+      "bytes": 2182,
+      "sha256": "cc3afaa2199cc4ec400a26d8b11df4f502fbe1d9dec464bbf8a0ca787cda5256",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A1_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A1_s2021\\metrics.json",
+      "bytes": 2475,
+      "sha256": "2c40766fc7897aa39567ced86a43eb5c3333771574b1eda3d19c7e7613ce7ec3",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A1_s2021/resume.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A1_s2021\\resume.pt",
+      "bytes": 17563846,
+      "sha256": "f369a9298be1921375012ab658e7dbdb1b26f0ec74c0d0cf483561ff82812ec9",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/NP_A1_s2021/selected_validation.npz",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A1_s2021\\selected_validation.npz",
+      "bytes": 6444216,
+      "sha256": "fb8b2de84be42d66528989f300888e394bbd36817f2bfe79673126fe9635b0a2",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/NP_A1_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A1_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A1_s2021/status.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A1_s2021\\status.json",
+      "bytes": 66,
+      "sha256": "c998fa898d8524cabb81500f14ae049fa29df024dc9ffe5ba17fb5655254e4da",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A2_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A2_s2021\\curves.csv",
+      "bytes": 92225,
+      "sha256": "3f0811bd70cea8e5be6e8c9ff219a8a438a1a99f68d83cf7b1f1a3e3e23fb0f0",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A2_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A2_s2021\\gradient_trajectory.csv",
+      "bytes": 2184,
+      "sha256": "35c5323cde2c295435e21496c083a3aa8a8a76cc00642993de59f69ec407f86a",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A2_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A2_s2021\\metrics.json",
+      "bytes": 2473,
+      "sha256": "90468d0bfb71e08bffebfc5ea8412608f99f8a951a41919e384b04dced7f81a3",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A2_s2021/resume.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A2_s2021\\resume.pt",
+      "bytes": 17563846,
+      "sha256": "945dc5be5cc5770f508c2e36783efc81e5437f8ebb19b2076089f3d330be091e",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/NP_A2_s2021/selected_validation.npz",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A2_s2021\\selected_validation.npz",
+      "bytes": 6446090,
+      "sha256": "cba74397ed95e7901f5736da7fce8c0c003ec18059d123d8e0265cad9253d23c",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/NP_A2_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A2_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/NP_A2_s2021/status.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\NP_A2_s2021\\status.json",
+      "bytes": 66,
+      "sha256": "c998fa898d8524cabb81500f14ae049fa29df024dc9ffe5ba17fb5655254e4da",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A0_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A0_s2021\\curves.csv",
+      "bytes": 131805,
+      "sha256": "b50b48f82bb2d7d78862b7c852b17f5292471629192bcec7e32a3245bf0b428d",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A0_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A0_s2021\\gradient_trajectory.csv",
+      "bytes": 3037,
+      "sha256": "e22cdec6a1b23e9e368918226fe2849ffa64cc1ec3d487889690261940acce6e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A0_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A0_s2021\\metrics.json",
+      "bytes": 2477,
+      "sha256": "c4534cf699a70a7fcab49fb41fa348c57740231e60fa05b69ad1771ff43925f9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A0_s2021/resume.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A0_s2021\\resume.pt",
+      "bytes": 40044294,
+      "sha256": "c2236e00d3fa8555791d6e922838775c806d739a0a6a70fa734b6b4a3a2d6a17",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/PJM_A0_s2021/selected_validation.npz",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A0_s2021\\selected_validation.npz",
+      "bytes": 6533494,
+      "sha256": "0ec99ff2eef51de3e3d0dc2fb241c6ae215b480cab56721dba92660d782ffb40",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/PJM_A0_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A0_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A0_s2021/status.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A0_s2021\\status.json",
+      "bytes": 66,
+      "sha256": "b736e799caa62c6ead252606682a714c0b4ceaf013aa97236b8ca07ba043e641",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A1_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A1_s2021\\curves.csv",
+      "bytes": 105928,
+      "sha256": "021ade5c1f5c646965eeae80ca75b1d7ba2346f3cbad07827628fec0a356f59d",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A1_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A1_s2021\\gradient_trajectory.csv",
+      "bytes": 2479,
+      "sha256": "cf0a6160a1f1d538cecd5f493620399c09d8bf7c4afc4e58700e818a7a6cbc53",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A1_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A1_s2021\\metrics.json",
+      "bytes": 2477,
+      "sha256": "8d0fbfbc0500832dedb6694ae81a1400a8cee55e04f1a8c4e76c4380c7cc97a1",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A1_s2021/resume.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A1_s2021\\resume.pt",
+      "bytes": 40018502,
+      "sha256": "ac925e5278d3af23961914b3ed13fc6ae8de77586dcfaf2b482b172fdb6abbb7",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/PJM_A1_s2021/selected_validation.npz",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A1_s2021\\selected_validation.npz",
+      "bytes": 6527703,
+      "sha256": "9174ac0a7d794d995eec90f55d641e32ea5489c705fb752c316b7ceb58137128",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/PJM_A1_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A1_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A1_s2021/status.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A1_s2021\\status.json",
+      "bytes": 66,
+      "sha256": "ed4290e7daf52a53482d4b3b6355047a3bf9d8579b11f05a1815c238b1568567",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A2_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A2_s2021\\curves.csv",
+      "bytes": 131622,
+      "sha256": "61103a1ce796d2f84c1caf18ddfac4e14f25da9e34168ea8b7fa4a258809459f",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A2_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A2_s2021\\gradient_trajectory.csv",
+      "bytes": 3032,
+      "sha256": "878cf9be0ace716ae814c174bcf25827194413e35e406e4897ac990ce531c4ae",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A2_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A2_s2021\\metrics.json",
+      "bytes": 2478,
+      "sha256": "54608e5338ae4fe5e5893da287f74d9d89610892b6fa8c023d324ff7560ea364",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A2_s2021/resume.pt",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A2_s2021\\resume.pt",
+      "bytes": 40044294,
+      "sha256": "ad6a8f608a2fc1907b66949ce48bee64f7724561f16ca8394fc98fa61a009292",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/PJM_A2_s2021/selected_validation.npz",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A2_s2021\\selected_validation.npz",
+      "bytes": 6524715,
+      "sha256": "3688a0d95a19b28b643923ba30ddcfd1415bc4b0539190e34acc372f39ea3937",
+      "delivery": "server_only"
+    },
+    {
+      "path": "outputs/runs/PJM_A2_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A2_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/runs/PJM_A2_s2021/status.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\runs\\PJM_A2_s2021\\status.json",
+      "bytes": 66,
+      "sha256": "b736e799caa62c6ead252606682a714c0b4ceaf013aa97236b8ca07ba043e641",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/selected_validation_errors.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\selected_validation_errors.csv",
+      "bytes": 1638849,
+      "sha256": "1d9afde841e2e1f9557e038309e52cf95bce1c5b8e1dcee13d727c3fbdb77b2e",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A0_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A0_s2021\\curves.csv",
+      "bytes": 5284,
+      "sha256": "fe1aa9588eb278f3efdb967b9553ca81d07e3303d38ad767e92196adda0642b7",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A0_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A0_s2021\\gradient_trajectory.csv",
+      "bytes": 432,
+      "sha256": "7cfb031d4df5feb1e41adfdf84a0c8b08962ddaed5057d6cf9fe6478b61b7e2f",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A0_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A0_s2021\\metrics.json",
+      "bytes": 470,
+      "sha256": "41a730ad8bf5b086dd6440f893f2c821a3bccf6b4919bf55192cc1457f8c9a59",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A0_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A0_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A1_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A1_s2021\\curves.csv",
+      "bytes": 5320,
+      "sha256": "7171aee882c635430c90c098011d6b7117717f39708b8d1dcad1cac5b29e104b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A1_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A1_s2021\\gradient_trajectory.csv",
+      "bytes": 434,
+      "sha256": "22b33d912ea97a77acbf97e535e8b78e8122f99cfa49ecfa60869b492f25c17b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A1_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A1_s2021\\metrics.json",
+      "bytes": 470,
+      "sha256": "b6b0e44f9a5970688d96ed5cc5a60939a8f75a28f8d6e3f261023ca952c982a4",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A1_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A1_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A2_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A2_s2021\\curves.csv",
+      "bytes": 5284,
+      "sha256": "346a6db96d4a2ec1f63d0addeedddafddea1ea472817748b350fbb3832162d7d",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A2_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A2_s2021\\gradient_trajectory.csv",
+      "bytes": 433,
+      "sha256": "b4981bd70fec190c32f74ea0aeb407ffd181433f4327166baffbeb7dce075e67",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A2_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A2_s2021\\metrics.json",
+      "bytes": 467,
+      "sha256": "713564bf2e5c544f22abcd7da18f950f439a2034192c04ef97fb73f23619fdec",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/NP_A2_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\NP_A2_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A0_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A0_s2021\\curves.csv",
+      "bytes": 5277,
+      "sha256": "8c459c3907c9eb140ccf136fa85266b6653a67efbd512c3123ba1979ef813baf",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A0_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A0_s2021\\gradient_trajectory.csv",
+      "bytes": 438,
+      "sha256": "69d8da7f065a69afa30b6c571a96d485842243bee6c6694a56e8e0c6da48559f",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A0_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A0_s2021\\metrics.json",
+      "bytes": 469,
+      "sha256": "0b5fee5f090d6da6176bc4bc87c3a0f6842911418f7968dcb7d846aeeda887bf",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A0_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A0_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A1_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A1_s2021\\curves.csv",
+      "bytes": 5311,
+      "sha256": "6f259a2f9b426c4bbfe45fabf9973236f4282c9449bf0d6d9496da2fbc1af7b3",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A1_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A1_s2021\\gradient_trajectory.csv",
+      "bytes": 437,
+      "sha256": "5ff73335f9e4fa85aca52909e23a6591870881807d72786a7d977c4890d55650",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A1_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A1_s2021\\metrics.json",
+      "bytes": 469,
+      "sha256": "d80e99461fcd44fd38740066a39cdd6b7465aa2519b772f72e170ad5976de506",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A1_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A1_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A2_s2021/curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A2_s2021\\curves.csv",
+      "bytes": 5273,
+      "sha256": "4e9f0943a17bfbaaa4cf990e5c3907084b5710ebc5b283b2f292dcb49aaf1a9b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A2_s2021/gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A2_s2021\\gradient_trajectory.csv",
+      "bytes": 438,
+      "sha256": "bd4a0280db22af252a7429d0d540e8503b114e7c2a6206da3e42c6deef15a54c",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A2_s2021/metrics.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A2_s2021\\metrics.json",
+      "bytes": 471,
+      "sha256": "3efd448447669fd7ee30f5b806f5e05338f32a8b98422b3e57621c35f17b7eef",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke/PJM_A2_s2021/source_manifest.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke\\PJM_A2_s2021\\source_manifest.json",
+      "bytes": 378,
+      "sha256": "abd21d804aca8ed51dbb01515e461f342fd51247e796755ad4e18dce5c148ae9",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/smoke_complete.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\smoke_complete.json",
+      "bytes": 94,
+      "sha256": "a9b0bd312817b0b99d0d1f50151419dd9e6f716f9635986e9d3ca8d925c54efb",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/tests_report.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\tests_report.json",
+      "bytes": 3387,
+      "sha256": "621f0258db6d8280be87c78fc0eb49b16701ed1b50313f500a39a2266e2136bc",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/time_block_alignment.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\time_block_alignment.csv",
+      "bytes": 8162,
+      "sha256": "38c6671f1d8d1fb020f704927cde469044fb866001d6fe2acc0514cc5c25dc5c",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/TRAINING_COMPARISON.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\TRAINING_COMPARISON.md",
+      "bytes": 6135,
+      "sha256": "06b1602abee057d1aae85eb6d81ae9ffaf8d4aae9af4cb1f6d799dd945fa9469",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/training_curves.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\training_curves.csv",
+      "bytes": 681326,
+      "sha256": "1f7917c88c18b38e771a8dd2ffbf5da8df219bfbd2479b912e8fa765402f0319",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/training_gradient_summary.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\training_gradient_summary.csv",
+      "bytes": 726,
+      "sha256": "eab46c95a62e2ba1da43c204cdf74032b5b2dc72870f931c218020fce24cdcfe",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/training_gradient_trajectory.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\training_gradient_trajectory.csv",
+      "bytes": 14418,
+      "sha256": "0c90f35c8b7b1d24763e162d86fa918070a46295c3224c590798212744995f60",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/training_results.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\training_results.csv",
+      "bytes": 2167,
+      "sha256": "2d8c074633057b83b57b5989537dbb803f23b219abc7b31153e8f10b5ab70262",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "outputs/training_time_block_changes.csv",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\training_time_block_changes.csv",
+      "bytes": 26882,
+      "sha256": "662dcf50e1dd754c50823052ef962a9ecdbc9760d1c46948de2b40fbb50a6766",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "README.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\README.md",
+      "bytes": 2258,
+      "sha256": "aed1b84f80352c964b1869364cdf18c2a143b520c690f978fab428db7f5d4e78",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\REPRODUCE.md",
+      "bytes": 7269,
+      "sha256": "c4f47dd10c0991365bf3093e4fe327dd23bf5e7a20fbde13a7b843afdd1f5e35",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/analyze.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\analyze.py",
+      "bytes": 28197,
+      "sha256": "7f1c5ed198851a3e5f0c61bcb6bab4c430cbf9642a34285c745a831db28e57ee",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/audit.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\audit.py",
+      "bytes": 7135,
+      "sha256": "701c11d61af6badf7401791207cb001c0fd031c3d0fcea12f4c07ac66d27c877",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\bootstrap.py",
+      "bytes": 2957,
+      "sha256": "e08a33fa96ed64424a1389b1120824dbcda3244df567e9adcc08b2b28794c316",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/calibrate.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\calibrate.py",
+      "bytes": 1676,
+      "sha256": "17a3f436d1cdcbfbfef50787c9eb3f03f5782ea91df6b75f4bd5d3b8467c8f58",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/finish_reports.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\finish_reports.py",
+      "bytes": 9882,
+      "sha256": "ec57bfc845ad5c9480cbc4981f232fa6e15e39d05cbba449f6487419fdc5bbb1",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/post_audit.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\post_audit.py",
+      "bytes": 2184,
+      "sha256": "8530187866db634777d6c0dabfa10bfd8254b102fb56ae882e28b36b7d44f3a6",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\preflight.py",
+      "bytes": 7753,
+      "sha256": "80e47565c2fe3f45623c24990d9f89f8f07508f12510752f37f3e72295f9798b",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/run_pipeline.cmd",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\run_pipeline.cmd",
+      "bytes": 375,
+      "sha256": "ae1ef67a1823f42d9a77666ec88cab4b1faa2fe2a324dbbd91102efdaa85c6df",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\run_pipeline.py",
+      "bytes": 2351,
+      "sha256": "71095087c95ceb9b3011c7c46dddfabc337bcf9f8571644ca453f39b81756d04",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/seal.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\seal.py",
+      "bytes": 2344,
+      "sha256": "1e481f3c74fd2760358bf107b6e2e8021dcefb50d6129026b770d335362a52cb",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "scripts/train.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\scripts\\train.py",
+      "bytes": 9989,
+      "sha256": "28a5ddd06e1ad42a7329e9784a9303327aedff664052ad28da2f63851bbbc9fd",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "src/ops.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\src\\ops.py",
+      "bytes": 8558,
+      "sha256": "764ef4e4cc7b304336b8ef4078bb163e46180f52fb54fdff7fb681aadaf5db11",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "STATUS.json",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\STATUS.json",
+      "bytes": 127,
+      "sha256": "9d075531ca6e1678c5cc82c3d3b3cad8ba5aa2ff70d8701e16abc5eb000836a2",
+      "delivery": "git_and_local"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "absolute_server_path": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\tests\\test_contracts.py",
+      "bytes": 3843,
+      "sha256": "f4fbb347c376320b223de98d6a73d755516d067bd9b3d08d09a1e48edec7852c",
+      "delivery": "git_and_local"
+    }
+  ],
+  "self_hash_excluded": true
+}

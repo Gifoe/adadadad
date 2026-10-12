@@ -1,0 +1,13 @@
+PREFLIGHT_COMPARISON_DIAGNOSTIC NP 360 {"origin_equal": true, "target_equal": true, "target_max_difference": 0.0, "prediction_max_difference": 0.0, "pred_shape": [10125, 360, 1], "reference_shape": [10125, 360, 1]}
+VALIDATION_REFERENCE_DIAGNOSTIC NP 360 {"computed": {"mse": 0.08761069043652887, "mae": 0.20377474903345166, "selection_mae_batch_mean": 0.20410946479030684, "n_origins": 4883}, "historical_best": 0.2036501213031656, "origin_first": 36690, "origin_last": 41572}
+PREFLIGHT_ORIGINAL_REUSE_PASS NP 360 0.0 0.20410946479030684
+PREFLIGHT_COMPARISON_DIAGNOSTIC PJM 360 {"origin_equal": true, "target_equal": true, "target_max_difference": 0.0, "prediction_max_difference": 0.0, "pred_shape": [10125, 360, 1], "reference_shape": [10125, 360, 1]}
+VALIDATION_REFERENCE_DIAGNOSTIC PJM 360 {"computed": {"mse": 0.07058001524804737, "mae": 0.16604230875010437, "selection_mae_batch_mean": 0.16614512583009558, "n_origins": 4883}, "historical_best": 0.1660741297832501, "origin_first": 36690, "origin_last": 41572}
+PREFLIGHT_ORIGINAL_REUSE_PASS PJM 360 0.0 0.16614512583009558
+PREFLIGHT_COMPARISON_DIAGNOSTIC NP 24 {"origin_equal": true, "target_equal": true, "target_max_difference": 0.0, "prediction_max_difference": 0.0, "pred_shape": [10461, 24, 1], "reference_shape": [10461, 24, 1]}
+VALIDATION_REFERENCE_DIAGNOSTIC NP 24 {"computed": {"mse": 0.030119390022837242, "mae": 0.10758692859337828, "selection_mae_batch_mean": 0.10748416323941655, "n_origins": 5219}, "historical_best": 0.1074006422082098, "origin_first": 36690, "origin_last": 41908}
+PREFLIGHT_ORIGINAL_REUSE_PASS NP 24 0.0 0.10748416323941655
+PREFLIGHT_COMPARISON_DIAGNOSTIC PJM 24 {"origin_equal": true, "target_equal": true, "target_max_difference": 0.0, "prediction_max_difference": 0.0, "pred_shape": [10461, 24, 1], "reference_shape": [10461, 24, 1]}
+VALIDATION_REFERENCE_DIAGNOSTIC PJM 24 {"computed": {"mse": 0.03982322452471099, "mae": 0.11069047645389801, "selection_mae_batch_mean": 0.11026131680871291, "n_origins": 5219}, "historical_best": 0.1104025532968524, "origin_first": 36690, "origin_last": 41908}
+PREFLIGHT_ORIGINAL_REUSE_PASS PJM 24 0.0 0.11026131680871291
+PREFLIGHT_AND_CONTRACTS_COMPLETE 22

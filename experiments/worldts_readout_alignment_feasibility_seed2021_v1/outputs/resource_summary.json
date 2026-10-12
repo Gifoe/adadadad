@@ -1,0 +1,12 @@
+{
+  "formal_command_wall_seconds": 246.79332733154297,
+  "training_and_periodic_validation_seconds": 185.71622157096863,
+  "pipeline_wall_seconds": 291.58900904655457,
+  "successful_preflight_seconds": 27.72576928138733,
+  "initial_gradient_audit_seconds": 28.707732915878296,
+  "peak_process_owned_allocated_gpu_mib": 5283.69384765625,
+  "actual_optimizer_steps": 2500,
+  "formal_fits": 6,
+  "smoke_fits": 6,
+  "seconds_do_not_include_manual_setup_and_failed_preflight_debug": true
+}

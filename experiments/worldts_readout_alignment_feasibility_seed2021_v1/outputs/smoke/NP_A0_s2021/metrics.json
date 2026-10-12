@@ -1,0 +1,12 @@
+{
+  "dataset": "NP",
+  "method": "A0",
+  "steps": 20,
+  "status": "SMOKE_PASS_NOT_FORMAL_RESULT",
+  "seconds": 1.1913557052612305,
+  "peak_gpu_mb": 1426.14794921875,
+  "frozen_unchanged": true,
+  "initial_hash": "636fda44f00fa08798b866e11dc28d79b1e843644e17ee42d3442873b426b36a",
+  "frozen_hash": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a",
+  "final_predictor_hash": "fe7d0b38942be42c24509fe8fa3aa2b9d82a4cb077c539dc96aee9073cf012c3"
+}

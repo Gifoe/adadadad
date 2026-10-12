@@ -1,0 +1,56 @@
+{
+  "run_id": "NP_A1_s2021",
+  "dataset": "NP",
+  "method": "A1",
+  "seed": 2021,
+  "lambda": 12.031270805052078,
+  "steps": 350,
+  "maximum_steps": 1000,
+  "learning_rate": 0.0001,
+  "optimizer": "Adam",
+  "batch_size": 32,
+  "validation_frequency": 50,
+  "patience_checks": 5,
+  "best_step": 100,
+  "initial_val": {
+    "mse": 0.08761069043652887,
+    "mae": 0.20377474903345166,
+    "selection_mae_batch_mean": 0.20410946479030684,
+    "n_origins": 4883
+  },
+  "best_val": {
+    "mse": 0.08449298168165521,
+    "mae": 0.20126791341104744,
+    "selection_mae_batch_mean": 0.20156601412233963,
+    "n_origins": 4883
+  },
+  "last_val": {
+    "mse": 0.0904043275906513,
+    "mae": 0.21223845230422328,
+    "selection_mae_batch_mean": 0.21255532359960033,
+    "n_origins": 4883
+  },
+  "seconds": 17.703400373458862,
+  "peak_gpu_mb": 1427.2548828125,
+  "trainable_predictor_parameters": 827944,
+  "total_parameters": 1026729,
+  "frozen_hash_before": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a",
+  "frozen_hash_after": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a",
+  "best_checkpoint": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A1_s2021_best.pt",
+  "best_checkpoint_sha256": "429a7e5b16d758d0593d3f35fd218bdd68b3709d183382af764cd390faf4eff2",
+  "last_checkpoint": "D:\\worldts_readout_alignment_feasibility_seed2021_v1\\outputs\\checkpoints\\NP_A1_s2021_last.pt",
+  "last_checkpoint_sha256": "ab95e861f1f00f241070f172826d7a9a8a21333970a82801120d875e9b544611",
+  "initial_checkpoint_sha256": "8752d0b807bef87405c2bbfc48741cac6936367f9dcb1ddee781266c8d11dc4f",
+  "initial_model_hash": "636fda44f00fa08798b866e11dc28d79b1e843644e17ee42d3442873b426b36a",
+  "training_order_sha256": "092c0df518dcf5b9075d20b58d44c324238b39cfeeacf3634a5198e29d26d98c",
+  "initial_cuda_rng_sha256": "d91ef1099460fa3042c9724401df0ac7560e76157c967bceee6e69296ad79fba",
+  "fresh_selected_validation_max_diff": 0.0,
+  "test_set_used": false,
+  "status": "COMPLETE",
+  "code_sha256": {
+    "src\\ops.py": "764ef4e4cc7b304336b8ef4078bb163e46180f52fb54fdff7fb681aadaf5db11",
+    "scripts\\train.py": "28a5ddd06e1ad42a7329e9784a9303327aedff664052ad28da2f63851bbbc9fd",
+    "configs\\protocol.json": "950d5f00a91a579b63e9e3a1b5551d794ea82247fefcb0deed413b287d8e25ce",
+    "configs\\calibration.json": "bc00411e29bc42303a10f0038ff3c276527e737c611368c2395d1d48bd5f18ce"
+  }
+}

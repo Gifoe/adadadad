@@ -1,0 +1,331 @@
+{
+  "lambda": {
+    "NP": 12.031270805052078,
+    "PJM": 5.715996374349599
+  },
+  "rule": "one per task: median initial Predictor gradient-norm ratio full_latent/forecast_MAE across16 fixed training minibatches, model eval; no validation/test tuning",
+  "training_batches": [
+    {
+      "dataset": "NP",
+      "training_batch": 0,
+      "origin_first": 720,
+      "origin_last": 751,
+      "latent_gradient_norm": 6.585735697971388,
+      "forecast_gradient_norm": 0.5363658460296494,
+      "ratio": 12.278439700665317,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 1,
+      "origin_first": 3091,
+      "origin_last": 3122,
+      "latent_gradient_norm": 16.551570133044272,
+      "forecast_gradient_norm": 2.948766023899543,
+      "ratio": 5.613049661755104,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 2,
+      "origin_first": 5463,
+      "origin_last": 5494,
+      "latent_gradient_norm": 19.15420095918162,
+      "forecast_gradient_norm": 1.544250752986057,
+      "ratio": 12.403556172560638,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 3,
+      "origin_first": 7835,
+      "origin_last": 7866,
+      "latent_gradient_norm": 10.460331367617519,
+      "forecast_gradient_norm": 0.4355678885121369,
+      "ratio": 24.015386908684032,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 4,
+      "origin_first": 10207,
+      "origin_last": 10238,
+      "latent_gradient_norm": 13.675038814297073,
+      "forecast_gradient_norm": 1.5188606270706901,
+      "ratio": 9.00348496140233,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 5,
+      "origin_first": 12579,
+      "origin_last": 12610,
+      "latent_gradient_norm": 15.829663538563684,
+      "forecast_gradient_norm": 1.6427606423049301,
+      "ratio": 9.63601338558571,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 6,
+      "origin_first": 14951,
+      "origin_last": 14982,
+      "latent_gradient_norm": 21.96619627335542,
+      "forecast_gradient_norm": 1.2488176584757869,
+      "ratio": 17.589594545104134,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 7,
+      "origin_first": 17323,
+      "origin_last": 17354,
+      "latent_gradient_norm": 14.913661704904081,
+      "forecast_gradient_norm": 0.5652196802572694,
+      "ratio": 26.38560231681224,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 8,
+      "origin_first": 19695,
+      "origin_last": 19726,
+      "latent_gradient_norm": 8.701692159937295,
+      "forecast_gradient_norm": 0.2752326896724659,
+      "ratio": 31.615765446657285,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 9,
+      "origin_first": 22067,
+      "origin_last": 22098,
+      "latent_gradient_norm": 20.90014680690766,
+      "forecast_gradient_norm": 3.186152816470925,
+      "ratio": 6.559681223971318,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 10,
+      "origin_first": 24439,
+      "origin_last": 24470,
+      "latent_gradient_norm": 6.99032732571939,
+      "forecast_gradient_norm": 1.7204711840650249,
+      "ratio": 4.063030750217547,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 11,
+      "origin_first": 26811,
+      "origin_last": 26842,
+      "latent_gradient_norm": 10.940731784400601,
+      "forecast_gradient_norm": 8.997976511801639,
+      "ratio": 1.215910240491389,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 12,
+      "origin_first": 29183,
+      "origin_last": 29214,
+      "latent_gradient_norm": 23.803868387781158,
+      "forecast_gradient_norm": 0.7882505553926996,
+      "ratio": 30.19835282694127,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 13,
+      "origin_first": 31555,
+      "origin_last": 31586,
+      "latent_gradient_norm": 6.3730167103250865,
+      "forecast_gradient_norm": 0.3370953927236988,
+      "ratio": 18.9056772886503,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 14,
+      "origin_first": 33927,
+      "origin_last": 33958,
+      "latent_gradient_norm": 13.60690959681035,
+      "forecast_gradient_norm": 1.4587628046837788,
+      "ratio": 9.327705335727948,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "NP",
+      "training_batch": 15,
+      "origin_first": 36299,
+      "origin_last": 36330,
+      "latent_gradient_norm": 34.45947915012165,
+      "forecast_gradient_norm": 2.924234652325968,
+      "ratio": 11.784101909438837,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 0,
+      "origin_first": 720,
+      "origin_last": 751,
+      "latent_gradient_norm": 10.366989200328655,
+      "forecast_gradient_norm": 1.8338235495572481,
+      "ratio": 5.653209766463968,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 1,
+      "origin_first": 3091,
+      "origin_last": 3122,
+      "latent_gradient_norm": 4.036083834504264,
+      "forecast_gradient_norm": 0.9362670198215359,
+      "ratio": 4.3108255968191544,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 2,
+      "origin_first": 5463,
+      "origin_last": 5494,
+      "latent_gradient_norm": 4.562370512280825,
+      "forecast_gradient_norm": 4.967804833175347,
+      "ratio": 0.9183876310544644,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 3,
+      "origin_first": 7835,
+      "origin_last": 7866,
+      "latent_gradient_norm": 6.257731566096199,
+      "forecast_gradient_norm": 0.8029056470622263,
+      "ratio": 7.793856711548593,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 4,
+      "origin_first": 10207,
+      "origin_last": 10238,
+      "latent_gradient_norm": 7.764423053242916,
+      "forecast_gradient_norm": 4.91318333910419,
+      "ratio": 1.580324306533732,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 5,
+      "origin_first": 12579,
+      "origin_last": 12610,
+      "latent_gradient_norm": 11.687830466217616,
+      "forecast_gradient_norm": 4.71378877234966,
+      "ratio": 2.479498134234733,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 6,
+      "origin_first": 14951,
+      "origin_last": 14982,
+      "latent_gradient_norm": 14.601271554552142,
+      "forecast_gradient_norm": 2.366711046074842,
+      "ratio": 6.169435672668259,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 7,
+      "origin_first": 17323,
+      "origin_last": 17354,
+      "latent_gradient_norm": 11.911552180226085,
+      "forecast_gradient_norm": 2.679804565687979,
+      "ratio": 4.4449331614479375,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 8,
+      "origin_first": 19695,
+      "origin_last": 19726,
+      "latent_gradient_norm": 5.257614210671753,
+      "forecast_gradient_norm": 0.5437186206116955,
+      "ratio": 9.669733592638083,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 9,
+      "origin_first": 22067,
+      "origin_last": 22098,
+      "latent_gradient_norm": 9.899777714981475,
+      "forecast_gradient_norm": 2.7588358652072356,
+      "ratio": 3.58838952321574,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 10,
+      "origin_first": 24439,
+      "origin_last": 24470,
+      "latent_gradient_norm": 13.394990062891074,
+      "forecast_gradient_norm": 0.7965420957568697,
+      "ratio": 16.81642456091819,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 11,
+      "origin_first": 26811,
+      "origin_last": 26842,
+      "latent_gradient_norm": 6.956601001081475,
+      "forecast_gradient_norm": 0.5314059639423813,
+      "ratio": 13.090935128902238,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 12,
+      "origin_first": 29183,
+      "origin_last": 29214,
+      "latent_gradient_norm": 3.5713717845636452,
+      "forecast_gradient_norm": 0.4179373281774704,
+      "ratio": 8.545232846603065,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 13,
+      "origin_first": 31555,
+      "origin_last": 31586,
+      "latent_gradient_norm": 7.2978663538773345,
+      "forecast_gradient_norm": 2.6696861005826085,
+      "ratio": 2.733604655725148,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 14,
+      "origin_first": 33927,
+      "origin_last": 33958,
+      "latent_gradient_norm": 12.722275084864453,
+      "forecast_gradient_norm": 2.2015492057712613,
+      "ratio": 5.778782982235231,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    },
+    {
+      "dataset": "PJM",
+      "training_batch": 15,
+      "origin_first": 36299,
+      "origin_last": 36330,
+      "latent_gradient_norm": 5.841725698311162,
+      "forecast_gradient_norm": 0.2854207311249816,
+      "ratio": 20.467068650851274,
+      "model_mode": "eval; initial same original Stage2 weights; no updates"
+    }
+  ],
+  "validation_or_test_used": false,
+  "protocol_sha256": "950d5f00a91a579b63e9e3a1b5551d794ea82247fefcb0deed413b287d8e25ce"
+}

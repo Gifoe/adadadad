@@ -1,0 +1,6 @@
+{
+  "src\\ops.py": "764ef4e4cc7b304336b8ef4078bb163e46180f52fb54fdff7fb681aadaf5db11",
+  "scripts\\train.py": "28a5ddd06e1ad42a7329e9784a9303327aedff664052ad28da2f63851bbbc9fd",
+  "configs\\protocol.json": "950d5f00a91a579b63e9e3a1b5551d794ea82247fefcb0deed413b287d8e25ce",
+  "configs\\calibration.json": "bc00411e29bc42303a10f0038ff3c276527e737c611368c2395d1d48bd5f18ce"
+}

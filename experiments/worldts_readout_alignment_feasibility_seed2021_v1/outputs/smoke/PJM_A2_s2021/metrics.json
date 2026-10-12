@@ -1,0 +1,12 @@
+{
+  "dataset": "PJM",
+  "method": "A2",
+  "steps": 20,
+  "status": "SMOKE_PASS_NOT_FORMAL_RESULT",
+  "seconds": 1.0020503997802734,
+  "peak_gpu_mb": 5278.51806640625,
+  "frozen_unchanged": true,
+  "initial_hash": "c8ef991c1dd657c0ee2f57758f4a9b35b911d7a25fc64a80d526ae0c5f2d99b1",
+  "frozen_hash": "01059332ae0cce7aaf251f643531c133c1d4355c6e892c0d7c0b4bda82113a94",
+  "final_predictor_hash": "7e2d71d7b1fbba8bd964cef19d38b10c7e987e7519e090a1775f04e5de4085f2"
+}

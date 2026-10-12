@@ -1,0 +1,96 @@
+{
+  "overall": "NO-GO",
+  "ordinary_decoded_supervision": "INCONCLUSIVE",
+  "new_readout_aware_loss": "NO-GO",
+  "reason": "This controlled comparison contains ordinary decoded supervision only. No specific residual failure has been shown that ordinary task supervision cannot resolve. Gradient mismatch alone does not establish novelty or the need for Jacobian supervision.",
+  "tasks": [
+    {
+      "dataset": "NP",
+      "candidate": "A1",
+      "reference": "A0",
+      "MAE_gain_percent": -3.079461832126884,
+      "CI360_low": -6.103265191046247,
+      "CI360_high": -0.24934861140958006,
+      "CI720_low": -5.595545975323083,
+      "CI720_high": -0.46093195166157974,
+      "CI1680_low": -4.844648765579919,
+      "improved_blocks_360": 5,
+      "total_blocks_360": 14
+    },
+    {
+      "dataset": "NP",
+      "candidate": "A2",
+      "reference": "A0",
+      "MAE_gain_percent": -1.7265543617974943,
+      "CI360_low": -3.5123000767005896,
+      "CI360_high": 0.04953474799037871,
+      "CI720_low": -3.2791953303770316,
+      "CI720_high": -0.08761926605340511,
+      "CI1680_low": -2.832512745206209,
+      "improved_blocks_360": 5,
+      "total_blocks_360": 14
+    },
+    {
+      "dataset": "PJM",
+      "candidate": "A1",
+      "reference": "A0",
+      "MAE_gain_percent": 1.455852153932491,
+      "CI360_low": -1.0315341580082682,
+      "CI360_high": 3.997380831761287,
+      "CI720_low": -1.1775805121366634,
+      "CI720_high": 4.132579794168107,
+      "CI1680_low": -1.4327085283340713,
+      "improved_blocks_360": 9,
+      "total_blocks_360": 14
+    },
+    {
+      "dataset": "PJM",
+      "candidate": "A2",
+      "reference": "A0",
+      "MAE_gain_percent": 1.278351686178425,
+      "CI360_low": -0.3940050505454751,
+      "CI360_high": 3.107017118997401,
+      "CI720_low": -0.49591407344061145,
+      "CI720_high": 3.3902662742744654,
+      "CI1680_low": -0.33479749901739797,
+      "improved_blocks_360": 9,
+      "total_blocks_360": 14
+    }
+  ],
+  "concentration": [
+    {
+      "dataset": "NP",
+      "candidate": "A1",
+      "fraction_origins_improved": 0.34405078844972353,
+      "top5_percent_share_of_positive_MAE_reduction": 0.43262408418392834,
+      "note": "share of positive reductions, not fraction of net effect; no window filtering"
+    },
+    {
+      "dataset": "NP",
+      "candidate": "A2",
+      "fraction_origins_improved": 0.34773704689739915,
+      "top5_percent_share_of_positive_MAE_reduction": 0.45330589558595163,
+      "note": "share of positive reductions, not fraction of net effect; no window filtering"
+    },
+    {
+      "dataset": "PJM",
+      "candidate": "A1",
+      "fraction_origins_improved": 0.5898013516280974,
+      "top5_percent_share_of_positive_MAE_reduction": 0.2910467300735684,
+      "note": "share of positive reductions, not fraction of net effect; no window filtering"
+    },
+    {
+      "dataset": "PJM",
+      "candidate": "A2",
+      "fraction_origins_improved": 0.6016792955150522,
+      "top5_percent_share_of_positive_MAE_reduction": 0.30960956474824225,
+      "note": "share of positive reductions, not fraction of net effect; no window filtering"
+    }
+  ],
+  "seeds": 1,
+  "independent_unseen_dataset_validation": false,
+  "candidate_test_evaluation": false,
+  "fairness_checks_passed": true,
+  "formal_training_runs": 6,
+  "selected_validation_bias": "same validation used for mechanism audit and checkpoint selection; bootstrap intervals are descriptive, not confirmatory generalization evidence"
+}

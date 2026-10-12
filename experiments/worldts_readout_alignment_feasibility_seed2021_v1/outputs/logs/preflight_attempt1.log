@@ -1,0 +1,10 @@
+D:\worldts_readout_alignment_feasibility_seed2021_v1\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\time_series_library\models\Crossformer.py:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  1 if l is 0 else self.win_size,
+D:\worldts_readout_alignment_feasibility_seed2021_v1\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\time_series_library\models\Crossformer.py:70: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if l is 0
+Traceback (most recent call last):
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 26, in <module>
+    if __name__=='__main__':run()
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 13, in run
+    assert np.array_equal(oo,original['origins']) and np.array_equal(target,original['true']);difference=float(np.abs(pred-original['pred']).max());assert difference<=1e-6
+AssertionError

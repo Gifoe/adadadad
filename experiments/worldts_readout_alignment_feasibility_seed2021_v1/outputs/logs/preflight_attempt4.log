@@ -1,0 +1,8 @@
+PREFLIGHT_COMPARISON_DIAGNOSTIC NP 360 {"origin_equal": true, "target_equal": true, "target_max_difference": 0.0, "prediction_max_difference": 0.0, "pred_shape": [10125, 360, 1], "reference_shape": [10125, 360, 1]}
+VALIDATION_REFERENCE_DIAGNOSTIC NP 360 {"computed": {"mse": 0.08761069043652887, "mae": 0.20377474903345166, "selection_mae_batch_mean": 0.20410946479030684, "n_origins": 4883}, "historical_best": 0.2036501213031656, "origin_first": 36690, "origin_last": 41572}
+Traceback (most recent call last):
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 30, in <module>
+    if __name__=='__main__':run()
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 20, in run
+    assert abs(val['selection_mae_batch_mean']-oldval)<1e-6
+AssertionError

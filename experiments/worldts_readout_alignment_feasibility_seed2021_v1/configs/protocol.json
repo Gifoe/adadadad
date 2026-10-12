@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-12T18:38:18.844879+00:00",
+  "source_commit": "269426ea6217d7152a244da0e209d922acd46d4f",
+  "repository_parent": "1ddba1c5b81f0045b5c9a884820ef44578e926f9",
+  "tasks": [
+    "NP",
+    "PJM"
+  ],
+  "horizon": 360,
+  "seed": 2021,
+  "training_family": "same task-specific original Stage2 checkpoint; predictor-only; all other parameters and buffers frozen",
+  "forecast_objective": "MAE in train-standardized observation units, with original history RevIN undone by original decoder",
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "batch_size": 32,
+  "max_steps": 1000,
+  "validation_frequency": 50,
+  "patience_validation_checks": 5,
+  "minimum_delta": 0.0,
+  "selection": "official unweighted mean of validation batch MAEs; Step0 is eligible; full element-weighted MAE/MSE also saved",
+  "training_order": "PCG64 permutation seed2021; identical full batch sequence and Torch dropout RNG start for A0/A1/A2",
+  "smoke_steps": 20,
+  "lambda_rule": "one per task: median initial Predictor gradient-norm ratio full_latent/forecast_MAE across16 fixed training minibatches, model eval; no validation/test tuning",
+  "audit": "all official long-horizon validation origins, contiguous batch32; predictor-parameter gradients on8 fixed validation batches",
+  "horizon_segments": [
+    [
+      0,
+      120
+    ],
+    [
+      120,
+      240
+    ],
+    [
+      240,
+      360
+    ]
+  ],
+  "gradient_cosine_epsilon": 1e-12,
+  "zero_gradient_norm_threshold": 1e-12,
+  "near_zero_cosine_abs_threshold": 0.1,
+  "time_block_lengths": [
+    360,
+    720,
+    1680
+  ],
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 9281,
+  "meaningful_validation_mae_gain": 0.01,
+  "test_policy": "Phase0 original checkpoint verification only. No candidate test forecasts or test-based decisions. Validation-selected comparisons are feasibility evidence, not unbiased generalization estimates.",
+  "decision_policy": "Separate objective conflict, useful predictor intervention and novelty. A favorable A1/A2 only supports ordinary supervision; GO to a new mechanism requires a documented remaining pattern not explained by simple supervision. No gain or no actionable remaining mechanism is NO-GO for complex readout-aware loss."
+}

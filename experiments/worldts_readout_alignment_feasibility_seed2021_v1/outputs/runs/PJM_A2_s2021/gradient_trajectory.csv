@@ -1,0 +1,22 @@
+dataset,method,step,predictor_gradient_cosine,latent_gradient_norm,forecast_gradient_norm,status,unused_latent_parameters,unused_forecast_parameters,predictor_mode
+PJM,A2,1,0.050811233353751845,3.1886406467876274,0.20506738824549792,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,25,0.2934790887591225,2.1998981950873286,0.6835912763391587,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,50,0.31053538479461873,2.239349389408889,1.59150211489692,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,75,-0.01621892431754839,1.3758732801203561,1.236055871235221,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,100,0.28961920412047254,2.257176391799944,0.31234709972692437,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,125,-0.009356746922046005,1.6044674392121823,0.25933587410639286,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,150,0.34297360866109616,1.2803503213053942,0.32196599468326176,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,175,0.20225263550150022,1.5187704927449575,0.5779710036482005,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,200,0.05651890622584525,2.0227260222520584,0.3286476037938431,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,225,0.235201308748606,1.532461909498932,0.33215512205572395,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,250,0.11528796225164999,2.25234614094738,0.6318078940033889,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,275,0.2125890940054071,1.3010743114493906,1.076295661758118,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,300,0.18912893990353338,1.6613106154789492,1.0612151866451847,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,325,0.36338660478065965,2.3815652396162896,0.7384616847487053,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,350,0.26050124343452363,2.0114182914182828,1.2426287370525453,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,375,0.22652270293466903,1.6975597750110816,0.31564946234786606,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,400,0.3419570538254517,2.0850321678149837,0.3617719731368754,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,425,0.14179271501652715,1.166519636936939,0.6665294852563296,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,450,0.07836241305748425,2.1010301618131346,0.5348216978592097,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,475,0.23806703173884114,2.5227386187376437,0.7100741450664186,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+PJM,A2,500,0.29509859594562954,1.6206684742238744,0.2961186038434067,VALID,0,0,train; same forward; no accumulated diagnostic gradients

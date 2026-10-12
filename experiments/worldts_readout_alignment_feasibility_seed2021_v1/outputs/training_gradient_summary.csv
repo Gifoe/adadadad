@@ -1,0 +1,7 @@
+dataset,method,sampled_checks,mean_parameter_cosine,minimum_parameter_cosine,negative_checks,mode
+NP,A0,17,0.46223807583945226,-0.1134273529390515,1,Predictor train; not the fixed eval validation audit
+NP,A1,15,0.3670645796173239,0.1135368175354968,0,Predictor train; not the fixed eval validation audit
+NP,A2,15,0.5025109544098457,0.1531816743783723,0,Predictor train; not the fixed eval validation audit
+PJM,A0,21,0.1441097189502436,-0.0447396630642056,1,Predictor train; not the fixed eval validation audit
+PJM,A1,17,0.10209021367017247,0.0021155280155576,0,Predictor train; not the fixed eval validation audit
+PJM,A2,21,0.20088143122951405,-0.0162189243175483,2,Predictor train; not the fixed eval validation audit

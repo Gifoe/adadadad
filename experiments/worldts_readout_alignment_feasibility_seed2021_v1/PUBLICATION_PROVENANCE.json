@@ -1,0 +1,12 @@
+{
+  "branch": "codex/worldts-readout-alignment-feasibility",
+  "repository": "Gifoe/adadadad",
+  "parent_commit": "1ddba1c5b81f0045b5c9a884820ef44578e926f9",
+  "sealed_remote_manifest_sha256": "ea85d69867148a068b992f052ce76074b7aca3fa1e07b03cee2cffa6bf1c9851",
+  "final_report_sha256": "0ca353bb8da71ff47b7b3ab1e2a6c368965fd87c8d8cb3869e41d3aac962ee31",
+  "small_artifacts": 157,
+  "large_artifacts_server_only": 27,
+  "protected_baseline_inputs_verified_unchanged": 22,
+  "pinned_source_files_verified": 312,
+  "publication_only_does_not_change_research_results": true
+}

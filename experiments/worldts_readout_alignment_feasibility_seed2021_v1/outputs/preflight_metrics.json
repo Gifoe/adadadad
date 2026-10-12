@@ -1,0 +1,469 @@
+{
+  "passed": true,
+  "tasks": [
+    {
+      "dataset": "NP",
+      "horizon": 360,
+      "initialization": "complete original Stage2 checkpoint reuse; no baseline retraining",
+      "test_verification": {
+        "mse": 0.430394854231652,
+        "mae": 0.4162013873348485,
+        "selection_mae_batch_mean": 0.4170859063383918,
+        "n_origins": 10125
+      },
+      "max_prediction_abs_diff": 0.0,
+      "validation": {
+        "mse": 0.08761069043652887,
+        "mae": 0.20377474903345166,
+        "selection_mae_batch_mean": 0.20410946479030684,
+        "n_origins": 4883,
+        "official_fixed_order_selection_mae": 0.20410946479030684,
+        "historical_shuffled_batch_mean_mae": 0.2036501213031656,
+        "possible_tail_partition_score_range": [
+          0.2034383153003816,
+          0.20474117409063342
+        ]
+      },
+      "validation_order_note": "Original loader shuffled each validation pass; unequal final batch induces partition-dependent unweighted mean. New comparisons fix chronological batches for all methods and keep the official batch-MAE criterion. Historical shuffle order was not archived; its exact score is not asserted reproducible. Current batches match official validator exactly.",
+      "original_best_validation_mae": 0.2036501213031656,
+      "original_stage1_best_epoch": 1,
+      "model_hash_before": "636fda44f00fa08798b866e11dc28d79b1e843644e17ee42d3442873b426b36a",
+      "model_hash_after": "636fda44f00fa08798b866e11dc28d79b1e843644e17ee42d3442873b426b36a",
+      "module_parameters": [
+        {
+          "module": "target_encoder",
+          "parameters": 66432,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "condition_encoder",
+          "parameters": 17024,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "predictor",
+          "parameters": 827944,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "decoder",
+          "parameters": 115329,
+          "trainable_parameters": 0,
+          "training": false
+        }
+      ],
+      "raw_target_unit": "train-standardized observation; original RevIN de-normalized inside decode",
+      "raw_scale_mean": 29.0189341782502,
+      "raw_scale_std": 9.487614364166628,
+      "test_raw_unit_mse": 38.741918054035715,
+      "test_raw_unit_mae": 3.9487582608641874
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 360,
+      "initialization": "complete original Stage2 checkpoint reuse; no baseline retraining",
+      "test_verification": {
+        "mse": 0.11508176999426906,
+        "mae": 0.20842171365996476,
+        "selection_mae_batch_mean": 0.20843916854955866,
+        "n_origins": 10125
+      },
+      "max_prediction_abs_diff": 0.0,
+      "validation": {
+        "mse": 0.07058001524804737,
+        "mae": 0.16604230875010437,
+        "selection_mae_batch_mean": 0.16614512583009558,
+        "n_origins": 4883,
+        "official_fixed_order_selection_mae": 0.16614512583009558,
+        "historical_shuffled_batch_mean_mae": 0.1660741297832501,
+        "possible_tail_partition_score_range": [
+          0.16578059517681545,
+          0.16656317625748288
+        ]
+      },
+      "validation_order_note": "Original loader shuffled each validation pass; unequal final batch induces partition-dependent unweighted mean. New comparisons fix chronological batches for all methods and keep the official batch-MAE criterion. Historical shuffle order was not archived; its exact score is not asserted reproducible. Current batches match official validator exactly.",
+      "original_best_validation_mae": 0.1660741297832501,
+      "original_stage1_best_epoch": 1,
+      "model_hash_before": "c8ef991c1dd657c0ee2f57758f4a9b35b911d7a25fc64a80d526ae0c5f2d99b1",
+      "model_hash_after": "c8ef991c1dd657c0ee2f57758f4a9b35b911d7a25fc64a80d526ae0c5f2d99b1",
+      "module_parameters": [
+        {
+          "module": "target_encoder",
+          "parameters": 102144,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "condition_encoder",
+          "parameters": 103264,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "predictor",
+          "parameters": 1891176,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "decoder",
+          "parameters": 352129,
+          "trainable_parameters": 0,
+          "training": false
+        }
+      ],
+      "raw_target_unit": "train-standardized observation; original RevIN de-normalized inside decode",
+      "raw_scale_mean": 31.53727002737804,
+      "raw_scale_std": 21.829201912662867,
+      "test_raw_unit_mse": 54.83808100817748,
+      "test_raw_unit_mae": 4.549679670466575
+    },
+    {
+      "dataset": "NP",
+      "horizon": 24,
+      "initialization": "complete original Stage2 checkpoint reuse; no baseline retraining",
+      "test_verification": {
+        "mse": 0.1672575831986386,
+        "mae": 0.21335086466645314,
+        "selection_mae_batch_mean": 0.21305296901704335,
+        "n_origins": 10461
+      },
+      "max_prediction_abs_diff": 0.0,
+      "validation": {
+        "mse": 0.030119390022837242,
+        "mae": 0.10758692859337828,
+        "selection_mae_batch_mean": 0.10748416323941655,
+        "n_origins": 5219,
+        "official_fixed_order_selection_mae": 0.10748416323941655,
+        "historical_shuffled_batch_mean_mae": 0.1074006422082098,
+        "possible_tail_partition_score_range": [
+          0.10705208615987312,
+          0.1106666421569294
+        ]
+      },
+      "validation_order_note": "Original loader shuffled each validation pass; unequal final batch induces partition-dependent unweighted mean. New comparisons fix chronological batches for all methods and keep the official batch-MAE criterion. Historical shuffle order was not archived; its exact score is not asserted reproducible. Current batches match official validator exactly.",
+      "original_best_validation_mae": 0.1074006422082098,
+      "original_stage1_best_epoch": 1,
+      "model_hash_before": "821475f558841e2d933bb39d2f60d93565c342146bdef09f798d1b6bff4b7fc8",
+      "model_hash_after": "821475f558841e2d933bb39d2f60d93565c342146bdef09f798d1b6bff4b7fc8",
+      "module_parameters": [
+        {
+          "module": "target_encoder",
+          "parameters": 66432,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "condition_encoder",
+          "parameters": 17024,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "predictor",
+          "parameters": 147160,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "decoder",
+          "parameters": 115329,
+          "trainable_parameters": 0,
+          "training": false
+        }
+      ],
+      "raw_target_unit": "train-standardized observation; original RevIN de-normalized inside decode",
+      "raw_scale_mean": 29.0189341782502,
+      "raw_scale_std": 9.487614364166628,
+      "test_raw_unit_mse": 15.055662302853749,
+      "test_raw_unit_mae": 2.0241907282168112
+    },
+    {
+      "dataset": "PJM",
+      "horizon": 24,
+      "initialization": "complete original Stage2 checkpoint reuse; no baseline retraining",
+      "test_verification": {
+        "mse": 0.05751596967883973,
+        "mae": 0.14278754282707617,
+        "selection_mae_batch_mean": 0.14251565001904964,
+        "n_origins": 10461
+      },
+      "max_prediction_abs_diff": 0.0,
+      "validation": {
+        "mse": 0.03982322452471099,
+        "mae": 0.11069047645389801,
+        "selection_mae_batch_mean": 0.11026131680871291,
+        "n_origins": 5219,
+        "official_fixed_order_selection_mae": 0.11026131680871291,
+        "historical_shuffled_batch_mean_mae": 0.1104025532968524,
+        "possible_tail_partition_score_range": [
+          0.11017701751143104,
+          0.11469510264728602
+        ]
+      },
+      "validation_order_note": "Original loader shuffled each validation pass; unequal final batch induces partition-dependent unweighted mean. New comparisons fix chronological batches for all methods and keep the official batch-MAE criterion. Historical shuffle order was not archived; its exact score is not asserted reproducible. Current batches match official validator exactly.",
+      "original_best_validation_mae": 0.1104025532968524,
+      "original_stage1_best_epoch": 1,
+      "model_hash_before": "2a87705c57eb8c01dc8730512a871b92e846d3b295e9a937f4e9882a4eb6b905",
+      "model_hash_after": "2a87705c57eb8c01dc8730512a871b92e846d3b295e9a937f4e9882a4eb6b905",
+      "module_parameters": [
+        {
+          "module": "target_encoder",
+          "parameters": 102144,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "condition_encoder",
+          "parameters": 103264,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "predictor",
+          "parameters": 529944,
+          "trainable_parameters": 0,
+          "training": false
+        },
+        {
+          "module": "decoder",
+          "parameters": 352129,
+          "trainable_parameters": 0,
+          "training": false
+        }
+      ],
+      "raw_target_unit": "train-standardized observation; original RevIN de-normalized inside decode",
+      "raw_scale_mean": 31.53727002737804,
+      "raw_scale_std": 21.829201912662867,
+      "test_raw_unit_mse": 27.407168004707973,
+      "test_raw_unit_mae": 3.1169381029852423
+    }
+  ],
+  "environment": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.18363-SP0",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "gpu_memory_bytes": 34162016256,
+    "cpu_threads": 4
+  },
+  "input_artifacts": [
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "8752d0b807bef87405c2bbfc48741cac6936367f9dcb1ddee781266c8d11dc4f"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\resolved_config.json",
+      "sha256": "5402b2358b5d627dd99ca81efdd5bb96ee3793b2d3e75c1f576b217f816a8f29"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\scaler.npz",
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\predictions.npz",
+      "sha256": "dec92553aabb66fb7edc7377880b5f617a336d3b1370ce38ec6f3b08e75e4ab7"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H360_seed2021\\history.csv",
+      "sha256": "a2ac632f7012724a4564f0d2fe2cb128a2b4e286661e05640e3291def681ba53"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "40050763a2e9d731eefc02b0ab26e69899246cf8dd6f59a330d58b9e18018e90"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\resolved_config.json",
+      "sha256": "d38b079da139b8234eed17b407587184381be4e7561519376c105db5736fac4c"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\scaler.npz",
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\predictions.npz",
+      "sha256": "154bd2ff9679fa085a351a78f0abb872d23141166a52e2f86a74a0e38f45469c"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H360_seed2021\\history.csv",
+      "sha256": "9737bcdbc6e2a7a02ccc2c0deff3433ed55df47f736b2a711abfbf88424be767"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "9b4ebcbc3a22268f554f9e37e92dad0da0613a6e1bf29ecd0085aa830c9d79bd"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\resolved_config.json",
+      "sha256": "07b6f3bf873b08da349e141f2c87c2adf43ce3f0015ba9741f65f7f7b6594e3c"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\scaler.npz",
+      "sha256": "576b1832fbcede7892e2a215fd8b5004eef687215eb8ac0b240894b16fbb5743"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\predictions.npz",
+      "sha256": "c5f725cf732ff7c28098ba8aad2f14707fd72412820d7f32cebd426598e603c0"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\NP_H24_seed2021\\history.csv",
+      "sha256": "d455c2121f8d0d50f48f5a010f1956f6c5c006555ab21165c7475d606fb2011b"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\stages\\stage2_decoder_mix.pt",
+      "sha256": "656f84c58bb04cd45b14a05f32ba06bd103e190ea33f6beeb9dc579327d1defc"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\resolved_config.json",
+      "sha256": "18ac64537aef3781fede2b15e8a1764ccacfdddab0a9575cbacb9d1e0af1f7c0"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\scaler.npz",
+      "sha256": "67dd2cf2144c15688bb9ee564a5175c5a3b9a1da19deecc6c4d270b7b2136e19"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\predictions.npz",
+      "sha256": "06a34142dab5e8a1bc3a0b8f1287aa1db896eeb3ad8e9f3bb6f56261cee17cd0"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\results\\worldts\\PJM_H24_seed2021\\history.csv",
+      "sha256": "9077152b106ad3d218183a2bf01a9eb558d3ddc84fcc0d42f1466ba50c3efa5a"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\NP.csv",
+      "sha256": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1"
+    },
+    {
+      "path": "D:\\baseline_reproduction_seed2021_v1\\data\\PJM.csv",
+      "sha256": "14feec9daa86e14ba4ed062c690468fa615af6fb18ba56006149b087e26058e5"
+    }
+  ],
+  "tests": [
+    {
+      "dataset": "NP",
+      "check": "predictor_only_update_A0",
+      "passed": true,
+      "decoded_gradient_norm": 2.0229787826538086,
+      "frozen_hash": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a"
+    },
+    {
+      "dataset": "NP",
+      "check": "predictor_only_update_A1",
+      "passed": true,
+      "decoded_gradient_norm": 2.0229787826538086,
+      "frozen_hash": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a"
+    },
+    {
+      "dataset": "NP",
+      "check": "predictor_only_update_A2",
+      "passed": true,
+      "decoded_gradient_norm": 2.0229787826538086,
+      "frozen_hash": "bf1651eae3bbeb044855b75cab8a44d200b90c84dea6d63343119ffa51dd224a"
+    },
+    {
+      "dataset": "NP",
+      "check": "target_label_and_deployment_invariance",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "official_forward_decode_and_predict_only_equivalence",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "history_revin_statistics_exact",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "checkpoint_tensor_and_output_roundtrip",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "state_gradient_through_frozen_decoder",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "manual_cosine_and_zero_gradient_handling",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "float64_forecast_metrics",
+      "passed": true
+    },
+    {
+      "dataset": "NP",
+      "check": "no_grad_audit_guard",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "predictor_only_update_A0",
+      "passed": true,
+      "decoded_gradient_norm": 1.2695168256759644,
+      "frozen_hash": "01059332ae0cce7aaf251f643531c133c1d4355c6e892c0d7c0b4bda82113a94"
+    },
+    {
+      "dataset": "PJM",
+      "check": "predictor_only_update_A1",
+      "passed": true,
+      "decoded_gradient_norm": 1.2695168256759644,
+      "frozen_hash": "01059332ae0cce7aaf251f643531c133c1d4355c6e892c0d7c0b4bda82113a94"
+    },
+    {
+      "dataset": "PJM",
+      "check": "predictor_only_update_A2",
+      "passed": true,
+      "decoded_gradient_norm": 1.2695168256759644,
+      "frozen_hash": "01059332ae0cce7aaf251f643531c133c1d4355c6e892c0d7c0b4bda82113a94"
+    },
+    {
+      "dataset": "PJM",
+      "check": "target_label_and_deployment_invariance",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "official_forward_decode_and_predict_only_equivalence",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "history_revin_statistics_exact",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "checkpoint_tensor_and_output_roundtrip",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "state_gradient_through_frozen_decoder",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "manual_cosine_and_zero_gradient_handling",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "float64_forecast_metrics",
+      "passed": true
+    },
+    {
+      "dataset": "PJM",
+      "check": "no_grad_audit_guard",
+      "passed": true
+    }
+  ],
+  "seconds": 27.72576928138733
+}

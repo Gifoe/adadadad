@@ -1,0 +1,7 @@
+PREFLIGHT_COMPARISON_DIAGNOSTIC NP 360 {"origin_equal": true, "target_equal": true, "target_max_difference": 0.0, "prediction_max_difference": 2.384185791015625e-06, "pred_shape": [10125, 360, 1], "reference_shape": [10125, 360, 1]}
+Traceback (most recent call last):
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 28, in <module>
+    if __name__=='__main__':run()
+  File "D:\worldts_readout_alignment_feasibility_seed2021_v1\scripts\preflight.py", line 15, in run
+    assert np.array_equal(oo,original['origins']) and np.array_equal(target,original['true']);assert difference<=1e-6
+AssertionError

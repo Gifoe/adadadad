@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "smoke_cases": 6,
+  "steps_each": 20,
+  "formal_training_runs": 0
+}

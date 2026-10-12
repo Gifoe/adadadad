@@ -1,0 +1,7 @@
+{
+  "seconds": 4.206827402114868,
+  "n_batches": 48,
+  "fixed_validation_batches": "same8 as initial parameter audit",
+  "no_optimizer_updates": true,
+  "test_used": false
+}

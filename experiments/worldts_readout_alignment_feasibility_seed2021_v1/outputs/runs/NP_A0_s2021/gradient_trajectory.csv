@@ -1,0 +1,18 @@
+dataset,method,step,predictor_gradient_cosine,latent_gradient_norm,forecast_gradient_norm,status,unused_latent_parameters,unused_forecast_parameters,predictor_mode
+NP,A0,1,0.3423803775583157,5.4702065330018526,0.37874496052750334,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,25,0.5952226222382947,4.695022503064921,0.9491704894099985,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,50,-0.11342735293905153,2.35013826833031,0.3602053180162669,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,75,0.6415151370421364,4.309862975055126,0.4145576586463634,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,100,0.6078559092050307,4.368755797718651,0.4824165005266727,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,125,0.5351827371581265,2.9834250331540364,0.3680963313182248,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,150,0.6149330553362394,3.4666714710129525,0.6207339683075894,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,175,0.38510495768351216,2.0384857025675767,0.4345300225110115,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,200,0.1333083799137352,2.4253164221289434,0.3294641089079617,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,225,0.5819367811901887,3.4107913009718707,0.35229800555091423,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,250,0.5670033465048464,3.621160056742681,0.3554814607529493,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,275,0.5640051014974463,3.3553694250881847,0.4493603040561109,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,300,0.5429762653200704,3.410281033593613,0.6630117179237706,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,325,0.44228018671214103,3.222326885224291,0.5900488236984881,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,350,0.23249047456443883,2.948458754764148,0.3954570358029704,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,375,0.44477305280826296,2.247482230421324,0.27878905439966817,VALID,0,0,train; same forward; no accumulated diagnostic gradients
+NP,A0,400,0.7405062574769543,7.200788240850068,1.034353882938752,VALID,0,0,train; same forward; no accumulated diagnostic gradients
