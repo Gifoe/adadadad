@@ -1,0 +1,146 @@
+[
+  {
+    "dataset": "NP",
+    "epoch": 1,
+    "train_online": {
+      "additional_loss": 5.180630664388053,
+      "latent_mse_loss": 0.236988047901675,
+      "latent_cosine_loss": 0.18283104333731767,
+      "latent_sigreg_loss": 0.6828452760903098
+    },
+    "validation_official": 6.800941925422818,
+    "validation_components": {
+      "latent_mse_loss": 0.2526701404378305,
+      "latent_cosine_loss": 0.2806982534383637,
+      "latent_sigreg_loss": 0.6376668935507731
+    },
+    "optimizer_steps": 1112,
+    "lr_next_epoch": [
+      0.001
+    ],
+    "raw_model_tensor_hash": "fc23455d7f65fbfb166aed7a692100643573a268858dd103798cca54a55777f1",
+    "best_loss_so_far": 6.800941925422818,
+    "early_stop_counter": 0,
+    "elapsed_seconds": 32.47923759999685
+  },
+  {
+    "dataset": "NP",
+    "epoch": 2,
+    "train_online": {
+      "additional_loss": 4.36246932131781,
+      "latent_mse_loss": 0.19259263742581118,
+      "latent_cosine_loss": 0.15856812626337832,
+      "latent_sigreg_loss": 0.58021060897292
+    },
+    "validation_official": 7.726920202666638,
+    "validation_components": {
+      "latent_mse_loss": 0.25934838118895986,
+      "latent_cosine_loss": 0.3383813278347838,
+      "latent_sigreg_loss": 0.5771648502038196
+    },
+    "optimizer_steps": 2224,
+    "lr_next_epoch": [
+      0.001
+    ],
+    "raw_model_tensor_hash": "1d755f3f084f9d986c0019a0c3a6380205859000ca12502d2f7b28b6fb4e5ada",
+    "best_loss_so_far": 6.800941925422818,
+    "early_stop_counter": 1,
+    "elapsed_seconds": 59.97392819999368
+  },
+  {
+    "dataset": "NP",
+    "epoch": 3,
+    "train_online": {
+      "additional_loss": 3.7063830312636257,
+      "latent_mse_loss": 0.16744156851158512,
+      "latent_cosine_loss": 0.131816472670586,
+      "latent_sigreg_loss": 0.5472025315431382
+    },
+    "validation_official": 8.148787869347466,
+    "validation_components": {
+      "latent_mse_loss": 0.25298572911156547,
+      "latent_cosine_loss": 0.37065611360898987,
+      "latent_sigreg_loss": 0.5908890950913522
+    },
+    "optimizer_steps": 3336,
+    "lr_next_epoch": [
+      0.001
+    ],
+    "raw_model_tensor_hash": "4444771119864f74ced74347a5539a95587733c81df216b414a89e67bbb82830",
+    "best_loss_so_far": 6.800941925422818,
+    "early_stop_counter": 2,
+    "elapsed_seconds": 87.43055740001728
+  },
+  {
+    "dataset": "NP",
+    "epoch": 4,
+    "train_online": {
+      "additional_loss": 3.450740611381668,
+      "latent_mse_loss": 0.15765923758794506,
+      "latent_cosine_loss": 0.12142551920825628,
+      "latent_sigreg_loss": 0.527654491740165
+    },
+    "validation_official": 8.431330344256233,
+    "validation_components": {
+      "latent_mse_loss": 0.25275420850398495,
+      "latent_cosine_loss": 0.3896438175556706,
+      "latent_sigreg_loss": 0.5913103433216319
+    },
+    "optimizer_steps": 4448,
+    "lr_next_epoch": [
+      0.0009000000000000001
+    ],
+    "raw_model_tensor_hash": "042c6fd23e462d7ac778963a0bb3e81d877f40edd99069f52f04b07bebb68072",
+    "best_loss_so_far": 6.800941925422818,
+    "early_stop_counter": 3,
+    "elapsed_seconds": 114.92557799999486
+  },
+  {
+    "dataset": "NP",
+    "epoch": 5,
+    "train_online": {
+      "additional_loss": 3.277690737153129,
+      "latent_mse_loss": 0.1525753938371865,
+      "latent_cosine_loss": 0.11339258145299747,
+      "latent_sigreg_loss": 0.5104808151025138
+    },
+    "validation_official": 8.631128289341147,
+    "validation_components": {
+      "latent_mse_loss": 0.2562306602211559,
+      "latent_cosine_loss": 0.40076248786028695,
+      "latent_sigreg_loss": 0.5738432929406758
+    },
+    "optimizer_steps": 5560,
+    "lr_next_epoch": [
+      0.0008100000000000001
+    ],
+    "raw_model_tensor_hash": "fc80024c719b761b5dc3f8869a485ab95f445553dbba8280cf65d622958b7749",
+    "best_loss_so_far": 6.800941925422818,
+    "early_stop_counter": 4,
+    "elapsed_seconds": 142.44208919999073
+  },
+  {
+    "dataset": "NP",
+    "epoch": 6,
+    "train_online": {
+      "additional_loss": 3.124757955185801,
+      "latent_mse_loss": 0.14791514230691058,
+      "latent_cosine_loss": 0.10640172408424693,
+      "latent_sigreg_loss": 0.4958067127108145
+    },
+    "validation_official": 8.668730607998917,
+    "validation_components": {
+      "latent_mse_loss": 0.2552326147268021,
+      "latent_cosine_loss": 0.4039478855195388,
+      "latent_sigreg_loss": 0.5718623738662869
+    },
+    "optimizer_steps": 6672,
+    "lr_next_epoch": [
+      0.0007290000000000002
+    ],
+    "raw_model_tensor_hash": "1426fe40801c0f162e30d5f9fe542bdf6f8a54d3b6eb155b7ca994a7f6b3e081",
+    "best_loss_so_far": 6.800941925422818,
+    "early_stop_counter": 5,
+    "elapsed_seconds": 170.0370540000149
+  }
+]

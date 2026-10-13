@@ -1,0 +1,45 @@
+The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- WorldTS
+[WorldTS] stage=stage1_latent trainable_params=2096584 num_epochs=6 lr=0.001
+AUDIT_INIT PJM 7b37caf32f6cd6b9fbe13624455fd174fb2cd838f9c895b2acab7665cf9c69d8 decoder_match_original True
+AUDIT_EPOCH_START PJM 1
+[WorldTS][validate] stage=stage1_latent epoch=1/6 valid_loss=4.442813
+[WorldTS][stage1_components] epoch=1/6 total=4.442813 latent_cosine_loss=0.159595 latent_mse_loss=0.198214 latent_sigreg_loss=0.667557
+Validation loss decreased (inf --> 4.442813).  Saving model ...
+Updating learning rate to 0.001
+AUDIT_EPOCH_DONE PJM 1 train 4.095318979282173 validation 4.442812981948354 tensor b19fe2831926ff130f5b40ff6cd918a1476a71b4d31b1a5327f47256f8403287
+AUDIT_EPOCH_START PJM 2
+[WorldTS][validate] stage=stage1_latent epoch=2/6 valid_loss=5.138296
+[WorldTS][stage1_components] epoch=2/6 total=5.138296 latent_cosine_loss=0.199594 latent_mse_loss=0.208111 latent_sigreg_loss=0.632761
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.001
+AUDIT_EPOCH_DONE PJM 2 train 4.2401612881276245 validation 5.138295959023869 tensor d6b1bf5abb6c8d193a5ca9447ef018f51fa38e8cddc5f6b0cc73c7ea9a24d941
+AUDIT_EPOCH_START PJM 3
+[WorldTS][validate] stage=stage1_latent epoch=3/6 valid_loss=6.084306
+[WorldTS][stage1_components] epoch=3/6 total=6.084306 latent_cosine_loss=0.254480 latent_mse_loss=0.220452 latent_sigreg_loss=0.625800
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.001
+AUDIT_EPOCH_DONE PJM 3 train 3.605146828529646 validation 6.084305598065744 tensor 586cad3517c2a3d7d5fb1fa89cc9c0b7c80777a6822e9f4430ba0998f08463d2
+AUDIT_EPOCH_START PJM 4
+[WorldTS][validate] stage=stage1_latent epoch=4/6 valid_loss=6.866174
+[WorldTS][stage1_components] epoch=4/6 total=6.866174 latent_cosine_loss=0.294850 latent_mse_loss=0.238206 latent_sigreg_loss=0.613667
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.0009000000000000001
+AUDIT_EPOCH_DONE PJM 4 train 3.1501788038144007 validation 6.86617350422479 tensor de6c4d0a81dcdd02c71b8423ead351304c19e6ed7ec06b504fceaa60d9afe401
+AUDIT_EPOCH_START PJM 5
+[WorldTS][validate] stage=stage1_latent epoch=5/6 valid_loss=7.412258
+[WorldTS][stage1_components] epoch=5/6 total=7.412258 latent_cosine_loss=0.326100 latent_mse_loss=0.245977 latent_sigreg_loss=0.609860
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0008100000000000001
+AUDIT_EPOCH_DONE PJM 5 train 2.829082391244902 validation 7.4122578396516685 tensor ef096885dda15b9c27cdf4a4c1e48c8484d9f04b1851d200475c482b1c8ceafb
+AUDIT_EPOCH_START PJM 6
+[WorldTS][validate] stage=stage1_latent epoch=6/6 valid_loss=7.719749
+[WorldTS][stage1_components] epoch=6/6 total=7.719749 latent_cosine_loss=0.345815 latent_mse_loss=0.247151 latent_sigreg_loss=0.610131
+EarlyStopping counter: 5 out of 5
+Updating learning rate to 0.0007290000000000002
+AUDIT_EPOCH_DONE PJM 6 train 2.6437670041760093 validation 7.719748939564026 tensor b752e7b71637d0726be32ea129edb999745118e2f233cc1c40d0f98299a3aba2
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+AUDIT_STAGE1_COMPLETE PJM

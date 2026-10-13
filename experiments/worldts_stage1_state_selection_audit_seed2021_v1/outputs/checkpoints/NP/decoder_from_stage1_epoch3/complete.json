@@ -1,0 +1,15 @@
+{
+  "dataset": "NP",
+  "stage1_epoch": 3,
+  "decoder_epochs": 20,
+  "best_decoder_epoch": 17,
+  "best_val_select_mae_batch_mean": 0.17204151111979818,
+  "last_val_select_mae_batch_mean": 0.17234894217446792,
+  "decoder_init_tensor_hash": "d5a3cd5a9d18d9b2228b401a591507e48d030ab580040ac85ff7c7557cd4a4d8",
+  "frozen_stage1_tensor_hash": "fffa265367822aa4de06dc3bcdb369db0de6021c3cfa2c50b49965f73d3d5b9d",
+  "stage1_file_sha256": "db3f4c91bda26372e4c7bb47ea8960e300d29e5f1d8be4ae114a3045d5134b37",
+  "optimizer_steps": 22240,
+  "elapsed_seconds": 275.34792440000456,
+  "peak_cuda_mib": 390.4150390625,
+  "protocol_sha256": "8906c900c0a55d19f0c829c50959af6690049623adb1263c45a99f4d05c614e3"
+}

@@ -1,0 +1,11 @@
+# WorldTS Stage-1 state-selection audit (seed 2021, version 1)
+
+This experiment asks whether selecting the lowest WorldTS Stage-1 latent validation loss also selects the most useful frozen state for forecasting. It examines NP and PJM with a 720-hour history and 360-hour horizon. The pinned WorldTS source is commit `269426ea6217d7152a244da0e209d922acd46d4f`; `official_worldts_source.zip` and `configs/source_manifest.json` preserve the 312 audited source files.
+
+The original baseline retained the restored epoch-1 best checkpoint and the raw epoch-6 resume state, but did not retain raw epoch 3. `scripts/stage1_replay.py` uses the pinned official training method and saves all six raw epochs, including full optimizer and RNG recovery state. Its replay reproduces the original epoch-1 and epoch-6 model tensor hashes and entire six-epoch validation curves for both tasks. The exact runtime instrumentation is recorded in `outputs/stage1_instrumentation.json`.
+
+The fixed comparison has six decoder fits: NP/PJM × Stage-1 epochs 1/3/6. Each fit uses the same task-specific untrained Decoder weights, original Stage-2 objective, randomized Train order, 20 complete epochs and 22,240 optimizer steps. `V_select` chooses the Decoder checkpoint; `V_diagnostic` is evaluated only after all six choices are locked. Its windows are separated from selection windows by 1,079 unused raw hours. The full historical validation interval was used in earlier research, so this diagnostic set is time isolated for this audit but not historically untouched.
+
+Reports and compact raw CSV files are under `outputs/`. Large weight files and diagnostic prediction arrays remain on the remote server at `D:\worldts_stage1_state_selection_audit_seed2021_v1\outputs\checkpoints`. `outputs/checkpoint_hashes.json` records their paths and SHA-256 values. The original baseline under `D:\baseline_reproduction_seed2021_v1` is read-only for this audit. No original Test prediction or score is used.
+
+Start with `outputs/FINAL_RESEARCH_REPORT.md` for the six requested answers. `REPRODUCE.md` lists the exact execution order and environment. `configs/protocol.json` was frozen before the formal decoder matrix and contains the selection windows, partition seeds, effect scale and decision rules.

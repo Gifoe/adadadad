@@ -1,0 +1,41 @@
+{
+  "status": "NO_GO_NEW_STATE_SELECTION_METHOD",
+  "reason": "NP 的较晚状态只在选择集上明显更好，在时间隔离诊断集上方向反转；另一任务没有同向的选择集收益。未满足预设跨任务和区块稳定性门槛，不据此开发新状态选择方法。",
+  "per_dataset": {
+    "NP": {
+      "latent_best_epoch": 1,
+      "forecast_best_select_epoch": 3,
+      "forecast_best_diagnostic_epoch_descriptive": 1,
+      "select_gain_over_epoch1": 0.09266695652546902,
+      "select_gain_over_runnerup": 0.09266695652546902,
+      "diagnostic_gain_winner_vs_epoch1": -0.15765182434445107,
+      "same_step20_select_gain_vs_epoch1": 0.09475111186305828,
+      "descriptive_block_stability": false,
+      "strong_later_select_signal": true,
+      "clear_later_state_selection_signal": false,
+      "later_worse_than_epoch1": false,
+      "decoder_init_hashes_identical": true,
+      "step_counts_equal": true
+    },
+    "PJM": {
+      "latent_best_epoch": 1,
+      "forecast_best_select_epoch": 1,
+      "forecast_best_diagnostic_epoch_descriptive": 3,
+      "select_gain_over_epoch1": 0.0,
+      "select_gain_over_runnerup": 0.06727403946002113,
+      "diagnostic_gain_winner_vs_epoch1": 0.0,
+      "same_step20_select_gain_vs_epoch1": 0.0,
+      "descriptive_block_stability": false,
+      "strong_later_select_signal": false,
+      "clear_later_state_selection_signal": false,
+      "later_worse_than_epoch1": false,
+      "decoder_init_hashes_identical": true,
+      "step_counts_equal": true
+    }
+  },
+  "effect_scale": 0.02,
+  "diagnostic_is_not_historically_unseen": true,
+  "new_method_trained": false,
+  "new_test_scores_used": false,
+  "research_scope": "single seed, two datasets, 20-epoch matched decoder budget; no causal mechanism uniquely identified"
+}

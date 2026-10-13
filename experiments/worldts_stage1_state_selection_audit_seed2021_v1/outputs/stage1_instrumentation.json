@@ -1,0 +1,25 @@
+{
+  "official_source_sha256": "20dec8b07fc8b26b555856bc4ffade7901cbc483a22151e5c12748f14c0fdbb0",
+  "modifications": [
+    {
+      "old": "    for epoch in range(num_epochs):",
+      "new": "    self._audit_prepare_resume(stage, optimizer, early_stop)\n    if self._audit_start_epoch:\n        stage_best_loss = self._audit_prior_best_loss\n        stage_best_state = self._audit_prior_best_state\n    for epoch in range(self._audit_start_epoch, num_epochs):"
+    },
+    {
+      "old": "        self.model.train()\n        if stage.startswith('stage2'):",
+      "new": "        self._audit_epoch_start(epoch + 1)\n        self.model.train()\n        if stage.startswith('stage2'):"
+    },
+    {
+      "old": "            output = out_loss['output']",
+      "new": "            self._audit_train_batch(out_loss)\n            output = out_loss['output']"
+    },
+    {
+      "old": "                    if early_stop.early_stop:\n                        break",
+      "new": "                    if early_stop.early_stop:\n                        pass  # audit captures the prescribed raw epoch 6"
+    },
+    {
+      "old": "        if (\n            debug_batch_forecast_callback is not None",
+      "new": "        self._audit_epoch_end(stage, epoch + 1, optimizer, early_stop, stage_best_loss, stage_best_state, valid_loss)\n\n        if (\n            debug_batch_forecast_callback is not None"
+    }
+  ]
+}

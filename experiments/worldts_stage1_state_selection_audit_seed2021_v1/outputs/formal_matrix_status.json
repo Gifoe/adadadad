@@ -1,0 +1,12 @@
+{
+  "stage": "complete",
+  "completed": [
+    "NP_1",
+    "NP_3",
+    "NP_6",
+    "PJM_1",
+    "PJM_3",
+    "PJM_6"
+  ],
+  "all_six_locked": true
+}

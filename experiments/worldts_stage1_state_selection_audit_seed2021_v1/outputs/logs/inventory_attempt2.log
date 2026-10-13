@@ -1,0 +1,5 @@
+D:\worldts_stage1_state_selection_audit_seed2021_v1\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\time_series_library\models\Crossformer.py:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  1 if l is 0 else self.win_size,
+D:\worldts_stage1_state_selection_audit_seed2021_v1\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\time_series_library\models\Crossformer.py:70: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if l is 0
+INVENTORY_COMPLETE_RAW6_BEST1_NO3

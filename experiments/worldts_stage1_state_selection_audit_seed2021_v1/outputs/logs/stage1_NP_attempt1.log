@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\worldts_stage1_state_selection_audit_seed2021_v1\scripts\stage1_replay.py", line 160, in <module>
+    modifications = instrument_official_method()
+  File "D:\worldts_stage1_state_selection_audit_seed2021_v1\scripts\stage1_replay.py", line 34, in instrument_official_method
+    assert revised.count(old) == 1, old
+AssertionError:         for epoch in range(num_epochs):

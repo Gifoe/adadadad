@@ -1,0 +1,45 @@
+The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- WorldTS
+[WorldTS] stage=stage1_latent trainable_params=911400 num_epochs=6 lr=0.001
+AUDIT_INIT NP e0fc93832625e7d1f92a8cf969610bdbbb4627dfdb811feeeef6e08931cf239c decoder_match_original True
+AUDIT_EPOCH_START NP 1
+[WorldTS][validate] stage=stage1_latent epoch=1/6 valid_loss=6.800942
+[WorldTS][stage1_components] epoch=1/6 total=6.800942 latent_cosine_loss=0.280698 latent_mse_loss=0.252670 latent_sigreg_loss=0.637667
+Validation loss decreased (inf --> 6.800942).  Saving model ...
+Updating learning rate to 0.001
+AUDIT_EPOCH_DONE NP 1 train 5.180630664388053 validation 6.800941925422818 tensor fc23455d7f65fbfb166aed7a692100643573a268858dd103798cca54a55777f1
+AUDIT_EPOCH_START NP 2
+[WorldTS][validate] stage=stage1_latent epoch=2/6 valid_loss=7.726920
+[WorldTS][stage1_components] epoch=2/6 total=7.726920 latent_cosine_loss=0.338381 latent_mse_loss=0.259348 latent_sigreg_loss=0.577165
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.001
+AUDIT_EPOCH_DONE NP 2 train 4.36246932131781 validation 7.726920202666638 tensor 1d755f3f084f9d986c0019a0c3a6380205859000ca12502d2f7b28b6fb4e5ada
+AUDIT_EPOCH_START NP 3
+[WorldTS][validate] stage=stage1_latent epoch=3/6 valid_loss=8.148788
+[WorldTS][stage1_components] epoch=3/6 total=8.148788 latent_cosine_loss=0.370656 latent_mse_loss=0.252986 latent_sigreg_loss=0.590889
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.001
+AUDIT_EPOCH_DONE NP 3 train 3.7063830312636257 validation 8.148787869347466 tensor 4444771119864f74ced74347a5539a95587733c81df216b414a89e67bbb82830
+AUDIT_EPOCH_START NP 4
+[WorldTS][validate] stage=stage1_latent epoch=4/6 valid_loss=8.431330
+[WorldTS][stage1_components] epoch=4/6 total=8.431330 latent_cosine_loss=0.389644 latent_mse_loss=0.252754 latent_sigreg_loss=0.591310
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.0009000000000000001
+AUDIT_EPOCH_DONE NP 4 train 3.450740611381668 validation 8.431330344256233 tensor 042c6fd23e462d7ac778963a0bb3e81d877f40edd99069f52f04b07bebb68072
+AUDIT_EPOCH_START NP 5
+[WorldTS][validate] stage=stage1_latent epoch=5/6 valid_loss=8.631128
+[WorldTS][stage1_components] epoch=5/6 total=8.631128 latent_cosine_loss=0.400762 latent_mse_loss=0.256231 latent_sigreg_loss=0.573843
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0008100000000000001
+AUDIT_EPOCH_DONE NP 5 train 3.277690737153129 validation 8.631128289341147 tensor fc80024c719b761b5dc3f8869a485ab95f445553dbba8280cf65d622958b7749
+AUDIT_EPOCH_START NP 6
+[WorldTS][validate] stage=stage1_latent epoch=6/6 valid_loss=8.668731
+[WorldTS][stage1_components] epoch=6/6 total=8.668731 latent_cosine_loss=0.403948 latent_mse_loss=0.255233 latent_sigreg_loss=0.571862
+EarlyStopping counter: 5 out of 5
+Updating learning rate to 0.0007290000000000002
+AUDIT_EPOCH_DONE NP 6 train 3.124757955185801 validation 8.668730607998917 tensor 1426fe40801c0f162e30d5f9fe542bdf6f8a54d3b6eb155b7ca994a7f6b3e081
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+[WorldTS] missing keys: []
+[WorldTS] unexpected keys: []
+AUDIT_STAGE1_COMPLETE NP

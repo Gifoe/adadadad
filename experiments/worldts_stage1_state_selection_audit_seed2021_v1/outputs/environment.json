@@ -1,0 +1,22 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\baseline_reproduction_seed2021_v1\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.18363-SP0",
+  "torch": "2.8.0+cu128",
+  "torch_cuda": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "gpu_total_mib": 32579.4375,
+  "numpy": "1.26.4",
+  "pandas": "2.3.3",
+  "sklearn": "1.7.2",
+  "matplotlib": "3.10.8",
+  "cpu_affinity_mask_hex": "0xffff0000",
+  "omp_num_threads": "4",
+  "mkl_num_threads": "4",
+  "data_sha256": {
+    "NP": "29e142d895fa3254bf138e3bec32051e081794a7393a642db36a5d21859d36e1",
+    "PJM": "14feec9daa86e14ba4ed062c690468fa615af6fb18ba56006149b087e26058e5"
+  },
+  "source_zip_sha256": "e8a05c284f8917dc7859c06fff6b48cc72a690fb2f1a9202c32a1d632f7f0bed",
+  "protocol_sha256": "8906c900c0a55d19f0c829c50959af6690049623adb1263c45a99f4d05c614e3"
+}

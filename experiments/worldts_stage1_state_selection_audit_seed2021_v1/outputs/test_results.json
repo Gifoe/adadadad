@@ -1,0 +1,336 @@
+{
+  "checks": [
+    {
+      "check": "NP_snapshot_restore_ep1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_snapshot_restore_ep2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_snapshot_restore_ep3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_snapshot_restore_ep4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_snapshot_restore_ep5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_snapshot_restore_ep6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_encoder_predictor_condition_distinct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_best_restore_not_epoch6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_frozen_stage1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_original_untrained_decoder_match",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_common_origins",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_raw_support_embargo",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_common_decoder_init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_future_label_foil",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_revin_inverse",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_prediction_repeat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_official_decoder_objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_stage2_updates_only_decoder",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_partition_91001",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_partition_91002",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_partition_91003",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_partition_91004",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_partition_91005",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_independent_forecast_metrics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_1_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_1_2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_1_20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_3_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_3_17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_3_20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_6_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_6_5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "NP_decoder_checkpoint_6_20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_snapshot_restore_ep1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_snapshot_restore_ep2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_snapshot_restore_ep3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_snapshot_restore_ep4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_snapshot_restore_ep5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_snapshot_restore_ep6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_encoder_predictor_condition_distinct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_best_restore_not_epoch6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_frozen_stage1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_original_untrained_decoder_match",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_common_origins",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_raw_support_embargo",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_common_decoder_init",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_future_label_foil",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_revin_inverse",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_prediction_repeat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_official_decoder_objective",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_stage2_updates_only_decoder",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_partition_91001",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_partition_91002",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_partition_91003",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_partition_91004",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_partition_91005",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_independent_forecast_metrics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_1_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_1_19",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_1_20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_3_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_3_17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_3_20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_6_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_6_17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PJM_decoder_checkpoint_6_20",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "passed": 66,
+  "failed": 0
+}

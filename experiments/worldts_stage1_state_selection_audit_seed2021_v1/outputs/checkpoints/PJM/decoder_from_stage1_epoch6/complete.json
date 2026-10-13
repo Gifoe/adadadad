@@ -1,0 +1,15 @@
+{
+  "dataset": "PJM",
+  "stage1_epoch": 6,
+  "decoder_epochs": 20,
+  "best_decoder_epoch": 17,
+  "best_val_select_mae_batch_mean": 0.1617417451600696,
+  "last_val_select_mae_batch_mean": 0.1618157282125118,
+  "decoder_init_tensor_hash": "b26ac8588014fe40d705db6d7db2afe5b55a0402aa650c1bddae3cb02e244f5e",
+  "frozen_stage1_tensor_hash": "2b8fbaa62fc5acf2f926e2a123126c6aeb16723d0c64deb025204d379ff29737",
+  "stage1_file_sha256": "7857a381c24bb675e93f4422d241edb722183b4decb03bf2c268e110d7b40a87",
+  "optimizer_steps": 22240,
+  "elapsed_seconds": 424.89514249999775,
+  "peak_cuda_mib": 1269.60107421875,
+  "protocol_sha256": "8906c900c0a55d19f0c829c50959af6690049623adb1263c45a99f4d05c614e3"
+}

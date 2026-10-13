@@ -1,0 +1,9 @@
+upstream/
+__pycache__/
+*.pt
+*.npz
+*.npy
+*.tmp
+!outputs/
+!outputs/logs/
+!outputs/logs/**

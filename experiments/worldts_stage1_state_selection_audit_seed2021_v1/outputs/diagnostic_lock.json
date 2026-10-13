@@ -1,0 +1,13 @@
+{
+  "all_six_fits_completed_before_first_diagnostic": true,
+  "selection_locked": {
+    "NP_1": 2,
+    "NP_3": 17,
+    "NP_6": 5,
+    "PJM_1": 19,
+    "PJM_3": 17,
+    "PJM_6": 17
+  },
+  "results_sha256": "24f140237a0c6a954d93013f73cedc624930ee04aa6dfe16956f379ac5227ff3",
+  "diagnostic_is_not_historically_unseen": true
+}
