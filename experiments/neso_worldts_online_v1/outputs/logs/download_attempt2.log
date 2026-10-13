@@ -1,0 +1,169 @@
+DOWNLOAD_START forecast_2025 attempt=1 https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/fc13df13-2dad-4a1c-b9e3-4569efba4955/download/embedded_archive_2025.csv
+DOWNLOAD_PROGRESS forecast_2025 bytes=33554432
+DOWNLOAD_PROGRESS forecast_2025 bytes=67108864
+DOWNLOAD_PROGRESS forecast_2025 bytes=100663296
+DOWNLOAD_PROGRESS forecast_2025 bytes=134217728
+DOWNLOAD_PROGRESS forecast_2025 bytes=167772160
+DOWNLOAD_PROGRESS forecast_2025 bytes=201326592
+DOWNLOAD_PROGRESS forecast_2025 bytes=234881024
+DOWNLOAD_PROGRESS forecast_2025 bytes=268435456
+DOWNLOAD_PROGRESS forecast_2025 bytes=301989888
+DOWNLOAD_PROGRESS forecast_2025 bytes=335544320
+DOWNLOAD_PROGRESS forecast_2025 bytes=369098752
+DOWNLOAD_PROGRESS forecast_2025 bytes=402653184
+DOWNLOAD_PROGRESS forecast_2025 bytes=436207616
+DOWNLOAD_PROGRESS forecast_2025 bytes=469762048
+DOWNLOAD_PROGRESS forecast_2025 bytes=503316480
+DOWNLOAD_PROGRESS forecast_2025 bytes=536870912
+DOWNLOAD_PROGRESS forecast_2025 bytes=570425344
+DOWNLOAD_PROGRESS forecast_2025 bytes=603979776
+DOWNLOAD_PROGRESS forecast_2025 bytes=637534208
+{
+  "resource_id": "fc13df13-2dad-4a1c-b9e3-4569efba4955",
+  "name": "forecast_2025",
+  "source_url": "https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/fc13df13-2dad-4a1c-b9e3-4569efba4955/download/embedded_archive_2025.csv",
+  "file": "data\\raw\\forecast_2025.csv",
+  "size_bytes": 645655728,
+  "sha256": "8a9e75dace7f99590f00ffd025a817a397ba63e55ab88d03194f31d7c0e468b9",
+  "resource_metadata": {
+    "cache_last_updated": null,
+    "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+    "datastore_active": true,
+    "id": "fc13df13-2dad-4a1c-b9e3-4569efba4955",
+    "size": null,
+    "metadata_modified": "2026-01-18T13:10:41.508697",
+    "state": "active",
+    "hash": "",
+    "description": "All half hourly 0-14 day ahead embedded wind and solar forecasts published during 2025. ",
+    "format": "CSV",
+    "mimetype_inner": null,
+    "url_type": "upload",
+    "datastore_unique_keys": [],
+    "mimetype": null,
+    "cache_url": null,
+    "name": "Embedded Solar and Wind Forecast Archive 2025",
+    "created": "2025-05-27T13:58:02.826878",
+    "url": "https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/fc13df13-2dad-4a1c-b9e3-4569efba4955/download/embedded_archive_2025.csv",
+    "datastore_append_or_update": false,
+    "last_modified": "2026-01-17T07:00:51.043062",
+    "position": 8,
+    "revision_id": "2f51aa1b-1137-4dd6-a502-2724ae02ca28",
+    "resource_type": null
+  },
+  "download_failures": [],
+  "downloaded_utc": "2026-10-13T16:52:34Z"
+}
+RESOURCE_UNAVAILABLE_RECORDED forecast_2026_jan_jun
+DOWNLOAD_START forecast_2026_jun_dec attempt=1 https://api.neso.energy/datastore/dump/31861619-0b86-47ba-bac2-d008a760af54
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=33579271
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=67166145
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=100726967
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=134293986
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=167855899
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=201432976
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=235014777
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=268577502
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=302151533
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=335723085
+DOWNLOAD_PROGRESS forecast_2026_jun_dec bytes=369277819
+{
+  "resource_id": "31861619-0b86-47ba-bac2-d008a760af54",
+  "name": "forecast_2026_jun_dec",
+  "source_url": "https://api.neso.energy/datastore/dump/31861619-0b86-47ba-bac2-d008a760af54",
+  "file": "data\\raw\\forecast_2026_jun_dec.csv",
+  "size_bytes": 386036843,
+  "sha256": "bf24ae01485dde595f97995eee7f48942027afcdf1e5bbf97ad92f0efb3a6f88",
+  "resource_metadata": {
+    "mimetype": "text/csv",
+    "cache_url": null,
+    "name": "Embedded Solar and Wind Forecast Archive 2026",
+    "hash": "",
+    "description": "All half hourly 0-14 day ahead embedded wind and solar forecasts published for the year 2026.",
+    "metadata_modified": "2026-10-13T16:27:04.002750",
+    "cache_last_updated": null,
+    "url": "https://api.neso.energy/datastore/dump/31861619-0b86-47ba-bac2-d008a760af54",
+    "datastore_active": true,
+    "format": "CSV",
+    "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+    "created": "2026-03-31T14:00:22.419468",
+    "state": "active",
+    "mimetype_inner": null,
+    "last_modified": "2026-07-28T16:19:45.553879",
+    "position": 9,
+    "revision_id": "ada9fc07-bb97-4991-89fd-357086cf86d2",
+    "url_type": "datastore",
+    "id": "31861619-0b86-47ba-bac2-d008a760af54",
+    "resource_type": null,
+    "size": null
+  },
+  "download_failures": [],
+  "downloaded_utc": "2026-10-13T17:08:16Z"
+}
+DOWNLOAD_START demand_2025 attempt=1 https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv
+{
+  "resource_id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+  "name": "demand_2025",
+  "source_url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+  "file": "data\\raw\\demand_2025.csv",
+  "size_bytes": 1869771,
+  "sha256": "8b8be946bbb084bc28fbf95a71fad0fceb5543b98e02755235130a42beaee4e0",
+  "resource_metadata": {
+    "mimetype": null,
+    "cache_url": null,
+    "name": "Historic Demand Data 2025",
+    "hash": "",
+    "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2025. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports ",
+    "metadata_modified": "2026-06-09T13:25:06.668855",
+    "cache_last_updated": null,
+    "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+    "datastore_active": true,
+    "format": "CSV",
+    "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+    "created": "2025-02-02T09:20:13.550086",
+    "state": "active",
+    "mimetype_inner": null,
+    "last_modified": "2026-06-09T13:25:07.456371",
+    "position": 17,
+    "revision_id": "66926ce0-11c0-4a14-9f45-d30c99402e01",
+    "url_type": "upload",
+    "id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+    "resource_type": null,
+    "size": null
+  },
+  "download_failures": [],
+  "downloaded_utc": "2026-10-13T17:08:22Z"
+}
+DOWNLOAD_START demand_2026 attempt=1 https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv
+{
+  "resource_id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+  "name": "demand_2026",
+  "source_url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv",
+  "file": "data\\raw\\demand_2026.csv",
+  "size_bytes": 1357000,
+  "sha256": "9bb1570e48cd3b6f973cdc2d08b5c4f3f4fc15edc0969049334d4ff3511ad61d",
+  "resource_metadata": {
+    "mimetype": null,
+    "cache_url": null,
+    "name": "Historic Demand Data 2026",
+    "hash": "",
+    "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2026. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports.\r\n\r\n<b> **<span style=\"color: rgb(176,74,42)\">NOTE:</span>** NESO have moved the data source to its new forecast system. We are aware of an issue with missing Scottish transfer data and are looking into a prompt resolution. </b>",
+    "metadata_modified": "2026-10-13T08:20:17.175446",
+    "cache_last_updated": null,
+    "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv",
+    "datastore_active": true,
+    "format": "CSV",
+    "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+    "created": "2026-02-02T09:20:13.070018",
+    "state": "active",
+    "mimetype_inner": null,
+    "last_modified": "2026-10-13T08:20:17.633045",
+    "position": 26,
+    "revision_id": "2d5152eb-fd97-41f5-98ea-853c7a91540b",
+    "url_type": "upload",
+    "id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+    "resource_type": null,
+    "size": null
+  },
+  "download_failures": [],
+  "downloaded_utc": "2026-10-13T17:08:28Z"
+}

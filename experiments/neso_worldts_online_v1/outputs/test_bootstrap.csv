@@ -1,0 +1,13 @@
+split,comparison,block_days,n_calendar_days,point_delta_mae_mw,ci95_low_mw,ci95_high_mw,n_disjoint_blocks,fraction_disjoint_blocks_favor_candidate,bootstrap_reps,interpretation
+test,recompute_vs_old,1,109,-4.5445804892130495,-13.939332246506627,3.6898586271992833,81,0.5802469135802469,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,recompute_vs_old,7,109,-4.5445804892130495,-11.664157525754236,2.6505671791976466,16,0.4375,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,recompute_vs_old,14,109,-4.5445804892130495,-10.72921633263196,1.709769446476134,8,0.5,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,output_correction_vs_old,1,109,-4.46924769059869,-14.679664015248655,5.3476762965909295,81,0.5061728395061729,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,output_correction_vs_old,7,109,-4.46924769059869,-13.742884819920596,6.031113216842638,16,0.5,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,output_correction_vs_old,14,109,-4.46924769059869,-12.635992246516315,4.74532029485916,8,0.5,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,output_correction_vs_recompute,1,109,0.07533279861435921,-3.968786854841039,4.152400576692695,81,0.4567901234567901,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,output_correction_vs_recompute,7,109,0.07533279861435921,-4.999434595442203,5.554628539170654,16,0.5625,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,output_correction_vs_recompute,14,109,0.07533279861435921,-4.837242244384683,5.906540529499607,8,0.5,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,seasonal_naive_vs_old,1,109,991.3315701919141,809.0669568726679,1179.6598856908824,81,0.09876543209876543,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,seasonal_naive_vs_old,7,109,991.3315701919141,730.5311053106755,1268.0579897495552,16,0.125,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"
+test,seasonal_naive_vs_old,14,109,991.3315701919141,767.5756307980864,1300.3873520134052,8,0.0,2000,"descriptive dependent-block interval; one training seed, no causal or multi-seed significance claim"

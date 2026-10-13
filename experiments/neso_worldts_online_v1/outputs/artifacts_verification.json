@@ -1,0 +1,25 @@
+{
+  "completed_utc": "2026-10-13T17:40:51.115790+00:00",
+  "manifest_files_verified": 140,
+  "all_manifested_bytes_and_sizes_match": true,
+  "validation_lock_files_unchanged": true,
+  "official_source_clean": true,
+  "final_test_after_validation_freeze": true,
+  "conditional_updater_correctly_skipped": true,
+  "engineering_tests_passed": 13,
+  "independent_metric_checks": {
+    "val": {
+      "windows": 354,
+      "scored_slots": 12494,
+      "independent_MW_MW2_metrics_match": true
+    },
+    "test": {
+      "windows": 303,
+      "scored_slots": 10690,
+      "independent_MW_MW2_metrics_match": true
+    }
+  },
+  "requested_full_april_august_coverage": false,
+  "decision": "NO_GO_PERSISTENT_LATENT_UPDATER",
+  "note": "This verification report is generated after the content manifest and is not self-hashed inside that manifest."
+}

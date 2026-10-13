@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\persist_stable_251\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Anaconda\envs\persist_stable_251\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 358, in <module>
+    if __name__=='__main__': main()
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 356, in main
+    run(ap.parse_args())
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 317, in run
+    f, fm = load_forecasts(args.forecast, strict=not args.allow_settlement_mismatch)
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 94, in load_forecasts
+    n = _normalize_forecast_chunk(chunk, strict=strict)
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 65, in _normalize_forecast_chunk
+    valid_from_sp = _utc_end_from_settlement(df['SETTLEMENT_DATE'], sp)
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 40, in _utc_end_from_settlement
+    local_midnight = parsed.dt.tz_localize('Europe/London')
+  File "E:\Anaconda\envs\persist_stable_251\lib\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+  File "E:\Anaconda\envs\persist_stable_251\lib\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+  File "E:\Anaconda\envs\persist_stable_251\lib\site-packages\pandas\core\indexes\datetimes.py", line 293, in tz_localize
+    arr = self._data.tz_localize(tz, ambiguous, nonexistent)
+  File "E:\Anaconda\envs\persist_stable_251\lib\site-packages\pandas\core\arrays\_mixins.py", line 81, in method
+    return meth(self, *args, **kwargs)
+  File "E:\Anaconda\envs\persist_stable_251\lib\site-packages\pandas\core\arrays\datetimes.py", line 1085, in tz_localize
+    raise TypeError("Already tz-aware, use tz_convert to convert.")
+TypeError: Already tz-aware, use tz_convert to convert.

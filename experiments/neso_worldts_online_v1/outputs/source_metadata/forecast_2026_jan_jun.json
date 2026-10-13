@@ -1,0 +1,30 @@
+{
+  "name": "forecast_2026_jan_jun",
+  "resource_id": "d6375700-69c2-4c25-8bde-883a205d742e",
+  "resource_show": {
+    "url": "https://api.neso.energy/api/3/action/resource_show?id=d6375700-69c2-4c25-8bde-883a205d742e",
+    "status": 404,
+    "elapsed_seconds": 1.1309589000011329,
+    "body": {
+      "help": "https://api.neso.energy/api/3/action/help_show?name=resource_show",
+      "success": false,
+      "error": {
+        "message": "Not found: Resource was not found.",
+        "__type": "Not Found Error"
+      }
+    }
+  },
+  "datastore_search": {
+    "url": "https://api.neso.energy/api/3/action/datastore_search?resource_id=d6375700-69c2-4c25-8bde-883a205d742e&limit=5",
+    "status": 404,
+    "elapsed_seconds": 0.6052232000220101,
+    "body": {
+      "help": "https://api.neso.energy/api/3/action/help_show?name=datastore_search",
+      "success": false,
+      "error": {
+        "message": "Not found: Resource \"d6375700-69c2-4c25-8bde-883a205d742e\" was not found.",
+        "__type": "Not Found Error"
+      }
+    }
+  }
+}

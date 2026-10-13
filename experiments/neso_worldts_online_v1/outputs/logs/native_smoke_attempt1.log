@@ -1,0 +1,10 @@
+D:\neso_worldts_online_v1\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\time_series_library\models\Crossformer.py:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  1 if l is 0 else self.win_size,
+D:\neso_worldts_online_v1\upstream\WorldTS\DAG-bench\ts_benchmark\baselines\time_series_library\models\Crossformer.py:70: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if l is 0
+Traceback (most recent call last):
+  File "D:\neso_worldts_online_v1\scripts\native_smoke.py", line 48, in <module>
+    if __name__=='__main__':main()
+  File "D:\neso_worldts_online_v1\scripts\native_smoke.py", line 41, in main
+    assert torch.equal(p,reload);checks['strict_fresh_restore_prediction_max_diff']=0.0
+AssertionError

@@ -1,0 +1,33 @@
+{
+  "resource_id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+  "name": "demand_2026",
+  "source_url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv",
+  "file": "data\\raw\\demand_2026.csv",
+  "size_bytes": 1357000,
+  "sha256": "9bb1570e48cd3b6f973cdc2d08b5c4f3f4fc15edc0969049334d4ff3511ad61d",
+  "resource_metadata": {
+    "mimetype": null,
+    "cache_url": null,
+    "name": "Historic Demand Data 2026",
+    "hash": "",
+    "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2026. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports.\r\n\r\n<b> **<span style=\"color: rgb(176,74,42)\">NOTE:</span>** NESO have moved the data source to its new forecast system. We are aware of an issue with missing Scottish transfer data and are looking into a prompt resolution. </b>",
+    "metadata_modified": "2026-10-13T08:20:17.175446",
+    "cache_last_updated": null,
+    "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv",
+    "datastore_active": true,
+    "format": "CSV",
+    "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+    "created": "2026-02-02T09:20:13.070018",
+    "state": "active",
+    "mimetype_inner": null,
+    "last_modified": "2026-10-13T08:20:17.633045",
+    "position": 26,
+    "revision_id": "2d5152eb-fd97-41f5-98ea-853c7a91540b",
+    "url_type": "upload",
+    "id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+    "resource_type": null,
+    "size": null
+  },
+  "download_failures": [],
+  "downloaded_utc": "2026-10-13T17:08:28Z"
+}

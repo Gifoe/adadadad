@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\persist_stable_251\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Anaconda\envs\persist_stable_251\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 373, in <module>
+    if __name__=='__main__': main()
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 371, in main
+    run(ap.parse_args())
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 332, in run
+    f, fm = load_forecasts(args.forecast, strict=not args.allow_settlement_mismatch)
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 97, in load_forecasts
+    n = _normalize_forecast_chunk(chunk, strict=strict)
+  File "D:\neso_worldts_online_v1\neso_online\prepare.py", line 75, in _normalize_forecast_chunk
+    raise ValueError(f'Forecast DATE_GMT/TIME_GMT does not match UK settlement keys at rows {idx}; inspect DST and endpoint convention')
+ValueError: Forecast DATE_GMT/TIME_GMT does not match UK settlement keys at rows [1625526, 1625527, 1625528]; inspect DST and endpoint convention

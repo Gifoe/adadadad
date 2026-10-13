@@ -1,0 +1,73 @@
+{
+  "zip_sha256": "d8ff829ec5523e0a528b6230fd317f6e92ae22f665d1a56e19407f284c0a4062",
+  "files": [
+    {
+      "path": "tests/test_model_driver.py",
+      "sha256": "2b949e12e04c81d0edaf33992c2fb839faec04978eec178b3560b49b06babee0"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "16a51ca7ad8c581f30103a10e819a48c8b4568146816aef19ced677e88c74591"
+    },
+    {
+      "path": "neso_online/download.py",
+      "sha256": "55709f1ed43ac83018e5be2f34d78a3d04beca5447e1b93801a4fad3e0927865"
+    },
+    {
+      "path": "neso_online/prepare.py",
+      "sha256": "8a296e461b662fbde33f63329c7cdcf394e1566d74d1c730c7b5c1315aaeabcb"
+    },
+    {
+      "path": "neso_online/__init__.py",
+      "sha256": "35b7608d1f93b76ef48bbe6798d1f981bc88f5fb045cceb8b95b941b4466bf87"
+    },
+    {
+      "path": "neso_online/native_worldts.py",
+      "sha256": "21c34b98307089568bf58b962fed0a0bee043d265425cc3fc0bc3ac7843ea902"
+    },
+    {
+      "path": "RUN_ON_5090_PROMPT.md",
+      "sha256": "8ffe7035bea8aba1e97c0810e6167c4571b6e781b304880758a511c134286f3d"
+    },
+    {
+      "path": "configs/worldts_neso.json",
+      "sha256": "1f0208f70ad0ef34e79eafff65a69e28ef5379bca2f9a944801dd2f624bdabef"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "7a63b44f9d162f020e6dcb7c9a8e79bc7b747e887f12b30955a966b0ea1401d4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d11be6f31537b0bb56a6ac63427a3e94426f65f12e90fec202c6e8cfc6910b3f"
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "8bcbcade3df7ee14fe79b0c88a649bea7661f16eae5f52e02a7dc72a87e4f456"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "b8cd3ede410e0cb5083aadd104ee440115d3d25b4a967ce632dcb1a1c6477104"
+    },
+    {
+      "path": "fixtures/neso_official_5_forecast_2025.csv",
+      "sha256": "cb9e6b4dd6a4495495cffca5d2598eb7fc30d692cf6c59bc948db5a7be2a76ca"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "sha256": "4332a3d6f0299f1693a75bdcf804ca7cc4c9eab48ca44de9a8c48cc1b25caeb7"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada"
+    },
+    {
+      "path": "CODEX_EXECUTION.md",
+      "sha256": "6dfa191aaaa00994862fcd1e0f674eafd5ab11968ce66fed4318b27672be8b88"
+    },
+    {
+      "path": "scripts/make_synthetic_fixture.py",
+      "sha256": "728d5ca46af8cd7223ac4d21b14db8ed8158e2adadb48f7b63116a0b12101fa3"
+    }
+  ]
+}

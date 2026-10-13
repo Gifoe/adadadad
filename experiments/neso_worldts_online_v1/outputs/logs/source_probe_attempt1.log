@@ -1,0 +1,6 @@
+ENVIRONMENT NVIDIA GeForce RTX 5090 {'torch': '2.8.0+cu128', 'numpy': '1.26.4', 'pandas': '2.3.3', 'requests': '2.33.1', 'pytest': '9.1.1', 'scipy': '1.15.3', 'scikit-learn': '1.7.2', 'einops': '0.8.1', 'reformer-pytorch': '1.4.4', 'matplotlib': '3.10.8', 'psutil': '5.9.6', 'tzdata': '2026.1'}
+SOURCE forecast_2025 count 5369698 csv https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/fc13df13-2dad-4a1c-b9e3-4569efba4955/download/embedded_archive_2025.csv
+SOURCE forecast_2026_jan_jun count None csv None
+SOURCE forecast_2026_jun_dec count 4288416 csv https://api.neso.energy/datastore/dump/31861619-0b86-47ba-bac2-d008a760af54
+SOURCE demand_2025 count 17520 csv https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv
+SOURCE demand_2026 count 12718 csv https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv

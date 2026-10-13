@@ -1,0 +1,101 @@
+{
+  "source_files": {
+    "forecast": [
+      "data/raw/forecast_2025.csv",
+      "data/raw/forecast_2026_jun_dec.csv"
+    ],
+    "demand": [
+      "data/raw/demand_2025.csv",
+      "data/raw/demand_2026.csv"
+    ]
+  },
+  "forecast_stats": {
+    "forecast_raw_rows": 9658114,
+    "forecast_valid_rows": 9643219,
+    "archive_duplicate_rows": 0,
+    "settlement_time_mismatches": 1268,
+    "timestamp_conflict_policy": "exclude ambiguous rows without choosing either endpoint",
+    "distinct_forecast_issues": 15353,
+    "distinct_valid_times": 31824,
+    "file_coverage": [
+      {
+        "path": "data\\raw\\forecast_2025.csv",
+        "raw_rows": 5369698,
+        "retained_future_finite_rows": 5359861,
+        "excluded_future_timestamp_conflicts": 0,
+        "raw_settlement_time_mismatches": 0,
+        "raw_missing_issue": 0,
+        "raw_missing_gmt_endpoint": 0,
+        "raw_missing_wind_or_solar": 0,
+        "issue_min": "2025-01-01 00:12:00+00:00",
+        "issue_max": "2025-12-31 23:12:17+00:00",
+        "target_min": "2025-01-01 00:30:00+00:00",
+        "target_max": "2026-01-14 00:00:00+00:00"
+      },
+      {
+        "path": "data\\raw\\forecast_2026_jun_dec.csv",
+        "raw_rows": 4288416,
+        "retained_future_finite_rows": 4283358,
+        "excluded_future_timestamp_conflicts": 1268,
+        "raw_settlement_time_mismatches": 1268,
+        "raw_missing_issue": 0,
+        "raw_missing_gmt_endpoint": 0,
+        "raw_missing_wind_or_solar": 48,
+        "issue_min": "2026-01-01 00:12:00+00:00",
+        "issue_max": "2026-10-13 15:52:45+00:00",
+        "target_min": "2026-01-01 00:30:00+00:00",
+        "target_max": "2026-10-26 00:00:00+00:00"
+      }
+    ]
+  },
+  "demand_stats": {
+    "demand_raw_rows": 30238,
+    "demand_actual_rows": 30238,
+    "excluded_non_actual_rows": 0,
+    "source_actual_policies": [
+      {
+        "path": "data\\raw\\demand_2025.csv",
+        "actual_policy": "verified official2025 historic outturn archive has no A/F column; all rows are outturn"
+      },
+      {
+        "path": "data\\raw\\demand_2026.csv",
+        "actual_policy": "explicit A rows only"
+      }
+    ],
+    "demand_min_utc": "2025-01-01 00:30:00+00:00",
+    "demand_max_utc": "2026-09-22 23:00:00+00:00"
+  },
+  "sample_stats": {
+    "pairing": {
+      "issues_examined": 2583,
+      "issues_paired": 2571,
+      "rejected_history": 28,
+      "rejected_future": 86,
+      "rejected_covariates": 386,
+      "rejected_revision": 0
+    },
+    "samples": 2071,
+    "lookback": 336,
+    "horizon": 48,
+    "score_slots_min": 32,
+    "score_slots_max": 36,
+    "revision_changed_fraction": 1.0
+  },
+  "splits": {
+    "train": 1406,
+    "val": 354,
+    "test": 303
+  },
+  "time_policy": {
+    "timezone": "UTC",
+    "valid_time": "period_end_utc",
+    "half_hour_slots": "continuous; UK DST handled by Europe/London",
+    "history_label_publication": "NOT VERIFIED: retrospective ND values are treated as observable at period end",
+    "claim": "covariate-vintage backtest, NOT operational online learning"
+  },
+  "protocol": {
+    "hold_history_fixed_at_A": true,
+    "update_only_times_after_B": true,
+    "no_test_data_for_training": true
+  }
+}

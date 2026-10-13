@@ -1,0 +1,33 @@
+{
+  "resource_id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+  "name": "demand_2025",
+  "source_url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+  "file": "data\\raw\\demand_2025.csv",
+  "size_bytes": 1869771,
+  "sha256": "8b8be946bbb084bc28fbf95a71fad0fceb5543b98e02755235130a42beaee4e0",
+  "resource_metadata": {
+    "mimetype": null,
+    "cache_url": null,
+    "name": "Historic Demand Data 2025",
+    "hash": "",
+    "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2025. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports ",
+    "metadata_modified": "2026-06-09T13:25:06.668855",
+    "cache_last_updated": null,
+    "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+    "datastore_active": true,
+    "format": "CSV",
+    "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+    "created": "2025-02-02T09:20:13.550086",
+    "state": "active",
+    "mimetype_inner": null,
+    "last_modified": "2026-06-09T13:25:07.456371",
+    "position": 17,
+    "revision_id": "66926ce0-11c0-4a14-9f45-d30c99402e01",
+    "url_type": "upload",
+    "id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+    "resource_type": null,
+    "size": null
+  },
+  "download_failures": [],
+  "downloaded_utc": "2026-10-13T17:08:22Z"
+}

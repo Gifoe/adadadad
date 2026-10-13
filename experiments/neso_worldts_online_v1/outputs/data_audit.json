@@ -1,0 +1,345 @@
+{
+  "manifest": {
+    "source_files": {
+      "forecast": [
+        "data/raw/forecast_2025.csv",
+        "data/raw/forecast_2026_jun_dec.csv"
+      ],
+      "demand": [
+        "data/raw/demand_2025.csv",
+        "data/raw/demand_2026.csv"
+      ]
+    },
+    "forecast_stats": {
+      "forecast_raw_rows": 9658114,
+      "forecast_valid_rows": 9643219,
+      "archive_duplicate_rows": 0,
+      "settlement_time_mismatches": 1268,
+      "timestamp_conflict_policy": "exclude ambiguous rows without choosing either endpoint",
+      "distinct_forecast_issues": 15353,
+      "distinct_valid_times": 31824,
+      "file_coverage": [
+        {
+          "path": "data\\raw\\forecast_2025.csv",
+          "raw_rows": 5369698,
+          "retained_future_finite_rows": 5359861,
+          "excluded_future_timestamp_conflicts": 0,
+          "raw_settlement_time_mismatches": 0,
+          "raw_missing_issue": 0,
+          "raw_missing_gmt_endpoint": 0,
+          "raw_missing_wind_or_solar": 0,
+          "issue_min": "2025-01-01 00:12:00+00:00",
+          "issue_max": "2025-12-31 23:12:17+00:00",
+          "target_min": "2025-01-01 00:30:00+00:00",
+          "target_max": "2026-01-14 00:00:00+00:00"
+        },
+        {
+          "path": "data\\raw\\forecast_2026_jun_dec.csv",
+          "raw_rows": 4288416,
+          "retained_future_finite_rows": 4283358,
+          "excluded_future_timestamp_conflicts": 1268,
+          "raw_settlement_time_mismatches": 1268,
+          "raw_missing_issue": 0,
+          "raw_missing_gmt_endpoint": 0,
+          "raw_missing_wind_or_solar": 48,
+          "issue_min": "2026-01-01 00:12:00+00:00",
+          "issue_max": "2026-10-13 15:52:45+00:00",
+          "target_min": "2026-01-01 00:30:00+00:00",
+          "target_max": "2026-10-26 00:00:00+00:00"
+        }
+      ]
+    },
+    "demand_stats": {
+      "demand_raw_rows": 30238,
+      "demand_actual_rows": 30238,
+      "excluded_non_actual_rows": 0,
+      "source_actual_policies": [
+        {
+          "path": "data\\raw\\demand_2025.csv",
+          "actual_policy": "verified official2025 historic outturn archive has no A/F column; all rows are outturn"
+        },
+        {
+          "path": "data\\raw\\demand_2026.csv",
+          "actual_policy": "explicit A rows only"
+        }
+      ],
+      "demand_min_utc": "2025-01-01 00:30:00+00:00",
+      "demand_max_utc": "2026-09-22 23:00:00+00:00"
+    },
+    "sample_stats": {
+      "pairing": {
+        "issues_examined": 2583,
+        "issues_paired": 2571,
+        "rejected_history": 28,
+        "rejected_future": 86,
+        "rejected_covariates": 386,
+        "rejected_revision": 0
+      },
+      "samples": 2071,
+      "lookback": 336,
+      "horizon": 48,
+      "score_slots_min": 32,
+      "score_slots_max": 36,
+      "revision_changed_fraction": 1.0
+    },
+    "splits": {
+      "train": 1406,
+      "val": 354,
+      "test": 303
+    },
+    "time_policy": {
+      "timezone": "UTC",
+      "valid_time": "period_end_utc",
+      "half_hour_slots": "continuous; UK DST handled by Europe/London",
+      "history_label_publication": "NOT VERIFIED: retrospective ND values are treated as observable at period end",
+      "claim": "covariate-vintage backtest, NOT operational online learning"
+    },
+    "protocol": {
+      "hold_history_fixed_at_A": true,
+      "update_only_times_after_B": true,
+      "no_test_data_for_training": true
+    }
+  },
+  "coverage": {
+    "train": {
+      "n_windows": 1406,
+      "n_unique_target_periods": 16994,
+      "n_distinct_A_issues": 1406,
+      "n_distinct_B_issues": 1406,
+      "first_target_utc": "2025-01-08 00:30:00+00:00",
+      "last_target_utc": "2025-12-31 18:00:00+00:00",
+      "A_first": "2025-01-08 00:12:00+00:00",
+      "A_last": "2025-12-30 18:12:18+00:00",
+      "score_slots_min": 32,
+      "score_slots_max": 36,
+      "revised_window_fraction": 1.0,
+      "revision_rms_mw_quantiles": [
+        25.39001334733359,
+        90.88608380426459,
+        129.42621766325226,
+        182.06793801056858,
+        813.6874219184141
+      ]
+    },
+    "val": {
+      "n_windows": 354,
+      "n_unique_target_periods": 4308,
+      "n_distinct_A_issues": 354,
+      "n_distinct_B_issues": 354,
+      "first_target_utc": "2026-01-01 00:30:00+00:00",
+      "last_target_utc": "2026-03-31 18:00:00+00:00",
+      "A_first": "2026-01-01 00:12:00+00:00",
+      "A_last": "2026-03-30 18:12:10+00:00",
+      "score_slots_min": 34,
+      "score_slots_max": 36,
+      "revised_window_fraction": 1.0,
+      "revision_rms_mw_quantiles": [
+        18.533752992850637,
+        92.73962259340053,
+        124.53964202154259,
+        163.9870153369797,
+        508.25184817811595
+      ]
+    },
+    "test": {
+      "n_windows": 303,
+      "n_unique_target_periods": 3888,
+      "n_distinct_A_issues": 303,
+      "n_distinct_B_issues": 303,
+      "first_target_utc": "2026-04-01 00:30:00+00:00",
+      "last_target_utc": "2026-07-19 01:00:00+00:00",
+      "A_first": "2026-04-01 00:12:13+00:00",
+      "A_last": "2026-07-18 01:03:09+00:00",
+      "score_slots_min": 34,
+      "score_slots_max": 36,
+      "revised_window_fraction": 1.0,
+      "revision_rms_mw_quantiles": [
+        3.280836614171588,
+        81.51714076597892,
+        131.6016158491895,
+        195.9000315162181,
+        599.5507018740342
+      ]
+    }
+  },
+  "disjoint_target_support": true,
+  "fixed_A_history": true,
+  "strict_future_mask_and_unchanged_prefix": true,
+  "seasonal_naive_alignment": "336 continuous UTC half-hour slots; history index0 matches target lead1 one week earlier",
+  "real_dst_actual_day_counts": [
+    {
+      "date": "2025-03-30",
+      "count": 46,
+      "min": 1,
+      "max": 46
+    },
+    {
+      "date": "2025-10-26",
+      "count": 50,
+      "min": 1,
+      "max": 50
+    },
+    {
+      "date": "2026-03-29",
+      "count": 46,
+      "min": 1,
+      "max": 46
+    }
+  ],
+  "actual_day_count_distribution": {
+    "46": 2,
+    "48": 627,
+    "50": 1
+  },
+  "downloaded_sources": [
+    {
+      "resource_id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+      "name": "demand_2025",
+      "source_url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+      "file": "data\\raw\\demand_2025.csv",
+      "size_bytes": 1869771,
+      "sha256": "8b8be946bbb084bc28fbf95a71fad0fceb5543b98e02755235130a42beaee4e0",
+      "resource_metadata": {
+        "mimetype": null,
+        "cache_url": null,
+        "name": "Historic Demand Data 2025",
+        "hash": "",
+        "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2025. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports ",
+        "metadata_modified": "2026-06-09T13:25:06.668855",
+        "cache_last_updated": null,
+        "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+        "datastore_active": true,
+        "format": "CSV",
+        "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+        "created": "2025-02-02T09:20:13.550086",
+        "state": "active",
+        "mimetype_inner": null,
+        "last_modified": "2026-06-09T13:25:07.456371",
+        "position": 17,
+        "revision_id": "66926ce0-11c0-4a14-9f45-d30c99402e01",
+        "url_type": "upload",
+        "id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+        "resource_type": null,
+        "size": null
+      },
+      "download_failures": [],
+      "downloaded_utc": "2026-10-13T17:08:22Z"
+    },
+    {
+      "resource_id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+      "name": "demand_2026",
+      "source_url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv",
+      "file": "data\\raw\\demand_2026.csv",
+      "size_bytes": 1357000,
+      "sha256": "9bb1570e48cd3b6f973cdc2d08b5c4f3f4fc15edc0969049334d4ff3511ad61d",
+      "resource_metadata": {
+        "mimetype": null,
+        "cache_url": null,
+        "name": "Historic Demand Data 2026",
+        "hash": "",
+        "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2026. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports.\r\n\r\n<b> **<span style=\"color: rgb(176,74,42)\">NOTE:</span>** NESO have moved the data source to its new forecast system. We are aware of an issue with missing Scottish transfer data and are looking into a prompt resolution. </b>",
+        "metadata_modified": "2026-10-13T08:20:17.175446",
+        "cache_last_updated": null,
+        "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv",
+        "datastore_active": true,
+        "format": "CSV",
+        "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+        "created": "2026-02-02T09:20:13.070018",
+        "state": "active",
+        "mimetype_inner": null,
+        "last_modified": "2026-10-13T08:20:17.633045",
+        "position": 26,
+        "revision_id": "2d5152eb-fd97-41f5-98ea-853c7a91540b",
+        "url_type": "upload",
+        "id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+        "resource_type": null,
+        "size": null
+      },
+      "download_failures": [],
+      "downloaded_utc": "2026-10-13T17:08:28Z"
+    },
+    {
+      "resource_id": "fc13df13-2dad-4a1c-b9e3-4569efba4955",
+      "name": "forecast_2025",
+      "source_url": "https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/fc13df13-2dad-4a1c-b9e3-4569efba4955/download/embedded_archive_2025.csv",
+      "file": "data\\raw\\forecast_2025.csv",
+      "size_bytes": 645655728,
+      "sha256": "8a9e75dace7f99590f00ffd025a817a397ba63e55ab88d03194f31d7c0e468b9",
+      "resource_metadata": {
+        "cache_last_updated": null,
+        "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+        "datastore_active": true,
+        "id": "fc13df13-2dad-4a1c-b9e3-4569efba4955",
+        "size": null,
+        "metadata_modified": "2026-01-18T13:10:41.508697",
+        "state": "active",
+        "hash": "",
+        "description": "All half hourly 0-14 day ahead embedded wind and solar forecasts published during 2025. ",
+        "format": "CSV",
+        "mimetype_inner": null,
+        "url_type": "upload",
+        "datastore_unique_keys": [],
+        "mimetype": null,
+        "cache_url": null,
+        "name": "Embedded Solar and Wind Forecast Archive 2025",
+        "created": "2025-05-27T13:58:02.826878",
+        "url": "https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/fc13df13-2dad-4a1c-b9e3-4569efba4955/download/embedded_archive_2025.csv",
+        "datastore_append_or_update": false,
+        "last_modified": "2026-01-17T07:00:51.043062",
+        "position": 8,
+        "revision_id": "2f51aa1b-1137-4dd6-a502-2724ae02ca28",
+        "resource_type": null
+      },
+      "download_failures": [],
+      "downloaded_utc": "2026-10-13T16:52:34Z"
+    },
+    {
+      "resource_id": "31861619-0b86-47ba-bac2-d008a760af54",
+      "name": "forecast_2026_jun_dec",
+      "source_url": "https://api.neso.energy/datastore/dump/31861619-0b86-47ba-bac2-d008a760af54",
+      "file": "data\\raw\\forecast_2026_jun_dec.csv",
+      "size_bytes": 386036843,
+      "sha256": "bf24ae01485dde595f97995eee7f48942027afcdf1e5bbf97ad92f0efb3a6f88",
+      "resource_metadata": {
+        "mimetype": "text/csv",
+        "cache_url": null,
+        "name": "Embedded Solar and Wind Forecast Archive 2026",
+        "hash": "",
+        "description": "All half hourly 0-14 day ahead embedded wind and solar forecasts published for the year 2026.",
+        "metadata_modified": "2026-10-13T16:27:04.002750",
+        "cache_last_updated": null,
+        "url": "https://api.neso.energy/datastore/dump/31861619-0b86-47ba-bac2-d008a760af54",
+        "datastore_active": true,
+        "format": "CSV",
+        "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+        "created": "2026-03-31T14:00:22.419468",
+        "state": "active",
+        "mimetype_inner": null,
+        "last_modified": "2026-07-28T16:19:45.553879",
+        "position": 9,
+        "revision_id": "ada9fc07-bb97-4991-89fd-357086cf86d2",
+        "url_type": "datastore",
+        "id": "31861619-0b86-47ba-bac2-d008a760af54",
+        "resource_type": null,
+        "size": null
+      },
+      "download_failures": [],
+      "downloaded_utc": "2026-10-13T17:08:16Z"
+    }
+  ],
+  "normalization_fit_split": "TRAIN history only",
+  "train_scaler_reference": {
+    "mean": [
+      26101.618776671407,
+      1956.8912039389013,
+      1966.8234839632867
+    ],
+    "std": [
+      6163.413230474837,
+      1282.600042882648,
+      2968.632468046406
+    ]
+  },
+  "removed_source": "d6375700-69c2-4c25-8bde-883a205d742e returns official404 and is absent from current package resources; no substitute CSV fabricated",
+  "availability_claim": "retrospective forecast-vintage replay; instantaneous historicND availability unverified; production timestamp is not verified public-release time"
+}

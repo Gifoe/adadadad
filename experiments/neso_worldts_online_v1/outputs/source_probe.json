@@ -1,0 +1,1438 @@
+[
+  {
+    "name": "forecast_2025",
+    "resource_id": "fc13df13-2dad-4a1c-b9e3-4569efba4955",
+    "resource_show": {
+      "url": "https://api.neso.energy/api/3/action/resource_show?id=fc13df13-2dad-4a1c-b9e3-4569efba4955",
+      "status": 200,
+      "elapsed_seconds": 1.8531672000244725,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=resource_show",
+        "success": true,
+        "result": {
+          "cache_last_updated": null,
+          "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+          "datastore_active": true,
+          "id": "fc13df13-2dad-4a1c-b9e3-4569efba4955",
+          "size": null,
+          "metadata_modified": "2026-01-18T13:10:41.508697",
+          "state": "active",
+          "hash": "",
+          "description": "All half hourly 0-14 day ahead embedded wind and solar forecasts published during 2025. ",
+          "format": "CSV",
+          "mimetype_inner": null,
+          "url_type": "upload",
+          "datastore_unique_keys": [],
+          "mimetype": null,
+          "cache_url": null,
+          "name": "Embedded Solar and Wind Forecast Archive 2025",
+          "created": "2025-05-27T13:58:02.826878",
+          "url": "https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/fc13df13-2dad-4a1c-b9e3-4569efba4955/download/embedded_archive_2025.csv",
+          "datastore_append_or_update": false,
+          "last_modified": "2026-01-17T07:00:51.043062",
+          "position": 8,
+          "revision_id": "2f51aa1b-1137-4dd6-a502-2724ae02ca28",
+          "resource_type": null
+        }
+      }
+    },
+    "datastore_search": {
+      "url": "https://api.neso.energy/api/3/action/datastore_search?resource_id=fc13df13-2dad-4a1c-b9e3-4569efba4955&limit=5",
+      "status": 200,
+      "elapsed_seconds": 2.0403881999955047,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=datastore_search",
+        "success": true,
+        "result": {
+          "include_total": true,
+          "resource_id": "fc13df13-2dad-4a1c-b9e3-4569efba4955",
+          "fields": [
+            {
+              "type": "int",
+              "id": "_id"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The date to which the forecast relates",
+                "title": "Forecast Date",
+                "type": "datetime",
+                "example": "2022-01-05T00:00:00Z",
+                "unit": ""
+              },
+              "type": "timestamp",
+              "id": "DATE_GMT"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The time to which the forecast relates",
+                "title": "Forecast Time",
+                "type": "time",
+                "example": "10:30:00",
+                "unit": ""
+              },
+              "type": "time",
+              "id": "TIME_GMT"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The settlement date to which the forecast relates",
+                "title": "Settlement Date",
+                "type": "datetime",
+                "example": "2022-01-05T00:00:00Z",
+                "unit": ""
+              },
+              "type": "timestamp",
+              "id": "SETTLEMENT_DATE"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "Period of 30 minutes beginning on the hour or the half-hour",
+                "title": "Settlement Period",
+                "type": "integer",
+                "example": "23",
+                "unit": ""
+              },
+              "type": "int4",
+              "id": "SETTLEMENT_PERIOD"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate forecast of the GB wind generation from wind farms which do not have Transmission System metering installed. These wind farms are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high wind. The true output of these generators is not known so an estimate is provided based on NESO\u2019s best model. ",
+                "title": "Embedded Wind Forecast",
+                "type": "integer",
+                "example": "2361",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_FORECAST"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is NESO\u2019s best view of the installed embedded wind capacity in GB. This is based on publicly available information compiled from a variety of sources and is not the definitive view. It is consistent with the generation estimate provided. ",
+                "title": "Embedded Wind Capacity",
+                "type": "integer",
+                "example": "6559",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate forecast of the GB solar generation from solar farms which do not have Transmission System metering installed. These solar farms are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high solar periods. The true output of these generators is not known so an estimate is provided based on NESO\u2019s best model.",
+                "title": "Embedded Solar Forecast",
+                "type": "integer",
+                "example": "7406",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_FORECAST"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "Estimated Embedded Solar Capacity. This is NESO\u2019s best view of the installed embedded solar capacity in GB. This is based on publicly available information compiled from a variety of sources and is not the definitive view. It is consistent with the generation estimate provided.",
+                "title": "Embedded Solar Capacity",
+                "type": "integer",
+                "example": "13080",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The datetime at which the forecast was produced ",
+                "title": "Forecast Timestamp",
+                "type": "datetime",
+                "example": "2020-01-01T00:12:00Z",
+                "unit": ""
+              },
+              "type": "timestamp",
+              "id": "Forecast_Datetime"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "source_file",
+                "title": "source_file",
+                "type": "string",
+                "example": "",
+                "unit": ""
+              },
+              "type": "text",
+              "id": "source_file"
+            }
+          ],
+          "records_format": "objects",
+          "records": [
+            {
+              "_id": 1,
+              "DATE_GMT": "2025-01-01T00:00:00",
+              "TIME_GMT": "00:30:00",
+              "SETTLEMENT_DATE": "2025-01-01T00:00:00",
+              "SETTLEMENT_PERIOD": 1,
+              "EMBEDDED_WIND_FORECAST": 5452,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 17196,
+              "Forecast_Datetime": "2025-01-01T00:12:00",
+              "source_file": "Embedded_Archive_2025_1.csv"
+            },
+            {
+              "_id": 2,
+              "DATE_GMT": "2025-01-01T00:00:00",
+              "TIME_GMT": "01:00:00",
+              "SETTLEMENT_DATE": "2025-01-01T00:00:00",
+              "SETTLEMENT_PERIOD": 2,
+              "EMBEDDED_WIND_FORECAST": 5358,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 17196,
+              "Forecast_Datetime": "2025-01-01T00:12:00",
+              "source_file": "Embedded_Archive_2025_1.csv"
+            },
+            {
+              "_id": 3,
+              "DATE_GMT": "2025-01-01T00:00:00",
+              "TIME_GMT": "01:30:00",
+              "SETTLEMENT_DATE": "2025-01-01T00:00:00",
+              "SETTLEMENT_PERIOD": 3,
+              "EMBEDDED_WIND_FORECAST": 5358,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 17196,
+              "Forecast_Datetime": "2025-01-01T00:12:00",
+              "source_file": "Embedded_Archive_2025_1.csv"
+            },
+            {
+              "_id": 4,
+              "DATE_GMT": "2025-01-01T00:00:00",
+              "TIME_GMT": "02:00:00",
+              "SETTLEMENT_DATE": "2025-01-01T00:00:00",
+              "SETTLEMENT_PERIOD": 4,
+              "EMBEDDED_WIND_FORECAST": 5158,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 17196,
+              "Forecast_Datetime": "2025-01-01T00:12:00",
+              "source_file": "Embedded_Archive_2025_1.csv"
+            },
+            {
+              "_id": 5,
+              "DATE_GMT": "2025-01-01T00:00:00",
+              "TIME_GMT": "02:30:00",
+              "SETTLEMENT_DATE": "2025-01-01T00:00:00",
+              "SETTLEMENT_PERIOD": 5,
+              "EMBEDDED_WIND_FORECAST": 5158,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 17196,
+              "Forecast_Datetime": "2025-01-01T00:12:00",
+              "source_file": "Embedded_Archive_2025_1.csv"
+            }
+          ],
+          "limit": 5,
+          "_links": {
+            "start": "/api/3/action/datastore_search?limit=5&resource_id=fc13df13-2dad-4a1c-b9e3-4569efba4955",
+            "next": "/api/3/action/datastore_search?offset=5&limit=5&resource_id=fc13df13-2dad-4a1c-b9e3-4569efba4955"
+          },
+          "total": 5369698
+        }
+      }
+    }
+  },
+  {
+    "name": "forecast_2026_jan_jun",
+    "resource_id": "d6375700-69c2-4c25-8bde-883a205d742e",
+    "resource_show": {
+      "url": "https://api.neso.energy/api/3/action/resource_show?id=d6375700-69c2-4c25-8bde-883a205d742e",
+      "status": 404,
+      "elapsed_seconds": 1.1309589000011329,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=resource_show",
+        "success": false,
+        "error": {
+          "message": "Not found: Resource was not found.",
+          "__type": "Not Found Error"
+        }
+      }
+    },
+    "datastore_search": {
+      "url": "https://api.neso.energy/api/3/action/datastore_search?resource_id=d6375700-69c2-4c25-8bde-883a205d742e&limit=5",
+      "status": 404,
+      "elapsed_seconds": 0.6052232000220101,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=datastore_search",
+        "success": false,
+        "error": {
+          "message": "Not found: Resource \"d6375700-69c2-4c25-8bde-883a205d742e\" was not found.",
+          "__type": "Not Found Error"
+        }
+      }
+    }
+  },
+  {
+    "name": "forecast_2026_jun_dec",
+    "resource_id": "31861619-0b86-47ba-bac2-d008a760af54",
+    "resource_show": {
+      "url": "https://api.neso.energy/api/3/action/resource_show?id=31861619-0b86-47ba-bac2-d008a760af54",
+      "status": 200,
+      "elapsed_seconds": 1.1618479999888223,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=resource_show",
+        "success": true,
+        "result": {
+          "mimetype": "text/csv",
+          "cache_url": null,
+          "name": "Embedded Solar and Wind Forecast Archive 2026",
+          "hash": "",
+          "description": "All half hourly 0-14 day ahead embedded wind and solar forecasts published for the year 2026.",
+          "metadata_modified": "2026-10-13T16:27:04.002750",
+          "cache_last_updated": null,
+          "url": "https://api.neso.energy/datastore/dump/31861619-0b86-47ba-bac2-d008a760af54",
+          "datastore_active": true,
+          "format": "CSV",
+          "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+          "created": "2026-03-31T14:00:22.419468",
+          "state": "active",
+          "mimetype_inner": null,
+          "last_modified": "2026-07-28T16:19:45.553879",
+          "position": 9,
+          "revision_id": "ada9fc07-bb97-4991-89fd-357086cf86d2",
+          "url_type": "datastore",
+          "id": "31861619-0b86-47ba-bac2-d008a760af54",
+          "resource_type": null,
+          "size": null
+        }
+      }
+    },
+    "datastore_search": {
+      "url": "https://api.neso.energy/api/3/action/datastore_search?resource_id=31861619-0b86-47ba-bac2-d008a760af54&limit=5",
+      "status": 200,
+      "elapsed_seconds": 4.264449400012381,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=datastore_search",
+        "success": true,
+        "result": {
+          "include_total": true,
+          "resource_id": "31861619-0b86-47ba-bac2-d008a760af54",
+          "fields": [
+            {
+              "type": "int",
+              "id": "_id"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The date to which the forecast relates",
+                "title": "Forecast Date",
+                "type": "datetime",
+                "example": "2022-01-05T00:00:00Z",
+                "unit": ""
+              },
+              "type": "timestamp",
+              "id": "DATE_GMT"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The time to which the forecast relates",
+                "title": "Forecast Time",
+                "type": "string",
+                "example": "10:30:00",
+                "unit": ""
+              },
+              "type": "text",
+              "id": "TIME_GMT"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The settlement date to which the forecast relates",
+                "title": "Settlement Date",
+                "type": "datetime",
+                "example": "2022-01-05T00:00:00Z",
+                "unit": ""
+              },
+              "type": "timestamp",
+              "id": "SETTLEMENT_DATE"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "Period of 30 minutes beginning on the hour or the half-hour",
+                "title": "Settlement Period",
+                "type": "integer",
+                "example": "23",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "SETTLEMENT_PERIOD"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate forecast of the GB wind generation from wind farms which do not have Transmission System metering installed. These wind farms are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high wind. The true output of these generators is not known so an estimate is provided based on NESO's best model.",
+                "title": "Embedded Wind Forecast",
+                "type": "integer",
+                "example": "2361",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_FORECAST"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is NESO's best view of the installed embedded wind capacity in GB. This is based on publicly available information compiled from a variety of sources and is not the definitive view. It is consistent with the generation estimate provided.",
+                "title": "Embedded Wind Capacity",
+                "type": "integer",
+                "example": "6559",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate forecast of the GB solar generation from solar farms which do not have Transmission System metering installed. These solar farms are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high solar periods. The true output of these generators is not known so an estimate is provided based on NESO's best model.",
+                "title": "Embedded Solar Forecast",
+                "type": "integer",
+                "example": "7406",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_FORECAST"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "Estimated Embedded Solar Capacity. This is NESO's best view of the installed embedded solar capacity in GB. This is based on publicly available information compiled from a variety of sources and is not the definitive view. It is consistent with the generation estimate provided.",
+                "title": "Embedded Solar Capacity",
+                "type": "integer",
+                "example": "13080",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The datetime at which the forecast was produced",
+                "title": "Forecast Timestamp",
+                "type": "datetime",
+                "example": "2020-01-01T00:12:00Z",
+                "unit": ""
+              },
+              "type": "timestamp",
+              "id": "Forecast_Datetime"
+            }
+          ],
+          "records_format": "objects",
+          "records": [
+            {
+              "_id": 3086364,
+              "DATE_GMT": "2026-08-07T00:00:00",
+              "TIME_GMT": "23:00",
+              "SETTLEMENT_DATE": "2026-08-07T00:00:00",
+              "SETTLEMENT_PERIOD": 48,
+              "EMBEDDED_WIND_FORECAST": 838,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 23301,
+              "Forecast_Datetime": "2026-07-27T16:52:39"
+            },
+            {
+              "_id": 3086365,
+              "DATE_GMT": "2026-08-07T00:00:00",
+              "TIME_GMT": "23:30",
+              "SETTLEMENT_DATE": "2026-08-08T00:00:00",
+              "SETTLEMENT_PERIOD": 1,
+              "EMBEDDED_WIND_FORECAST": 859,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 23301,
+              "Forecast_Datetime": "2026-07-27T16:52:39"
+            },
+            {
+              "_id": 3086366,
+              "DATE_GMT": "2026-08-08T00:00:00",
+              "TIME_GMT": "00:00",
+              "SETTLEMENT_DATE": "2026-08-08T00:00:00",
+              "SETTLEMENT_PERIOD": 2,
+              "EMBEDDED_WIND_FORECAST": 888,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 23301,
+              "Forecast_Datetime": "2026-07-27T16:52:39"
+            },
+            {
+              "_id": 3086367,
+              "DATE_GMT": "2026-08-08T00:00:00",
+              "TIME_GMT": "00:30",
+              "SETTLEMENT_DATE": "2026-08-08T00:00:00",
+              "SETTLEMENT_PERIOD": 3,
+              "EMBEDDED_WIND_FORECAST": 889,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 23301,
+              "Forecast_Datetime": "2026-07-27T16:52:39"
+            },
+            {
+              "_id": 3086368,
+              "DATE_GMT": "2026-08-08T00:00:00",
+              "TIME_GMT": "01:00",
+              "SETTLEMENT_DATE": "2026-08-08T00:00:00",
+              "SETTLEMENT_PERIOD": 4,
+              "EMBEDDED_WIND_FORECAST": 858,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_FORECAST": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 23301,
+              "Forecast_Datetime": "2026-07-27T16:52:39"
+            }
+          ],
+          "limit": 5,
+          "_links": {
+            "start": "/api/3/action/datastore_search?limit=5&resource_id=31861619-0b86-47ba-bac2-d008a760af54",
+            "next": "/api/3/action/datastore_search?offset=5&limit=5&resource_id=31861619-0b86-47ba-bac2-d008a760af54"
+          },
+          "total": 4288416
+        }
+      }
+    }
+  },
+  {
+    "name": "demand_2025",
+    "resource_id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+    "resource_show": {
+      "url": "https://api.neso.energy/api/3/action/resource_show?id=b2bde559-3455-4021-b179-dfe60c0337b0",
+      "status": 200,
+      "elapsed_seconds": 1.9225635000038892,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=resource_show",
+        "success": true,
+        "result": {
+          "mimetype": null,
+          "cache_url": null,
+          "name": "Historic Demand Data 2025",
+          "hash": "",
+          "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2025. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports ",
+          "metadata_modified": "2026-06-09T13:25:06.668855",
+          "cache_last_updated": null,
+          "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+          "datastore_active": true,
+          "format": "CSV",
+          "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+          "created": "2025-02-02T09:20:13.550086",
+          "state": "active",
+          "mimetype_inner": null,
+          "last_modified": "2026-06-09T13:25:07.456371",
+          "position": 17,
+          "revision_id": "66926ce0-11c0-4a14-9f45-d30c99402e01",
+          "url_type": "upload",
+          "id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+          "resource_type": null,
+          "size": null
+        }
+      }
+    },
+    "datastore_search": {
+      "url": "https://api.neso.energy/api/3/action/datastore_search?resource_id=b2bde559-3455-4021-b179-dfe60c0337b0&limit=5",
+      "status": 200,
+      "elapsed_seconds": 0.7093530999845825,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=datastore_search",
+        "success": true,
+        "result": {
+          "include_total": true,
+          "resource_id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+          "fields": [
+            {
+              "type": "int",
+              "id": "_id"
+            },
+            {
+              "info": {
+                "comment": "This follows clock change.",
+                "description": "The date the historic outturn occurred.",
+                "title": "Settlement Date",
+                "type": "date",
+                "example": "01/01/2026",
+                "unit": ""
+              },
+              "type": "date",
+              "id": "SETTLEMENT_DATE"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The half hourly period for the historic outturn occurred. Settlement period 1 runs from 00:00-00:30.",
+                "title": "Settlement Period",
+                "type": "integer",
+                "example": "1",
+                "unit": ""
+              },
+              "type": "int4",
+              "id": "SETTLEMENT_PERIOD"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is the Great Britain generation requirement and is equivalent to the Initial National Demand Outturn (INDO) and National Demand Forecast as published on BM Reports. National Demand is the sum of metered generation, but excludes generation required to meet station load, pump storage pumping and interconnector exports. National Demand is calculated as a sum of generation based on the operational generation metering from the Transmission Network Operators.",
+                "title": "National Demand",
+                "type": "integer",
+                "example": "21043",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "ND"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is the Transmission System generation requirement and is equivalent to the Initial Transmission System Demand Outturn (ITSDO) and Transmission System Demand Forecast on BM Reports. Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports. Transmission System Demand is calculated using the operational metering from the Transmission Network Operators. Note that the Transmission System Demand includes an estimate of station load of 500MW in BST and 600MW in GMT.",
+                "title": "Transmission System Demand",
+                "type": "integer",
+                "example": "24680",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "TSD"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "England and Wales Demand, as ND above but on an England and Wales basis.",
+                "title": "England and Wales Demand",
+                "type": "integer",
+                "example": "18995",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "ENGLAND_WALES_DEMAND"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate of the GB wind generation from wind farms which do not have Transmission System metering installed. These wind farms are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high wind. The true output of these generators is not known so an estimate is provided based on NESO\u2019s best model.",
+                "title": "Estimated Embedded Wind Generation",
+                "type": "integer",
+                "example": "2815",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_GENERATION"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is NESO\u2019s best view of the installed embedded wind capacity in GB. This is based on publicly available information compiled from a variety of sources and is not the definitive view. It is consistent with the generation estimate provided above.",
+                "title": "Embedded Wind Capacity",
+                "type": "integer",
+                "example": "6545",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate of the GB solar generation from PV panels. These are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high radiation. The true output of these generators is not known so an estimate is provided based on NESO\u2019s best model.",
+                "title": "Estimated Embedded Solar Generation",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_GENERATION"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "As embedded wind capacity above, but for solar generation.",
+                "title": "Embedded Solar Capacity",
+                "type": "integer",
+                "example": "15005",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "For units that are not included in the ND generator definition. This can be in the form of generation or demand reduction.",
+                "title": "Non-Balancing Mechanism Short-Term Operating Reserve",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "NON_BM_STOR"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The demand due to pumping at hydro pump storage units; the -ve signifies pumping load.",
+                "title": "Pump Storage Pumping",
+                "type": "integer",
+                "example": "1161",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "PUMP_STORAGE_PUMPING"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The volume of power flowing from Scotland to England and Wales. Negative values denote a flow from England and Wales to Scotland.",
+                "title": "Scottish Transfer Volume",
+                "type": "integer",
+                "example": "1194",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "SCOTTISH_TRANSFER"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "IFA Interconnector Flow",
+                "type": "integer",
+                "example": "609",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "IFA_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "IFA2 Interconnector Flow",
+                "type": "integer",
+                "example": "903",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "IFA2_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Britned Interconnector Flow",
+                "type": "integer",
+                "example": "-896",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "BRITNED_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Moyle Interconnector Flow",
+                "type": "integer",
+                "example": "-451",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "MOYLE_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "East West Interconnector Flow",
+                "type": "integer",
+                "example": "-529",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EAST_WEST_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Nemo Interconnector Flow",
+                "type": "integer",
+                "example": "253",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "NEMO_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "North Sea Link Interconnector Flow",
+                "type": "integer",
+                "example": "235",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "NSL_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "ElecLink Interconnector Flow",
+                "type": "integer",
+                "example": "998",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "ELECLINK_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Viking Interconnector Flow",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "VIKING_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Greenlink Interconnector Flow",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "GREENLINK_FLOW"
+            }
+          ],
+          "records_format": "objects",
+          "records": [
+            {
+              "_id": 1,
+              "SETTLEMENT_DATE": "2025-01-01",
+              "SETTLEMENT_PERIOD": 1,
+              "ND": 21036,
+              "TSD": 26215,
+              "ENGLAND_WALES_DEMAND": 19918,
+              "EMBEDDED_WIND_GENERATION": 5405,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 19270,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 859,
+              "SCOTTISH_TRANSFER": 6353,
+              "IFA_FLOW": -1518,
+              "IFA2_FLOW": -1026,
+              "BRITNED_FLOW": 1,
+              "MOYLE_FLOW": -232,
+              "EAST_WEST_FLOW": -386,
+              "NEMO_FLOW": -558,
+              "NSL_FLOW": 96,
+              "ELECLINK_FLOW": 0,
+              "VIKING_FLOW": 241,
+              "GREENLINK_FLOW": 0
+            },
+            {
+              "_id": 2,
+              "SETTLEMENT_DATE": "2025-01-01",
+              "SETTLEMENT_PERIOD": 2,
+              "ND": 21222,
+              "TSD": 26063,
+              "ENGLAND_WALES_DEMAND": 20167,
+              "EMBEDDED_WIND_GENERATION": 5358,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 19270,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 735,
+              "SCOTTISH_TRANSFER": 6333,
+              "IFA_FLOW": -1513,
+              "IFA2_FLOW": -1023,
+              "BRITNED_FLOW": 1,
+              "MOYLE_FLOW": -124,
+              "EAST_WEST_FLOW": -282,
+              "NEMO_FLOW": -564,
+              "NSL_FLOW": 51,
+              "ELECLINK_FLOW": 0,
+              "VIKING_FLOW": 262,
+              "GREENLINK_FLOW": 0
+            },
+            {
+              "_id": 3,
+              "SETTLEMENT_DATE": "2025-01-01",
+              "SETTLEMENT_PERIOD": 3,
+              "ND": 21385,
+              "TSD": 25734,
+              "ENGLAND_WALES_DEMAND": 20328,
+              "EMBEDDED_WIND_GENERATION": 5237,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 19270,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 691,
+              "SCOTTISH_TRANSFER": 6380,
+              "IFA_FLOW": -1428,
+              "IFA2_FLOW": -922,
+              "BRITNED_FLOW": 1,
+              "MOYLE_FLOW": -119,
+              "EAST_WEST_FLOW": -384,
+              "NEMO_FLOW": -205,
+              "NSL_FLOW": 62,
+              "ELECLINK_FLOW": 0,
+              "VIKING_FLOW": 414,
+              "GREENLINK_FLOW": 0
+            },
+            {
+              "_id": 4,
+              "SETTLEMENT_DATE": "2025-01-01",
+              "SETTLEMENT_PERIOD": 4,
+              "ND": 20473,
+              "TSD": 24988,
+              "ENGLAND_WALES_DEMAND": 19460,
+              "EMBEDDED_WIND_GENERATION": 5115,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 19270,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 931,
+              "SCOTTISH_TRANSFER": 6250,
+              "IFA_FLOW": -1423,
+              "IFA2_FLOW": -915,
+              "BRITNED_FLOW": 0,
+              "MOYLE_FLOW": -119,
+              "EAST_WEST_FLOW": -334,
+              "NEMO_FLOW": -193,
+              "NSL_FLOW": 37,
+              "ELECLINK_FLOW": 0,
+              "VIKING_FLOW": 423,
+              "GREENLINK_FLOW": 0
+            },
+            {
+              "_id": 5,
+              "SETTLEMENT_DATE": "2025-01-01",
+              "SETTLEMENT_PERIOD": 5,
+              "ND": 19634,
+              "TSD": 24912,
+              "ENGLAND_WALES_DEMAND": 18654,
+              "EMBEDDED_WIND_GENERATION": 5080,
+              "EMBEDDED_WIND_CAPACITY": 6606,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 19270,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 854,
+              "SCOTTISH_TRANSFER": 6142,
+              "IFA_FLOW": -1539,
+              "IFA2_FLOW": -899,
+              "BRITNED_FLOW": 0,
+              "MOYLE_FLOW": -119,
+              "EAST_WEST_FLOW": -363,
+              "NEMO_FLOW": -622,
+              "NSL_FLOW": -282,
+              "ELECLINK_FLOW": 0,
+              "VIKING_FLOW": 288,
+              "GREENLINK_FLOW": 0
+            }
+          ],
+          "limit": 5,
+          "_links": {
+            "start": "/api/3/action/datastore_search?limit=5&resource_id=b2bde559-3455-4021-b179-dfe60c0337b0",
+            "next": "/api/3/action/datastore_search?offset=5&limit=5&resource_id=b2bde559-3455-4021-b179-dfe60c0337b0"
+          },
+          "total": 17520
+        }
+      }
+    }
+  },
+  {
+    "name": "demand_2026",
+    "resource_id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+    "resource_show": {
+      "url": "https://api.neso.energy/api/3/action/resource_show?id=8a4a771c-3929-4e56-93ad-cdf13219dea5",
+      "status": 200,
+      "elapsed_seconds": 1.8990651000058278,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=resource_show",
+        "success": true,
+        "result": {
+          "mimetype": null,
+          "cache_url": null,
+          "name": "Historic Demand Data 2026",
+          "hash": "",
+          "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2026. Please find a brief summary of some of the columns in the dataset: <br/><br/> ND = National Demand is the sum of metered generation, but excludes generation required to meet station load, hydro storage pumping and interconnector exports <br/><br/> TSD = Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports.\r\n\r\n<b> **<span style=\"color: rgb(176,74,42)\">NOTE:</span>** NESO have moved the data source to its new forecast system. We are aware of an issue with missing Scottish transfer data and are looking into a prompt resolution. </b>",
+          "metadata_modified": "2026-10-13T08:20:17.175446",
+          "cache_last_updated": null,
+          "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/8a4a771c-3929-4e56-93ad-cdf13219dea5/download/demanddataupdate_2026.csv",
+          "datastore_active": true,
+          "format": "CSV",
+          "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+          "created": "2026-02-02T09:20:13.070018",
+          "state": "active",
+          "mimetype_inner": null,
+          "last_modified": "2026-10-13T08:20:17.633045",
+          "position": 26,
+          "revision_id": "2d5152eb-fd97-41f5-98ea-853c7a91540b",
+          "url_type": "upload",
+          "id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+          "resource_type": null,
+          "size": null
+        }
+      }
+    },
+    "datastore_search": {
+      "url": "https://api.neso.energy/api/3/action/datastore_search?resource_id=8a4a771c-3929-4e56-93ad-cdf13219dea5&limit=5",
+      "status": 200,
+      "elapsed_seconds": 0.6657562000036705,
+      "body": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=datastore_search",
+        "success": true,
+        "result": {
+          "include_total": true,
+          "resource_id": "8a4a771c-3929-4e56-93ad-cdf13219dea5",
+          "fields": [
+            {
+              "type": "int",
+              "id": "_id"
+            },
+            {
+              "info": {
+                "comment": "This follows clock change.",
+                "description": "The date the historic outturn occurred.",
+                "title": "Settlement Date",
+                "type": "date",
+                "example": "01/01/2026",
+                "unit": ""
+              },
+              "type": "date",
+              "id": "SETTLEMENT_DATE"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The half hourly period for the historic outturn occurred. Settlement period 1 runs from 00:00-00:30.",
+                "title": "Settlement Period",
+                "type": "integer",
+                "example": "1",
+                "unit": ""
+              },
+              "type": "int4",
+              "id": "SETTLEMENT_PERIOD"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is the Great Britain generation requirement and is equivalent to the Initial National Demand Outturn (INDO) and National Demand Forecast as published on BM Reports. National Demand is the sum of metered generation, but excludes generation required to meet station load, pump storage pumping and interconnector exports. National Demand is calculated as a sum of generation based on the operational generation metering from the Transmission Network Operators.",
+                "title": "National Demand",
+                "type": "integer",
+                "example": "21043",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "ND"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This column will indicate if a given record is  'A' ('Actual') or  'F' ('Forecast')",
+                "title": "FORECAST_ACTUAL_INDICATOR",
+                "type": "string",
+                "example": "A - Actual or F - Forecast",
+                "unit": ""
+              },
+              "type": "text",
+              "id": "FORECAST_ACTUAL_INDICATOR"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is the Transmission System generation requirement and is equivalent to the Initial Transmission System Demand Outturn (ITSDO) and Transmission System Demand Forecast on BM Reports. Transmission System Demand is equal to the ND plus the additional generation required to meet station load, pump storage pumping and interconnector exports. Transmission System Demand is calculated using the operational metering from the Transmission Network Operators. Note that the Transmission System Demand includes an estimate of station load of 500MW in BST and 600MW in GMT.",
+                "title": "Transmission System Demand",
+                "type": "integer",
+                "example": "24680",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "TSD"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "England and Wales Demand, as ND above but on an England and Wales basis.",
+                "title": "England and Wales Demand",
+                "type": "integer",
+                "example": "18995",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "ENGLAND_WALES_DEMAND"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate of the GB wind generation from wind farms which do not have Transmission System metering installed. These wind farms are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high wind. The true output of these generators is not known so an estimate is provided based on NESO\u2019s best model.",
+                "title": "Estimated Embedded Wind Generation",
+                "type": "integer",
+                "example": "2815",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_GENERATION"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is NESO\u2019s best view of the installed embedded wind capacity in GB. This is based on publicly available information compiled from a variety of sources and is not the definitive view. It is consistent with the generation estimate provided above.",
+                "title": "Embedded Wind Capacity",
+                "type": "integer",
+                "example": "6545",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_WIND_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "This is an estimate of the GB solar generation from PV panels. These are embedded in the distribution network and invisible to NESO. Their effect is to suppress the electricity demand during periods of high radiation. The true output of these generators is not known so an estimate is provided based on NESO\u2019s best model.",
+                "title": "Estimated Embedded Solar Generation",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_GENERATION"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "As embedded wind capacity above, but for solar generation.",
+                "title": "Embedded Solar Capacity",
+                "type": "integer",
+                "example": "15005",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EMBEDDED_SOLAR_CAPACITY"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "For units that are not included in the ND generator definition. This can be in the form of generation or demand reduction.",
+                "title": "Non-Balancing Mechanism Short-Term Operating Reserve",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "NON_BM_STOR"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The demand due to pumping at hydro pump storage units; the -ve signifies pumping load.",
+                "title": "Pump Storage Pumping",
+                "type": "integer",
+                "example": "1161",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "PUMP_STORAGE_PUMPING"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The volume of power flowing from Scotland to England and Wales. Negative values denote a flow from England and Wales to Scotland.",
+                "title": "Scottish Transfer Volume",
+                "type": "integer",
+                "example": "1194",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "SCOTTISH_TRANSFER"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "IFA Interconnector Flow",
+                "type": "integer",
+                "example": "609",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "IFA_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "IFA2 Interconnector Flow",
+                "type": "integer",
+                "example": "903",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "IFA2_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Britned Interconnector Flow",
+                "type": "integer",
+                "example": "-896",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "BRITNED_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Moyle Interconnector Flow",
+                "type": "integer",
+                "example": "-451",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "MOYLE_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "East West Interconnector Flow",
+                "type": "integer",
+                "example": "-529",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "EAST_WEST_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Nemo Interconnector Flow",
+                "type": "integer",
+                "example": "253",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "NEMO_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "North Sea Link Interconnector Flow",
+                "type": "integer",
+                "example": "235",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "NSL_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "ElecLink Interconnector Flow",
+                "type": "integer",
+                "example": "998",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "ELECLINK_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Viking Interconnector Flow",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "VIKING_FLOW"
+            },
+            {
+              "info": {
+                "comment": "",
+                "description": "The flow on the respective interconnector. -ve signifies export power out from GB; +ve signifies import power into GB.",
+                "title": "Greenlink Interconnector Flow",
+                "type": "integer",
+                "example": "0",
+                "unit": "MW"
+              },
+              "type": "int4",
+              "id": "GREENLINK_FLOW"
+            }
+          ],
+          "records_format": "objects",
+          "records": [
+            {
+              "_id": 1,
+              "SETTLEMENT_DATE": "2026-01-01",
+              "SETTLEMENT_PERIOD": 1,
+              "ND": 25107,
+              "FORECAST_ACTUAL_INDICATOR": "A",
+              "TSD": 29668,
+              "ENGLAND_WALES_DEMAND": 23625,
+              "EMBEDDED_WIND_GENERATION": 4146,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 22300,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 455,
+              "SCOTTISH_TRANSFER": 2945,
+              "IFA_FLOW": -1143,
+              "IFA2_FLOW": -610,
+              "BRITNED_FLOW": 989,
+              "MOYLE_FLOW": -361,
+              "EAST_WEST_FLOW": -527,
+              "NEMO_FLOW": 209,
+              "NSL_FLOW": 677,
+              "ELECLINK_FLOW": -352,
+              "VIKING_FLOW": 1021,
+              "GREENLINK_FLOW": -513
+            },
+            {
+              "_id": 2,
+              "SETTLEMENT_DATE": "2026-01-01",
+              "SETTLEMENT_PERIOD": 2,
+              "ND": 25881,
+              "FORECAST_ACTUAL_INDICATOR": "A",
+              "TSD": 30361,
+              "ENGLAND_WALES_DEMAND": 24341,
+              "EMBEDDED_WIND_GENERATION": 4188,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 22300,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 455,
+              "SCOTTISH_TRANSFER": 2909,
+              "IFA_FLOW": -1132,
+              "IFA2_FLOW": -606,
+              "BRITNED_FLOW": 1005,
+              "MOYLE_FLOW": -361,
+              "EAST_WEST_FLOW": -453,
+              "NEMO_FLOW": 243,
+              "NSL_FLOW": 648,
+              "ELECLINK_FLOW": -359,
+              "VIKING_FLOW": 994,
+              "GREENLINK_FLOW": -514
+            },
+            {
+              "_id": 3,
+              "SETTLEMENT_DATE": "2026-01-01",
+              "SETTLEMENT_PERIOD": 3,
+              "ND": 25355,
+              "FORECAST_ACTUAL_INDICATOR": "A",
+              "TSD": 30681,
+              "ENGLAND_WALES_DEMAND": 23805,
+              "EMBEDDED_WIND_GENERATION": 4085,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 22300,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 546,
+              "SCOTTISH_TRANSFER": 3061,
+              "IFA_FLOW": -1433,
+              "IFA2_FLOW": -594,
+              "BRITNED_FLOW": 844,
+              "MOYLE_FLOW": -361,
+              "EAST_WEST_FLOW": -524,
+              "NEMO_FLOW": 343,
+              "NSL_FLOW": 667,
+              "ELECLINK_FLOW": -754,
+              "VIKING_FLOW": 994,
+              "GREENLINK_FLOW": -514
+            },
+            {
+              "_id": 4,
+              "SETTLEMENT_DATE": "2026-01-01",
+              "SETTLEMENT_PERIOD": 4,
+              "ND": 24762,
+              "FORECAST_ACTUAL_INDICATOR": "A",
+              "TSD": 30225,
+              "ENGLAND_WALES_DEMAND": 23226,
+              "EMBEDDED_WIND_GENERATION": 4092,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 22300,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 629,
+              "SCOTTISH_TRANSFER": 2980,
+              "IFA_FLOW": -1469,
+              "IFA2_FLOW": -589,
+              "BRITNED_FLOW": 837,
+              "MOYLE_FLOW": -361,
+              "EAST_WEST_FLOW": -531,
+              "NEMO_FLOW": 346,
+              "NSL_FLOW": 650,
+              "ELECLINK_FLOW": -770,
+              "VIKING_FLOW": 990,
+              "GREENLINK_FLOW": -514
+            },
+            {
+              "_id": 5,
+              "SETTLEMENT_DATE": "2026-01-01",
+              "SETTLEMENT_PERIOD": 5,
+              "ND": 24111,
+              "FORECAST_ACTUAL_INDICATOR": "A",
+              "TSD": 29092,
+              "ENGLAND_WALES_DEMAND": 22653,
+              "EMBEDDED_WIND_GENERATION": 4044,
+              "EMBEDDED_WIND_CAPACITY": 6417,
+              "EMBEDDED_SOLAR_GENERATION": 0,
+              "EMBEDDED_SOLAR_CAPACITY": 22300,
+              "NON_BM_STOR": 0,
+              "PUMP_STORAGE_PUMPING": 834,
+              "SCOTTISH_TRANSFER": 3089,
+              "IFA_FLOW": -1236,
+              "IFA2_FLOW": -431,
+              "BRITNED_FLOW": 949,
+              "MOYLE_FLOW": -361,
+              "EAST_WEST_FLOW": -531,
+              "NEMO_FLOW": 146,
+              "NSL_FLOW": 413,
+              "ELECLINK_FLOW": -475,
+              "VIKING_FLOW": 990,
+              "GREENLINK_FLOW": -513
+            }
+          ],
+          "limit": 5,
+          "_links": {
+            "start": "/api/3/action/datastore_search?limit=5&resource_id=8a4a771c-3929-4e56-93ad-cdf13219dea5",
+            "next": "/api/3/action/datastore_search?offset=5&limit=5&resource_id=8a4a771c-3929-4e56-93ad-cdf13219dea5"
+          },
+          "total": 12718
+        }
+      }
+    }
+  }
+]

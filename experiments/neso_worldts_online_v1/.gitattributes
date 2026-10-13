@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.zip binary
+*.png binary
+*.npz binary
+*.pt binary
+# Matplotlib multiline path attributes and unified diff context intentionally
+# contain trailing separators; retain their exact exported/server bytes.
+*.svg whitespace=-blank-at-eol
+*.diff whitespace=-blank-at-eol

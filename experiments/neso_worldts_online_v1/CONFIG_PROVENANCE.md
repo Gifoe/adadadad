@@ -1,0 +1,13 @@
+# Frozen configuration and experimental definition
+
+Official numerical `WorldTSModel` and `LatentStateLoss` are imported directly from the pinned Git checkout. The supplied `configs/worldts_neso.json` is a NESO-specific adaptation, not the paper's NP/PJM protocol. Model495473parameters: target latent128, covariate latent64; causal patch state/decoder patch5; PatchTST transition patch16/stride8, d_model64,4heads,1layer,d_ff256,dropout0.1; RevIN enabled, numerical future covariates enabled; no text/time modalities or loop. The source default regularizer is `legacy_vc`, matching the supplied loss settings. No upstream file was changed.
+
+Lookback336, horizon48,30-minute UTC grid, seed2021, batch16, at most one real A issue per6h bin; B is the earliest issue6-8h after A. Hold all history fixed at A. Replace covariates only where period end>B; earlier covariates remain A. Both methods predict the same48targets and score the same unfinished portion (32-36slots).
+
+Split by whole future target support:2025 TRAIN;2026Jan-Mar VAL;2026Apr-Aug requested TEST. Crossing windows dropped; actual eligible Test ends July19. All future target supports are mutually disjoint. Scaler fit on TRAIN history only, including repeated histories from sampled windows; no test/val fitting. Train-only revision quartile edges are frozen for both holdouts. Seasonal naive is a fixed336UTC-slot lag, not local-clock matching across DST.
+
+Stage1: native latent MAE weight10, cosine15, legacy VCregularization0.1; detach target enabled. Adam0.001, clip5, max20epochs, patience5; select sample-weighted Validation latent loss. Stage2: E/C/P frozen and eval, Adam0.0001, predicted-state L1 +0.3target-state reconstruction L1; select predictive decoded Validation L1. Constant LR, no drop_last, no scheduler, no AMP are supplied adapter choices.
+
+B3 uses TRAIN-only ridge0.01, no intercept; features normalized wind/solar deltas multiplied by lead0/1/2powers. No future labels enter its inference. B0 is cached A, B1 full recompute B, B2 seasonal, B3 linear correction. Prespecified gate and sensitivity settings are in `configs/execution_protocol.json`, written before formal training and validation metrics. The gate rejected the updater because B3-B1 gap is only0.1878%; the required gap was>1%.
+
+Final decision lock UTC:2026-10-13T17:24:36.462795+00:00. Exact configuration, selected models, calibration, scaler, dataset hashes, revision bins, analysis and inference code are SHA-locked in `outputs/model/validation_decision_lock.json`. Replay refuses changed artifacts and refuses overwriting a completed final Test. Test results were not used for selection.

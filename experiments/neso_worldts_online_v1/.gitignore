@@ -1,0 +1,10 @@
+data/
+outputs/
+upstream/
+.venv/
+*.pt
+*.pth
+*.part
+__pycache__/
+.pytest_cache/
+*.pyc
