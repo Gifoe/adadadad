@@ -250,6 +250,15 @@ The immutable supplied engineering ZIP is retained server-side. Its original REA
     write('STATUS.md','''# Current execution status
 
 COMPLETE_AVAILABLE_COVERAGE; NO_GO_PERSISTENT_LATENT_UPDATER. Real Stage1/Stage2, Validation, conditional updater decision, locked final Test, dependence-aware analyses and compute measurement completed.13engineering tests plus independent real native smoke/restore diagnostics passed. Updater was skipped by the predeclared Validation gate. Full April-August coverage is not met: available eligible Test ends2026July19. See FINAL_REPORT.md and EXECUTION_STATUS.json; original supplied status is archived under outputs/original_docs.''')
+    write('TEST_REPORT.md','''# Current executed test evidence
+
+Server: NVIDIA RTX 5090, Python 3.10.20, Torch 2.8.0+cu128. The supplied engineering suite passed 7 tests on this server; the repaired suite passed 13 tests. Raw logs are in outputs/logs/tests_original.log and tests_final.log.
+
+Those tests include dummy/synthetic fixtures and are not the scientific results. Separate real evidence includes an official native-model forward/backward smoke on 16 actual TRAIN windows, finite nonzero E/C/P gradients, Decoder-only Stage 2 updates, finite [16,48,1] predictions, target-label foil, strict state hash and matching checkpoint restore. The complete selected-model Validation predictions reproduce exactly with matching stage flags (observed maximum difference 0.0 MW).
+
+Actual native Stage 1 and Stage 2 were trained on 1406 genuine windows. Validation 354 and the locked eligible Test 303 windows were evaluated; all MW/MW² metrics independently match preserved predictions and masks. See TRAINING_REPORT.md, VALIDATION_RESULTS.csv, TEST_RESULTS.csv and FINAL_REPORT.md. The final content/lock verification is outputs/artifacts_verification.json.
+
+The original supplied CPU/dummy report, which preceded server execution and stated that real results were unverified, is preserved as historical evidence in outputs/original_docs/TEST_REPORT.md and original_package.zip. Its synthetic sample counts must not be used as NESO experimental results. Remaining limitations are source publication timing and incomplete strict April-August coverage; these remain explicitly unresolved.''')
     figures(history,val,test,compute)
     # Preserve original provided documentation before adding current status.
     originals=ROOT/'outputs/original_docs';originals.mkdir(exist_ok=True)
@@ -261,7 +270,7 @@ COMPLETE_AVAILABLE_COVERAGE; NO_GO_PERSISTENT_LATENT_UPDATER. Real Stage1/Stage2
             relative=pathlib.Path(*parts[1:]);current=ROOT/relative
             if relative.suffix.lower() in ['.py','.json','.md','.txt'] and current.is_file():
                 old=z.read(info).decode('utf-8-sig');new=current.read_text(encoding='utf-8-sig')
-                if relative.name in ['README.md','STATUS.md','CODEX_EXECUTION.md']:(originals/relative.name).write_text(old,encoding='utf-8')
+                if relative.name in ['README.md','STATUS.md','CODEX_EXECUTION.md','TEST_REPORT.md']:(originals/relative.name).write_text(old,encoding='utf-8')
                 patch.extend(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='original/'+relative.as_posix(),tofile='executed/'+relative.as_posix()))
     (ROOT/'outputs/package_patch.diff').write_text(''.join(patch),encoding='utf-8')
     write('EXECUTION_STATUS.json',json.dumps({'status':'COMPLETE_AVAILABLE_COVERAGE','research_decision':'NO_GO_PERSISTENT_LATENT_UPDATER',

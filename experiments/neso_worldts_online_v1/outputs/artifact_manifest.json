@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-13T17:40:48.627655+00:00",
+  "created_utc": "2026-10-13T17:44:58.275692+00:00",
   "server_root": "D:\\neso_worldts_online_v1",
   "official_source_commit": "269426ea6217d7152a244da0e209d922acd46d4f",
   "official_tracked_source_clean": true,
@@ -229,7 +229,7 @@
     {
       "relative_path": "outputs/figures/illustrative_cases.svg",
       "size_bytes": 64861,
-      "sha256": "be9e78c5a499f9030de73c3353699a56b11cd6b1ea179869dc0f00a1be97dd05",
+      "sha256": "d73348c84f906903b02c5815c94620d3a7784bb79d53a834ca8fa500816b7832",
       "retained_server_only": false
     },
     {
@@ -241,7 +241,7 @@
     {
       "relative_path": "outputs/figures/incremental_compute.svg",
       "size_bytes": 12804,
-      "sha256": "69030e147fbceb69eb1c73150a725d7ea219d0d24b0a02bd2a4c0aa62cc0232e",
+      "sha256": "4509453d198a8e67e5a83d6225481c9dda39d77e3c7950e67c0337d8206d368c",
       "retained_server_only": false
     },
     {
@@ -253,7 +253,7 @@
     {
       "relative_path": "outputs/figures/matched_accuracy.svg",
       "size_bytes": 16337,
-      "sha256": "96922371bf067e853fda082a01eb9237b3fb010a40bdd6ee046bafa1d0a909f3",
+      "sha256": "73c35d4c89d6c1cc32067ee300f480c9004b00a46a4798e2d52db610e74989f8",
       "retained_server_only": false
     },
     {
@@ -265,7 +265,7 @@
     {
       "relative_path": "outputs/figures/revision_improves_and_worsens.svg",
       "size_bytes": 118653,
-      "sha256": "3d29ecfabc716b57e8610745a3e4f4076c97a9597afb0e95aa0e62d24eefd734",
+      "sha256": "4ab6094708e684dbf26473a29e3ee1fb8f388b71270eb23f20faef2f92036f2f",
       "retained_server_only": false
     },
     {
@@ -277,7 +277,7 @@
     {
       "relative_path": "outputs/figures/training_curves.svg",
       "size_bytes": 24539,
-      "sha256": "25b861b0f93c684bc5bf3139dec02596174e4f0c049da09e050489f4bb43f5c3",
+      "sha256": "471cd09d77624f9e4657f414e680931aab17f6ac6c32be829c9297759dd370ff",
       "retained_server_only": false
     },
     {
@@ -563,9 +563,15 @@
       "retained_server_only": false
     },
     {
+      "relative_path": "outputs/original_docs/TEST_REPORT.md",
+      "size_bytes": 1379,
+      "sha256": "935950d00231fef61d08f053c95c9c9007ba7336afe1e49519058fef53785586",
+      "retained_server_only": false
+    },
+    {
       "relative_path": "outputs/package_patch.diff",
-      "size_bytes": 49897,
-      "sha256": "5a358ce1d568e5b658bb27c566a7c7b4a1169c3a94215a23c972e3a406e65702",
+      "size_bytes": 52939,
+      "sha256": "dc64dbe5375de16d9bfe14c033c015d9c3c2e8497e0c642b777223fb52d1915c",
       "retained_server_only": false
     },
     {
@@ -744,8 +750,8 @@
     },
     {
       "relative_path": "scripts/finalize_artifacts.py",
-      "size_bytes": 36521,
-      "sha256": "af1f669b64718cb804391ad94054ca53231694050333a792a7ed510b6197a0cb",
+      "size_bytes": 38127,
+      "sha256": "0a8ddaec04ab5e9e88cfc9659184c6b031e2e6d3e44441387cf402d6dbc79432",
       "retained_server_only": false
     },
     {
@@ -804,8 +810,8 @@
     },
     {
       "relative_path": "TEST_REPORT.md",
-      "size_bytes": 1353,
-      "sha256": "4332a3d6f0299f1693a75bdcf804ca7cc4c9eab48ca44de9a8c48cc1b25caeb7",
+      "size_bytes": 1564,
+      "sha256": "c03f4ebe2878bb380543accb46e1c040b58fb8986d6237e762606b2d1620389f",
       "retained_server_only": false
     },
     {
@@ -845,6 +851,6 @@
       "retained_server_only": false
     }
   ],
-  "n_files": 140,
+  "n_files": 141,
   "note": "Hashes describe executed server bytes. Git may normalize text line endings; immutable binary/data snapshots retain exact hashes."
 }
