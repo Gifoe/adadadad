@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-14T19:59:15.705068+00:00",
+  "platform": "Windows-10-10.0.18363-SP0",
+  "python": "3.12.15 (main, Oct 14 2026, 01:08:45) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "torch": "2.9.1+cu128",
+    "transformers": "4.57.3",
+    "accelerate": "1.12.0",
+    "numpy": "2.4.2",
+    "safetensors": "0.7.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "device_capability": [
+    12,
+    0
+  ],
+  "free_gpu_bytes": 28238256537,
+  "host_limitation": "Windows; no installed WSL or Docker; Linux minisgl/Triton stack unavailable"
+}

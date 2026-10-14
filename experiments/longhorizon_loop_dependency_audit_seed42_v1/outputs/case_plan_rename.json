@@ -1,0 +1,802 @@
+[
+  {
+    "sample_id": "controlled_audit_000_H4_rename",
+    "parent_id": "controlled_audit_000",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "I",
+        "consumer_anchor_token": "J"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_000_H16_rename",
+    "parent_id": "controlled_audit_000",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "M",
+        "consumer_anchor_token": "N"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_001_H4_rename",
+    "parent_id": "controlled_audit_001",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "M",
+        "consumer_anchor_token": "L"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_001_H16_rename",
+    "parent_id": "controlled_audit_001",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "P",
+        "consumer_anchor_token": "P"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_002_H4_rename",
+    "parent_id": "controlled_audit_002",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "P",
+        "consumer_anchor_token": "O"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_002_H16_rename",
+    "parent_id": "controlled_audit_002",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "O",
+        "consumer_anchor_token": "I"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_003_H4_rename",
+    "parent_id": "controlled_audit_003",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "L",
+        "consumer_anchor_token": "K"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_003_H16_rename",
+    "parent_id": "controlled_audit_003",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "I",
+        "consumer_anchor_token": "L"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_004_H4_rename",
+    "parent_id": "controlled_audit_004",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 343,
+        "j": 349,
+        "source_unit_span": [
+          343,
+          346
+        ],
+        "consumer_span": [
+          350,
+          351
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "K",
+        "consumer_anchor_token": "M"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_004_H16_rename",
+    "parent_id": "controlled_audit_004",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 319,
+        "j": 349,
+        "source_unit_span": [
+          319,
+          322
+        ],
+        "consumer_span": [
+          350,
+          351
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "I",
+        "consumer_anchor_token": "M"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_005_H4_rename",
+    "parent_id": "controlled_audit_005",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "K",
+        "consumer_anchor_token": "J"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_005_H16_rename",
+    "parent_id": "controlled_audit_005",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "J",
+        "consumer_anchor_token": "N"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_006_H4_rename",
+    "parent_id": "controlled_audit_006",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "M",
+        "consumer_anchor_token": "O"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_006_H16_rename",
+    "parent_id": "controlled_audit_006",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "O",
+        "consumer_anchor_token": "K"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_007_H4_rename",
+    "parent_id": "controlled_audit_007",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "I",
+        "consumer_anchor_token": "J"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_007_H16_rename",
+    "parent_id": "controlled_audit_007",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "L",
+        "consumer_anchor_token": "M"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_008_H4_rename",
+    "parent_id": "controlled_audit_008",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 342,
+        "j": 348,
+        "source_unit_span": [
+          342,
+          345
+        ],
+        "consumer_span": [
+          349,
+          350
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "I",
+        "consumer_anchor_token": "P"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_008_H16_rename",
+    "parent_id": "controlled_audit_008",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 318,
+        "j": 348,
+        "source_unit_span": [
+          318,
+          321
+        ],
+        "consumer_span": [
+          349,
+          350
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "O",
+        "consumer_anchor_token": "M"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_009_H4_rename",
+    "parent_id": "controlled_audit_009",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "I",
+        "consumer_anchor_token": "L"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_009_H16_rename",
+    "parent_id": "controlled_audit_009",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "P",
+        "consumer_anchor_token": "I"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_010_H4_rename",
+    "parent_id": "controlled_audit_010",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 344,
+        "j": 350,
+        "source_unit_span": [
+          344,
+          347
+        ],
+        "consumer_span": [
+          351,
+          352
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "J",
+        "consumer_anchor_token": "K"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_010_H16_rename",
+    "parent_id": "controlled_audit_010",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 320,
+        "j": 350,
+        "source_unit_span": [
+          320,
+          323
+        ],
+        "consumer_span": [
+          351,
+          352
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "I",
+        "consumer_anchor_token": "M"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_011_H4_rename",
+    "parent_id": "controlled_audit_011",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 343,
+        "j": 349,
+        "source_unit_span": [
+          343,
+          346
+        ],
+        "consumer_span": [
+          350,
+          351
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "L",
+        "consumer_anchor_token": "K"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_011_H16_rename",
+    "parent_id": "controlled_audit_011",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 319,
+        "j": 349,
+        "source_unit_span": [
+          319,
+          322
+        ],
+        "consumer_span": [
+          350,
+          351
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "O",
+        "consumer_anchor_token": "L"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_012_H4_rename",
+    "parent_id": "controlled_audit_012",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 343,
+        "j": 349,
+        "source_unit_span": [
+          343,
+          346
+        ],
+        "consumer_span": [
+          350,
+          351
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "J",
+        "consumer_anchor_token": "J"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_012_H16_rename",
+    "parent_id": "controlled_audit_012",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 319,
+        "j": 349,
+        "source_unit_span": [
+          319,
+          322
+        ],
+        "consumer_span": [
+          350,
+          351
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "J",
+        "consumer_anchor_token": "M"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_013_H4_rename",
+    "parent_id": "controlled_audit_013",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "N",
+        "consumer_anchor_token": "I"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_013_H16_rename",
+    "parent_id": "controlled_audit_013",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "P",
+        "consumer_anchor_token": "N"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_014_H4_rename",
+    "parent_id": "controlled_audit_014",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "N",
+        "consumer_anchor_token": "M"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_014_H16_rename",
+    "parent_id": "controlled_audit_014",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "O",
+        "consumer_anchor_token": "N"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_015_H4_rename",
+    "parent_id": "controlled_audit_015",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "P",
+        "consumer_anchor_token": "J"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_015_H16_rename",
+    "parent_id": "controlled_audit_015",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "K",
+        "consumer_anchor_token": "L"
+      }
+    ]
+  }
+]

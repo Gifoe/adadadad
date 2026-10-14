@@ -1,0 +1,110 @@
+{
+  "phase": "rename_aligned",
+  "pair_evaluations_visited": 32,
+  "forward_calls": 560,
+  "cuda_forward_wall_seconds": 26.033748799934983,
+  "phase_end_to_end_seconds_including_load_and_file_writes": 90.69336759997532,
+  "weights_hash_before": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "weights_hash_after": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "unavailable_controls_or_budget_exclusions": [
+    {
+      "sample_id": "controlled_audit_000_H16_rename",
+      "i": 317,
+      "j": 347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_001_H16_rename",
+      "i": 317,
+      "j": 347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_002_H16_rename",
+      "i": 317,
+      "j": 347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_003_H16_rename",
+      "i": 316,
+      "j": 346,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_004_H16_rename",
+      "i": 319,
+      "j": 349,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_005_H16_rename",
+      "i": 317,
+      "j": 347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_006_H16_rename",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_007_H16_rename",
+      "i": 317,
+      "j": 347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_008_H16_rename",
+      "i": 318,
+      "j": 348,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_009_H16_rename",
+      "i": 316,
+      "j": 346,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_010_H16_rename",
+      "i": 320,
+      "j": 350,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_011_H16_rename",
+      "i": 319,
+      "j": 349,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_012_H16_rename",
+      "i": 319,
+      "j": 349,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_013_H16_rename",
+      "i": 316,
+      "j": 346,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_014_H16_rename",
+      "i": 317,
+      "j": 347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_audit_015_H16_rename",
+      "i": 317,
+      "j": 347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    }
+  ],
+  "manifest_sha256": "7f9e8bd45d5150a8dde6a551a0514fc9c6507fecf83d775c0128ec9c09b20e7b",
+  "baseline_gpu_seconds_prior": 1635.0885206017992,
+  "actual_backend": "official native SDPA; no optimizer/backward/parameter changes"
+}

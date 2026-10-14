@@ -1,0 +1,15 @@
+# Long-Horizon Loop Dependency Audit v1
+
+H0: extra recurrence mainly improves local prediction, and downstream errors reflect ordinary local-error accumulation. H1: a source recurrence changes useful downstream state despite small local next-token benefit. H2: producer and consumer computation is complementary, dependency-specific and exploitable at equal extra-iteration budget. Neither alternative is presumed true.
+
+The native DUO visibility rule gives a critical null: a depth-1 consumer cannot read a depth-2 producer KV. When all text and all other depths are fixed, U21 should equal U11 at that single consumer anchor. Hence the next-token 2x2 interaction I = U22-U21-U12+U11 can reduce algebraically to G_source = U22-U12. A positive interaction alone does not establish a new mechanism or coordinated allocation advantage. A whole semantic span can contain other frozen depth-2 readers, so this identity is not silently extended to that aggregate.
+
+The discriminating evidence is semantic benefit over matched non-dependent pairs, attenuation under deep-KV masking, persistence after measuring the full source semantic span, and an exploitable allocation gap under matched actual extra iterations. Ordinary teacher-forced CE improvements do not establish free-generation success. Output mixture and memory state are audited separately because stop_prob_mix can suppress a loop's local readout while its unweighted KV remains accessible at deeper readers.
+
+NESTFUL is evaluated through its exact structured references and executable mathematical functions. Source labels and consumer variable-reference spans measure binding semantics; these must not be described as direct numeric-result reasoning. Controlled finite-state chains separately evaluate actual state-value predictions and hold operation count, operation histogram, output-state count and character length fixed while varying dependency depth. Their new diagnostic status is explicit.
+
+NESTFUL anchors predict variable-identifier digits, not a generic JSON quote or `$var_` prefix. Controlled primary pairs connect the first and last state of the final chain through a declared transitive dependency path; this is distinguished from a direct reference edge. Correct teacher-forced mediator states can screen source information, which is an interpretation limit. An H16 single chain has no earlier non-dependent state at the same semantic role; that control is recorded unavailable rather than mislabelling an ancestor as independent.
+
+Original problem or matched instance group is the statistical unit. Multiple anchors and depths within one group are dependent. Development samples determine thresholds; locked audit samples and policies are saved before scoring. Model weights remain frozen, no backward pass or optimizer exists, and inference receives no future answers.
+
+The original official native path is the intervention reference. Official serving-engine equivalence is a separate required reproduction check: if unavailable on the execution host, it stays explicitly unverified and limits the final decision rather than being replaced by a silent last-loop approximation.

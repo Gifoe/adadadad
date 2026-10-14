@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.png binary
+*.pt binary
+*.npz binary
+outputs/**/*.json -text
+outputs/*.json -text
+outputs/*.jsonl -text
+*.svg whitespace=-blank-at-eol
+*.diff whitespace=-blank-at-eol

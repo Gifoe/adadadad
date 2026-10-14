@@ -1,0 +1,5836 @@
+[
+  {
+    "sample_id": "nestful_e2cf1726-9a4d-4cb1-a32f-5f5e9ba0d3c4",
+    "parent_id": "nestful_e2cf1726-9a4d-4cb1-a32f-5f5e9ba0d3c4",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 689,
+        "j": 735,
+        "source_unit_span": [
+          680,
+          708
+        ],
+        "consumer_span": [
+          733,
+          739
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 46,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 717,
+        "j": 767,
+        "source_unit_span": [
+          708,
+          740
+        ],
+        "consumer_span": [
+          765,
+          771
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 50,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_efb27a4c-8f60-4989-bece-ba7d16ef10ae",
+    "parent_id": "nestful_efb27a4c-8f60-4989-bece-ba7d16ef10ae",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 717,
+        "j": 754,
+        "source_unit_span": [
+          708,
+          734
+        ],
+        "consumer_span": [
+          752,
+          758
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 3,
+        "consumer_node": 5,
+        "i": 806,
+        "j": 874,
+        "source_unit_span": [
+          797,
+          828
+        ],
+        "consumer_span": [
+          872,
+          878
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 68,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_47951d60-637d-4723-a9b8-b8fab85af324",
+    "parent_id": "nestful_47951d60-637d-4723-a9b8-b8fab85af324",
+    "pairs": [
+      {
+        "producer_node": 10,
+        "consumer_node": 11,
+        "i": 1026,
+        "j": 1076,
+        "source_unit_span": [
+          1017,
+          1055
+        ],
+        "consumer_span": [
+          1074,
+          1081
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 50,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 6,
+        "consumer_node": 10,
+        "i": 895,
+        "j": 1038,
+        "source_unit_span": [
+          886,
+          922
+        ],
+        "consumer_span": [
+          1036,
+          1042
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 143,
+        "source_anchor_token": "7",
+        "consumer_anchor_token": "7"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_ce16cd43-3947-45b1-8dca-3946b69719e7",
+    "parent_id": "nestful_ce16cd43-3947-45b1-8dca-3946b69719e7",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 627,
+        "j": 666,
+        "source_unit_span": [
+          618,
+          646
+        ],
+        "consumer_span": [
+          664,
+          670
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 39,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 4,
+        "consumer_node": 16,
+        "i": 747,
+        "j": 1156,
+        "source_unit_span": [
+          738,
+          774
+        ],
+        "consumer_span": [
+          1154,
+          1160
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 409,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_88ebc0f8-ac16-4730-88cf-6e6204267ad6",
+    "parent_id": "nestful_88ebc0f8-ac16-4730-88cf-6e6204267ad6",
+    "pairs": [
+      {
+        "producer_node": 6,
+        "consumer_node": 7,
+        "i": 966,
+        "j": 1008,
+        "source_unit_span": [
+          957,
+          988
+        ],
+        "consumer_span": [
+          1006,
+          1012
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 42,
+        "source_anchor_token": "7",
+        "consumer_anchor_token": "7"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 5,
+        "i": 773,
+        "j": 941,
+        "source_unit_span": [
+          764,
+          792
+        ],
+        "consumer_span": [
+          939,
+          945
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 168,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_9cbda69c-2a36-4f07-87cb-e0fa23cebf60",
+    "parent_id": "nestful_9cbda69c-2a36-4f07-87cb-e0fa23cebf60",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 720,
+        "j": 763,
+        "source_unit_span": [
+          711,
+          737
+        ],
+        "consumer_span": [
+          761,
+          767
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 6,
+        "consumer_node": 10,
+        "i": 897,
+        "j": 1035,
+        "source_unit_span": [
+          888,
+          924
+        ],
+        "consumer_span": [
+          1033,
+          1039
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 138,
+        "source_anchor_token": "7",
+        "consumer_anchor_token": "7"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_c812a0cf-f9a2-4f51-b1e2-1a9ee3652371",
+    "parent_id": "nestful_c812a0cf-f9a2-4f51-b1e2-1a9ee3652371",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 703,
+        "j": 740,
+        "source_unit_span": [
+          694,
+          720
+        ],
+        "consumer_span": [
+          738,
+          744
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 7,
+        "consumer_node": 8,
+        "i": 915,
+        "j": 957,
+        "source_unit_span": [
+          906,
+          937
+        ],
+        "consumer_span": [
+          955,
+          961
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 42,
+        "source_anchor_token": "8",
+        "consumer_anchor_token": "8"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_9ce7a335-7071-4714-9f76-8cb1c34e432a",
+    "parent_id": "nestful_9ce7a335-7071-4714-9f76-8cb1c34e432a",
+    "pairs": [
+      {
+        "producer_node": 6,
+        "consumer_node": 7,
+        "i": 846,
+        "j": 889,
+        "source_unit_span": [
+          837,
+          863
+        ],
+        "consumer_span": [
+          887,
+          893
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "7",
+        "consumer_anchor_token": "7"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 11,
+        "i": 669,
+        "j": 1016,
+        "source_unit_span": [
+          660,
+          686
+        ],
+        "consumer_span": [
+          1014,
+          1020
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 347,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_bf63e869-1ed2-4bd3-9f1a-bfd48e7084db",
+    "parent_id": "nestful_bf63e869-1ed2-4bd3-9f1a-bfd48e7084db",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 672,
+        "j": 711,
+        "source_unit_span": [
+          663,
+          691
+        ],
+        "consumer_span": [
+          709,
+          715
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 39,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 700,
+        "j": 750,
+        "source_unit_span": [
+          691,
+          723
+        ],
+        "consumer_span": [
+          748,
+          754
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 50,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_8d963cd2-0004-45db-9312-d295f0367c1c",
+    "parent_id": "nestful_8d963cd2-0004-45db-9312-d295f0367c1c",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 674,
+        "j": 714,
+        "source_unit_span": [
+          665,
+          694
+        ],
+        "consumer_span": [
+          712,
+          718
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 40,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 3,
+        "consumer_node": 4,
+        "i": 765,
+        "j": 817,
+        "source_unit_span": [
+          756,
+          789
+        ],
+        "consumer_span": [
+          815,
+          821
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 52,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_13437262-d59c-448d-91eb-317a79a99477",
+    "parent_id": "nestful_13437262-d59c-448d-91eb-317a79a99477",
+    "pairs": [
+      {
+        "producer_node": 10,
+        "consumer_node": 11,
+        "i": 1038,
+        "j": 1088,
+        "source_unit_span": [
+          1029,
+          1067
+        ],
+        "consumer_span": [
+          1086,
+          1093
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 50,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 10,
+        "i": 777,
+        "j": 1050,
+        "source_unit_span": [
+          768,
+          804
+        ],
+        "consumer_span": [
+          1048,
+          1054
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 273,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_db6cd8b7-bbba-4166-8921-f68d469142e8",
+    "parent_id": "nestful_db6cd8b7-bbba-4166-8921-f68d469142e8",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 13,
+        "i": 1193,
+        "j": 1233,
+        "source_unit_span": [
+          1183,
+          1211
+        ],
+        "consumer_span": [
+          1231,
+          1238
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 40,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 10,
+        "consumer_node": 16,
+        "i": 1126,
+        "j": 1339,
+        "source_unit_span": [
+          1117,
+          1155
+        ],
+        "consumer_span": [
+          1337,
+          1344
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 213,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_d37c2776-4227-4967-aa8e-1efed8801bc5",
+    "parent_id": "nestful_d37c2776-4227-4967-aa8e-1efed8801bc5",
+    "pairs": [
+      {
+        "producer_node": 4,
+        "consumer_node": 5,
+        "i": 839,
+        "j": 877,
+        "source_unit_span": [
+          830,
+          857
+        ],
+        "consumer_span": [
+          875,
+          881
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      },
+      {
+        "producer_node": 3,
+        "consumer_node": 6,
+        "i": 808,
+        "j": 909,
+        "source_unit_span": [
+          799,
+          830
+        ],
+        "consumer_span": [
+          907,
+          913
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 101,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_f9e03c4f-d03c-499e-a903-c72fd94d5577",
+    "parent_id": "nestful_f9e03c4f-d03c-499e-a903-c72fd94d5577",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 629,
+        "j": 668,
+        "source_unit_span": [
+          620,
+          648
+        ],
+        "consumer_span": [
+          666,
+          672
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 39,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 7,
+        "consumer_node": 11,
+        "i": 842,
+        "j": 983,
+        "source_unit_span": [
+          833,
+          869
+        ],
+        "consumer_span": [
+          981,
+          987
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 141,
+        "source_anchor_token": "8",
+        "consumer_anchor_token": "8"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_547503e2-9eb2-45ac-8d27-ad2147d48a83",
+    "parent_id": "nestful_547503e2-9eb2-45ac-8d27-ad2147d48a83",
+    "pairs": [
+      {
+        "producer_node": 5,
+        "consumer_node": 6,
+        "i": 883,
+        "j": 925,
+        "source_unit_span": [
+          874,
+          905
+        ],
+        "consumer_span": [
+          923,
+          929
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 42,
+        "source_anchor_token": "6",
+        "consumer_anchor_token": "6"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 7,
+        "i": 793,
+        "j": 956,
+        "source_unit_span": [
+          784,
+          815
+        ],
+        "consumer_span": [
+          954,
+          960
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 163,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_6b9ff3e6-2b08-4607-af55-f0131c843cf4",
+    "parent_id": "nestful_6b9ff3e6-2b08-4607-af55-f0131c843cf4",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 768,
+        "j": 816,
+        "source_unit_span": [
+          759,
+          785
+        ],
+        "consumer_span": [
+          814,
+          820
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 48,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 740,
+        "j": 805,
+        "source_unit_span": [
+          731,
+          759
+        ],
+        "consumer_span": [
+          803,
+          809
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 65,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_1a003cf7-911c-45e5-8b04-d35763f52d99",
+    "parent_id": "nestful_1a003cf7-911c-45e5-8b04-d35763f52d99",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 629,
+        "j": 672,
+        "source_unit_span": [
+          620,
+          652
+        ],
+        "consumer_span": [
+          670,
+          676
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 3,
+        "i": 661,
+        "j": 711,
+        "source_unit_span": [
+          652,
+          684
+        ],
+        "consumer_span": [
+          709,
+          715
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 50,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_659d2ad0-1689-4763-94b7-a87ec256880a",
+    "parent_id": "nestful_659d2ad0-1689-4763-94b7-a87ec256880a",
+    "pairs": [
+      {
+        "producer_node": 3,
+        "consumer_node": 4,
+        "i": 754,
+        "j": 794,
+        "source_unit_span": [
+          745,
+          774
+        ],
+        "consumer_span": [
+          792,
+          798
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 40,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 7,
+        "i": 718,
+        "j": 892,
+        "source_unit_span": [
+          709,
+          745
+        ],
+        "consumer_span": [
+          890,
+          896
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 174,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_3af4d6d6-e7a2-4297-bd51-4b85e5f54802",
+    "parent_id": "nestful_3af4d6d6-e7a2-4297-bd51-4b85e5f54802",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 756,
+        "j": 793,
+        "source_unit_span": [
+          747,
+          773
+        ],
+        "consumer_span": [
+          791,
+          797
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 5,
+        "i": 730,
+        "j": 880,
+        "source_unit_span": [
+          721,
+          747
+        ],
+        "consumer_span": [
+          878,
+          884
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 150,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_72c772c0-271f-4fb4-a4fd-5a1e8b57daed",
+    "parent_id": "nestful_72c772c0-271f-4fb4-a4fd-5a1e8b57daed",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 679,
+        "j": 718,
+        "source_unit_span": [
+          670,
+          698
+        ],
+        "consumer_span": [
+          716,
+          722
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 39,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 6,
+        "consumer_node": 9,
+        "i": 865,
+        "j": 968,
+        "source_unit_span": [
+          856,
+          888
+        ],
+        "consumer_span": [
+          966,
+          972
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 103,
+        "source_anchor_token": "7",
+        "consumer_anchor_token": "7"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_33022899-8e8c-4e1b-8a76-0ed698453c77",
+    "parent_id": "nestful_33022899-8e8c-4e1b-8a76-0ed698453c77",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 663,
+        "j": 703,
+        "source_unit_span": [
+          654,
+          683
+        ],
+        "consumer_span": [
+          701,
+          707
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 40,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 4,
+        "consumer_node": 12,
+        "i": 783,
+        "j": 1054,
+        "source_unit_span": [
+          774,
+          810
+        ],
+        "consumer_span": [
+          1052,
+          1058
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 271,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_ace2a45d-4588-4ddc-bfe9-f98c2cff0427",
+    "parent_id": "nestful_ace2a45d-4588-4ddc-bfe9-f98c2cff0427",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 738,
+        "j": 789,
+        "source_unit_span": [
+          729,
+          758
+        ],
+        "consumer_span": [
+          787,
+          793
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 51,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 709,
+        "j": 778,
+        "source_unit_span": [
+          700,
+          729
+        ],
+        "consumer_span": [
+          776,
+          782
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 69,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_506f0686-a27d-4bd6-92a3-c8431fb09caf",
+    "parent_id": "nestful_506f0686-a27d-4bd6-92a3-c8431fb09caf",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 750,
+        "j": 790,
+        "source_unit_span": [
+          741,
+          770
+        ],
+        "consumer_span": [
+          788,
+          794
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 40,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 4,
+        "i": 804,
+        "j": 878,
+        "source_unit_span": [
+          795,
+          829
+        ],
+        "consumer_span": [
+          876,
+          882
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 74,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_961ff968-9756-4270-a681-e4407b96111a",
+    "parent_id": "nestful_961ff968-9756-4270-a681-e4407b96111a",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 740,
+        "j": 788,
+        "source_unit_span": [
+          731,
+          757
+        ],
+        "consumer_span": [
+          786,
+          792
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 48,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 10,
+        "i": 766,
+        "j": 1027,
+        "source_unit_span": [
+          757,
+          793
+        ],
+        "consumer_span": [
+          1025,
+          1031
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 261,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_49b9dec0-3ae5-4765-9d4d-10a32e377b77",
+    "parent_id": "nestful_49b9dec0-3ae5-4765-9d4d-10a32e377b77",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 717,
+        "j": 754,
+        "source_unit_span": [
+          708,
+          734
+        ],
+        "consumer_span": [
+          752,
+          758
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 5,
+        "consumer_node": 6,
+        "i": 869,
+        "j": 920,
+        "source_unit_span": [
+          860,
+          891
+        ],
+        "consumer_span": [
+          918,
+          924
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 51,
+        "source_anchor_token": "6",
+        "consumer_anchor_token": "6"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_7da46475-4741-4505-8ed2-176a39147807",
+    "parent_id": "nestful_7da46475-4741-4505-8ed2-176a39147807",
+    "pairs": [
+      {
+        "producer_node": 4,
+        "consumer_node": 5,
+        "i": 776,
+        "j": 813,
+        "source_unit_span": [
+          767,
+          793
+        ],
+        "consumer_span": [
+          811,
+          817
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      },
+      {
+        "producer_node": 3,
+        "consumer_node": 6,
+        "i": 743,
+        "j": 844,
+        "source_unit_span": [
+          734,
+          767
+        ],
+        "consumer_span": [
+          842,
+          848
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 101,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_63253fb5-5c4b-4d95-b1ab-64cd2019e5c5",
+    "parent_id": "nestful_63253fb5-5c4b-4d95-b1ab-64cd2019e5c5",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 744,
+        "j": 781,
+        "source_unit_span": [
+          735,
+          761
+        ],
+        "consumer_span": [
+          779,
+          785
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 12,
+        "consumer_node": 17,
+        "i": 1111,
+        "j": 1288,
+        "source_unit_span": [
+          1102,
+          1141
+        ],
+        "consumer_span": [
+          1286,
+          1293
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 177,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_e32edb32-9080-4e23-a097-2be14afce16d",
+    "parent_id": "nestful_e32edb32-9080-4e23-a097-2be14afce16d",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 748,
+        "j": 786,
+        "source_unit_span": [
+          739,
+          766
+        ],
+        "consumer_span": [
+          784,
+          790
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_3f8be461-f9fe-46b6-91b7-69d977c2dab5",
+    "parent_id": "nestful_3f8be461-f9fe-46b6-91b7-69d977c2dab5",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 666,
+        "j": 705,
+        "source_unit_span": [
+          657,
+          685
+        ],
+        "consumer_span": [
+          703,
+          709
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 39,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 3,
+        "i": 725,
+        "j": 768,
+        "source_unit_span": [
+          716,
+          748
+        ],
+        "consumer_span": [
+          766,
+          772
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_0edcb8a5-990e-4830-b55e-f920ac2ec474",
+    "parent_id": "nestful_0edcb8a5-990e-4830-b55e-f920ac2ec474",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 685,
+        "j": 728,
+        "source_unit_span": [
+          676,
+          702
+        ],
+        "consumer_span": [
+          726,
+          732
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 3,
+        "consumer_node": 8,
+        "i": 768,
+        "j": 934,
+        "source_unit_span": [
+          759,
+          795
+        ],
+        "consumer_span": [
+          932,
+          938
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 166,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_fb341674-da07-4323-b70a-7bb759f1e746",
+    "parent_id": "nestful_fb341674-da07-4323-b70a-7bb759f1e746",
+    "pairs": [
+      {
+        "producer_node": 2,
+        "consumer_node": 3,
+        "i": 742,
+        "j": 784,
+        "source_unit_span": [
+          733,
+          764
+        ],
+        "consumer_span": [
+          782,
+          788
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 42,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      },
+      {
+        "producer_node": 4,
+        "consumer_node": 5,
+        "i": 807,
+        "j": 862,
+        "source_unit_span": [
+          798,
+          833
+        ],
+        "consumer_span": [
+          860,
+          866
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 55,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_185a7140-1b85-41cf-bcf2-ae8025282e07",
+    "parent_id": "nestful_185a7140-1b85-41cf-bcf2-ae8025282e07",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 745,
+        "j": 783,
+        "source_unit_span": [
+          736,
+          763
+        ],
+        "consumer_span": [
+          781,
+          787
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 4,
+        "i": 804,
+        "j": 874,
+        "source_unit_span": [
+          795,
+          827
+        ],
+        "consumer_span": [
+          872,
+          878
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 70,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_d0a3fac9-1de9-4f4b-b0df-93bb965567f5",
+    "parent_id": "nestful_d0a3fac9-1de9-4f4b-b0df-93bb965567f5",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 775,
+        "j": 813,
+        "source_unit_span": [
+          766,
+          793
+        ],
+        "consumer_span": [
+          811,
+          817
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 7,
+        "consumer_node": 14,
+        "i": 961,
+        "j": 1202,
+        "source_unit_span": [
+          952,
+          988
+        ],
+        "consumer_span": [
+          1200,
+          1206
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 241,
+        "source_anchor_token": "8",
+        "consumer_anchor_token": "8"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_21ed738a-5914-4e64-9ff9-7d9edb97644b",
+    "parent_id": "nestful_21ed738a-5914-4e64-9ff9-7d9edb97644b",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 734,
+        "j": 785,
+        "source_unit_span": [
+          725,
+          754
+        ],
+        "consumer_span": [
+          783,
+          789
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 51,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 705,
+        "j": 774,
+        "source_unit_span": [
+          696,
+          725
+        ],
+        "consumer_span": [
+          772,
+          778
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 69,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_1e6ac1ab-b031-440c-bbb4-5c850ba2df29",
+    "parent_id": "nestful_1e6ac1ab-b031-440c-bbb4-5c850ba2df29",
+    "pairs": [
+      {
+        "producer_node": 3,
+        "consumer_node": 4,
+        "i": 870,
+        "j": 918,
+        "source_unit_span": [
+          859,
+          887
+        ],
+        "consumer_span": [
+          916,
+          922
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 48,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 4,
+        "i": 832,
+        "j": 907,
+        "source_unit_span": [
+          821,
+          859
+        ],
+        "consumer_span": [
+          905,
+          911
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 75,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_2137514c-b124-42a1-a902-7b903792d2c7",
+    "parent_id": "nestful_2137514c-b124-42a1-a902-7b903792d2c7",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 722,
+        "j": 772,
+        "source_unit_span": [
+          713,
+          741
+        ],
+        "consumer_span": [
+          770,
+          776
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 50,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 7,
+        "i": 750,
+        "j": 920,
+        "source_unit_span": [
+          741,
+          777
+        ],
+        "consumer_span": [
+          918,
+          924
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 170,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_2485e461-8dac-4860-a965-f7271ba18463",
+    "parent_id": "nestful_2485e461-8dac-4860-a965-f7271ba18463",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 746,
+        "j": 786,
+        "source_unit_span": [
+          737,
+          766
+        ],
+        "consumer_span": [
+          784,
+          790
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 40,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 5,
+        "i": 719,
+        "j": 880,
+        "source_unit_span": [
+          710,
+          737
+        ],
+        "consumer_span": [
+          878,
+          884
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 161,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_c3388e09-ffd7-4590-b2be-1ec88dd92b2c",
+    "parent_id": "nestful_c3388e09-ffd7-4590-b2be-1ec88dd92b2c",
+    "pairs": [
+      {
+        "producer_node": 4,
+        "consumer_node": 5,
+        "i": 711,
+        "j": 749,
+        "source_unit_span": [
+          702,
+          729
+        ],
+        "consumer_span": [
+          747,
+          753
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 8,
+        "i": 648,
+        "j": 848,
+        "source_unit_span": [
+          639,
+          675
+        ],
+        "consumer_span": [
+          846,
+          852
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 200,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_4aff8dce-4260-4cd6-91fa-e6753a9da0d0",
+    "parent_id": "nestful_4aff8dce-4260-4cd6-91fa-e6753a9da0d0",
+    "pairs": [
+      {
+        "producer_node": 3,
+        "consumer_node": 4,
+        "i": 732,
+        "j": 769,
+        "source_unit_span": [
+          723,
+          749
+        ],
+        "consumer_span": [
+          767,
+          773
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      },
+      {
+        "producer_node": 9,
+        "consumer_node": 16,
+        "i": 913,
+        "j": 1149,
+        "source_unit_span": [
+          904,
+          941
+        ],
+        "consumer_span": [
+          1147,
+          1154
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 236,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_39e8f8c7-546b-4d4d-a84c-cad9ca3a03da",
+    "parent_id": "nestful_39e8f8c7-546b-4d4d-a84c-cad9ca3a03da",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 814,
+        "j": 862,
+        "source_unit_span": [
+          805,
+          831
+        ],
+        "consumer_span": [
+          860,
+          866
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 48,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 787,
+        "j": 851,
+        "source_unit_span": [
+          778,
+          805
+        ],
+        "consumer_span": [
+          849,
+          855
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 64,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_d2f60c36-a1dd-449c-820f-7ef26e8db0ce",
+    "parent_id": "nestful_d2f60c36-a1dd-449c-820f-7ef26e8db0ce",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 614,
+        "j": 664,
+        "source_unit_span": [
+          605,
+          633
+        ],
+        "consumer_span": [
+          662,
+          668
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 50,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 587,
+        "j": 653,
+        "source_unit_span": [
+          578,
+          605
+        ],
+        "consumer_span": [
+          651,
+          657
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 66,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_94b00673-ac30-441e-88e9-ba5af54775cf",
+    "parent_id": "nestful_94b00673-ac30-441e-88e9-ba5af54775cf",
+    "pairs": [
+      {
+        "producer_node": 5,
+        "consumer_node": 6,
+        "i": 929,
+        "j": 968,
+        "source_unit_span": [
+          920,
+          948
+        ],
+        "consumer_span": [
+          966,
+          972
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 39,
+        "source_anchor_token": "6",
+        "consumer_anchor_token": "6"
+      },
+      {
+        "producer_node": 3,
+        "consumer_node": 8,
+        "i": 864,
+        "j": 1036,
+        "source_unit_span": [
+          855,
+          891
+        ],
+        "consumer_span": [
+          1034,
+          1040
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 172,
+        "source_anchor_token": "4",
+        "consumer_anchor_token": "4"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_4b4a01b0-3d7a-4eb6-9f84-74d3c5e1a9af",
+    "parent_id": "nestful_4b4a01b0-3d7a-4eb6-9f84-74d3c5e1a9af",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 731,
+        "j": 769,
+        "source_unit_span": [
+          722,
+          749
+        ],
+        "consumer_span": [
+          767,
+          773
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 4,
+        "consumer_node": 5,
+        "i": 851,
+        "j": 903,
+        "source_unit_span": [
+          842,
+          875
+        ],
+        "consumer_span": [
+          901,
+          907
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 52,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_bfe85f9d-f8c2-4a6f-ae05-b6501e2af6d3",
+    "parent_id": "nestful_bfe85f9d-f8c2-4a6f-ae05-b6501e2af6d3",
+    "pairs": [
+      {
+        "producer_node": 2,
+        "consumer_node": 3,
+        "i": 745,
+        "j": 784,
+        "source_unit_span": [
+          736,
+          764
+        ],
+        "consumer_span": [
+          782,
+          788
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 39,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      },
+      {
+        "producer_node": 1,
+        "consumer_node": 4,
+        "i": 712,
+        "j": 816,
+        "source_unit_span": [
+          703,
+          736
+        ],
+        "consumer_span": [
+          814,
+          820
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 104,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_e0e9c1ca-3a57-4d55-9dee-8bc0e8746e50",
+    "parent_id": "nestful_e0e9c1ca-3a57-4d55-9dee-8bc0e8746e50",
+    "pairs": [
+      {
+        "producer_node": 2,
+        "consumer_node": 3,
+        "i": 764,
+        "j": 813,
+        "source_unit_span": [
+          755,
+          782
+        ],
+        "consumer_span": [
+          811,
+          817
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 49,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      },
+      {
+        "producer_node": 11,
+        "consumer_node": 17,
+        "i": 1062,
+        "j": 1278,
+        "source_unit_span": [
+          1053,
+          1088
+        ],
+        "consumer_span": [
+          1276,
+          1283
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 216,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_b3ec3724-bfb1-40be-b92e-9e28cabf8a68",
+    "parent_id": "nestful_b3ec3724-bfb1-40be-b92e-9e28cabf8a68",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 713,
+        "j": 758,
+        "source_unit_span": [
+          704,
+          732
+        ],
+        "consumer_span": [
+          756,
+          762
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 45,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_80d3d81b-e6fd-4fa4-a690-b7214c4ef41c",
+    "parent_id": "nestful_80d3d81b-e6fd-4fa4-a690-b7214c4ef41c",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 773,
+        "j": 816,
+        "source_unit_span": [
+          764,
+          790
+        ],
+        "consumer_span": [
+          814,
+          820
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 3,
+        "i": 746,
+        "j": 841,
+        "source_unit_span": [
+          737,
+          764
+        ],
+        "consumer_span": [
+          839,
+          845
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 95,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_68bb325d-be6c-4a56-a70b-be023b8f068b",
+    "parent_id": "nestful_68bb325d-be6c-4a56-a70b-be023b8f068b",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 735,
+        "j": 773,
+        "source_unit_span": [
+          726,
+          753
+        ],
+        "consumer_span": [
+          771,
+          777
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 6,
+        "i": 794,
+        "j": 926,
+        "source_unit_span": [
+          785,
+          816
+        ],
+        "consumer_span": [
+          924,
+          930
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 132,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_a576f58b-44b2-498e-b7d9-32bdbb48dd6c",
+    "parent_id": "nestful_a576f58b-44b2-498e-b7d9-32bdbb48dd6c",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 686,
+        "j": 723,
+        "source_unit_span": [
+          677,
+          703
+        ],
+        "consumer_span": [
+          721,
+          727
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 4,
+        "consumer_node": 5,
+        "i": 808,
+        "j": 851,
+        "source_unit_span": [
+          799,
+          831
+        ],
+        "consumer_span": [
+          849,
+          855
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_83e87247-0e5d-4f60-a88f-8aa6069ce66c",
+    "parent_id": "nestful_83e87247-0e5d-4f60-a88f-8aa6069ce66c",
+    "pairs": [
+      {
+        "producer_node": 2,
+        "consumer_node": 3,
+        "i": 758,
+        "j": 795,
+        "source_unit_span": [
+          749,
+          775
+        ],
+        "consumer_span": [
+          793,
+          799
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      },
+      {
+        "producer_node": 1,
+        "consumer_node": 9,
+        "i": 724,
+        "j": 982,
+        "source_unit_span": [
+          715,
+          749
+        ],
+        "consumer_span": [
+          980,
+          986
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 258,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_4b755960-987b-447a-a680-dbcd6c465ed5",
+    "parent_id": "nestful_4b755960-987b-447a-a680-dbcd6c465ed5",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 692,
+        "j": 729,
+        "source_unit_span": [
+          683,
+          709
+        ],
+        "consumer_span": [
+          727,
+          733
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 10,
+        "consumer_node": 19,
+        "i": 963,
+        "j": 1257,
+        "source_unit_span": [
+          954,
+          987
+        ],
+        "consumer_span": [
+          1255,
+          1262
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 294,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_7394c8af-324e-421a-89ad-dc29355fad02",
+    "parent_id": "nestful_7394c8af-324e-421a-89ad-dc29355fad02",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 832,
+        "j": 870,
+        "source_unit_span": [
+          823,
+          850
+        ],
+        "consumer_span": [
+          868,
+          874
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 38,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_5cca94f3-e9c1-41b2-8119-20c0ddbee477",
+    "parent_id": "nestful_5cca94f3-e9c1-41b2-8119-20c0ddbee477",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 711,
+        "j": 748,
+        "source_unit_span": [
+          702,
+          728
+        ],
+        "consumer_span": [
+          746,
+          752
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      },
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 737,
+        "j": 785,
+        "source_unit_span": [
+          728,
+          759
+        ],
+        "consumer_span": [
+          783,
+          789
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 48,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_62110db0-54fa-4605-bf3c-79280daad658",
+    "parent_id": "nestful_62110db0-54fa-4605-bf3c-79280daad658",
+    "pairs": [
+      {
+        "producer_node": 2,
+        "consumer_node": 3,
+        "i": 774,
+        "j": 811,
+        "source_unit_span": [
+          765,
+          791
+        ],
+        "consumer_span": [
+          809,
+          815
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      },
+      {
+        "producer_node": 4,
+        "consumer_node": 8,
+        "i": 833,
+        "j": 972,
+        "source_unit_span": [
+          824,
+          860
+        ],
+        "consumer_span": [
+          970,
+          976
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 139,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_0a5bee61-0e2f-49fc-a0d1-e303c980f6de",
+    "parent_id": "nestful_0a5bee61-0e2f-49fc-a0d1-e303c980f6de",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 852,
+        "j": 883,
+        "source_unit_span": [
+          842,
+          863
+        ],
+        "consumer_span": [
+          881,
+          887
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 31,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 3,
+        "i": 824,
+        "j": 914,
+        "source_unit_span": [
+          815,
+          842
+        ],
+        "consumer_span": [
+          912,
+          918
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 90,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_432c71fe-ea44-4ff1-a575-b5fe6167ad0b",
+    "parent_id": "nestful_432c71fe-ea44-4ff1-a575-b5fe6167ad0b",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 825,
+        "j": 867,
+        "source_unit_span": [
+          816,
+          847
+        ],
+        "consumer_span": [
+          865,
+          871
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 42,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 5,
+        "consumer_node": 8,
+        "i": 955,
+        "j": 1056,
+        "source_unit_span": [
+          946,
+          977
+        ],
+        "consumer_span": [
+          1054,
+          1060
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 101,
+        "source_anchor_token": "6",
+        "consumer_anchor_token": "6"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_aac2c0b4-ef13-4f05-87f9-2ba5c4e572b2",
+    "parent_id": "nestful_aac2c0b4-ef13-4f05-87f9-2ba5c4e572b2",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 753,
+        "j": 797,
+        "source_unit_span": [
+          744,
+          777
+        ],
+        "consumer_span": [
+          795,
+          801
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 44,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 8,
+        "consumer_node": 16,
+        "i": 992,
+        "j": 1285,
+        "source_unit_span": [
+          983,
+          1019
+        ],
+        "consumer_span": [
+          1283,
+          1289
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 293,
+        "source_anchor_token": "9",
+        "consumer_anchor_token": "9"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_836068a1-293e-4e7e-a93c-280e57593395",
+    "parent_id": "nestful_836068a1-293e-4e7e-a93c-280e57593395",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 862,
+        "j": 906,
+        "source_unit_span": [
+          852,
+          875
+        ],
+        "consumer_span": [
+          904,
+          910
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 44,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 834,
+        "j": 895,
+        "source_unit_span": [
+          823,
+          852
+        ],
+        "consumer_span": [
+          893,
+          899
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 61,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_6c668a48-30d8-46ba-a9ac-8e0c58f9d9f0",
+    "parent_id": "nestful_6c668a48-30d8-46ba-a9ac-8e0c58f9d9f0",
+    "pairs": [
+      {
+        "producer_node": 4,
+        "consumer_node": 5,
+        "i": 859,
+        "j": 902,
+        "source_unit_span": [
+          850,
+          882
+        ],
+        "consumer_span": [
+          900,
+          906
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 43,
+        "source_anchor_token": "5",
+        "consumer_anchor_token": "5"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 737,
+        "j": 803,
+        "source_unit_span": [
+          728,
+          755
+        ],
+        "consumer_span": [
+          801,
+          807
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 66,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_e66f9c86-4761-439e-9e3e-ae47178123b1",
+    "parent_id": "nestful_e66f9c86-4761-439e-9e3e-ae47178123b1",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 807,
+        "j": 849,
+        "source_unit_span": [
+          798,
+          829
+        ],
+        "consumer_span": [
+          847,
+          853
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 42,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 2,
+        "consumer_node": 6,
+        "i": 838,
+        "j": 970,
+        "source_unit_span": [
+          829,
+          860
+        ],
+        "consumer_span": [
+          968,
+          974
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 132,
+        "source_anchor_token": "3",
+        "consumer_anchor_token": "3"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_a238b25b-019f-4817-866a-07f08b0816cc",
+    "parent_id": "nestful_a238b25b-019f-4817-866a-07f08b0816cc",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 714,
+        "j": 751,
+        "source_unit_span": [
+          705,
+          731
+        ],
+        "consumer_span": [
+          749,
+          755
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 37,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 3,
+        "i": 688,
+        "j": 782,
+        "source_unit_span": [
+          679,
+          705
+        ],
+        "consumer_span": [
+          780,
+          786
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 94,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_eb2c642b-1c31-444f-92dc-fad34952a8c5",
+    "parent_id": "nestful_eb2c642b-1c31-444f-92dc-fad34952a8c5",
+    "pairs": [
+      {
+        "producer_node": 6,
+        "consumer_node": 7,
+        "i": 866,
+        "j": 906,
+        "source_unit_span": [
+          857,
+          886
+        ],
+        "consumer_span": [
+          904,
+          910
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 40,
+        "source_anchor_token": "7",
+        "consumer_anchor_token": "7"
+      },
+      {
+        "producer_node": 5,
+        "consumer_node": 8,
+        "i": 830,
+        "j": 937,
+        "source_unit_span": [
+          821,
+          857
+        ],
+        "consumer_span": [
+          935,
+          941
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 107,
+        "source_anchor_token": "6",
+        "consumer_anchor_token": "6"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_fd93d5e2-b364-47d3-95c6-b253545f19a9",
+    "parent_id": "nestful_fd93d5e2-b364-47d3-95c6-b253545f19a9",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 644,
+        "j": 692,
+        "source_unit_span": [
+          635,
+          661
+        ],
+        "consumer_span": [
+          690,
+          696
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 48,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 2,
+        "i": 618,
+        "j": 681,
+        "source_unit_span": [
+          609,
+          635
+        ],
+        "consumer_span": [
+          679,
+          685
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 63,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "nestful_5cc98b77-a129-4698-a461-45c61ee808cf",
+    "parent_id": "nestful_5cc98b77-a129-4698-a461-45c61ee808cf",
+    "pairs": [
+      {
+        "producer_node": 1,
+        "consumer_node": 2,
+        "i": 717,
+        "j": 761,
+        "source_unit_span": [
+          708,
+          741
+        ],
+        "consumer_span": [
+          759,
+          765
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 44,
+        "source_anchor_token": "2",
+        "consumer_anchor_token": "2"
+      },
+      {
+        "producer_node": 0,
+        "consumer_node": 1,
+        "i": 691,
+        "j": 736,
+        "source_unit_span": [
+          682,
+          708
+        ],
+        "consumer_span": [
+          734,
+          740
+        ],
+        "relation": "direct_reference_edge",
+        "distance_tokens": 45,
+        "source_anchor_token": "1",
+        "consumer_anchor_token": "1"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_000_H4_base",
+    "parent_id": "controlled_audit_000",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_000_H16_base",
+    "parent_id": "controlled_audit_000",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_001_H4_base",
+    "parent_id": "controlled_audit_001",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_001_H16_base",
+    "parent_id": "controlled_audit_001",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_002_H4_base",
+    "parent_id": "controlled_audit_002",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_002_H16_base",
+    "parent_id": "controlled_audit_002",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_003_H4_base",
+    "parent_id": "controlled_audit_003",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "D",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_003_H16_base",
+    "parent_id": "controlled_audit_003",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_004_H4_base",
+    "parent_id": "controlled_audit_004",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_004_H16_base",
+    "parent_id": "controlled_audit_004",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_005_H4_base",
+    "parent_id": "controlled_audit_005",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_005_H16_base",
+    "parent_id": "controlled_audit_005",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_006_H4_base",
+    "parent_id": "controlled_audit_006",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_006_H16_base",
+    "parent_id": "controlled_audit_006",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_007_H4_base",
+    "parent_id": "controlled_audit_007",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_007_H16_base",
+    "parent_id": "controlled_audit_007",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "D",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_008_H4_base",
+    "parent_id": "controlled_audit_008",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_008_H16_base",
+    "parent_id": "controlled_audit_008",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_009_H4_base",
+    "parent_id": "controlled_audit_009",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_009_H16_base",
+    "parent_id": "controlled_audit_009",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_010_H4_base",
+    "parent_id": "controlled_audit_010",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_010_H16_base",
+    "parent_id": "controlled_audit_010",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_011_H4_base",
+    "parent_id": "controlled_audit_011",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "D",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_011_H16_base",
+    "parent_id": "controlled_audit_011",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_012_H4_base",
+    "parent_id": "controlled_audit_012",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_012_H16_base",
+    "parent_id": "controlled_audit_012",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_013_H4_base",
+    "parent_id": "controlled_audit_013",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_013_H16_base",
+    "parent_id": "controlled_audit_013",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_014_H4_base",
+    "parent_id": "controlled_audit_014",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_014_H16_base",
+    "parent_id": "controlled_audit_014",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_015_H4_base",
+    "parent_id": "controlled_audit_015",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_015_H16_base",
+    "parent_id": "controlled_audit_015",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_016_H4_base",
+    "parent_id": "controlled_audit_016",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_016_H16_base",
+    "parent_id": "controlled_audit_016",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_017_H4_base",
+    "parent_id": "controlled_audit_017",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_017_H16_base",
+    "parent_id": "controlled_audit_017",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_018_H4_base",
+    "parent_id": "controlled_audit_018",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "D",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_018_H16_base",
+    "parent_id": "controlled_audit_018",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_019_H4_base",
+    "parent_id": "controlled_audit_019",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_019_H16_base",
+    "parent_id": "controlled_audit_019",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_020_H4_base",
+    "parent_id": "controlled_audit_020",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_020_H16_base",
+    "parent_id": "controlled_audit_020",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_021_H4_base",
+    "parent_id": "controlled_audit_021",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_021_H16_base",
+    "parent_id": "controlled_audit_021",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_022_H4_base",
+    "parent_id": "controlled_audit_022",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_022_H16_base",
+    "parent_id": "controlled_audit_022",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_023_H4_base",
+    "parent_id": "controlled_audit_023",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_023_H16_base",
+    "parent_id": "controlled_audit_023",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_024_H4_base",
+    "parent_id": "controlled_audit_024",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_024_H16_base",
+    "parent_id": "controlled_audit_024",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_025_H4_base",
+    "parent_id": "controlled_audit_025",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_025_H16_base",
+    "parent_id": "controlled_audit_025",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_026_H4_base",
+    "parent_id": "controlled_audit_026",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_026_H16_base",
+    "parent_id": "controlled_audit_026",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_027_H4_base",
+    "parent_id": "controlled_audit_027",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_027_H16_base",
+    "parent_id": "controlled_audit_027",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_028_H4_base",
+    "parent_id": "controlled_audit_028",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_028_H16_base",
+    "parent_id": "controlled_audit_028",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_029_H4_base",
+    "parent_id": "controlled_audit_029",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_029_H16_base",
+    "parent_id": "controlled_audit_029",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_030_H4_base",
+    "parent_id": "controlled_audit_030",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_030_H16_base",
+    "parent_id": "controlled_audit_030",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_031_H4_base",
+    "parent_id": "controlled_audit_031",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_031_H16_base",
+    "parent_id": "controlled_audit_031",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_032_H4_base",
+    "parent_id": "controlled_audit_032",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_032_H16_base",
+    "parent_id": "controlled_audit_032",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_033_H4_base",
+    "parent_id": "controlled_audit_033",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_033_H16_base",
+    "parent_id": "controlled_audit_033",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_034_H4_base",
+    "parent_id": "controlled_audit_034",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_034_H16_base",
+    "parent_id": "controlled_audit_034",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_035_H4_base",
+    "parent_id": "controlled_audit_035",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 342,
+        "j": 348,
+        "source_unit_span": [
+          342,
+          345
+        ],
+        "consumer_span": [
+          349,
+          350
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_035_H16_base",
+    "parent_id": "controlled_audit_035",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 318,
+        "j": 348,
+        "source_unit_span": [
+          318,
+          321
+        ],
+        "consumer_span": [
+          349,
+          350
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_036_H4_base",
+    "parent_id": "controlled_audit_036",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_036_H16_base",
+    "parent_id": "controlled_audit_036",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_037_H4_base",
+    "parent_id": "controlled_audit_037",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_037_H16_base",
+    "parent_id": "controlled_audit_037",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_038_H4_base",
+    "parent_id": "controlled_audit_038",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_038_H16_base",
+    "parent_id": "controlled_audit_038",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_039_H4_base",
+    "parent_id": "controlled_audit_039",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_039_H16_base",
+    "parent_id": "controlled_audit_039",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_040_H4_base",
+    "parent_id": "controlled_audit_040",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_040_H16_base",
+    "parent_id": "controlled_audit_040",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_041_H4_base",
+    "parent_id": "controlled_audit_041",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_041_H16_base",
+    "parent_id": "controlled_audit_041",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_042_H4_base",
+    "parent_id": "controlled_audit_042",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_042_H16_base",
+    "parent_id": "controlled_audit_042",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_043_H4_base",
+    "parent_id": "controlled_audit_043",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_043_H16_base",
+    "parent_id": "controlled_audit_043",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_044_H4_base",
+    "parent_id": "controlled_audit_044",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_044_H16_base",
+    "parent_id": "controlled_audit_044",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_045_H4_base",
+    "parent_id": "controlled_audit_045",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_045_H16_base",
+    "parent_id": "controlled_audit_045",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_046_H4_base",
+    "parent_id": "controlled_audit_046",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_046_H16_base",
+    "parent_id": "controlled_audit_046",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_047_H4_base",
+    "parent_id": "controlled_audit_047",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_047_H16_base",
+    "parent_id": "controlled_audit_047",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_048_H4_base",
+    "parent_id": "controlled_audit_048",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_048_H16_base",
+    "parent_id": "controlled_audit_048",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_049_H4_base",
+    "parent_id": "controlled_audit_049",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 341,
+        "j": 347,
+        "source_unit_span": [
+          341,
+          344
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_049_H16_base",
+    "parent_id": "controlled_audit_049",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 317,
+        "j": 347,
+        "source_unit_span": [
+          317,
+          320
+        ],
+        "consumer_span": [
+          348,
+          349
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_050_H4_base",
+    "parent_id": "controlled_audit_050",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_050_H16_base",
+    "parent_id": "controlled_audit_050",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_051_H4_base",
+    "parent_id": "controlled_audit_051",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "H",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_051_H16_base",
+    "parent_id": "controlled_audit_051",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_052_H4_base",
+    "parent_id": "controlled_audit_052",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "D"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_052_H16_base",
+    "parent_id": "controlled_audit_052",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_053_H4_base",
+    "parent_id": "controlled_audit_053",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_053_H16_base",
+    "parent_id": "controlled_audit_053",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_054_H4_base",
+    "parent_id": "controlled_audit_054",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_054_H16_base",
+    "parent_id": "controlled_audit_054",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_055_H4_base",
+    "parent_id": "controlled_audit_055",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_055_H16_base",
+    "parent_id": "controlled_audit_055",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_056_H4_base",
+    "parent_id": "controlled_audit_056",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_056_H16_base",
+    "parent_id": "controlled_audit_056",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_057_H4_base",
+    "parent_id": "controlled_audit_057",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_057_H16_base",
+    "parent_id": "controlled_audit_057",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_058_H4_base",
+    "parent_id": "controlled_audit_058",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_058_H16_base",
+    "parent_id": "controlled_audit_058",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "F",
+        "consumer_anchor_token": "H"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_059_H4_base",
+    "parent_id": "controlled_audit_059",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_059_H16_base",
+    "parent_id": "controlled_audit_059",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_060_H4_base",
+    "parent_id": "controlled_audit_060",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_060_H16_base",
+    "parent_id": "controlled_audit_060",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "B"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_061_H4_base",
+    "parent_id": "controlled_audit_061",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 340,
+        "j": 346,
+        "source_unit_span": [
+          340,
+          343
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "A",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_061_H16_base",
+    "parent_id": "controlled_audit_061",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 316,
+        "j": 346,
+        "source_unit_span": [
+          316,
+          319
+        ],
+        "consumer_span": [
+          347,
+          348
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "C",
+        "consumer_anchor_token": "C"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_062_H4_base",
+    "parent_id": "controlled_audit_062",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 338,
+        "j": 344,
+        "source_unit_span": [
+          338,
+          341
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "G",
+        "consumer_anchor_token": "A"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_062_H16_base",
+    "parent_id": "controlled_audit_062",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 314,
+        "j": 344,
+        "source_unit_span": [
+          314,
+          317
+        ],
+        "consumer_span": [
+          345,
+          346
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "D",
+        "consumer_anchor_token": "E"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_063_H4_base",
+    "parent_id": "controlled_audit_063",
+    "pairs": [
+      {
+        "producer_node": 12,
+        "consumer_node": 15,
+        "i": 339,
+        "j": 345,
+        "source_unit_span": [
+          339,
+          342
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 3,
+        "distance_tokens": 6,
+        "source_anchor_token": "E",
+        "consumer_anchor_token": "G"
+      }
+    ]
+  },
+  {
+    "sample_id": "controlled_audit_063_H16_base",
+    "parent_id": "controlled_audit_063",
+    "pairs": [
+      {
+        "producer_node": 0,
+        "consumer_node": 15,
+        "i": 315,
+        "j": 345,
+        "source_unit_span": [
+          315,
+          318
+        ],
+        "consumer_span": [
+          346,
+          347
+        ],
+        "relation": "transitive_ancestor_path",
+        "path_length": 15,
+        "distance_tokens": 30,
+        "source_anchor_token": "B",
+        "consumer_anchor_token": "F"
+      }
+    ]
+  }
+]

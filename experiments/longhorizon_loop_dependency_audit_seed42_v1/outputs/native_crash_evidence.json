@@ -1,0 +1,60 @@
+{
+    "event_scope":  "Python application faults in the execution window; not every historical event is assigned to this experiment.",
+    "python_application_events":  [
+                                      {
+                                          "module":  "ucrtbase.dll",
+                                          "app":  "python.exe",
+                                          "utc":  "2026-10-14T20:55:04.4900029Z",
+                                          "exception_code":  "c0000409",
+                                          "process_id_hex":  "a13c"
+                                      },
+                                      {
+                                          "module":  "python312.dll",
+                                          "app":  "python.exe",
+                                          "utc":  "2026-10-14T20:45:15.7183984Z",
+                                          "exception_code":  "c0000005",
+                                          "process_id_hex":  "bdd8"
+                                      },
+                                      {
+                                          "module":  "python312.dll",
+                                          "app":  "python.exe",
+                                          "utc":  "2026-10-14T20:21:39.4304831Z",
+                                          "exception_code":  "c0000409",
+                                          "process_id_hex":  "bff4"
+                                      },
+                                      {
+                                          "module":  "python312.dll",
+                                          "app":  "python.exe",
+                                          "utc":  "2026-10-14T19:59:50.5535435Z",
+                                          "exception_code":  "c0000005",
+                                          "process_id_hex":  "ca04"
+                                      },
+                                      {
+                                          "module":  "python313.dll",
+                                          "app":  "python.exe",
+                                          "utc":  "2026-10-14T18:33:09.7377625Z",
+                                          "exception_code":  "c0000005",
+                                          "process_id_hex":  "b9e4"
+                                      },
+                                      {
+                                          "module":  "python313.dll",
+                                          "app":  "python.exe",
+                                          "utc":  "2026-10-14T18:31:15.1072535Z",
+                                          "exception_code":  "c0000005",
+                                          "process_id_hex":  "b94c"
+                                      },
+                                      {
+                                          "module":  "python313.dll",
+                                          "app":  "python.exe",
+                                          "utc":  "2026-10-14T18:28:37.5229106Z",
+                                          "exception_code":  "c0000005",
+                                          "process_id_hex":  "c67c"
+                                      }
+                                  ],
+    "diagnosis":  "Unresolved. Events alone do not establish a hardware fault. Task process affinity is an operational workaround.",
+    "processor":  {
+                      "Name":  "Intel(R) Core(TM) i9-14900KF",
+                      "NumberOfCores":  24,
+                      "NumberOfLogicalProcessors":  32
+                  }
+}

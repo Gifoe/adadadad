@@ -1,0 +1,36 @@
+{
+  "nestful_source_commit": "fc2c4123e73500a56185a5fb354f05d1c8b4890c",
+  "source_schema": [
+    "sample_id",
+    "input",
+    "output",
+    "tools",
+    "gold_answer"
+  ],
+  "nestful": {
+    "executable_candidates": 1349,
+    "distinct_structural_groups": 813,
+    "selected": 96,
+    "cross_split_structure_overlap": 0
+  },
+  "rejections": {
+    "non_basic_math_function": 445,
+    "execution_gold_mismatch_typed": 53,
+    "call_count_outside_2_to_20": 12,
+    "excluded_pseudo_or_final_irrelevant_edge": 17,
+    "execution_failure:TypeError": 1,
+    "execution_failure:ValueError": 1
+  },
+  "controlled_groups": {
+    "dev": 16,
+    "audit": 64
+  },
+  "controlled_generated_inputs_with_rename": 640,
+  "controlled_primary_audit_inputs": 128,
+  "controlled_definition": "new deterministic diagnostic, not a public existing benchmark",
+  "typed_bool_numeric_comparison": "False and0 are different; execution status separate from return value",
+  "function_execution": "exact official pure-math basic_functions; call arguments positional in original ordered dictionary order",
+  "total_manifest_rows": 736,
+  "tokenized": false,
+  "manifest_sha256": "c55f1a0e2392861f0bc40b58dcedff87257e23911cc6f50aa0fed84d622a71eb"
+}

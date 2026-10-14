@@ -1,0 +1,15 @@
+{
+  "split_used": "development_only",
+  "rule": "max(0.01, dev native-source-K1 Q25(abs(G_local)), 5*max(abs(repeat_difference)))",
+  "local_small_threshold_nats": 0.01,
+  "native1_development_pairs": 50,
+  "dev_repeat_max_abs_nats": 0.0,
+  "masked_shape_null_p95_abs_nats": 0.06249719858169556,
+  "masked_shape_null_max_abs_nats": 0.0726693868637085,
+  "minimum_delayed_effect_nats": 0.01,
+  "threshold_scope": "anchor local gain, not whole-unit local gain",
+  "shape_null_scope": "diagnostic credibility check, not a post-hoc sample exclusion or local-gain threshold",
+  "manifest_sha256": "7f9e8bd45d5150a8dde6a551a0514fc9c6507fecf83d775c0128ec9c09b20e7b",
+  "config_sha256": "360906e9b0d7d998c0d1b9635624c8301b60d0ffb293056f67b974b0cf5a8322",
+  "development_results_sha256": "3a57c0634aef6cd2fc889c575cd395197d39ba26072d2805e865a567d08627a2"
+}

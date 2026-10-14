@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.venv/
+models/
+upstream/
+python_downloads/
+tools/
+!outputs/
+outputs/anchor_logits/*.npz
+outputs/logs/
+outputs/preflight_manifest_before_identifier_anchor_fix.jsonl
+*.download

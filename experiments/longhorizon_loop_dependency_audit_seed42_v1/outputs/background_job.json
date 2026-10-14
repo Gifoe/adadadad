@@ -1,0 +1,7 @@
+﻿{
+    "scope":  "single existing experiment, hidden process, resumable",
+    "script":  "scripts/run_remaining.py",
+    "launcher":  "WMI Win32_Process.Create",
+    "created_utc":  "2026-10-14T22:31:04.6831499Z",
+    "process_id":  42124
+}

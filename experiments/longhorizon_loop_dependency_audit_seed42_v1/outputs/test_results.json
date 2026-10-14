@@ -1,0 +1,7 @@
+{
+  "command": ".venv/Scripts/python.exe -m pytest -q",
+  "status": "PASS",
+  "tests_passed": 9,
+  "raw_log_sha256": "e452e77a17fe2fa8844f1107e0a227b92809dd420c9e9fd019f40b3e129d0be8",
+  "execution": "remote server, final foreground pipeline"
+}

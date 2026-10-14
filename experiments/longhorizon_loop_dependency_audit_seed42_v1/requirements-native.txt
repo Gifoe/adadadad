@@ -1,0 +1,19 @@
+# Windows/native mechanism path; official serving extra is Linux-only.
+torch==2.9.1
+transformers==4.57.3
+accelerate==1.12.0
+numpy==2.4.2
+PyYAML==6.0.3
+safetensors==0.7.0
+huggingface-hub==0.36.2
+requests==2.34.2
+pytest==9.1.1
+matplotlib==3.11.2
+scipy==1.18.1
+# Portable imports required to reach the recorded serving-engine runtime check.
+msgpack==1.2.3
+pyzmq==27.2.0
+fastapi==0.143.1
+uvicorn==0.54.0
+termcolor==3.3.0
+tqdm==4.67.3

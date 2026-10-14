@@ -1,0 +1,59 @@
+{
+  "status": "native_backend_consistency_pass",
+  "evidence_scope": "engineering/native official path only; serving equivalence remains separately reported",
+  "model_parameters": 1766730752,
+  "dtype": "BF16",
+  "attention_implementation": "official native SDPA",
+  "weighted_hidden_method": "stop_prob_mix",
+  "checks": {
+    "no_intervention_native_wrapper_max_logit_difference": 0.0,
+    "repeated_native_bitwise_equal": true,
+    "full_vs_incremental_depth1_max_logprob_difference": 0.4375,
+    "full_vs_incremental_depth1_target_CE_max_abs_difference_nats": 0.06293106079101562,
+    "full_vs_incremental_depth1_top1_agreement_fraction": 1.0,
+    "full_vs_incremental_depth2_max_logprob_difference": 0.5,
+    "full_vs_incremental_depth2_target_CE_max_abs_difference_nats": 0.09131336212158203,
+    "full_vs_incremental_depth2_top1_agreement_fraction": 1.0,
+    "future_deep_KV_cannot_change_earlier_tokens_max_difference": 0.0,
+    "deep_source_cannot_change_depth1_consumer_max_difference": 0.0,
+    "future_K2_content_cannot_change_earlier_K2_outputs_max_difference": 0.0,
+    "cache_branches_deeply_independent": true,
+    "shallow_substitution_preserves_shape_position_and_count": true,
+    "stop_prob_mix_manual_reconstruction_max_difference": 0.0
+  },
+  "weights_hash_before": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "weights_hash_after": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "actual_native_example": {
+    "text": "The answer is 2.",
+    "generated_token_ids": [
+      785,
+      4226,
+      374,
+      220,
+      17,
+      13,
+      151645
+    ],
+    "input_tokens": 24,
+    "generated_tokens": 7,
+    "actual_iterations": 51,
+    "generated_position_depths": [
+      2,
+      2,
+      2,
+      1,
+      2,
+      1
+    ],
+    "mean_actual_depth_all_executed_input_positions": 1.7,
+    "seconds": 0.2494179999921471,
+    "cuda_forward_seconds": 0.2471947000012733,
+    "peak_cuda_allocated_mib": 3506.91064453125,
+    "hit_generation_limit": false,
+    "generation_policy_uses_reference": false
+  },
+  "gpu_forward_seconds": 1.3825489998562261,
+  "calls": 39,
+  "peak_cuda_allocated_mib": 3506.91064453125,
+  "official_serving_equivalence_verified": false
+}

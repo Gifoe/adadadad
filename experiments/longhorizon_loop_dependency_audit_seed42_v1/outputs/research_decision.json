@@ -1,0 +1,23 @@
+{
+  "decision": "INCONCLUSIVE",
+  "stage4_positive_evidence_gate_passed": false,
+  "gates_by_dataset": {
+    "nestful_v2_math": {
+      "positive_source_gt_0p01_nats": false,
+      "dependency_specific": false,
+      "positive_mask_attenuation": false,
+      "native_K1_low_local_positive": false
+    },
+    "controlled_symbol_chains_new_diagnostic": {
+      "positive_source_gt_0p01_nats": false,
+      "dependency_specific": false,
+      "positive_mask_attenuation": false,
+      "native_K1_low_local_positive": false
+    }
+  },
+  "official_serving_equivalence_verified": false,
+  "primary_pilot_has_full_task_success": false,
+  "stage4_executed": false,
+  "stage4_reason": "No reliable positive dependency-specific delayed benefit in the low-local/native-K1 target stratum; no allocation-gain claim.",
+  "scope": "No GO_H2 or GO_H1_ONLY justified; narrow negative evidence does not establish H0 for general long-horizon reasoning."
+}

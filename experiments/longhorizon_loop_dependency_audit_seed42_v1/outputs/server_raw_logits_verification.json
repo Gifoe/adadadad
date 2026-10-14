@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "n_branch_records": 6756,
+  "branches_by_phase": {
+    "dev": 660,
+    "audit": 1822,
+    "rename": 256,
+    "dev_aligned": 660,
+    "audit_aligned": 1822,
+    "rename_aligned": 256,
+    "depths_aligned": 1280
+  },
+  "parent_units_by_phase": {
+    "dev": 48,
+    "audit": 128,
+    "rename": 16,
+    "dev_aligned": 48,
+    "audit_aligned": 128,
+    "rename_aligned": 16,
+    "depths_aligned": 64
+  },
+  "raw_logit_presence_required": true,
+  "frozen_development_bytes_sha256": "3a57c0634aef6cd2fc889c575cd395197d39ba26072d2805e865a567d08627a2",
+  "checks": [
+    "unique case/condition",
+    "all planned dependent cells and KV controls complete",
+    "finite utilities",
+    "manifest/config/development snapshot hashes",
+    "phase weights unchanged",
+    "strict aligned masked/source-depth causal nulls zero",
+    "free generation has no reference policy"
+  ]
+}

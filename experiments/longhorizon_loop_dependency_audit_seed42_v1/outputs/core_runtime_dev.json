@@ -1,0 +1,469 @@
+{
+  "phase": "dev",
+  "pair_evaluations_visited": 96,
+  "forward_calls": 1491,
+  "cuda_forward_wall_seconds": 83.05665770062478,
+  "weights_hash_before": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "weights_hash_after": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "unavailable_controls_or_budget_exclusions": [
+    {
+      "sample_id": "nestful_27468e82-a565-4ac8-861b-13a7170839e9",
+      "i": 757,
+      "j": 805,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_27468e82-a565-4ac8-861b-13a7170839e9",
+      "i": 731,
+      "j": 794,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6e46d58b-4319-430e-b6ca-72689e56a189",
+      "i": 723,
+      "j": 766,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6e46d58b-4319-430e-b6ca-72689e56a189",
+      "i": 755,
+      "j": 918,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_afdf6fd1-6ed0-46ed-b37c-b27b5ff09dcf",
+      "i": 847,
+      "j": 889,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_afdf6fd1-6ed0-46ed-b37c-b27b5ff09dcf",
+      "i": 782,
+      "j": 833,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6b3f28d1-703c-4a21-b432-d84505bf42f1",
+      "i": 777,
+      "j": 819,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6b3f28d1-703c-4a21-b432-d84505bf42f1",
+      "i": 797,
+      "j": 1292,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_e3146382-ad8d-4d85-82e1-f08127121657",
+      "i": 758,
+      "j": 807,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_e3146382-ad8d-4d85-82e1-f08127121657",
+      "i": 731,
+      "j": 796,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_c8832b6f-c67b-4a49-8e7e-bfe4d6e8a8d8",
+      "i": 780,
+      "j": 1042,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6d2f1018-c5e2-4007-8aee-0a786879d6e6",
+      "i": 790,
+      "j": 833,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6d2f1018-c5e2-4007-8aee-0a786879d6e6",
+      "i": 769,
+      "j": 822,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_5f4b5d64-bfac-4c3b-8c9f-e32bef0cf9c4",
+      "i": 943,
+      "j": 985,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_5f4b5d64-bfac-4c3b-8c9f-e32bef0cf9c4",
+      "i": 1005,
+      "j": 1347,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_1f2362ec-e4dd-42ef-abe0-15b8f3c7c82e",
+      "i": 674,
+      "j": 711,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_1f2362ec-e4dd-42ef-abe0-15b8f3c7c82e",
+      "i": 700,
+      "j": 742,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_9c4c6a80-d210-46e3-bb30-8ab2ca8e8f3a",
+      "i": 820,
+      "j": 870,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_9c4c6a80-d210-46e3-bb30-8ab2ca8e8f3a",
+      "i": 848,
+      "j": 1124,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_162db0f4-cf45-4d19-b905-a260e1b63507",
+      "i": 670,
+      "j": 707,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_162db0f4-cf45-4d19-b905-a260e1b63507",
+      "i": 727,
+      "j": 1102,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_063fea0b-8980-4c38-b196-3121c69c8671",
+      "i": 727,
+      "j": 765,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_063fea0b-8980-4c38-b196-3121c69c8671",
+      "i": 754,
+      "j": 796,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_1e47237d-fb1b-40c1-84f2-f95f0a550efc",
+      "i": 764,
+      "j": 802,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_1e47237d-fb1b-40c1-84f2-f95f0a550efc",
+      "i": 918,
+      "j": 1153,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_4e462942-5adc-44e4-9771-749e1759751a",
+      "i": 723,
+      "j": 771,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_4e462942-5adc-44e4-9771-749e1759751a",
+      "i": 785,
+      "j": 978,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_666b482c-35a7-4a2d-b2c3-7a16f2888305",
+      "i": 691,
+      "j": 728,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_666b482c-35a7-4a2d-b2c3-7a16f2888305",
+      "i": 717,
+      "j": 766,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_9a23a3ec-0f70-4acf-867f-1a82c0ca5b17",
+      "i": 904,
+      "j": 1176,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_93e745d3-c539-4e45-8f05-1f7d0aa3db88",
+      "i": 659,
+      "j": 696,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_93e745d3-c539-4e45-8f05-1f7d0aa3db88",
+      "i": 716,
+      "j": 882,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_d767e8d6-7766-4963-94ea-a8f47f1034b9",
+      "i": 706,
+      "j": 746,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_d767e8d6-7766-4963-94ea-a8f47f1034b9",
+      "i": 735,
+      "j": 778,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_8956e144-c9f2-4154-8554-eb3de698456e",
+      "i": 895,
+      "j": 1164,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_d786dab7-ab0d-44f2-86b8-9fccfd57b393",
+      "i": 679,
+      "j": 722,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_d786dab7-ab0d-44f2-86b8-9fccfd57b393",
+      "i": 829,
+      "j": 1128,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_31362efe-b619-4718-9201-99cd47a8295f",
+      "i": 753,
+      "j": 790,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_31362efe-b619-4718-9201-99cd47a8295f",
+      "i": 779,
+      "j": 821,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_07a90e1e-0558-4e89-a376-cd7fa2b4ddf5",
+      "i": 735,
+      "j": 772,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_07a90e1e-0558-4e89-a376-cd7fa2b4ddf5",
+      "i": 854,
+      "j": 1114,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_8970e530-cd57-4c00-9ef5-86970db06e6f",
+      "i": 724,
+      "j": 764,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_8970e530-cd57-4c00-9ef5-86970db06e6f",
+      "i": 912,
+      "j": 1090,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6e75caef-367c-4d50-aab6-6313ef2e7aec",
+      "i": 735,
+      "j": 773,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6e75caef-367c-4d50-aab6-6313ef2e7aec",
+      "i": 762,
+      "j": 805,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_d6dc8f37-fe4a-42c0-a74e-ee45e5fff55e",
+      "i": 827,
+      "j": 864,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_d6dc8f37-fe4a-42c0-a74e-ee45e5fff55e",
+      "i": 791,
+      "j": 1058,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_9f2b17cf-60ea-4172-88c0-469ca13ed8da",
+      "i": 862,
+      "j": 904,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_9f2b17cf-60ea-4172-88c0-469ca13ed8da",
+      "i": 893,
+      "j": 1124,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_f95f91e2-fbee-4cb5-a955-722cb50b80f3",
+      "i": 752,
+      "j": 794,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_f95f91e2-fbee-4cb5-a955-722cb50b80f3",
+      "i": 724,
+      "j": 769,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6edc34ff-7903-4706-ad4a-53fd4c578128",
+      "i": 815,
+      "j": 854,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6edc34ff-7903-4706-ad4a-53fd4c578128",
+      "i": 925,
+      "j": 1145,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_f29d7031-a1cc-45f5-8bb1-6be4c4459be3",
+      "i": 762,
+      "j": 801,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_f29d7031-a1cc-45f5-8bb1-6be4c4459be3",
+      "i": 1017,
+      "j": 1125,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_453e02e3-d928-41c4-b059-9b6aee990044",
+      "i": 648,
+      "j": 686,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_453e02e3-d928-41c4-b059-9b6aee990044",
+      "i": 675,
+      "j": 724,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_0feb53d5-e450-4a1e-b0ad-13bc7097a92e",
+      "i": 663,
+      "j": 706,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_0feb53d5-e450-4a1e-b0ad-13bc7097a92e",
+      "i": 786,
+      "j": 995,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "nestful_6f14fa2b-b8e5-4158-9a4c-02ea855fa97e",
+      "i": 683,
+      "j": 884,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_000_H16_base",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_001_H16_base",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_002_H16_base",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_003_H16_base",
+      "i": 315,
+      "j": 345,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_004_H16_base",
+      "i": 315,
+      "j": 345,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_005_H16_base",
+      "i": 315,
+      "j": 345,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_006_H16_base",
+      "i": 315,
+      "j": 345,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_007_H16_base",
+      "i": 316,
+      "j": 346,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_008_H16_base",
+      "i": 316,
+      "j": 346,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_009_H16_base",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_010_H16_base",
+      "i": 316,
+      "j": 346,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_011_H16_base",
+      "i": 315,
+      "j": 345,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_012_H16_base",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_013_H16_base",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_014_H16_base",
+      "i": 315,
+      "j": 345,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    },
+    {
+      "sample_id": "controlled_dev_015_H16_base",
+      "i": 314,
+      "j": 344,
+      "reason": "no_same_role_same_native_depth_nondependent_within_half_to_double_distance"
+    }
+  ],
+  "manifest_sha256": "7f9e8bd45d5150a8dde6a551a0514fc9c6507fecf83d775c0128ec9c09b20e7b",
+  "baseline_gpu_seconds_prior": 1037.799515198567,
+  "actual_backend": "official native SDPA; no optimizer/backward/parameter changes"
+}

@@ -1,0 +1,12 @@
+{
+  "selected_ids": [
+    "nestful_1f2362ec-e4dd-42ef-abe0-15b8f3c7c82e",
+    "nestful_6b3f28d1-703c-4a21-b432-d84505bf42f1",
+    "controlled_dev_000_H4_base",
+    "controlled_dev_000_H16_base"
+  ],
+  "max_output_tokens": 2048,
+  "split": "development_only",
+  "selection_rule": "shortest/longest N among pilot NESTFUL, then first controlled group H4/H16; independent of scores",
+  "role": "output-length sensitivity, not the primary baseline or formal audit"
+}

@@ -1,0 +1,100 @@
+{
+  "checked_utc": "2026-10-14T23:04:05.360351+00:00",
+  "platform": "Windows-10-10.0.18363-SP0",
+  "python": "3.12.15",
+  "gpu_driver_memory": "NVIDIA GeForce RTX 5090, 616.56, 32607 MiB",
+  "versions": {
+    "torch": "2.9.1+cu128",
+    "transformers": "4.57.3",
+    "accelerate": "1.12.0",
+    "numpy": "2.4.2",
+    "PyYAML": "6.0.3",
+    "safetensors": "0.7.0",
+    "huggingface-hub": "0.36.2",
+    "requests": "2.34.2",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "msgpack": "1.2.3",
+    "pyzmq": "27.2.0",
+    "fastapi": "0.143.1",
+    "uvicorn": "0.54.0",
+    "termcolor": "3.3.0",
+    "tqdm": "4.67.3"
+  },
+  "upstream": {
+    "TaH": {
+      "commit": "78ddf9a2c25713fced03a736c5746161f6ee590c",
+      "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "NESTFUL": {
+      "commit": "fc2c4123e73500a56185a5fb354f05d1c8b4890c",
+      "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "model_config_hashes": {
+    "TaH2-1.7B-max2": {
+      "config.json": {
+        "sha256": "c6e5adf64a70f41cb653ce40eb1c4de2d5e8c786ca75ca4928b9f914b3ab522f",
+        "size_bytes": 1387
+      },
+      "tah_config.json": {
+        "sha256": "3b57a1384e5e1ce2ccab72af50d3b26d5a262f9c6a2a730311b843551e0ce0fd",
+        "size_bytes": 1204
+      },
+      "tokenizer_config.json": {
+        "sha256": "dfcdd594155520c2576ff4330f4ceb004d8bbc7eef6f4ec287af353b4db4492b",
+        "size_bytes": 5457
+      },
+      "generation_config.json": {
+        "sha256": "1535b491e69ad9423caf06e506aaeae8da611dd6fb0cba72938c70876213f6e5",
+        "size_bytes": 143
+      },
+      "chat_template.jinja": {
+        "sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+        "size_bytes": 4116
+      }
+    },
+    "TaH2-1.7B-Standard": {
+      "config.json": {
+        "sha256": "c6e5adf64a70f41cb653ce40eb1c4de2d5e8c786ca75ca4928b9f914b3ab522f",
+        "size_bytes": 1387
+      },
+      "tokenizer_config.json": {
+        "sha256": "dfcdd594155520c2576ff4330f4ceb004d8bbc7eef6f4ec287af353b4db4492b",
+        "size_bytes": 5457
+      },
+      "generation_config.json": {
+        "sha256": "1535b491e69ad9423caf06e506aaeae8da611dd6fb0cba72938c70876213f6e5",
+        "size_bytes": 143
+      },
+      "chat_template.jinja": {
+        "sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+        "size_bytes": 4116
+      }
+    }
+  },
+  "script_hashes": {
+    "scripts/analyze_results.py": "107ae73ea3f011d0ef96e56bc5cba2b230d3a0ffee6d115cfd005ad11652cb69",
+    "scripts/artifact_checks.py": "013edf22788430b37ddabba59dcc2255ac778acae0b3b7c6508329271ffc443f",
+    "scripts/baseline_length_isolated.py": "620e2954dba0cace99f71c629aeb047fe69748a6e1b732ddb1751fe8da603fa4",
+    "scripts/baseline_length_probe.py": "39ef5c32399b4a95bb87c04840834d39a517e851a7769ad5f97744c8b97bfed0",
+    "scripts/baseline_pilot.py": "7879433e24271007b9204d523671f54d7fc076219a8bdccd88f1cbe6b1ea982f",
+    "scripts/capture_provenance.py": "271a633bae54c7bf95945a41838150fbdc570d5dc10a5362068a647303853a29",
+    "scripts/collect_crash_evidence.ps1": "5e2cf376f38fa34bc881a2ca8305ac5b1388fcfb36c938f298a5dbc2633c36c9",
+    "scripts/core_audit.py": "8631a62b4cba4f41caefc058d57e69f68f98a4222dbf244198d1ae643b6be1b2",
+    "scripts/cpu_affinity.py": "3fec1c81f01b006a29c876f6d4bb73cdeac2505c5aa87f4752b55250e716a8a1",
+    "scripts/download_models.py": "a5febc1e046800038809ce06f96564ce3071e553e4ede4f88c83f9bb5882a6ca",
+    "scripts/generate_report.py": "feb76fcaaa29e08687a0bc714ceeb8a8779464e9935dd86b793fbf490cd2acee",
+    "scripts/launch_server.ps1": "bb7c4e5ff046b70e7915b7f4d2170a0989e4631f2b0fda08d9bf2a11da46c613",
+    "scripts/length_probe_plan.py": "518c347fff1afff5a1a5c45772a8d17d2d464fcddfcbdfc661e2a6bc8d3be257",
+    "scripts/native_backend.py": "c6f000ca3089f55c38bde7d6f825855eafca9e660a9f1c0152eab0802282131c",
+    "scripts/preflight_model.py": "6d7a4cc09995b92988277348b3b0f1429a5d2afaaeafcf457885070a3e47885e",
+    "scripts/prepare_data.py": "eae1acffbcbaeb8484f9c5fb75a5111ac4b1611b0c79cdf72353a3e5d81c2713",
+    "scripts/run_remaining.py": "cbefc1177dfa8429dc33c1875bb02e51538eb2679df541273fd14f19b4cf5387",
+    "tests/test_cache_and_statistics.py": "05bef867c572eb629296fd406d6647b91ad1eecf6e672fe83bea6f021832489f",
+    "tests/test_data_semantics.py": "0bd22df25c5f05bcadea35747711128a9082ae0fd34156891c72792036813173"
+  },
+  "manifest_sha256": "7f9e8bd45d5150a8dde6a551a0514fc9c6507fecf83d775c0128ec9c09b20e7b",
+  "config_sha256": "360906e9b0d7d998c0d1b9635624c8301b60d0ffb293056f67b974b0cf5a8322"
+}

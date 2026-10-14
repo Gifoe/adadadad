@@ -1,0 +1,13 @@
+{
+  "phase": "depths_aligned",
+  "pair_evaluations_visited": 128,
+  "forward_calls": 2944,
+  "cuda_forward_wall_seconds": 247.3309424984036,
+  "phase_end_to_end_seconds_including_load_and_file_writes": 718.9303931999602,
+  "weights_hash_before": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "weights_hash_after": "dc5d4ba20239c81ac1e53b4d63a67290245a85ff848963d62a0c2c215c6a606e",
+  "unavailable_controls_or_budget_exclusions": [],
+  "manifest_sha256": "7f9e8bd45d5150a8dde6a551a0514fc9c6507fecf83d775c0128ec9c09b20e7b",
+  "baseline_gpu_seconds_prior": 3728.2408073971746,
+  "actual_backend": "official native SDPA; no optimizer/backward/parameter changes"
+}

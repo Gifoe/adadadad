@@ -1,0 +1,59 @@
+{
+  "plan": {
+    "selected_ids": [
+      "nestful_1f2362ec-e4dd-42ef-abe0-15b8f3c7c82e",
+      "nestful_6b3f28d1-703c-4a21-b432-d84505bf42f1",
+      "controlled_dev_000_H4_base",
+      "controlled_dev_000_H16_base"
+    ],
+    "max_output_tokens": 2048,
+    "split": "development_only",
+    "selection_rule": "shortest/longest N among pilot NESTFUL, then first controlled group H4/H16; independent of scores",
+    "role": "output-length sensitivity, not the primary baseline or formal audit"
+  },
+  "summaries": [
+    {
+      "method": "standard",
+      "n": 4,
+      "format_successes": 2,
+      "full_task_successes": 0,
+      "generation_limit_hits": 2,
+      "generated_tokens": 4828,
+      "seconds": 95.7764761999133
+    },
+    {
+      "method": "forced1",
+      "n": 4,
+      "format_successes": 0,
+      "full_task_successes": 0,
+      "generation_limit_hits": 4,
+      "generated_tokens": 8192,
+      "seconds": 348.5001052999869
+    },
+    {
+      "method": "forced2",
+      "n": 4,
+      "format_successes": 2,
+      "full_task_successes": 0,
+      "generation_limit_hits": 2,
+      "generated_tokens": 7704,
+      "seconds": 657.4217172000208
+    },
+    {
+      "method": "adaptive",
+      "n": 4,
+      "format_successes": 2,
+      "full_task_successes": 0,
+      "generation_limit_hits": 4,
+      "generated_tokens": 8192,
+      "seconds": 351.5177707999246
+    }
+  ],
+  "worker": "one_prompt_per_process; each successful prompt has equal before/after parameter hashes",
+  "recorded_prompt_GPU_seconds_all_runs": 2067.1185379954404,
+  "isolated_validated_prompt_GPU_seconds": 1439.610360999999,
+  "interrupted_legacy_completed_prompt_GPU_seconds": 627.5081769954413,
+  "legacy_results_used_for_accuracy": false,
+  "native_crash": "multi-prompt runs exited 0xC0000005 without Python traceback; root cause unresolved, partial results retained separately",
+  "shutdown": "after durable export, os._exit avoids interpreter/allocator teardown; no backend, precision, mixture or model alteration"
+}
